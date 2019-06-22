@@ -156,65 +156,79 @@ body::after {
 
 /*serwer - kanaly tekstowe i glosowe*/
 
-.nameSelectedText-sp_EUw {
-	color: #ffffff;
+.da-channels .da-containerDefault .da-selected .da-name {
+	color: rgb(255, 255, 255);
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	text-shadow: 0.8px 0.8px 12px #ffffff;
+	/* text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.5); */
 }
 
-.nameDefaultText-24KCy5, .nameDefaultVoice-3WUH7s, .nameLockedText-2fGz07, .nameLockedVoice-wNOMNa {
-	color: rgb(220, 220, 220);
+.da-channels .da-containerDefault .da-name {
+	/*default tekstowy*/
+	color: rgb(180, 180, 180);
 }
 
-.nameMutedText-3Vj4bM, .nameMutedVoice-26k4cP {
-	color: rgb(165, 165, 165);
+.da-channels .da-containerDefault .modeMuted-3osy7j .da-name {
+	/*zmutowany tekstowy*/
+	color: rgb(120, 120, 120);
 }
 
-.nameDefault-Lnjrwm, .nameDefault-1I0lx8 {
-	color: rgb(190, 190, 190);
-}
-
-.modeSelected-1zApJ_ .content-3at_AU {
-	background-color: rgba(255, 0, 0, 0.12) !important;
+.da-channels .da-containerDefault.da-selected .da-content {
+	/*wybrany tekstowy*/
+	background-color: rgba(255, 0, 0, 0.2) !important;
 	color: #ffffff !important;
 }
 
-.containerDefault-1ZnADq:hover .content-3at_AU {
-	background-color: rgba(255, 0, 0, 0.05) !important;
-	color: #ffffff;
+.da-channels .da-containerDefault.da-selected:hover .da-content {
+	background-color: rgba(255, 0, 0, 0.2) !important;
 }
 
-.modeSelected-1zApJ_:hover .content-3at_AU {
-	background-color: rgba(255, 0, 0, 0.12) !important;
+.da-channels .da-containerDefault .modeConnected-2IEL4z {
+	/*wybrany głosowy*/
+	background-color: rgba(0, 0, 0, 0) !important;
+	color: rgb(218, 218, 218);
 }
 
-.contentSelectedText-3j5CXt {
+.da-channels .da-containerDefault:not(.da-selected):hover .da-content {
+	/*hover na nazwe kanalu glosowego*/
+	background-color: rgba(255, 0, 0, 0.1) !important;
+}
+
+.da-channels .da-containerDefault:not(.da-selected):hover .da-listDefault .da-content {
+	/*hover na nazwe uzytkownika na kanale glosowym*/
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.da-channels .da-containerDefault:not(.da-selected) .da-listDefault .da-content:hover {
+	/*hover na nazwe uzytkownika na kanale glosowym*/
+	background-color: rgba(255, 0, 0, 0.1) !important;
+	color: rgb(255, 255, 255);
+}
+
+.da-voiceUser.da-selected .content-3xS9Lh {
+	background-color: rgba(255, 0, 0, 0.2) !important;
+	color: rgb(255, 255, 255);
+}
+
+/* .contentSelectedText-3j5CXt {
 	color: rgba(255, 0, 0, 0.245);
 	background-color: rgba(255, 0, 0, 0.245);
 }
-
-.nameLockedText-2fGz07, .nameLockedVoice-wNOMNa {
-	color: rgb(150, 150, 150)
+.nameLockedText-2fGz07, 
+.nameLockedVoice-wNOMNa{
+	color: rgb(150, 150, 150);
 }
-
 .flex-1xMQg5 .nameDefault-2DI02H {
-	color: rgb(150, 150, 150)
+	color: rgb(150, 150, 150);
 }
-
 .flex-1xMQg5 .nameDefault-2s3kbY {
-	color: rgb(170, 170, 170)
+	color: rgb(170, 170, 170);
 }
-
-.contentDefaultVoice-2ko43i:active, .contentHoveredVoice-3p_NEO:active, .contentConnectedVoice-qL-YrL:active {
-	background-color: rgba(255, 0, 0, 0.12);
-	color: #ffffff;
-}
-
-.da-voiceUser.da-selected .content-3xS9Lh, .da-voiceUser:hover .content-3xS9Lh {
-	background: rgba(255, 0, 0, 0.25) !important;
-}
+.da-voiceUser.da-selected .content-3xS9Lh,
+.da-voiceUser:hover .content-3xS9Lh {
+    background: rgba(255, 0, 0, 0.25) !important;
+} */
 
 /*licznik osob na kanale glosowym*/
 
