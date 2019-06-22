@@ -1,16 +1,18 @@
-/* @import url(https://zerthox.github.io/ClearVision/css/ClearVision_v5.min.css); */
-.container-2OU7Cz, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .chat-3bRxxu-3bRxxu form, .channels-3g2vYe {
-	background-color: transparent !important;
-}
-
-/*    /\nic nie zmieniac/\   */
-
 /*Background*/
 
-.app-19_DXt {
-	background-image: url("https://i.imgur.com/S7AYEBo.png");
+body::after {
+	background-image: url("https://i.imgur.com/S7AYEBo.png") !important;
 	background-repeat: no-repeat;
 	background-size: cover;
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: center;
+	z-index: -90;
 }
 
 /*pasek nad discordem*/
@@ -18,7 +20,6 @@
 .typeWindows-1za-n7 {
 	height: 18px;
 	margin-top: 0px;
-	background-image: url(https://i.imgur.com/BChFmn8.png);
 	background-color: rgba(0, 0, 0, 0.1);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -32,6 +33,10 @@
 }	 */
 
 /*Przezroczystosc glownych elementow (nie zmieniać)*/
+
+.container-2OU7Cz, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .chat-3bRxxu-3bRxxu form, .channels-3g2vYe {
+	background-color: transparent !important;
+}
 
 [class*="theme-"] .layer, [class*="theme-"] .layers {
 	background: transparent!important;
@@ -69,9 +74,9 @@
 
 /*W grze:*/
 
-/* .activity-1IYsbk .activityText-sLG0UL strong {
-    color:  !important;
-} */
+.activity-1IYsbk .activityText-sLG0UL strong {
+	color: !important;
+}
 
 /*.channel-members .member.member-status-online .member-inner .member-activity-text strong {color: #43b581}*/
 
