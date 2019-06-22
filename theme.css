@@ -212,7 +212,7 @@ body::after {
 	color: #ffffff;
 }
 
-.popout-open.voiceUser-14U_Ns .content-3xS9Lh, .voiceUser-14U_Ns:hover .content-3xS9Lh {
+.da-voiceUser.da-selected .content-3xS9Lh, .da-voiceUser:hover .content-3xS9Lh {
 	background: rgba(255, 0, 0, 0.25) !important;
 }
 
@@ -521,8 +521,9 @@ body::after {
 	background: rgba(0, 0, 0, 0) !important;
 }
 
-.aka-1mqp34 {
-	background-color: rgba(255, 0, 0, 0.5);
+.akaBadge-1M-1Gw {
+	background: rgba(255, 0, 0, 0.5) !important;
+	border-radius: 10%;
 }
 
 /*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
@@ -715,7 +716,7 @@ body::after {
 }
 
 .animatorTop-2Y7x2r .container-2x5lvQ .paragraph {
-	color: #aaaaaa !important;
+	color: #615656 !important;
 }
 
 .animatorTop-2Y7x2r .container-2x5lvQ section::after {
@@ -832,7 +833,7 @@ body::after {
 	width: 100%;
 	height: 100%;
 	z-index: -1;
-	background: hsla(0, 0%, 90%, 0.1);
+	background: rgba(229, 229, 229, 0.1);
 	border-radius: 3px;
 	opacity: 0.8;
 }
@@ -1641,33 +1642,34 @@ body::after {
 	background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug .jumpButton-3DTcS_, .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_ {
+.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-14P9IC .jumpButton-Ia2hRJ {
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-radius: 3px !important;
 }
 
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug .jumpButton-3DTcS_:hover, .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_:hover {
+.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-14P9IC .jumpButton-Ia2hRJ:hover {
 	background-color: rgba(0, 0, 0, 0.6) !important;
 }
 
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug .jumpButton-3DTcS_ .text, .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_ {
+.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-14P9IC .jumpButton-Ia2hRJ .text {
 	color: #cccccc !important;
 }
 
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-1sUUug .jumpButton-3DTcS_:hover .text, .search-results-wrap .actionButtons-1sUUug .jumpButton-3DTcS_:hover {
+.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .actionButtons-14P9IC .jumpButton-Ia2hRJ:hover .text:hover {
 	color: #ffffff !important;
 }
 
 /*wyszukiwanie wiadomiosci na czacie: pasek wyszukiwania*/
 
-.search .search-bar {
-	border-bottom: 2px solid hsla(0, 0%, 100%, 0.04);
+.da-search .da-searchBar {
+	background: rgba(0, 0, 0, 0.3);
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
 	-wekbit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out
 }
 
-.search.focused .search-bar {
-	border-color: #015ce4 !important;
+.da-search.da-focused .da-searchBar {
+	border-color: rgba(1, 92, 228, 0.7) !important;
 }
 
 .searchFilter-2ESiM3, .searchAnswer-3Dz2-q {
@@ -1676,83 +1678,114 @@ body::after {
 
 /*wyszukiwanie wiadomiosci na czacie: okno wyskakujace po kliknieciu*/
 
-[class*="theme-"] .searchPopout-1vUlP3 {
-	background-color: rgba(0, 0, 0, 0.95);
+[class*="theme-"] .da-popout .da-container {
+	background-color: rgba(0, 0, 0, 0.9) !important;
+	box-shadow: 5px 10px rgba(0, 0, 0, 0);
 }
 
-[class*="theme-"] .searchPopout-1vUlP3 .resultsGroup-r_nuzN {
+[class*="theme-"] .da-popout .resultsGroup-r_nuzN {
 	color: red !important;
 }
 
-.searchPopout-1vUlP3 .searchQuery-1B7rtx.selected-rZcOL-, [class*="theme-"] .searchPopout-1vUlP3 .resultsGroup-r_nuzN .selected-rZcOL-, [class*="theme-"] .searchPopout-1vUlP3 .resultsGroup-r_nuzN .option-96V44q:hover {
-	background: rgba(0, 0, 0, 1);
+[class*="theme-"] .da-popout .resultsGroup-r_nuzN .selected-rZcOL-, [class*="theme-"] .da-popout .resultsGroup-r_nuzN .option-96V44q:hover {
+	background: rgba(0, 0, 0, 9);
+}
+
+[class*="theme-"] .da-popout .resultsGroup-r_nuzN .option-96V44q::after {
+	background: transparent !important;
+}
+
+/*po wyszukaniu wiadomosci od uzytkownika, gdy klikniesz ponownie na search*/
+
+.da-popout .queryContainer-RKFJW- {
+	background: rgba(0, 0, 0, 9);
 }
 
 /*przycisk ENTER*/
 
-.searchPopout-1vUlP3 .searchQuery-1B7rtx span {
+.da-popout .queryContainer-RKFJW- span {
 	display: none;
 }
 
 /*wyszukiwanie wiadomiosci na czacie: po wyszukaniu*/
 
-[class*="theme-"] .search-results-wrap {
+[class*="theme-"] .da-searchResultsWrap {
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-[class*="theme-"] .search-results-wrap .search-header {
+[class*="theme-"] .da-searchResultsWrap .da-searchHeader {
 	background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
-[class*="theme-"] .search-results-wrap .search-header .tab.selected {
+[class*="theme-"] .da-searchResultsWrap .da-searchHeader .da-tab.da-selected {
 	color: #cc0000;
 	border-color: #cc0000;
 }
 
 /*po kliknieciu w glowna wiadomosc*/
 
-.search-results-wrap .search-result.expanded {
+[class*="theme-"] .da-searchResultsWrap .da-searchResult.da-expanded {
 	border-color: transparent!important;
-	border-bottom: 1px solid hsla(0, 0%, 100%, .04)!important;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.04)!important;
 	background: rgba(0, 0, 0, 0.1)!important;
+	opacity: 1;
 }
 
 /*fade znikajaca wiadomosc przed i po glownej wiadomosci*/
 
-.search-results-wrap .search-result:not(.expanded) .search-result-message.before {
+[class*="theme-"] .da-searchResultsWrap .da-searchResult:not(.da-expanded) .da-searchResultMessage.da-before {
 	mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 	-webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 }
 
-.search-results-wrap .search-result:not(.expanded) .search-result-message.after {
+[class*="theme-"] .da-searchResultsWrap .da-searchResult:not(.da-expanded) .da-searchResultMessage.da-after {
 	mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 	-webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 }
 
 /*przezroczystosc wiadomosc przed i po glownej wiadomosci*/
 
-.search-results-wrap .search-result .search-result-message.after, .search-results-wrap .search-result .search-result-message.before {
+[class*="theme-"] .da-searchResultsWrap .da-searchResult .da-searchResultMessage.da-after, [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-searchResultMessage.da-before {
 	opacity: 0.15 !important
 }
 
 /*rozgraniczniki kanalow*/
 
-[class*="theme-"] .search-results-wrap .channel-separator .channel-name {
+[class*="theme-"] .da-searchResultsWrap .da-channelSeparator .da-channelName {
 	background-color: transparent;
 }
 
-[class*="theme-"] .search-results-wrap .channel-separator .channel-name:hover {
+[class*="theme-"] .da-searchResultsWrap .da-channelSeparator .da-channelName:hover {
 	background: linear-gradient(0deg, transparent 0%, rgba(153, 0, 0, 0.5) 50%, transparent 100%)!important;
 	text-decoration: none;
 }
 
 /*pozbycie sie szarego fadu*/
 
-.search-popout .results-group::before, .search-popout .option::after, .search-results-wrap .search-result::before, .search-results-wrap .search-result::after {
+[class*="theme-"] .da-searchResultsWrap .da-searchResult::before, [class*="theme-"] .da-searchResultsWrap .da-searchResult::after {
 	display: none
 }
 
-.search-results-wrap .search-result .hit, [class*="theme-"] .search-results-wrap .search-result .hit {
+/*przycisk jump*/
+
+.da-searchResultsWrap .actionButtons-14P9IC .jumpButton-Ia2hRJ {
+	background-color: rgba(0, 0, 0, 0.3) !important;
+	border-radius: 3px !important;
+}
+
+.da-searchResultsWrap .actionButtons-14P9IC .jumpButton-Ia2hRJ:hover {
+	background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.da-searchResultsWrap .actionButtons-14P9IC .jumpButton-Ia2hRJ {
+	color: #cccccc !important;
+}
+
+.da-searchResultsWrap .actionButtons-14P9IC .jumpButton-Ia2hRJ:hover {
+	color: #ffffff !important;
+}
+
+.da-searchResultsWrap .da-searchResult .da-hit, [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-hit {
 	background-color: rgba(0, 0, 0, .3)!important;
 	border-color: transparent!important;
 	box-shadow: none!important
