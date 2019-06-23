@@ -103,53 +103,110 @@ body::after {
 	background: rgba(0, 0, 0, 1);
 }
 
-/*Ustawienia serwera*/
+/*USTAWIENIA SERWERA*/
 
-.auditLog-3jNbM6 {
-	border-color: #000000 !important;
+/*sidebar po lewej*/
+
+.da-systemPad .da-sidebar .da-item:hover {
+	background: rgba(200, 0, 0, 0.2) !important;
 }
 
-.auditLog-3jNbM6 .header-GwIGlr, .auditLog-3jNbM6 .divider-1pnAR2, .auditLog-3jNbM6 .changeDetails-bk98pu {
-	background: rgba(0, 0, 0, 0.6) !important;
-	border-color: #000000 !important;
+.da-systemPad .da-sidebar .da-item.da-selected, .da-systemPad .da-sidebar .da-item.da-selected:hover {
+	background: rgba(200, 0, 0, 0.4) !important;
 }
 
-/*czesc ustawien serwera: Czlonkowie*/
-
-.flex-1xMQg5 .flex-1xMQg5 .searchBar-1MOL6S {
-	background: rgba(0, 0, 0, 0.4) !important;
-	border-color: #000000 !important;
-}
-
-.popout-3sVMXz .popoutList-T9CKZQ .scroller-2FKFPG {
-	overflow: hidden;
-}
-
-.popout-3sVMXz, .popout-3sVMXz .popoutList-T9CKZQ, .popout-3sVMXz .popoutList-T9CKZQ .searchBar-1MOL6S, .popout-3sVMXz .popoutList-T9CKZQ .selectableItem-1MP3MQ.selected-31soGA, .popout-3sVMXz .popoutList-T9CKZQ .selectableItem-1MP3MQ:hover {
-	background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/*polprzezroczyste pola (zaznaczalne)*/
+/*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
 
 .item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"], .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
 	background: rgba(0, 0, 0, 0.8) !important;
 	border-color: rgba(0, 0, 0, 0.8) !important;
 }
 
+/*polprzezroczyste pola (z wysuwalnymi menu)*/
+
+.da-systemPad .da-select>[class*="css-"],
+/*pole*/
+
+.da-systemPad .da-select [class*="-menu"]
+/*menu*/
+
+	{
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.da-systemPad .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*polprzezroczyste pola (czesc ustawien "Podgląd")*/
+
+.da-systemPad .da-marginBottom20 .da-input,
+/*nazwa serwera*/
+
+.da-systemPad .da-container .da-layout
+/*region serwera*/
+
+	{
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/*polprzezroczyste pola (czesc ustawien "Widżet")*/
+
+.da-systemPad .da-copyInput {
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/*polprzezroczyste pola (czesc ustawien "Bots")*/
+
+.da-systemPad .da-contentColumnDefault .da-card {
+	background: rgba(0, 0, 0, 0.5) !important;
+	border-color: rgba(0, 0, 0, 0.8) !important;
+}
+
 /*popout o niezapisanych zmianach*/
 
-.notice-region .container-2VW0UT {
+.da-noticeRegion .da-container {
 	background: rgba(0, 0, 0, 0.85) !important;
 }
 
-.notice-region .container-2VW0UT .flex-1xMQg5 .lookFilled-1Gx00P {
+.da-noticeRegion .da-container [class*="lookFilled"] {
 	background-color: #222277 !important;
 	color: #dddddd !important;
 }
 
-.notice-region .container-2VW0UT .flex-1xMQg5 .lookFilled-1Gx00P:hover {
+.da-noticeRegion .da-container [class*="lookFilled"]:hover {
 	background: #1b1b7e !important;
 	color: #ffffff !important;
+}
+
+/*czesc ustawien serwera: dziennik zdarzen*/
+
+.da-auditLog {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: #000000 !important;
+}
+
+.da-auditLog .da-headerExpanded, .da-auditLog .da-divider, .da-auditLog .da-changeDetails {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border-color: #000000 !important;
+}
+
+/*czesc ustawien serwera: Czlonkowie*/
+
+.da-systemPad .da-customHeader .da-searchBar {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border-color: #000000 !important;
+}
+
+/*popout przy wyswietlaniu roli w ustawieniach członków i przy filtrach w dzienniku zdarzen*/
+
+[class*="popout-"] [class*="popoutList-"] .scroller-2FKFPG {
+	overflow: hidden;
+}
+
+[class*="popout-"] [class*="popoutList-"], [class*="popout-"] [class*="popoutList-"] .da-container .da-inner, [class*="popout-"] [class*="popoutList-"] .da-selectableItem.da-selected, [class*="popout-"] [class*="popoutList-"] .da-selectableItem:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
 }
 
 /*serwer - lista ludzi na serwerze (hover + click)*/
