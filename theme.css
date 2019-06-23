@@ -330,6 +330,10 @@ body::after {
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
+.da-activityFeed>.da-container {
+	background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
 .da-activityFeed .da-container .da-children::after {
 	visibility: hidden !important;
 }
@@ -411,21 +415,6 @@ body::after {
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
-/*lista znajomych / prywatne wiadomosci*/
-
-[class*="theme-"] .friendsTable-133bsv {
-	margin-top: 0px !important;
-	background: rgba(0, 0, 0, 0) !important;
-}
-
-[class*="theme-"] .friendsTable-133bsv .friendsRow-2yicud .friendsColumn-eVHFqJ .friendsAction-__WNE9 {
-	background-color: rgba(21, 37, 140, 0.4) !important;
-}
-
-[class*="theme-"] .friendsTable-133bsv .friendsRow-2yicud:hover {
-	background: linear-gradient(to right, rgba(34, 59, 170, 0.3) 45%, transparent) !important;
-}
-
 /*Strona główna: Biblioteka*/
 
 .da-spacer>.da-gameLibrary, .da-spacer>.da-root {
@@ -485,98 +474,105 @@ body::after {
 	color: var(--button-color-hover) !important;
 }
 
+/*Strona główna: Znajomi*/
+
+[class*="theme-"] .da-friendsTable {
+	margin-top: 0px !important;
+	background: rgba(0, 0, 0, 0) !important;
+}
+
+[class*="theme-"] .da-friendsTable .da-friendsRow:hover {
+	background: linear-gradient(to right, rgba(34, 59, 170, 0.3) 45%, transparent) !important;
+}
+
+[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction {
+	/*buttons*/
+	background-color: var(--button-backg) !important;
+}
+
+[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:hover {
+	background-color: var(--button-backg-hover) !important;
+}
+
+[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3):hover {
+	/*delete friend bt*/
+	background-color: rgba(200, 0, 0, 0.7) !important;
+}
+
 /*menu u gory prywatnych wiadomiosci*/
 
-[class*="theme-"] .container-1r6BKw {
+[class*="theme-"] .da-spacer .da-container>.da-container {
 	background: rgba(0, 0, 0, 0.1)
 }
 
-[class*="theme-"] .tabBar-1E2ExX .item-PXvHYJ:hover:not(.selected-3s45Ha) {
+[class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item:not(.da-selected):hover {
+	/*buttony*/
 	background-color: rgba(0, 0, 0, 0);
-	color: #ffffffff;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	text-shadow: 0.7px 0.7px 10px #f7f7f7;
 }
 
-[class*="theme-"] .tabBar-1E2ExX .item-PXvHYJ.selected-3s45Ha {
+[class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item.da-selected {
 	background-color: rgba(0, 0, 0, 0) !important;
-	color: #ffffff;
 	font-size: 17px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	text-shadow: 0.8px 0.8px 12px #f7f7f7;
 }
 
-[class*="theme-"] .tabBar-1E2ExX .item-PXvHYJ.primary-3j8BhM {
-	background-color: rgba(255, 0, 0, 0.33) !important;
-	color: white;
+[class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item.da-primary {
+	/*primary: dodaj znajomego*/
+	background-color: rgba(0, 255, 128, 0.1) !important;
+	color: rgba(0, 255, 128, 0.7) !important;
+}
+
+[class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item.da-primary:hover, [class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item.da-primarySelected {
+	background-color: rgba(0, 255, 128, 0.2) !important;
+	color: rgba(0, 255, 128, 0.7) !important;
 	font-weight: bold;
+	font-size: 16px;
 }
 
-[class*="theme-"] .tabBar-1E2ExX .item-PXvHYJ.primary-3j8BhM:hover:not(.selected-3s45Ha) {
-	background-color: rgba(255, 0, 0, 0.33) !important;
-	color: white;
-	font-weight: bold;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	text-shadow: 0.8px 0.8px 12px #f7f7f7;
-}
-
-[class*="theme-"] .tabBar-1E2ExX .item-PXvHYJ.primary-3j8BhM.selected-3s45Ha {
-	background-color: rgba(255, 0, 0, 0.5);
-	color: white;
-	font-weight: bold;
-	font-size: 14px;
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	text-shadow: 0.8px 0.8px 12px #f7f7f7;
-}
-
-.friendTableAddHeader-m9bzFr {
+[class*="theme-"] .da-friendsTable .da-friendTableAddHeader {
+	/*dodawanie do znajomych*/
 	background: rgba(0, 0, 0, 0) !important;
+}
+
+[class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd>form {
+	background: rgba(0, 0, 0, 0.4);
+	border-color: rgba(0, 0, 0, 0.9);
+}
+
+[class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd>form>button {
+	background: var(--button-backg);
+	color: var(--button-color);
+}
+
+[class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd>form>button:hover {
+	background: var(--button-backg-hover);
+	color: var(--button-color-hover);
+}
+
+/*lista znajomych: znajdz lub rozpocznij rozmowe popup */
+
+.da-container .da-quickswitcher {
+	background-color: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px;
+}
+
+.da-container .da-quickswitcher .da-input {
+	background-color: rgba(65, 65, 197, 0.1);
+}
+
+/*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
+
+.da-privateChannels .da-scroller .da-channel, .da-privateChannels .da-scroller .da-channel a {
+	background: transparent !important;
+	border-radius: 5px;
+}
+
+.da-privateChannels .da-scroller .da-channel:hover, .da-privateChannels .da-scroller .da-channel.da-selected {
+	background: rgba(255, 0, 0, 0.2) !important;
 }
 
 .akaBadge-1M-1Gw {
 	background: rgba(255, 0, 0, 0.5) !important;
 	border-radius: 10%;
-}
-
-/*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
-
-.scroller-2FKFPG .channel-2QD9_O, .scroller-2FKFPG .channel-2QD9_O a {
-	background: transparent !important;
-}
-
-.scroller-2FKFPG .channel-2QD9_O.selected-1HYmZZ {
-	background: rgba(255, 0, 0, 0.2) !important;
-	border-radius: 5px;
-}
-
-.scroller-2FKFPG .channel-2QD9_O:hover {
-	background: rgba(255, 0, 0, 0.15) !important;
-	border-radius: 5px;
-}
-
-/*lista znajomych: pasek u góry (dodaj znajomego itp)*/
-
-.headerBar-UHpsPw {
-	background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-/*lista znajomych: znajdz lub rozpocznij rozmowe popup */
-
-.quickswitcher-3JagVE.da-quickswitcher {
-	background-color: rgba(0, 0, 0, 0.8);
-	border: 2px solid #4d4d4d;
-}
-
-.input-2VB9rf.da-input {
-	background-color: #4d4d4d;
 }
 
 /*lista znajomych: rozmowa glosowa prywatna */
