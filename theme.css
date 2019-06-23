@@ -1,7 +1,11 @@
+:root {
+	--background-img: url("https://i.imgur.com/S7AYEBo.png");
+}
+
 /*Background*/
 
 body::after {
-	background-image: url("https://i.imgur.com/S7AYEBo.png") !important;
+	background-image: var(--background-img) !important;
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -26,73 +30,67 @@ body::after {
 	padding-top: 4px;
 }
 
-/*ikonka discorda w lewym gornym rogu*/
-
-/* .wordmark-2iDDfm {
-	visibility: ;
-}	 */
-
-/*Przezroczystosc glownych elementow (nie zmieniać)*/
-
-.container-2OU7Cz, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .chat-3bRxxu-3bRxxu form, .channels-3g2vYe {
-	background-color: transparent !important;
-}
-
-[class*="theme-"] .layer, [class*="theme-"] .layers {
-	background: transparent!important;
-	box-shadow: none;
-	border-bottom: 0px solid #fff;
-	border-top: none;
-	opacity: 1;
-}
-
-.layers-20RVFW, .layer-kosS71, .container-2OU7Cz, .typing-3eiiL_ {
-	background: transparent !important;
-}
-
 #voice-connection, #friends, .friends-header, .friendsTable-133bsv, .guildsWrapper-5TJh6A, .guild-header header, .channels-wrap, .private-channels .search-bar, .guild-channels, .account, .friend-table-add-header, .chat-3bRxxu-3bRxxu, .content-yTz4x3, .layers, .title-wrap:not(.search-bar), .messages-3amgkR .divider-3gKybi span, .messages-3amgkR .divider-3gKybi:before, .content, .message-group-blocked, .is-local-bot-message, .channel-members, .channel-members-loading, .channel-members-loading .heading, .channel-members-loading .member, .scroller-fzNley, .typing, .layer, .layers, .container-RYiLUQ #friends .headerBar-UHpsPw, .container-RYiLUQ, [class*="theme-"] .channel-members, .container-2OU7Cz, [class*="theme-"] .chat-3bRxxu form, .header-2o-2hj, .channels-3g2vYe, .content-yTz4x3 .flex-spacer, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3, [class*="theme-"] .chat-3bRxxu, .channel-members, .container-iksrDt, .container-3lnMWU, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .typing-3eiiL_, [class*="theme-"] .activityFeed-1C0EmJ, [class*="theme-"] .headerBar-cxbhPD, [class*="theme-"] .lfg-3xoFkI, .video-3lOWa6, [class*="theme-"] .private-channel-call, .appMount-3VJmYg, .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .container-PNkimc, .container-2Thooq, [class*="theme-"] .title-3qD0b-, [class*="theme-"] .typing-2GQL18 {
 	background: rgba(0, 0, 0, 0.1) !important;
 }
 
-#friends .headerBar-UHpsPw, .container-RYiLUQ, [class*="theme-"] .channel-members, .container-2OU7Cz, [class*="theme-"] .chat-3bRxxu form, .channels-3g2vYe, .content-yTz4x3 .flex-spacer, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3, [class*="theme-"] .chat-3bRxxu, .channel-members, .container-iksrDt, .container-3lnMWU, .messagesWrapper-3lZDfY, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .typing-3eiiL_, [class*="theme-"] .activityFeed-1C0EmJ, [class*="theme-"] .headerBar-cxbhPD, [class*="theme-"] .lfg-3xoFkI, .video-3lOWa6, [class*="theme-"] .private-channel-call, .appMount-3VJmYg, .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .private-channels, .container-PNkimc, .container-2Thooq, .container-3gCOGc, [class*="theme-"] .typing-2GQL18, .search-bar.search-bar-light, [class*="theme-"] .members-1998pB {
+#friends .headerBar-UHpsPw, .container-RYiLUQ, [class*="theme-"] .channel-members, .container-2OU7Cz, [class*="theme-"] .chat-3bRxxu form, .channels-3g2vYe, .content-yTz4x3 .flex-spacer, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3, [class*="theme-"] .chat-3bRxxu, .channel-members, .container-iksrDt, .container-3lnMWU, .messagesWrapper-3lZDfY, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .typing-3eiiL_, [class*="theme-"] .activityFeed-1C0EmJ, [class*="theme-"] .headerBar-cxbhPD, [class*="theme-"] .lfg-3xoFkI, .video-3lOWa6, [class*="theme-"] .private-channel-call, .appMount-3VJmYg, .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .private-channels, .container-PNkimc, .container-2Thooq, .container-3gCOGc, [class*="theme-"] .typing-2GQL18, .search-bar.search-bar-light, [class*="theme-"] .layer-3QrUeG, [class*="theme-"] .layers-3iHuyZ, [class*="theme-"] .members-1998pB, .typeWindows-15E0Ys {
 	background: transparent !important;
 }
 
-[class*="theme-"] .layer-3QrUeG, [class*="theme-"] .layers-3iHuyZ, .typeWindows-15E0Ys {
-	background: rgba(0, 0, 0, 0) !important;
+/*panel z serwerami po samej lewej*/
+
+.wrapper-1Rf91z {
+	background: rgba(0, 0, 0, 0.1) !important;
 }
 
-/*lista ludzi na serwerze (+ po najechaniu na uzytkownika myszka)*/
-
-.content-OzHfo4:hover {
-	background: linear-gradient(to right, rgba(13, 13, 103, 0.65) 35%, transparent) !important;
+.wrapper-1Rf91z .da-guildSeparator {
+	background: rgba(0, 0, 0, 0.5);
 }
 
-.popout-open .content-OzHfo4 {
-	background: linear-gradient(to right, rgba(13, 13, 103, 0.75) 35%, transparent) !important;
+.wrapper-1Rf91z a .da-acronym,
+/*tlo serwerów bez ikonki*/
+
+.wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
+	/*tlo przezroczystych ikon serwerów*/
+	background: rgba(0, 0, 0, 0.5);
 }
 
-/*W grze:*/
-
-.activity-1IYsbk .activityText-sLG0UL strong {
-	color: !important;
+.wrapper-1Rf91z a.da-wrapper .da-homeIcon {
+	/*tlo glownej ikony discorda*/
+	background: rgba(0, 0, 0, 0);
 }
 
-/*.channel-members .member.member-status-online .member-inner .member-activity-text strong {color: #43b581}*/
+.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper {
+	/*tlo glownej ikony discorda*/
+	background: rgba(0, 0, 200, 0.3);
+}
+
+.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper.da-selected {
+	background: rgba(0, 0, 200, 0.5);
+}
+
+.wrapper-1Rf91z #bd-pub-button {
+	/*tlo public serwerow BetterDiscorda*/
+	background: rgba(0, 0, 200, 0.3);
+}
+
+.wrapper-1Rf91z #bd-pub-button:hover {
+	background: rgba(0, 0, 200, 0.5);
+}
 
 /*czcionka nazwy serwera po wejsciu na niego*/
 
-.name-3gtcmp {
+.da-channels .da-hasDropdown .da-name {
 	-ms-flex: 1;
 	-webkit-box-flex: 1;
 	flex: 1;
-	font-size: 20px;
+	font-size: 18px;
 	font-weight: bold;
 	line-height: 55px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
-	text-shadow: 0.8px 0.8px 12px #f7f7f7;
 }
 
 /*popout po kliknieciu na nazwe serwera*/
@@ -154,18 +152,20 @@ body::after {
 	color: #ffffff !important;
 }
 
-/*serwer - kanaly tekstowe i glosowe*/
+/*serwer - lista ludzi na serwerze (hover + click)*/
 
-.da-channels .da-containerDefault .da-selected .da-name {
-	color: rgb(255, 255, 255);
-	overflow: hidden;
-	text-overflow: ellipsis;
-	white-space: nowrap;
-	/* text-shadow: 1px 1px 12px rgba(255, 255, 255, 0.5); */
+.content-OzHfo4:hover {
+	background: linear-gradient(to right, rgba(13, 13, 103, 0.65) 35%, transparent) !important;
 }
 
+.popout-open .content-OzHfo4 {
+	background: linear-gradient(to right, rgba(13, 13, 103, 0.75) 35%, transparent) !important;
+}
+
+/*serwer - kanaly tekstowe i glosowe*/
+
 .da-channels .da-containerDefault .da-name {
-	/*default tekstowy*/
+	/*default tekstowy i glosowy*/
 	color: rgb(180, 180, 180);
 }
 
@@ -191,72 +191,43 @@ body::after {
 }
 
 .da-channels .da-containerDefault:not(.da-selected):hover .da-content {
-	/*hover na nazwe kanalu glosowego*/
-	background-color: rgba(255, 0, 0, 0.1) !important;
-}
-
-.da-channels .da-containerDefault:not(.da-selected):hover .da-listDefault .da-content {
-	/*hover na nazwe uzytkownika na kanale glosowym*/
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.da-channels .da-containerDefault:not(.da-selected) .da-listDefault .da-content:hover {
-	/*hover na nazwe uzytkownika na kanale glosowym*/
-	background-color: rgba(255, 0, 0, 0.1) !important;
-	color: rgb(255, 255, 255);
-}
-
-.da-voiceUser.da-selected .content-3xS9Lh {
+.da-channels .da-containerDefault:not(.da-selected):hover .da-listDefault .da-voiceUser.da-selected {
 	background-color: rgba(255, 0, 0, 0.2) !important;
 	color: rgb(255, 255, 255);
 }
 
-/* .contentSelectedText-3j5CXt {
-	color: rgba(255, 0, 0, 0.245);
-	background-color: rgba(255, 0, 0, 0.245);
+.da-channels .da-containerDefault:not(.da-selected) .da-listDefault .da-voiceUser.da-selected:hover {
+	background-color: rgba(255, 0, 0, 0.2) !important;
+	color: rgb(255, 255, 255);
 }
-.nameLockedText-2fGz07, 
-.nameLockedVoice-wNOMNa{
-	color: rgb(150, 150, 150);
+
+.da-voiceUser.da-selected .da-content {
+	background-color: rgba(255, 0, 0, 0.2) !important;
+	color: rgb(255, 255, 255);
 }
-.flex-1xMQg5 .nameDefault-2DI02H {
-	color: rgb(150, 150, 150);
-}
-.flex-1xMQg5 .nameDefault-2s3kbY {
-	color: rgb(170, 170, 170);
-}
-.da-voiceUser.da-selected .content-3xS9Lh,
-.da-voiceUser:hover .content-3xS9Lh {
-    background: rgba(255, 0, 0, 0.25) !important;
-} */
 
 /*licznik osob na kanale glosowym*/
 
-.flex-1xMQg5 .wrapper-2NJDcI {
-	background: rgba(250, 0, 0, 0.3);
-	color: #ff9898;
+.da-channels .da-containerDefault .da-userLimit .da-users {
+	background: rgba(250, 0, 0, 0.5);
+	color: #ffa4a4;
 }
 
-/*panel czatu po samej lewej*/
+.da-channels .da-containerDefault .da-userLimit .da-total {
+	color: #f82c2c;
+}
 
-.wrapper-1Rf91z, [class*="theme-"] .chat-3bRxxu .has-more button {
+/*wyszukiwanie rozmowy w prywatnych wiadomosciach*/
+
+.da-privateChannels .da-searchBar {
 	background: rgba(0, 0, 0, 0.1) !important;
 }
 
-.guild-header header {
-	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.3), inset 0 -1px 0 rgba(0, 0, 0, 0.1)
-}
-
-.search-bar {
+.da-privateChannels .da-searchBar .da-container {
 	background: rgba(0, 0, 0, 0.2) !important;
-}
-
-.guilds-1q_RqH.scroller .guild-1EfMGQ.unread-qLkInr::before {
-	background-color: rgb(255, 0, 0);
-}
-
-.guildsWrapper-5TJh6A .guilds-1q_RqH .guild-1EfMGQ .guildInner-3DSoA4, .guildsWrapper-5TJh6A .guildSeparator-1X4GQ1:after {
-	background: rgba(0, 0, 0, 0.5) !important;
 }
 
 /*kanaly wideo na serwerze*/
@@ -409,10 +380,6 @@ body::after {
 }
 
 /*lista znajomych / prywatne wiadomosci*/
-
-.privateChannels-1nO12o .searchBar-6Kv8R2 {
-	background: rgba(0, 0, 0, 0.1) !important;
-}
 
 [class*="theme-"] .friendsTable-133bsv {
 	margin-top: 0px !important;
