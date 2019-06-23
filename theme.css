@@ -428,54 +428,61 @@ body::after {
 
 /*Strona główna: Biblioteka*/
 
-.gameLibrary-TTDw4Y {
+.da-spacer>.da-gameLibrary, .da-spacer>.da-root {
+	/*root to pole po kliknieciu w Gift Inventory u góry biblioteki*/
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.gameLibrary-TTDw4Y .libraryHeader-3g95kE {
+.da-spacer .da-gameLibrary .da-libraryHeader,
+/*header*/
+
+.da-spacer .da-root .da-libraryHeader {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.table-1tDS6w .stickyHeader-1pqx0j {
+.da-spacer .da-gameLibrary .da-libraryHeader .da-children::after {
+	visibility: hidden !important;
+}
+
+.da-spacer .da-gameLibrary .da-libraryHeader .da-item:hover,
+/*button My Games i Gift Inventory*/
+
+.da-spacer .da-gameLibrary .da-libraryHeader .da-item.da-selected, .da-spacer .da-root .da-libraryHeader .da-item:hover, .da-spacer .da-root .da-libraryHeader .da-item.da-selected {
+	color: #dddddd;
+	font-weight: bold;
+	background: rgba(0, 0, 0, 0.3) !important
+}
+
+.da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
+	/*filtr*/
+	background-color: rgba(0, 0, 0, 0.5) !important;
+	border-bottom: 2px solid rgba(0, 0, 0, 0);
+	transition: all 0.5s ease-in-out;
+	-wekbit-transition: all 0.5s ease-in-out;
+}
+
+.da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
+	border-color: rgba(1, 92, 228, 0.7) !important;
+}
+
+.da-spacer .da-gameLibrary .da-table .da-stickyHeader {
+	/*sticky header*/
 	background: transparent;
 }
 
-.table-1tDS6w .rowWrapperActive-2L7i9f {
+.da-spacer .da-gameLibrary .da-table .da-rowWrapper:hover {
 	background: rgba(0, 0, 0, 0.3) !important;
 }
 
-.table-1tDS6w .actionsCell-1awtNi .button-15wS2S {
+.da-spacer .da-gameLibrary .da-table .da-button {
+	/*play button*/
 	background-color: var(--button-backg) !important;
-	color: #dddddd !important;
+	color: var(--button-color) !important;
 }
 
-.table-1tDS6w .actionsCell-1awtNi .button-15wS2S {
+.da-spacer .da-gameLibrary .da-table .da-button:hover {
 	background: var(--button-backg-hover) !important;
-	color: #ffffff !important;
-}
-
-/*Strona główna: Sklep*/
-
-.applicationStore-1pNvnv {
-	background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-.applicationStore-1pNvnv .itemBackground-1jfD8p {
-	border-radius: 20px !important;
-	margin-top: 10px !important;
-}
-
-.applicationStore-1pNvnv .itemBackground-1jfD8p::before {
-	background: rgba(0, 0, 0, 0.5) !important;
-	border-radius: 20px !important;
-	margin-top: 10px !important;
-}
-
-/* "Wyswietl wszystkie gry" */
-
-.applicationStore-1pNvnv .searchBox-3Y2Vi7 {
-	background: rgba(0, 0, 0, 0.5) !important;
-	border-radius: 10px !important;
+	color: var(--button-color-hover) !important;
 }
 
 /*menu u gory prywatnych wiadomiosci*/
