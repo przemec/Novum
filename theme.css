@@ -1,5 +1,9 @@
 :root {
 	--background-img: url("https://i.imgur.com/S7AYEBo.png");
+	--button-backg: #222277;
+	--button-color: #dddddd;
+	--button-backg-hover: #1b1b7e;
+	--button-color-hover: #ffffff;
 }
 
 /*Background*/
@@ -54,6 +58,14 @@ body::after {
 .wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
 	/*tlo przezroczystych ikon serwerów*/
 	background: rgba(0, 0, 0, 0.5);
+}
+
+.wrapper-1Rf91z a .da-acronym:hover,
+/*tlo serwerów bez ikonki*/
+
+.wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym) {
+	/*tlo przezroczystych ikon serwerów*/
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .wrapper-1Rf91z a.da-wrapper .da-homeIcon {
@@ -171,12 +183,12 @@ body::after {
 }
 
 .da-noticeRegion .da-container [class*="lookFilled"] {
-	background-color: #222277 !important;
+	background-color: var(--button-backg) !important;
 	color: #dddddd !important;
 }
 
 .da-noticeRegion .da-container [class*="lookFilled"]:hover {
-	background: #1b1b7e !important;
+	background: var(--button-backg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -209,13 +221,13 @@ body::after {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
 
-/*serwer - lista ludzi na serwerze (hover + click)*/
+/*serwer - lista ludzi na serwerze (hover i click)*/
 
-.content-OzHfo4:hover {
+.da-members .da-member .da-content:hover {
 	background: linear-gradient(to right, rgba(13, 13, 103, 0.65) 35%, transparent) !important;
 }
 
-.popout-open .content-OzHfo4 {
+.da-members .da-member.popout-open .da-content {
 	background: linear-gradient(to right, rgba(13, 13, 103, 0.75) 35%, transparent) !important;
 }
 
@@ -289,151 +301,114 @@ body::after {
 
 /*kanaly wideo na serwerze*/
 
-.videoBackground-3AY_fu, .nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49, .nochat-3bRxxu-3nt48u .wrapper-3eE7AX {
-	background: transparent !important;
+/* .videoBackground-3AY_fu,
+.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49,
+.nochat-3bRxxu-3nt48u .wrapper-3eE7AX {
+    background: transparent !important;
 	border-radius: 30px;
-}
-
+} 
 .nochat-3bRxxu-3nt48u .videoTop-eOkSPq {
-	background: transparent !important;
+    background: transparent !important;
 }
-
-.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49 .backgroundBlur-dazcBE, .nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49 .backgroundBlurOverlay-1JS5RF {
-	opacity: 0.3 !important;
+.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49 .backgroundBlur-dazcBE,
+.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49 .backgroundBlurOverlay-1JS5RF {
+    opacity: 0.3 !important;
 }
-
-.videoBackground-3AY_fu .backgroundBlur-dazcBE, .videoBackground-3AY_fu .backgroundBlurOverlay-1JS5RF {
-	opacity: 0.3 !important;
+.videoBackground-3AY_fu .backgroundBlur-dazcBE,
+.videoBackground-3AY_fu .backgroundBlurOverlay-1JS5RF {
+    opacity: 0.3 !important;
 	margin: 10px !important;
 	border-radius: 30px;
 }
-
 .contentSelectedVoice-1WDIBM {
 	background: rgba(240, 0, 0, 0.15);
-}
+}	 */
 
 /*Strona główna: Aktywność*/
 
-.activityFeed-1C0EmJ {
+.da-activityFeed .da-systemPad {
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.headerBar-UHpsPw {
-	background: transparent !important;
+.da-activityFeed .da-container .da-children::after {
+	visibility: hidden !important;
 }
 
-/* Glowne artykuly */
-
-.smallCarousel-3UDi9v .article-3kb3qm, .carousel-1Mb2Ud .article-3kb3qm, .carousel-JbsNzL .article-3kb3qm, .carousel-JbsNzL .article-TRD45- {
-	background: rgba(0, 0, 0, 0.9) !important;
+.da-activityFeed .da-column .da-card {
+	/*panel informacyjny*/
+	background: rgba(0, 0, 0, 0.3) !important;
 }
 
-.carousel-1Mb2Ud, .carousel-JbsNzL {
-	background: transparent !important;
+.da-activityFeed .da-column .da-card>.da-content {
+	/*tytul i tekst*/
+	background: rgba(0, 0, 0, 0.3) !important;
 }
 
-.paginationItem-2lUq0s::after {
-	background: rgba(0, 0, 0, 0.7) !important;
+.da-activityFeed .da-column .da-card>.da-wrapper {
+	/*data i link*/
+	background: rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 0px 0px;
 }
 
-.splashArt-3I5Qmp {
-	opacity: 0.9 !important;
+.da-activityFeed .da-column .da-card .da-shareButton {
+	/*share button*/
+	background: var(--button-backg);
+	color: var(--button-color);
 }
 
-.article-FleDq5 {
-	opacity: 1 !important;
+.da-activityFeed .da-column .da-card .da-shareButton:hover {
+	background: var(--button-backg-hover);
+	color: var(--button-color-hover);
 }
 
 /* "Quick Launcher" */
 
-.dock-1-sUKH .dockItem-2kQDqg:hover {
-	background: rgba(0, 0, 0, 0.4);
+.da-activityFeed .da-column .da-wrappedCard {
+	background: rgba(0, 0, 0, 0.5);
 }
 
-.dockItem-2kQDqg .dockItemPlay-3TGCWr, .dockItem-2kQDqg .button-38aScr {
-	background-color: #222277;
-	color: #dddddd;
+.da-activityFeed .da-column .da-wrappedCard .da-grid>.da-container {
+	background: rgba(0, 0, 0, 0.3);
 }
 
-.dockItem-2kQDqg .dockItemPlay-3TGCWr:hover, .dockItem-2kQDqg .button-38aScr:hover {
-	background: #1b1b7e;
-	color: #ffffff;
+.da-activityFeed .da-column .da-wrappedCard .da-grid>.da-container:hover {
+	background: rgba(0, 0, 0, 1);
 }
 
-/* "W grze" */
+/* "W grze", "Ostatnio zagrane" */
 
-.card-7JP0BX {
+.da-activityFeed .da-column .da-outer, .da-activityFeed .da-column .da-outer>.da-card {
+	/*karta*/
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer:hover {
+	/*podsekcja karty*/
+	background: rgba(220, 0, 0, 0.1) !important;
+}
+
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body,
+/*kanał/gra*/
+
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-separator {
+	background: rgba(0, 0, 0, 0.7) !important;
+}
+
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-section {
 	background: rgba(0, 0, 0, 0) !important;
 }
 
-.card-7JP0BX .cardHeader-ey0m8X {
-	background: url(https://i.imgur.com/igEfbIk.png);
-	background-size: cover;
-	background-position: 50% 50%;
-	background-blend-mode: color;
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout {
+	/*popout po najechaniu*/
+	background: rgba(0, 0, 0, 0.9) !important;
 }
 
-.card-7JP0BX .cardHeader-ey0m8X:hover {
-	background: url(https://i.imgur.com/igEfbIk.png);
-	background-size: cover;
-	background-position: 50% 50%;
-	background-blend-mode: color;
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-separator {
+	background: rgba(0, 0, 0, 1) !important;
 }
 
-.card-7JP0BX .cardBody-3kgGGF {
-	background: rgba(0, 0, 0, 0.8);
-}
-
-.headerActions-2l3Hou .button-38aScr {
-	background-color: #222277 !important;
-	color: #dddddd !important;
-}
-
-.headerActions-2l3Hou .button-38aScr:hover {
-	background: #1b1b7e !important;
-	color: #ffffff !important;
-}
-
-.headerActions-2l3Hou .button-38aScr.lookBlank-3eh9lL {
-	background: transparent !important;
-}
-
-/* "Co nowego" */
-
-.card-7JP0BX {
-	background: rgba(0, 0, 0, 0) !important;
-}
-
-.card-7JP0BX .cardHeader-3nTWsD {
-	background: url(https://i.imgur.com/igEfbIk.png);
-	background-size: cover;
-}
-
-.card-7JP0BX .cardHeader-3nTWsD:hover {
-	background: url(https://i.imgur.com/igEfbIk.png);
-	background-size: cover;
-}
-
-.card-7JP0BX .cardBody-3_HhbX {
-	background: rgba(0, 0, 0, 0.8);
-}
-
-.news-2GDtLJ {
-	background: rgba(0, 0, 0, 0.3) !important;
-}
-
-.headerActions-3w_xT- button, .cardBody-3_HhbX button {
-	background-color: #222277 !important;
-	color: #dddddd !important;
-}
-
-.headerActions-3w_xT- button:hover, .cardBody-3_HhbX button:hover {
-	background: #1b1b7e !important;
-	color: #ffffff !important;
-}
-
-.headerActions-3w_xT- .button-38aScr.lookBlank-3eh9lL {
-	background: transparent !important;
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-wrapper:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-memberListItem:hover {
+	background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*lista znajomych / prywatne wiadomosci*/
@@ -470,12 +445,12 @@ body::after {
 }
 
 .table-1tDS6w .actionsCell-1awtNi .button-15wS2S {
-	background-color: #222277 !important;
+	background-color: var(--button-backg) !important;
 	color: #dddddd !important;
 }
 
 .table-1tDS6w .actionsCell-1awtNi .button-15wS2S {
-	background: #1b1b7e !important;
+	background: var(--button-backg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -1028,12 +1003,12 @@ body::after {
 	border-radius: 3px!important;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-	background-color: #222277;
+	background-color: var(--button-backg);
 	color: #dddddd;
 }
 
 .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
-	background: #1b1b7e !important;
+	background: var(--button-backg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -1116,12 +1091,12 @@ body::after {
 /*czesc ustawien: przyciski*/
 
 .userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9, .input-cIJ7To .questionMark-CWEQZn, .userSettingsSecurity-3IYeMF .button-38aScr, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr, .bda-footer .bda-settings-button, .ui-form-title+.bd-pfbtn {
-	background-color: #222277 !important;
+	background-color: var(--button-backg) !important;
 	color: #dddddd !important;
 }
 
 .userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9:hover, .input-cIJ7To .questionMark-CWEQZn:hover, .userSettingsSecurity-3IYeMF .button-38aScr:hover, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr:hover, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr:hover, .bda-footer .bda-settings-button:hover, .ui-form-title+.bd-pfbtn:hover {
-	background: #1b1b7e !important;
+	background: var(--button-backg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -1463,12 +1438,12 @@ body::after {
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (przycisk - dodawanie nowych znajomych)*/
 
 .header-QKLPzZ .actionButton-3W1xZa, .header-QKLPzZ .button-38aScr {
-	background-color: #222277;
+	background-color: var(--button-backg);
 	color: #dddddd;
 }
 
 .header-QKLPzZ .actionButton-3W1xZa:hover, .header-QKLPzZ .button-38aScr:hover {
-	background: #1b1b7e;
+	background: var(--button-backg-hover);
 	color: #ffffff;
 }
 
