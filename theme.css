@@ -603,36 +603,32 @@ body::after {
 
 /*podstrona nitro po wejściu w grę*/
 
-/*carousel*/
-
-.da-spacer .da-applicationStore .da-listing>div:nth-child(2) {
-	/* background-color: rgba(0,0,0,0.3) !important; */
-}
-
 /*header i wszystkie przyciski*/
 
-.da-spacer .da-applicationStore .da-listingWrapper>.da-container {
+.da-spacer .da-applicationStore>.da-container, .da-spacer .da-applicationStore .da-listingWrapper>.da-container {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.da-spacer .da-applicationStore .da-listingWrapper>.da-container>.da-children::after {
+.da-spacer .da-applicationStore>.da-container>.da-children::after, .da-spacer .da-applicationStore .da-listingWrapper>.da-container>.da-children::after {
 	visibility: hidden;
 }
 
-.da-spacer .da-applicationStore .da-button {
-	background: var(--btBlue-bg);
-	color: var(--bt-col);
+/*przycisk subskrybuj w headerze i reszta u dołu*/
+
+.da-spacer .da-applicationStore .da-shinyButton, .da-spacer .da-applicationStore .da-systemPad .da-button {
+	background: var(--btBlue-bg) !important;
+	color: var(--bt-col) !important;
 	border-color: transparent;
 }
 
-.da-spacer .da-applicationStore .da-button:hover {
-	background: var(--btBlue-bg-hover);
-	color: var(--bt-col-hover);
+.da-spacer .da-applicationStore .da-shinyButton:hover, .da-spacer .da-applicationStore .da-systemPad .da-button:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: var(--bt-col-hover) !important;
 }
 
-/*po kolei: "darmowe z Nitro", "dlaczego sie spodoba", "Metacritic", "cechy", "aktualnosci", "zweryfikowany serwer"*/
+/*po kolei: "darmowe z Nitro", "dlaczego sie spodoba", "Metacritic", "cechy", "aktualnosci", "zweryfikowany serwer", "Nitro perks"*/
 
-.da-spacer .da-systemPad .da-listing .da-purchaseUnit .da-bodySection, .da-spacer .da-systemPad .da-listing .da-whyYouMightLikeIt, .da-spacer .da-systemPad .da-listing .da-clickableWrapper .da-card, .da-spacer .da-systemPad .da-listing .da-features .da-row, .da-spacer .da-systemPad .da-listing .da-news>a, .da-spacer .da-systemPad .da-listing .da-guildInvite .da-content {
+.da-spacer .da-systemPad .da-listing .da-purchaseUnit .da-bodySection, .da-spacer .da-systemPad .da-listing .da-whyYouMightLikeIt, .da-spacer .da-systemPad .da-listing .da-clickableWrapper .da-card, .da-spacer .da-systemPad .da-listing .da-features .da-row, .da-spacer .da-systemPad .da-listing .da-news>a, .da-spacer .da-systemPad .da-listing .da-guildInvite .da-content, .da-spacer .da-systemPad .da-listing .da-premiumPerks .da-tile {
 	background: rgba(0, 0, 0, 0.6) !important
 }
 
