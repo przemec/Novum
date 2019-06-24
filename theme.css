@@ -1,9 +1,11 @@
 :root {
 	--background-img: url("https://i.imgur.com/S7AYEBo.png");
-	--button-backg: #222277;
-	--button-color: #dddddd;
-	--button-backg-hover: #1b1b7e;
-	--button-color-hover: #ffffff;
+	--btRed-bg: #aa0000cc;
+	--btRed-bg-hover: #c80000cc;
+	--btBlue-bg: #222277;
+	--btBlue-bg-hover: #1b1b7e;
+	--bt-col: #dddddd;
+	--bt-col-hover: #ffffff;
 }
 
 /*Background*/
@@ -183,12 +185,12 @@ body::after {
 }
 
 .da-noticeRegion .da-container [class*="lookFilled"] {
-	background-color: var(--button-backg) !important;
+	background-color: var(--btBlue-bg) !important;
 	color: #dddddd !important;
 }
 
 .da-noticeRegion .da-container [class*="lookFilled"]:hover {
-	background: var(--button-backg-hover) !important;
+	background: var(--btBlue-bg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -356,13 +358,13 @@ body::after {
 
 .da-activityFeed .da-column .da-card .da-shareButton {
 	/*share button*/
-	background: var(--button-backg);
-	color: var(--button-color);
+	background: var(--btBlue-bg);
+	color: var(--bt-col);
 }
 
 .da-activityFeed .da-column .da-card .da-shareButton:hover {
-	background: var(--button-backg-hover);
-	color: var(--button-color-hover);
+	background: var(--btBlue-bg-hover);
+	color: var(--bt-col-hover);
 }
 
 /* "Quick Launcher" */
@@ -465,13 +467,13 @@ body::after {
 
 .da-spacer .da-gameLibrary .da-table .da-button {
 	/*play button*/
-	background-color: var(--button-backg) !important;
-	color: var(--button-color) !important;
+	background-color: var(--btBlue-bg) !important;
+	color: var(--bt-col) !important;
 }
 
 .da-spacer .da-gameLibrary .da-table .da-button:hover {
-	background: var(--button-backg-hover) !important;
-	color: var(--button-color-hover) !important;
+	background: var(--btBlue-bg-hover) !important;
+	color: var(--bt-col-hover) !important;
 }
 
 /*Strona główna: Znajomi*/
@@ -487,16 +489,21 @@ body::after {
 
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction {
 	/*buttons*/
-	background-color: var(--button-backg) !important;
+	background-color: var(--btBlue-bg) !important;
 }
 
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:hover {
-	background-color: var(--button-backg-hover) !important;
+	background-color: var(--btBlue-bg-hover) !important;
+}
+
+[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3) {
+	/*delete friend bt*/
+	background-color: var(--btRed-bg) !important;
 }
 
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3):hover {
 	/*delete friend bt*/
-	background-color: rgba(200, 0, 0, 0.7) !important;
+	background-color: var(--btRed-bg-hover) !important;
 }
 
 /*menu u gory prywatnych wiadomiosci*/
@@ -543,13 +550,13 @@ body::after {
 }
 
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd>form>button {
-	background: var(--button-backg);
-	color: var(--button-color);
+	background: var(--btBlue-bg);
+	color: var(--bt-col);
 }
 
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd>form>button:hover {
-	background: var(--button-backg-hover);
-	color: var(--button-color-hover);
+	background: var(--btBlue-bg-hover);
+	color: var(--bt-col-hover);
 }
 
 /*lista znajomych: znajdz lub rozpocznij rozmowe popup */
@@ -585,21 +592,49 @@ body::after {
 	border-radius: 10%;
 }
 
-/*lista znajomych: rozmowa glosowa prywatna */
+/*wiadomosc/alert od bota discordowego*/
 
-.video-1FfuMD, .animated-UtE465, .wrapper-29NfPK {
-	background: rgba(0, 0, 0, 0.05) !important;
+.da-messagesWrapper .da-isLocalBot {
+	background: rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 0px 0px;
+}
+
+/*prywatna wiad: rozmowa glosowa prywatna */
+
+.da-inCall .da-video, .da-inCall>.da-container {
+	background: rgba(0, 0, 0, 0) !important;
 	border-radius: 0 0 0 28px;
 }
 
-.video-1FfuMD .center-1Vp33r {
+.da-inCall .da-animated, .da-inCall>.da-wrapper {
+	background: rgba(0, 0, 0, 0.1) !important;
+	border-radius: 0 0 0 28px;
+}
+
+.da-inCall .da-video .da-center {
 	background: rgba(0, 0, 0, 0.4) !important;
 	border-radius: 5px;
 	border: none;
 }
 
-.video-1FfuMD .center-1Vp33r .exitButton-1DkWLl {
-	background: rgba(230, 0, 0, 0.8) !important;
+.da-inCall .da-video .da-center .da-exitButton {
+	background: var(--btRed-bg) !important;
+	color: var(--bt-col);
+}
+
+.da-inCall .da-video .da-center .da-exitButton:hover {
+	background: var(--btRed-bg-hover) !important;
+	color: var(--bt-col-hover);
+}
+
+.da-inCall .da-videoInner .da-actions>button {
+	background: var(--btBlue-bg);
+	color: var(--bt-col);
+}
+
+.da-inCall .da-videoInner .da-actions>button:hover {
+	background: var(--btBlue-bg-hover);
+	color: var(--bt-col-hover);
 }
 
 /*menu do wybierania emoji*/
@@ -1016,12 +1051,12 @@ body::after {
 	border-radius: 3px!important;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out;
-	background-color: var(--button-backg);
+	background-color: var(--btBlue-bg);
 	color: #dddddd;
 }
 
 .standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
-	background: var(--button-backg-hover) !important;
+	background: var(--btBlue-bg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -1104,12 +1139,12 @@ body::after {
 /*czesc ustawien: przyciski*/
 
 .userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9, .input-cIJ7To .questionMark-CWEQZn, .userSettingsSecurity-3IYeMF .button-38aScr, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr, .bda-footer .bda-settings-button, .ui-form-title+.bd-pfbtn {
-	background-color: var(--button-backg) !important;
+	background-color: var(--btBlue-bg) !important;
 	color: #dddddd !important;
 }
 
 .userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9:hover, .input-cIJ7To .questionMark-CWEQZn:hover, .userSettingsSecurity-3IYeMF .button-38aScr:hover, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr:hover, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr:hover, .bda-footer .bda-settings-button:hover, .ui-form-title+.bd-pfbtn:hover {
-	background: var(--button-backg-hover) !important;
+	background: var(--btBlue-bg-hover) !important;
 	color: #ffffff !important;
 }
 
@@ -1451,12 +1486,12 @@ body::after {
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (przycisk - dodawanie nowych znajomych)*/
 
 .header-QKLPzZ .actionButton-3W1xZa, .header-QKLPzZ .button-38aScr {
-	background-color: var(--button-backg);
+	background-color: var(--btBlue-bg);
 	color: #dddddd;
 }
 
 .header-QKLPzZ .actionButton-3W1xZa:hover, .header-QKLPzZ .button-38aScr:hover {
-	background: var(--button-backg-hover);
+	background: var(--btBlue-bg-hover);
 	color: #ffffff;
 }
 
