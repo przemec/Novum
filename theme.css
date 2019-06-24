@@ -38,7 +38,7 @@ body::after {
 	background: rgba(0, 0, 0, 0.1) !important;
 }
 
-#friends .headerBar-UHpsPw, .container-RYiLUQ, [class*="theme-"] .channel-members, .container-2OU7Cz, [class*="theme-"] .chat-3bRxxu form, .channels-3g2vYe, .content-yTz4x3 .flex-spacer, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3, [class*="theme-"] .chat-3bRxxu, .channel-members, .container-iksrDt, .container-3lnMWU, .messagesWrapper-3lZDfY, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .typing-3eiiL_, [class*="theme-"] .activityFeed-1C0EmJ, [class*="theme-"] .headerBar-cxbhPD, [class*="theme-"] .lfg-3xoFkI, .video-3lOWa6, [class*="theme-"] .private-channel-call, .appMount-3VJmYg, .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .private-channels, .container-PNkimc, .container-2Thooq, .container-3gCOGc, [class*="theme-"] .typing-2GQL18, .search-bar.search-bar-light, [class*="theme-"] .layer-3QrUeG, [class*="theme-"] .layers-3iHuyZ, [class*="theme-"] .members-1998pB, .typeWindows-15E0Ys {
+#friends .headerBar-UHpsPw, .container-RYiLUQ, [class*="theme-"] .channel-members, .container-2OU7Cz, [class*="theme-"] .chat-3bRxxu form, .channels-3g2vYe, .content-yTz4x3 .flex-spacer, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3, [class*="theme-"] .chat-3bRxxu, .channel-members, .container-iksrDt, .container-3lnMWU, .messagesWrapper-3lZDfY, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .typing-3eiiL_, [class*="theme-"] .activityFeed-1C0EmJ, [class*="theme-"] .headerBar-cxbhPD, [class*="theme-"] .lfg-3xoFkI, .video-3lOWa6, [class*="theme-"] .private-channel-call, .appMount-3VJmYg, .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .private-channels, .container-PNkimc, .container-2Thooq, .container-3gCOGc, [class*="theme-"] .typing-2GQL18, .search-bar.search-bar-light, [class*="theme-"] .layer-3QrUeG, [class*="theme-"] .layers-3iHuyZ, [class*="theme-"] .members-1998pB, .typeWindows-15E0Ys, .unreadBottom-3hWQ7c {
 	background: transparent !important;
 }
 
@@ -75,20 +75,20 @@ body::after {
 
 .wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper {
 	/*tlo glownej ikony discorda*/
-	background: rgba(0, 0, 200, 0.3);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper.da-selected {
-	background: rgba(0, 0, 200, 0.5);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 .wrapper-1Rf91z #bd-pub-button {
 	/*tlo public serwerow BetterDiscorda*/
-	background: rgba(0, 0, 200, 0.3);
+	background: rgba(0, 0, 0, 0.5);
 }
 
 .wrapper-1Rf91z #bd-pub-button:hover {
-	background: rgba(0, 0, 200, 0.5);
+	background: rgba(0, 0, 0, 0.8);
 }
 
 /*czcionka nazwy serwera po wejsciu na niego*/
