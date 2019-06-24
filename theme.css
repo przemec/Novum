@@ -654,6 +654,10 @@ body::after {
 	background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
+.da-spacer .da-applicationStore .da-browseWrapper .da-browse .da-tileMedia, .da-spacer .da-applicationStore .da-browseWrapper .da-browse .da-tileMedia .da-genres .da-genreTag {
+	background: rgba(0, 0, 0, 0.6) !important
+}
+
 /*popout filtru*/
 
 .da-popouts .da-filterBrowsingSelectPopout {
