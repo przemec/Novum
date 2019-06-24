@@ -592,13 +592,6 @@ body::after {
 	border-radius: 10%;
 }
 
-/*wiadomosc/alert od bota discordowego*/
-
-.da-messagesWrapper .da-isLocalBot {
-	background: rgba(0, 0, 0, 0.5) !important;
-	box-shadow: 0px 0px;
-}
-
 /*prywatna wiad: rozmowa glosowa prywatna */
 
 .da-inCall .da-video, .da-inCall>.da-container {
@@ -637,85 +630,89 @@ body::after {
 	color: var(--bt-col-hover);
 }
 
-/*menu do wybierania emoji*/
+/*wiadomosc/alert od bota discordowego*/
 
-.emojiPicker-3m1S-j {
+.da-messagesWrapper .da-isLocalBot {
+	background: rgba(0, 0, 0, 0.5) !important;
+	box-shadow: 0px 0px;
+}
+
+/*emoji picker*/
+
+.da-popout .da-emojiPicker {
 	background-color: rgba(0, 0, 0, 0.8) !important;
 	border: 1px solid rgba(0, 0, 0, 0.1) !important;
 }
 
-.emojiPicker-3m1S-j .dimmer-3iH-5D {
+.da-popout .da-emojiPicker>.da-dimmer, .da-popout .da-emojiPicker>.da-header>.search-bar {
 	background-color: transparent !important;
 }
 
-.emojiPicker-3m1S-j .header-1nkwgG .search-bar {
-	background-color: transparent !important;
-}
-
-.emojiPicker-3m1S-j .header-1nkwgG .diversitySelector-tmmMv0 .popout-2nUePc {
+.da-popout .da-emojiPicker>.da-header>.da-diversitySelector>.da-popout {
+	/*wybór koloru ręki*/
 	background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.emojiPicker-3m1S-j .header-1nkwgG .diversitySelector-tmmMv0 .popout-2nUePc .item-16cXuq:hover {
-	background-color: rgba(0, 0, 0, 0.9) !important;
+.da-popout .da-emojiPicker>.da-header>.da-diversitySelector>.da-popout .da-item:hover {
+	background-color: rgba(0, 0, 0, 1) !important;
 }
 
-.emojiPicker-3m1S-j .search-bar .search-bar-inner, .emojiPicker-3m1S-j .search-bar.search-bar-light .search-bar-inner {
+.da-popout .da-emojiPicker .search-bar .search-bar-inner, .da-popout .da-emojiPicker .search-bar.search-bar-light .search-bar-inner {
 	background-color: rgba(0, 0, 0, 0.55);
 	color: #fff;
 	border: 1px solid transparent;
 }
 
-.emojiPicker-3m1S-j .stickyHeader-1SS0JU {
+.da-popout .da-emojiPicker .stickyHeader-1SS0JU {
 	background: rgba(0, 0, 0, 0.4) !important;
 	color: #ffffff;
 }
 
-.emojiPicker-3m1S-j .stickyHeader-1SS0JU .category-2U57w6 {
+.da-popout .da-emojiPicker .stickyHeader-1SS0JU .category-2U57w6 {
 	background: rgba(0, 0, 0, 0.4) !important;
 	color: #ffffff;
 }
 
-.emojiPicker-3m1S-j .category-2U57w6 {
+.da-popout .da-emojiPicker .category-2U57w6 {
 	background: transparent !important;
 	color: #acacac;
 }
 
-.emojiPicker-3m1S-j .categories-1feg4n .item-16cXuq.selected-39BZ4S {
+.da-popout .da-emojiPicker .categories-1feg4n .item-16cXuq.selected-39BZ4S {
 	border-bottom-color: #015ce4;
 	background-color: rgba(1, 92, 228, 0.3);
 }
 
-.bda-dark .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-thumb, .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-thumb {
+.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb {
 	background-color: #015ce7 !important;
 	border-radius: 10px !important;
 	border-color: transparent !important
 }
 
-.bda-dark .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-thumb:active, .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-thumb:active {
+.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb:active, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb:active {
 	background-color: #015ce4 !important
 }
 
-.bda-dark .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar, .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar {
+.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar {
 	background: transparent!important;
 	border: none!important
 }
 
-.bda-dark .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-track, .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-track {
+.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track {
 	background: transparent!important;
 	border: none!important
 }
 
-.bda-dark .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-track-piece, .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track-piece, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track-piece {
 	background: transparent!important;
 	border: none!important
 }
 
-.bda-dark .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-corner, .emojiPicker-3m1S-j .scroller-2FKFPG::-webkit-scrollbar-corner {
+.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-corner, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-corner {
 	background: transparent!important
 }
 
-/*emoji: twitch, ulubione i reszta*/
+/*emoji picker: twitch, ulubione i reszta*/
 
 .bda-dark #bda-qem, #bda-qem {
 	background: rgba(0, 0, 0, 0.8) !important;
