@@ -644,6 +644,26 @@ body::after {
 	box-shadow: 0px 0px;
 }
 
+/*podstrona nitro po wejściu w grę i kliknięciu "przeglądaj" w headerze*/
+
+.da-spacer .da-applicationStore .da-browseWrapper>.da-container {
+	background-color: rgba(0, 0, 0, 0) !important;
+}
+
+.da-spacer .da-applicationStore .da-browseWrapper .da-filters .da-searchBox {
+	background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+/*popout filtru*/
+
+.da-popouts .da-filterBrowsingSelectPopout {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+.da-popouts .da-filterBrowsingSelectPopout .da-option:hover {
+	background-color: rgba(0, 0, 0, 0.9);
+}
+
 /*Strona główna: Znajomi*/
 
 [class*="theme-"] .da-friendsTable {
