@@ -774,19 +774,11 @@ body::after {
 	background-color: var(--scroll-backg) !important;
 }
 
-/*status online polaczenia na serverze po wejsciu na glosowy*/
+/*kontener statusu online polaczenia na serverze po wejsciu na glosowy*/
 
-.inner-ptMwR- .rtc-connection-status-connected {
-	color: #47eb7b;
-}
-
-.container-1UB9sr {
+.da-spacer .da-channels .da-container:nth-child(2) {
 	background-color: rgba(0, 0, 0, 0) !important;
 	border-bottom: 1px rgba(0, 0, 0, 0.2);
-}
-
-.container-iksrDt {
-	background-color: rgba(0, 0, 0, 0.2)
 }
 
 /*data wiadomosci na czacie*/
