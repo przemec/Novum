@@ -6,6 +6,10 @@
 	--btBlue-bg-hover: #1b1b7e;
 	--bt-col: #dddddd;
 	--bt-col-hover: #ffffff;
+	--scroll-thumb: #000000b3;
+	--scroll-thumb-bord: #000000e6;
+	--scroll-backg: #00000066;
+	--scroll-backg-bord: #00000000;
 }
 
 /*Background*/
@@ -54,29 +58,23 @@ body::after {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.wrapper-1Rf91z a .da-acronym,
-/*tlo serwerów bez ikonki*/
+/*tlo serwerów bez ikonki i tlo przezroczystych ikon serwerów*/
 
-.wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
-	/*tlo przezroczystych ikon serwerów*/
+.wrapper-1Rf91z a .da-acronym, .wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-.wrapper-1Rf91z a .da-acronym:hover,
-/*tlo serwerów bez ikonki*/
-
-.wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym) {
-	/*tlo przezroczystych ikon serwerów*/
+.wrapper-1Rf91z a .da-acronym:hover, .wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym) {
 	background: rgba(0, 0, 0, 0.8);
 }
 
+/*tlo glownej ikony discorda*/
+
 .wrapper-1Rf91z a.da-wrapper .da-homeIcon {
-	/*tlo glownej ikony discorda*/
 	background: rgba(0, 0, 0, 0);
 }
 
 .wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper {
-	/*tlo glownej ikony discorda*/
 	background: rgba(0, 0, 0, 0.5);
 }
 
@@ -84,8 +82,9 @@ body::after {
 	background: rgba(0, 0, 0, 0.8);
 }
 
+/*tlo public serwerow BetterDiscorda*/
+
 .wrapper-1Rf91z #bd-pub-button {
-	/*tlo public serwerow BetterDiscorda*/
 	background: rgba(0, 0, 0, 0.5);
 }
 
@@ -138,13 +137,9 @@ body::after {
 
 /*polprzezroczyste pola (z wysuwalnymi menu)*/
 
-.da-systemPad .da-select>[class*="css-"],
-/*pole*/
+/*pole i menu*/
 
-.da-systemPad .da-select [class*="-menu"]
-/*menu*/
-
-	{
+.da-systemPad .da-select>[class*="css-"], .da-systemPad .da-select [class*="-menu"] {
 	background: rgba(0, 0, 0, 0.8) !important;
 	border-color: rgba(0, 0, 0, 0.8) !important;
 }
@@ -155,13 +150,9 @@ body::after {
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
 
-.da-systemPad .da-marginBottom20 .da-input,
-/*nazwa serwera*/
+/*nazwa i region serwera*/
 
-.da-systemPad .da-container .da-layout
-/*region serwera*/
-
-	{
+.da-systemPad .da-marginBottom20 .da-input, .da-systemPad .da-container .da-layout {
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 
@@ -235,18 +226,21 @@ body::after {
 
 /*serwer - kanaly tekstowe i glosowe*/
 
+/*default tekstowy i glosowy*/
+
 .da-channels .da-containerDefault .da-name {
-	/*default tekstowy i glosowy*/
 	color: rgb(180, 180, 180);
 }
 
+/*zmutowany tekstowy*/
+
 .da-channels .da-containerDefault .modeMuted-3osy7j .da-name {
-	/*zmutowany tekstowy*/
 	color: rgb(120, 120, 120);
 }
 
+/*wybrany tekstowy*/
+
 .da-channels .da-containerDefault.da-selected .da-content {
-	/*wybrany tekstowy*/
 	background-color: rgba(255, 0, 0, 0.2) !important;
 	color: #ffffff !important;
 }
@@ -255,8 +249,9 @@ body::after {
 	background-color: rgba(255, 0, 0, 0.2) !important;
 }
 
+/*wybrany głosowy*/
+
 .da-channels .da-containerDefault .modeConnected-2IEL4z {
-	/*wybrany głosowy*/
 	background-color: rgba(0, 0, 0, 0) !important;
 	color: rgb(218, 218, 218);
 }
@@ -340,24 +335,28 @@ body::after {
 	visibility: hidden !important;
 }
 
+/*panel informacyjny*/
+
 .da-activityFeed .da-column .da-card {
-	/*panel informacyjny*/
 	background: rgba(0, 0, 0, 0.3) !important;
 }
+
+/*tytul i tekst*/
 
 .da-activityFeed .da-column .da-card>.da-content {
-	/*tytul i tekst*/
 	background: rgba(0, 0, 0, 0.3) !important;
 }
 
+/*data i link*/
+
 .da-activityFeed .da-column .da-card>.da-wrapper {
-	/*data i link*/
 	background: rgba(0, 0, 0, 0.5) !important;
 	box-shadow: 0px 0px;
 }
 
+/*share button*/
+
 .da-activityFeed .da-column .da-card .da-shareButton {
-	/*share button*/
 	background: var(--btBlue-bg);
 	color: var(--bt-col);
 }
@@ -383,20 +382,21 @@ body::after {
 
 /* "W grze", "Ostatnio zagrane" */
 
+/*karta*/
+
 .da-activityFeed .da-column .da-outer, .da-activityFeed .da-column .da-outer>.da-card {
-	/*karta*/
 	background: rgba(0, 0, 0, 0.5) !important;
 }
 
+/*podsekcja karty*/
+
 .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer:hover {
-	/*podsekcja karty*/
 	background: rgba(220, 0, 0, 0.1) !important;
 }
 
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body,
 /*kanał/gra*/
 
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-separator {
+.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-separator {
 	background: rgba(0, 0, 0, 0.7) !important;
 }
 
@@ -404,8 +404,9 @@ body::after {
 	background: rgba(0, 0, 0, 0) !important;
 }
 
+/*popout po najechaniu*/
+
 .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout {
-	/*popout po najechaniu*/
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
@@ -419,15 +420,15 @@ body::after {
 
 /*Strona główna: Biblioteka*/
 
+/*root to pole po kliknieciu w Gift Inventory u góry biblioteki*/
+
 .da-spacer>.da-gameLibrary, .da-spacer>.da-root {
-	/*root to pole po kliknieciu w Gift Inventory u góry biblioteki*/
 	background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-.da-spacer .da-gameLibrary .da-libraryHeader,
 /*header*/
 
-.da-spacer .da-root .da-libraryHeader {
+.da-spacer .da-gameLibrary .da-libraryHeader, .da-spacer .da-root .da-libraryHeader {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
@@ -435,17 +436,17 @@ body::after {
 	visibility: hidden !important;
 }
 
-.da-spacer .da-gameLibrary .da-libraryHeader .da-item:hover,
 /*button My Games i Gift Inventory*/
 
-.da-spacer .da-gameLibrary .da-libraryHeader .da-item.da-selected, .da-spacer .da-root .da-libraryHeader .da-item:hover, .da-spacer .da-root .da-libraryHeader .da-item.da-selected {
+.da-spacer .da-gameLibrary .da-libraryHeader .da-item:hover, .da-spacer .da-gameLibrary .da-libraryHeader .da-item.da-selected, .da-spacer .da-root .da-libraryHeader .da-item:hover, .da-spacer .da-root .da-libraryHeader .da-item.da-selected {
 	color: #dddddd;
 	font-weight: bold;
 	background: rgba(0, 0, 0, 0.3) !important
 }
 
+/*filtr*/
+
 .da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
-	/*filtr*/
 	background-color: rgba(0, 0, 0, 0.5) !important;
 	border-bottom: 2px solid rgba(0, 0, 0, 0);
 	transition: all 0.5s ease-in-out;
@@ -456,8 +457,9 @@ body::after {
 	border-color: rgba(1, 92, 228, 0.7) !important;
 }
 
+/*sticky header*/
+
 .da-spacer .da-gameLibrary .da-table .da-stickyHeader {
-	/*sticky header*/
 	background: transparent;
 }
 
@@ -465,8 +467,9 @@ body::after {
 	background: rgba(0, 0, 0, 0.3) !important;
 }
 
+/*play button*/
+
 .da-spacer .da-gameLibrary .da-table .da-button {
-	/*play button*/
 	background-color: var(--btBlue-bg) !important;
 	color: var(--bt-col) !important;
 }
@@ -487,8 +490,9 @@ body::after {
 	background: linear-gradient(to right, rgba(34, 59, 170, 0.3) 45%, transparent) !important;
 }
 
+/*buttons*/
+
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction {
-	/*buttons*/
 	background-color: var(--btBlue-bg) !important;
 }
 
@@ -496,13 +500,13 @@ body::after {
 	background-color: var(--btBlue-bg-hover) !important;
 }
 
+/*delete friend bt*/
+
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3) {
-	/*delete friend bt*/
 	background-color: var(--btRed-bg) !important;
 }
 
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3):hover {
-	/*delete friend bt*/
 	background-color: var(--btRed-bg-hover) !important;
 }
 
@@ -516,8 +520,9 @@ body::after {
 	visibility: hidden !important;
 }
 
+/*buttony*/
+
 [class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item:not(.da-selected):hover {
-	/*buttony*/
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -526,8 +531,9 @@ body::after {
 	font-size: 17px;
 }
 
+/*primary: dodaj znajomego*/
+
 [class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item.da-primary {
-	/*primary: dodaj znajomego*/
 	background-color: rgba(0, 255, 128, 0.1) !important;
 	color: rgba(0, 255, 128, 0.7) !important;
 }
@@ -539,8 +545,9 @@ body::after {
 	font-size: 16px;
 }
 
+/*dodawanie do znajomych*/
+
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader {
-	/*dodawanie do znajomych*/
 	background: rgba(0, 0, 0, 0) !important;
 }
 
@@ -640,16 +647,18 @@ body::after {
 /*emoji picker*/
 
 .da-popout .da-emojiPicker {
-	background-color: rgba(0, 0, 0, 0.8) !important;
-	border: 1px solid rgba(0, 0, 0, 0.1) !important;
+	background-color: rgba(0, 0, 0, 0.9) !important;
+	border-color: transparent !important;
+	border-radius: 5px;
 }
 
-.da-popout .da-emojiPicker>.da-dimmer, .da-popout .da-emojiPicker>.da-header>.search-bar {
+.da-popout .da-emojiPicker>.da-dimmer, .da-popout .da-emojiPicker>.da-header>.da-searchBar {
 	background-color: transparent !important;
 }
 
+/*wybór koloru ręki*/
+
 .da-popout .da-emojiPicker>.da-header>.da-diversitySelector>.da-popout {
-	/*wybór koloru ręki*/
 	background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
@@ -657,95 +666,96 @@ body::after {
 	background-color: rgba(0, 0, 0, 1) !important;
 }
 
-.da-popout .da-emojiPicker .search-bar .search-bar-inner, .da-popout .da-emojiPicker .search-bar.search-bar-light .search-bar-inner {
-	background-color: rgba(0, 0, 0, 0.55);
-	color: #fff;
+/*pasek wyszukiwania*/
+
+.da-popout .da-emojiPicker>.da-header>.da-searchBar .da-inner, .da-popout .da-emojiPicker>.da-header>.da-searchBar.da-lightTheme .da-inner {
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
 	border: 1px solid transparent;
 }
 
-.da-popout .da-emojiPicker .stickyHeader-1SS0JU {
-	background: rgba(0, 0, 0, 0.4) !important;
+/*sticky header*/
+
+.da-popout .da-emojiPicker .da-scroller>.da-stickyHeader, .da-popout .da-emojiPicker .da-scroller>.da-stickyHeader .da-category {
+	background: rgba(0, 0, 0, 0.5) !important;
 	color: #ffffff;
 }
 
-.da-popout .da-emojiPicker .stickyHeader-1SS0JU .category-2U57w6 {
-	background: rgba(0, 0, 0, 0.4) !important;
-	color: #ffffff;
-}
+/*header kategorii*/
 
-.da-popout .da-emojiPicker .category-2U57w6 {
+.da-popout .da-emojiPicker .da-scroller>.da-category {
 	background: transparent !important;
-	color: #acacac;
+	color: #cacaca;
 }
+
+/*wybrana kategoria z ikon u dołu*/
 
 .da-popout .da-emojiPicker .categories-1feg4n .item-16cXuq.selected-39BZ4S {
-	border-bottom-color: #015ce4;
-	background-color: rgba(1, 92, 228, 0.3);
+	border-bottom-color: var(--btBlue-bg);
+	background-color: var(--btBlue-bg-hover);
 }
 
-.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb {
-	background-color: #015ce7 !important;
+/*header kategorii*/
+
+.da-popout .da-emojiPicker .da-scroller>.da-row>.da-emojiItem {
+	transition: all 0.3s;
+	opacity: 0.7;
+}
+
+/*header kategorii*/
+
+.da-popout .da-emojiPicker .da-scroller>.da-row>.da-emojiItem.da-selected {
+	transform: scale(1.5);
+	opacity: 1;
+}
+
+/*scrollbar*/
+
+.da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb {
+	background-color: var(--btBlue-bg-hover);
 	border-radius: 10px !important;
 	border-color: transparent !important
 }
 
-.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb:active, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb:active {
-	background-color: #015ce4 !important
+.da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-thumb:active {
+	background-color: var(--btBlue-bg-hover) !important
 }
 
-.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar {
+.da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar {
 	background: transparent!important;
 	border: none!important
 }
 
-.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track {
+.da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track {
 	background: transparent!important;
 	border: none!important
 }
 
-.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track-piece, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track-piece {
+.da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-track-piece {
 	background: transparent!important;
 	border: none!important
 }
 
-.bda-dark .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-corner, .da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-corner {
+.da-popout .da-emojiPicker .scroller-2FKFPG::-webkit-scrollbar-corner {
 	background: transparent!important
 }
 
-/*emoji picker: twitch, ulubione i reszta*/
+/*emoji picker: usuniecie BetterDiscordowego menu u góry*/
 
-.bda-dark #bda-qem, #bda-qem {
-	background: rgba(0, 0, 0, 0.8) !important;
-	border-bottom: 1px solid rgba(30, 30, 30, 0.3)!important
+#bda-qem {
+	visibility: hidden;
 }
 
-.bda-dark #bda-qem-favourite-container, .bda-dark #bda-qem-twitch-container, .bda-dark .emoji-picker, #bda-qem-favourite-container, #bda-qem-twitch-container, .emoji-picker {
-	background: rgba(0, 0, 0, 0.8)!important
+/*Scrollbar na czacie serwera i w prywatnej konwersacji*/
+
+[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap ::-webkit-scrollbar-thumb {
+	border-color: var(--scroll-thumb-bord) !important;
+	background-color: var(--scroll-thumb) !important;
 }
 
-.bda-dark #bda-qem button, #bda-qem button {
-	background: rgba(0, 0, 0, 0.6)!important;
-	border: none!important;
-}
-
-.bda-dark #bda-qem button.active, #bda-qem button.active {
-	background-color: rgba(0, 0, 0, 0.95) !important
-}
-
-.bda-dark #bda-qem button:not(.active):hover, #bda-qem button:not(.active):hover {
-	background: rgba(0, 0, 0, 0.8) !important
-}
-
-/*Scrollbar*/
-
-[class*="theme-"] .friendsTable-133bsv .scrollerWrap-2lJEkd ::-webkit-scrollbar-thumb, [class*="theme-"] .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd ::-webkit-scrollbar-thumb {
-	background-color: rgba(0, 0, 0, 0.3)!important;
-	border-color: rgba(0, 0, 0, 0.3)!important;
-}
-
-[class*="theme-"] .friendsTable-133bsv .scrollerWrap-2lJEkd ::-webkit-scrollbar-track-piece, [class*="theme-"] .messagesWrapper-3lZDfY .scrollerWrap-2lJEkd ::-webkit-scrollbar-track-piece {
-	background-color: rgba(0, 0, 0, 0.2) !important;
-	border-color: rgba(0, 0, 0, 0.1) !important;
+[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
+	border-color: var(--scroll-backg-bord) !important;
+	background-color: var(--scroll-backg) !important;
 }
 
 /*status online polaczenia na serverze po wejsciu na glosowy*/
