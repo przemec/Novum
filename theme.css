@@ -901,6 +901,7 @@ body::after {
 .da-popout .da-emojiPicker .da-scroller>.da-row>.da-emojiItem.da-selected {
 	transform: scale(1.5);
 	opacity: 1;
+	background-color: transparent;
 }
 
 /*scrollbar emoji picker*/
