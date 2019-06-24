@@ -6,10 +6,14 @@
 	--btBlue-bg-hover: #1b1b7e;
 	--bt-col: #dddddd;
 	--bt-col-hover: #ffffff;
-	--scroll-thumb: #000000b3;
-	--scroll-thumb-bord: #000000e6;
-	--scroll-backg: #00000066;
-	--scroll-backg-bord: #00000000;
+	--scrollBlack-thumb: #000000b3;
+	--scrollBlack-thumb-bord: #000000e6;
+	--scrollBlack-backg: #00000066;
+	--scrollBlack-backg-bord: #00000000;
+	--scrollColor-thumb: #db212171;
+	--scrollColor-thumb-bord: #db212171;
+	--scrollColor-backg: #00000000;
+	--scrollColor-backg-bord: #00000000;
 }
 
 /*Background*/
@@ -46,6 +50,34 @@ body::after {
 
 #friends .headerBar-UHpsPw, .container-RYiLUQ, [class*="theme-"] .channel-members, .container-2OU7Cz, [class*="theme-"] .chat-3bRxxu form, .channels-3g2vYe, .content-yTz4x3 .flex-spacer, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3, [class*="theme-"] .chat-3bRxxu, .channel-members, .container-iksrDt, .container-3lnMWU, .messagesWrapper-3lZDfY, [class*="theme-"] .title-qAcLxz, [class*="theme-"] .typing-3eiiL_, [class*="theme-"] .activityFeed-1C0EmJ, [class*="theme-"] .headerBar-cxbhPD, [class*="theme-"] .lfg-3xoFkI, .video-3lOWa6, [class*="theme-"] .private-channel-call, .appMount-3VJmYg, .appMount-3lHmkl, .container-2lgZY8, .channels-Ie2l6A, .private-channels, .container-PNkimc, .container-2Thooq, .container-3gCOGc, [class*="theme-"] .typing-2GQL18, .search-bar.search-bar-light, [class*="theme-"] .layer-3QrUeG, [class*="theme-"] .layers-3iHuyZ, [class*="theme-"] .members-1998pB, .typeWindows-15E0Ys, .unreadBottom-3hWQ7c {
 	background: transparent !important;
+}
+
+/*czarne scrollbary*/
+
+/*Scrollbar na czacie serwera, w prywatnej konwersacji, activity feedzie i bibliotece gier*/
+
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-thumb {
+	border-color: var(--scrollBlack-thumb-bord) !important;
+	background-color: var(--scrollBlack-thumb) !important;
+}
+
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
+	border-color: var(--scrollBlack-backg-bord) !important;
+	background-color: var(--scrollBlack-backg) !important;
+}
+
+/*kolorowe scrollbary*/
+
+/*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, lista prywatnych wiadomosci*/
+
+[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-thumb {
+	border-color: var(--scrollColor-thumb-bord) !important;
+	background-color: var(--scrollColor-thumb) !important;
+}
+
+[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
+	border-color: var(--scrollColor-backg-bord) !important;
+	background-color: var(--scrollColor-backg) !important;
 }
 
 /*panel z serwerami po samej lewej*/
@@ -318,31 +350,6 @@ body::after {
 .da-privateChannels .da-searchBar .da-container {
 	background: rgba(0, 0, 0, 0.2) !important;
 }
-
-/*kanaly wideo na serwerze*/
-
-/* .videoBackground-3AY_fu,
-.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49,
-.nochat-3bRxxu-3nt48u .wrapper-3eE7AX {
-    background: transparent !important;
-	border-radius: 30px;
-} 
-.nochat-3bRxxu-3nt48u .videoTop-eOkSPq {
-    background: transparent !important;
-}
-.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49 .backgroundBlur-dazcBE,
-.nochat-3bRxxu-3nt48u .videoBackgroundWrapper-2dCt49 .backgroundBlurOverlay-1JS5RF {
-    opacity: 0.3 !important;
-}
-.videoBackground-3AY_fu .backgroundBlur-dazcBE,
-.videoBackground-3AY_fu .backgroundBlurOverlay-1JS5RF {
-    opacity: 0.3 !important;
-	margin: 10px !important;
-	border-radius: 30px;
-}
-.contentSelectedVoice-1WDIBM {
-	background: rgba(240, 0, 0, 0.15);
-}	 */
 
 /*Strona główna: Aktywność*/
 
@@ -931,18 +938,6 @@ body::after {
 
 #bda-qem {
 	visibility: hidden;
-}
-
-/*Scrollbar na czacie serwera i w prywatnej konwersacji*/
-
-[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap ::-webkit-scrollbar-thumb {
-	border-color: var(--scroll-thumb-bord) !important;
-	background-color: var(--scroll-thumb) !important;
-}
-
-[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
-	border-color: var(--scroll-backg-bord) !important;
-	background-color: var(--scroll-backg) !important;
 }
 
 /*data wiadomosci na czacie*/
