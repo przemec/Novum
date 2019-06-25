@@ -971,10 +971,10 @@ body::after {
 	margin-top: 15px;
 }
 
-/*tlo nowej wiadomosci*/
+/*nowa wiadomosc*/
 
 [class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap .da-divider.da-dividerRed>span {
-	background: var(--default-selected-rgba) !important;
+	background: var(--default-hover-rgba) !important;
 }
 
 [class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap .da-divider:not(.da-dividerRed)>span {
