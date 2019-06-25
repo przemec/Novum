@@ -1693,27 +1693,27 @@ body::after {
 
 /*popout*/
 
-.da-modal>.da-inner>form {
+.da-modal>.da-inner>.da-container {
 	background: rgba(0, 0, 0, 0.8);
 	border-color: rgba(0, 0, 0, 0) !important;
 	box-shadow: 0px 0px;
 }
 
-.da-modal>.da-inner>form * {
+.da-modal>.da-inner>.da-container * {
 	border-color: rgba(0, 0, 0, 0) !important;
 	box-shadow: 0px 0px;
 }
 
-.da-modal>.da-inner>form>* {
+.da-modal>.da-inner>.da-container>* {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.da-modal>.da-inner>form .flex-1O1GKY .button-38aScr {
+.da-modal>.da-inner>.da-container .da-button[class*="Filled"] {
 	background: var(--btRed-bg) !important;
 	color: var(--bt-col) !important;
 }
 
-.da-modal>.da-inner>form .flex-1O1GKY .button-38aScr:hover {
+.da-modal>.da-inner>.da-container .da-button[class*="Filled"]:hover {
 	background: var(--btRed-bg-hover) !important;
 	color: var(--bt-col-hover) !important;
 }
