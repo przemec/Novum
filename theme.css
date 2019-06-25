@@ -1,5 +1,7 @@
 :root {
 	--background-img: url("https://i.imgur.com/S7AYEBo.png");
+	--default-hover-rgba: rgba(200, 0, 0, 0.15);
+	--default-selected-rgba: rgba(200, 0, 0, 0.3);
 	--btRed-bg: #aa0000cc;
 	--btRed-bg-hover: #c80000cc;
 	--btBlue-bg: #222277;
@@ -175,12 +177,14 @@ body::after {
 
 /*sidebar po lewej*/
 
-.da-systemPad .da-sidebar .da-item:hover {
-	background: rgba(200, 0, 0, 0.2) !important;
+.da-systemPad .da-sidebar .da-item:hover, .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
+	background: var(--default-hover-rgba) !important;
+	color: var(--bt-col) !important;
 }
 
-.da-systemPad .da-sidebar .da-item.da-selected, .da-systemPad .da-sidebar .da-item.da-selected:hover {
-	background: rgba(200, 0, 0, 0.4) !important;
+.da-systemPad .da-sidebar .da-item.da-selected, .da-systemPad .da-sidebar .da-item.da-selected:hover, .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"], .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"], .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
+	background: var(--default-selected-rgba) !important;
+	color: var(--bt-col-hover) !important;
 }
 
 /*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
@@ -222,6 +226,16 @@ body::after {
 .da-systemPad .da-contentColumnDefault .da-card {
 	background: rgba(0, 0, 0, 0.5) !important;
 	border-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.da-systemPad .da-contentColumnDefault .da-button {
+	background: var(--btBlue-bg);
+	color: var(--bt-col);
+}
+
+.da-systemPad .da-contentColumnDefault .da-button:hover {
+	background: var(--btBlue-bg-hover);
+	color: var(--bt-col-hover);
 }
 
 /*popout o niezapisanych zmianach*/
