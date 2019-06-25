@@ -70,14 +70,14 @@ body::after {
 
 /*kolorowe scrollbary*/
 
-/*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, lista prywatnych wiadomosci*/
+/*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, lista prywatnych wiadomosci, przypiete wiadomosci*/
 
-[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb {
 	border-color: var(--scrollColor-thumb-bord) !important;
 	background-color: var(--scrollColor-thumb) !important;
 }
 
-[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
 	border-color: var(--scrollColor-backg-bord) !important;
 	background-color: var(--scrollColor-backg) !important;
 }
@@ -1117,430 +1117,6 @@ body::after {
 	box-shadow: none!important
 }
 
-/*Ustawienia*/
-
-[class*="theme-"] .standardSidebarView-3F1I7i {
-	background: rgba(0, 0, 0, 0);
-}
-
-[class*="theme-"] .standardSidebarView-3F1I7i .contentRegion-3nDuYy {
-	background: rgba(0, 0, 0, 0);
-}
-
-[class*="theme-"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
-	background: rgba(0, 0, 0, 0);
-}
-
-[class*="theme-"] .ui-standard-sidebar-view {
-	background: rgba(0, 0, 0, 0);
-}
-
-[class*="theme-"] .header-2RyJ0Y {
-	color: #bfbfbf;
-	text-transform: uppercase;
-}
-
-[class*="theme-"] .item-PXvHYJ {
-	color: #ffffff;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item {
-	color: #000000;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	margin-bottom: 2px;
-	padding: 6px 10px;
-	position: relative;
-	font-size: 16px;
-	line-height: 20px;
-	border-radius: 3px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	flex-shrink: 0;
-	font-weight: 500;
-	cursor: pointer;
-}
-
-[class*="theme-"] .itemSelected-1qLhcL {
-	background-color: rgba(255, 0, 0, 0.2);
-	color: #ffffff;
-	font-weight: bold;
-}
-
-.title-3sZWYQ {
-	color: #cbcbcb !important
-}
-
-.description-3_Ncsb {
-	color: #9a9a9a !important
-}
-
-/*ikonki z mozliwoscia polaczenia konta z innym*/
-
-.connectedAccounts-2-XP1G .inner-2Y6JuD {
-	background-color: rgba(0, 0, 0, 0.4);
-	border-color: black;
-}
-
-.connectedAccounts-2-XP1G .inner-2Y6JuD:hover {
-	background-color: rgba(0, 0, 0, 0.7);
-	border-color: black;
-}
-
-/*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
-
-.card-FDVird {
-	background: transparent !important;
-	border: none;
-}
-
-.card-FDVird:hover {
-	background: transparent !important;
-	border: none;
-}
-
-.card-FDVird::before {
-	background: transparent !important;
-	border: none;
-}
-
-.card-FDVird:hover::before {
-	background: transparent !important;
-	border: none;
-}
-
-/*czesc ustawien: Gry*/
-
-.game-name-last-played .game-name-input:focus, .game-name-last-played .game-name-input:hover {
-	background: rgba(0, 0, 0, 0.5) !important;
-	border-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-/*czesc ustawien: BetterDiscord*/
-
-#bd-settings-sidebar .ui-tab-bar-header {
-	color: #bfbfbf;
-	padding: 6px 10px;
-	font-size: 12px;
-	line-height: 16px;
-	text-transform: uppercase;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	overflow: hidden;
-	flex-shrink: 0;
-	font-weight: bold;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item.selected {
-	color: #fff;
-	background-color: #005ce6;
-}
-
-.bd-pfbtn {
-	background: rgba(255, 0, 0, 0.32);
-	color: #ffffff;
-	padding: 4px;
-}
-
-/*CUSTOM CSS*/
-
-.contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
-	background: rgba(0, 0, 0, 0.6);
-	box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .1)
-}
-
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
-	height: 30px;
-	margin-right: 3px;
-	border: none!important;
-	border-radius: 3px!important;
-	-webkit-transition: all .3s ease-in-out;
-	transition: all .3s ease-in-out;
-	background-color: var(--btBlue-bg);
-	color: #dddddd;
-}
-
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
-	background: var(--btBlue-bg-hover) !important;
-	color: #ffffff !important;
-}
-
-#bd-customcss-editor {
-	background: transparent !important;
-}
-
-#bd-customcss-editor .ace_gutter {
-	background: rgba(0, 0, 0, 0.6) !important;
-}
-
-#bd-customcss-editor .ace_content {
-	background: rgba(0, 0, 0, 0.5) !important;
-}
-
-.ace_active-line {
-	background: rgba(0, 0, 23, 0.5) !important;
-}
-
-.ace_gutter-cell {
-	background: transparent !important;
-}
-
-.ace_selection {
-	background: rgba(0, 90, 250, 0.3) !important;
-}
-
-/*czesc ustawien: polprzezroczyste pola*/
-
-.item-26Dhrx, .formNotice-2_hHWR, .accountList-33MS45, .userInfoViewing-16kqK3, .userInfoEditing-1CEzdT, .settings-closed.ui-switch-item, .flex-center.not-detected {
-	background: rgba(0, 0, 0, 0.6) !important;
-	border-color: #000000 !important;
-}
-
-.info-3LOr12 .titleChecked-2wg0pd {
-	text-shadow: none !important;
-}
-
-.info-3LOr12 .descChecked-XkfPsU {
-	color: #aaaaaa !important;
-}
-
-/*czesc ustawien: polprzezroczyste pola z wysuwanym menu*/
-
-.select-2TCrqx .Select-control, .select-2TCrqx .Select-menu-outer {
-	background: rgba(0, 0, 0, 0.6) !important;
-	border-color: black !important;
-}
-
-.select-2TCrqx .Select-option {
-	background: transparent !important;
-}
-
-.select-2TCrqx .Select-option.is-focused {
-	background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/*czesc ustawien: przyciski i paski "przesuwane" */
-
-.ui-switch, .valueUnchecked-2lU_20 {
-	background: rgba(0, 0, 0, 0.4) !important
-}
-
-.ui-switch::before, .valueUnchecked-2lU_20::after {
-	background: #eeeeee !important
-}
-
-.ui-switch.checked, .valueChecked-m-4IJZ {
-	background: #1942e6 !important
-}
-
-[class*="theme-"] .bar-2Qqk5Z {
-	background: #ffffff;
-}
-
-.barFill-23-gu- {
-	background-color: #1942e6;
-}
-
-/*czesc ustawien: przyciski*/
-
-.userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9, .input-cIJ7To .questionMark-CWEQZn, .userSettingsSecurity-3IYeMF .button-38aScr, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr, .bda-footer .bda-settings-button, .ui-form-title+.bd-pfbtn {
-	background-color: var(--btBlue-bg) !important;
-	color: #dddddd !important;
-}
-
-.userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9:hover, .input-cIJ7To .questionMark-CWEQZn:hover, .userSettingsSecurity-3IYeMF .button-38aScr:hover, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr:hover, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr:hover, .bda-footer .bda-settings-button:hover, .ui-form-title+.bd-pfbtn:hover {
-	background: var(--btBlue-bg-hover) !important;
-	color: #ffffff !important;
-}
-
-/*czesc ustawien: zaznaczalne polprzezroczyste pola po ich wybraniu*/
-
-/* "Prywatnosc i bezpieczenstwo", "Moderacja"(serwer) */
-
-/* zielony */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
-	background: rgba(0, 230, 77, 0.3) !important;
-	border-color: rgba(0, 230, 77, 0.3) !important;
-}
-
-/* zolty */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
-	background: rgba(255, 153, 0, 0.3) !important;
-	border-color: rgba(255, 153, 0, 0.3) !important;
-}
-
-/* pomaranczowy */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
-	background: rgba(242, 97, 0, 0.3) !important;
-	border-color: rgba(242, 97, 0, 0.3) !important;
-}
-
-/* czerwony */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
-	background: rgba(244, 40, 40, 0.3) !important;
-	border-color: rgba(204, 0, 0, 0.3) !important;
-}
-
-/*IKONKI USTAWIEN*/
-
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(2)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(3)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(4)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(5)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:last-child::after {
-	background: none !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item {
-	padding-left: 50px !important;
-}
-
-[class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item.selected {
-	background-color: var(--main-color);
-}
-
-[class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item:hover {
-	background-color: var(--hover-color);
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"] {
-	padding-left: 50px !important;
-}
-
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"] {
-	padding-left: 20px !important;
-}
-
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]::after {
-	content: "";
-	position: absolute;
-	width: 24px;
-	height: 24px;
-	left: 15px;
-	margin-top: -2px;
-	opacity: .3;
-	-webkit-transition: all .15s ease-in-out;
-	transition: all .15s ease-in-out;
-}
-
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:hover::after {
-	opacity: .7;
-}
-
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"][class*="selected-"]::after {
-	opacity: 1;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(2)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(3)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(4)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/apps.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(5)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(6)::after {
-	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/Credit_card.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(8)::after {
-	background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(9)::after {
-	background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
-	background-size: cover;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
-	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/open_in_new.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(26)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
-}
-
-.platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(24)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
-}
-
-.platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
-}
-
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(12)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(20)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(23)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(22)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/betterdiscord.svg) !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
-	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/6c6aaf1a/Icons/bandage.svg) !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg) !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/code.svg) !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg) !important;
-}
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(8)::after {
-	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/palette.svg) !important;
-}
-
 /*klikniecie na uzytkownika prawym przyciskiem*/
 
 [class*="theme-"] .itemGroup-1tL0uz {
@@ -2090,42 +1666,477 @@ body::after {
 	opacity: 0.3 !important;
 }
 
-/*gdy najedziesz myszka na cos*/
+/*tooltip po najechaniu na ikone serwera/przycisk rozłączenia itp*/
 
-.tooltip.tooltip-black {
-	background-color: rgba(29, 51, 149, 0.8) !important;
-	background-size: cover;
-	background-position: center !important;
-	border: 2px solid #fff;
-	border-color: rgb(21, 37, 136);
-	color: white;
+[class*="tooltipBlack-"] {
+	background-color: var(--btBlue-bg) !important;
+	border: 2px solid var(--btBlue-bg);
+	color: var(--bt-col);
 	font-weight: bold;
 }
 
-.tooltip::after {
-	visibility: hidden;
+[class*="tooltipBlack-"] .da-tooltipPointer {
+	border-top-color: var(--btBlue-bg) !important;
 }
 
 /*AFK POPOUT*/
 
-.inner-1JeGVc .container-14fypd {
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 2px solid rgba(30, 30, 30, 1);
+/*tło*/
+
+[class*="theme-"]>.da-backdrop[style="opacity: 0.85; background-color: rgb(0, 0, 0); z-index: 1000; transform: translateZ(0px);"] {
+	opacity: 1 !important;
+	background: linear-gradient(transparent, #000) !important;
 }
 
-.content-2BXhLs {
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 2px solid rgba(30, 30, 30, 1);
+/*popout*/
+
+.da-modal>.da-inner>form {
+	background: rgba(0, 0, 0, 0.8);
+	border-color: rgba(0, 0, 0, 0) !important;
+	box-shadow: 0px 0px;
 }
 
-.container-14fypd .flex-1O1GKY {
-	background-color: rgba(0, 0, 0, 0.5);
-	border: 2px solid rgba(30, 30, 30, 1);
+.da-modal>.da-inner>form * {
+	border-color: rgba(0, 0, 0, 0) !important;
+	box-shadow: 0px 0px;
 }
 
-.container-14fypd .flex-1O1GKY .button-38aScr {
-	background-color: rgba(0, 0, 0, 1);
-	border: 2px solid rgba(30, 30, 30, 1);
+.da-modal>.da-inner>form>* {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+.da-modal>.da-inner>form .flex-1O1GKY .button-38aScr {
+	background: var(--btRed-bg) !important;
+	color: var(--bt-col) !important;
+}
+
+.da-modal>.da-inner>form .flex-1O1GKY .button-38aScr:hover {
+	background: var(--btRed-bg-hover) !important;
+	color: var(--bt-col-hover) !important;
+}
+
+/*Ustawienia*/
+
+[class*="theme-"] .standardSidebarView-3F1I7i {
+	background: rgba(0, 0, 0, 0);
+}
+
+[class*="theme-"] .standardSidebarView-3F1I7i .contentRegion-3nDuYy {
+	background: rgba(0, 0, 0, 0);
+}
+
+[class*="theme-"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
+	background: rgba(0, 0, 0, 0);
+}
+
+[class*="theme-"] .ui-standard-sidebar-view {
+	background: rgba(0, 0, 0, 0);
+}
+
+[class*="theme-"] .header-2RyJ0Y {
+	color: #bfbfbf;
+	text-transform: uppercase;
+}
+
+[class*="theme-"] .item-PXvHYJ {
+	color: #ffffff;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item {
+	color: #000000;
+	padding-top: 6px;
+	padding-bottom: 6px;
+	margin-bottom: 2px;
+	padding: 6px 10px;
+	position: relative;
+	font-size: 16px;
+	line-height: 20px;
+	border-radius: 3px;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	flex-shrink: 0;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+[class*="theme-"] .itemSelected-1qLhcL {
+	background-color: rgba(255, 0, 0, 0.2);
+	color: #ffffff;
+	font-weight: bold;
+}
+
+.title-3sZWYQ {
+	color: #cbcbcb !important
+}
+
+.description-3_Ncsb {
+	color: #9a9a9a !important
+}
+
+/*ikonki z mozliwoscia polaczenia konta z innym*/
+
+.connectedAccounts-2-XP1G .inner-2Y6JuD {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: black;
+}
+
+.connectedAccounts-2-XP1G .inner-2Y6JuD:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-color: black;
+}
+
+/*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
+
+.card-FDVird {
+	background: transparent !important;
+	border: none;
+}
+
+.card-FDVird:hover {
+	background: transparent !important;
+	border: none;
+}
+
+.card-FDVird::before {
+	background: transparent !important;
+	border: none;
+}
+
+.card-FDVird:hover::before {
+	background: transparent !important;
+	border: none;
+}
+
+/*czesc ustawien: Gry*/
+
+.game-name-last-played .game-name-input:focus, .game-name-last-played .game-name-input:hover {
+	background: rgba(0, 0, 0, 0.5) !important;
+	border-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/*czesc ustawien: BetterDiscord*/
+
+#bd-settings-sidebar .ui-tab-bar-header {
+	color: #bfbfbf;
+	padding: 6px 10px;
+	font-size: 12px;
+	line-height: 16px;
+	text-transform: uppercase;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	flex-shrink: 0;
+	font-weight: bold;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item.selected {
+	color: #fff;
+	background-color: #005ce6;
+}
+
+.bd-pfbtn {
+	background: rgba(255, 0, 0, 0.32);
+	color: #ffffff;
+	padding: 4px;
+}
+
+/*CUSTOM CSS*/
+
+.contentRegion-3nDuYy #bd-customcss-attach-controls, #bd-customcss-detach-container #bd-customcss-attach-controls {
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .1)
+}
+
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
+	height: 30px;
+	margin-right: 3px;
+	border: none!important;
+	border-radius: 3px!important;
+	-webkit-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+	background-color: var(--btBlue-bg);
+	color: #dddddd;
+}
+
+.standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: #ffffff !important;
+}
+
+#bd-customcss-editor {
+	background: transparent !important;
+}
+
+#bd-customcss-editor .ace_gutter {
+	background: rgba(0, 0, 0, 0.6) !important;
+}
+
+#bd-customcss-editor .ace_content {
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+.ace_active-line {
+	background: rgba(0, 0, 23, 0.5) !important;
+}
+
+.ace_gutter-cell {
+	background: transparent !important;
+}
+
+.ace_selection {
+	background: rgba(0, 90, 250, 0.3) !important;
+}
+
+/*czesc ustawien: polprzezroczyste pola*/
+
+.item-26Dhrx, .formNotice-2_hHWR, .accountList-33MS45, .userInfoViewing-16kqK3, .userInfoEditing-1CEzdT, .settings-closed.ui-switch-item, .flex-center.not-detected {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border-color: #000000 !important;
+}
+
+.info-3LOr12 .titleChecked-2wg0pd {
+	text-shadow: none !important;
+}
+
+.info-3LOr12 .descChecked-XkfPsU {
+	color: #aaaaaa !important;
+}
+
+/*czesc ustawien: polprzezroczyste pola z wysuwanym menu*/
+
+.select-2TCrqx .Select-control, .select-2TCrqx .Select-menu-outer {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border-color: black !important;
+}
+
+.select-2TCrqx .Select-option {
+	background: transparent !important;
+}
+
+.select-2TCrqx .Select-option.is-focused {
+	background: rgba(0, 0, 0, 0.4) !important;
+}
+
+/*czesc ustawien: przyciski i paski "przesuwane" */
+
+.ui-switch, .valueUnchecked-2lU_20 {
+	background: rgba(0, 0, 0, 0.4) !important
+}
+
+.ui-switch::before, .valueUnchecked-2lU_20::after {
+	background: #eeeeee !important
+}
+
+.ui-switch.checked, .valueChecked-m-4IJZ {
+	background: #1942e6 !important
+}
+
+[class*="theme-"] .bar-2Qqk5Z {
+	background: #ffffff;
+}
+
+.barFill-23-gu- {
+	background-color: #1942e6;
+}
+
+/*czesc ustawien: przyciski*/
+
+.userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9, .input-cIJ7To .questionMark-CWEQZn, .userSettingsSecurity-3IYeMF .button-38aScr, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr, .bda-footer .bda-settings-button, .ui-form-title+.bd-pfbtn {
+	background-color: var(--btBlue-bg) !important;
+	color: #dddddd !important;
+}
+
+.userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9:hover, .input-cIJ7To .questionMark-CWEQZn:hover, .userSettingsSecurity-3IYeMF .button-38aScr:hover, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr:hover, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr:hover, .bda-footer .bda-settings-button:hover, .ui-form-title+.bd-pfbtn:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: #ffffff !important;
+}
+
+/*czesc ustawien: zaznaczalne polprzezroczyste pola po ich wybraniu*/
+
+/* "Prywatnosc i bezpieczenstwo", "Moderacja"(serwer) */
+
+/* zielony */
+
+.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+	background: rgba(0, 230, 77, 0.3) !important;
+	border-color: rgba(0, 230, 77, 0.3) !important;
+}
+
+/* zolty */
+
+.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+	background: rgba(255, 153, 0, 0.3) !important;
+	border-color: rgba(255, 153, 0, 0.3) !important;
+}
+
+/* pomaranczowy */
+
+.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
+	background: rgba(242, 97, 0, 0.3) !important;
+	border-color: rgba(242, 97, 0, 0.3) !important;
+}
+
+/* czerwony */
+
+.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+	background: rgba(244, 40, 40, 0.3) !important;
+	border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+/*IKONKI USTAWIEN*/
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(2)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(3)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(4)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(5)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:last-child::after {
+	background: none !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item {
+	padding-left: 50px !important;
+}
+
+[class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item.selected {
+	background-color: var(--main-color);
+}
+
+[class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item:hover {
+	background-color: var(--hover-color);
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"] {
+	padding-left: 50px !important;
+}
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"] {
+	padding-left: 20px !important;
+}
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]::after {
+	content: "";
+	position: absolute;
+	width: 24px;
+	height: 24px;
+	left: 15px;
+	margin-top: -2px;
+	opacity: .3;
+	-webkit-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+}
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:hover::after {
+	opacity: .7;
+}
+
+.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"][class*="selected-"]::after {
+	opacity: 1;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(2)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(3)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(4)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/apps.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(5)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(6)::after {
+	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/Credit_card.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(8)::after {
+	background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(9)::after {
+	background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
+	background-size: cover;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
+	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/open_in_new.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(26)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
+}
+
+.platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(24)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
+}
+
+.platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
+}
+
+[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(12)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(20)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg) !important;
+}
+
+.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(23)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(22)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/betterdiscord.svg) !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
+	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/6c6aaf1a/Icons/bandage.svg) !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg) !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/code.svg) !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg) !important;
+}
+
+#bd-settings-sidebar .ui-tab-bar-item:nth-child(8)::after {
+	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/palette.svg) !important;
 }
 
 /* Randomowe */
