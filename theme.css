@@ -16,6 +16,9 @@
 	--scrollColor-thumb-bord: #db212171;
 	--scrollColor-backg: #00000000;
 	--scrollColor-backg-bord: #00000000;
+	--markup-normal: #fd686b;
+	--markup-intensive: #fc3639;
+	--markup-blue: #015ce4e6;
 }
 
 /*Background*/
@@ -359,7 +362,7 @@ body::after {
 	height: 24px;
 	width: 60%;
 	border-radius: -5px;
-	background: linear-gradient(to right, #fc3639, transparent);
+	background: linear-gradient(to right, var(--markup-intensive), transparent);
 	opacity: 0.7;
 	border-color: transparent;
 }
@@ -367,12 +370,12 @@ body::after {
 /*licznik osob na kanale glosowym*/
 
 .da-channels .da-containerDefault .da-userLimit .da-users {
-	background: rgba(250, 0, 0, 0.5);
-	color: #ffa4a4;
+	background: var(--btRed-bg);
+	color: var(--markup-normal);
 }
 
 .da-channels .da-containerDefault .da-userLimit .da-total {
-	color: #f82c2c;
+	color: var(--markup-intensive);
 }
 
 /*searchbar po lewej u góry w prywatnych wiadomosciach*/
@@ -518,7 +521,7 @@ body::after {
 }
 
 .da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
-	border-color: rgba(1, 92, 228, 0.7) !important;
+	border-color: var(--markup-blue) !important;
 }
 
 /*sticky header*/
@@ -991,14 +994,18 @@ body::after {
 	margin-top: 15px;
 }
 
+[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap .da-divider:not(.da-dividerRed)>span {
+	color: rgba(255, 255, 255, 0.7) !important;
+}
+
 /*nowa wiadomosc*/
 
 [class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap .da-divider.da-dividerRed>span {
 	background: var(--default-hover-rgba) !important;
 }
 
-[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap .da-divider:not(.da-dividerRed)>span {
-	color: rgba(255, 255, 255, 0.7) !important;
+[class*="theme-"] .da-spacer>.da-messagesWrapper>.da-scrollerWrap .da-divider.da-dividerRed>span {
+	color: var(--markup-intensive) !important;
 }
 
 /*paski po bokach daty wiadomosci*/
@@ -1017,7 +1024,7 @@ body::after {
 }
 
 .da-search.da-focused .da-searchBar {
-	border-color: rgba(1, 92, 228, 0.7) !important;
+	border-color: var(--markup-blue) !important;
 }
 
 .da-search .da-searchBar .da-searchFilter, .da-search .da-searchBar .da-searchAnswer {
@@ -1362,7 +1369,7 @@ body::after {
 /*kolor linku*/
 
 .chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .contentCozy-3XX413 a, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .contentCozy-3XX413 a {
-	color: #fd686b;
+	color: var(--markup-normal);
 }
 
 /*reakcje pod wiadomosciami na czacie*/
@@ -1381,7 +1388,7 @@ body::after {
 }
 
 .reaction-1ELvT8 .reactionCount-2ddRoS {
-	color: #fd686b !important;
+	color: var(--markup-normal) !important;
 }
 
 /*zarzadzanie wiadomoscia na czacie, popout*/
@@ -1414,13 +1421,13 @@ body::after {
 }
 
 .chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .isMentionedCozy-3isp7y .markup-2BOw-j .mention {
-	color: #fc3639;
+	color: var(--markup-intensive);
 }
 
 .chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .isMentionedCozy-3isp7y::after {
 	background-color: rgba(0, 0, 0, 0.1);
 	background: rgba(100, 100, 100, 0.3);
-	border-left: 4px solid #fc3639;
+	border-left: 4px solid var(--markup-intensive);
 }
 
 /*kolor oznaczenia kogoś na czacie*/
@@ -1438,12 +1445,12 @@ body::after {
 /*polprzezroczyste pola na czacie: linki */
 
 .embed-IeVjo6 .embedPill-1Zntps {
-	background: #fc3639 !important;
+	background: var(--markup-intensive) !important;
 }
 
 .embed-IeVjo6 .embedInner-1-fpTo {
 	background: rgba(252, 54, 57, 0.1) !important;
-	border-color: #fc3639 !important;
+	border-color: var(--markup-intensive) !important;
 }
 
 .embed-IeVjo6 .embedInner-1-fpTo .embedTitleLink-1Zla9e {
@@ -1457,7 +1464,7 @@ body::after {
 }
 
 .container-16j22k .quote-3aooyW, .container-16j22k .status-1JTY3j {
-	color: #fc3639 !important;
+	color: var(--markup-intensive) !important;
 }
 
 /*polprzezroczyste pola na czacie: pliki do pobrania */
