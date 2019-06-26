@@ -1306,63 +1306,49 @@ body::after {
 
 /*wyskakujace okienka (wzmianki, przypiete wiadomosci itp)*/
 
-[class*="theme-"] .themedPopout-25DgLi {
+.da-popouts .da-popout>.da-themedPopout {
 	background-color: rgba(0, 0, 0, 0.9) !important;
 	border: transparent;
 }
 
-[class*="theme-"] .messagesPopoutWrap-1MQ1bW .header-ykumBX {
+.da-popouts .da-popout>.da-themedPopout>.da-header {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-[class*="theme-"] .messagesPopoutWrap-1MQ1bW .footer-SRC48P {
+/*footer ze wzmianek*/
+
+.da-popouts .da-popout>.da-themedPopout>.da-footer {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-[class*="theme-"] .messagesPopoutWrap-1MQ1bW .header-ykumBX .title-3pkaKd {
+.da-popouts .da-popout>.da-themedPopout>.da-header .da-title {
 	color: #eeeeee;
 	font-weight: bold;
 }
 
-[class*="theme-"] .messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G {
-	background-color: rgba(0, 0, 0, 0.1) !important;
+.da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper>*>.da-container {
+	background-color: rgba(0, 0, 0, 0) !important;
 }
 
-[class*="theme-"] .messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G:hover {
-	background-color: rgba(0, 0, 0, 0.5) !important;
+.da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper {
+	border-color: var(--default-hover-rgba);
+	background-color: rgba(0, 0, 0, 0.7) !important;
 }
 
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .da-actionButtons .da-jumpButton {
-	background-color: rgba(0, 0, 0, 0.3) !important;
+.da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper:hover {
+	border-color: var(--default-selected-rgba);
+	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
+	background: var(--btBlue-bg) !important;
+	color: var(--bt-col) !important;
 	border-radius: 3px !important;
 }
 
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .da-actionButtons .da-jumpButton:hover {
-	background-color: rgba(0, 0, 0, 0.6) !important;
-}
-
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .da-actionButtons .da-jumpButton .text {
-	color: #cccccc !important;
-}
-
-.messagesPopoutWrap-1MQ1bW .messageGroupWrapper-o-Zw7G .da-actionButtons .da-jumpButton:hover .text:hover {
-	color: #ffffff !important;
-}
-
-/*wyskakujace okna z komunikatami*/
-
-.modal-3HD5ck, .modal-3HD5ck .header-1R_AjF, .modal-3HD5ck .content-2BXhLs, .modal-3HD5ck .footer-2yfCgX {
-	background-color: rgba(0, 0, 0, 0.5) !important;
-	border-color: rgba(0, 0, 0, 0);
-}
-
-.modal-3HD5ck .message-2qRu38 {
-	background-color: rgba(0, 0, 10, 0.7) !important;
-	border-color: rgba(0, 0, 0, 0);
-}
-
-.modal-3HD5ck .footer-2yfCgX button[type=submit] {
-	background-color: #cc0000 !important;
+.da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: var(--bt-col-hover) !important;
 }
 
 /*kolor linku*/
@@ -1373,7 +1359,7 @@ body::after {
 
 /*reakcje pod wiadomosciami na czacie*/
 
-.reaction-1ELvT8 {
+[class*="theme-"] .da-reactions .da-reaction {
 	background-color: rgba(0, 0, 0, 0.2) !important;
 	min-width: 50px !important;
 	min-height: 50px !important;
@@ -1381,22 +1367,26 @@ body::after {
 	align-content: center
 }
 
-.reaction-1ELvT8 img {
+[class*="theme-"] .da-reactions .da-reaction img {
 	width: 40px !important;
 	height: 40px !important;
 }
 
-.reaction-1ELvT8 .reactionCount-2ddRoS {
+[class*="theme-"] .da-reactions .da-reaction .da-reactionCount {
 	color: var(--markup-normal) !important;
+}
+
+[class*="theme-"] .da-reactions .da-reactionMe {
+	background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*zarzadzanie wiadomoscia na czacie, popout*/
 
-.popoutBottom-1YbShG .container-3cGP6G {
+.da-popouts [class*="popoutBottom-"]>.da-container {
 	background: rgba(0, 0, 0, 0.7);
 }
 
-.popoutBottom-1YbShG .container-3cGP6G .button-1ZXqCA:hover {
+.da-popouts [class*="popoutBottom-"]>.da-container .da-button:hover {
 	background: rgba(0, 0, 0, 0.5);
 }
 
