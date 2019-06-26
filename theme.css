@@ -17,8 +17,10 @@
 	--scrollColor-backg: #00000000;
 	--scrollColor-backg-bord: #00000000;
 	--markup-normal: #fd686b;
+	--markup-normal-transparent: #fd686a33;
 	--markup-intensive: #fc3639;
 	--markup-blue: #3333ffe6;
+	--markup-blue-light: #1b76fee6;
 }
 
 /*Background*/
@@ -1127,17 +1129,11 @@ body::after {
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton {
 	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-radius: 3px !important;
-}
-
-[class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton:hover {
-	background-color: rgba(0, 0, 0, 0.6) !important;
-}
-
-[class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton {
 	color: var(--bt-col) !important;
 }
 
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton:hover {
+	background-color: rgba(0, 0, 0, 0.6) !important;
 	color: var(--bt-col-hover) !important;
 }
 
@@ -1315,46 +1311,46 @@ body::after {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
+.da-popouts .da-popout>.da-themedPopout>.da-header .da-title {
+	color: #eeeeee;
+	font-weight: bold;
+}
+
 /*footer ze wzmianek*/
 
 .da-popouts .da-popout>.da-themedPopout>.da-footer {
 	background-color: rgba(0, 0, 0, 0.8);
 }
 
-.da-popouts .da-popout>.da-themedPopout>.da-header .da-title {
-	color: #eeeeee;
-	font-weight: bold;
-}
-
 .da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper>*>.da-container {
-	background-color: rgba(0, 0, 0, 0) !important;
+	background-color: rgba(0, 0, 0, 1) !important;
 }
 
 .da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper {
 	border-color: var(--default-hover-rgba);
-	background-color: rgba(0, 0, 0, 0.7) !important;
+	background-color: rgba(0, 0, 0, 1) !important;
 }
 
 .da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper:hover {
 	border-color: var(--default-selected-rgba);
-	background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*jump button*/
+
+.da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper .da-actionButtons {
+	background-color: rgba(0, 0, 0, 0) !important;
+	box-shadow: 0px 0px;
 }
 
 .da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
-	background: var(--btBlue-bg) !important;
-	color: var(--bt-col) !important;
+	background-color: var(--btRed-bg) !important;
 	border-radius: 3px !important;
+	color: var(--bt-col) !important;
 }
 
 .da-popouts .da-popout>.da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
-	background: var(--btBlue-bg-hover) !important;
+	background-color: var(--btRed-bg-hover) !important;
 	color: var(--bt-col-hover) !important;
-}
-
-/*kolor linku*/
-
-.chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .contentCozy-3XX413 a, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .contentCozy-3XX413 a {
-	color: var(--markup-normal);
 }
 
 /*reakcje pod wiadomosciami na czacie*/
@@ -1390,45 +1386,52 @@ body::after {
 	background: rgba(0, 0, 0, 0.5);
 }
 
-/*oznaczenie kogos na czacie*/
+/*popout przy oznaczaniu kogos na czacie*/
 
-.autocomplete-1vrmpx, .autocomplete-1vrmpx .autocompleteInner-zh20B_ {
-	background: rgba(0, 0, 0, 0.7) !important;
-	border-style: solid;
-	border-width: 1px 1px 0px 1px !important;
-	border-color: #000000 !important;
+form .da-autocomplete, form .da-autocomplete .da-autocompleteInner {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: rgba(0, 0, 0, 0) !important;
 }
 
-.autocomplete-1vrmpx .autocompleteInner-zh20B_ .selector-2IcQBU.selectorSelected-1_M1WV {
+form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
-/*kolor oznaczenia ciebie na czacie*/
+/*oznaczenie ciebie na czacie*/
 
-.chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .isMentionedCozy-3isp7y {
-	background: linear-gradient(90deg, rgba(253, 104, 107, 0.15) 0%, transparent 80%) !important;
+.da-content .da-content .da-isMentioned {
+	background: linear-gradient(90deg, var(--markup-normal-transparent) 0%, transparent 80%) !important;
 }
 
-.chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .isMentionedCozy-3isp7y .markup-2BOw-j .mention {
+.da-content .da-content .da-isMentioned .da-markup .mention {
 	color: var(--markup-intensive);
 }
 
-.chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .isMentionedCozy-3isp7y::after {
+/*kolorowa linia po lewej*/
+
+.da-content .da-content .da-isMentioned::after {
+	left: -4px;
 	background-color: rgba(0, 0, 0, 0.1);
-	background: rgba(100, 100, 100, 0.3);
-	border-left: 4px solid var(--markup-intensive);
+	background: var(--markup-intensive);
+	border-left: 2px solid var(--markup-intensive);
 }
 
-/*kolor oznaczenia kogoś na czacie*/
+/*oznaczenie kogoś na czacie*/
 
-.chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .markup-2BOw-j .mention {
-	color: #1b76fe;
+.da-content .da-content .markup-2BOw-j .mention {
+	color: var(--markup-blue-light);
 	background: rgba(0, 0, 0, 0.2);
 	border-radius: 3px;
 }
 
-.chat-3bRxxu>.content-yTz4x3 .contentCozy-3XX413 .markup-2BOw-j .mention:hover {
+.da-content .da-content .markup-2BOw-j .mention:hover {
 	background: rgba(0, 0, 0, 0.4);
+}
+
+/*kolor linku*/
+
+.chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .da-content a, [class*="theme-"] .chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .da-content a {
+	color: var(--markup-normal);
 }
 
 /*polprzezroczyste pola na czacie: linki */
@@ -1443,7 +1446,7 @@ body::after {
 }
 
 .embed-IeVjo6 .embedInner-1-fpTo .embedTitleLink-1Zla9e {
-	color: #1b76fe !important;
+	color: var(--markup-blue-light) !important;
 }
 
 /*brak internetu*/
