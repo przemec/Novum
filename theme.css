@@ -18,7 +18,7 @@
 	--scrollColor-backg-bord: #00000000;
 	--markup-normal: #fd686b;
 	--markup-intensive: #fc3639;
-	--markup-blue: #015ce4e6;
+	--markup-blue: #3333ffe6;
 }
 
 /*Background*/
@@ -1244,16 +1244,29 @@ body::after {
 
 /*uzytkownik po kliknieciu na niego lewym*/
 
-.header-2BwW8b {
+/*header*/
+
+.da-userPopout>.da-header {
 	background: url(https://i.imgur.com/WabiB4C.png);
 	background-size: cover;
 }
 
-.activityUserPopout-2yItg2 {
+.da-userPopout>*>.da-activityUserPopout {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-.userPopout-3XzG_A .body-3iLsc4 {
+.da-userPopout>.da-header .da-headerText .da-headerTag {
+	color: #dddddd;
+}
+
+.da-userPopout>.da-header .da-headerText .da-headerName {
+	color: #ffffff;
+	font-size: 18px;
+}
+
+/*body*/
+
+.da-userPopout>.da-body {
 	background-color: rgba(0, 0, 0, 0.93);
 	background-size: cover;
 	background-position: right center;
@@ -1261,48 +1274,34 @@ body::after {
 	padding: 20px;
 }
 
-.userPopout-3XzG_A .footer-1fjuF6 {
-	background-color: rgba(0, 0, 0, 0.93);
-	border: 1px solid rgba(0, 0, 0, 1);
-	padding: 10px;
-}
-
-.userPopout-3XzG_A .footer-1fjuF6 .quickMessage-2XpSaN {
-	background-color: rgba(0, 0, 0, 0.9);
-	border: 1px solid rgba(0, 0, 0, 1);
-	padding: 10px;
-}
-
-.headerTagNormal-KyD3_J {
-	color: #ffffff;
-}
-
-.headerName-2N8Pdz {
-	font-weight: 700;
-	color: #ffffff;
-	font-size: 24px;
-	font-weight: bolder;
-}
-
-.bodyTitle-Y0qMQz {
-	color: #3333ff;
+.da-userPopout>.da-body .da-bodyTitle {
+	color: var(--markup-blue);
 	font-size: 12px;
 	font-weight: 700;
 	margin-left: 4px;
 	text-transform: uppercase;
 }
 
-.bodyTitleIconForeground-itKW-t {
-	fill: #3333ff;
-	height: 16px;
-	width: 16px;
+.da-userPopout>.da-body .da-note textarea:focus {
+	background: rgba(0, 0, 0, 0.9);
 }
 
-.pro-1T8RK7 {
-	color: #3333ff;
-	font-variant: small-caps;
-	font-weight: 700;
-	text-transform: uppercase;
+/*footer*/
+
+.da-userPopout>.da-footer {
+	background-color: rgba(0, 0, 0, 0.93);
+	border: 1px solid rgba(0, 0, 0, 1);
+	padding: 10px;
+}
+
+.da-userPopout>.da-footer .da-quickMessage {
+	background-color: rgba(0, 0, 0, 0.9);
+	border: 1px solid rgba(0, 0, 0, 1);
+	padding: 10px;
+}
+
+.da-userPopout>.da-footer .da-pro {
+	color: var(--markup-blue);
 }
 
 /*wyskakujace okienka (wzmianki, przypiete wiadomosci itp)*/
