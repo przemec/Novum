@@ -344,6 +344,26 @@ body::after {
 	color: rgb(255, 255, 255);
 }
 
+/*avatar podczas mowienia*/
+
+.da-channels .da-containerDefault .da-listDefault .da-voiceUser .da-usernameSpeaking, .da-channels .da-containerDefault .da-listDefault .da-voiceUser .da-avatarContainer, .da-channels .da-containerDefault .da-listDefault .da-voiceUser .da-avatarSpeaking {
+	border-color: transparent !important;
+	box-shadow: none !important;
+}
+
+.da-channels .da-containerDefault .da-listDefault .da-voiceUser .da-avatarSpeaking::before {
+	content: "";
+	z-index: -10 !important;
+	position: absolute;
+	left: 20px;
+	height: 24px;
+	width: 60%;
+	border-radius: -5px;
+	background: linear-gradient(to right, #fc3639, transparent);
+	opacity: 0.7;
+	border-color: transparent;
+}
+
 /*licznik osob na kanale glosowym*/
 
 .da-channels .da-containerDefault .da-userLimit .da-users {
@@ -355,7 +375,7 @@ body::after {
 	color: #f82c2c;
 }
 
-/*wyszukiwanie rozmowy w prywatnych wiadomosciach*/
+/*searchbar po lewej u góry w prywatnych wiadomosciach*/
 
 .da-privateChannels .da-searchBar {
 	background: rgba(0, 0, 0, 0.1) !important;
@@ -1215,58 +1235,6 @@ body::after {
 	min-height: 80px;
 }
 
-/*rozmazany email w ustawieniach konta przed najechaniem myszką*/
-
-.viewBody-2Qz-jg {
-	filter: blur(5px);
-	transition: 200ms cubic-bezier(.2, .11, 0, 1);
-}
-
-.viewBody-2Qz-jg:hover {
-	filter: none;
-	transition: 200ms cubic-bezier(.2, .11, 0, 1);
-}
-
-.marginBottom20-32qID7>.viewBody-2Qz-jg {
-	filter: none;
-	transition: none;
-}
-
-/*avatar podczas mowienia*/
-
-.usernameSpeaking-2xbKKh, .draggable-1KoBzC .avatarContainer-2inGBK {
-	border-color: transparent !important;
-	box-shadow: none !important;
-	z-index: 10!important;
-}
-
-.avatarSpeaking-3MqCHL {
-	box-shadow: none !important;
-}
-
-.avatarSpeaking-3MqCHL::before {
-	z-index: 2;
-	content: "";
-	position: absolute;
-	left: 0px;
-	width: 4px;
-	height: 24px;
-	background: #223baa;
-	border-color: transparent;
-}
-
-.avatarSpeaking-3MqCHL::after {
-	content: "";
-	position: absolute;
-	height: 24px;
-	left: -5px;
-	width: 100%;
-	background: linear-gradient(to right, #223baa 15%, #223baa 15%, transparent 60%);
-	opacity: 0.5;
-	z-index: -1;
-	border-color: transparent;
-}
-
 /*uzytkownik po kliknieciu na niego lewym*/
 
 .header-2BwW8b {
@@ -1589,6 +1557,23 @@ body::after {
 .da-modal>.da-inner>.da-container .da-button[class*="Filled"]:hover {
 	background: var(--btRed-bg-hover) !important;
 	color: var(--bt-col-hover) !important;
+}
+
+/*rozmazany email w ustawieniach konta przed najechaniem myszką*/
+
+.viewBody-2Qz-jg {
+	filter: blur(5px);
+	transition: 200ms cubic-bezier(.2, .11, 0, 1);
+}
+
+.viewBody-2Qz-jg:hover {
+	filter: none;
+	transition: 200ms cubic-bezier(.2, .11, 0, 1);
+}
+
+.marginBottom20-32qID7>.viewBody-2Qz-jg {
+	filter: none;
+	transition: none;
 }
 
 /*Ustawienia*/
