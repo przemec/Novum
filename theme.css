@@ -461,27 +461,27 @@ body::after {
 
 /*podsekcja karty*/
 
-.da-activityFeed aside .da-outer.da-card .da-popoutContainer:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer:hover {
+.da-activityFeed aside .da-card .da-popoutContainer:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer:hover {
 	background: rgba(220, 0, 0, 0.1) !important;
 }
 
 /*kanał/gra*/
 
-.da-activityFeed aside .da-outer.da-card .da-popoutContainer .da-body, .da-activityFeed aside .da-outer.da-card .da-popoutContainer .da-body .da-separator, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-separator {
+.da-activityFeed aside .da-card .da-popoutContainer .da-body, .da-activityFeed aside .da-card .da-popoutContainer .da-body .da-separator, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-separator {
 	background: rgba(0, 0, 0, 0.7) !important;
 }
 
-.da-activityFeed aside .da-outer.da-card .da-popoutContainer .da-body .da-section, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-section {
+.da-activityFeed aside .da-card .da-popoutContainer .da-body .da-section, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-section {
 	background: rgba(0, 0, 0, 0) !important;
 }
 
 /*popout po najechaniu*/
 
-.da-activityFeed aside .da-outer.da-card .da-popoutContainer .da-popout, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout {
+.da-activityFeed aside .da-card .da-popoutContainer .da-popout, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout {
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
-.da-activityFeed aside .da-outer.da-card .da-popoutContainer .da-popout .da-wrapper:hover, .da-activityFeed aside .da-outer.da-card .da-popoutContainer .da-popout .da-memberListItem:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-wrapper:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-memberListItem:hover {
+.da-activityFeed aside .da-card .da-popoutContainer .da-popout .da-wrapper:hover, .da-activityFeed aside .da-card .da-popoutContainer .da-popout .da-memberListItem:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-wrapper:hover, .da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-memberListItem:hover {
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
