@@ -1,4 +1,5 @@
 :root {
+    --main-color: #c31d1d;
     --background-img: url("https://i.imgur.com/S7AYEBo.png");
     --default-hover-rgba: rgba(200, 0, 0, 0.15);
     --default-selected-rgba: rgba(200, 0, 0, 0.3);
@@ -21,6 +22,56 @@
     --markup-intensive: #fc3639;
     --markup-blue: #3333ffe6;
     --markup-blue-light: #1b76fee6;
+}
+
+/*Selected*/
+.channel-2QD9_O.selected-1HYmZZ a {
+    background-color: var(--main-color);
+}
+
+.channel-2QD9_O.selected-1HYmZZ,
+.channel-2QD9_O.selected-1HYmZZ .name-2WpE7M,
+.channel-2QD9_O.selected-1HYmZZ .nameWrapper-10v56U,
+.channel-2QD9_O.selected-1HYmZZ a,
+.channel-2QD9_O:hover,
+.channel-2QD9_O:hover .name-2WpE7M,
+.channel-2QD9_O:hover .nameWrapper-10v56U,
+.channel-2QD9_O:hover a {
+    color: #fff;
+}
+
+.name-2WpE7M {
+    color: #ffffffc0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*Popup user right*/
+input:focus {
+    border-color: var(--main-color) !important;
+    box-shadow: 0px 0px 0px transparent;
+}
+
+/*Search box*/
+.da-search .da-searchBar {
+    background: none;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    -wekbit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+/*Add server, server discovery buttons style*/
+[class*="theme-"] .circleIconButton-jET_ig {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: var(--main-color);
+    color: var(--main-color);
+}
+
+/*Input style*/
+.inner-zqa7da.flex-1O1GKY {
+    border: 1px solid var(--main-color);
+    background: rgba(0, 0, 0, 0.2);
 }
 
 /*Zmiany koloru bloku kanałów*/
