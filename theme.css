@@ -1,3 +1,4 @@
+
 :root {
 	--main-color: #c31d1d;
 	--background-img: url("https://i.imgur.com/S7AYEBo.png");
@@ -132,10 +133,15 @@ body::after {
 	background-color: var(--scrollColor-thumb) !important;
 }
 
-[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-membersWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-privateChannels>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
-	border-color: var(--scrollColor-backg-bord) !important;
-	background-color: var(--scrollColor-backg) !important;
-}
+/* [class*="theme-"] .da-channels>.da-container>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-membersWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-privateChannels>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
+    border-color: var(--scrollColor-backg-bord)  !important;
+    background-color: var(--scrollColor-backg) !important;
+} */
 
 /*panel z serwerami po samej lewej*/
 
