@@ -1560,14 +1560,14 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*tooltip po najechaniu na ikone serwera/przycisk rozłączenia itp*/
 
 [class*="tooltipBlack-"] {
-	background-color: var(--btBlue-bg) !important;
-	border: 2px solid var(--btBlue-bg);
-	color: var(--bt-col);
+    background-color: rgba(0, 0, 0, 0.95) !important;
+	border: 2px solid rgba(0, 0, 0, 1);
+	color: rgba(255, 255, 255, 0.5);
 	font-weight: bold;
 }
 
 [class*="tooltipBlack-"] .da-tooltipPointer {
-	border-top-color: var(--btBlue-bg) !important;
+	border-top-color: rgba(0, 0, 0, 1) !important;
 }
 
 /*AFK POPOUT*/
