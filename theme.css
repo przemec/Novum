@@ -188,15 +188,15 @@ body::after {
 	background: rgba(0, 0, 0, 0.6);
 }
 
-/*tlo Add server, Server discovery*/
+/*tlo Add server, Server discovery, listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 
-.wrapper-1Rf91z .da-circleIconButton {
+.wrapper-1Rf91z .da-circleIconButton, .wrapper-1Rf91z .da-listItemWrapper>a {
 	background: rgba(0, 0, 0, 0.6);
 	border-color: var(--main-red);
 	color: var(--main-red);
 }
 
-.wrapper-1Rf91z .da-circleIconButton:hover {
+.wrapper-1Rf91z .da-circleIconButton:hover, .wrapper-1Rf91z .da-listItemWrapper>a:hover {
 	background: rgba(0, 0, 0, 0.7);
 }
 
