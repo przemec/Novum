@@ -631,6 +631,18 @@ body::after {
 	color: var(--bt-col-hover) !important;
 }
 
+/*gift inventory przycisk "Zrealizuj"*/
+
+.da-spacer>.da-root .da-codeRedemption .da-button {
+	background-color: var(--btBlue-bg) !important;
+	color: var(--bt-col) !important;
+}
+
+.da-spacer>.da-root .da-codeRedemption .da-button:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: var(--bt-col-hover) !important;
+}
+
 /*Strona główna: Nitro*/
 
 /*strona głowna nitro*/
@@ -884,15 +896,27 @@ body::after {
 	color: var(--bt-col-hover);
 }
 
-/*lista znajomych: znajdz lub rozpocznij rozmowe popup */
+/*lista znajomych: znajdz lub rozpocznij rozmowe popup (Quick Switcher)*/
 
 .da-container .da-quickswitcher {
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: rgba(0, 0, 0, 0.95);
 	box-shadow: 0px 0px;
 }
 
 .da-container .da-quickswitcher .da-input {
 	background-color: rgba(65, 65, 197, 0.1);
+}
+
+.da-container .da-quickswitcher .da-resultFocused {
+	background-color: rgba(65, 65, 197, 0.05);
+}
+
+.da-container .da-quickswitcher .da-keybindShortcut span {
+	background: var(--btBlue-bg) !important;
+}
+
+.da-container .da-quickswitcher .da-keybindShortcut span:hover {
+	background: var(--btBlue-bg-hover) !important;
 }
 
 /*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
@@ -1640,27 +1664,27 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*popout*/
 
-.da-modal>.da-inner>.da-container {
+.da-modal>.da-inner>.da-modal.da-container {
 	background: rgba(0, 0, 0, 0.8);
 	border-color: rgba(0, 0, 0, 0) !important;
 	box-shadow: 0px 0px;
 }
 
-.da-modal>.da-inner>.da-container * {
+.da-modal>.da-inner>.da-modal.da-container * {
 	border-color: rgba(0, 0, 0, 0) !important;
 	box-shadow: 0px 0px;
 }
 
-.da-modal>.da-inner>.da-container>* {
+.da-modal>.da-inner>.da-modal.da-container>* {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.da-modal>.da-inner>.da-container .da-button[class*="Filled"] {
+.da-modal>.da-inner>.da-modal.da-container .da-button[class*="Filled"] {
 	background: var(--btRed-bg) !important;
 	color: var(--bt-col) !important;
 }
 
-.da-modal>.da-inner>.da-container .da-button[class*="Filled"]:hover {
+.da-modal>.da-inner>.da-modal.da-container .da-button[class*="Filled"]:hover {
 	background: var(--btRed-bg-hover) !important;
 	color: var(--bt-col-hover) !important;
 }
