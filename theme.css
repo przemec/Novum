@@ -862,7 +862,7 @@ body::after {
 	font-size: 17px;
 }
 
-/*primary: dodaj znajomego*/
+/*da-primary: button dodaj znajomego*/
 
 [class*="theme-"] .da-spacer .da-container>.da-container .da-tabBar .da-item.da-primary {
 	background-color: rgba(0, 255, 128, 0.1) !important;
@@ -922,13 +922,25 @@ body::after {
 
 /*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
 
-.da-privateChannels .da-scroller .da-channel, .da-privateChannels .da-scroller .da-channel a {
+.da-privateChannels .da-scroller .da-channel a {
 	background: transparent !important;
 	border-radius: 5px;
 }
 
+.da-privateChannels .da-scroller .da-channel a path:first-child {
+	fill: rgba(255, 255, 255, 0.6) !important;
+}
+
+.da-privateChannels .da-scroller .da-channel a .da-name {
+	color: rgba(255, 255, 255, 0.6) !important;
+}
+
 .da-privateChannels .da-scroller .da-channel:hover, .da-privateChannels .da-scroller .da-channel.da-selected {
 	background: var(--default-selected-rgba) !important;
+}
+
+.da-privateChannels .da-scroller .da-channel:hover a .da-name, .da-privateChannels .da-scroller .da-channel.da-selected a .da-name {
+	color: rgba(255, 255, 255, 1) !important;
 }
 
 /*menu u góry prywatnej wiadomosci*/
