@@ -102,6 +102,11 @@ body::after {
 	background-color: transparent !important;
 }
 
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track {
+	border-color: transparent !important;
+	background-color: transparent !important;
+}
+
 [class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
 	border-color: transparent !important;
 	background-color: transparent !important;
@@ -120,11 +125,6 @@ body::after {
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, lista prywatnych wiadomosci, przypiete wiadomosci*/
 
 [class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb {
-	border-color: transparent !important;
-	background-color: transparent !important;
-}
-
-[class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
 	border-color: transparent !important;
 	background-color: transparent !important;
 }
@@ -599,14 +599,20 @@ body::after {
 
 /*filtr*/
 
+.da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 .da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
-	background-color: rgba(0, 0, 0, 0.5) !important;
+	background-color: rgba(0, 0, 0, 0.15) !important;
 	border-bottom: 2px solid rgba(0, 0, 0, 0);
-	transition: all 0.5s ease-in-out;
-	-wekbit-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
+	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-color: var(--markup-blue) !important;
 }
 
@@ -664,14 +670,20 @@ body::after {
 
 /*search bar*/
 
+.da-spacer .da-applicationStore .da-headerBar .da-browseSearch {
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
 .da-spacer .da-applicationStore .da-headerBar .da-browseSearch .da-searchBar {
-	background-color: rgba(0, 0, 0, 0.5) !important;
+	background-color: rgba(0, 0, 0, 0.15) !important;
 	border-bottom: 2px solid rgba(0, 0, 0, 0);
-	transition: all 0.5s ease-in-out;
-	-wekbit-transition: all 0.5s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .da-spacer .da-applicationStore .da-headerBar .da-browseSearch.da-focused .da-searchBar {
+	background-color: rgba(0, 0, 0, 0.3) !important;
 	border-color: rgba(1, 92, 228, 0.7) !important;
 }
 
@@ -683,14 +695,17 @@ body::after {
 
 /*rzędy artykułów*/
 
+.da-spacer .da-systemPad .da-homeBody>*>*>.da-container {
+	transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
+}
+
 .da-spacer .da-systemPad .da-homeBody .da-container .da-gradientOverlayLeft {
 	background: transparent;
-	transition: all 0.5s;
 }
 
 .da-spacer .da-systemPad .da-homeBody .da-container .da-gradientOverlayRight {
 	background: transparent;
-	transition: all 0.5s;
 }
 
 /*gradient i strzałki po lewej i prawej*/
@@ -1141,7 +1156,7 @@ body::after {
 .da-chat .da-toolbar .da-search .da-searchBar {
 	background: rgba(0, 0, 0, 0.15);
 	border-bottom: 2px solid rgba(0, 0, 0, 0);
-	-wekbit-transition: all 0.3s ease-in-out;
+	-webkit-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out
 }
 
