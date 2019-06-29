@@ -585,7 +585,7 @@ body::after {
 	background-color: rgba(0, 0, 0, 0) !important;
 }
 
-.da-spacer .da-gameLibrary .da-libraryHeader .da-children::after {
+.da-spacer .da-gameLibrary .da-libraryHeader .da-children::after, .da-spacer .da-root>.da-libraryHeader>.da-children::after {
 	visibility: hidden !important;
 }
 
