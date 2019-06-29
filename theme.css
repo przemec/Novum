@@ -1,6 +1,7 @@
 
 :root {
-	--main-color: #c31d1d;
+	--main-red: #c31d1d;
+	--main-blue: #3333ff;
 	--background-img: url("https://i.imgur.com/S7AYEBo.png");
 	--default-hover-rgba: rgba(200, 0, 0, 0.15);
 	--default-selected-rgba: rgba(200, 0, 0, 0.3);
@@ -14,12 +15,12 @@
 	--scrollBlack-thumb-bord: #000000e6;
 	--scrollBlack-backg: #00000066;
 	--scrollBlack-backg-bord: #00000000;
-	--scrollColor-thumb: #db212171;
-	--scrollColor-thumb-bord: #db212171;
+	--scrollColor-thumb: #db2121b6;
+	--scrollColor-thumb-bord: #db2121b6;
 	--scrollColor-backg: #00000016;
 	--scrollColor-backg-bord: #00000000;
 	--markup-normal: #fd686b;
-	--markup-normal-transparent: #fd686a33;
+	--markup-normal-transparent: #fd686a3f;
 	--markup-intensive: #fc3639;
 	--markup-blue: #3333ffe6;
 	--markup-blue-light: #1b76fee6;
@@ -191,8 +192,8 @@ body::after {
 
 .wrapper-1Rf91z .da-circleIconButton {
 	background: rgba(0, 0, 0, 0.6);
-	border-color: var(--main-color);
-	color: var(--main-color);
+	border-color: var(--main-red);
+	color: var(--main-red);
 }
 
 .wrapper-1Rf91z .da-circleIconButton:hover {
@@ -448,8 +449,8 @@ body::after {
 	height: 24px;
 	width: 60%;
 	border-radius: -5px;
-	background: linear-gradient(to right, var(--markup-intensive), transparent);
-	opacity: 0.7;
+	background: linear-gradient(to right, var(--markup-normal-transparent), transparent);
+	opacity: 1;
 	border-color: transparent;
 }
 
@@ -1371,10 +1372,11 @@ body::after {
 /*body*/
 
 .da-userPopout>.da-body {
-	background-color: rgba(0, 0, 0, 0.93);
+	background-color: rgba(0, 0, 0, 0.95);
 	background-size: cover;
 	background-position: right center;
 	border: 1px solid rgba(0, 0, 0, 1);
+	border-bottom-color: var(--markup-blue);
 	padding: 20px;
 }
 
@@ -1393,15 +1395,13 @@ body::after {
 /*footer*/
 
 .da-userPopout>.da-footer {
-	background-color: rgba(0, 0, 0, 0.93);
+	background-color: rgba(0, 0, 0, 0.95);
 	border: 1px solid rgba(0, 0, 0, 1);
-	padding: 10px;
 }
 
 .da-userPopout>.da-footer .da-quickMessage {
-	background-color: rgba(0, 0, 0, 0.9);
-	border: 1px solid rgba(0, 0, 0, 1);
-	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.7);
+	border: 1px solid var(--markup-blue);
 }
 
 .da-userPopout>.da-footer .da-pro {
@@ -1986,7 +1986,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 [class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item.selected {
-	background-color: var(--main-color);
+	background-color: var(--main-red);
 }
 
 [class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item:hover {
@@ -2137,7 +2137,7 @@ input {
 }
 
 input:focus {
-	border-color: var(--main-color) !important;
+	border-color: var(--main-blue) !important;
 	box-shadow: 0px 0px 0px transparent;
 }
 
