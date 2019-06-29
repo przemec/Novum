@@ -684,10 +684,18 @@ body::after {
 
 .da-spacer .da-applicationStore .da-headerBar .da-browseSearch.da-focused .da-searchBar {
 	background-color: rgba(0, 0, 0, 0.3) !important;
-	border-color: rgba(1, 92, 228, 0.7) !important;
+	border-color: var(--markup-blue) !important;
 }
 
 /*glowny artykul u góry*/
+
+.da-spacer .da-systemPad .da-heroCarousel .da-carouselItem {
+	padding: 0px !important;
+}
+
+.da-spacer .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground, .da-spacer .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
+	border-radius: 10px !important;
+}
 
 .da-spacer .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
 	background: radial-gradient(ellipse at top, #00000000, #000000cc), linear-gradient(90deg, #000000cc 0, #00000000 40%, #00000000 60%, #000000cc), linear-gradient(0deg, #000000cc 0, #00000000 25%)
