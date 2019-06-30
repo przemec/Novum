@@ -377,23 +377,23 @@ body::after {
 
 /*default ikony kanałów tekst/głosowych*/
 
-.da-channels .da-containerDefault .icon-1_QxNX {
+.da-channels .da-containerDefault .da-icon {
 	color: rgba(255, 255, 255, 0.6) !important;
 }
 
-.da-channels .da-containerDefault .icon-1_QxNX>path:last-of-type {
+.da-channels .da-containerDefault .da-icon>path:last-of-type {
 	opacity: 0.9;
 }
 
 /*ikona zablokowanego kanału na który można wejść*/
 
-.da-channels .da-containerDefault .icon-1_QxNX>path {
+.da-channels .da-containerDefault .da-icon>path {
 	opacity: 0.6;
 }
 
 /*zmutowany tekstowy*/
 
-.da-channels .da-containerDefault .modeMuted-3osy7j .da-name {
+.da-channels .da-containerDefault [class*="modeMuted-"] .da-name {
 	color: rgba(255, 255, 255, 0.5);
 }
 
@@ -429,9 +429,15 @@ body::after {
 	color: rgb(255, 255, 255);
 }
 
-.da-voiceUser.da-selected .da-content {
+.da-channels .da-voiceUser.da-selected .da-content {
 	background-color: var(--default-selected-rgba) !important;
 	color: rgb(255, 255, 255);
+}
+
+/*kolor nicku użytkownika na kanale głosowym*/
+
+.da-channels .da-voiceUser:not(.da-selected) .da-username:not(.da-usernameSpeaking) {
+	color: rgba(255, 255, 255, 0.6);
 }
 
 /*avatar podczas mowienia*/
@@ -1596,22 +1602,22 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*kolor linku*/
 
-.chat-3bRxxu>.content-yTz4x3 .messages-3amgkR .da-content a {
+.da-chat .da-message .da-markup>a {
 	color: var(--markup-normal);
 }
 
 /*polprzezroczyste pola na czacie: linki */
 
-.embed-IeVjo6 .embedPill-1Zntps {
+.da-chat .da-message .da-embed .da-embedPill {
 	background: var(--markup-intensive) !important;
 }
 
-.embed-IeVjo6 .embedInner-1-fpTo {
+.da-chat .da-message .da-embed .da-embedInner {
 	background: rgba(252, 54, 57, 0.1) !important;
 	border-color: var(--markup-intensive) !important;
 }
 
-.embed-IeVjo6 .embedInner-1-fpTo .embedTitleLink-1Zla9e {
+.da-chat .da-message .da-embed .da-embedInner .da-embedTitleLink {
 	color: var(--markup-blue-light) !important;
 }
 
@@ -2176,6 +2182,12 @@ input:focus {
 	box-shadow: 0px 0px 0px transparent;
 }
 
+/*przyciski w dolnym lewym przed i po połączeniu*/
+
+.da-channels .da-container:nth-child(2) button:hover, .da-channels .da-container:nth-child(3) button:hover {
+	background: transparent;
+}
+
 [class*="theme-"] .chat-3bRxxu .title-wrap {
 	border-bottom: 0px;
 }
@@ -2285,39 +2297,48 @@ input:focus {
 
 /*Animacje przycisku Info i Disconnect*/
 
-[class*="buttonInfo"] {
+/*
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1) = button Info
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2) = button Disconnect
+*/
+
+.da-channels .da-container:nth-child(2)>.da-flex>button .da-buttonIcon {
+	visibility: hidden;
+}
+
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1) {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important
 }
 
-.container-iksrDt [class*="iconButton"], .container-iksrDt [class*="button"] svg, [class*="buttonDisconnect"]::after, [class*="buttonInfo"] {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2)::after, .da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1) {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 20px;
-	opacity: .3
+	opacity: .5
 }
 
-.container-iksrDt [class*="iconButton"]:hover, .container-iksrDt [class*="button"]:hover svg, [class*="buttonDisconnect"]:hover::after, [class*="buttonInfo"]:hover {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2):hover::after, .da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1):hover {
 	background-color: transparent !important;
-	opacity: .7
+	opacity: 1
 }
 
-[class*="buttonInfo"]:hover, [class*="buttonInfo-"].popout-open {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1):hover {
 	-webkit-animation: pulsate 1s infinite alternate;
 	animation: pulsate 1s infinite alternate
 }
 
-[class*="buttonInfo"]:active {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1):active {
 	-webkit-animation: pulsate-active 1s infinite alternate;
 	animation: pulsate-active 1s infinite alternate
 }
 
-[class*="buttonDisconnect"] {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2) {
 	position: relative;
 	background-image: none;
 	opacity: 1
 }
 
-[class*="buttonDisconnect"]::after {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2)::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -2327,12 +2348,12 @@ input:focus {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important
 }
 
-[class*="buttonDisconnect"]:hover::after {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2):hover::after {
 	-webkit-animation: wiggle 70ms infinite alternate;
 	animation: wiggle 70ms infinite alternate
 }
 
-[class*="buttonDisconnect"]:active::after {
+.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2):active::after {
 	-webkit-animation: wiggle-active 70ms infinite alternate;
 	animation: wiggle-active 70ms infinite alternate
 }
