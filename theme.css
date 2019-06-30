@@ -462,13 +462,22 @@ body::after {
 
 /*licznik osob na kanale glosowym*/
 
+.da-channels .da-containerDefault .da-userLimit>.da-wrapper {
+	border-radius: 5px !important;
+}
+
 .da-channels .da-containerDefault .da-userLimit .da-users {
-	background: var(--btRed-bg);
 	color: var(--markup-normal);
+	background: rgba(0, 0, 0, 0.3);
 }
 
 .da-channels .da-containerDefault .da-userLimit .da-total {
 	color: var(--markup-intensive);
+	background: rgba(0, 0, 0, 0.6) !important;
+}
+
+.da-channels .da-containerDefault .da-userLimit .da-total::after {
+	border-right-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*searchbar po lewej u góry w prywatnych wiadomosciach*/
