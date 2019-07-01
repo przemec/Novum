@@ -1609,7 +1609,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	background: rgba(0, 0, 0, 0.4);
 }
 
-/*kolor linku*/
+/*kolor linku na czacie*/
 
 .da-chat .da-message .da-markup>a {
 	color: var(--markup-normal);
@@ -1642,48 +1642,54 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*polprzezroczyste pola na czacie: pliki do pobrania */
 
-.containerCozy-B4noqO .attachment-33OFj0 {
+.da-chat .da-message .da-attachment {
 	background: rgba(0, 0, 0, 0.3) !important;
 	border-color: #000000 !important;
 }
 
-.containerCozy-B4noqO .filenameLinkWrapper-1-14c5 .fileNameLink-9GuxCo {
-	color: #1b76fe !important;
+.da-chat .da-message .da-attachment .da-fileNameLink {
+	color: var(--markup-blue-light) !important;
 }
 
-.containerCozy-B4noqO .downloadButton-23tKQp .fill {
-	fill: #285af0 !important;
+.da-chat .da-message .da-attachment .da-downloadButton .fill {
+	fill: var(--markup-blue) !important;
 }
 
-.containerCozy-B4noqO .attachment-33OFj0 a:hover .fill {
-	fill: #0f41d7 !important;
+.da-chat .da-message .da-attachment a:hover .fill {
+	fill: var(--markup-blue-light) !important;
+}
+
+/*polprzezroczyste pola na czacie: plik podczas wysylania na czat*/
+
+.da-chat .da-message .da-progressBar {
+	background: var(--markup-intensive) !important;
 }
 
 /*polprzezroczyste pola na czacie: zaproszenia na serwer*/
 
-.containerCozy-B4noqO .wrapper-35wsBm {
+.da-chat .da-message .da-userSelectNone {
 	background: rgba(0, 0, 0, 0.3) !important;
 	border-color: #000000 !important;
 }
 
 /*zaproszenie do gry (fortnite): popout*/
 
-[class*="theme-"] .attachPopout-1n-ZKM {
+[class*="theme-"] .da-attachPopout {
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
-[class*="theme-"] .attachPopout-1n-ZKM .attachPopoutRow-KrE-f6:hover {
+[class*="theme-"] .da-attachPopout .da-attachPopoutRow:hover {
 	background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*zaproszenie do gry (fortnite): polprzezroczyste pole na czacie po zaproszeniu*/
 
-.containerCozy-B4noqO .invite-18yqGF {
+.da-chat .da-message .da-invite {
 	background: rgba(0, 0, 0, 0.3) !important;
 	border-color: #000000 !important;
 }
 
-.containerCozy-B4noqO .coverImage-3cjWkd {
+.da-chat .da-message .da-invite .da-coverImage {
 	opacity: 0.3 !important;
 }
 
