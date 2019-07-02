@@ -1,4 +1,4 @@
-//META{"name":"KGB theme testing","description":"TEST KGB","author":"Toϻec","version":"3.5"}*//{}
+
 :root {
 	--main-red: #c31d1d;
 	--main-blue: #3333ff;
@@ -1747,6 +1747,23 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*różne po prawej zawarte w wielu opcjach*/
 
+/*pozbycie sie szarego tla podczas najezdzania na pola np w Członkowie czy Zaproszenia*/
+
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-card:hover {
+	background: transparent;
+	border-color: transparent;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-card::before {
+	background: transparent;
+	border-color: transparent;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-card:hover::before {
+	background: transparent;
+	border-color: transparent;
+}
+
 /*tytul i opis*/
 
 [aria-label="GUILD_SETTINGS"] .da-contentRegion .da-title {
@@ -1775,6 +1792,33 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 [aria-label="GUILD_SETTINGS"] .da-systemPad .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
 	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*popout o niezapisanych zmianach*/
+
+[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container {
+	background: rgba(0, 0, 0, 0.85) !important;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
+	background-color: var(--btBlue-bg) !important;
+	color: #dddddd !important;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: #ffffff !important;
+}
+
+/*switch checkboxy*/
+
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-switch, [aria-label="GUILD_SETTINGS"] .da-contentRegion .da-switch .da-checkbox {
+	background: rgba(0, 0, 0, 0.4) !important;
+	box-shadow: 0px 0px !important;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
+	background: var(--main-blue) !important
 }
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
@@ -1808,22 +1852,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	background: var(--btBlue-bg-hover);
 	color: var(--bt-col-hover);
 	border-color: transparent;
-}
-
-/*popout o niezapisanych zmianach*/
-
-[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container {
-	background: rgba(0, 0, 0, 0.85) !important;
-}
-
-[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
-	background-color: var(--btBlue-bg) !important;
-	color: #dddddd !important;
-}
-
-[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
-	background: var(--btBlue-bg-hover) !important;
-	color: #ffffff !important;
 }
 
 /*czesc ustawien serwera: Moderacja */
@@ -1880,13 +1908,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	border-color: #000000 !important;
 }
 
-/*czesc ustawien serwera: Czlonkowie*/
-
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
-	background: rgba(0, 0, 0, 0.4) !important;
-	border-color: #000000 !important;
-}
-
 /*popout przy wyswietlaniu roli w ustawieniach członków i przy filtrach w dzienniku zdarzen*/
 
 [class*="popout-"] [class*="popoutList-"] .da-scroller {
@@ -1895,6 +1916,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 [class*="popout-"] [class*="popoutList-"], [class*="popout-"] [class*="popoutList-"] .da-container .da-inner, [class*="popout-"] [class*="popoutList-"] .da-selectableItem.da-selected, [class*="popout-"] [class*="popoutList-"] .da-selectableItem:hover {
 	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*czesc ustawien serwera: Czlonkowie*/
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border-color: #000000 !important;
 }
 
 /* USTAWIENIA UŻYTKOWNIKA */
@@ -1928,6 +1956,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	background: rgba(255, 255, 255, 0.5) !important;
 }
 
+/*button discorda nitro po wybraniu*/
+
+#user-settings .da-sidebarRegion .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"] {
+	color: rgba(255, 255, 255, 0.8) !important;
+	background-color: var(--default-selected-rgba) !important;
+}
+
 /*różne po prawej zawarte w wielu opcjach*/
 
 /*tytul i opis*/
@@ -1940,19 +1975,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	color: rgba(255, 255, 255, 0.5) !important
 }
 
-/*polprzezroczyste pola*/
+/*polprzezroczyste pola (bez tych w "skrótach klawiszowych" i "aktywności w grze"*/
 
-.item-26Dhrx, .formNotice-2_hHWR, .accountList-33MS45, .userInfoViewing-16kqK3, .userInfoEditing-1CEzdT, .settings-closed.ui-switch-item, .flex-center.not-detected {
+#user-settings .da-contentRegion :not(.da-marginTop40):not(.da-row)>.da-card {
 	background: rgba(0, 0, 0, 0.6) !important;
 	border-color: #000000 !important;
-}
-
-.info-3LOr12 .titleChecked-2wg0pd {
-	text-shadow: none !important;
-}
-
-.info-3LOr12 .descChecked-XkfPsU {
-	color: #aaaaaa !important;
 }
 
 /*wysuwalne menu*/
@@ -2019,19 +2046,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
 
-#user-settings .da-contentRegion .card-FDVird:hover {
+#user-settings .da-contentRegion .da-card:hover {
 	background: transparent !important;
-	border: none;
+	border-color: transparent;
 }
 
-#user-settings .da-contentRegion .card-FDVird::before {
+#user-settings .da-contentRegion .da-card::before {
 	background: transparent !important;
-	border: none;
+	border-color: transparent;
 }
 
-#user-settings .da-contentRegion .card-FDVird:hover::before {
+#user-settings .da-contentRegion .da-card:hover::before {
 	background: transparent !important;
-	border: none;
+	border-color: transparent;
 }
 
 /* Poszczególne opcje ustawień */
@@ -2223,6 +2250,37 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected .da-disabledIcon path:nth-child(2) {
 	fill: var(--btRed-bg-hover) !important;
+}
+
+/*"Skróty klawiszowe": przycisk do usuwania skrótu*/
+
+#user-settings .da-contentRegion .da-removeKeybind {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+/*"Aktywność w grze"*/
+
+/*panel u góry*/
+
+#user-settings .da-contentRegion .da-notDetected {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+#user-settings .da-contentRegion .da-nowPlaying {
+	background-color: rgba(0, 230, 77, 0.3);
+}
+
+/*przycisk do usuwania gry*/
+
+#user-settings .da-contentRegion .da-removeGame {
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 0px;
+}
+
+/*ostatnia rozgrywka x dni temu (pod nazwą gry)*/
+
+#user-settings .da-contentRegion .da-lastPlayed .da-hoverRoll {
+	color: rgba(255, 255, 255, 0.4)
 }
 
 /*"Activity feed"*/
