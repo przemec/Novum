@@ -1,4 +1,4 @@
-
+//META{"name":"KGB theme testing","description":"TEST KGB","author":"Toϻec","version":"3.5"}*//{}
 :root {
 	--main-red: #c31d1d;
 	--main-blue: #3333ff;
@@ -2182,6 +2182,47 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-previewContainer .media-engine-video, #user-settings .da-contentRegion .da-previewContainer .da-previewOverlay {
 	background-color: rgba(0, 0, 0, 0.6);
 	border-color: transparent;
+}
+
+/*"Nakładka"*/
+
+/*"Powiadomienia z nakładki"*/
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border-color: var(--btBlue-bg) !important;
+}
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected {
+	border-color: var(--btRed-bg-hover) !important;
+}
+
+/*opcje w rogach*/
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option.da-selected {
+	background: var(--btBlue-bg) !important;
+}
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option:not(.da-selected):hover {
+	background: rgba(0, 0, 0, 1) !important;
+}
+
+/*ikona na środku*/
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-disabledIcon path:nth-child(2) {
+	fill: rgba(0, 0, 0, 0.8) !important;
+}
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-disabledIcon:hover path:nth-child(2) {
+	fill: rgba(0, 0, 0, 1) !important;
+}
+
+#user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected .da-disabledIcon path:nth-child(2) {
+	fill: var(--btRed-bg-hover) !important;
 }
 
 /*"Activity feed"*/
