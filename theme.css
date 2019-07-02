@@ -2390,47 +2390,48 @@ input:focus {
 /*Animacje przycisku Info i Disconnect*/
 
 /*
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1) = button Info
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2) = button Disconnect
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) = button Info
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2) = button Disconnect
+**not last child, żeby nie edytować przycisków po rozłączeniu się z głosowego
 */
 
-.da-channels .da-container:nth-child(2)>.da-flex>button .da-buttonIcon {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button .da-buttonIcon {
 	visibility: hidden;
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1) {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2)::after, .da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1) {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2)::after, .da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 20px;
 	opacity: .5
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2):hover::after, .da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1):hover {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2):hover::after, .da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1):hover {
 	background-color: transparent !important;
 	opacity: 1
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1):hover {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1):hover {
 	-webkit-animation: pulsate 1s infinite alternate;
 	animation: pulsate 1s infinite alternate
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(1):active {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1):active {
 	-webkit-animation: pulsate-active 1s infinite alternate;
 	animation: pulsate-active 1s infinite alternate
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2) {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2) {
 	position: relative;
 	background-image: none;
 	opacity: 1
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2)::after {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2)::after {
 	content: "";
 	position: absolute;
 	top: 0;
@@ -2440,12 +2441,12 @@ input:focus {
 	background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2):hover::after {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2):hover::after {
 	-webkit-animation: wiggle 70ms infinite alternate;
 	animation: wiggle 70ms infinite alternate
 }
 
-.da-channels .da-container:nth-child(2)>.da-flex>button:nth-child(2):active::after {
+.da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2):active::after {
 	-webkit-animation: wiggle-active 70ms infinite alternate;
 	animation: wiggle-active 70ms infinite alternate
 }
