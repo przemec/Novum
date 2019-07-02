@@ -96,34 +96,36 @@ body::after {
 
 /*kolorowe scrollbary*/
 
-/*Scrollbar na czacie serwera, w prywatnej konwersacji, activity feedzie i bibliotece gier*/
+/*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, activity feedzie i bibliotece gier, 
+lewej stronie niektórych opcji w ustawieniach*/
 
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-thumb, #user-settings .da-contentTransitionWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb {
 	border-color: transparent !important;
 	background-color: transparent !important;
 }
 
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track {
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track, #user-settings .da-contentTransitionWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb {
 	border-color: transparent !important;
 	background-color: transparent !important;
 }
 
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece, #user-settings .da-contentTransitionWrap>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
 	border-color: transparent !important;
 	background-color: transparent !important;
 }
 
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb, [class*="theme-"] .da-friendsTable>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb, [class*="theme-"] .da-friendsTable>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb, #user-settings .da-contentTransitionWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
 	border-color: var(--scrollColor-thumb-bord) !important;
 	background-color: var(--scrollColor-thumb) !important;
 }
 
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-friendsTable>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-spacer>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-friendsTable>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, [class*="theme-"] .da-applicationStore>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece, #user-settings .da-contentTransitionWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piec {
 	border-color: var(--scrollColor-backg-bord) !important;
 	background-color: var(--scrollColor-backg) !important;
 }
 
-/*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
+/*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
+lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 
 [class*="theme-"] .da-channels>.da-container>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-membersWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-privateChannels>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap ::-webkit-scrollbar-thumb, [class*="theme-"] .da-modal>.da-scrollerWrap ::-webkit-scrollbar-thumb {
 	border-color: transparent !important;
@@ -248,115 +250,7 @@ body::after {
 	background: rgba(0, 0, 0, 1);
 }
 
-/*USTAWIENIA SERWERA*/
-
-/*sidebar po lewej*/
-
-.da-systemPad .da-sidebar .da-item:hover, .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
-	background: var(--default-hover-rgba) !important;
-	color: var(--bt-col) !important;
-}
-
-.da-systemPad .da-sidebar .da-item.da-selected, .da-systemPad .da-sidebar .da-item.da-selected:hover, .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"], .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"], .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
-	background: var(--default-selected-rgba) !important;
-	color: var(--bt-col-hover) !important;
-}
-
-/*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
-
-.item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"], .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
-	background: rgba(0, 0, 0, 0.8) !important;
-	border-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-/*polprzezroczyste pola (z wysuwalnymi menu)*/
-
-/*pole i menu*/
-
-.da-systemPad .da-select>[class*="css-"], .da-systemPad .da-select [class*="-menu"] {
-	background: rgba(0, 0, 0, 0.8) !important;
-	border-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.da-systemPad .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
-	background: rgba(0, 0, 0, 0.8) !important;
-}
-
-/*polprzezroczyste pola (czesc ustawien "Podgląd")*/
-
-/*nazwa i region serwera*/
-
-.da-systemPad .da-marginBottom20 .da-input, .da-systemPad .da-container .da-layout {
-	background: rgba(0, 0, 0, 0.5) !important;
-}
-
-/*polprzezroczyste pola (czesc ustawien "Widżet")*/
-
-.da-systemPad .da-copyInput {
-	background: rgba(0, 0, 0, 0.5) !important;
-}
-
-/*polprzezroczyste pola (czesc ustawien "Bots")*/
-
-.da-systemPad .da-contentColumnDefault .da-card {
-	background: rgba(0, 0, 0, 0.5) !important;
-	border-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-.da-systemPad .da-contentColumnDefault .da-button {
-	background: var(--btBlue-bg);
-	color: var(--bt-col);
-}
-
-.da-systemPad .da-contentColumnDefault .da-button:hover {
-	background: var(--btBlue-bg-hover);
-	color: var(--bt-col-hover);
-}
-
-/*popout o niezapisanych zmianach*/
-
-.da-noticeRegion .da-container {
-	background: rgba(0, 0, 0, 0.85) !important;
-}
-
-.da-noticeRegion .da-container [class*="lookFilled"] {
-	background-color: var(--btBlue-bg) !important;
-	color: #dddddd !important;
-}
-
-.da-noticeRegion .da-container [class*="lookFilled"]:hover {
-	background: var(--btBlue-bg-hover) !important;
-	color: #ffffff !important;
-}
-
-/*czesc ustawien serwera: dziennik zdarzen*/
-
-.da-auditLog {
-	background: rgba(0, 0, 0, 0.8) !important;
-	border-color: #000000 !important;
-}
-
-.da-auditLog .da-headerExpanded, .da-auditLog .da-divider, .da-auditLog .da-changeDetails {
-	background: rgba(0, 0, 0, 0.4) !important;
-	border-color: #000000 !important;
-}
-
-/*czesc ustawien serwera: Czlonkowie*/
-
-.da-systemPad .da-customHeader .da-searchBar {
-	background: rgba(0, 0, 0, 0.4) !important;
-	border-color: #000000 !important;
-}
-
-/*popout przy wyswietlaniu roli w ustawieniach członków i przy filtrach w dzienniku zdarzen*/
-
-[class*="popout-"] [class*="popoutList-"] .da-scroller {
-	overflow: hidden;
-}
-
-[class*="popout-"] [class*="popoutList-"], [class*="popout-"] [class*="popoutList-"] .da-container .da-inner, [class*="popout-"] [class*="popoutList-"] .da-selectableItem.da-selected, [class*="popout-"] [class*="popoutList-"] .da-selectableItem:hover {
-	background: rgba(0, 0, 0, 0.8) !important;
-}
+/* SERWER */
 
 /*serwer - lista ludzi na serwerze (hover i click)*/
 
@@ -1785,12 +1679,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.da-modal>.da-inner>.da-modal.da-container .da-button[class*="Filled"] {
+.da-modal>.da-inner>.da-modal.da-container .da-button[class*="lookFilled"] {
 	background: var(--btRed-bg) !important;
 	color: var(--bt-col) !important;
 }
 
-.da-modal>.da-inner>.da-modal.da-container .da-button[class*="Filled"]:hover {
+.da-modal>.da-inner>.da-modal.da-container .da-button[class*="lookFilled"]:hover {
 	background: var(--btRed-bg-hover) !important;
 	color: var(--bt-col-hover) !important;
 }
@@ -1824,124 +1718,530 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	color: var(--bt-col-hover) !important;
 }
 
-/*rozmazany email w ustawieniach konta przed najechaniem myszką*/
+/*USTAWIENIA SERWERA*/
 
-.viewBody-2Qz-jg {
-	filter: blur(5px);
-	transition: 200ms cubic-bezier(.2, .11, 0, 1);
+[aria-label="GUILD_SETTINGS"] .da-standardSidebarView, [aria-label="GUILD_SETTINGS"] .da-standardSidebarView .da-sidebarRegion, [aria-label="GUILD_SETTINGS"] .da-standardSidebarView .da-contentRegion {
+	background: rgba(0, 0, 0, 0) !important
 }
 
-.viewBody-2Qz-jg:hover {
-	filter: none;
-	transition: 200ms cubic-bezier(.2, .11, 0, 1);
+[aria-label="GUILD_SETTINGS"] .da-sidebarRegion [class*="header"] {
+	color: rgba(255, 255, 255, 0.75) !important;
+	text-transform: uppercase !important;
 }
 
-.marginBottom20-32qID7>.viewBody-2Qz-jg {
-	filter: none;
-	transition: none;
+[aria-label="GUILD_SETTINGS"] .da-sidebarRegion [class*="separator"] {
+	background: rgba(255, 255, 255, 0.5) !important;
 }
 
-/*Ustawienia*/
+/*sidebar po lewej*/
 
-[class*="theme-"] .standardSidebarView-3F1I7i {
-	background: rgba(0, 0, 0, 0);
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item:hover, [aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
+	background: var(--default-hover-rgba) !important;
+	color: var(--bt-col) !important;
 }
 
-[class*="theme-"] .standardSidebarView-3F1I7i .contentRegion-3nDuYy {
-	background: rgba(0, 0, 0, 0);
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected, [aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover, [aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"], [aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"], [aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
+	background: var(--default-selected-rgba) !important;
+	color: var(--bt-col-hover) !important;
 }
 
-[class*="theme-"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN {
-	background: rgba(0, 0, 0, 0);
+/*różne po prawej zawarte w wielu opcjach*/
+
+/*tytul i opis*/
+
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-title {
+	color: rgba(255, 255, 255, 0.75) !important
 }
 
-[class*="theme-"] .ui-standard-sidebar-view {
-	background: rgba(0, 0, 0, 0);
+[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-description {
+	color: rgba(255, 255, 255, 0.5) !important
 }
 
-[class*="theme-"] .header-2RyJ0Y {
-	color: #bfbfbf;
-	text-transform: uppercase;
+/*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
+
+[aria-label="GUILD_SETTINGS"] .item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"], [aria-label="GUILD_SETTINGS"] .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-[class*="theme-"] .item-PXvHYJ {
-	color: #ffffff;
+/*polprzezroczyste pola (z wysuwalnymi menu)*/
+
+/*pole i menu*/
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-select>[class*="css-"], [aria-label="GUILD_SETTINGS"] .da-systemPad .da-select [class*="-menu"] {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-#bd-settings-sidebar .ui-tab-bar-item {
-	color: #000000;
-	padding-top: 6px;
-	padding-bottom: 6px;
-	margin-bottom: 2px;
-	padding: 6px 10px;
-	position: relative;
-	font-size: 16px;
-	line-height: 20px;
-	border-radius: 3px;
-	white-space: nowrap;
-	text-overflow: ellipsis;
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*polprzezroczyste pola (czesc ustawien "Podgląd")*/
+
+/*nazwa i region serwera*/
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-marginBottom20 .da-input, [aria-label="GUILD_SETTINGS"] .da-systemPad .da-container .da-layout {
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/*polprzezroczyste pola (czesc ustawien "Widżet")*/
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-copyInput {
+	background: rgba(0, 0, 0, 0.5) !important;
+}
+
+/*polprzezroczyste pola (czesc ustawien "Bots")*/
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-card {
+	background: rgba(0, 0, 0, 0.5);
+	border-color: rgba(0, 0, 0, 0.8);
+}
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"], [aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"], [aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookGhost"] {
+	background: var(--btBlue-bg);
+	color: var(--bt-col);
+	border-color: transparent;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover, [aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover, [aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
+	background: var(--btBlue-bg-hover);
+	color: var(--bt-col-hover);
+	border-color: transparent;
+}
+
+/*popout o niezapisanych zmianach*/
+
+[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container {
+	background: rgba(0, 0, 0, 0.85) !important;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
+	background-color: var(--btBlue-bg) !important;
+	color: #dddddd !important;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: #ffffff !important;
+}
+
+/*czesc ustawien serwera: Moderacja */
+
+/* zielony */
+
+[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"], [aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+	background: rgba(0, 230, 77, 0.3) !important;
+	border-color: rgba(0, 230, 77, 0.3) !important;
+}
+
+/* zolty */
+
+[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"], [aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+	background: rgba(255, 153, 0, 0.3) !important;
+	border-color: rgba(255, 153, 0, 0.3) !important;
+}
+
+/* pomaranczowy */
+
+[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"], [aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
+	background: rgba(242, 97, 0, 0.3) !important;
+	border-color: rgba(242, 97, 0, 0.3) !important;
+}
+
+/* czerwony */
+
+[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"], [aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+	background: rgba(244, 40, 40, 0.3) !important;
+	border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+/*checkboxy wewnątrz*/
+
+[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
+	background: rgba(0, 0, 0, 0) !important;
+	border-color: rgba(255, 255, 255, 0.2) !important
+}
+
+[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
+	background: rgba(0, 0, 0, 0) !important;
+	border-color: rgba(255, 255, 255, 0.8) !important
+}
+
+/*czesc ustawien serwera: dziennik zdarzen*/
+
+[aria-label="GUILD_SETTINGS"] .da-auditLog {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: #000000 !important;
+}
+
+[aria-label="GUILD_SETTINGS"] .da-auditLog .da-headerExpanded, [aria-label="GUILD_SETTINGS"] .da-auditLog .da-divider, [aria-label="GUILD_SETTINGS"] .da-auditLog .da-changeDetails {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border-color: #000000 !important;
+}
+
+/*czesc ustawien serwera: Czlonkowie*/
+
+[aria-label="GUILD_SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border-color: #000000 !important;
+}
+
+/*popout przy wyswietlaniu roli w ustawieniach członków i przy filtrach w dzienniku zdarzen*/
+
+[class*="popout-"] [class*="popoutList-"] .da-scroller {
 	overflow: hidden;
-	flex-shrink: 0;
-	font-weight: 500;
-	cursor: pointer;
 }
 
-[class*="theme-"] .itemSelected-1qLhcL {
-	background-color: var(--default-selected-rgba);
-	color: #ffffff;
-	font-weight: bold;
+[class*="popout-"] [class*="popoutList-"], [class*="popout-"] [class*="popoutList-"] .da-container .da-inner, [class*="popout-"] [class*="popoutList-"] .da-selectableItem.da-selected, [class*="popout-"] [class*="popoutList-"] .da-selectableItem:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
 }
 
-.title-3sZWYQ {
-	color: #cbcbcb !important
+/* USTAWIENIA UŻYTKOWNIKA */
+
+#user-settings .da-standardSidebarView, #user-settings .da-standardSidebarView .da-contentRegion, #user-settings .da-standardSidebarView .da-sidebarRegion, #user-settings .ui-standard-sidebar-view {
+	background: rgba(0, 0, 0, 0) !important;
 }
 
-.description-3_Ncsb {
-	color: #9a9a9a !important
+/*sidebar po lewej*/
+
+#user-settings .da-sidebarRegion [class*="header"] {
+	color: rgba(255, 255, 255, 0.75) !important;
+	text-transform: uppercase !important;
 }
 
-/*ikonki z mozliwoscia polaczenia konta z innym*/
-
-.connectedAccounts-2-XP1G .inner-2Y6JuD {
-	background-color: rgba(0, 0, 0, 0.4);
-	border-color: black;
+#user-settings .da-sidebarRegion .da-item {
+	color: rgba(255, 255, 255, 0.7) !important;
 }
 
-.connectedAccounts-2-XP1G .inner-2Y6JuD:hover {
-	background-color: rgba(0, 0, 0, 0.7);
-	border-color: black;
+#user-settings .da-sidebarRegion .da-item:hover {
+	background-color: var(--default-hover-rgba) !important;
+	color: rgba(255, 255, 255, 0.8) !important;
+}
+
+#user-settings .da-sidebarRegion .da-item.da-selected {
+	background-color: var(--default-selected-rgba) !important;
+	color: rgba(255, 255, 255, 0.9) !important;
+}
+
+#user-settings .da-sidebarRegion [class*="separator"] {
+	background: rgba(255, 255, 255, 0.5) !important;
+}
+
+/*różne po prawej zawarte w wielu opcjach*/
+
+/*tytul i opis*/
+
+#user-settings .da-contentRegion .da-title {
+	color: rgba(255, 255, 255, 0.75) !important
+}
+
+#user-settings .da-contentRegion .da-description {
+	color: rgba(255, 255, 255, 0.5) !important
+}
+
+/*polprzezroczyste pola*/
+
+.item-26Dhrx, .formNotice-2_hHWR, .accountList-33MS45, .userInfoViewing-16kqK3, .userInfoEditing-1CEzdT, .settings-closed.ui-switch-item, .flex-center.not-detected {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border-color: #000000 !important;
+}
+
+.info-3LOr12 .titleChecked-2wg0pd {
+	text-shadow: none !important;
+}
+
+.info-3LOr12 .descChecked-XkfPsU {
+	color: #aaaaaa !important;
+}
+
+/*wysuwalne menu*/
+
+#user-settings .da-contentRegion .da-systemPad .da-select>[class*="css-"], #user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"] {
+	background: rgba(0, 0, 0, 0.8) !important;
+	border-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+#user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
+	background: rgba(0, 0, 0, 0.8) !important;
+}
+
+/*checkboxy*/
+
+#user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border-color: rgba(0, 0, 0, 1) !important;
+}
+
+#user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked {
+	background-color: var(--main-blue) !important;
+	border-color: var(--main-blue) !important;
+}
+
+#user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked polyline {
+	stroke: var(--bt-col-hover) !important;
+}
+
+/*switch checkboxy*/
+
+#user-settings .da-contentRegion .da-switch, #user-settings .da-contentRegion .da-switch .da-checkbox {
+	background: rgba(0, 0, 0, 0.4) !important;
+	box-shadow: 0px 0px !important;
+}
+
+#user-settings .da-contentRegion .da-switch[class*="valueChecked"] {
+	background: var(--main-blue) !important
+}
+
+/*przyciski*/
+
+#user-settings .da-contentRegion .da-button[class*="lookFilled"], #user-settings .da-contentRegion .da-button[class*="lookOutlined"], #user-settings .da-contentRegion .da-button[class*="lookGhost"] {
+	background-color: var(--btBlue-bg) !important;
+	color: var(--bt-col) !important;
+	border-color: transparent !important;
+}
+
+#user-settings .da-contentRegion .da-button[class*="lookFilled"]:hover, #user-settings .da-contentRegion .da-button[class*="lookOutlined"]:hover, #user-settings .da-contentRegion .da-button[class*="lookGhost"]:hover {
+	background: var(--btBlue-bg-hover) !important;
+	color: var(--bt-col-hover) !important;
+	border-color: transparent !important;
+}
+
+/*input type range*/
+
+#user-settings .da-contentRegion .da-bar {
+	background: rgba(0, 0, 0, 0.6) !important
+}
+
+#user-settings .da-contentRegion .da-barFill {
+	background: var(--main-blue) !important
 }
 
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
 
-.card-FDVird {
+#user-settings .da-contentRegion .card-FDVird:hover {
 	background: transparent !important;
 	border: none;
 }
 
-.card-FDVird:hover {
+#user-settings .da-contentRegion .card-FDVird::before {
 	background: transparent !important;
 	border: none;
 }
 
-.card-FDVird::before {
+#user-settings .da-contentRegion .card-FDVird:hover::before {
 	background: transparent !important;
 	border: none;
 }
 
-.card-FDVird:hover::before {
-	background: transparent !important;
-	border: none;
+/* Poszczególne opcje ustawień */
+
+/*"Moje konto"*/
+
+/*rozmazany email w ustawieniach konta przed najechaniem myszką*/
+
+#user-settings .da-contentRegion .da-userInfoViewing .da-viewBody {
+	filter: blur(5px);
+	transition: 200ms cubic-bezier(.2, .11, 0, 1);
 }
 
-/*czesc ustawien: Gry*/
-
-.game-name-last-played .game-name-input:focus, .game-name-last-played .game-name-input:hover {
-	background: rgba(0, 0, 0, 0.5) !important;
-	border-color: rgba(0, 0, 0, 0.1) !important;
+#user-settings .da-contentRegion .da-userInfoViewing .da-viewBody:hover {
+	filter: none;
+	transition: 200ms cubic-bezier(.2, .11, 0, 1);
 }
 
-/*czesc ustawien: BetterDiscord*/
+/*żeby nie było blura na nicku*/
+
+#user-settings .da-contentRegion .da-userInfoViewing .da-marginBottom20>.da-viewBody {
+	filter: none;
+	transition: none;
+}
+
+/*input nicku*/
+
+#user-settings .da-contentRegion .da-inputWrapper .da-input.da-focused {
+	border-color: var(--main-blue) !important;
+}
+
+#user-settings .da-contentRegion .da-inputWrapper .da-questionMark {
+	background: var(--btBlue-bg) !important;
+}
+
+#user-settings .da-contentRegion .da-inputWrapper .da-questionMark:hover {
+	background: var(--btBlue-bg-hover) !important;
+}
+
+/*"Prywatnosc i bezpieczenstwo"*/
+
+/*polprzezroczyste pola u gory (zielony, pomaranczowy i czerowny)*/
+
+#user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"], #user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+	background: rgba(0, 230, 77, 0.3) !important;
+	border-color: rgba(0, 230, 77, 0.3) !important;
+}
+
+#user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"], #user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+	background: rgba(255, 153, 0, 0.3) !important;
+	border-color: rgba(255, 153, 0, 0.3) !important;
+}
+
+#user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"], #user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+	background: rgba(244, 40, 40, 0.3) !important;
+	border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+/*checkboxy wewnątrz*/
+
+#user-settings .da-contentRegion .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
+	background: rgba(0, 0, 0, 0) !important;
+	border-color: rgba(255, 255, 255, 0.2) !important
+}
+
+#user-settings .da-contentRegion .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
+	background: rgba(0, 0, 0, 0) !important;
+	border-color: rgba(255, 255, 255, 0.8) !important
+}
+
+/*"Autoryzowane aplikacje"*/
+
+/*pole danej aplikacji*/
+
+#user-settings .da-contentRegion .da-authedApp {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: #000000;
+}
+
+/*"Połączone konta"*/
+
+/*pole u góry*/
+
+#user-settings .da-contentRegion .da-accountList .da-inner {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: #000000;
+	margin-bottom: 7px;
+}
+
+#user-settings .da-contentRegion .da-accountList .da-inner:hover {
+	background-color: rgba(0, 0, 0, 0.7);
+	border-color: #000000;
+}
+
+/*kolorowe pola u dołu*/
+
+#user-settings .da-contentRegion .da-connection {
+	opacity: 0.9;
+}
+
+/*"Dane do faktury"*/
+
+/*panel u góry, tekst*/
+
+#user-settings .da-contentRegion .da-footer .da-flexChild .da-subText {
+	color: rgba(255, 255, 255, 0.4);
+}
+
+/*psst*/
+
+#user-settings .da-contentRegion .da-codeRedemptionRedirect {
+	background-color: rgba(0, 0, 0, 0.4);
+	border-color: #000000;
+}
+
+/*"Discord Nitro"*/
+
+/*panel u dołu*/
+
+#user-settings .da-contentRegion .da-sectionTier1 .da-tier1Banner {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border: 1px solid #000000;
+}
+
+/*"Hypesquad"*/
+
+/*panel u dołu*/
+
+#user-settings .da-contentRegion .da-attendeeCTA {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border: 1px solid #000000;
+}
+
+/*"Głos i wideo"*/
+
+/*test mikrofonu*/
+
+#user-settings .da-contentRegion .da-notches {
+	background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23000000'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E") !important
+}
+
+#user-settings .da-contentRegion .da-progress {
+	background: var(--btBlue-bg) !important
+}
+
+/*podgląd kamery*/
+
+#user-settings .da-contentRegion .da-previewContainer .media-engine-video, #user-settings .da-contentRegion .da-previewContainer .da-previewOverlay {
+	background-color: rgba(0, 0, 0, 0.6);
+	border-color: transparent;
+}
+
+/*"Activity feed"*/
+
+/*searchbox u góry*/
+
+#user-settings .da-contentRegion .da-container>.da-searchBox {
+	background: rgba(0, 0, 0, 0.4) !important;
+	border: 1px solid #000000;
+}
+
+/*panel u dołu*/
+
+#user-settings .da-contentRegion .da-emptyUsers {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border-color: #000000;
+}
+
+/*"Biblioteka"*/
+
+/*lokalizacje instalacji*/
+
+/*tytul i lokalizacja lokalizacji*/
+
+#user-settings .da-contentRegion .da-installationPath .da-rowTitle {
+	color: rgba(255, 255, 255, 0.8);
+}
+
+#user-settings .da-contentRegion .da-installationPath .da-default {
+	color: rgba(255, 255, 255, 0.5);
+}
+
+/*edytowanie lokalizacji*/
+
+#user-settings .da-contentRegion .da-installationPathEditing {
+	background: rgba(0, 0, 0, 0.6) !important;
+	border-color: #000000;
+}
+
+/*% zajętego miejsca*/
+
+#user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(1), #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(1) {
+	stroke: rgba(0, 0, 0, 0.3) !important;
+}
+
+#user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(2), #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(2) {
+	stroke: var(--main-red) !important;
+}
+
+/*tag "domyślny"*/
+
+#user-settings .da-contentRegion .da-installationPath .da-defaultIndicator {
+	background: var(--main-red) !important;
+}
+
+/* czesc ustawien: BetterDiscord */
+
+#bd-settingspane-container {
+	background: rgba(0, 0, 0, 0);
+}
 
 #bd-settings-sidebar .ui-tab-bar-header {
 	color: #bfbfbf;
@@ -1974,7 +2274,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	box-shadow: inset 0 1px 0 0 hsla(0, 0%, 100%, .1)
 }
 
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
+.da-standardSidebarView #bd-customcss-attach-controls button, .bd-detached-css-editor #bd-customcss-attach-controls button {
 	height: 30px;
 	margin-right: 3px;
 	border: none !important;
@@ -1985,7 +2285,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	color: #dddddd;
 }
 
-.standardSidebarView-3F1I7i #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
+.da-standardSidebarView #bd-customcss-attach-controls button:hover, .bd-detached-css-editor #bd-customcss-attach-controls button:hover {
 	background: var(--btBlue-bg-hover) !important;
 	color: #ffffff !important;
 }
@@ -2014,105 +2314,9 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	background: rgba(0, 90, 250, 0.3) !important;
 }
 
-/*czesc ustawien: polprzezroczyste pola*/
-
-.item-26Dhrx, .formNotice-2_hHWR, .accountList-33MS45, .userInfoViewing-16kqK3, .userInfoEditing-1CEzdT, .settings-closed.ui-switch-item, .flex-center.not-detected {
-	background: rgba(0, 0, 0, 0.6) !important;
-	border-color: #000000 !important;
-}
-
-.info-3LOr12 .titleChecked-2wg0pd {
-	text-shadow: none !important;
-}
-
-.info-3LOr12 .descChecked-XkfPsU {
-	color: #aaaaaa !important;
-}
-
-/*czesc ustawien: polprzezroczyste pola z wysuwanym menu*/
-
-.select-2TCrqx .Select-control, .select-2TCrqx .Select-menu-outer {
-	background: rgba(0, 0, 0, 0.6) !important;
-	border-color: black !important;
-}
-
-.select-2TCrqx .Select-option {
-	background: transparent !important;
-}
-
-.select-2TCrqx .Select-option.is-focused {
-	background: rgba(0, 0, 0, 0.4) !important;
-}
-
-/*czesc ustawien: przyciski i paski "przesuwane" */
-
-.ui-switch, .valueUnchecked-2lU_20 {
-	background: rgba(0, 0, 0, 0.4) !important
-}
-
-.ui-switch::before, .valueUnchecked-2lU_20::after {
-	background: #eeeeee !important
-}
-
-.ui-switch.checked, .valueChecked-m-4IJZ {
-	background: #1942e6 !important
-}
-
-[class*="theme-"] .bar-2Qqk5Z {
-	background: #ffffff;
-}
-
-.barFill-23-gu- {
-	background-color: #1942e6;
-}
-
-/*czesc ustawien: przyciski*/
-
-.userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9, .input-cIJ7To .questionMark-CWEQZn, .userSettingsSecurity-3IYeMF .button-38aScr, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr, .bda-footer .bda-settings-button, .ui-form-title+.bd-pfbtn {
-	background-color: var(--btBlue-bg) !important;
-	color: #dddddd !important;
-}
-
-.userInfoViewing-16kqK3 .userInfoViewingButton-2-jbH9:hover, .input-cIJ7To .questionMark-CWEQZn:hover, .userSettingsSecurity-3IYeMF .button-38aScr:hover, .flexChild-faoVW3 .colorGreen-29iAKY.button-38aScr:hover, .flexChild-faoVW3 .colorBrand-3pXr91.button-38aScr:hover, .bda-footer .bda-settings-button:hover, .ui-form-title+.bd-pfbtn:hover {
-	background: var(--btBlue-bg-hover) !important;
-	color: #ffffff !important;
-}
-
-/*czesc ustawien: zaznaczalne polprzezroczyste pola po ich wybraniu*/
-
-/* "Prywatnosc i bezpieczenstwo", "Moderacja"(serwer) */
-
-/* zielony */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
-	background: rgba(0, 230, 77, 0.3) !important;
-	border-color: rgba(0, 230, 77, 0.3) !important;
-}
-
-/* zolty */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
-	background: rgba(255, 153, 0, 0.3) !important;
-	border-color: rgba(255, 153, 0, 0.3) !important;
-}
-
-/* pomaranczowy */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
-	background: rgba(242, 97, 0, 0.3) !important;
-	border-color: rgba(242, 97, 0, 0.3) !important;
-}
-
-/* czerwony */
-
-.radioGroup-1GBvlr .item-26Dhrx[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"], .radioGroup-1GBvlr .item-26Dhrx[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
-	background: rgba(244, 40, 40, 0.3) !important;
-	border-color: rgba(204, 0, 0, 0.3) !important;
-}
-
 /*IKONKI USTAWIEN*/
 
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(2)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(3)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(4)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(5)::after, .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:last-child::after {
+.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(2)::after, .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(3)::after, .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(4)::after, .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(5)::after, .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:last-child::after {
 	background: none !important;
 }
 
@@ -2120,23 +2324,23 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	padding-left: 50px !important;
 }
 
-[class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item.selected {
+#user-settings #bd-settings-sidebar .ui-tab-bar-item.selected {
 	background-color: var(--main-red);
 }
 
-[class*="theme-"] #bd-settings-sidebar .ui-tab-bar-item:hover {
+#user-settings #bd-settings-sidebar .ui-tab-bar-item:hover {
 	background-color: var(--hover-color);
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"] {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"] {
 	padding-left: 50px !important;
 }
 
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"] {
+.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"] {
 	padding-left: 20px !important;
 }
 
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]::after {
+.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]::after {
 	content: "";
 	position: absolute;
 	width: 24px;
@@ -2148,96 +2352,96 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 	transition: all .15s ease-in-out;
 }
 
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:hover::after {
+.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:hover::after {
 	opacity: .7;
 }
 
-.standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"][class*="selected-"]::after {
+.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"][class*="selected-"]::after {
 	opacity: 1;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(2)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(2)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(3)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(3)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(4)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(4)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/apps.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(5)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(5)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(6)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(6)::after {
 	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/Credit_card.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(8)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(8)::after {
 	background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(9)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(9)::after {
 	background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
 	background-size: cover;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
 	background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/open_in_new.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(26)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(26)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
 }
 
-.platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(24)::after {
+.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(24)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
 }
 
-.platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
+.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(21)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
 }
 
-[layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(12)::after {
+[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(12)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(13)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(14)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(15)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(16)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(17)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(18)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(20)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(20)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(19)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg) !important;
 }
 
-.platform-win [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(23)::after, .platform-osx [layer-id="user-settings"] .standardSidebarView-3F1I7i .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(22)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(23)::after, .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e>*>[class*="item"]:nth-child(22)::after {
 	background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
 }
 
