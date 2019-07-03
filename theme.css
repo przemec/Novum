@@ -2256,19 +2256,16 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/betterdiscord.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
-    background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/6c6aaf1a/Icons/bandage.svg) !important;
-}
-.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/emote.svg) !important;
 }
-.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/code.svg) !important;
-}
-.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/puzzle.svg) !important;
 }
-.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(8)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/palette.svg) !important;
+}
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/code.svg) !important;
 }
 
 /* Randomowe */
