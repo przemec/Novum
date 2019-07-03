@@ -1758,21 +1758,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     color: rgba(255, 255, 255, 0.8) !important;
     background-color: var(--default-selected-rgba) !important;
 }
-/*przycisk Wyloguj*/
-#user-settings .da-sidebarRegion .da-item[style*="color: rgb(240, 71, 71)"] {
-    background-color: var(--btRed-bg) !important;
-    color: var(--bt-col) !important;
-    padding-left: 0px !important;
-    text-align: center;
-    transition: all 0.3s;
-}
-#user-settings .da-sidebarRegion .da-item[style*="color: rgb(240, 71, 71)"]:hover {
-    background-color: var(--btRed-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
-}
-#user-settings .da-sidebarRegion .da-item[style*="color: rgb(240, 71, 71)"]::after {
-    display: none !important;
-}
 
 /*różne po prawej zawarte w wielu opcjach*/
 /*tytul i opis*/
@@ -2177,27 +2162,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*IKONKI USTAWIEN*/
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(2)::after,
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(3)::after,
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(4)::after,
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:nth-child(5)::after,
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:last-child::after {
-    background: none !important;
-}
 
-#bd-settings-sidebar .ui-tab-bar-item {
+/*miejsce na ikony*/
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"],
+.platform-win #bd-settings-sidebar .ui-tab-bar-item {
     padding-left: 50px !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"] {
-    padding-left: 50px !important;
-}
-
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"] {
-    padding-left: 20px !important;
-}
-
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]::after {
+.platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"]::after {
     content: "";
     position: absolute;
     width: 24px;
@@ -2208,129 +2179,95 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     -webkit-transition: all 0.15s ease-in-out;
     transition: all 0.15s ease-in-out;
 }
-
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"]:hover::after {
+.platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"]:hover::after {
     opacity: 0.7;
 }
-
-.da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP [class*="item"][class*="selected-"]::after {
+.platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"][class*="selected-"]::after {
     opacity: 1;
 }
 
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(2)::after {
+/*ikony*/
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(2)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/person.svg) !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(3)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(3)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/security.svg) !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(4)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(4)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/apps.svg) !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(5)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(5)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/link.svg) !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(6)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(6)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/Credit_card.svg) !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(8)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(8)::after {
     background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
 }
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(9)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(9)::after {
     background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
     background-size: cover;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(13)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/open_in_new.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(21)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/desktop_windows.svg) !important;
-}
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(26)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/exit.svg) !important;
-}
-
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(24)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/exit.svg) !important;
-}
-
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(21)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/history.svg) !important;
-}
-
-[layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(12)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(12)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/mic.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(14)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(13)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(13)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/open_in_new.svg) !important;
+}
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(14)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/notifications.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(15)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(14)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(15)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/keyboard.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(16)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(15)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(16)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/games.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(17)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(16)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(17)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/chat.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(18)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(17)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/camera.svg) !important;
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(18)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/gamepad.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(19)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(18)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(19)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/videocam.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(20)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(19)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(20)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/looks.svg) !important;
+}
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(21)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/desktop_windows.svg) !important;
+}
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(22)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/language.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(23)::after,
-.platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(22)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/history.svg) !important;
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(23)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/windows.svg) !important;
+}
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(25)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/update.svg) !important;
+}
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(28)::after {
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/exit.svg) !important;
 }
 
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/betterdiscord.svg) !important;
 }
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
     background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/6c6aaf1a/Icons/bandage.svg) !important;
 }
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/emote.svg) !important;
 }
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/code.svg) !important;
 }
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/puzzle.svg) !important;
 }
-
-#bd-settings-sidebar .ui-tab-bar-item:nth-child(8)::after {
+.platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(8)::after {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/palette.svg) !important;
 }
 
