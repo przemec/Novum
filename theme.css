@@ -1003,11 +1003,22 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::after {
     visibility: hidden;
 }
+
 /*przycisk "Pokaz wiecej wiadomosci" u góry czatu*/
 [class*="theme-"] .da-spacer > .da-messagesWrapper .da-hasMore button {
     background: rgba(0, 0, 0, 0.5) !important;
     border-color: transparent !important;
     color: var(--markup-intensive) !important;
+}
+/*przycisk "x nowych wiadomosci" u góry czatu*/
+[class*="theme-"] .da-spacer > .da-messagesWrapper .da-newMessagesBar {
+    background: var(--markup-intensive) !important;
+    border-color: transparent !important;
+}
+/*przycisk "przeglądasz starsze wiadomości" u dołu czatu*/
+[class*="theme-"] .da-spacer > .da-messagesWrapper .da-jumpToPresentBar {
+    background: var(--markup-normal) !important;
+    border-color: transparent !important;
 }
 
 /*wyszukiwanie wiadomiosci na czacie: pasek wyszukiwania*/
@@ -1400,11 +1411,16 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.4);
 }
 
+/*edytowanie wiadomosci > kolor "anulować" albo "zapisać"*/
+.da-chat .da-message .da-operations > a {
+    color: var(--markup-normal);
+}
+
 /*kolor linku na czacie*/
 .da-chat .da-message .da-markup > a {
     color: var(--markup-normal);
 }
-/*polprzezroczyste pola na czacie: linki */
+/*polprzezroczyste pola na czacie: linki*/
 .da-chat .da-message .da-embed .da-embedPill {
     background: var(--markup-intensive) !important;
 }
@@ -2202,23 +2218,23 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(2)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/person.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/person.svg) !important;
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(3)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/security.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/security.svg) !important;
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(4)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/apps.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/apps.svg) !important;
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(5)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/link.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/link.svg) !important;
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(6)::after {
-    background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/Credit_card.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/Credit_card.svg) !important;
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(8)::after {
@@ -2231,71 +2247,71 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(13)::after {
-    background: url(https://cdn.rawgit.com/OmgDani/ClearVisionFixes/master/Icons/open_in_new.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/open_in_new.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(21)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/desktop_windows.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/desktop_windows.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(26)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/exit.svg) !important;
 }
 
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(24)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/exit.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/exit.svg) !important;
 }
 
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(21)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/history.svg) !important;
 }
 
 [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(12)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/mic.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/mic.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(14)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(13)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/notifications.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/notifications.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(15)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(14)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/keyboard.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/keyboard.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(16)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(15)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/games.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/games.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(17)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(16)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/chat.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/chat.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(18)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(17)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/camera.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/camera.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(19)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(18)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/videocam.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/videocam.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(20)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(19)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/language.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/language.svg) !important;
 }
 
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(23)::after,
 .platform-osx [layer-id="user-settings"] .da-standardSidebarView .sidebarRegion-VFTUkN .sidebarRegionScroller-3MXcoP .sidebar-CFHs9e > * > [class*="item"]:nth-child(22)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/history.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/history.svg) !important;
 }
 
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/betterdiscord.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/betterdiscord.svg) !important;
 }
 
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
@@ -2303,19 +2319,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/emote.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/emote.svg) !important;
 }
 
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/code.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/code.svg) !important;
 }
 
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/puzzle.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/puzzle.svg) !important;
 }
 
 #bd-settings-sidebar .ui-tab-bar-item:nth-child(8)::after {
-    background: url(https://cdn.rawgit.com/Zerthox/ClearVision/master/icons/palette.svg) !important;
+    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/palette.svg) !important;
 }
 
 /* Randomowe */
