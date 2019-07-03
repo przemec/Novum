@@ -350,14 +350,14 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     color: rgba(255, 255, 255, 0.7);
 }
 /*default ikony kanałów tekst/głosowych*/
-.da-channels .da-containerDefault .da-icon {
+.da-channels .da-containerDefault [class*="icon"] {
     color: rgba(255, 255, 255, 0.6) !important;
 }
-.da-channels .da-containerDefault .da-icon > path:last-of-type {
+.da-channels .da-containerDefault [class*="icon"] > path:last-of-type {
     opacity: 0.9;
 }
 /*ikona zablokowanego kanału na który można wejść*/
-.da-channels .da-containerDefault .da-icon > path {
+.da-channels .da-containerDefault [class*="icon"] > path {
     opacity: 0.6;
 }
 /*zmutowany tekstowy*/
