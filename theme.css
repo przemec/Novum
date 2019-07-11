@@ -295,9 +295,9 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 
 /*status online polaczenia: background kontenera*/
-.da-spacer .da-channels .da-container:nth-child(2) {
+.da-spacer .da-channels .da-container {
     background-color: rgba(0, 0, 0, 0) !important;
-    border-bottom: 1px rgba(0, 0, 0, 0.2);
+    border-bottom-color: transparent;
 }
 
 /*status online polaczenia: popout*/
