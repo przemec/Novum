@@ -328,10 +328,10 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 
 /*popout po kliknieciu na nazwe serwera*/
-.popout-3sVMXz .menu-Sp6bN1 {
+.da-popout>.da-menu {
     background: rgba(0, 0, 0, 0.9);
 }
-.popout-3sVMXz .menu-Sp6bN1 .item-1GzJrl:hover {
+.da-popout>.da-menu>.da-item:hover {
     background: rgba(0, 0, 0, 1);
 }
 
