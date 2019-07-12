@@ -1242,23 +1242,26 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 
 /*uzytkownik po kliknieciu na niego lewym*/
+.da-popouts .da-userPopout {
+    box-shadow: 0px 0px;
+}
 /*header*/
-.da-userPopout > .da-header {
+.da-popouts .da-userPopout > .da-header {
     background: url(https://i.imgur.com/WabiB4C.png);
     background-size: cover;
 }
-.da-userPopout > * > .da-activityUserPopout {
+.da-popouts .da-userPopout > * > .da-activityUserPopout {
     background-color: rgba(0, 0, 0, 0);
 }
-.da-userPopout > .da-header .da-headerText .da-headerTag {
+.da-popouts .da-userPopout > .da-header .da-headerText .da-headerTag {
     color: #dddddd;
 }
-.da-userPopout > .da-header .da-headerText .da-headerName {
+.da-popouts .da-userPopout > .da-header .da-headerText .da-headerName {
     color: #ffffff;
     font-size: 18px;
 }
 /*body*/
-.da-userPopout > .da-body {
+.da-popouts .da-userPopout > .da-body {
     background-color: rgba(0, 0, 0, 0.95);
     background-size: cover;
     background-position: right center;
@@ -1266,26 +1269,26 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-bottom-color: var(--markup-blue);
     padding: 20px;
 }
-.da-userPopout > .da-body .da-bodyTitle {
+.da-popouts .da-userPopout > .da-body .da-bodyTitle {
     color: var(--markup-blue);
     font-size: 12px;
     font-weight: 700;
     margin-left: 4px;
     text-transform: uppercase;
 }
-.da-userPopout > .da-body .da-note textarea:focus {
+.da-popouts .da-userPopout > .da-body .da-note textarea:focus {
     background: rgba(0, 0, 0, 0.9);
 }
 /*footer*/
-.da-userPopout > .da-footer {
+.da-popouts .da-userPopout > .da-footer {
     background-color: rgba(0, 0, 0, 0.95);
     border: 1px solid rgba(0, 0, 0, 1);
 }
-.da-userPopout > .da-footer .da-quickMessage {
+.da-popouts .da-userPopout > .da-footer .da-quickMessage {
     background-color: rgba(0, 0, 0, 0.7);
     border: 1px solid var(--markup-blue);
 }
-.da-userPopout > .da-footer .da-pro {
+.da-popouts .da-userPopout > .da-footer .da-pro {
     color: var(--markup-blue);
 }
 
