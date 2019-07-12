@@ -1547,29 +1547,29 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*USTAWIENIA SERWERA*/
-[aria-label="GUILD_SETTINGS"] .da-standardSidebarView,
-[aria-label="GUILD_SETTINGS"] .da-standardSidebarView .da-sidebarRegion,
-[aria-label="GUILD_SETTINGS"] .da-standardSidebarView .da-contentRegion {
+[aria-label*="SETTINGS"] .da-standardSidebarView,
+[aria-label*="SETTINGS"] .da-standardSidebarView .da-sidebarRegion,
+[aria-label*="SETTINGS"] .da-standardSidebarView .da-contentRegion {
     background: rgba(0, 0, 0, 0) !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-sidebarRegion [class*="header"] {
+[aria-label*="SETTINGS"] .da-sidebarRegion [class*="header"] {
     color: rgba(255, 255, 255, 0.75) !important;
     text-transform: uppercase !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-sidebarRegion [class*="separator"] {
+[aria-label*="SETTINGS"] .da-sidebarRegion [class*="separator"] {
     background: rgba(255, 255, 255, 0.5) !important;
 }
 /*sidebar po lewej*/
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item:hover,
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item:hover,
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
     background: var(--default-hover-rgba) !important;
     color: var(--bt-col) !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected,
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover,
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"],
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"],
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected,
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover,
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"],
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"],
+[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
     background: var(--default-selected-rgba) !important;
     color: var(--bt-col-hover) !important;
 }
@@ -1577,88 +1577,79 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*różne po prawej zawarte w wielu opcjach*/
 
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Członkowie czy Zaproszenia*/
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-card:hover {
+[aria-label*="SETTINGS"] .da-contentRegion .da-card:hover {
     background: transparent;
     border-color: transparent;
 }
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-card::before {
+[aria-label*="SETTINGS"] .da-contentRegion .da-card::before {
     background: transparent;
     border-color: transparent;
 }
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-card:hover::before {
+[aria-label*="SETTINGS"] .da-contentRegion .da-card:hover::before {
     background: transparent;
     border-color: transparent;
 }
 /*tytul i opis*/
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-title {
+[aria-label*="SETTINGS"] .da-contentRegion .da-title {
     color: rgba(255, 255, 255, 0.75) !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-description {
+[aria-label*="SETTINGS"] .da-contentRegion .da-description {
     color: rgba(255, 255, 255, 0.5) !important;
 }
 /*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
-[aria-label="GUILD_SETTINGS"] .item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"],
-[aria-label="GUILD_SETTINGS"] .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
+[aria-label*="SETTINGS"] .item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"],
+[aria-label*="SETTINGS"] .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
     background: rgba(0, 0, 0, 0.8) !important;
     border-color: rgba(0, 0, 0, 0.8) !important;
 }
 /*polprzezroczyste pola (z wysuwalnymi menu)*/
 /*pole i menu*/
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-select > [class*="css-"],
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-select [class*="-menu"] {
+[aria-label*="SETTINGS"] .da-systemPad .da-select > [class*="css-"],
+[aria-label*="SETTINGS"] .da-systemPad .da-select [class*="-menu"] {
     background: rgba(0, 0, 0, 0.8) !important;
     border-color: rgba(0, 0, 0, 0.8) !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+[aria-label*="SETTINGS"] .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 /*popout o niezapisanych zmianach*/
-[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container {
+[aria-label*="SETTINGS"] .da-noticeRegion .da-container {
     background: rgba(0, 0, 0, 0.85) !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
+[aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
     background-color: var(--btBlue-bg) !important;
     color: #dddddd !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
+[aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
     background: var(--btBlue-bg-hover) !important;
     color: #ffffff !important;
 }
 /*switch checkboxy*/
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-switch,
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-switch .da-checkbox {
+[aria-label*="SETTINGS"] .da-contentRegion .da-switch,
+[aria-label*="SETTINGS"] .da-contentRegion .da-switch .da-checkbox {
     background: rgba(0, 0, 0, 0.4) !important;
     box-shadow: 0px 0px !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
+[aria-label*="SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
     background: var(--main-blue) !important;
 }
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
 /*nazwa i region serwera*/
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-marginBottom20 .da-input,
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-container .da-layout {
+[aria-label*="SETTINGS"] .da-systemPad .da-marginBottom20 .da-input,
+[aria-label*="SETTINGS"] .da-systemPad .da-container .da-layout {
     background: rgba(0, 0, 0, 0.5) !important;
 }
-/*polprzezroczyste pola (czesc ustawien "Widżet")*/
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-copyInput {
-    background: rgba(0, 0, 0, 0.5) !important;
-}
-/*polprzezroczyste pola (czesc ustawien "Bots")*/
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-card {
-    background: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.8);
-}
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"],
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"],
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookGhost"] {
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"],
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"],
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookGhost"] {
     background: var(--btBlue-bg);
     color: var(--bt-col);
     border-color: transparent;
 }
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
     background: var(--btBlue-bg-hover);
     color: var(--bt-col-hover);
     border-color: transparent;
@@ -1666,47 +1657,52 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*czesc ustawien serwera: Moderacja */
 /* zielony */
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
     background: rgba(0, 230, 77, 0.3) !important;
     border-color: rgba(0, 230, 77, 0.3) !important;
 }
 /* zolty */
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
     background: rgba(255, 153, 0, 0.3) !important;
     border-color: rgba(255, 153, 0, 0.3) !important;
 }
 /* pomaranczowy */
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"],
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"],
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
     background: rgba(242, 97, 0, 0.3) !important;
     border-color: rgba(242, 97, 0, 0.3) !important;
 }
 /* czerwony */
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
     background: rgba(244, 40, 40, 0.3) !important;
     border-color: rgba(204, 0, 0, 0.3) !important;
 }
 /*checkboxy wewnątrz*/
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
     background: rgba(0, 0, 0, 0) !important;
     border-color: rgba(255, 255, 255, 0.2) !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
     background: rgba(0, 0, 0, 0) !important;
     border-color: rgba(255, 255, 255, 0.8) !important;
 }
+/*niepokolorowane aktualnie pola*/
+[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-card[style*="padding: 10px"] {
+    background: rgba(0, 0, 0, 0.5);
+    border-color: rgba(0, 0, 0, 0.8);
+}
 
 /*czesc ustawien serwera: dziennik zdarzen*/
-[aria-label="GUILD_SETTINGS"] .da-auditLog {
+[aria-label*="SETTINGS"] .da-auditLog {
     background: rgba(0, 0, 0, 0.8) !important;
     border-color: #000000 !important;
 }
-[aria-label="GUILD_SETTINGS"] .da-auditLog .da-headerExpanded,
-[aria-label="GUILD_SETTINGS"] .da-auditLog .da-divider,
-[aria-label="GUILD_SETTINGS"] .da-auditLog .da-changeDetails {
+[aria-label*="SETTINGS"] .da-auditLog .da-headerExpanded,
+[aria-label*="SETTINGS"] .da-auditLog .da-divider,
+[aria-label*="SETTINGS"] .da-auditLog .da-changeDetails {
     background: rgba(0, 0, 0, 0.4) !important;
     border-color: #000000 !important;
 }
@@ -1721,8 +1717,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 
+/*polprzezroczyste pola (czesc ustawien "Widżet")*/
+[aria-label*="SETTINGS"] .da-systemPad .da-copyInput {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
 /*czesc ustawien serwera: Czlonkowie*/
-[aria-label="GUILD_SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
+[aria-label*="SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
     background: rgba(0, 0, 0, 0.4) !important;
     border-color: #000000 !important;
 }
@@ -2016,6 +2016,18 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.4) !important;
     border: 1px solid #000000;
 }
+/*popout po wyszukaniu w searchboxie*/
+#user-settings .da-contentRegion .da-container > .da-searchResultsContainer {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px;
+}
+#user-settings .da-contentRegion .da-container > .da-searchResultsContainer .da-searchOption.da-selected {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border: 1px solid #000000;
+    box-shadow: 0px 0px;
+}
+
 /*panel u dołu*/
 #user-settings .da-contentRegion .da-emptyUsers {
     background: rgba(0, 0, 0, 0.6) !important;
