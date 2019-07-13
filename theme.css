@@ -857,6 +857,26 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-radius: 10%;
 }
 
+/*popout przychodzącej rozmowy głosowej*/
+.da-incomingCallInner {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+.da-incomingCallInner .da-actionButtons .da-button {
+    background: var(--btRed-bg) !important;
+    color: var(--bt-col) !important;
+}
+.da-incomingCallInner .da-actionButtons .da-button:hover {
+    background: var(--btRed-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
+.da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"] {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+.da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"]:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
 /*prywatna wiad: rozmowa glosowa prywatna */
 .da-inCall .da-video,
 .da-inCall > .da-container {
