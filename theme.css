@@ -1371,6 +1371,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-message .da-markup pre code {
     background: rgba(0, 0, 0, 0.5) !important;
 }
+/*
+` tło tego co się tu wyśle `
+*/
+[class*="theme-"] .da-message .da-markup .inline {
+    background: rgba(0, 0, 0, 0.5) !important;
+}
 
 /*reakcje pod wiadomosciami na czacie*/
 [class*="theme-"] .da-reactions .da-reaction {
