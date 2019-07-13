@@ -1,3 +1,5 @@
+//META{"name":"KGB theme testing","description":"TEST KGB","author":"Toϻec","version":"3.5"}*//{}
+
 :root {
     --main-red: #c31d1d;
     --main-blue: #3333ff;
@@ -1355,7 +1357,10 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 
 /* CHAT */
 /*input do wysyłania wiadomości na czacie*/
-.da-chat .da-channelTextArea > .da-inner {
+.da-chat form {
+    margin: 0px;
+}
+.da-chat form .da-channelTextArea > .da-inner {
     background: rgba(0, 0, 0, 0.2);
 }
 
@@ -2348,72 +2353,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/code.svg) !important;
 }
 
-/* Randomowe */
-input {
-    transition: all 0.3s;
-}
-input:focus {
-    border-color: var(--main-blue) !important;
-    box-shadow: 0px 0px 0px transparent;
-}
-
-/*przyciski w dolnym lewym przed i po połączeniu*/
-.da-channels .da-container:nth-child(2) button:hover,
-.da-channels .da-container:nth-child(3) button:hover {
-    background: transparent;
-}
-
-[class*="theme-"] .chat-3bRxxu .title-wrap {
-    border-bottom: 0px;
-}
-
-.chat-3bRxxu form {
-    margin: 0px;
-}
-
-.channel-textarea {
-    margin: 20px 20px 30px;
-}
-
-[class*="theme-"] .chat-3bRxxu .content form .channel-textarea-inner {
-    border-color: transparent;
-}
-
-[class*="theme-"] .message-group.is-local-bot-message {
-    background-image: none !important;
-    box-shadow: -20px 0 rgba(0, 0, 0, 0.8), 20px 0 rgba(0, 0, 0, 0.8), -20px -1px 0 0 rgba(0, 0, 0, 0.8), -20px 1px 0 rgba(0, 0, 0, 0.8), 20px 1px 0 rgba(0, 0, 0, 0.8), 20px -1px 0 rgba(0, 0, 0, 0.8);
-    background-color: rgba(0, 0, 0, 0.8) !important;
-}
-
-[class*="theme-"] .chat-3bRxxu form {
-    border-top: 0px;
-}
-
-.typing {
-    background-color: transparent !important;
-    margin: 0 20px;
-}
-
-.noChannel-Z1DQK7 {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-/* [style*="avatars/214676791955161091"].da-image {
-   animation: rainbow1 4s linear infinite;
-} */
-/* If you have Lag Problems with the theme then delete the "@" in the beggining of this line*/
-@keyframes rainbow1 {
-    0% {
-        box-shadow: 0 0 10px #e75906;
-    }
-    50% {
-        box-shadow: 0 0 15px #fce300;
-    }
-    100% {
-        box-shadow: 0 0 10px #e75906;
-    }
-}
-
 /* ANIMACJE */
 
 /*animacja buttona edytowania wiadomosci*/
@@ -2801,8 +2740,25 @@ body::after {
 }
 
 /*Radial Status:hover*/
-.header-QKLPzZ .statusProfile-3ynqtt.status-oxiHuE,
-.userPopout-3XzG_A .statusProfile-3ynqtt {
+.da-status {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    pointer-events: none !important;
+}
+/*?*/
+.listRow-hutiT_:hover .da-status,
+.card-7JP0BX:hover .da-status {
+    width: 91% !important;
+    height: 91%;
+    right: -2px !important;
+    bottom: -2px;
+    padding: 2px;
+    transition: 0.1s;
+    border-radius: 50%;
+}
+/*left click uzytkownika, right click uzytkownika -> profil*/
+.da-userPopout .da-status,
+.da-header .da-status {
     width: 98% !important;
     height: 98%;
     right: -3px !important;
@@ -2810,141 +2766,157 @@ body::after {
     padding: 2px;
     transition: 0.1s;
 }
-
-.listRow-hutiT_:hover .status-oxiHuE,
-.card-7JP0BX:hover .status-oxiHuE {
-    width: 91% !important;
-    height: 91%;
-    border-radius: 50%;
-    right: -2px !important;
-    bottom: -2px;
-    padding: 2px;
-    transition: 0.1s;
-}
-
-.autocompleteRow-2OthDa:hover .status-oxiHuE {
+/*nick po wpisaniu @ na czacie*/
+.da-autocompleteRow:hover .da-status {
     width: 82% !important;
     height: 82%;
-    border-radius: 50%;
     right: -2px !important;
     bottom: -2px;
     padding: 2px;
     transition: 0.1s;
-}
-
-.members-1998pB .content-OzHfo4:hover .status-2s6iDp,
-.members-1998pB .member-3W1lQa.popout-open .status-2s6iDp,
-.private-channels .channel a:hover .status {
     border-radius: 50%;
-    bottom: -4px;
-    right: -4px;
-    height: 34px !important;
-    width: 34px !important;
 }
-
-.autocompleteRow-2OthDa:hover .online-2S838R,
-.listRow-hutiT_:hover .online-2S838R,
-.card-7JP0BX:hover .online-2S838R,
-.header-QKLPzZ .statusProfile-3ynqtt.online-2S838R,
-.private-channels .channel a:hover .online-2S838R,
-.members-1998pB .content-OzHfo4:hover .online-2S838R,
-.members-1998pB .member-3W1lQa.popout-open .online-2S838R,
-.userPopout-3XzG_A .online-2S838R {
+/*user na liscie na serwerze, user na liscie na serwerze po left clicku, wiadomosc prywatna*/
+.da-members .da-member .da-content:hover .da-status,
+.da-members .da-member.popout-open .da-status,
+.da-privateChannels .da-channel a:hover .da-status {
+    width: 34px !important;
+    height: 34px !important;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+}
+/*po kolei: ?, ?, nick po wpisaniu @ na czacie, right click uzytkownika -> profil, wiadomosc prywatna, 
+user na liscie na serwerze, user na liscie na serwerze po left clicku, left click uzytkownika*/
+.listRow-hutiT_:hover .da-online,
+.card-7JP0BX:hover .da-online,
+.da-autocompleteRow:hover .da-online,
+.da-header .da-status.da-online,
+.da-privateChannels .da-channel a:hover .da-online,
+.da-members .da-member .da-content:hover .da-online,
+.da-members .da-member.popout-open .da-online,
+.da-userPopout .da-online {
     background-color: transparent;
     border: 2px solid #43b581 !important;
     transition: 0.2s;
 }
-.autocompleteRow-2OthDa:hover .streaming-2_dnHe,
-.listRow-hutiT_:hover .streaming-2_dnHe,
-.card-7JP0BX:hover .streaming-2_dnHe,
-.header-QKLPzZ .statusProfile-3ynqtt.streaming-2_dnHe,
-.private-channels .channel a:hover .streaming-2_dnHe,
-.members-1998pB .content-OzHfo4:hover .streaming-2_dnHe,
-.members-1998pB .member-3W1lQa.popout-open .streaming-2_dnHe,
-.userPopout-3XzG_A .streaming-2_dnHe {
-    background-color: transparent;
-    border: 2px solid #593695 !important;
-    transition: 0.2s;
-}
-.autocompleteRow-2OthDa:hover .dnd-1_xrcq,
-.listRow-hutiT_:hover .dnd-1_xrcq,
-.card-7JP0BX:hover .dnd-1_xrcq,
-.header-QKLPzZ .statusProfile-3ynqtt.dnd-1_xrcq,
-.private-channels .channel a:hover .dnd-1_xrcq,
-.members-1998pB .content-OzHfo4:hover .dnd-1_xrcq,
-.members-1998pB .member-3W1lQa.popout-open .dnd-1_xrcq,
-.userPopout-3XzG_A .dnd-1_xrcq {
-    background-color: transparent;
-    border: 2px solid #f04747 !important;
-    transition: 0.2s;
-}
-.autocompleteRow-2OthDa:hover .idle-3DEnRT,
-.listRow-hutiT_:hover .idle-3DEnRT,
-.card-7JP0BX:hover .idle-3DEnRT,
-.header-QKLPzZ .statusProfile-3ynqtt.idle-3DEnRT,
-.private-channels .channel a:hover .idle-3DEnRT,
-.members-1998pB .content-OzHfo4:hover .idle-3DEnRT,
-.members-1998pB .member-3W1lQa.popout-open .idle-3DEnRT,
-.userPopout-3XzG_A .idle-3DEnRT {
+.listRow-hutiT_:hover .da-idle,
+.card-7JP0BX:hover .da-idle,
+.da-autocompleteRow:hover .da-idle,
+.da-header .da-status.da-idle,
+.da-privateChannels .da-channel a:hover .da-idle,
+.da-members .da-member .da-content:hover .da-idle,
+.da-members .da-member.popout-open .da-idle,
+.da-userPopout .da-idle {
     background-color: transparent;
     border: 2px solid #faa61a !important;
     transition: 0.2s;
 }
-.autocompleteRow-2OthDa:hover .invisible-1kp8Z0,
-.listRow-hutiT_:hover .invisible-1kp8Z0,
-.card-7JP0BX:hover .invisible-1kp8Z0,
-.header-QKLPzZ .statusProfile-3ynqtt.invisible-1kp8Z0,
-.private-channels .channel a:hover .invisible-1kp8Z0,
-.members-1998pB .content-OzHfo4:hover .invisible-1kp8Z0,
-.members-1998pB .member-3W1lQa.popout-open .invisible-1kp8Z0,
-.userPopout-3XzG_A .invisible-1kp8Z0 {
+.listRow-hutiT_:hover .da-dnd,
+.card-7JP0BX:hover .da-dnd,
+.da-autocompleteRow:hover .da-dnd,
+.da-header .da-status.da-dnd,
+.da-privateChannels .da-channel a:hover .da-dnd,
+.da-members .da-member .da-content:hover .da-dnd,
+.da-members .da-member.popout-open .da-dnd,
+.da-userPopout .da-dnd {
+    background-color: transparent;
+    border: 2px solid #f04747 !important;
+    transition: 0.2s;
+}
+.listRow-hutiT_:hover .da-streaming,
+.card-7JP0BX:hover .da-streaming,
+.da-autocompleteRow:hover .da-streaming,
+.da-header .da-status.da-streaming,
+.da-privateChannels .da-channel a:hover .da-streaming,
+.da-members .da-member .da-content:hover .da-streaming,
+.da-members .da-member.popout-open .da-streaming,
+.da-userPopout .da-streaming {
+    background-color: transparent;
+    border: 2px solid #593695 !important;
+    transition: 0.2s;
+}
+.listRow-hutiT_:hover .da-invisible,
+.card-7JP0BX:hover .da-invisible,
+.da-autocompleteRow:hover .da-invisible,
+.da-header .da-status.da-invisible,
+.da-privateChannels .da-channel a:hover .da-invisible,
+.da-members .da-member .da-content:hover .da-invisible,
+.da-members .da-member.popout-open .da-invisible,
+.da-userPopout .da-invisible {
     background-color: transparent;
     border: 2px solid #747f8d !important;
     transition: 0.2s;
 }
-.autocompleteRow-2OthDa:hover .offline-3qoTek,
-.listRow-hutiT_:hover .offline-3qoTek,
-.card-7JP0BX:hover .offline-3qoTek,
-.header-QKLPzZ .statusProfile-3ynqtt.offline-3qoTek,
-.private-channels .channel a:hover .offline-3qoTek,
-.members-1998pB .content-OzHfo4:hover .offline-3qoTek,
-.members-1998pB .member-3W1lQa.popout-open .offline-3qoTek,
-.userPopout-3XzG_A .offline-3qoTek {
+.listRow-hutiT_:hover .da-offline,
+.card-7JP0BX:hover .da-offline,
+.da-autocompleteRow:hover .da-offline,
+.da-header .da-status.da-offline,
+.da-privateChannels .da-channel a:hover .da-offline,
+.da-members .da-member .da-content:hover .da-offline,
+.da-members .da-member.popout-open .da-offline,
+.da-userPopout .da-offline {
     background-color: transparent;
     border: 2px solid #747f8d !important;
     transition: 0.2s;
+}
+/*usunięcie maski zasłaniającej avatar w defaultowym discordzie*/
+.da-maskProfile,
+.da-mask {
+    mask: none;
+    -webkit-mask: none;
+}
+/*prywatna wiadomosc i user na liscie na serwerze (kiedy pisze)*/
+.da-members .da-member .da-content:hover .da-status.da-typing,
+.da-privateChannels .da-channel:hover .da-status.da-typing {
+    left: -4px !important;
+}
+.da-members .da-member .da-content:hover .da-status .da-pulsingEllipsis,
+.da-privateChannels .da-channel:hover .da-status .da-pulsingEllipsis {
+    left: 4px !important;
 }
 
-.members-1998pB .content-OzHfo4 .status-2s6iDp {
-    transition: all 150ms ease;
-    will-change: border-color, width, background, height, padding;
+/* Randomowe */
+input {
+    transition: all 0.3s;
 }
-.maskProfile-1ObLFT,
-.mask-3OgeRz {
-    -webkit-mask: none;
-    mask: none;
+input:focus {
+    border-color: var(--main-blue) !important;
+    box-shadow: 0px 0px 0px transparent;
 }
-.status-oxiHuE,
-.statusProfile-3ynqtt.status-oxiHuE {
-    border-radius: 50% !important;
-    box-shadow: none;
-    -webkit-box-shadow: none;
+
+/*przyciski w dolnym lewym przed i po połączeniu*/
+.da-channels .da-container:nth-child(2) button:hover,
+.da-channels .da-container:nth-child(3) button:hover {
+    background: transparent;
 }
-.container-2Thooq .status-2kJpnA,
-.statusProfile-3ynqtt.status-oxiHuE {
-    pointer-events: none !important;
+
+[class*="theme-"] .chat-3bRxxu .title-wrap {
+    border-bottom: 0px;
 }
-[class*="theme-"] .title-3qD0b- .status-oxiHuE,
-.friends-column-status .status,
-.titleCall-_b9o8P .status-oxiHuE {
-    position: relative;
+
+[class*="theme-"] .message-group.is-local-bot-message {
+    background-image: none !important;
+    box-shadow: -20px 0 rgba(0, 0, 0, 0.8), 20px 0 rgba(0, 0, 0, 0.8), -20px -1px 0 0 rgba(0, 0, 0, 0.8), -20px 1px 0 rgba(0, 0, 0, 0.8), 20px 1px 0 rgba(0, 0, 0, 0.8), 20px -1px 0 rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.8) !important;
 }
-.pulsingEllipsisItem-32hhWL {
-    opacity: 0.9;
+
+.noChannel-Z1DQK7 {
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
-.channel.private:hover .status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status-2s6iDp,
-.channel.private:hover .status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status,
-.content-OzHfo4:hover .status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status-2s6iDp,
-.content-OzHfo4:hover .status-oxiHuE.small-5Os1Bb.typing-1KJk_j.status {
-    left: -4px !important;
+
+/* [style*="avatars/214676791955161091"].da-image {
+   animation: rainbow1 4s linear infinite;
+} */
+/* If you have Lag Problems with the theme then delete the "@" in the beggining of this line*/
+@keyframes rainbow1 {
+    0% {
+        box-shadow: 0 0 10px #e75906;
+    }
+    50% {
+        box-shadow: 0 0 15px #fce300;
+    }
+    100% {
+        box-shadow: 0 0 10px #e75906;
+    }
 }
