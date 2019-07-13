@@ -328,10 +328,10 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 
 /*popout po kliknieciu na nazwe serwera*/
-.da-popout>.da-menu {
+.da-popout > .da-menu {
     background: rgba(0, 0, 0, 0.9);
 }
-.da-popout>.da-menu>.da-item:hover {
+.da-popout > .da-menu > .da-item:hover {
     background: rgba(0, 0, 0, 1);
 }
 
@@ -1516,7 +1516,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal.da-container > * {
-    background: rgba(0, 0, 0, 0.8) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
 }
 .da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"] {
     background: var(--btRed-bg) !important;
@@ -1534,10 +1534,40 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .da-modal > .da-inner > .da-modal .da-header.da-separator {
     box-shadow: 0px 0px;
 }
+/*checkboxy z niektórych popoutów, np ustawienia powiadomień serwera*/
+.da-modal > .da-inner > .da-modal .da-switch {
+    background: rgba(0, 0, 0, 0.6) !important;
+    box-shadow: 0px 0px !important;
+}
+.da-modal > .da-inner > .da-modal .da-switch[class*="valueChecked"] {
+    background: var(--btBlue-bg) !important;
+}
+.da-modal > .da-inner > .da-modal .da-checkbox.da-checked {
+    background: var(--btBlue-bg) !important;
+    border-color: transparent !important;
+}
+/*zaznaczalne szerokie pola z niektórych popoutów, np ustawienia powiadomień serwera*/
+.da-modal > .da-inner > .da-modal .da-cardPrimaryEditable {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-color: transparent !important;
+}
+.da-modal > .da-inner > .da-modal .da-cardPrimaryEditable[style*="background"] {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-color: transparent !important;
+}
+/*rozwijalne menu z niektórych popoutów, np ustawienia powiadomień serwera*/
+.da-modal > .da-inner > .da-modal .da-select > [class*="css-"],
+.da-modal > .da-inner > .da-modal .da-select [class*="-menu"] {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-color: rgba(0, 0, 0, 0.9) !important;
+}
+.da-modal > .da-inner > .da-modal .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+    background: rgba(0, 0, 0, 1) !important;
+}
 /*footer z niektórych popoutów, np ustawienia powiadomień serwera*/
 .da-modal > .da-inner > .da-modal .da-footer {
     background: rgba(0, 0, 0, 0.6) !important;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal .da-footer > button {
@@ -1548,7 +1578,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: var(--btBlue-bg-hover) !important;
     color: var(--bt-col-hover) !important;
 }
-
 /*USTAWIENIA SERWERA*/
 [aria-label*="SETTINGS"] .da-standardSidebarView,
 [aria-label*="SETTINGS"] .da-standardSidebarView .da-sidebarRegion,
