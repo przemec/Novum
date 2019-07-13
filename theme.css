@@ -2406,34 +2406,31 @@ input:focus {
 /*ANIMACJE*/
 
 /* edytowanie wiadomosci */
-.containerCozy-jafyvG .button-3Jq0g9 {
+.da-chat .da-message .da-containerCozy .da-button:last-child {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23FFFFFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3cpath d='M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z'/%3e%3c/svg%3e") !important;
-    opacity: 0;
     background-size: 16px !important;
     background-position: center !important;
+    opacity: 0;
     visibility: visible;
 }
-
-.containerCozy-jafyvG .button-3Jq0g9:hover {
+.da-chat .da-message .da-containerCozy .da-button:last-child:hover {
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
-    -webkit-animation: load8 2.8s infinite linear;
-    animation: load8 2.8s infinite linear;
+    -webkit-animation: edit1 2.8s infinite linear;
+    animation: edit1 2.8s infinite linear;
 }
-
-.containerCozy-jafyvG > div:hover .button-3Jq0g9 {
+.da-chat .da-message .da-contentCozy:hover .da-button:last-child {
     opacity: 0.3;
 }
 
-.containerCozy-jafyvG .button-3Jq0g9.popout-open,
-.containerCozy-jafyvG .button-3Jq0g9:hover {
-    background-size: 120%;
-    background-position: center;
+.da-chat .da-message .da-containerCozy .da-button:last-child.popout-open,
+.da-chat .da-message .da-containerCozy .da-button:last-child:hover {
+    background-size: 105% !important;
     opacity: 0.7 !important;
 }
 
-@-webkit-keyframes load8 {
+@keyframes edit1 {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -2443,8 +2440,7 @@ input:focus {
         transform: rotate(360deg);
     }
 }
-
-@keyframes load8 {
+@-webkit-keyframes edit1 {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -2459,45 +2455,51 @@ input:focus {
 /*
 .da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) = button Info
 .da-channels .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2) = button Disconnect
-**not last child, żeby nie edytować przycisków po rozłączeniu się z głosowego
+**:not(:last-child), żeby nie edytować przycisków po rozłączeniu się z głosowego
 */
 .da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button .da-buttonIcon {
     visibility: hidden;
 }
+/*button Info*/
 .da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(1) {
     background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important;
-}
-
-.da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(2)::after,
-.da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(1) {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 20px;
     opacity: 0.5;
 }
-
-.da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(2):hover::after,
 .da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(1):hover {
-    background-color: transparent !important;
+    -webkit-animation: info1 1s infinite alternate;
+    animation: info1 1s infinite alternate;
     opacity: 1;
 }
-
-.da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(1):hover {
-    -webkit-animation: pulsate 1s infinite alternate;
-    animation: pulsate 1s infinite alternate;
+@keyframes info1 {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
+}
+@-webkit-keyframes info1 {
+    from {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0.9);
+        transform: scale(0.9);
+    }
 }
 
-.da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(1):active {
-    -webkit-animation: pulsate-active 1s infinite alternate;
-    animation: pulsate-active 1s infinite alternate;
-}
-
+/*button Disconnect*/
 .da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(2) {
     position: relative;
     background-image: none;
     opacity: 1;
 }
-
 .da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(2)::after {
     content: "";
     position: absolute;
@@ -2506,19 +2508,17 @@ input:focus {
     bottom: 0;
     left: 0;
     background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    opacity: 0.5;
 }
-
 .da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(2):hover::after {
-    -webkit-animation: wiggle 70ms infinite alternate;
-    animation: wiggle 70ms infinite alternate;
+    -webkit-animation: disconnect1 0.06s infinite alternate;
+    animation: disconnect1 0.06s infinite alternate;
+    opacity: 1;
 }
-
-.da-channels .da-container:nth-child(2):not(:last-child) > .da-flex > button:nth-child(2):active::after {
-    -webkit-animation: wiggle-active 70ms infinite alternate;
-    animation: wiggle-active 70ms infinite alternate;
-}
-
-@-webkit-keyframes wiggle {
+@keyframes disconnect1 {
     from {
         -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
@@ -2528,8 +2528,7 @@ input:focus {
         transform: rotate(7deg);
     }
 }
-
-@keyframes wiggle {
+@-webkit-keyframes disconnect1 {
     from {
         -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
@@ -2537,83 +2536,6 @@ input:focus {
     to {
         -webkit-transform: rotate(7deg);
         transform: rotate(7deg);
-    }
-}
-
-@-webkit-keyframes wiggle-active {
-    from {
-        -webkit-transform: scale(0.9) rotate(-7deg);
-        transform: scale(0.9) rotate(-7deg);
-    }
-    to {
-        -webkit-transform: scale(0.9) rotate(7deg);
-        transform: scale(0.9) rotate(7deg);
-    }
-}
-
-@keyframes wiggle-active {
-    from {
-        -webkit-transform: scale(0.9) rotate(-7deg);
-        transform: scale(0.9) rotate(-7deg);
-    }
-    to {
-        -webkit-transform: scale(0.9) rotate(7deg);
-        transform: scale(0.9) rotate(7deg);
-    }
-}
-
-@-webkit-keyframes pulsate {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    to {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-
-@keyframes pulsate {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    to {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-}
-
-@-webkit-keyframes pulsate-active {
-    from {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    to {
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
-    }
-}
-
-@keyframes pulsate-active {
-    from {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    to {
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
-    }
-}
-
-@-webkit-keyframes pulsate-active {
-    from {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
-    to {
-        -webkit-transform: scale(0.8);
-        transform: scale(0.8);
     }
 }
 
