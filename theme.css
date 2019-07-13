@@ -1555,7 +1555,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*HEADER z niektórych popoutów, np ustawienia powiadomień serwera*/
 .da-modal > .da-inner > .da-modal .da-header {
     background: rgba(0, 0, 0, 0.6) !important;
-    margin-bottom: 10px;
+    border-radius: 5px 5px 0px 0px;
 }
 .da-modal > .da-inner > .da-modal .da-header.da-separator {
     box-shadow: 0px 0px;
