@@ -256,13 +256,21 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .wrapper-1Rf91z .da-guildSeparator {
     background: rgba(0, 0, 0, 0.5);
 }
-/*tlo serwerów bez ikonki i tlo przezroczystych ikon serwerów*/
+/*wybrany serwer: linia po lewej*/
+.wrapper-1Rf91z .da-pill .da-item {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+}
+.wrapper-1Rf91z .da-pill[class*="selected"] .da-item {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+}
+/*tlo serwerów bez ikonki, tlo przezroczystych ikon serwerów i tlo serwera bez zadnej ikony po jego wybraniu*/
 .wrapper-1Rf91z a .da-acronym,
 .wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
     background: rgba(0, 0, 0, 0.5);
 }
 .wrapper-1Rf91z a .da-acronym:hover,
-.wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym) {
+.wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym),
+.wrapper-1Rf91z a .da-acronym.da-selected {
     background: rgba(0, 0, 0, 0.6);
 }
 /*tlo glownej ikony discorda*/
