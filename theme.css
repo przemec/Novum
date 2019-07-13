@@ -1634,7 +1634,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px !important;
 }
 [aria-label*="SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
-    background: var(--main-blue) !important;
+    background: var(--btBlue-bg) !important;
 }
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
@@ -1791,8 +1791,8 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     border-color: rgba(0, 0, 0, 1) !important;
 }
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked {
-    background-color: var(--main-blue) !important;
-    border-color: var(--main-blue) !important;
+    background-color: var(--btBlue-bg) !important;
+    border-color: var(--btBlue-bg) !important;
 }
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked polyline {
     stroke: var(--bt-col-hover) !important;
@@ -1804,7 +1804,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px !important;
 }
 #user-settings .da-contentRegion .da-switch[class*="valueChecked"] {
-    background: var(--main-blue) !important;
+    background: var(--btBlue-bg) !important;
 }
 /*przyciski*/
 #user-settings .da-contentRegion .da-button[class*="lookFilled"],
@@ -1826,7 +1826,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 #user-settings .da-contentRegion .da-barFill {
-    background: var(--main-blue) !important;
+    background: var(--btBlue-bg) !important;
 }
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
 #user-settings .da-contentRegion .da-card:hover {
@@ -1861,7 +1861,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*input nicku*/
 #user-settings .da-contentRegion .da-inputWrapper .da-input.da-focused {
-    border-color: var(--main-blue) !important;
+    border-color: var(--btBlue-bg) !important;
 }
 #user-settings .da-contentRegion .da-inputWrapper .da-questionMark {
     background: var(--btBlue-bg) !important;
@@ -2127,7 +2127,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 #bd-settingspane-container .da-switch[class*="Checked"],
 #bd-settingspane-container .ui-switch.checked {
-    background: var(--main-blue) !important;
+    background: var(--btBlue-bg) !important;
 }
 
 /*Custom CSS*/
@@ -2160,6 +2160,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #bd-customcss-attach-controls {
     background: rgba(0, 0, 0, 0.6) !important;
     box-shadow: 0px 0px !important;
+}
+/*live update checkbox*/
+#bd-customcss-attach-controls .da-checkbox .da-checkboxInner span {
+    background-color: var(--btBlue-bg);
+    border-color: var(--btBlue-bg);
 }
 /*"ctrl+,"*/
 #bd-customcss-attach-controls .inline {
