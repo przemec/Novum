@@ -442,6 +442,17 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-right-color: rgba(0, 0, 0, 0.4) !important;
 }
 
+/*wiadomosc, protip wyswietlajacy sie nowym kontom na serwerze nad tekstowymi*/
+.da-channels .da-channelNotices .da-channelNotice {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0px 0px 15px 0px;
+    border-color: transparent;
+    box-shadow: 0px 0px;
+}
+.da-channels .da-channelNotices .da-channelNotice button {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
 /*searchbar po lewej u góry w prywatnych wiadomosciach*/
 .da-privateChannels .da-searchBar {
     background: rgba(0, 0, 0, 0.1) !important;
