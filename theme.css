@@ -320,7 +320,6 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 /*status online polaczenia: popout*/
 [id*="popout"] [class*="animatorTop"] > .da-container,
 [id*="popout"] [class*="animatorTop"] > .da-container > header {
-    animation: 3s popout1;
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
 [id*="popout"] [class*="animatorTop"] > .da-container > section {
@@ -330,14 +329,6 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 [id*="popout"] [class*="animatorTop"] > .da-container > section > .paragraph {
     margin-top: 10px;
-}
-@keyframes popout1 {
-    0% {
-        height: 0%;
-    }
-    100% {
-        height: 100%;
-    }
 }
 
 /*czcionka nazwy serwera po wejsciu na niego*/
@@ -2415,7 +2406,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     opacity: 0.7 !important;
 }
 
-@keyframes edit1 {
+@-webkit-keyframes edit1 {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -2425,7 +2416,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
         transform: rotate(360deg);
     }
 }
-@-webkit-keyframes edit1 {
+@keyframes edit1 {
     0% {
         -webkit-transform: rotate(0deg);
         transform: rotate(0deg);
@@ -2458,7 +2449,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     animation: info1 1s infinite alternate;
     opacity: 1;
 }
-@keyframes info1 {
+@-webkit-keyframes info1 {
     from {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -2468,7 +2459,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
         transform: scale(0.9);
     }
 }
-@-webkit-keyframes info1 {
+@keyframes info1 {
     from {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -2502,7 +2493,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     animation: disconnect1 0.06s infinite alternate;
     opacity: 1;
 }
-@keyframes disconnect1 {
+@-webkit-keyframes disconnect1 {
     from {
         -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
@@ -2512,7 +2503,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
         transform: rotate(7deg);
     }
 }
-@-webkit-keyframes disconnect1 {
+@keyframes disconnect1 {
     from {
         -webkit-transform: rotate(-7deg);
         transform: rotate(-7deg);
@@ -2524,253 +2515,34 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*animacja po włączeniu motywu/discorda*/
-:root {
-    --load1: "Loading styles";
-    --load2: "Loading assets";
-    --load3: "Finished loading";
-}
 .app,
 body::after {
-    -webkit-animation: cv-fade 2s ease-out;
-    animation: cv-fade 2s ease-out;
+    will-change: opacity, filter;
+    -webkit-animation: fadeIn 2s ease-out;
+    animation: fadeIn 2s ease-out;
 }
-@keyframes cv-fade {
+@-webkit-keyframes fadeIn {
     0% {
         opacity: 0;
         -webkit-filter: blur(10px);
         filter: blur(10px);
     }
-    70% {
+    100% {
+        opacity: 1;
         -webkit-filter: blur(0px);
         filter: blur(0px);
     }
-    100% {
-        opacity: 1;
-    }
 }
-@-webkit-keyframes cv-fade {
+@keyframes fadeIn {
     0% {
         opacity: 0;
         -webkit-filter: blur(10px);
         filter: blur(10px);
     }
-    70% {
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-    }
     100% {
         opacity: 1;
-    }
-}
-
-#app-mount::before {
-    content: "";
-    background: transparent;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 9998;
-    pointer-events: none;
-    -webkit-animation: cv-bg 3.5s ease-in-out;
-    animation: cv-bg 3.5s ease-in-out;
-}
-@keyframes cv-bg {
-    0% {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    70% {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    100% {
-        background-color: transparent;
-    }
-}
-@-webkit-keyframes cv-bg {
-    0% {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    70% {
-        background-color: rgba(0, 0, 0, 0.5);
-    }
-    100% {
-        background-color: transparent;
-    }
-}
-
-#app-mount::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    color: #fff;
-    font-size: 50px;
-    font-weight: 700;
-    text-align: center;
-    line-height: 100vh;
-    opacity: 0;
-    z-index: 9999;
-    pointer-events: none;
-    -webkit-animation: cv-init 3s ease-in-out;
-    animation: cv-init 3s ease-in-out;
-}
-@keyframes cv-init {
-    0% {
-        content: var(--load1);
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    30% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    45% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    49% {
-        content: var(--load1);
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    50% {
-        content: var(--load2);
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    55% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    70% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    74% {
-        content: var(--load2);
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    75% {
-        content: var(--load3);
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    80% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    95% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    99% {
-        content: var(--load3);
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    100% {
-        content: "";
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
-    }
-}
-@-webkit-keyframes cv-init {
-    0% {
-        content: var(--load1);
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    25% {
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    30% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    45% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    49% {
-        content: var(--load1);
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    50% {
-        content: var(--load2);
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    55% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    70% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    74% {
-        content: var(--load2);
-        opacity: 0;
-        -webkit-transform: scale(1.3);
-        transform: scale(1.3);
-    }
-    75% {
-        content: var(--load3);
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    80% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    95% {
-        opacity: 0.3;
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    99% {
-        content: var(--load3);
-        opacity: 0;
-        -webkit-transform: scale(0.7);
-        transform: scale(0.7);
-    }
-    100% {
-        content: "";
-        -webkit-transform: scale(1);
-        transform: scale(1);
-        opacity: 0;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
     }
 }
 
@@ -2913,7 +2685,16 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 
 /*animacja avataru wybranego uzytkownika*/
 [style*="avatars/214676791955161091"].da-image {
+    -webkit-animation: rotate1 40s linear infinite;
     animation: rotate1 40s linear infinite;
+}
+@-webkit-keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 @keyframes rotate1 {
     0% {
