@@ -302,6 +302,122 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 0.7);
 }
 
+/*popout po kliknieciu w Add Server*/
+[class*="theme-"] .da-modal > .da-inner .da-animator {
+    height: 450px;
+    background: rgba(0, 0, 0, 0) !important;
+    border-radius: 20px;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal {
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+/*header*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-header {
+    color: var(--markup-blue) !important;
+}
+/*body*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-action {
+    background-color: rgba(0, 0, 0, 1) !important;
+    border-radius: 10px;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-action .da-actionBody {
+    min-height: 80px !important;
+}
+/*pole STWÓRZ*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionHeader {
+    color: var(--markup-blue);
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionButton {
+    background: var(--btBlue-bg);
+    color: var(--bt-col);
+    border-radius: 10px;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"]:hover .da-actionButton {
+    background: var(--btBlue-bg-hover);
+    color: var(--bt-col-hover);
+}
+/*pole DOŁĄCZ*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionHeader {
+    color: rgba(0, 255, 128, 0.6);
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionButton {
+    background: rgba(0, 255, 128, 0.3);
+    color: var(--bt-col);
+    border-radius: 10px;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"]:hover .da-actionButton {
+    background: rgba(0, 255, 128, 0.5);
+    color: var(--bt-col-hover);
+}
+/*ukrycie pola OR*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-or {
+    display: none;
+}
+/* po przejściu dalej */
+/*header*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-title {
+    color: rgba(255, 255, 255, 0.8);
+}
+/*input*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal input {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 0.8) !important;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal input:focus {
+    color: rgba(255, 255, 255, 0.7);
+    border-color: rgba(255, 255, 255, 1) !important;
+}
+/*linki*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal a,
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-sampleLink {
+    color: var(--markup-normal);
+}
+/*przycisk region servera*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect button {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect:hover .da-regionSelectInner,
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect:hover button {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(255, 255, 255, 0.9) !important;
+}
+/*popout z regionami serwera*/
+[class*="theme-"] .da-modal > .da-inner .da-regionSelectModal {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-radius: 20px;
+}
+[class*="theme-"] .da-modal > .da-inner .da-regionSelectModal .da-regionSelectModalOption {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-color: transparent !important;
+    transition: 0.2s all;
+}
+[class*="theme-"] .da-modal > .da-inner .da-regionSelectModal .da-regionSelectModalOption:hover {
+    transform: scale(1.1);
+}
+/*footer*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer {
+    background: rgba(0, 0, 0, 0) !important;
+    box-shadow: 0px 0px;
+}
+/*button Stwórz*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"] {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"]:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
+/*button Dołącz*/
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"] {
+    background: rgba(0, 255, 128, 0.4);
+    color: var(--bt-col) !important;
+}
+[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"]:hover {
+    background: rgba(0, 255, 128, 0.5);
+    color: var(--bt-col-hover) !important;
+}
+
 /*popout: zmiana swojego statusu online*/
 [id*="popout"] .da-menu {
     background: rgba(0, 0, 0, 0.95) !important;
@@ -331,25 +447,19 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     margin-top: 10px;
 }
 
+/*czcionka nazwy serwera po wejsciu na niego*/
+.da-channels .da-hasDropdown .da-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 55px;
+}
+
 /*ikony u góry aplikacji obok nazw kanałów/nazw podstron strony głównej*/
 .da-iconWrapper > svg path {
     fill: rgba(255, 255, 255, 0.6) !important;
 }
 .da-iconWrapper ~ .da-divider {
     background: rgba(255, 255, 255, 0.5) !important;
-}
-
-/*czcionka nazwy serwera po wejsciu na niego*/
-.da-channels .da-hasDropdown .da-name {
-    -ms-flex: 1;
-    -webkit-box-flex: 1;
-    flex: 1;
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 55px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
 }
 
 /*popout po kliknieciu na nazwe serwera*/
