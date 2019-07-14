@@ -331,6 +331,14 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     margin-top: 10px;
 }
 
+/*ikony u góry aplikacji obok nazw kanałów/nazw podstron strony głównej*/
+.da-iconWrapper > svg path {
+    fill: rgba(255, 255, 255, 0.6) !important;
+}
+.da-iconWrapper ~ .da-divider {
+    background: rgba(255, 255, 255, 0.5) !important;
+}
+
 /*czcionka nazwy serwera po wejsciu na niego*/
 .da-channels .da-hasDropdown .da-name {
     -ms-flex: 1;
