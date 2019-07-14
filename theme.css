@@ -1508,6 +1508,41 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 0.2);
 }
 
+/*wysyłanie plików na czat: popout*/
+[class*="theme-"] .da-uploadModal {
+    background: rgba(0, 0, 0, 0.9);
+    min-height: 280px;
+}
+[class*="theme-"] .da-uploadModal * {
+    border-color: var(--btBlue-bg) !important;
+}
+/*input*/
+[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > .da-inner {
+    background: var(--btBlue-bg) !important;
+}
+[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload textarea {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+[class*="theme-"] .da-uploadModal .da-footer {
+    background: rgba(0, 0, 0, 0);
+}
+/*button*/
+[class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"] {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+[class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"]:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
+/*checkbox*/
+[class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked polyline {
+    stroke: rgba(255, 255, 255, 0.8);
+}
+[class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked {
+    background: var(--btBlue-bg) !important;
+}
+
 /*
 ```css
  tło tego co się tu wyśle
