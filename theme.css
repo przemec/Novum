@@ -43,7 +43,7 @@ body::after {
 }
 
 /*pasek nad discordem*/
-.typeWindows-1za-n7 {
+#app-mount > .da-typeWindows {
     height: 18px;
     margin-top: 0px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -318,17 +318,26 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 
 /*status online polaczenia: popout*/
-.animatorTop-2Y7x2r > .da-container,
-.animatorTop-2Y7x2r > .da-container > header {
+[id*="popout"] [class*="animatorTop"] > .da-container,
+[id*="popout"] [class*="animatorTop"] > .da-container > header {
+    animation: 3s popout1;
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
-.animatorTop-2Y7x2r > .da-container > section {
+[id*="popout"] [class*="animatorTop"] > .da-container > section {
     background-color: rgba(0, 0, 0, 0.5) !important;
     color: #7e7e7e !important;
     text-align: start;
 }
-.animatorTop-2Y7x2r > .da-container > section > .paragraph {
+[id*="popout"] [class*="animatorTop"] > .da-container > section > .paragraph {
     margin-top: 10px;
+}
+@keyframes popout1 {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
 }
 
 /*czcionka nazwy serwera po wejsciu na niego*/
@@ -2902,6 +2911,19 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
     left: 4px !important;
 }
 
+/*animacja avataru wybranego uzytkownika*/
+[style*="avatars/214676791955161091"].da-image {
+    animation: rotate1 40s linear infinite;
+}
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
 /* Randomowe */
 input {
     transition: all 0.3s;
@@ -2929,20 +2951,4 @@ input:focus {
 
 .noChannel-Z1DQK7 {
     background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-/* [style*="avatars/214676791955161091"].da-image {
-   animation: rainbow1 4s linear infinite;
-} */
-/* If you have Lag Problems with the theme then delete the "@" in the beggining of this line*/
-@keyframes rainbow1 {
-    0% {
-        box-shadow: 0 0 10px #e75906;
-    }
-    50% {
-        box-shadow: 0 0 15px #fce300;
-    }
-    100% {
-        box-shadow: 0 0 10px #e75906;
-    }
 }
