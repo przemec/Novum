@@ -2886,3 +2886,16 @@ input:focus {
 .noChannel-Z1DQK7 {
     background-color: rgba(0, 0, 0, 0.1) !important;
 }
+
+/*crash discorda*/
+#app-mount .da-errorPage {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) !important;
+}
+#app-mount .da-errorPage button {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+#app-mount .da-errorPage button:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
