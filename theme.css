@@ -1760,6 +1760,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.3) !important;
     border-color: #000000 !important;
 }
+/*gdy serwer nie ma ikony*/
+.da-chat .da-message .da-userSelectNone .da-noIcon {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+/*button Dołącz*/
+.da-chat .da-message .da-userSelectNone button[class*="lookFilled"] {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+.da-chat .da-message .da-userSelectNone button[class*="lookFilled"]:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
 
 /*zaproszenie do gry (fortnite): popout*/
 [class*="theme-"] .da-attachPopout {
