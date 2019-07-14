@@ -2918,7 +2918,7 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 }
 
 /*animacja avataru wybranego uzytkownika*/
-[style*="avatars/214676791955161091"].da-image {
+[style*="avatars/214676791955161091"] {
     -webkit-animation: rotate1 40s linear infinite;
     animation: rotate1 40s linear infinite;
 }
