@@ -418,6 +418,87 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     color: var(--bt-col-hover) !important;
 }
 
+/*pole po kliknieciu w Server Discovery*/
+[class*="theme-"] .da-spacer > .da-pageWrapper {
+    background-color: rgba(0, 0, 0, 0) !important;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper > .da-bg {
+    display: none !important;
+}
+/*search bar u gory*/
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search > * > *:first-child {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+/*pole wysuwane po wpisaniu czegokolwiek ("nacisnij enter aby wyszukac")*/
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search > * > .da-searchHelpText {
+    opacity: 0 !important;
+    transition: 0.2s all ease-in;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search > * > .da-searchHelpTextVisible {
+    opacity: 1 !important;
+}
+/*popout z językami*/
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search .da-select > [class*="css-"],
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] {
+    background: rgba(0, 0, 0, 0.6) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+    background: rgba(0, 0, 0, 0.6) !important;
+}
+
+/*pola z serwerami przed i po załadowaniu*/
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-cardPlaceholder,
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card {
+    background: rgba(0, 0, 0, 0.7) !important;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"] {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"]:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
+/*footer strony - lista stron wyszukanych serwerów*/
+/*next i previous*/
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-button {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+    min-width: 80px;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-button:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
+/*liczby*/
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton {
+    border-radius: 5px;
+    min-width: 40px !important;
+    background: rgba(0, 0, 0, 0.2) !important;
+    color: var(--bt-col) !important;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton.da-activeButton {
+    background: rgba(0, 0, 0, 0.5) !important;
+    color: var(--bt-col-hover) !important;
+}
+[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
+    background: rgba(0, 0, 0, 0.4) !important;
+    color: var(--bt-col-hover) !important;
+}
+/*po wejsciu na dany serwer: pole u dołu czatu*/
+[class*="theme-"] .da-chat form > .da-wrapper {
+    background: rgba(0, 0, 0, 0.5);
+}
+[class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"] {
+    background: var(--btBlue-bg) !important;
+    color: var(--bt-col) !important;
+}
+[class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"]:hover {
+    background: var(--btBlue-bg-hover) !important;
+    color: var(--bt-col-hover) !important;
+}
+
 /*popout: zmiana swojego statusu online*/
 [id*="popout"] .da-menu {
     background: rgba(0, 0, 0, 0.95) !important;
