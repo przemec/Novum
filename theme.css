@@ -1,26 +1,19 @@
 :root {
-    --main-red: #c31d1d;
-    --main-blue: #3333ff;
     --background-img: url("https://i.imgur.com/S7AYEBo.png");
-    --default-low-rgba: #c800000d;
     --default-hover-rgba: #c8000026;
     --default-selected-rgba: #c800004d;
-    --btRed-bg: #aa0000cc;
-    --btRed-bg-hover: #c80000cc;
-    --btBlue-bg: #222277;
-    --btBlue-bg-hover: #1b1b7e;
-    --bt-col: #dddddd;
-    --bt-col-hover: #ffffff;
-    --scrollBlack-thumb: #000000b3;
-    --scrollBlack-thumb-bord: #000000e6;
-    --scrollBlack-backg: #00000066;
-    --scrollBlack-backg-bord: #00000000;
-    --scrollColor-thumb: #db2121b6;
-    --scrollColor-thumb-bord: #db2121b6;
-    --scrollColor-backg: #00000016;
-    --scrollColor-backg-bord: #00000000;
+    --bt-red: #aa0000cc;
+    --bt-red-hover: #c80000cc;
+    --bt-blue-bg: #222277;
+    --bt-blue-bg-hover: #1b1b7e;
+    --bt-text: #dddddd;
+    --bt-text-hover: #ffffff;
+    --scroll-thumb: #db2121b6;
+    --scroll-thumb-bord: #db2121b6;
+    --scroll-bg: #00000016;
+    --scroll-bg-bord: #00000000;
     --markup-normal: #fd686b;
-    --markup-normal-transparent: #fd686a3f;
+    --markup-normal-transparent: #fd686b3f;
     --markup-intensive: #fc3639;
     --markup-blue: #3333ffe6;
     --markup-blue-light: #1b76fee6;
@@ -150,34 +143,6 @@ body::after {
 }
 
 /* SCROLLBARY */
-/*czarne scrollbary*/
-/*Scrollbar na czacie serwera, w prywatnej konwersacji, activity feedzie i bibliotece gier*/
-/* [class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-thumb {
-    border-color: transparent !important;
-    background-color: transparent !important;
-}
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-friendsTable>.da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-applicationStore>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece {
-    border-color: transparent !important;
-    background-color: transparent !important;
-}
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-friendsTable>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-applicationStore>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
-    border-color: var(--scrollBlack-thumb-bord)  !important;
-    background-color: var(--scrollBlack-thumb) !important;
-}
-[class*="theme-"] .da-spacer>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-friendsTable>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-applicationStore>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
-    border-color: var(--scrollBlack-backg-bord)  !important;
-    background-color: var(--scrollBlack-backg) !important;
-} */
-
-/*kolorowe scrollbary*/
 
 /*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, activity feedzie i bibliotece gier, 
 lewej stronie niektórych opcji w ustawieniach*/
@@ -206,15 +171,15 @@ lewej stronie niektórych opcji w ustawieniach*/
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
-    border-color: var(--scrollColor-thumb-bord) !important;
-    background-color: var(--scrollColor-thumb) !important;
+    border-color: var(--scroll-thumb-bord) !important;
+    background-color: var(--scroll-thumb) !important;
 }
 [class*="theme-"] .da-spacer > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piec {
-    border-color: var(--scrollColor-backg-bord) !important;
-    background-color: var(--scrollColor-backg) !important;
+    border-color: var(--scroll-bg-bord) !important;
+    background-color: var(--scroll-bg) !important;
 }
 
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
@@ -236,8 +201,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-privateChannels > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb {
-    border-color: var(--scrollColor-thumb-bord) !important;
-    background-color: var(--scrollColor-thumb) !important;
+    border-color: var(--scroll-thumb-bord) !important;
+    background-color: var(--scroll-thumb) !important;
 }
 /* [class*="theme-"] .da-channels>.da-container>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
@@ -245,8 +210,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-privateChannels>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
-    border-color: var(--scrollColor-backg-bord)  !important;
-    background-color: var(--scrollColor-backg) !important;
+    border-color: var(--scroll-bg-bord)  !important;
+    background-color: var(--scroll-bg) !important;
 } */
 
 /*panel z serwerami po samej lewej*/
@@ -294,8 +259,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .wrapper-1Rf91z .da-circleIconButton,
 .wrapper-1Rf91z .da-listItemWrapper > a {
     background: rgba(0, 0, 0, 0.6);
-    border-color: var(--main-red);
-    color: var(--main-red);
+    border-color: var(--markup-intensive);
+    color: var(--markup-intensive);
 }
 .wrapper-1Rf91z .da-circleIconButton:hover,
 .wrapper-1Rf91z .da-listItemWrapper > a:hover {
@@ -328,13 +293,13 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     color: var(--markup-blue);
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionButton {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
     border-radius: 10px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"]:hover .da-actionButton {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 /*pole DOŁĄCZ*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionHeader {
@@ -342,12 +307,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionButton {
     background: rgba(0, 255, 128, 0.3);
-    color: var(--bt-col);
+    color: var(--bt-text);
     border-radius: 10px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"]:hover .da-actionButton {
     background: rgba(0, 255, 128, 0.5);
-    color: var(--bt-col-hover);
+    color: var(--bt-text-hover);
 }
 /*ukrycie pola OR*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-or {
@@ -401,21 +366,21 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*button Stwórz*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"] {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*button Dołącz*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"] {
     background: rgba(0, 255, 128, 0.4);
-    color: var(--bt-col) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"]:hover {
     background: rgba(0, 255, 128, 0.5);
-    color: var(--bt-col-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /*pole po kliknieciu w Server Discovery*/
@@ -453,50 +418,50 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 0.7) !important;
 }
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"] {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*footer strony - lista stron wyszukanych serwerów*/
 /*next i previous*/
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-button {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
     min-width: 80px;
 }
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*liczby*/
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton {
     border-radius: 5px;
     min-width: 40px !important;
     background: rgba(0, 0, 0, 0.2) !important;
-    color: var(--bt-col) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton.da-activeButton {
     background: rgba(0, 0, 0, 0.5) !important;
-    color: var(--bt-col-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 [class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
     background: rgba(0, 0, 0, 0.4) !important;
-    color: var(--bt-col-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*po wejsciu na dany serwer: pole u dołu czatu*/
 [class*="theme-"] .da-chat form > .da-wrapper {
     background: rgba(0, 0, 0, 0.5);
 }
 [class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"] {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /*popout: zmiana swojego statusu online*/
@@ -696,12 +661,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*share button*/
 .da-activityFeed .da-column .da-card .da-shareButton {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
 }
 .da-activityFeed .da-column .da-card .da-shareButton:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 
 /* "Quick Launcher" */
@@ -799,21 +764,21 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*play button*/
 .da-spacer .da-gameLibrary .da-table .da-button {
-    background-color: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background-color: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 .da-spacer .da-gameLibrary .da-table .da-button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*gift inventory przycisk "Zrealizuj"*/
 .da-spacer > .da-root .da-codeRedemption .da-button {
-    background-color: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background-color: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 .da-spacer > .da-root .da-codeRedemption .da-button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /*Strona główna: Nitro*/
@@ -888,12 +853,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 0.6);
 }
 .da-spacer .da-systemPad .da-homeBody .da-homeTile .da-tile .da-actions button {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
 }
 .da-spacer .da-systemPad .da-homeBody .da-homeTile .da-tile .da-actions button:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 /*recommended for you (po najechaniu na grę)*/
 .da-spacer .da-systemPad .da-homeBody .da-homeTile.da-tile .da-tileMedia,
@@ -901,12 +866,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 0.6) !important;
 }
 .da-spacer .da-systemPad .da-homeBody .da-homeTile.da-tile .da-tileOwnership button {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
 }
 .da-spacer .da-systemPad .da-homeBody .da-homeTile.da-tile .da-tileOwnership button:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 
 /*podstrona nitro po wejściu w grę*/
@@ -922,14 +887,14 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 /*przycisk subskrybuj w headerze i reszta u dołu*/
 .da-spacer .da-applicationStore .da-shinyButton,
 .da-spacer .da-applicationStore .da-systemPad .da-button {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
     border-color: transparent;
 }
 .da-spacer .da-applicationStore .da-shinyButton:hover,
 .da-spacer .da-applicationStore .da-systemPad .da-button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*po kolei: "darmowe z Nitro", "dlaczego sie spodoba", "Metacritic", "cechy", "aktualnosci", "zweryfikowany serwer", "Nitro perks"*/
 .da-spacer .da-systemPad .da-listing .da-purchaseUnit .da-bodySection,
@@ -980,17 +945,17 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*buttons*/
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction {
-    background-color: var(--btBlue-bg) !important;
+    background-color: var(--bt-blue-bg) !important;
 }
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:hover {
-    background-color: var(--btBlue-bg-hover) !important;
+    background-color: var(--bt-blue-bg-hover) !important;
 }
 /*delete friend bt*/
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3) {
-    background-color: var(--btRed-bg) !important;
+    background-color: var(--bt-red) !important;
 }
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3):hover {
-    background-color: var(--btRed-bg-hover) !important;
+    background-color: var(--bt-red-hover) !important;
 }
 
 /*menu u gory prywatnych wiadomiosci*/
@@ -1029,12 +994,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-color: rgba(0, 0, 0, 0.9);
 }
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form > button {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
 }
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form > button:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 
 /*lista znajomych: znajdz lub rozpocznij rozmowe popup (Quick Switcher)*/
@@ -1049,10 +1014,10 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background-color: rgba(65, 65, 197, 0.05);
 }
 .da-container .da-quickswitcher .da-keybindShortcut span {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 .da-container .da-quickswitcher .da-keybindShortcut span:hover {
-    background: var(--btBlue-bg-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
 }
 
 /*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
@@ -1089,20 +1054,20 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 0.9) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button {
-    background: var(--btRed-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-red) !important;
+    color: var(--bt-text) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button:hover {
-    background: var(--btRed-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-red-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"] {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*prywatna wiad: rozmowa glosowa prywatna */
 .da-inCall .da-video,
@@ -1121,20 +1086,20 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border: none;
 }
 .da-inCall .da-video .da-center .da-exitButton {
-    background: var(--btRed-bg) !important;
-    color: var(--bt-col);
+    background: var(--bt-red) !important;
+    color: var(--bt-text);
 }
 .da-inCall .da-video .da-center .da-exitButton:hover {
-    background: var(--btRed-bg-hover) !important;
-    color: var(--bt-col-hover);
+    background: var(--bt-red-hover) !important;
+    color: var(--bt-text-hover);
 }
 .da-inCall .da-videoInner .da-actions > button {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
 }
 .da-inCall .da-videoInner .da-actions > button:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 
 /*wiadomosc/alert od bota discordowego*/
@@ -1195,12 +1160,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*scrollbar emoji picker*/
 .da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb {
-    background-color: var(--scrollColor-thumb) !important;
+    background-color: var(--scroll-thumb) !important;
     border-radius: 10px !important;
     border-color: transparent !important;
 }
 .da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb:active {
-    background-color: var(--scrollColor-thumb) !important;
+    background-color: var(--scroll-thumb) !important;
 }
 .da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar {
     background: transparent !important;
@@ -1330,17 +1295,18 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*dzień poza wybranym miesiącem*/
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="outside-month"]:not([class*="day--disabled"]) {
-    background-color: var(--default-low-rgba) !important;
+    background-color: var(--default-hover-rgba) !important;
+    opacity: 0.3 !important;
 }
 /*button hint u dołu*/
 [class*="theme-"] .da-popout .da-datePicker [class*="hintValue"] {
     margin-left: 5px;
-    background-color: var(--btRed-bg);
-    color: var(--bt-col);
+    background-color: var(--bt-red);
+    color: var(--bt-text);
 }
 [class*="theme-"] .da-popout .da-datePicker [class*="hintValue"]:hover {
-    background-color: var(--btRed-bg-hover);
-    color: var(--bt-col-hover);
+    background-color: var(--bt-red-hover);
+    color: var(--bt-text-hover);
 }
 
 /*wyszukiwanie wiadomiosci na czacie: po wyszukaniu*/
@@ -1351,8 +1317,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background-color: rgba(0, 0, 0, 0.2) !important;
 }
 [class*="theme-"] .da-searchResultsWrap .da-searchHeader .da-tab.da-selected {
-    color: var(--btRed-bg-hover);
-    border-color: var(--btRed-bg-hover);
+    color: var(--bt-red-hover);
+    border-color: var(--bt-red-hover);
 }
 /*po kliknieciu w glowna wiadomosc*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult.da-expanded {
@@ -1395,11 +1361,11 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton {
     background-color: rgba(0, 0, 0, 0.3) !important;
     border-radius: 3px !important;
-    color: var(--bt-col) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton:hover {
     background-color: rgba(0, 0, 0, 0.6) !important;
-    color: var(--bt-col-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-hit,
@@ -1428,12 +1394,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*pasek głośności*/
 .da-contextMenu > [class*="itemGroup-"] .da-bar .da-barFill {
-    background-color: var(--btBlue-bg-hover) !important;
+    background-color: var(--bt-blue-bg-hover) !important;
 }
 /*checkboxy*/
 .da-contextMenu [class*="itemGroup-"] .da-item .da-checkboxElement:checked + span {
-    background-color: var(--btBlue-bg-hover) !important;
-    border-color: var(--btBlue-bg-hover) !important;
+    background-color: var(--bt-blue-bg-hover) !important;
+    border-color: var(--bt-blue-bg-hover) !important;
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (tło)*/
@@ -1453,24 +1419,24 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-username,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-username {
     font-size: 18px;
-    color: var(--bt-col);
+    color: var(--bt-text);
 }
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-discriminator,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-discriminator {
     font-weight: bold;
     font-size: 16px;
-    color: var(--bt-col-hover);
+    color: var(--bt-text-hover);
 }
 /*header button*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header .da-button,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header .da-button {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
 }
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header .da-button:hover,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header .da-button:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 /*dolna część*/
 [class*="theme-"] .da-modal > .da-inner > * > .da-body {
@@ -1571,13 +1537,13 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     box-shadow: 0px 0px;
 }
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
-    background-color: var(--btRed-bg) !important;
+    background-color: var(--bt-red) !important;
     border-radius: 3px !important;
-    color: var(--bt-col) !important;
+    color: var(--bt-text) !important;
 }
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
-    background-color: var(--btRed-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background-color: var(--bt-red-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /* CHAT */
@@ -1595,11 +1561,11 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     min-height: 280px;
 }
 [class*="theme-"] .da-uploadModal * {
-    border-color: var(--btBlue-bg) !important;
+    border-color: var(--bt-blue-bg) !important;
 }
 /*input*/
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > .da-inner {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload textarea {
     color: rgba(255, 255, 255, 0.9) !important;
@@ -1609,19 +1575,19 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 }
 /*button*/
 [class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"] {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*checkbox*/
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked polyline {
     stroke: rgba(255, 255, 255, 0.8);
 }
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 
 /*
@@ -1766,12 +1732,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*button Dołącz*/
 .da-chat .da-message .da-userSelectNone button[class*="lookFilled"] {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 .da-chat .da-message .da-userSelectNone button[class*="lookFilled"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /*zaproszenie do gry (fortnite): popout*/
@@ -1823,12 +1789,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 .da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"] {
-    background: var(--btRed-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-red) !important;
+    color: var(--bt-text) !important;
 }
 .da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"]:hover {
-    background: var(--btRed-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-red-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*HEADER z niektórych popoutów, np ustawienia powiadomień serwera*/
 .da-modal > .da-inner > .da-modal .da-header {
@@ -1844,10 +1810,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px !important;
 }
 .da-modal > .da-inner > .da-modal .da-switch[class*="valueChecked"] {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 .da-modal > .da-inner > .da-modal .da-checkbox.da-checked {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
     border-color: transparent !important;
 }
 /*zaznaczalne szerokie pola z niektórych popoutów, np ustawienia powiadomień serwera*/
@@ -1875,12 +1841,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal .da-footer > button {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 .da-modal > .da-inner > .da-modal .da-footer > button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 /*usuwanie wiadomości popout: pole z wiadomością*/
 .da-modal > .da-inner > .da-modal .da-content > .da-message {
@@ -1904,7 +1870,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
     background: var(--default-hover-rgba) !important;
-    color: var(--bt-col) !important;
+    color: var(--bt-text) !important;
 }
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected,
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover,
@@ -1912,7 +1878,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"],
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
     background: var(--default-selected-rgba) !important;
-    color: var(--bt-col-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /*różne po prawej zawarte w wielu opcjach*/
@@ -1958,11 +1924,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.85) !important;
 }
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
-    background-color: var(--btBlue-bg) !important;
+    background-color: var(--bt-blue-bg) !important;
     color: #dddddd !important;
 }
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
-    background: var(--btBlue-bg-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
     color: #ffffff !important;
 }
 /*switch checkboxy*/
@@ -1972,7 +1938,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px !important;
 }
 [aria-label*="SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
@@ -1984,15 +1950,15 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"],
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"],
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookGhost"] {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
     border-color: transparent;
 }
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
     border-color: transparent;
 }
 
@@ -2129,11 +2095,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     border-color: rgba(0, 0, 0, 1) !important;
 }
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked {
-    background-color: var(--btBlue-bg) !important;
-    border-color: var(--btBlue-bg) !important;
+    background-color: var(--bt-blue-bg) !important;
+    border-color: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked polyline {
-    stroke: var(--bt-col-hover) !important;
+    stroke: var(--bt-text-hover) !important;
 }
 /*switch checkboxy*/
 #user-settings .da-contentRegion .da-switch,
@@ -2142,21 +2108,21 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     box-shadow: 0px 0px !important;
 }
 #user-settings .da-contentRegion .da-switch[class*="valueChecked"] {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 /*przyciski*/
 #user-settings .da-contentRegion .da-button[class*="lookFilled"],
 #user-settings .da-contentRegion .da-button[class*="lookOutlined"],
 #user-settings .da-contentRegion .da-button[class*="lookGhost"] {
-    background-color: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background-color: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
     border-color: transparent !important;
 }
 #user-settings .da-contentRegion .da-button[class*="lookFilled"]:hover,
 #user-settings .da-contentRegion .da-button[class*="lookOutlined"]:hover,
 #user-settings .da-contentRegion .da-button[class*="lookGhost"]:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
     border-color: transparent !important;
 }
 /*input type range*/
@@ -2164,7 +2130,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 #user-settings .da-contentRegion .da-barFill {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
 #user-settings .da-contentRegion .da-card:hover {
@@ -2199,13 +2165,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*input nicku*/
 #user-settings .da-contentRegion .da-inputWrapper .da-input.da-focused {
-    border-color: var(--btBlue-bg) !important;
+    border-color: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-inputWrapper .da-questionMark {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-inputWrapper .da-questionMark:hover {
-    background: var(--btBlue-bg-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
 }
 
 /*"Prywatnosc i bezpieczenstwo"*/
@@ -2289,7 +2255,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23000000'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E") !important;
 }
 #user-settings .da-contentRegion .da-progress {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 /*podgląd kamery*/
 #user-settings .da-contentRegion .da-previewContainer .media-engine-video,
@@ -2302,17 +2268,17 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*"Powiadomienia z nakładki"*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper {
     background: rgba(0, 0, 0, 0.6) !important;
-    border-color: var(--btBlue-bg) !important;
+    border-color: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected {
-    border-color: var(--btRed-bg-hover) !important;
+    border-color: var(--bt-red-hover) !important;
 }
 /*opcje w rogach*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option {
     background: rgba(0, 0, 0, 0.8) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option.da-selected {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option:not(.da-selected):hover {
     background: rgba(0, 0, 0, 1) !important;
@@ -2325,7 +2291,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     fill: rgba(0, 0, 0, 1) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected .da-disabledIcon path:nth-child(2) {
-    fill: var(--btRed-bg-hover) !important;
+    fill: var(--bt-red-hover) !important;
 }
 
 /*"Skróty klawiszowe": przycisk do usuwania skrótu*/
@@ -2375,7 +2341,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     border-color: #000000;
 }
 
-/*"Biblioteka"*/
+/*"Biblioteka gier"*/
 /*lokalizacje instalacji*/
 /*tytul i lokalizacja lokalizacji*/
 #user-settings .da-contentRegion .da-installationPath .da-rowTitle {
@@ -2396,11 +2362,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 #user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(2),
 #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(2) {
-    stroke: var(--main-red) !important;
+    stroke: var(--markup-intensive) !important;
 }
 /*tag "domyślny"*/
 #user-settings .da-contentRegion .da-installationPath .da-defaultIndicator {
-    background: var(--main-red) !important;
+    background: var(--markup-intensive) !important;
 }
 
 /* USTAWIENIA BETTERDISCORD */
@@ -2435,23 +2401,23 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*przyciski w nagłówkach*/
 #bd-settingspane-container .bd-pfbtn {
-    background: var(--btRed-bg);
-    color: var(--bt-col);
+    background: var(--bt-red);
+    color: var(--bt-text);
     padding: 4px 13px;
 }
 #bd-settingspane-container .bd-pfbtn:hover {
-    background: var(--btRed-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-red-hover);
+    color: var(--bt-text-hover);
 }
 /*przyciski w ustawieniach*/
 #bd-settingspane-container .bda-settings-button {
-    background: var(--btBlue-bg);
-    color: var(--bt-col);
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
     padding: 4px 13px;
 }
 #bd-settingspane-container .bda-settings-button:hover {
-    background: var(--btBlue-bg-hover);
-    color: var(--bt-col-hover);
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
 }
 /*linki w ustawieniach BD*/
 #bd-settingspane-container .bda-link {
@@ -2465,7 +2431,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 #bd-settingspane-container .da-switch[class*="Checked"],
 #bd-settingspane-container .ui-switch.checked {
-    background: var(--btBlue-bg) !important;
+    background: var(--bt-blue-bg) !important;
 }
 
 /*Custom CSS*/
@@ -2501,8 +2467,8 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*live update checkbox*/
 #bd-customcss-attach-controls .da-checkbox .da-checkboxInner span {
-    background-color: var(--btBlue-bg);
-    border-color: var(--btBlue-bg);
+    background-color: var(--bt-blue-bg);
+    border-color: var(--bt-blue-bg);
 }
 /*"ctrl+,"*/
 #bd-customcss-attach-controls .inline {
@@ -2511,12 +2477,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #bd-customcss-attach-controls button {
     border-color: transparent !important;
     border-radius: 5px !important;
-    background-color: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background-color: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 #bd-customcss-attach-controls button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
 
 /*IKONKI USTAWIEN*/
@@ -2957,7 +2923,7 @@ input {
     transition: all 0.3s;
 }
 input:focus {
-    border-color: var(--main-blue) !important;
+    border-color: var(--markup-blue) !important;
     box-shadow: 0px 0px 0px transparent;
 }
 
@@ -2986,10 +2952,10 @@ input:focus {
     background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) !important;
 }
 #app-mount .da-errorPage button {
-    background: var(--btBlue-bg) !important;
-    color: var(--bt-col) !important;
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
 }
 #app-mount .da-errorPage button:hover {
-    background: var(--btBlue-bg-hover) !important;
-    color: var(--bt-col-hover) !important;
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
 }
