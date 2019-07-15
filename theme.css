@@ -1,5 +1,5 @@
 :root {
-    --background-img: url("https://i.imgur.com/lWPVyO6.png");
+    --background-img: url("https://i.imgur.com/S7AYEBo.png");
     --default-hover: #c8000026;
     --default-selected: #c800004d;
     --bt-red: #aa0000cc;
@@ -489,7 +489,10 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [id*="popout"] [class*="animator"] > .da-container > header {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
-[id*="popout"] [class*="animator"] > .da-container > .da-autocompleteShadow {
+[id*="popout"] [class*="animator"] > .da-container > .da-autocompleteShadow,
+[id*="popout"] [class*="animator"] > .da-container .da-autocompleteHeaderBackground,
+[id*="popout"] [class*="animator"] > .da-container .da-autocompleteArrow {
+    background: rgba(0, 0, 0, 0.3) !important;
     box-shadow: 0px 0px !important;
 }
 [id*="popout"] [class*="animator"] > .da-container > section {
@@ -501,7 +504,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     margin-top: 10px;
 }
 [id*="popout"] [class*="animator"] > .da-container > section .da-selected {
-    background: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(0, 0, 0, 1) !important;
 }
 
 /*czcionka nazwy serwera po wejsciu na niego*/
