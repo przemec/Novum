@@ -1085,7 +1085,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-chat .da-title .da-children::after {
     visibility: hidden !important;
 }
-.akaBadge-1M-1Gw {
+.da-akaBadge {
     background: var(--default-selected) !important;
     border-radius: 10%;
 }
@@ -1141,6 +1141,36 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .da-inCall .da-videoInner .da-actions > button:hover {
     background: var(--bt-blue-bg-hover);
     color: var(--bt-text-hover);
+}
+/*prywatna wiadomosc: dodawanie osoby do rozmowy prywatnej: popout*/
+.da-popouts > * > .da-popout {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+/*search bar: zaznaczone osoby*/
+.da-popouts > * > .da-popout .da-searchBarComponent .da-tag {
+    background: var(--default-hover) !important;
+}
+/*hover na osoby poniżej*/
+.da-popouts > * > .da-popout .da-friendSelected {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+/*buttony*/
+.da-popouts > * > .da-popout button[class*="colorBrand"] {
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
+}
+.da-popouts > * > .da-popout button[class*="colorBrand"]:hover {
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
+}
+/*checkboxy*/
+.da-popouts > * > .da-popout .da-checkbox.da-checked {
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
+    border-color: transparent !important;
+}
+.da-popouts > * > .da-popout .da-checkbox.da-checked polyline {
+    stroke: var(--bt-text) !important;
 }
 
 /*wiadomosc/alert od bota discordowego*/
