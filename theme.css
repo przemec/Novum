@@ -2138,7 +2138,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
     background: rgba(0, 0, 0, 0.8) !important;
 }
-
 /*checkboxy*/
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox {
     background: rgba(0, 0, 0, 0.4) !important;
@@ -2194,6 +2193,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-card:hover::before {
     background: transparent !important;
     border-color: transparent;
+}
+/*kolory linkow*/
+#user-settings .da-contentRegion a {
+    color: var(--markup-normal);
 }
 
 /* Poszczególne opcje ustawień */
@@ -2384,7 +2387,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     border: 1px solid #000000;
     box-shadow: 0px 0px;
 }
-
 /*panel u dołu*/
 #user-settings .da-contentRegion .da-emptyUsers {
     background: rgba(0, 0, 0, 0.6) !important;
