@@ -5,4 +5,4 @@
 ## Preview
 ![Preview](https://i.imgur.com/i9caP04.png)
 
-<i>Background taken from [Nova](https://github.com/din0s/discord-theme/) theme made by [din0s](https://github.com/din0s/).</i>
+<i>Background comes from [Nova](https://github.com/din0s/discord-theme/) theme made by [din0s](https://github.com/din0s/).</i>
