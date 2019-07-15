@@ -144,39 +144,44 @@ body::after {
 /* SCROLLBARY */
 
 /*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, activity feedzie i bibliotece gier, 
-lewej stronie niektórych opcji w ustawieniach*/
+prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
 [class*="theme-"] .da-spacer > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb {
+#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-thumb {
     border-color: transparent !important;
     background-color: transparent !important;
 }
 [class*="theme-"] .da-spacer > * > .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb {
+#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track,
+[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-track {
     border-color: transparent !important;
     background-color: transparent !important;
 }
 [class*="theme-"] .da-spacer > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track-piece {
+#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
+[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-track-piece {
     border-color: transparent !important;
     background-color: transparent !important;
 }
 [class*="theme-"] .da-spacer > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
+#user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
     border-color: var(--scroll-thumb) !important;
     background-color: var(--scroll-thumb) !important;
 }
 [class*="theme-"] .da-spacer > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piec {
+#user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
     border-color: var(--scroll-bg-bord) !important;
     background-color: var(--scroll-bg) !important;
 }
@@ -199,7 +204,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-searchResultsWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-privateChannels > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
     border-color: var(--scroll-thumb) !important;
     background-color: var(--scroll-thumb) !important;
 }
@@ -478,18 +484,24 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-bottom-color: transparent;
 }
 
-/*status online polaczenia: popout*/
-[id*="popout"] [class*="animatorTop"] > .da-container,
-[id*="popout"] [class*="animatorTop"] > .da-container > header {
+/*status online polaczenia oraz popout po kliknieciu + w rolach uzytkownika*/
+[id*="popout"] [class*="animator"] > .da-container,
+[id*="popout"] [class*="animator"] > .da-container > header {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
-[id*="popout"] [class*="animatorTop"] > .da-container > section {
+[id*="popout"] [class*="animator"] > .da-container > .da-autocompleteShadow {
+    box-shadow: 0px 0px !important;
+}
+[id*="popout"] [class*="animator"] > .da-container > section {
     background-color: rgba(0, 0, 0, 0.5) !important;
     color: #7e7e7e !important;
     text-align: start;
 }
-[id*="popout"] [class*="animatorTop"] > .da-container > section > .paragraph {
+[id*="popout"] [class*="animator"] > .da-container > section > .paragraph {
     margin-top: 10px;
+}
+[id*="popout"] [class*="animator"] > .da-container > section .da-selected {
+    background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*czcionka nazwy serwera po wejsciu na niego*/
