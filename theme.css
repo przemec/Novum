@@ -501,6 +501,33 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [id*="popout"] [class*="animator"] > .da-container > section a {
     color: var(--markup-normal) !important;
 }
+/*popout po kliknieciu debug*/
+[aria-label*="RTC"] .da-standardSidebarView,
+[aria-label*="RTC"] .da-standardSidebarView > * {
+    background: rgba(0, 0, 0, 0.05) !important;
+}
+/*dividery po prawej*/
+[aria-label*="RTC"] .da-standardSidebarView .da-divider {
+    background: rgba(255, 255, 255, 0.4) !important;
+}
+/*sidebar*/
+[aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-channelItem .da-icon path {
+    fill: rgba(255, 255, 255, 0.7) !important;
+}
+[aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-header {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+[aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+[aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item:hover {
+    background: var(--default-hover) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+[aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item.da-selected {
+    background: var(--default-selected) !important;
+    color: rgba(255, 255, 255, 0.8) !important;
+}
 /*popout po kliknieciu + w rolach uzytkownika*/
 [id*="popout"] [class*="animator"] > .da-container > .da-autocompleteShadow,
 [id*="popout"] [class*="animator"] > .da-container .da-autocompleteHeaderBackground,
