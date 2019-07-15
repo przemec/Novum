@@ -12,7 +12,7 @@
     --scroll-bg: #00000016;
     --scroll-bg-bord: #00000000;
     --markup-normal: #fd686b;
-    --markup-normal-transparent: #fd686b3f;
+    --markup-normal-transparent: #fd686a18;
     --markup-intensive: #fc3639;
     --markup-blue: #3333ffe6;
     --markup-blue-light: #1b76fee6;
@@ -605,6 +605,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: linear-gradient(to right, var(--markup-normal-transparent), transparent);
     opacity: 1;
     border-color: transparent;
+    filter: brightness(10);
 }
 
 /*licznik osob na kanale glosowym*/
@@ -1694,7 +1695,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: var(--markup-intensive) !important;
 }
 .da-chat .da-message .da-embed .da-embedInner {
-    background: rgba(252, 54, 57, 0.1) !important;
+    background: var(--markup-normal-transparent) !important;
     border-color: var(--markup-intensive) !important;
 }
 .da-chat .da-message .da-embed .da-embedInner .da-embedTitleLink {
