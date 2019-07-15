@@ -1548,10 +1548,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     color: #eeeeee;
     font-weight: bold;
 }
-/*footer ze wzmianek*/
-.da-popouts .da-popout > .da-themedPopout > .da-footer {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+/*wiadomosc*/
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper > * > .da-container {
     background-color: rgba(0, 0, 0, 1) !important;
 }
@@ -1575,6 +1572,13 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
     background-color: var(--bt-red-hover) !important;
     color: var(--bt-text-hover) !important;
+}
+/*footer ze wzmianek*/
+.da-popouts .da-popout > .da-themedPopout > .da-footer {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.da-popouts .da-popout > .da-themedPopout > .da-footer .da-pro {
+    color: var(--markup-blue);
 }
 
 /* CHAT */
