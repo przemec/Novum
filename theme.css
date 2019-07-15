@@ -2522,19 +2522,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*ikony*/
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(2)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/person.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/person.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(3)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/security.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/security.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(4)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/apps.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/apps.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(5)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/link.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/link.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(6)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/Credit_card.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/Credit_card.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(8)::after {
     background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
@@ -2544,62 +2544,62 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background-size: cover;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(12)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/mic.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/mic.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(13)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/open_in_new.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/open_in_new.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(14)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/notifications.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/notifications.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(15)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/keyboard.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/keyboard.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(16)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/games.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/games.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(17)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/chat.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/chat.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(18)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/gamepad.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(19)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/videocam.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/videocam.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(20)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/looks.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/looks.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(21)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/desktop_windows.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/desktop_windows.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(22)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/language.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/language.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(23)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/windows.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/windows.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(25)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/update.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/update.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(28)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/exit.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
 }
 
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/betterdiscord.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/betterdiscord.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/emote.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/emote.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/puzzle.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/puzzle.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/palette.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
-    background: url(https://tomec.gitlab.io/kgb-dsc-theme/icons/code.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
 }
 
 /* ANIMACJE */
