@@ -513,11 +513,26 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     background: rgba(0, 0, 0, 1) !important;
 }
 
-/*czcionka nazwy serwera po wejsciu na niego*/
+/*nazwa serwera po wejsciu na niego*/
 .da-channels .da-hasDropdown .da-name {
     font-size: 18px;
     font-weight: bold;
     line-height: 55px;
+}
+/*ikona zweryfikowanego serwera (obok nazwy)*/
+.da-channels .da-hasDropdown .da-flowerStarContainer .da-flowerStar[aria-label="Verified"] path {
+    fill: var(--markup-normal);
+}
+/*ikona zboostowanego z nitro serwera (obok nazwy)*/
+.da-channels .da-hasDropdown .da-flowerStarContainer .da-flowerStar path {
+    fill: rgb(253, 124, 251);
+}
+.da-channels .da-hasDropdown .da-flowerStarContainer .da-premiumGuildIconGem path {
+    fill: rgb(255, 255, 255);
+}
+/*ikona serwera partnerskiego discorda (obok nazwy)*/
+.da-channels .da-hasDropdown .da-flowerStarContainer .da-flowerStar[aria-label="Discord Partner"] path {
+    fill: var(--markup-blue-light);
 }
 
 /*ikony u góry aplikacji obok nazw kanałów/nazw podstron strony głównej*/
