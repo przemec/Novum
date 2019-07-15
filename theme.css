@@ -1621,14 +1621,14 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 /*reakcje pod wiadomosciami na czacie*/
 [class*="theme-"] .da-reactions .da-reaction {
     background-color: rgba(0, 0, 0, 0.2) !important;
-    min-width: 50px !important;
-    min-height: 50px !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
     display: flex;
     align-content: center;
 }
 [class*="theme-"] .da-reactions .da-reaction img {
-    width: 40px !important;
-    height: 40px !important;
+    width: 30px !important;
+    height: 30px !important;
 }
 [class*="theme-"] .da-reactions .da-reaction .da-reactionCount {
     color: var(--markup-normal) !important;
