@@ -3055,8 +3055,14 @@ input:focus {
     background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
-.noChannel-Z1DQK7 {
+[class*="theme-"] .da-noChannel {
     background-color: rgba(0, 0, 0, 0.1) !important;
+}
+[class*="theme-"] .da-noChannel .da-title{
+    color: var(--markup-normal) !important;
+}
+[class*="theme-"] .da-noChannel .da-text{
+    color: var(--markup-normal) !important;
 }
 
 /*crash discorda*/
