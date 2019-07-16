@@ -1885,16 +1885,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*popout*/
 .da-modal > .da-inner > .da-modal.da-container {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
     border-color: rgba(0, 0, 0, 0) !important;
     box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal.da-container * {
     border-color: rgba(0, 0, 0, 0) !important;
     box-shadow: 0px 0px;
-}
-.da-modal > .da-inner > .da-modal.da-container > * {
-    background: rgba(0, 0, 0, 0.6) !important;
 }
 .da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"] {
     background: var(--bt-red) !important;
