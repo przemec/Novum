@@ -3077,3 +3077,19 @@ input:focus {
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
+
+/*dolaczanie do nowego serwera popout*/
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button {
+    color: var(--bt-text) !important;
+}
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button[class*="lookFilled"] {
+    background: var(--bt-blue-bg) !important;
+    color: var(--bt-text) !important;
+}
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button[class*="lookFilled"]:hover {
+    background: var(--bt-blue-bg-hover) !important;
+    color: var(--bt-text-hover) !important;
+}
