@@ -253,10 +253,10 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .wrapper-1Rf91z a.da-wrapper .da-homeIcon {
     background: rgba(0, 0, 0, 0);
 }
-.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper {
+.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper {
     background: rgba(0, 0, 0, 0.5);
 }
-.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper .da-wrapper.da-selected {
+.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper.da-selected {
     background: rgba(0, 0, 0, 0.6);
 }
 /*tlo public serwerow BetterDiscorda*/
@@ -3036,7 +3036,7 @@ input {
 }
 input:focus {
     border-color: var(--markup-blue) !important;
-    box-shadow: 0px 0px 0px transparent;
+    box-shadow: 0px 0px transparent;
 }
 
 /*przyciski w dolnym lewym przed i po połączeniu*/
@@ -3058,10 +3058,10 @@ input:focus {
 [class*="theme-"] .da-noChannel {
     background-color: rgba(0, 0, 0, 0.1) !important;
 }
-[class*="theme-"] .da-noChannel .da-title{
+[class*="theme-"] .da-noChannel .da-title {
     color: var(--markup-normal) !important;
 }
-[class*="theme-"] .da-noChannel .da-text{
+[class*="theme-"] .da-noChannel .da-text {
     color: var(--markup-normal) !important;
 }
 
