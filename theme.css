@@ -581,12 +581,12 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 
 /* SERWER */
 /*serwer - lista ludzi na serwerze (hover i click)*/
-.da-members .da-member .da-content:hover,
-.da-members .da-member.popout-open .da-content {
-    background: transparent !important;
+.da-members .da-member:hover,
+.da-members .da-member.popout-open  {
+    background: linear-gradient(to right, var(--default-selected), transparent) !important;
 }
-.da-members .da-member .da-content:hover::before,
-.da-members .da-member.popout-open .da-content::before {
+/* .da-members .da-member:hover::before,
+.da-members .da-member.popout-open::before {
     content: "";
     z-index: -1 !important;
     position: absolute;
@@ -596,7 +596,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-radius: 5px;
     opacity: 0.5;
     background: linear-gradient(to right, var(--markup-blue), transparent) !important;
-}
+} */
 
 /*serwer - kanaly tekstowe i glosowe*/
 /*default tekstowy i glosowy*/
@@ -2872,11 +2872,11 @@ body::after {
 }
 
 /*Radial Status:hover*/
-.da-status {
+/* rect.da-pointerEvents {
     box-shadow: none !important;
     -webkit-box-shadow: none !important;
     pointer-events: none !important;
-}
+} */
 /*?*/
 .listRow-hutiT_:hover .da-status,
 .card-7JP0BX:hover .da-status {
@@ -2909,14 +2909,21 @@ body::after {
     border-radius: 50%;
 }
 /*user na liscie na serwerze, user na liscie na serwerze po left clicku, wiadomosc prywatna*/
-.da-members .da-member .da-content:hover .da-status,
-.da-members .da-member.popout-open .da-status,
-.da-privateChannels .da-channel a:hover .da-status {
-    width: 34px !important;
-    height: 34px !important;
-    right: -4px;
+.da-members .da-member:hover rect.da-pointerEvents,
+.da-members .da-member.popout-open rect.da-pointerEvents,
+.da-privateChannels .da-channel a:hover rect.da-pointerEvents {
+    /* width: 36px !important;
+    height: 36px !important; */
+    /* right: -4px;
     bottom: -4px;
-    border-radius: 50%;
+    border-radius: 50%; */  
+    /* stroke:#43b581;
+    stroke-width: 3px;
+    fill: transparent;   */
+    /* fill-opacity: 0.4;
+    x: -2 !important;
+    y: -2 !important;
+    z-index: -11 !important; */
 }
 /*po kolei: ?, ?, nick po wpisaniu @ na czacie, right click uzytkownika -> profil, wiadomosc prywatna, 
 user na liscie na serwerze, user na liscie na serwerze po left clicku, left click uzytkownika*/
