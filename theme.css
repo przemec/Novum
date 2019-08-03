@@ -1,3 +1,5 @@
+//META{"name":"KGB theme testing","description":"TEST KGB","author":"Tomec & Saurian","version":"4.0"}*//{}
+
 :root {
     --background-img: url("https://i.imgur.com/lWPVyO6.png");
     --default-hover: #c8000026;
@@ -276,6 +278,17 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .wrapper-1Rf91z .da-circleIconButton:hover,
 .wrapper-1Rf91z .da-listItemWrapper > a:hover {
     background: rgba(0, 0, 0, 0.7);
+}
+/*katalogi serwerów*/
+.wrapper-1Rf91z .da-folder,
+.wrapper-1Rf91z .da-closedFolderIconWrapper,
+.wrapper-1Rf91z .da-expandedFolderBackground {
+    background: rgba(0, 0, 0, 0) !important;
+}
+.wrapper-1Rf91z .da-folderIconWrapper,
+.wrapper-1Rf91z .da-expandedFolderBackground:not(.da-collapsed)  {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 20px;
 }
 
 /*popout po kliknieciu w Add Server*/
