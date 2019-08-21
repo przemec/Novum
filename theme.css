@@ -266,7 +266,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 .wrapper-1Rf91z #bd-pub-button:hover {
     background: rgba(0, 0, 0, 0.6);
 }
-/*tlo Add server, Server discovery, listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
+/*tlo Add server, Server discovery, 
+listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .wrapper-1Rf91z .da-circleIconButton,
 .wrapper-1Rf91z .da-listItemWrapper > a {
     background: rgba(0, 0, 0, 0.6);
@@ -1762,6 +1763,15 @@ form .da-autocomplete .da-autocompleteInner {
     border-color: rgba(0, 0, 0, 0) !important;
 }
 form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
+    background: rgba(0, 0, 0, 0.9) !important;
+}
+/*popout w inpucie czatu przy oznaczaniu kogos na czacie podczas edytowania wiadomości*/
+.da-messagesWrapper .da-autocomplete,
+.da-messagesWrapper .da-autocomplete .da-autocompleteInner {
+    background: rgba(0, 0, 0, 0.8) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
+}
+.da-messagesWrapper .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.9) !important;
 }
 
