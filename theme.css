@@ -137,7 +137,8 @@ body::after {
 [class*="theme-"] .layers-3iHuyZ,
 [class*="theme-"] .members-1998pB,
 .typeWindows-15E0Ys,
-.unreadBottom-3hWQ7c {
+.unreadBottom-3hWQ7c,
+.da-app {
     background: transparent !important;
 }
 
@@ -188,7 +189,7 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
 lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
-[class*="theme-"] .da-channels > .da-container > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-base .da-container > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-sidebarRegion > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-membersWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-searchResultsWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
@@ -198,7 +199,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
     border-color: transparent !important;
     background-color: transparent !important;
 }
-[class*="theme-"] .da-channels > .da-container > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-base .da-container > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-sidebarRegion > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-membersWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-searchResultsWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
@@ -285,7 +286,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
     background: rgba(0, 0, 0, 0) !important;
 }
 .wrapper-1Rf91z .da-folderIconWrapper,
-.wrapper-1Rf91z .da-expandedFolderBackground:not(.da-collapsed) {
+.wrapper-1Rf91z .da-expandedFolderBackground:not(.da-collapsed)  {
     background: rgba(0, 0, 0, 0.5) !important;
     border-radius: 20px;
 }
@@ -497,7 +498,8 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*status online polaczenia: background kontenera*/
-.da-spacer .da-channels .da-container {
+.da-spacer .da-panels,
+.da-spacer .da-panels .da-container {
     background-color: rgba(0, 0, 0, 0) !important;
     border-bottom-color: transparent;
 }
@@ -1060,12 +1062,12 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
     font-size: 17px;
 }
 /*da-primary: button dodaj znajomego*/
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item.da-primary {
+[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgb(67, 181, 129)"] {
     background-color: rgba(0, 255, 128, 0.1) !important;
     color: rgba(0, 255, 128, 0.7) !important;
 }
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item.da-primary:hover,
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item.da-primarySelected {
+[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"]:hover,
+[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"] {
     background-color: rgba(0, 255, 128, 0.2) !important;
     color: rgba(0, 255, 128, 0.7) !important;
     font-weight: bold;
@@ -1801,23 +1803,23 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*edytowanie wiadomosci > kolor "anulować" albo "zapisać"*/
-.da-chat .da-message .da-operations > a {
+.da-chat .da-messagesWrapper .da-container .da-operations > a {
     color: var(--markup-normal);
 }
 
 /*kolor linku na czacie*/
-.da-chat .da-message .da-markup > a {
+.da-chat .da-messagesWrapper .da-container .da-markup > a {
     color: var(--markup-normal);
 }
 /*polprzezroczyste pola na czacie: linki*/
-.da-chat .da-message .da-embed .da-embedPill {
+.da-chat .da-messagesWrapper .da-container .da-embed .da-embedPill {
     background: var(--markup-intensive) !important;
 }
-.da-chat .da-message .da-embed .da-embedInner {
+.da-chat .da-messagesWrapper .da-container .da-embed .da-embedInner {
     background: var(--markup-normal-transparent) !important;
     border-color: var(--markup-intensive) !important;
 }
-.da-chat .da-message .da-embed .da-embedInner .da-embedTitleLink {
+.da-chat .da-messagesWrapper .da-container .da-embed .da-embedInner .da-embedTitleLink {
     color: var(--markup-blue-light) !important;
 }
 
@@ -1831,40 +1833,40 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*polprzezroczyste pola na czacie: pliki do pobrania */
-.da-chat .da-message .da-attachment {
+.da-chat .da-messagesWrapper .da-container .da-attachment {
     background: rgba(0, 0, 0, 0.3) !important;
     border-color: #000000 !important;
 }
-.da-chat .da-message .da-attachment .da-fileNameLink {
+.da-chat .da-messagesWrapper .da-container .da-attachment .da-fileNameLink {
     color: var(--markup-blue-light) !important;
 }
-.da-chat .da-message .da-attachment .da-downloadButton .fill {
+.da-chat .da-messagesWrapper .da-container .da-attachment .da-downloadButton .fill {
     fill: var(--markup-blue) !important;
 }
-.da-chat .da-message .da-attachment a:hover .fill {
+.da-chat .da-messagesWrapper .da-container .da-attachment a:hover .fill {
     fill: var(--markup-blue-light) !important;
 }
 
 /*polprzezroczyste pola na czacie: plik podczas wysylania na czat*/
-.da-chat .da-message .da-progressBar {
+.da-chat .da-messagesWrapper .da-container .da-progressBar {
     background: var(--markup-intensive) !important;
 }
 
 /*polprzezroczyste pola na czacie: zaproszenia na serwer*/
-.da-chat .da-message .da-userSelectNone {
+.da-chat .da-messagesWrapper .da-container .da-userSelectNone {
     background: rgba(0, 0, 0, 0.3) !important;
     border-color: #000000 !important;
 }
 /*gdy serwer nie ma ikony*/
-.da-chat .da-message .da-userSelectNone .da-noIcon {
+.da-chat .da-messagesWrapper .da-container .da-userSelectNone .da-noIcon {
     background-color: rgba(0, 0, 0, 0.6) !important;
 }
 /*button Dołącz*/
-.da-chat .da-message .da-userSelectNone button[class*="lookFilled"] {
+.da-chat .da-messagesWrapper .da-container .da-userSelectNone button[class*="lookFilled"] {
     background: var(--bt-blue-bg) !important;
     color: var(--bt-text) !important;
 }
-.da-chat .da-message .da-userSelectNone button[class*="lookFilled"]:hover {
+.da-chat .da-messagesWrapper .da-container .da-userSelectNone button[class*="lookFilled"]:hover {
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
@@ -1877,11 +1879,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     background: rgba(0, 0, 0, 0.9) !important;
 }
 /*zaproszenie do gry (fortnite): polprzezroczyste pole na czacie po zaproszeniu*/
-.da-chat .da-message .da-invite {
+.da-chat .da-messagesWrapper .da-container .da-invite {
     background: rgba(0, 0, 0, 0.3) !important;
     border-color: #000000 !important;
 }
-.da-chat .da-message .da-invite .da-coverImage {
+.da-chat .da-messagesWrapper .da-container .da-invite .da-coverImage {
     opacity: 0.3 !important;
 }
 
@@ -2728,26 +2730,26 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /* ANIMACJE */
 
 /*animacja buttona edytowania wiadomosci*/
-.da-chat .da-message .da-containerCozy .da-buttonContainer .da-button:last-child {
+.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child {
     background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23FFFFFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3cpath d='M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z'/%3e%3c/svg%3e") !important;
     background-size: 16px !important;
     background-position: center !important;
     opacity: 0;
     visibility: visible;
 }
-.da-chat .da-message .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
+.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-animation: edit1 2.8s infinite linear;
     animation: edit1 2.8s infinite linear;
 }
-.da-chat .da-message .da-contentCozy:hover .da-buttonContainer .da-button:last-child {
+.da-chat .da-messagesWrapper .da-container .da-contentCozy:hover .da-buttonContainer .da-button:last-child {
     opacity: 0.3;
 }
 
-.da-chat .da-message .da-containerCozy .da-buttonContainer .da-button:last-child.popout-open,
-.da-chat .da-message .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
+.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child.popout-open,
+.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
     background-size: 105% !important;
     opacity: 0.7 !important;
 }
