@@ -139,7 +139,9 @@ body::after {
 .typeWindows-15E0Ys,
 .unreadBottom-3hWQ7c,
 .da-app,
-.da-privateChannels {
+.da-privateChannels,
+.da-scroller,
+.da-sidebar {
     background: transparent !important;
 }
 
