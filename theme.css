@@ -1,5 +1,6 @@
 :root {
     --background-img: url("https://i.imgur.com/lWPVyO6.png");
+    --profile-bckg: url("https://i.imgur.com/WabiB4C.png");
     --default-hover: #c8000026;
     --default-selected: #c800004d;
     --bt-red: #aa0000cc;
@@ -1583,7 +1584,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 /*header*/
 .da-userPopout > .da-header {
-    background: url(https://i.imgur.com/WabiB4C.png);
+    background: var(--profile-bckg);
     background-size: cover;
 }
 .da-userPopout > * > .da-activityUserPopout {
