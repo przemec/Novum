@@ -600,8 +600,11 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 
 /* SERWER */
 /*serwer - lista ludzi na serwerze (hover i click)*/
+.da-members .da-layout {
+    background:  transparent !important;
+}
 .da-members .da-member:hover,
-.da-members .da-member.popout-open  {
+.da-members .da-member.da-selected {
     background: linear-gradient(to right, var(--default-selected), transparent) !important;
 }
 /* .da-members .da-member:hover::before,
