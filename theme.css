@@ -1500,7 +1500,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem*/
-[class*="theme-"].da-contextMenu {
+[class*="theme-"] .da-contextMenu {
     background-color: rgba(0, 0, 0, 0.95) !important;
     border: 1px solid rgba(0, 0, 0, 0);
 }
