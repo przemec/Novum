@@ -1691,7 +1691,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .da-chat form {
     margin: 0px;
 }
-.da-chat form .da-channelTextArea > .da-inner {
+.da-chat .da-channelTextArea > .da-inner {
     background: rgba(0, 0, 0, 0.2);
 }
 
