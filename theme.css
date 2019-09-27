@@ -151,7 +151,8 @@ body::after {
 
 /*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, activity feedzie i bibliotece gier, 
 prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
-[class*="theme-"] .da-spacer > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
@@ -159,7 +160,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
     border-color: transparent !important;
     background-color: transparent !important;
 }
-[class*="theme-"] .da-spacer > * > .da-scrollerWrap ::-webkit-scrollbar-track,
+[class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track,
+[class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track,
@@ -167,7 +169,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
     border-color: transparent !important;
     background-color: transparent !important;
 }
-[class*="theme-"] .da-spacer > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
@@ -175,7 +178,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
     border-color: transparent !important;
     background-color: transparent !important;
 }
-[class*="theme-"] .da-spacer > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
@@ -183,7 +187,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
     border-color: var(--scroll-thumb) !important;
     background-color: var(--scroll-thumb) !important;
 }
-[class*="theme-"] .da-spacer > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
@@ -413,70 +418,70 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*pole po kliknieciu w Server Discovery*/
-[class*="theme-"] .da-spacer > .da-pageWrapper {
+[class*="theme-"] .da-content > .da-pageWrapper {
     background-color: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper > .da-bg {
+[class*="theme-"] .da-content > .da-pageWrapper > .da-bg {
     display: none !important;
 }
 /*search bar u gory*/
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search > * > *:first-child {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > *:first-child {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 /*pole wysuwane po wpisaniu czegokolwiek ("nacisnij enter aby wyszukac")*/
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search > * > .da-searchHelpText {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > .da-searchHelpText {
     opacity: 0 !important;
     transition: 0.2s all ease-in;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search > * > .da-searchHelpTextVisible {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > .da-searchHelpTextVisible {
     opacity: 1 !important;
 }
 /*popout z językami*/
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search .da-select > [class*="css-"],
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select > [class*="css-"],
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] {
     background: rgba(0, 0, 0, 0.6) !important;
     border-color: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
     background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /*pola z serwerami przed i po załadowaniu*/
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-cardPlaceholder,
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-cardPlaceholder,
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card {
     background: rgba(0, 0, 0, 0.7) !important;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"] {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"] {
     background: var(--bt-blue-bg) !important;
     color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"]:hover {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"]:hover {
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
 /*footer strony - lista stron wyszukanych serwerów*/
 /*next i previous*/
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-button {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-button {
     background: var(--bt-blue-bg) !important;
     color: var(--bt-text) !important;
     min-width: 80px;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-button:hover {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-button:hover {
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
 /*liczby*/
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton {
     border-radius: 5px;
     min-width: 40px !important;
     background: rgba(0, 0, 0, 0.2) !important;
     color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton.da-activeButton {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton.da-activeButton {
     background: rgba(0, 0, 0, 0.5) !important;
     color: var(--bt-text-hover) !important;
 }
-[class*="theme-"] .da-spacer > .da-pageWrapper .da-body .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
     background: rgba(0, 0, 0, 0.4) !important;
     color: var(--bt-text-hover) !important;
 }
@@ -503,8 +508,8 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*status online polaczenia: background kontenera*/
-.da-spacer .da-panels,
-.da-spacer .da-panels .da-container {
+.da-content .da-panels,
+.da-content .da-panels .da-container {
     background-color: rgba(0, 0, 0, 0) !important;
     border-bottom-color: transparent;
 }
@@ -814,65 +819,65 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 
 /*Strona główna: Biblioteka*/
 /*root to pole po kliknieciu w Gift Inventory u góry biblioteki*/
-.da-spacer > .da-gameLibrary,
-.da-spacer > .da-root {
+.da-content > .da-gameLibrary,
+.da-content > .da-root {
     background-color: rgba(0, 0, 0, 0.1) !important;
 }
 /*header*/
-.da-spacer .da-gameLibrary .da-libraryHeader,
-.da-spacer .da-root .da-libraryHeader {
+.da-content .da-gameLibrary .da-libraryHeader,
+.da-content .da-root .da-libraryHeader {
     background-color: rgba(0, 0, 0, 0) !important;
 }
-.da-spacer .da-gameLibrary .da-libraryHeader .da-children::after,
-.da-spacer .da-root > .da-libraryHeader > .da-children::after {
+.da-content .da-gameLibrary .da-libraryHeader .da-children::after,
+.da-content .da-root > .da-libraryHeader > .da-children::after {
     visibility: hidden !important;
 }
 /*button My Games i Gift Inventory*/
-.da-spacer .da-gameLibrary .da-libraryHeader .da-item:hover,
-.da-spacer .da-gameLibrary .da-libraryHeader .da-item.da-selected,
-.da-spacer .da-root .da-libraryHeader .da-item:hover,
-.da-spacer .da-root .da-libraryHeader .da-item.da-selected {
+.da-content .da-gameLibrary .da-libraryHeader .da-item:hover,
+.da-content .da-gameLibrary .da-libraryHeader .da-item.da-selected,
+.da-content .da-root .da-libraryHeader .da-item:hover,
+.da-content .da-root .da-libraryHeader .da-item.da-selected {
     color: #dddddd;
     font-weight: bold;
     background: rgba(0, 0, 0, 0.3) !important;
 }
 /*filtr*/
-.da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter {
+.da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter {
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
+.da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
     background-color: rgba(0, 0, 0, 0.15) !important;
     border-bottom: 2px solid rgba(0, 0, 0, 0);
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
 }
-.da-spacer .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
+.da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
     background-color: rgba(0, 0, 0, 0.3) !important;
     border-color: var(--markup-blue) !important;
 }
 /*sticky header*/
-.da-spacer .da-gameLibrary .da-table .da-stickyHeader {
+.da-content .da-gameLibrary .da-table .da-stickyHeader {
     background: transparent;
 }
-.da-spacer .da-gameLibrary .da-table .da-rowWrapper:hover {
+.da-content .da-gameLibrary .da-table .da-rowWrapper:hover {
     background: rgba(0, 0, 0, 0.3) !important;
 }
 /*play button*/
-.da-spacer .da-gameLibrary .da-table .da-button {
+.da-content .da-gameLibrary .da-table .da-button {
     background-color: var(--bt-blue-bg) !important;
     color: var(--bt-text) !important;
 }
-.da-spacer .da-gameLibrary .da-table .da-button:hover {
+.da-content .da-gameLibrary .da-table .da-button:hover {
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
 /*gift inventory przycisk "Zrealizuj"*/
-.da-spacer > .da-root .da-codeRedemption .da-button {
+.da-content > .da-root .da-codeRedemption .da-button {
     background-color: var(--bt-blue-bg) !important;
     color: var(--bt-text) !important;
 }
-.da-spacer > .da-root .da-codeRedemption .da-button:hover {
+.da-content > .da-root .da-codeRedemption .da-button:hover {
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
@@ -1321,45 +1326,45 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 
 /*data wiadomosci na czacie*/
 /*cały divider*/
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span {
     background: rgba(204, 204, 204, 0.1) !important;
     font-size: 14px;
     border-radius: 5px;
     padding: 5px 15px;
     text-align: center;
 }
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider {
     margin-top: 15px;
 }
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-dividerRed) > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-dividerRed) > span {
     color: rgba(255, 255, 255, 0.7) !important;
 }
 /*nowa wiadomosc*/
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
     background: var(--default-hover) !important;
 }
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
     color: var(--markup-intensive) !important;
 }
 /*paski po bokach daty wiadomosci*/
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::before,
-[class*="theme-"] .da-spacer > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::after {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::before,
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::after {
     visibility: hidden;
 }
 
 /*przycisk "Pokaz wiecej wiadomosci" u góry czatu*/
-[class*="theme-"] .da-spacer > .da-messagesWrapper .da-hasMore button {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-hasMore button {
     background: rgba(0, 0, 0, 0.5) !important;
     border-color: transparent !important;
     color: var(--markup-intensive) !important;
 }
 /*przycisk "x nowych wiadomosci" u góry czatu*/
-[class*="theme-"] .da-spacer > .da-messagesWrapper .da-newMessagesBar {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-newMessagesBar {
     background: var(--markup-intensive) !important;
     border-color: transparent !important;
 }
 /*przycisk "przeglądasz starsze wiadomości" u dołu czatu*/
-[class*="theme-"] .da-spacer > .da-messagesWrapper .da-jumpToPresentBar {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-jumpToPresentBar {
     background: var(--markup-normal) !important;
     border-color: transparent !important;
 }
@@ -2181,10 +2186,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /* USTAWIENIA UŻYTKOWNIKA */
+/*discord i betterdiscord*/
 #user-settings .da-standardSidebarView,
 #user-settings .da-standardSidebarView .da-contentRegion,
 #user-settings .da-standardSidebarView .da-sidebarRegion,
-#user-settings .ui-standard-sidebar-view {
+.ui-standard-sidebar-view,
+.ui-standard-sidebar-view .content-region {
     background: rgba(0, 0, 0, 0) !important;
 }
 /*sidebar po lewej*/
