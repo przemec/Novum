@@ -1065,27 +1065,27 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*menu u gory prywatnych wiadomiosci*/
-[class*="theme-"] .da-spacer .da-container > .da-container.da-themed {
+[class*="theme-"] .da-base .da-container > .da-container.da-themed {
     background: rgba(0, 0, 0, 0.1);
 }
-[class*="theme-"] .da-spacer .da-container > .da-container .da-children::after {
+[class*="theme-"] .da-base .da-container > .da-container .da-children::after {
     visibility: hidden !important;
 }
 /*buttony*/
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item:not(.da-selected):hover {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item:not(.da-selected):hover {
     background-color: rgba(0, 0, 0, 0);
 }
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item.da-selected {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item.da-selected {
     background-color: rgba(0, 0, 0, 0) !important;
     font-size: 17px;
 }
 /*da-primary: button dodaj znajomego*/
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgb(67, 181, 129)"] {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgb(67, 181, 129)"] {
     background-color: rgba(0, 255, 128, 0.1) !important;
     color: rgba(0, 255, 128, 0.7) !important;
 }
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"]:hover,
-[class*="theme-"] .da-spacer .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"] {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"]:hover,
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"] {
     background-color: rgba(0, 255, 128, 0.2) !important;
     color: rgba(0, 255, 128, 0.7) !important;
     font-weight: bold;
@@ -1851,18 +1851,22 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
     color: var(--markup-intensive) !important;
 }
 
-/*polprzezroczyste pola na czacie: pliki do pobrania */
-.da-chat .da-messagesWrapper .da-container .da-attachment {
+/*polprzezroczyste pola na czacie: pliki do pobrania i pliki audio */
+.da-chat .da-messagesWrapper .da-container .da-attachment,
+.da-chat .da-messagesWrapper .da-container .da-wrapperAudio {
     background: rgba(0, 0, 0, 0.3) !important;
     border-color: #000000 !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-attachment .da-fileNameLink {
+.da-chat .da-messagesWrapper .da-container .da-attachment .da-fileNameLink,
+.da-chat .da-messagesWrapper .da-container .da-wrapperAudio .da-metadataName {
     color: var(--markup-blue-light) !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-attachment .da-downloadButton .fill {
+.da-chat .da-messagesWrapper .da-container .da-attachment .da-downloadButton .fill,
+.da-chat .da-messagesWrapper .da-container .da-wrapperAudio .da-metadataDownload .fill {
     fill: var(--markup-blue) !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-attachment a:hover .fill {
+.da-chat .da-messagesWrapper .da-container .da-attachment a:hover .fill,
+.da-chat .da-messagesWrapper .da-container .da-wrapperAudio a:hover .fill {
     fill: var(--markup-blue-light) !important;
 }
 
