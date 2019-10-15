@@ -1733,20 +1733,20 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 
 /*
 ```css
- tło tego co się tu wyśle
+ tło tego co się tu wyśle ma czacie
 ```
 */
-[class*="theme-"] .da-message .da-markup pre {
+[class*="theme-"] .da-container .da-markup pre {
     background: rgba(0, 0, 0, 0) !important;
-    border-color: rgba(0, 0, 0, 0.7) !important;
+    border-color: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-message .da-markup pre code {
+[class*="theme-"] .da-container .da-markup pre code {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 /*
 ` tło tego co się tu wyśle `
 */
-[class*="theme-"] .da-message .da-markup .inline {
+[class*="theme-"] .da-container .da-markup .inline {
     background: rgba(0, 0, 0, 0.5) !important;
 }
 
