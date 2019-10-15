@@ -1729,7 +1729,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked {
     background: var(--bt-blue-bg) !important;
-}
+} 
 
 /*
 ```css
