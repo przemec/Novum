@@ -1176,35 +1176,36 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
     background: var(--bt-blue-bg-hover) !important;
     color: var(--bt-text-hover) !important;
 }
+
 /*prywatna wiad: rozmowa glosowa prywatna */
-.da-inCall .da-video,
-.da-inCall > .da-container {
+.da-chat .da-video,
+.da-chat > .da-container.da-transparent {
     background: rgba(0, 0, 0, 0) !important;
     border-radius: 0 0 0 28px;
 }
-.da-inCall .da-animated,
-.da-inCall > .da-wrapper {
+.da-chat .da-animated,
+.da-chat > .da-wrapper {
     background: rgba(0, 0, 0, 0.1) !important;
     border-radius: 0 0 0 28px;
 }
-.da-inCall .da-video .da-center {
+.da-chat .da-video .da-center {
     background: rgba(0, 0, 0, 0.4) !important;
     border-radius: 5px;
     border: none;
 }
-.da-inCall .da-video .da-center .da-exitButton {
+.da-chat .da-video .da-center .da-exitButton {
     background: var(--bt-red) !important;
     color: var(--bt-text);
 }
-.da-inCall .da-video .da-center .da-exitButton:hover {
+.da-chat .da-video .da-center .da-exitButton:hover {
     background: var(--bt-red-hover) !important;
     color: var(--bt-text-hover);
 }
-.da-inCall .da-videoInner .da-actions > button {
+.da-chat .da-videoInner .da-actions > button {
     background: var(--bt-blue-bg);
     color: var(--bt-text);
 }
-.da-inCall .da-videoInner .da-actions > button:hover {
+.da-chat .da-videoInner .da-actions > button:hover {
     background: var(--bt-blue-bg-hover);
     color: var(--bt-text-hover);
 }
