@@ -1541,6 +1541,10 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (tło)*/
+/*popout*/
+[class*="theme-"] .da-modal > .da-inner .da-root {
+    background: rgba(0, 0, 0, 0);
+}
 /*górna część popoutu*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying {
