@@ -700,6 +700,34 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
     filter: brightness(10);
 }
 
+/*ogladanie live na kanale glosowym*/
+/*backgroundy*/
+.da-container > .da-base > .da-content > .da-container {
+    background: rgba(0, 0, 0, 0.1);
+}
+.da-container > .da-base > .da-content > .da-container .da-root,
+.da-container > .da-base > .da-content > .da-container .da-root .da-video {
+    background: rgba(0, 0, 0, 0);
+}
+/*hover na streama*/
+.da-container > .da-base > .da-content > .da-container .da-root .da-videoControls {
+    background: rgba(0, 0, 0, 0);
+    background-image: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.5), transparent 50%);
+}
+/*przycisk rozlacz*/
+.da-container > .da-base > .da-content > .da-container .da-root .da-videoControls button[class*="Filled"] {
+    background: var(--bt-red);
+}
+.da-container > .da-base > .da-content > .da-container .da-root .da-videoControls button[class*="Filled"]:hover {
+    background: var(--bt-red-hover);
+}
+.da-layer .da-popoutWrapper > .da-scroller > .da-systemPad {
+    background: rgba(0, 0, 0, 0.3) !important;
+}
+.da-layer .da-popoutWrapper > .da-scroller > .da-systemPad .da-memberListItem:hover {
+    background: rgba(0, 0, 0, 0.3);
+}
+
 /*licznik osob na kanale glosowym*/
 .da-base .da-sidebar .da-containerDefault .da-userLimit > .da-wrapper {
     border-radius: 5px !important;
@@ -1916,13 +1944,15 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*tooltip po najechaniu na ikone serwera/przycisk rozłączenia itp*/
-[class*="tooltipBlack-"] {
+[class*="tooltipBlack-"],
+[class*="tooltipGrey-"] {
     background-color: rgba(0, 0, 0, 0.95) !important;
     border: 2px solid rgba(0, 0, 0, 1);
     color: rgba(255, 255, 255, 0.5);
     font-weight: bold;
 }
-[class*="tooltipBlack-"] .da-tooltipPointer {
+[class*="tooltipBlack-"] .da-tooltipPointer,
+[class*="tooltipGrey-"] .da-tooltipPointer {
     border-top-color: rgba(0, 0, 0, 1) !important;
 }
 
