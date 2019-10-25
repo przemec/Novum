@@ -1275,79 +1275,80 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*emoji picker*/
-.da-popout .da-emojiPicker {
+[id*="popout"] .da-emojiPicker {
     background-color: rgba(0, 0, 0, 0.9) !important;
     border-color: transparent !important;
     border-radius: 5px;
 }
-.da-popout .da-emojiPicker > .da-dimmer,
-.da-popout .da-emojiPicker > .da-header > .da-searchBar {
+[id*="popout"] .da-emojiPicker > .da-dimmer,
+[id*="popout"] .da-emojiPicker > .da-header > .da-searchBar {
     background-color: transparent !important;
 }
 /*wybór koloru ręki*/
-.da-popout .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout {
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout {
     background-color: rgba(0, 0, 0, 0.7) !important;
 }
-.da-popout .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout .da-item:hover {
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout .da-item:hover {
     background-color: rgba(0, 0, 0, 1) !important;
 }
 /*pasek wyszukiwania*/
-.da-popout .da-emojiPicker > .da-header > .da-searchBar .da-inner,
-.da-popout .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
+[id*="popout"] .da-emojiPicker > .da-header > .da-searchBar .da-inner,
+[id*="popout"] .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
     background-color: rgba(0, 0, 0, 0.5);
     color: #ffffff;
     border: 1px solid transparent;
 }
 /*sticky header*/
-.da-popout .da-emojiPicker .da-scroller > .da-stickyHeader,
-.da-popout .da-emojiPicker .da-scroller > .da-stickyHeader .da-category {
+[id*="popout"] .da-emojiPicker .da-scroller > .da-stickyHeader,
+[id*="popout"] .da-emojiPicker .da-scroller > .da-stickyHeader .da-category {
     background: rgba(0, 0, 0, 0.5) !important;
     color: #ffffff;
 }
 /*header kategorii*/
-.da-popout .da-emojiPicker .da-scroller > .da-category {
+[id*="popout"] .da-emojiPicker .da-scroller > .da-category {
     background: transparent !important;
     color: #cacaca;
 }
 /*wybrana kategoria z ikon u dołu*/
-.da-popout .da-emojiPicker .da-categories .da-item.da-selected {
+[id*="popout"] .da-emojiPicker .da-categories .da-item.da-selected {
     border-bottom-color: var(--default-hover);
     background-color: var(--default-selected);
 }
 /*pojedyncza emotka*/
-.da-popout .da-emojiPicker .da-scroller > .da-row > .da-emojiItem {
+[id*="popout"] .da-emojiPicker .da-scroller > .da-row > .da-emojiItem {
     transition: all 0.3s;
     opacity: 0.7;
 }
-.da-popout .da-emojiPicker .da-scroller > .da-row > .da-emojiItem.da-selected {
+[id*="popout"] .da-emojiPicker .da-scroller > .da-row > .da-emojiItem.da-selected {
     transform: scale(1.5);
     opacity: 1;
     background-color: transparent;
 }
 /*scrollbar emoji picker*/
-.da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb {
+[id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb {
     background-color: var(--scroll-thumb) !important;
     border-radius: 10px !important;
     border-color: transparent !important;
 }
-.da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb:active {
+[id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb:active {
     background-color: var(--scroll-thumb) !important;
 }
-.da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar {
+[id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar {
     background: transparent !important;
     border: none !important;
 }
-.da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-track {
+[id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-track {
     background: transparent !important;
     border: none !important;
 }
-.da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-track-piece {
-    background: transparent !important;
+[id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-track-piece {
+    background-color: transparent !important;
     border: none !important;
 }
-.da-popout .da-emojiPicker .da-scroller::-webkit-scrollbar-corner {
+[id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-corner {
     background: transparent !important;
 }
+
 
 /*emoji picker: usuniecie BetterDiscordowego menu u góry*/
 #bda-qem {
