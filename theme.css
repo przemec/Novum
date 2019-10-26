@@ -1959,10 +1959,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*AFK POPOUT **nie tylko AFK, parę innych też*/
 /*tło*/
-[class*="theme-"] > .da-backdrop {
+[class*="theme-"] .da-backdrop {
     background: linear-gradient(#00000011, #000000ff) !important;
 }
-[class*="theme-"] > .da-backdrop[style="opacity: 0.85; background-color: rgb(0, 0, 0); z-index: 1000; transform: translateZ(0px);"] {
+[class*="theme-"] .da-backdrop[style="opacity: 0.85; background-color: rgb(0, 0, 0); z-index: 1000; transform: translateZ(0px);"] {
     opacity: 1;
 }
 /*popout*/
