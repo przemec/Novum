@@ -1868,11 +1868,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .da-chat .da-messagesWrapper .da-container .da-embed .da-embedPill {
     background: var(--markup-intensive) !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-embed .da-embedInner {
+.da-chat .da-messagesWrapper .da-container .da-embed {
     background: var(--markup-normal-transparent) !important;
     border-color: var(--markup-intensive) !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-embed .da-embedInner .da-embedTitleLink {
+.da-chat .da-messagesWrapper .da-container .da-embed .da-embedTitleLink {
     color: var(--markup-blue-light) !important;
 }
 
