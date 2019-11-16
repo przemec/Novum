@@ -1309,6 +1309,11 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
     background: transparent !important;
     color: #cacaca;
 }
+/*info o emoji u dolu, pasek z kategoriami u dolu*/
+[id*="popout"] .da-emojiPicker .da-infoBar,
+[id*="popout"] .da-emojiPicker .da-categories {
+    background: rgba(0, 0, 0, 0.9);
+}
 /*wybrana kategoria z ikon u dołu*/
 [id*="popout"] .da-emojiPicker .da-categories .da-item.da-selected {
     border-bottom-color: var(--default-hover);
