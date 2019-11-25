@@ -1,48 +1,48 @@
 :root {
-    --background-img: url("https://i.imgur.com/lWPVyO6.png");
-    --profile-bckg: url("https://i.imgur.com/WabiB4C.png");
-    --default-hover: #c8000026;
-    --default-selected: #c800004d;
-    --bt-red: #aa0000cc;
-    --bt-red-hover: #c80000cc;
-    --bt-blue-bg: #222277;
-    --bt-blue-bg-hover: #1b1b7e;
-    --bt-text: #dddddd;
-    --bt-text-hover: #ffffff;
-    --scroll-thumb: #db2121b6;
-    --scroll-bg: #00000016;
-    --scroll-bg-bord: #00000000;
-    --markup-normal: #fd686b;
-    --markup-normal-transparent: #fd686a18;
-    --markup-intensive: #fc3639;
-    --markup-blue: #3333ffe6;
-    --markup-blue-light: #1b76fee6;
+  --background-img: url("https://i.imgur.com/lWPVyO6.png");
+  --profile-bckg: url("https://i.imgur.com/WabiB4C.png");
+  --default-hover: #c8000026;
+  --default-selected: #c800004d;
+  --bt-red: #aa0000cc;
+  --bt-red-hover: #c80000cc;
+  --bt-blue-bg: #222277;
+  --bt-blue-bg-hover: #1b1b7e;
+  --bt-text: #dddddd;
+  --bt-text-hover: #ffffff;
+  --scroll-thumb: #db2121b6;
+  --scroll-bg: #00000016;
+  --scroll-bg-bord: #00000000;
+  --markup-normal: #fd686b;
+  --markup-normal-transparent: #fd686a18;
+  --markup-intensive: #fc3639;
+  --markup-blue: #3333ffe6;
+  --markup-blue-light: #1b76fee6;
 }
 
 /*Background*/
 body::after {
-    background-image: var(--background-img) !important;
-    background-repeat: no-repeat;
-    background-size: cover;
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-size: cover;
-    background-position: left top;
-    z-index: -90;
+  background-image: var(--background-img) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: left top;
+  z-index: -90;
 }
 
 /*pasek nad discordem*/
 #app-mount > .da-typeWindows {
-    height: 18px;
-    margin-top: 0px;
-    background-color: rgba(0, 0, 0, 0.1);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 4px;
+  height: 18px;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4px;
 }
 
 #voice-connection,
@@ -101,7 +101,7 @@ body::after {
 .container-2Thooq,
 [class*="theme-"] .title-3qD0b-,
 [class*="theme-"] .typing-2GQL18 {
-    background: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
 }
 
 #friends .headerBar-UHpsPw,
@@ -145,7 +145,7 @@ body::after {
 .scroller,
 .da-sidebar,
 .da-app .da-bg {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 /* SCROLLBARY */
@@ -158,8 +158,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-thumb {
-    border-color: transparent !important;
-    background-color: transparent !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track,
@@ -167,8 +167,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track,
 [id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-track {
-    border-color: transparent !important;
-    background-color: transparent !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
@@ -176,8 +176,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-track-piece {
-    border-color: transparent !important;
-    background-color: transparent !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
@@ -185,8 +185,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
-    border-color: var(--scroll-thumb) !important;
-    background-color: var(--scroll-thumb) !important;
+  border-color: var(--scroll-thumb) !important;
+  background-color: var(--scroll-thumb) !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
@@ -194,8 +194,8 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
-    border-color: var(--scroll-bg-bord) !important;
-    background-color: var(--scroll-bg) !important;
+  border-color: var(--scroll-bg-bord) !important;
+  background-color: var(--scroll-bg) !important;
 }
 
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
@@ -207,8 +207,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-privateChannels > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb {
-    border-color: transparent !important;
-    background-color: transparent !important;
+  border-color: transparent !important;
+  background-color: transparent !important;
 }
 [class*="theme-"] .da-base .da-container > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-sidebarRegion > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
@@ -218,8 +218,8 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
-    border-color: var(--scroll-thumb) !important;
-    background-color: var(--scroll-thumb) !important;
+  border-color: var(--scroll-thumb) !important;
+  background-color: var(--scroll-thumb) !important;
 }
 /* [class*="theme-"] .da-base .da-container>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
@@ -233,385 +233,385 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 
 /*panel z serwerami po samej lewej*/
 .wrapper-1Rf91z {
-    background: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
 }
 .wrapper-1Rf91z .da-guildSeparator {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 /*wybrany serwer: linia po lewej*/
 .wrapper-1Rf91z .da-pill .da-item {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
 }
 .wrapper-1Rf91z .da-pill[class*="selected"] .da-item {
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
 }
 /*ikona po polaczeniu na glosowy*/
 .wrapper-1Rf91z .da-badgeWrapper .da-iconBadge {
-    background-color: #00000099;
-    height: 17px !important;
-    width: 17px !important;
+  background-color: #00000099;
+  height: 17px !important;
+  width: 17px !important;
 }
 /*tlo serwerów bez ikonki, tlo przezroczystych ikon serwerów i tlo serwera bez zadnej ikony po jego wybraniu*/
 .wrapper-1Rf91z a .da-acronym,
 .wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .wrapper-1Rf91z a .da-acronym:hover,
 .wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym),
 .wrapper-1Rf91z a .da-acronym.da-selected {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 /*tlo glownej ikony discorda*/
 .wrapper-1Rf91z a.da-wrapper .da-homeIcon {
-    background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 .wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper.da-selected {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 /*tlo public serwerow BetterDiscorda*/
 .wrapper-1Rf91z #bd-pub-button {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .wrapper-1Rf91z #bd-pub-button:hover {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 /*tlo Add server, Server discovery, 
 listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .wrapper-1Rf91z .da-circleIconButton,
 .wrapper-1Rf91z .da-listItemWrapper > a {
-    background: rgba(0, 0, 0, 0.6);
-    border-color: var(--markup-intensive);
-    color: var(--markup-intensive);
+  background: rgba(0, 0, 0, 0.6);
+  border-color: var(--markup-intensive);
+  color: var(--markup-intensive);
 }
 .wrapper-1Rf91z .da-circleIconButton:hover,
 .wrapper-1Rf91z .da-listItemWrapper > a:hover {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 /*katalogi serwerów*/
 .wrapper-1Rf91z .da-folder,
 .wrapper-1Rf91z .da-closedFolderIconWrapper,
 .wrapper-1Rf91z .da-expandedFolderBackground {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 .wrapper-1Rf91z .da-folderIconWrapper,
-.wrapper-1Rf91z .da-expandedFolderBackground:not(.da-collapsed)  {
-    background: rgba(0, 0, 0, 0.5) !important;
-    border-radius: 20px;
+.wrapper-1Rf91z .da-expandedFolderBackground:not(.da-collapsed) {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-radius: 20px;
 }
 
 /*popout po kliknieciu w Add Server*/
 [class*="theme-"] .da-modal > .da-inner .da-animator {
-    height: 450px;
-    background: rgba(0, 0, 0, 0) !important;
-    border-radius: 20px;
+  height: 450px;
+  background: rgba(0, 0, 0, 0) !important;
+  border-radius: 20px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal {
-    background: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
 }
 /*header*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-header {
-    color: var(--markup-blue) !important;
+  color: var(--markup-blue) !important;
 }
 /*body*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-action {
-    background-color: rgba(0, 0, 0, 1) !important;
-    border-radius: 10px;
+  background-color: rgba(0, 0, 0, 1) !important;
+  border-radius: 10px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-action .da-actionBody {
-    min-height: 80px !important;
+  min-height: 80px !important;
 }
 /*pole STWÓRZ*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionHeader {
-    color: var(--markup-blue);
+  color: var(--markup-blue);
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionButton {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
-    border-radius: 10px;
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
+  border-radius: 10px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"]:hover .da-actionButton {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 /*pole DOŁĄCZ*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionHeader {
-    color: rgba(0, 255, 128, 0.6);
+  color: rgba(0, 255, 128, 0.6);
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionButton {
-    background: rgba(0, 255, 128, 0.3);
-    color: var(--bt-text);
-    border-radius: 10px;
+  background: rgba(0, 255, 128, 0.3);
+  color: var(--bt-text);
+  border-radius: 10px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"]:hover .da-actionButton {
-    background: rgba(0, 255, 128, 0.5);
-    color: var(--bt-text-hover);
+  background: rgba(0, 255, 128, 0.5);
+  color: var(--bt-text-hover);
 }
 /*ukrycie pola OR*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-or {
-    display: none;
+  display: none;
 }
 /* po przejściu dalej */
 /*header*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-title {
-    color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 /*input*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal input {
-    color: rgba(255, 255, 255, 0.7);
-    border-color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 0.8) !important;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal input:focus {
-    color: rgba(255, 255, 255, 0.7);
-    border-color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 0.7);
+  border-color: rgba(255, 255, 255, 1) !important;
 }
 /*linki*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal a,
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-sampleLink {
-    color: var(--markup-normal);
+  color: var(--markup-normal);
 }
 /*przycisk region servera*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect button {
-    color: rgba(255, 255, 255, 0.8) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect:hover .da-regionSelectInner,
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect:hover button {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: rgba(255, 255, 255, 0.9) !important;
 }
 /*popout z regionami serwera*/
 [class*="theme-"] .da-modal > .da-inner .da-regionSelectModal {
-    background: rgba(0, 0, 0, 0.9) !important;
-    border-radius: 20px;
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-radius: 20px;
 }
 [class*="theme-"] .da-modal > .da-inner .da-regionSelectModal .da-regionSelectModalOption {
-    background: rgba(0, 0, 0, 0.95) !important;
-    border-color: transparent !important;
-    transition: 0.2s all;
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-color: transparent !important;
+  transition: 0.2s all;
 }
 [class*="theme-"] .da-modal > .da-inner .da-regionSelectModal .da-regionSelectModalOption:hover {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 /*footer*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer {
-    background: rgba(0, 0, 0, 0) !important;
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0px 0px;
 }
 /*button Stwórz*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*button Dołącz*/
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"] {
-    background: rgba(0, 255, 128, 0.4);
-    color: var(--bt-text) !important;
+  background: rgba(0, 255, 128, 0.4);
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"]:hover {
-    background: rgba(0, 255, 128, 0.5);
-    color: var(--bt-text-hover) !important;
+  background: rgba(0, 255, 128, 0.5);
+  color: var(--bt-text-hover) !important;
 }
 
 /*pole po kliknieciu w Server Discovery*/
 [class*="theme-"] .da-content > .da-pageWrapper {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-content > .da-pageWrapper > .da-bg {
-    display: none !important;
+  display: none !important;
 }
 /*search bar u gory*/
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > *:first-child {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 /*pole wysuwane po wpisaniu czegokolwiek ("nacisnij enter aby wyszukac")*/
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > .da-searchHelpText {
-    opacity: 0 !important;
-    transition: 0.2s all ease-in;
+  opacity: 0 !important;
+  transition: 0.2s all ease-in;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > .da-searchHelpTextVisible {
-    opacity: 1 !important;
+  opacity: 1 !important;
 }
 /*popout z językami*/
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select > [class*="css-"],
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 
 /*pola z serwerami przed i po załadowaniu*/
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-cardPlaceholder,
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card {
-    background: rgba(0, 0, 0, 0.7) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*footer strony - lista stron wyszukanych serwerów*/
 /*next i previous*/
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-button {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
-    min-width: 80px;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
+  min-width: 80px;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-button:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*liczby*/
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton {
-    border-radius: 5px;
-    min-width: 40px !important;
-    background: rgba(0, 0, 0, 0.2) !important;
-    color: var(--bt-text) !important;
+  border-radius: 5px;
+  min-width: 40px !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton.da-activeButton {
-    background: rgba(0, 0, 0, 0.5) !important;
-    color: var(--bt-text-hover) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: var(--bt-text-hover) !important;
 }
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
-    background: rgba(0, 0, 0, 0.4) !important;
-    color: var(--bt-text-hover) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*po wejsciu na dany serwer: pole u dołu czatu*/
 [class*="theme-"] .da-chat form > .da-wrapper {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 [class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*popout: zmiana swojego statusu online*/
 [id*="popout"] .da-menu {
-    background: rgba(0, 0, 0, 0.95) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
 }
 [id*="popout"] .da-menu > .da-item:hover {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }
 
 /*status online polaczenia: background kontenera*/
 .da-content .da-panels,
 .da-content .da-panels .da-container {
-    background-color: rgba(0, 0, 0, 0) !important;
-    border-bottom-color: transparent;
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-bottom-color: transparent;
 }
 
 /*status online polaczenia*/
 [id*="popout"] [class*="animator"] > .da-container,
 [id*="popout"] [class*="animator"] > .da-container > header {
-    background-color: rgba(0, 0, 0, 0.8) !important;
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 [id*="popout"] [class*="animator"] > .da-container > section {
-    background-color: rgba(0, 0, 0, 0.5) !important;
-    color: #7e7e7e !important;
-    text-align: start;
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #7e7e7e !important;
+  text-align: start;
 }
 [id*="popout"] [class*="animator"] > .da-container > section > .paragraph {
-    margin-top: 10px;
+  margin-top: 10px;
 }
 /*link debug*/
 [id*="popout"] [class*="animator"] > .da-container > section a {
-    color: var(--markup-normal) !important;
+  color: var(--markup-normal) !important;
 }
 /*popout po kliknieciu debug*/
 [aria-label*="RTC"] .da-standardSidebarView,
 [aria-label*="RTC"] .da-standardSidebarView > * {
-    background: rgba(0, 0, 0, 0.05) !important;
+  background: rgba(0, 0, 0, 0.05) !important;
 }
 /*dividery po prawej*/
 [aria-label*="RTC"] .da-standardSidebarView .da-divider {
-    background: rgba(255, 255, 255, 0.4) !important;
+  background: rgba(255, 255, 255, 0.4) !important;
 }
 /*sidebar*/
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-channelItem .da-icon path {
-    fill: rgba(255, 255, 255, 0.7) !important;
+  fill: rgba(255, 255, 255, 0.7) !important;
 }
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-header {
-    color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item {
-    color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item:hover {
-    background: var(--default-hover) !important;
-    color: rgba(255, 255, 255, 0.7) !important;
+  background: var(--default-hover) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item.da-selected {
-    background: var(--default-selected) !important;
-    color: rgba(255, 255, 255, 0.8) !important;
+  background: var(--default-selected) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 /*popout po kliknieciu + w rolach uzytkownika*/
 [id*="popout"] [class*="animator"] > .da-container > .da-autocompleteShadow,
 [id*="popout"] [class*="animator"] > .da-container .da-autocompleteHeaderBackground,
 [id*="popout"] [class*="animator"] > .da-container .da-autocompleteArrow {
-    background: rgba(0, 0, 0, 0.3) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  box-shadow: 0px 0px !important;
 }
 /*hover roli*/
 [id*="popout"] [class*="animator"] > .da-container > section .da-selected {
-    background: rgba(0, 0, 0, 1) !important;
+  background: rgba(0, 0, 0, 1) !important;
 }
 
 /*nazwa serwera po wejsciu na niego*/
 .da-base .da-sidebar .da-header .da-name {
-    font-size: 18px;
-    font-weight: bold;
-    line-height: 55px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 55px;
 }
 /*ikona zweryfikowanego serwera (obok nazwy)*/
 .da-base .da-sidebar .da-header .da-flowerStarContainer .da-flowerStar path {
-    fill: var(--markup-normal) !important;
+  fill: var(--markup-normal) !important;
 }
 .da-base .da-sidebar .da-header .da-flowerStarContainer .da-premiumGuildIconGem path {
-    fill: rgb(255, 255, 255) !important;
+  fill: rgb(255, 255, 255) !important;
 }
 .da-base .da-sidebar .da-header [aria-label*="Level"] .da-flowerStarContainer .da-flowerStar path {
-    fill: rgb(255, 88, 191) !important;
+  fill: rgb(255, 88, 191) !important;
 }
 
 /*ikony u góry aplikacji obok nazw kanałów/nazw podstron strony głównej*/
 .da-iconWrapper > svg path {
-    fill: rgba(255, 255, 255, 0.6) !important;
+  fill: rgba(255, 255, 255, 0.6) !important;
 }
 .da-iconWrapper ~ .da-divider {
-    background: rgba(255, 255, 255, 0.5) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 
 /*popout po kliknieciu na nazwe serwera*/
 .da-popout > .da-menu {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 .da-popout > .da-menu > .da-item:hover {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }
 
 /* SERWER */
 /*serwer - lista ludzi na serwerze (hover i click)*/
 .da-members .da-layout {
-    background:  transparent !important;
+  background: transparent !important;
 }
 .da-members .da-member:hover,
 .da-members .da-member.da-selected {
-    background: linear-gradient(to right, var(--default-selected), transparent) !important;
+  background: linear-gradient(to right, var(--default-selected), transparent) !important;
 }
 /* .da-members .da-member:hover::before,
 .da-members .da-member.popout-open::before {
@@ -629,406 +629,407 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 /*serwer - kanaly tekstowe i glosowe*/
 /*default tekstowy i glosowy*/
 .da-base .da-sidebar .da-containerDefault .da-name {
-    color: rgba(255, 255, 255, 0.7);
+  color: rgba(255, 255, 255, 0.7);
 }
 /*default ikony kanałów tekst/głosowych*/
 .da-base .da-sidebar .da-containerDefault [class*="icon"] {
-    color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 .da-base .da-sidebar .da-containerDefault [class*="icon"] > path:last-of-type {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 /*ikona zablokowanego kanału na który można wejść*/
 .da-base .da-sidebar .da-containerDefault [class*="icon"] > path {
-    opacity: 0.6;
+  opacity: 0.6;
 }
 /*zmutowany tekstowy*/
 .da-base .da-sidebar .da-containerDefault [class*="modeMuted-"] .da-name {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 /*wybrany tekstowy*/
 .da-base .da-sidebar .da-containerDefault.da-selected .da-content {
-    background-color: var(--default-selected) !important;
-    color: #ffffff !important;
+  background-color: var(--default-selected) !important;
+  color: #ffffff !important;
 }
 .da-base .da-sidebar .da-containerDefault.da-selected:hover .da-content {
-    background-color: var(--default-selected) !important;
+  background-color: var(--default-selected) !important;
 }
 /*wybrany głosowy*/
 .da-base .da-sidebar .da-containerDefault [class*="modeConnected-"] {
-    background-color: rgba(0, 0, 0, 0) !important;
-    color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0) !important;
+  color: rgb(255, 255, 255);
 }
 .da-base .da-sidebar .da-containerDefault:not(.da-selected):hover .da-content {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .da-base .da-sidebar .da-containerDefault:not(.da-selected):hover .da-listDefault .da-voiceUser.da-selected {
-    background-color: var(--default-selected) !important;
-    color: rgb(255, 255, 255);
+  background-color: var(--default-selected) !important;
+  color: rgb(255, 255, 255);
 }
 .da-base .da-sidebar .da-containerDefault:not(.da-selected) .da-listDefault .da-voiceUser.da-selected:hover {
-    background-color: var(--default-selected) !important;
-    color: rgb(255, 255, 255);
+  background-color: var(--default-selected) !important;
+  color: rgb(255, 255, 255);
 }
 .da-base .da-sidebar .da-voiceUser.da-selected .da-content {
-    background-color: var(--default-selected) !important;
-    color: rgb(255, 255, 255);
+  background-color: var(--default-selected) !important;
+  color: rgb(255, 255, 255);
 }
 /*kolor nicku użytkownika na kanale głosowym*/
 .da-base .da-sidebar .da-voiceUser:not(.da-selected) .da-username:not(.da-usernameSpeaking) {
-    color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.6);
 }
 
 /*avatar podczas mowienia*/
 .da-base .da-sidebar .da-containerDefault .da-listDefault .da-voiceUser .da-usernameSpeaking,
 .da-base .da-sidebar .da-containerDefault .da-listDefault .da-voiceUser .da-avatarContainer,
 .da-base .da-sidebar .da-containerDefault .da-listDefault .da-voiceUser .da-avatarSpeaking {
-    border-color: transparent !important;
-    box-shadow: none !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 .da-base .da-sidebar .da-containerDefault .da-listDefault .da-voiceUser .da-avatarSpeaking::before {
-    content: "";
-    z-index: -10 !important;
-    position: absolute;
-    left: 20px;
-    height: 24px;
-    width: 60%;
-    border-radius: -5px;
-    background: linear-gradient(to right, var(--markup-normal-transparent), transparent);
-    opacity: 1;
-    border-color: transparent;
-    filter: brightness(10);
+  content: "";
+  z-index: -10 !important;
+  position: absolute;
+  left: 20px;
+  height: 24px;
+  width: 60%;
+  border-radius: -5px;
+  background: linear-gradient(to right, var(--markup-normal-transparent), transparent);
+  opacity: 1;
+  border-color: transparent;
+  filter: brightness(10);
 }
 
 /*ogladanie live na kanale glosowym*/
 /*backgroundy*/
 .da-container > .da-base > .da-content > .da-container {
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 .da-container > .da-base > .da-content > .da-container .da-root,
 .da-container > .da-base > .da-content > .da-container .da-root .da-video {
-    background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 /*hover na streama*/
 .da-container > .da-base > .da-content > .da-container .da-root .da-videoControls {
-    background: rgba(0, 0, 0, 0);
-    background-image: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.5), transparent 50%);
+  background: rgba(0, 0, 0, 0);
+  background-image: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.5), transparent 50%);
 }
 /*przycisk rozlacz*/
 .da-container > .da-base > .da-content > .da-container .da-root .da-videoControls button[class*="Filled"] {
-    background: var(--bt-red);
+  background: var(--bt-red);
 }
 .da-container > .da-base > .da-content > .da-container .da-root .da-videoControls button[class*="Filled"]:hover {
-    background: var(--bt-red-hover);
+  background: var(--bt-red-hover);
 }
 .da-layer .da-popoutWrapper > .da-scroller > .da-systemPad {
-    background: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
 }
 .da-layer .da-popoutWrapper > .da-scroller > .da-systemPad .da-memberListItem:hover {
-    background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*licznik osob na kanale glosowym*/
 .da-base .da-sidebar .da-containerDefault .da-userLimit > .da-wrapper {
-    border-radius: 5px !important;
+  border-radius: 5px !important;
 }
 .da-base .da-sidebar .da-containerDefault .da-userLimit .da-users {
-    color: var(--markup-normal);
-    background: rgba(0, 0, 0, 0.3);
+  color: var(--markup-normal);
+  background: rgba(0, 0, 0, 0.3);
 }
 .da-base .da-sidebar .da-containerDefault .da-userLimit .da-total {
-    color: var(--markup-intensive);
-    background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--markup-intensive);
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 .da-base .da-sidebar .da-containerDefault .da-userLimit .da-total::after {
-    border-right-color: rgba(0, 0, 0, 0.4) !important;
+  border-right-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*wiadomosc, protip wyswietlajacy sie nowym kontom na serwerze nad tekstowymi*/
 .da-base .da-sidebar .da-channelNotices .da-channelNotice {
-    background-color: rgba(0, 0, 0, 0.1) !important;
-    border-radius: 0px 0px 15px 0px;
-    border-color: transparent;
-    box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0px 0px 15px 0px;
+  border-color: transparent;
+  box-shadow: 0px 0px;
 }
 .da-base .da-sidebar .da-channelNotices .da-channelNotice button {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*searchbar po lewej u góry w prywatnych wiadomosciach*/
 .da-privateChannels .da-searchBar {
-    background: rgba(0, 0, 0, 0.1) !important;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.05), 0 2px 0 rgba(0, 0, 0, 0.05);
+  background: rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.05), 0 2px 0 rgba(0, 0, 0, 0.05);
 }
 .da-privateChannels .da-searchBar .da-container {
-    background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*Strona główna: Aktywność*/
 /*.da-column: pierwsze dwie kolumny, aside: trzecia kolumna przy szerokim ekranie*/
 .da-activityFeed .da-systemPad {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 .da-activityFeed > .da-container {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 .da-activityFeed .da-container .da-children::after {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 /*panel informacyjny*/
 .da-activityFeed aside .da-card:not(:nth-child(1)),
 .da-activityFeed .da-column .da-card {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 /*tytul i tekst*/
 .da-activityFeed .da-column .da-card > .da-content {
-    background: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
 }
 /*data i link*/
 .da-activityFeed .da-column .da-card > .da-wrapper {
-    background: rgba(0, 0, 0, 0.5) !important;
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0px 0px;
 }
 /*share button*/
 .da-activityFeed .da-column .da-card .da-shareButton {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 .da-activityFeed .da-column .da-card .da-shareButton:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 
 /* "Quick Launcher" */
 .da-activityFeed .da-column .da-wrappedCard {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 .da-activityFeed aside .da-card .da-grid > .da-container,
 .da-activityFeed .da-column .da-wrappedCard .da-grid > .da-container {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .da-activityFeed aside .da-card .da-grid > .da-container:hover,
 .da-activityFeed .da-column .da-wrappedCard .da-grid > .da-container:hover {
-    background: rgba(0, 0, 0, 1);
+  background: rgba(0, 0, 0, 1);
 }
 
 /* "W grze", "Ostatnio zagrane" */
 /*karta*/
 .da-activityFeed .da-column .da-outer,
 .da-activityFeed .da-column .da-outer > .da-card {
-    background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 /*podsekcja karty*/
 .da-activityFeed aside .da-card .da-popoutContainer:hover,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer:hover {
-    background: rgba(220, 0, 0, 0.1) !important;
+  background: rgba(220, 0, 0, 0.1) !important;
 }
 /*kanał/gra*/
 .da-activityFeed aside .da-card .da-popoutContainer .da-body,
 .da-activityFeed aside .da-card .da-popoutContainer .da-body .da-separator,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-body,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-body .da-separator {
-    background: rgba(0, 0, 0, 0.7) !important;
+  background: rgba(0, 0, 0, 0.7) !important;
 }
 .da-activityFeed aside .da-card .da-popoutContainer .da-body .da-section,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-body .da-section {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 /*popout po najechaniu*/
 .da-activityFeed aside .da-card .da-popoutContainer .da-popout,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-popout {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 .da-activityFeed aside .da-card .da-popoutContainer .da-popout .da-wrapper:hover,
 .da-activityFeed aside .da-card .da-popoutContainer .da-popout .da-memberListItem:hover,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-popout .da-wrapper:hover,
 .da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-popout .da-memberListItem:hover {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*Strona główna: Biblioteka*/
 /*root to pole po kliknieciu w Gift Inventory u góry biblioteki*/
 .da-content > .da-gameLibrary,
 .da-content > .da-root {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 /*header*/
 .da-content .da-gameLibrary .da-libraryHeader,
 .da-content .da-root .da-libraryHeader {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .da-content .da-gameLibrary .da-libraryHeader .da-children::after,
 .da-content .da-root > .da-libraryHeader > .da-children::after {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 /*button My Games i Gift Inventory*/
 .da-content .da-gameLibrary .da-libraryHeader .da-item:hover,
 .da-content .da-gameLibrary .da-libraryHeader .da-item.da-selected,
 .da-content .da-root .da-libraryHeader .da-item:hover,
 .da-content .da-root .da-libraryHeader .da-item.da-selected {
-    color: #dddddd;
-    font-weight: bold;
-    background: rgba(0, 0, 0, 0.3) !important;
+  color: #dddddd;
+  font-weight: bold;
+  background: rgba(0, 0, 0, 0.3) !important;
 }
 /*filtr*/
 .da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-color: var(--markup-blue) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: var(--markup-blue) !important;
 }
 /*sticky header*/
 .da-content .da-gameLibrary .da-table .da-stickyHeader {
-    background: transparent;
+  background: transparent;
 }
 .da-content .da-gameLibrary .da-table .da-rowWrapper:hover {
-    background: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
 }
 /*play button*/
 .da-content .da-gameLibrary .da-table .da-button {
-    background-color: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background-color: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 .da-content .da-gameLibrary .da-table .da-button:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*gift inventory przycisk "Zrealizuj"*/
 .da-content > .da-root .da-codeRedemption .da-button {
-    background-color: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background-color: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 .da-content > .da-root .da-codeRedemption .da-button:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*Strona główna: Nitro*/
 
 /*strona głowna nitro*/
 .da-content > .da-applicationStore {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 /*header*/
 .da-content .da-applicationStore .da-headerBar {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .da-content .da-applicationStore .da-headerBar .da-children::after {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 /*search bar*/
 .da-content .da-applicationStore .da-headerBar .da-browseSearch {
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .da-content .da-applicationStore .da-headerBar .da-browseSearch .da-searchBar {
-    background-color: rgba(0, 0, 0, 0.15) !important;
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.15) !important;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .da-content .da-applicationStore .da-headerBar .da-browseSearch.da-focused .da-searchBar {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-color: var(--markup-blue) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: var(--markup-blue) !important;
 }
 
 /*glowny artykul u góry*/
 .da-content .da-systemPad .da-heroCarousel .da-carouselItem {
-    padding: 0px !important;
+  padding: 0px !important;
 }
 .da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground,
 .da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
-    border-radius: 10px !important;
+  border-radius: 10px !important;
 }
 .da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
-    background: radial-gradient(ellipse at top, #00000000, #000000cc), linear-gradient(90deg, #000000cc 0, #00000000 40%, #00000000 60%, #000000cc), linear-gradient(0deg, #000000cc 0, #00000000 25%);
+  background: radial-gradient(ellipse at top, #00000000, #000000cc), linear-gradient(90deg, #000000cc 0, #00000000 40%, #00000000 60%, #000000cc),
+    linear-gradient(0deg, #000000cc 0, #00000000 25%);
 }
 
 /*rzędy artykułów*/
 .da-content .da-subsection > * > * > .da-container {
-    transition: all 0.3s ease-in-out;
-    -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
 }
 .da-content .da-subsection .da-container .da-gradientOverlayLeft {
-    background: transparent;
+  background: transparent;
 }
 .da-content .da-subsection .da-container .da-gradientOverlayRight {
-    background: transparent;
+  background: transparent;
 }
 /*gradient i strzałki po lewej i prawej*/
 .da-content .da-subsection .da-container:hover .da-gradientOverlayLeft {
-    background: linear-gradient(90deg, #000000ad, rgba(0, 0, 0, 0));
+  background: linear-gradient(90deg, #000000ad, rgba(0, 0, 0, 0));
 }
 .da-content .da-subsection .da-container:hover .da-gradientOverlayRight {
-    background: linear-gradient(90deg, rgba(0, 0, 0, 0), #000000ad);
+  background: linear-gradient(90deg, rgba(0, 0, 0, 0), #000000ad);
 }
 .da-content .da-subsection .da-container .da-arrow {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 .da-content .da-subsection .da-container .da-arrow:hover {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+  background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*nitro game perks*/
 .da-content .da-subsection .da-homeTile .da-tile {
-    background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.6);
 }
 .da-content .da-subsection .da-homeTile .da-tile .da-actions button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 .da-content .da-subsection .da-homeTile .da-tile .da-actions button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 /*"keep it simple..." na dole nitra*/
 .da-content .da-sectionTier1 .da-tier1Banner {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 /*recommended for you (po najechaniu na grę)*/
 .da-content .da-subsection .da-homeTile.da-tile .da-tileMedia,
 .da-content .da-subsection .da-homeTile.da-tile .da-tileMedia .da-genres .da-genreTag {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 .da-content .da-subsection .da-homeTile.da-tile .da-tileOwnership button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 .da-content .da-subsection .da-homeTile.da-tile .da-tileOwnership button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 
 /*podstrona nitro po wejściu w grę*/
 /*header i wszystkie przyciski*/
 .da-content .da-applicationStore > .da-container,
 .da-content .da-applicationStore .da-listingWrapper > .da-container {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .da-content .da-applicationStore > .da-container > .da-children::after,
 .da-content .da-applicationStore .da-listingWrapper > .da-container > .da-children::after {
-    visibility: hidden;
+  visibility: hidden;
 }
 /*przycisk subskrybuj w headerze i reszta u dołu*/
 .da-content .da-applicationStore .da-shinyButton,
 .da-content .da-applicationStore .da-systemPad .da-button[class*="Filled"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
-    border-color: transparent;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
+  border-color: transparent;
 }
 .da-content .da-applicationStore .da-shinyButton:hover,
 .da-content .da-applicationStore .da-systemPad .da-button[class*="Filled"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*po kolei: "darmowe z Nitro", "dlaczego sie spodoba", "Metacritic", "cechy", "aktualnosci", "zweryfikowany serwer", "Nitro perks"*/
 .da-content .da-systemPad .da-listing .da-purchaseUnit .da-bodySection,
@@ -1038,737 +1039,736 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .da-content .da-systemPad .da-listing .da-news > a,
 .da-content .da-systemPad .da-listing .da-guildInvite .da-content,
 .da-content .da-systemPad .da-listing .da-premiumPerks .da-tile {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 /*po kliknieciu w "wyswietl wszystkie aktualnosci"*/
 .da-modal .da-modal {
-    background: rgba(0, 0, 0, 0.9);
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px;
 }
 .da-modal .da-modal .da-item {
-    background: rgba(10, 0, 100, 0.1);
-    box-shadow: 0px 0px;
+  background: rgba(10, 0, 100, 0.1);
+  box-shadow: 0px 0px;
 }
 
 /*podstrona nitro po wejściu w grę i kliknięciu "przeglądaj" w headerze*/
 .da-content .da-applicationStore .da-browseWrapper > .da-container {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 .da-content .da-applicationStore .da-browseWrapper .da-filters .da-searchBox {
-    background-color: rgba(0, 0, 0, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.5) !important;
 }
 .da-content .da-applicationStore .da-browseWrapper .da-browse .da-tileMedia,
 .da-content .da-applicationStore .da-browseWrapper .da-browse .da-tileMedia .da-genres .da-genreTag {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 /*popout filtru*/
 .da-popouts .da-filterBrowsingSelectPopout {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .da-popouts .da-filterBrowsingSelectPopout .da-option:hover {
-    background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 
 /*Strona główna: Znajomi*/
 [class*="theme-"] .da-friendsTable {
-    margin-top: 0px !important;
-    background: rgba(0, 0, 0, 0) !important;
+  margin-top: 0px !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-friendsTable .da-friendsRow:hover {
-    background: linear-gradient(to right, rgba(34, 59, 170, 0.3) 45%, transparent) !important;
+  background: linear-gradient(to right, rgba(34, 59, 170, 0.3) 45%, transparent) !important;
 }
 /*buttons*/
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction {
-    background-color: var(--bt-blue-bg) !important;
+  background-color: var(--bt-blue-bg) !important;
 }
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:hover {
-    background-color: var(--bt-blue-bg-hover) !important;
+  background-color: var(--bt-blue-bg-hover) !important;
 }
 /*delete friend bt*/
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3) {
-    background-color: var(--bt-red) !important;
+  background-color: var(--bt-red) !important;
 }
 [class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3):hover {
-    background-color: var(--bt-red-hover) !important;
+  background-color: var(--bt-red-hover) !important;
 }
 
 /*menu u gory prywatnych wiadomiosci*/
 [class*="theme-"] .da-base .da-container > .da-container.da-themed {
-    background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.1);
 }
 [class*="theme-"] .da-base .da-container > .da-container .da-children::after {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 /*buttony*/
 [class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item:not(.da-selected):hover {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 [class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item.da-selected {
-    background-color: rgba(0, 0, 0, 0) !important;
-    font-size: 17px;
+  background-color: rgba(0, 0, 0, 0) !important;
+  font-size: 17px;
 }
 /*da-primary: button dodaj znajomego*/
 [class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgb(67, 181, 129)"] {
-    background-color: rgba(0, 255, 128, 0.1) !important;
-    color: rgba(0, 255, 128, 0.7) !important;
+  background-color: rgba(0, 255, 128, 0.1) !important;
+  color: rgba(0, 255, 128, 0.7) !important;
 }
 [class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"]:hover,
 [class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"] {
-    background-color: rgba(0, 255, 128, 0.2) !important;
-    color: rgba(0, 255, 128, 0.7) !important;
-    font-weight: bold;
-    font-size: 16px;
+  background-color: rgba(0, 255, 128, 0.2) !important;
+  color: rgba(0, 255, 128, 0.7) !important;
+  font-weight: bold;
+  font-size: 16px;
 }
 /*dodawanie do znajomych*/
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form {
-    background: rgba(0, 0, 0, 0.4);
-    border-color: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.4);
+  border-color: rgba(0, 0, 0, 0.9);
 }
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form > button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 [class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form > button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 
 /*lista znajomych: znajdz lub rozpocznij rozmowe popup (Quick Switcher)*/
 .da-container .da-quickswitcher {
-    background-color: rgba(0, 0, 0, 0.95);
-    box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.95);
+  box-shadow: 0px 0px;
 }
 .da-container .da-quickswitcher .da-input {
-    background-color: rgba(65, 65, 197, 0.1);
+  background-color: rgba(65, 65, 197, 0.1);
 }
 .da-container .da-quickswitcher .da-resultFocused {
-    background-color: rgba(65, 65, 197, 0.05);
+  background-color: rgba(65, 65, 197, 0.05);
 }
 .da-container .da-quickswitcher .da-keybindShortcut span {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 .da-container .da-quickswitcher .da-keybindShortcut span:hover {
-    background: var(--bt-blue-bg-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
 }
 
 /*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
 .da-privateChannels .da-scroller .da-channel,
-.da-privateChannels .da-scroller .da-channel .da-layout{
-    background: transparent !important;
-    border-radius: 5px;
+.da-privateChannels .da-scroller .da-channel .da-layout {
+  background: transparent !important;
+  border-radius: 5px;
 }
 .da-privateChannels .da-scroller .da-channel path:first-child {
-    fill: rgba(255, 255, 255, 0.6) !important;
+  fill: rgba(255, 255, 255, 0.6) !important;
 }
 .da-privateChannels .da-scroller .da-channel .da-name {
-    color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 .da-privateChannels .da-scroller .da-channel:hover,
 .da-privateChannels .da-scroller .da-channel.da-selected {
-    background: var(--default-selected) !important;
+  background: var(--default-selected) !important;
 }
 .da-privateChannels .da-scroller .da-channel:hover a .da-name,
 .da-privateChannels .da-scroller .da-channel.da-selected a .da-name {
-    color: rgba(255, 255, 255, 1) !important;
+  color: rgba(255, 255, 255, 1) !important;
 }
 
 /*menu u góry prywatnej wiadomosci*/
 [class*="theme-"] .da-chat .da-title .da-children::after {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 .da-akaBadge {
-    background: var(--default-selected) !important;
-    border-radius: 10%;
+  background: var(--default-selected) !important;
+  border-radius: 10%;
 }
 
 /*popout przychodzącej rozmowy głosowej*/
 .da-incomingCallInner {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button {
-    background: var(--bt-red) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-red) !important;
+  color: var(--bt-text) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button:hover {
-    background: var(--bt-red-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 .da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*prywatna wiad: rozmowa glosowa prywatna */
 .da-chat .da-video,
 .da-chat > .da-container.da-transparent {
-    background: rgba(0, 0, 0, 0) !important;
-    border-radius: 0 0 0 28px;
+  background: rgba(0, 0, 0, 0) !important;
+  border-radius: 0 0 0 28px;
 }
 .da-chat .da-animated,
 .da-chat > .da-wrapper {
-    background: rgba(0, 0, 0, 0.1) !important;
-    border-radius: 0 0 0 28px;
+  background: rgba(0, 0, 0, 0.1) !important;
+  border-radius: 0 0 0 28px;
 }
 .da-chat .da-video .da-center {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-radius: 5px;
-    border: none;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-radius: 5px;
+  border: none;
 }
 .da-chat .da-video .da-center .da-exitButton {
-    background: var(--bt-red) !important;
-    color: var(--bt-text);
+  background: var(--bt-red) !important;
+  color: var(--bt-text);
 }
 .da-chat .da-video .da-center .da-exitButton:hover {
-    background: var(--bt-red-hover) !important;
-    color: var(--bt-text-hover);
+  background: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover);
 }
 .da-chat .da-videoInner .da-actions > button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 .da-chat .da-videoInner .da-actions > button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 /*prywatna wiadomosc: dodawanie osoby do rozmowy prywatnej: popout*/
 .da-popouts > * > .da-popout {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 /*search bar: zaznaczone osoby*/
 .da-popouts > * > .da-popout .da-searchBarComponent .da-tag {
-    background: var(--default-hover) !important;
+  background: var(--default-hover) !important;
 }
 /*hover na osoby poniżej*/
 .da-popouts > * > .da-popout .da-friendSelected {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 /*buttony*/
 .da-popouts > * > .da-popout button[class*="colorBrand"] {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 .da-popouts > * > .da-popout button[class*="colorBrand"]:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 /*checkboxy*/
 .da-popouts > * > .da-popout .da-checkbox.da-checked {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
-    border-color: transparent !important;
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
+  border-color: transparent !important;
 }
 .da-popouts > * > .da-popout .da-checkbox.da-checked polyline {
-    stroke: var(--bt-text) !important;
+  stroke: var(--bt-text) !important;
 }
 
 /*wiadomosc/alert od bota discordowego*/
 .da-messagesWrapper .da-isLocalBot {
-    background: rgba(0, 0, 0, 0.5) !important;
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0.5) !important;
+  box-shadow: 0px 0px;
 }
 
 /*emoji picker*/
 [id*="popout"] .da-emojiPicker {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    border-color: transparent !important;
-    border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border-color: transparent !important;
+  border-radius: 5px;
 }
 [id*="popout"] .da-emojiPicker > .da-dimmer,
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar {
-    background-color: transparent !important;
+  background-color: transparent !important;
 }
 /*wybór koloru ręki*/
 [id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout {
-    background-color: rgba(0, 0, 0, 0.7) !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
 }
 [id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout .da-item:hover {
-    background-color: rgba(0, 0, 0, 1) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
 }
 /*pasek wyszukiwania*/
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar .da-inner,
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #ffffff;
-    border: 1px solid transparent;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #ffffff;
+  border: 1px solid transparent;
 }
 /*sticky header*/
 [id*="popout"] .da-emojiPicker .da-scroller > .da-stickyHeader,
 [id*="popout"] .da-emojiPicker .da-scroller > .da-stickyHeader .da-category {
-    background: rgba(0, 0, 0, 0.5) !important;
-    color: #ffffff;
+  background: rgba(0, 0, 0, 0.5) !important;
+  color: #ffffff;
 }
 /*header kategorii*/
 [id*="popout"] .da-emojiPicker .da-scroller > .da-category {
-    background: transparent !important;
-    color: #cacaca;
+  background: transparent !important;
+  color: #cacaca;
 }
 /*info o emoji u dolu, pasek z kategoriami u dolu*/
 [id*="popout"] .da-emojiPicker .da-infoBar,
 [id*="popout"] .da-emojiPicker .da-categories {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 /*wybrana kategoria z ikon u dołu*/
 [id*="popout"] .da-emojiPicker .da-categories .da-item.da-selected {
-    border-bottom-color: var(--default-hover);
-    background-color: var(--default-selected);
+  border-bottom-color: var(--default-hover);
+  background-color: var(--default-selected);
 }
 /*pojedyncza emotka*/
 [id*="popout"] .da-emojiPicker .da-scroller > .da-row > .da-emojiItem {
-    transition: all 0.3s;
-    opacity: 0.7;
+  transition: all 0.3s;
+  opacity: 0.7;
 }
 [id*="popout"] .da-emojiPicker .da-scroller > .da-row > .da-emojiItem.da-selected {
-    transform: scale(1.5);
-    opacity: 1;
-    background-color: transparent;
+  transform: scale(1.5);
+  opacity: 1;
+  background-color: transparent;
 }
 /*scrollbar emoji picker*/
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb {
-    background-color: var(--scroll-thumb) !important;
-    border-radius: 10px !important;
-    border-color: transparent !important;
+  background-color: var(--scroll-thumb) !important;
+  border-radius: 10px !important;
+  border-color: transparent !important;
 }
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb:active {
-    background-color: var(--scroll-thumb) !important;
+  background-color: var(--scroll-thumb) !important;
 }
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar {
-    background: transparent !important;
-    border: none !important;
+  background: transparent !important;
+  border: none !important;
 }
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-track {
-    background: transparent !important;
-    border: none !important;
+  background: transparent !important;
+  border: none !important;
 }
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-track-piece {
-    background-color: transparent !important;
-    border: none !important;
+  background-color: transparent !important;
+  border: none !important;
 }
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-corner {
-    background: transparent !important;
+  background: transparent !important;
 }
-
 
 /*emoji picker: usuniecie BetterDiscordowego menu u góry*/
 #bda-qem {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*data wiadomosci na czacie*/
 /*cały divider*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span {
-    background: rgba(204, 204, 204, 0.1) !important;
-    font-size: 14px;
-    border-radius: 5px;
-    padding: 5px 15px;
-    text-align: center;
+  background: rgba(204, 204, 204, 0.1) !important;
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 5px 15px;
+  text-align: center;
 }
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider {
-    margin-top: 15px;
+  margin-top: 15px;
 }
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-dividerRed) > span {
-    color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 /*nowa wiadomosc*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
-    background: var(--default-hover) !important;
+  background: var(--default-hover) !important;
 }
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
-    color: var(--markup-intensive) !important;
+  color: var(--markup-intensive) !important;
 }
 /*paski po bokach daty wiadomosci*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::before,
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::after {
-    visibility: hidden;
+  visibility: hidden;
 }
 
 /*przycisk "Pokaz wiecej wiadomosci" u góry czatu*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper .da-hasMore button {
-    background: rgba(0, 0, 0, 0.5) !important;
-    border-color: transparent !important;
-    color: var(--markup-intensive) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-color: transparent !important;
+  color: var(--markup-intensive) !important;
 }
 /*przycisk "x nowych wiadomosci" u góry czatu*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper .da-newMessagesBar {
-    background: var(--markup-intensive) !important;
-    border-color: transparent !important;
+  background: var(--markup-intensive) !important;
+  border-color: transparent !important;
 }
 /*przycisk "przeglądasz starsze wiadomości" u dołu czatu*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper .da-jumpToPresentBar {
-    background: var(--markup-normal) !important;
-    border-color: transparent !important;
+  background: var(--markup-normal) !important;
+  border-color: transparent !important;
 }
 
 /*wyszukiwanie wiadomiosci na czacie: pasek wyszukiwania*/
 .da-chat .da-toolbar .da-search .da-searchBar {
-    background: rgba(0, 0, 0, 0.15);
-    border-bottom: 2px solid rgba(0, 0, 0, 0);
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  background: rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 .da-chat .da-toolbar .da-search.da-focused .da-searchBar {
-    border-color: var(--markup-blue) !important;
-    background: rgba(0, 0, 0, 0.3);
+  border-color: var(--markup-blue) !important;
+  background: rgba(0, 0, 0, 0.3);
 }
 .da-chat .da-toolbar .da-search .da-searchBar .da-searchFilter,
 .da-chat .da-toolbar .da-search .da-searchBar .da-searchAnswer {
-    background: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
 /*wyszukiwanie wiadomiosci na czacie: okno wyskakujace po kliknieciu*/
 [class*="theme-"] .da-popout .da-container {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    box-shadow: 5px 10px rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 5px 10px rgba(0, 0, 0, 0);
 }
 [class*="theme-"] .da-popout [class*="resultsGroup-"] [class*="selected-"],
 [class*="theme-"] .da-popout [class*="resultsGroup-"] [class*="option"]:hover {
-    background: rgba(0, 0, 0, 9);
+  background: rgba(0, 0, 0, 9);
 }
 /*szary fade i divider*/
 [class*="theme-"] .da-popout [class*="resultsGroup-"]::before,
 [class*="theme-"] .da-popout [class*="resultsGroup-"] [class*="option-"]::after {
-    visibility: hidden !important;
+  visibility: hidden !important;
 }
 /*po wyszukaniu wiadomosci od uzytkownika, gdy klikniesz ponownie na search*/
 [class*="theme-"] .da-popout [class*="queryContainer-"] {
-    background: rgba(0, 0, 0, 9);
+  background: rgba(0, 0, 0, 9);
 }
 /*przycisk ENTER*/
 [class*="theme-"] .da-popout [class*="queryContainer-"] span {
-    display: none;
+  display: none;
 }
 /*kalendarz, gdy wybieramy datę wysłania wiadomości*/
 [class*="theme-"] .da-popout .da-datePicker {
-    background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 [class*="theme-"] .da-popout [class*="react-datepicker"] {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"] {
-    background-color: var(--default-hover) !important;
+  background-color: var(--default-hover) !important;
 }
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"]:not([class*="day--disabled"]):hover,
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"] {
-    background-color: var(--default-selected) !important;
+  background-color: var(--default-selected) !important;
 }
 /*pasek u dołu wybranego dnia*/
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"]::after {
-    background-color: var(--default-selected) !important;
+  background-color: var(--default-selected) !important;
 }
 /*dzień niemożliwy do wybrania*/
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day--disabled"] {
-    background-color: rgba(0, 0, 0, 0) !important;
+  background-color: rgba(0, 0, 0, 0) !important;
 }
 /*dzień poza wybranym miesiącem*/
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="outside-month"]:not([class*="day--disabled"]) {
-    background-color: var(--default-hover) !important;
-    opacity: 0.3 !important;
+  background-color: var(--default-hover) !important;
+  opacity: 0.3 !important;
 }
 /*button hint u dołu*/
 [class*="theme-"] .da-popout .da-datePicker [class*="hintValue"] {
-    margin-left: 5px;
-    background-color: var(--bt-red);
-    color: var(--bt-text);
+  margin-left: 5px;
+  background-color: var(--bt-red);
+  color: var(--bt-text);
 }
 [class*="theme-"] .da-popout .da-datePicker [class*="hintValue"]:hover {
-    background-color: var(--bt-red-hover);
-    color: var(--bt-text-hover);
+  background-color: var(--bt-red-hover);
+  color: var(--bt-text-hover);
 }
 
 /*wyszukiwanie wiadomiosci na czacie: po wyszukaniu*/
 [class*="theme-"] .da-searchResultsWrap {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 [class*="theme-"] .da-searchResultsWrap .da-searchHeader {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
 [class*="theme-"] .da-searchResultsWrap .da-searchHeader .da-tab.da-selected {
-    color: var(--bt-red-hover);
-    border-color: var(--bt-red-hover);
+  color: var(--bt-red-hover);
+  border-color: var(--bt-red-hover);
 }
 /*po kliknieciu w glowna wiadomosc*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult.da-expanded {
-    border-color: transparent !important;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
-    background: rgba(0, 0, 0, 0.1) !important;
-    opacity: 1;
+  border-color: transparent !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
+  opacity: 1;
 }
 /*fade znikajaca wiadomosc przed i po glownej wiadomosci*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult:not(.da-expanded) .da-searchResultMessage.da-before {
-    mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
-    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
+  mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
+  -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 }
 [class*="theme-"] .da-searchResultsWrap .da-searchResult:not(.da-expanded) .da-searchResultMessage.da-after {
-    mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
-    -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
+  mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
+  -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 }
 /*przezroczystosc wiadomosc przed i po glownej wiadomosci*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-searchResultMessage.da-after,
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-searchResultMessage.da-before {
-    opacity: 0.15 !important;
+  opacity: 0.15 !important;
 }
 /*rozgraniczniki kanalow*/
 [class*="theme-"] .da-searchResultsWrap .da-channelSeparator .da-channelName {
-    background-color: transparent;
-    text-align: right !important;
-    border-radius: 8px;
-    padding: 5px !important;
+  background-color: transparent;
+  text-align: right !important;
+  border-radius: 8px;
+  padding: 5px !important;
 }
 [class*="theme-"] .da-searchResultsWrap .da-channelSeparator .da-channelName:hover {
-    background: var(--default-selected);
-    text-decoration: none;
+  background: var(--default-selected);
+  text-decoration: none;
 }
 /*pozbycie sie szarego fadu*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult::before,
 [class*="theme-"] .da-searchResultsWrap .da-searchResult::after {
-    display: none;
+  display: none;
 }
 /*przycisk jump*/
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 3px !important;
-    color: var(--bt-text) !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 3px !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton:hover {
-    background-color: rgba(0, 0, 0, 0.6) !important;
-    color: var(--bt-text-hover) !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-hit,
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-hit {
-    background-color: rgba(0, 0, 0, 0.3) !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem*/
 [class*="theme-"] .da-contextMenu {
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    border: 1px solid rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: 1px solid rgba(0, 0, 0, 0);
 }
 .da-contextMenu > [class*="itemGroup-"] > .da-item {
-    background-color: rgba(0, 0, 0, 0);
-    color: #ffffff;
-    border: 0px !important;
+  background-color: rgba(0, 0, 0, 0);
+  color: #ffffff;
+  border: 0px !important;
 }
 .da-contextMenu > [class*="itemGroup-"] > .da-item:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 /*item w wysuniętym menu*/
 .da-contextMenu > [class*="itemGroup-"] .da-item .da-contextMenu .da-item:hover {
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 /*pasek głośności*/
 .da-contextMenu > [class*="itemGroup-"] .da-bar .da-barFill {
-    background-color: var(--bt-blue-bg-hover) !important;
+  background-color: var(--bt-blue-bg-hover) !important;
 }
 /*checkboxy*/
 .da-contextMenu [class*="itemGroup-"] .da-item .da-checkboxElement:checked + span {
-    background-color: var(--bt-blue-bg-hover) !important;
-    border-color: var(--bt-blue-bg-hover) !important;
+  background-color: var(--bt-blue-bg-hover) !important;
+  border-color: var(--bt-blue-bg-hover) !important;
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (tło)*/
 /*popout*/
 [class*="theme-"] .da-modal > .da-inner .da-root {
-    background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 /*górna część popoutu*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-tabBarContainer,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-tabBarContainer {
-    background: rgba(0, 0, 0, 0);
-    border-color: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
 }
 /*nick i TAG*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-username,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-username {
-    font-size: 18px;
-    color: var(--bt-text);
+  font-size: 18px;
+  color: var(--bt-text);
 }
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-discriminator,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-discriminator {
-    font-weight: bold;
-    font-size: 16px;
-    color: var(--bt-text-hover);
+  font-weight: bold;
+  font-size: 16px;
+  color: var(--bt-text-hover);
 }
 /*header button*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header .da-button,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header .da-button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
 }
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header .da-button:hover,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header .da-button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 /*dolna część*/
 [class*="theme-"] .da-modal > .da-inner > * > .da-body {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 /*napis "NOTKA"*/
 [class*="theme-"] .da-modal > .da-inner .da-userInfoSectionHeader {
-    color: #b1b1b1;
+  color: #b1b1b1;
 }
 [class*="theme-"] .da-modal > .da-inner .da-note textarea::placeholder {
-    color: #999898;
+  color: #999898;
 }
 [class*="theme-"] .da-modal > .da-inner .da-note textarea:focus {
-    background: rgba(0, 0, 0, 1) !important;
-    min-height: 80px;
+  background: rgba(0, 0, 0, 1) !important;
+  min-height: 80px;
 }
 
 /*uzytkownik po kliknieciu na niego lewym*/
 .da-userPopout {
-    box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
 }
 /*header*/
 .da-userPopout > .da-header {
-    background: var(--profile-bckg);
-    background-size: cover;
+  background: var(--profile-bckg);
+  background-size: cover;
 }
 .da-userPopout > * > .da-activityUserPopout {
-    background-color: rgba(0, 0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
 .da-userPopout > .da-header .da-headerText .da-headerTag {
-    color: #dddddd;
+  color: #dddddd;
 }
 .da-userPopout > .da-header .da-headerText .da-headerName {
-    color: #ffffff;
-    font-size: 18px;
+  color: #ffffff;
+  font-size: 18px;
 }
 /*body*/
 .da-userPopout > .da-body {
-    background-color: rgba(0, 0, 0, 0.95);
-    background-size: cover;
-    background-position: right center;
-    border: 1px solid rgba(0, 0, 0, 1);
-    border-bottom-color: var(--markup-blue);
-    padding: 20px;
+  background-color: rgba(0, 0, 0, 0.95);
+  background-size: cover;
+  background-position: right center;
+  border: 1px solid rgba(0, 0, 0, 1);
+  border-bottom-color: var(--markup-blue);
+  padding: 20px;
 }
 .da-userPopout > .da-body .da-bodyTitle {
-    color: var(--markup-blue);
-    font-size: 12px;
-    font-weight: 700;
-    margin-left: 4px;
-    text-transform: uppercase;
+  color: var(--markup-blue);
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 4px;
+  text-transform: uppercase;
 }
 .da-userPopout > .da-body .da-note textarea:focus {
-    background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0.9);
 }
 /*footer*/
 .da-userPopout > .da-footer {
-    background-color: rgba(0, 0, 0, 0.95);
-    border: 1px solid rgba(0, 0, 0, 1);
+  background-color: rgba(0, 0, 0, 0.95);
+  border: 1px solid rgba(0, 0, 0, 1);
 }
 .da-userPopout > .da-footer .da-quickMessage {
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid var(--markup-blue);
+  background-color: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--markup-blue);
 }
 .da-userPopout > .da-footer .da-pro {
-    color: var(--markup-blue);
+  color: var(--markup-blue);
 }
 
 /*wyskakujace okienka (wzmianki, przypiete wiadomosci itp)*/
 .da-popouts .da-popout > .da-themedPopout {
-    background-color: rgba(0, 0, 0, 0.9) !important;
-    border: transparent;
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border: transparent;
 }
 .da-popouts .da-popout > .da-themedPopout > .da-header {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .da-popouts .da-popout > .da-themedPopout > .da-header .da-title {
-    color: #eeeeee;
-    font-weight: bold;
+  color: #eeeeee;
+  font-weight: bold;
 }
 /*wiadomosc*/
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper > * > .da-container {
-    background-color: rgba(0, 0, 0, 1) !important;
+  background-color: rgba(0, 0, 0, 1) !important;
 }
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper {
-    border-color: var(--default-hover);
-    background-color: rgba(0, 0, 0, 1) !important;
+  border-color: var(--default-hover);
+  background-color: rgba(0, 0, 0, 1) !important;
 }
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper:hover {
-    border-color: var(--default-selected);
+  border-color: var(--default-selected);
 }
 /*jump button*/
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper .da-actionButtons {
-    background-color: rgba(0, 0, 0, 0) !important;
-    box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0px 0px;
 }
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
-    background-color: var(--bt-red) !important;
-    border-radius: 3px !important;
-    color: var(--bt-text) !important;
+  background-color: var(--bt-red) !important;
+  border-radius: 3px !important;
+  color: var(--bt-text) !important;
 }
 .da-popouts .da-popout > .da-themedPopout .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
-    background-color: var(--bt-red-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background-color: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*footer ze wzmianek*/
 .da-popouts .da-popout > .da-themedPopout > .da-footer {
-    background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 .da-popouts .da-popout > .da-themedPopout > .da-footer .da-pro {
-    color: var(--markup-blue);
+  color: var(--markup-blue);
 }
 
 /* CHAT */
 /*input do wysyłania wiadomości na czacie*/
 .da-chat form {
-    margin: 0px;
+  margin: 0px;
 }
 .da-chat .da-channelTextArea > .da-inner {
-    background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 /*wysyłanie plików na czat: popout*/
 [class*="theme-"] .da-uploadModal {
-    background: rgba(0, 0, 0, 0.9);
-    min-height: 280px;
+  background: rgba(0, 0, 0, 0.9);
+  min-height: 280px;
 }
 [class*="theme-"] .da-uploadModal * {
-    border-color: var(--bt-blue-bg) !important;
+  border-color: var(--bt-blue-bg) !important;
 }
 /*input*/
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > .da-inner {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload textarea {
-    color: rgba(255, 255, 255, 0.9) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 [class*="theme-"] .da-uploadModal .da-footer {
-    background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0);
 }
 /*button*/
 [class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*checkbox*/
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked polyline {
-    stroke: rgba(255, 255, 255, 0.8);
+  stroke: rgba(255, 255, 255, 0.8);
 }
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked {
-    background: var(--bt-blue-bg) !important;
-} 
+  background: var(--bt-blue-bg) !important;
+}
 
 /*
 ```css
@@ -1776,459 +1776,459 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 ```
 */
 [class*="theme-"] .da-container .da-markup pre {
-    background: rgba(0, 0, 0, 0) !important;
-    border-color: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-container .da-markup pre code {
-    background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 /*
 ` tło tego co się tu wyśle `
 */
 [class*="theme-"] .da-container .da-markup .inline {
-    background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 /*reakcje pod wiadomosciami na czacie*/
 [class*="theme-"] .da-reactions .da-reaction {
-    background-color: rgba(0, 0, 0, 0.2) !important;
-    min-width: 40px !important;
-    min-height: 40px !important;
-    display: flex;
-    align-content: center;
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  display: flex;
+  align-content: center;
 }
 [class*="theme-"] .da-reactions .da-reaction img {
-    width: 30px !important;
-    height: 30px !important;
+  width: 30px !important;
+  height: 30px !important;
 }
 [class*="theme-"] .da-reactions .da-reaction .da-reactionCount {
-    color: var(--markup-normal) !important;
+  color: var(--markup-normal) !important;
 }
 [class*="theme-"] .da-reactions .da-reactionMe {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+  background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*zarzadzanie wiadomoscia na czacie, popout*/
 .da-popouts [class*="popoutBottom-"] > .da-container {
-    background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.7);
 }
 .da-popouts [class*="popoutBottom-"] > .da-container .da-button:hover {
-    background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie*/
 form .da-autocomplete,
 form .da-autocomplete .da-autocompleteInner {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border-color: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
 }
 form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie podczas edytowania wiadomości*/
 .da-messagesWrapper .da-autocomplete,
 .da-messagesWrapper .da-autocomplete .da-autocompleteInner {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border-color: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
 }
 .da-messagesWrapper .da-autocomplete .da-autocompleteInner .da-selectorSelected {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*oznaczenie ciebie na czacie*/
 .da-content .da-content .da-isMentioned {
-    background: linear-gradient(90deg, var(--markup-normal-transparent) 0%, transparent 80%) !important;
+  background: linear-gradient(90deg, var(--markup-normal-transparent) 0%, transparent 80%) !important;
 }
 .da-content .da-content .da-isMentioned .da-markup .mention {
-    color: var(--markup-intensive);
+  color: var(--markup-intensive);
 }
 /*kolorowa linia po lewej*/
 .da-content .da-content .da-isMentioned::after {
-    left: -4px;
-    background-color: rgba(0, 0, 0, 0.1);
-    background: var(--markup-intensive);
-    border-left: 2px solid var(--markup-intensive);
+  left: -4px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background: var(--markup-intensive);
+  border-left: 2px solid var(--markup-intensive);
 }
 
 /*oznaczenie kogoś na czacie*/
 .da-content .da-content .da-markup .mention {
-    color: var(--markup-blue-light);
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 3px;
+  color: var(--markup-blue-light);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
 }
 .da-content .da-content .da-markup .mention:hover {
-    background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4);
 }
 
 /*edytowanie wiadomosci > kolor "anulować" albo "zapisać"*/
 .da-chat .da-messagesWrapper .da-container .da-operations > a {
-    color: var(--markup-normal);
+  color: var(--markup-normal);
 }
 
 /*kolor linku na czacie*/
 .da-chat .da-messagesWrapper .da-container .da-markup > a {
-    color: var(--markup-normal);
+  color: var(--markup-normal);
 }
 /*polprzezroczyste pola na czacie: linki*/
 .da-chat .da-messagesWrapper .da-container .da-embed .da-embedPill {
-    background: var(--markup-intensive) !important;
+  background: var(--markup-intensive) !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-embed {
-    background: var(--markup-normal-transparent) !important;
-    border-color: var(--markup-intensive) !important;
+  background: var(--markup-normal-transparent) !important;
+  border-color: var(--markup-intensive) !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-embed .da-embedTitleLink {
-    color: var(--markup-blue-light) !important;
+  color: var(--markup-blue-light) !important;
 }
 
 /*brak internetu*/
 .da-app > .da-fixClipping {
-    background: linear-gradient(transparent, #000);
+  background: linear-gradient(transparent, #000);
 }
 .da-app > .da-fixClipping .da-quote,
 .da-app > .da-fixClipping .da-status {
-    color: var(--markup-intensive) !important;
+  color: var(--markup-intensive) !important;
 }
 
 /*polprzezroczyste pola na czacie: pliki do pobrania i pliki audio */
 .da-chat .da-messagesWrapper .da-container .da-attachment,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio {
-    background: rgba(0, 0, 0, 0.3) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-attachment .da-fileNameLink,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio .da-metadataName {
-    color: var(--markup-blue-light) !important;
+  color: var(--markup-blue-light) !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-attachment .da-downloadButton .fill,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio .da-metadataDownload .fill {
-    fill: var(--markup-blue) !important;
+  fill: var(--markup-blue) !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-attachment a:hover .fill,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio a:hover .fill {
-    fill: var(--markup-blue-light) !important;
+  fill: var(--markup-blue-light) !important;
 }
 
 /*polprzezroczyste pola na czacie: plik podczas wysylania na czat*/
 .da-chat .da-messagesWrapper .da-container .da-progressBar {
-    background: var(--markup-intensive) !important;
+  background: var(--markup-intensive) !important;
 }
 
 /*polprzezroczyste pola na czacie: zaproszenia na serwer*/
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone {
-    background: rgba(0, 0, 0, 0.3) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
 }
 /*gdy serwer nie ma ikony*/
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone .da-noIcon {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+  background-color: rgba(0, 0, 0, 0.6) !important;
 }
 /*button Dołącz*/
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone button[class*="lookFilled"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone button[class*="lookFilled"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*zaproszenie do gry (fortnite): popout*/
 [class*="theme-"] .da-attachPopout {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 [class*="theme-"] .da-attachPopout .da-attachPopoutRow:hover {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 /*zaproszenie do gry (fortnite): polprzezroczyste pole na czacie po zaproszeniu*/
 .da-chat .da-messagesWrapper .da-container .da-invite {
-    background: rgba(0, 0, 0, 0.3) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
 }
 .da-chat .da-messagesWrapper .da-container .da-invite .da-coverImage {
-    opacity: 0.3 !important;
+  opacity: 0.3 !important;
 }
 
 /*tooltip po najechaniu na ikone serwera/przycisk rozłączenia itp*/
 [class*="tooltipBlack-"],
 [class*="tooltipGrey-"] {
-    background-color: rgba(0, 0, 0, 0.95) !important;
-    border: 2px solid rgba(0, 0, 0, 1);
-    color: rgba(255, 255, 255, 0.5);
-    font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
 }
 [class*="tooltipBlack-"] .da-tooltipPointer,
 [class*="tooltipGrey-"] .da-tooltipPointer {
-    border-top-color: rgba(0, 0, 0, 1) !important;
+  border-top-color: rgba(0, 0, 0, 1) !important;
 }
 
 /*AFK POPOUT **nie tylko AFK, parę innych też*/
 /*tło*/
 [class*="theme-"] .da-backdrop {
-    background: linear-gradient(#00000011, #000000ff) !important;
+  background: linear-gradient(#00000011, #000000ff) !important;
 }
 [class*="theme-"] .da-backdrop[style="opacity: 0.85; background-color: rgb(0, 0, 0); z-index: 1000; transform: translateZ(0px);"] {
-    opacity: 1;
+  opacity: 1;
 }
 /*popout*/
 .da-modal > .da-inner > .da-modal.da-container {
-    background: rgba(0, 0, 0, 0.9);
-    border-color: rgba(0, 0, 0, 0) !important;
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0.9);
+  border-color: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal.da-container * {
-    border-color: rgba(0, 0, 0, 0) !important;
-    box-shadow: 0px 0px;
+  border-color: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"] {
-    background: var(--bt-red) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-red) !important;
+  color: var(--bt-text) !important;
 }
 .da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"]:hover {
-    background: var(--bt-red-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 /*HEADER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner > .da-modal .da-header {
-    background: rgba(0, 0, 0, 0) !important;
-    border-radius: 5px 5px 0px 0px;
+  background: rgba(0, 0, 0, 0) !important;
+  border-radius: 5px 5px 0px 0px;
 }
 .da-modal > .da-inner > .da-modal .da-header.da-separator {
-    box-shadow: 0px 0px;
+  box-shadow: 0px 0px;
 }
 /*CHECKBOXY z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner > .da-modal .da-switch {
-    background: rgba(0, 0, 0, 0.6) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0px 0px !important;
 }
 .da-modal > .da-inner > .da-modal .da-switch[class*="valueChecked"] {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 .da-modal > .da-inner > .da-modal .da-checkbox.da-checked {
-    background: var(--bt-blue-bg) !important;
-    border-color: transparent !important;
+  background: var(--bt-blue-bg) !important;
+  border-color: transparent !important;
 }
 /*LINKI z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner > .da-modal a {
-    color: var(--markup-normal);
+  color: var(--markup-normal);
 }
 /*zaznaczalne szerokie pola z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner > .da-modal .da-cardPrimaryEditable {
-    background: rgba(0, 0, 0, 0.5) !important;
-    border-color: transparent !important;
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-color: transparent !important;
 }
 .da-modal > .da-inner > .da-modal .da-cardPrimaryEditable[style*="background"] {
-    background: rgba(0, 0, 0, 0.9) !important;
-    border-color: transparent !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-color: transparent !important;
 }
 /*rozwijalne MENU z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner > .da-modal .da-select > [class*="css-"],
 .da-modal > .da-inner > .da-modal .da-select [class*="-menu"] {
-    background: rgba(0, 0, 0, 0.9) !important;
-    border-color: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
+  border-color: rgba(0, 0, 0, 0.9) !important;
 }
 .da-modal > .da-inner > .da-modal .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
-    background: rgba(0, 0, 0, 1) !important;
+  background: rgba(0, 0, 0, 1) !important;
 }
 /*FOOTER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner > .da-modal .da-footer {
-    background: rgba(0, 0, 0, 0) !important;
-    /* margin-top: 10px; */
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0) !important;
+  /* margin-top: 10px; */
+  box-shadow: 0px 0px;
 }
 .da-modal > .da-inner > .da-modal .da-footer > button {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 .da-modal > .da-inner > .da-modal .da-footer > button:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*usuwanie wiadomości popout: pole z wiadomością*/
 .da-modal > .da-inner > .da-modal .da-content > .da-message {
-    background: var(--default-hover) !important;
+  background: var(--default-hover) !important;
 }
 
 /*USTAWIENIA SERWERA*/
 [aria-label*="SETTINGS"] .da-standardSidebarView,
 [aria-label*="SETTINGS"] .da-standardSidebarView .da-sidebarRegion,
 [aria-label*="SETTINGS"] .da-standardSidebarView .da-contentRegion {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 [aria-label*="SETTINGS"] .da-sidebarRegion [class*="header"] {
-    color: rgba(255, 255, 255, 0.75) !important;
-    text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-transform: uppercase !important;
 }
 [aria-label*="SETTINGS"] .da-sidebarRegion [class*="separator"] {
-    background: rgba(255, 255, 255, 0.5) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 /*sidebar po lewej*/
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
-    background: var(--default-hover) !important;
-    color: var(--bt-text) !important;
+  background: var(--default-hover) !important;
+  color: var(--bt-text) !important;
 }
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected,
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"],
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"],
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
-    background: var(--default-selected) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--default-selected) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*różne po prawej zawarte w wielu opcjach*/
 
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Członkowie czy Zaproszenia*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-card:hover {
-    background: transparent;
-    border-color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 [aria-label*="SETTINGS"] .da-contentRegion .da-card::before {
-    background: transparent;
-    border-color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 [aria-label*="SETTINGS"] .da-contentRegion .da-card:hover::before {
-    background: transparent;
-    border-color: transparent;
+  background: transparent;
+  border-color: transparent;
 }
 /*tytul i opis*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-title {
-    color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 [aria-label*="SETTINGS"] .da-contentRegion .da-description {
-    color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 /*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
 [aria-label*="SETTINGS"] .item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"],
 [aria-label*="SETTINGS"] .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border-color: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0.8) !important;
 }
 /*polprzezroczyste pola (z wysuwalnymi menu)*/
 /*pole i menu*/
 [aria-label*="SETTINGS"] .da-systemPad .da-select > [class*="css-"],
 [aria-label*="SETTINGS"] .da-systemPad .da-select [class*="-menu"] {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border-color: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0.8) !important;
 }
 [aria-label*="SETTINGS"] .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
-    background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 /*popout o niezapisanych zmianach*/
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container {
-    background: rgba(0, 0, 0, 0.85) !important;
+  background: rgba(0, 0, 0, 0.85) !important;
 }
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
-    background-color: var(--bt-blue-bg) !important;
-    color: #dddddd !important;
+  background-color: var(--bt-blue-bg) !important;
+  color: #dddddd !important;
 }
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: #ffffff !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: #ffffff !important;
 }
 /*switch checkboxy*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-switch,
 [aria-label*="SETTINGS"] .da-contentRegion .da-switch .da-checkbox {
-    background: rgba(0, 0, 0, 0.4) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0px 0px !important;
 }
 [aria-label*="SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
 /*nazwa i region serwera*/
 [aria-label*="SETTINGS"] .da-systemPad .da-marginBottom20 .da-input,
 [aria-label*="SETTINGS"] .da-systemPad .da-container .da-layout {
-    background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"],
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"],
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookGhost"] {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
-    border-color: transparent;
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
+  border-color: transparent;
 }
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
-    border-color: transparent;
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
+  border-color: transparent;
 }
 
 /*czesc ustawien serwera: Moderacja */
 /* zielony */
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
-    background: rgba(0, 230, 77, 0.3) !important;
-    border-color: rgba(0, 230, 77, 0.3) !important;
+  background: rgba(0, 230, 77, 0.3) !important;
+  border-color: rgba(0, 230, 77, 0.3) !important;
 }
 /* zolty */
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
-    background: rgba(255, 153, 0, 0.3) !important;
-    border-color: rgba(255, 153, 0, 0.3) !important;
+  background: rgba(255, 153, 0, 0.3) !important;
+  border-color: rgba(255, 153, 0, 0.3) !important;
 }
 /* pomaranczowy */
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"],
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
-    background: rgba(242, 97, 0, 0.3) !important;
-    border-color: rgba(242, 97, 0, 0.3) !important;
+  background: rgba(242, 97, 0, 0.3) !important;
+  border-color: rgba(242, 97, 0, 0.3) !important;
 }
 /* czerwony */
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
 [aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
-    background: rgba(244, 40, 40, 0.3) !important;
-    border-color: rgba(204, 0, 0, 0.3) !important;
+  background: rgba(244, 40, 40, 0.3) !important;
+  border-color: rgba(204, 0, 0, 0.3) !important;
 }
 /*checkboxy wewnątrz*/
 [aria-label*="SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
-    background: rgba(0, 0, 0, 0) !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }
 [aria-label*="SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
-    background: rgba(0, 0, 0, 0) !important;
-    border-color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
 }
 /*niepokolorowane aktualnie pola*/
 [aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-card[style*="padding: 10px"] {
-    background: rgba(0, 0, 0, 0.5);
-    border-color: rgba(0, 0, 0, 0.8);
+  background: rgba(0, 0, 0, 0.5);
+  border-color: rgba(0, 0, 0, 0.8);
 }
 
 /*czesc ustawien serwera: dziennik zdarzen*/
 [aria-label*="SETTINGS"] .da-auditLog {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: #000000 !important;
 }
 [aria-label*="SETTINGS"] .da-auditLog .da-headerExpanded,
 [aria-label*="SETTINGS"] .da-auditLog .da-divider,
 [aria-label*="SETTINGS"] .da-auditLog .da-changeDetails {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: #000000 !important;
 }
 /*popout przy wyswietlaniu roli w ustawieniach członków i przy filtrach w dzienniku zdarzen*/
 [class*="popout-"] [class*="popoutList-"] .da-scroller {
-    overflow: hidden;
+  overflow: hidden;
 }
 [class*="popout-"] [class*="popoutList-"],
 [class*="popout-"] [class*="popoutList-"] .da-container .da-inner,
 [class*="popout-"] [class*="popoutList-"] .da-selectableItem.da-selected,
 [class*="popout-"] [class*="popoutList-"] .da-selectableItem:hover {
-    background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 
 /*polprzezroczyste pola (czesc ustawien "Widżet")*/
 [aria-label*="SETTINGS"] .da-systemPad .da-copyInput {
-    background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 /*czesc ustawien serwera: Czlonkowie*/
 [aria-label*="SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: #000000 !important;
 }
 
 /* USTAWIENIA UŻYTKOWNIKA */
@@ -2238,114 +2238,114 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-standardSidebarView .da-sidebarRegion,
 .ui-standard-sidebar-view,
 .ui-standard-sidebar-view .content-region {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 /*sidebar po lewej*/
 #user-settings .da-sidebarRegion [class*="header"] {
-    color: rgba(255, 255, 255, 0.75) !important;
-    text-transform: uppercase !important;
+  color: rgba(255, 255, 255, 0.75) !important;
+  text-transform: uppercase !important;
 }
 #user-settings .da-sidebarRegion .da-item {
-    color: rgba(255, 255, 255, 0.7) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 #user-settings .da-sidebarRegion .da-item:hover {
-    background-color: var(--default-hover) !important;
-    color: rgba(255, 255, 255, 0.8) !important;
+  background-color: var(--default-hover) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 #user-settings .da-sidebarRegion .da-item.da-selected {
-    background-color: var(--default-selected) !important;
-    color: rgba(255, 255, 255, 0.9) !important;
+  background-color: var(--default-selected) !important;
+  color: rgba(255, 255, 255, 0.9) !important;
 }
 #user-settings .da-sidebarRegion [class*="separator"] {
-    background: rgba(255, 255, 255, 0.5) !important;
+  background: rgba(255, 255, 255, 0.5) !important;
 }
 /*button discorda nitro po wybraniu*/
 #user-settings .da-sidebarRegion .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"] {
-    color: rgba(255, 255, 255, 0.8) !important;
-    background-color: var(--default-selected) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+  background-color: var(--default-selected) !important;
 }
 
 /*różne po prawej zawarte w wielu opcjach*/
 /*tytul i opis*/
 #user-settings .da-contentRegion .da-title {
-    color: rgba(255, 255, 255, 0.75) !important;
+  color: rgba(255, 255, 255, 0.75) !important;
 }
 #user-settings .da-contentRegion .da-description {
-    color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 /*polprzezroczyste pola (bez tych w "skrótach klawiszowych" i "aktywności w grze"*/
 #user-settings .da-contentRegion :not(.da-marginTop40):not(.da-row) > .da-card {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: #000000 !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: #000000 !important;
 }
 /*wysuwalne menu*/
 #user-settings .da-contentRegion .da-systemPad .da-select > [class*="css-"],
 #user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"] {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border-color: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border-color: rgba(0, 0, 0, 0.8) !important;
 }
 #user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
-    background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 /*checkboxy*/
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border-color: rgba(0, 0, 0, 1) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: rgba(0, 0, 0, 1) !important;
 }
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked {
-    background-color: var(--bt-blue-bg) !important;
-    border-color: var(--bt-blue-bg) !important;
+  background-color: var(--bt-blue-bg) !important;
+  border-color: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked polyline {
-    stroke: var(--bt-text-hover) !important;
+  stroke: var(--bt-text-hover) !important;
 }
 /*switch checkboxy*/
 #user-settings .da-contentRegion .da-switch,
 #user-settings .da-contentRegion .da-switch .da-checkbox {
-    background: rgba(0, 0, 0, 0.4) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0px 0px !important;
 }
 #user-settings .da-contentRegion .da-switch[class*="valueChecked"] {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 /*przyciski*/
 #user-settings .da-contentRegion .da-button[class*="lookFilled"],
 #user-settings .da-contentRegion .da-button[class*="lookOutlined"],
 #user-settings .da-contentRegion .da-button[class*="lookGhost"] {
-    background-color: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
-    border-color: transparent !important;
+  background-color: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
+  border-color: transparent !important;
 }
 #user-settings .da-contentRegion .da-button[class*="lookFilled"]:hover,
 #user-settings .da-contentRegion .da-button[class*="lookOutlined"]:hover,
 #user-settings .da-contentRegion .da-button[class*="lookGhost"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
-    border-color: transparent !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
+  border-color: transparent !important;
 }
 /*input type range*/
 #user-settings .da-contentRegion .da-bar {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 #user-settings .da-contentRegion .da-barFill {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
 #user-settings .da-contentRegion .da-card:hover {
-    background: transparent !important;
-    border-color: transparent;
+  background: transparent !important;
+  border-color: transparent;
 }
 #user-settings .da-contentRegion .da-card::before {
-    background: transparent !important;
-    border-color: transparent;
+  background: transparent !important;
+  border-color: transparent;
 }
 #user-settings .da-contentRegion .da-card:hover::before {
-    background: transparent !important;
-    border-color: transparent;
+  background: transparent !important;
+  border-color: transparent;
 }
 /*kolory linkow*/
 #user-settings .da-contentRegion a {
-    color: var(--markup-normal);
+  color: var(--markup-normal);
 }
 
 /* Poszczególne opcje ustawień */
@@ -2353,337 +2353,337 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*"Moje konto"*/
 /*rozmazany email w ustawieniach konta przed najechaniem myszką*/
 #user-settings .da-contentRegion .da-userInfoViewing .da-viewBody {
-    filter: blur(5px);
-    transition: 200ms cubic-bezier(0.2, 0.11, 0, 1);
+  filter: blur(5px);
+  transition: 200ms cubic-bezier(0.2, 0.11, 0, 1);
 }
 #user-settings .da-contentRegion .da-userInfoViewing .da-viewBody:hover {
-    filter: none;
-    transition: 200ms cubic-bezier(0.2, 0.11, 0, 1);
+  filter: none;
+  transition: 200ms cubic-bezier(0.2, 0.11, 0, 1);
 }
 /*żeby nie było blura na nicku*/
 #user-settings .da-contentRegion .da-userInfoViewing .da-marginBottom20 > .da-viewBody {
-    filter: none;
-    transition: none;
+  filter: none;
+  transition: none;
 }
 /*input nicku*/
 #user-settings .da-contentRegion .da-inputWrapper .da-input.da-focused {
-    border-color: var(--bt-blue-bg) !important;
+  border-color: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-inputWrapper .da-questionMark {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-inputWrapper .da-questionMark:hover {
-    background: var(--bt-blue-bg-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
 }
 
 /*"Prywatnosc i bezpieczenstwo"*/
 /*polprzezroczyste pola u gory (zielony, pomaranczowy i czerowny)*/
 #user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
 #user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
-    background: rgba(0, 230, 77, 0.3) !important;
-    border-color: rgba(0, 230, 77, 0.3) !important;
+  background: rgba(0, 230, 77, 0.3) !important;
+  border-color: rgba(0, 230, 77, 0.3) !important;
 }
 #user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
 #user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
-    background: rgba(255, 153, 0, 0.3) !important;
-    border-color: rgba(255, 153, 0, 0.3) !important;
+  background: rgba(255, 153, 0, 0.3) !important;
+  border-color: rgba(255, 153, 0, 0.3) !important;
 }
 #user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
 #user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
-    background: rgba(244, 40, 40, 0.3) !important;
-    border-color: rgba(204, 0, 0, 0.3) !important;
+  background: rgba(244, 40, 40, 0.3) !important;
+  border-color: rgba(204, 0, 0, 0.3) !important;
 }
 /*checkboxy wewnątrz*/
 #user-settings .da-contentRegion .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
-    background: rgba(0, 0, 0, 0) !important;
-    border-color: rgba(255, 255, 255, 0.2) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(255, 255, 255, 0.2) !important;
 }
 #user-settings .da-contentRegion .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
-    background: rgba(0, 0, 0, 0) !important;
-    border-color: rgba(255, 255, 255, 0.8) !important;
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /*"Autoryzowane aplikacje"*/
 /*pole danej aplikacji*/
 #user-settings .da-contentRegion .da-authedApp {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: #000000;
 }
 
 /*"Połączone konta"*/
 /*pole u góry*/
 #user-settings .da-contentRegion .da-accountList .da-inner {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: #000000;
-    margin-bottom: 7px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: #000000;
+  margin-bottom: 7px;
 }
 #user-settings .da-contentRegion .da-accountList .da-inner:hover {
-    background-color: rgba(0, 0, 0, 0.7);
-    border-color: #000000;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-color: #000000;
 }
 /*kolorowe pola u dołu*/
 #user-settings .da-contentRegion .da-connection {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 
 /*"Dane do faktury"*/
 /*panel u góry, tekst*/
 #user-settings .da-contentRegion .da-footer .da-flexChild .da-subText {
-    color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 /*psst*/
 #user-settings .da-contentRegion .da-codeRedemptionRedirect {
-    background-color: rgba(0, 0, 0, 0.4);
-    border-color: #000000;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-color: #000000;
 }
 
 /*"Discord Nitro"*/
 /*panel u dołu*/
 #user-settings .da-contentRegion .da-sectionTier1 .da-tier1Banner {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border: 1px solid #000000;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid #000000;
 }
 
 /*"Hypesquad"*/
 /*panel u dołu*/
 #user-settings .da-contentRegion .da-attendeeCTA {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border: 1px solid #000000;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border: 1px solid #000000;
 }
 
 /*"Głos i wideo"*/
 /*test mikrofonu*/
 #user-settings .da-contentRegion .da-notches {
-    background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23000000'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E") !important;
+  background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23000000'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E") !important;
 }
 #user-settings .da-contentRegion .da-progress {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 /*podgląd kamery*/
 #user-settings .da-contentRegion .da-previewContainer .media-engine-video,
 #user-settings .da-contentRegion .da-previewContainer .da-previewOverlay {
-    background-color: rgba(0, 0, 0, 0.6);
-    border-color: transparent;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-color: transparent;
 }
 
 /*"Nakładka"*/
 /*"Powiadomienia z nakładki"*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: var(--bt-blue-bg) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected {
-    border-color: var(--bt-red-hover) !important;
+  border-color: var(--bt-red-hover) !important;
 }
 /*opcje w rogach*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option {
-    background: rgba(0, 0, 0, 0.8) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option.da-selected {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option:not(.da-selected):hover {
-    background: rgba(0, 0, 0, 1) !important;
+  background: rgba(0, 0, 0, 1) !important;
 }
 /*ikona na środku*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-disabledIcon path:nth-child(2) {
-    fill: rgba(0, 0, 0, 0.8) !important;
+  fill: rgba(0, 0, 0, 0.8) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-disabledIcon:hover path:nth-child(2) {
-    fill: rgba(0, 0, 0, 1) !important;
+  fill: rgba(0, 0, 0, 1) !important;
 }
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected .da-disabledIcon path:nth-child(2) {
-    fill: var(--bt-red-hover) !important;
+  fill: var(--bt-red-hover) !important;
 }
 
 /*"Skróty klawiszowe": przycisk do usuwania skrótu*/
 #user-settings .da-contentRegion .da-removeKeybind {
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 
 /*"Aktywność w grze"*/
 /*panel u góry*/
 #user-settings .da-contentRegion .da-notDetected {
-    background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.6);
 }
 #user-settings .da-contentRegion .da-nowPlaying {
-    background-color: rgba(0, 230, 77, 0.3);
+  background-color: rgba(0, 230, 77, 0.3);
 }
 /*przycisk do usuwania gry*/
 #user-settings .da-contentRegion .da-removeGame {
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 0px;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 0px;
 }
 /*ostatnia rozgrywka x dni temu (pod nazwą gry)*/
 #user-settings .da-contentRegion .da-lastPlayed .da-hoverRoll {
-    color: rgba(255, 255, 255, 0.4);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /*"Activity feed"*/
 /*searchbox u góry*/
 #user-settings .da-contentRegion .da-container > .da-searchBox {
-    background: rgba(0, 0, 0, 0.4) !important;
-    border: 1px solid #000000;
+  background: rgba(0, 0, 0, 0.4) !important;
+  border: 1px solid #000000;
 }
 /*popout po wyszukaniu w searchboxie*/
 #user-settings .da-contentRegion .da-container > .da-searchResultsContainer {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border: 1px solid #000000;
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px;
 }
 #user-settings .da-contentRegion .da-container > .da-searchResultsContainer .da-searchOption.da-selected {
-    background: rgba(0, 0, 0, 0.8) !important;
-    border: 1px solid #000000;
-    box-shadow: 0px 0px;
+  background: rgba(0, 0, 0, 0.8) !important;
+  border: 1px solid #000000;
+  box-shadow: 0px 0px;
 }
 /*panel u dołu*/
 #user-settings .da-contentRegion .da-emptyUsers {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: #000000;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: #000000;
 }
 
 /*"Biblioteka gier"*/
 /*lokalizacje instalacji*/
 /*tytul i lokalizacja lokalizacji*/
 #user-settings .da-contentRegion .da-installationPath .da-rowTitle {
-    color: rgba(255, 255, 255, 0.8);
+  color: rgba(255, 255, 255, 0.8);
 }
 #user-settings .da-contentRegion .da-installationPath .da-default {
-    color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.5);
 }
 /*edytowanie lokalizacji*/
 #user-settings .da-contentRegion .da-installationPathEditing {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: #000000;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: #000000;
 }
 /*% zajętego miejsca*/
 #user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(1),
 #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(1) {
-    stroke: rgba(0, 0, 0, 0.3) !important;
+  stroke: rgba(0, 0, 0, 0.3) !important;
 }
 #user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(2),
 #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(2) {
-    stroke: var(--markup-intensive) !important;
+  stroke: var(--markup-intensive) !important;
 }
 /*tag "domyślny"*/
 #user-settings .da-contentRegion .da-installationPath .da-defaultIndicator {
-    background: var(--markup-intensive) !important;
+  background: var(--markup-intensive) !important;
 }
 
 /* USTAWIENIA BETTERDISCORD */
 /*sidebar*/
 #bd-settings-sidebar .ui-tab-bar-item.selected {
-    background-color: var(--default-selected) !important;
+  background-color: var(--default-selected) !important;
 }
 #bd-settings-sidebar .ui-tab-bar-item:not(.selected):hover {
-    background-color: var(--default-hover) !important;
+  background-color: var(--default-hover) !important;
 }
 #bd-settings-sidebar > span > div:first-child {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 #bd-settings-sidebar > span > div:not(:first-child) {
-    color: rgba(255, 255, 255, 0.6) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
 }
 #bd-settings-sidebar > span > div:not(:first-child) a {
-    color: var(--markup-normal) !important;
+  color: var(--markup-normal) !important;
 }
 /*pole po prawej*/
 #bd-settingspane-container {
-    background: rgba(0, 0, 0, 0) !important;
+  background: rgba(0, 0, 0, 0) !important;
 }
 /*polprzezroczyste pola*/
 #bd-settingspane-container .ui-switch-item:not(.ui-flex) {
-    background: rgba(0, 0, 0, 0.6) !important;
-    border-color: rgba(0, 0, 0, 1) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: rgba(0, 0, 0, 1) !important;
 }
 /*opisy ustawień*/
 #bd-settingspane-container .style-description {
-    color: rgba(255, 255, 255, 0.5) !important;
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 /*przyciski w nagłówkach*/
 #bd-settingspane-container .bd-pfbtn {
-    background: var(--bt-red);
-    color: var(--bt-text);
-    padding: 4px 13px;
+  background: var(--bt-red);
+  color: var(--bt-text);
+  padding: 4px 13px;
 }
 #bd-settingspane-container .bd-pfbtn:hover {
-    background: var(--bt-red-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-red-hover);
+  color: var(--bt-text-hover);
 }
 /*przyciski w ustawieniach*/
 #bd-settingspane-container .bda-settings-button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
-    padding: 4px 13px;
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
+  padding: 4px 13px;
 }
 #bd-settingspane-container .bda-settings-button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
 }
 /*linki w ustawieniach BD*/
 #bd-settingspane-container .bda-link {
-    color: var(--markup-normal);
+  color: var(--markup-normal);
 }
 /*switch checkboxy (da-switch jest np po rozwinięciu danego pluginu)*/
 #bd-settingspane-container .da-switch,
 #bd-settingspane-container .ui-switch {
-    background: rgba(0, 0, 0, 0.4) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  box-shadow: 0px 0px !important;
 }
 #bd-settingspane-container .da-switch[class*="Checked"],
 #bd-settingspane-container .ui-switch.checked {
-    background: var(--bt-blue-bg) !important;
+  background: var(--bt-blue-bg) !important;
 }
 
 /*Custom CSS*/
 /*panel u góry*/
 #bd-customcss-detach-container,
 [id^="bd-customcss-editor"] {
-    background: transparent !important;
+  background: transparent !important;
 }
 /*pole po lewej*/
 [id^="bd-customcss-editor"] .ace_gutter {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 [id^="bd-customcss-editor"] .ace_gutter-cell {
-    background: transparent !important;
+  background: transparent !important;
 }
 /*pole po prawej*/
 [id^="bd-customcss-editor"] .ace_content {
-    background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 /*aktywna linia po lewej i prawej*/
 [id^="bd-customcss-editor"] .ace_active-line,
 [id^="bd-customcss-editor"] .ace_gutter-active-line {
-    background: var(--default-hover) !important;
+  background: var(--default-hover) !important;
 }
 /*zaznaczenie kodu*/
 [id^="bd-customcss-editor"] .ace_selection {
-    background: var(--default-selected) !important;
+  background: var(--default-selected) !important;
 }
 /*panel u dołu*/
 #bd-customcss-attach-controls {
-    background: rgba(0, 0, 0, 0.6) !important;
-    box-shadow: 0px 0px !important;
+  background: rgba(0, 0, 0, 0.6) !important;
+  box-shadow: 0px 0px !important;
 }
 /*live update checkbox*/
 #bd-customcss-attach-controls .da-checkbox .da-checkboxInner span {
-    background-color: var(--bt-blue-bg);
-    border-color: var(--bt-blue-bg);
+  background-color: var(--bt-blue-bg);
+  border-color: var(--bt-blue-bg);
 }
 /*"ctrl+,"*/
 #bd-customcss-attach-controls .inline {
-    background: rgba(0, 0, 0, 0.6) !important;
+  background: rgba(0, 0, 0, 0.6) !important;
 }
 #bd-customcss-attach-controls button {
-    border-color: transparent !important;
-    border-radius: 5px !important;
-    background-color: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  border-color: transparent !important;
+  border-radius: 5px !important;
+  background-color: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 #bd-customcss-attach-controls button:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*IKONKI USTAWIEN*/
@@ -2691,154 +2691,154 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*miejsce na ikony*/
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"],
 .platform-win #bd-settings-sidebar .ui-tab-bar-item {
-    padding-left: 50px !important;
+  padding-left: 50px !important;
 }
 .platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"]::after {
-    content: "";
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    left: 15px;
-    margin-top: -2px;
-    opacity: 0.3;
-    -webkit-transition: all 0.15s ease-in-out;
-    transition: all 0.15s ease-in-out;
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 15px;
+  margin-top: -2px;
+  opacity: 0.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
 }
 .platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"]:hover::after {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 .platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"][class*="selected-"]::after {
-    opacity: 1;
+  opacity: 1;
 }
 
 /*ikony*/
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(2)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/person.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/person.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(3)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/security.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/security.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(4)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/apps.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/apps.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(5)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/link.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/link.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(6)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/Credit_card.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/Credit_card.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(8)::after {
-    background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
+  background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(9)::after {
-    background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
-    background-size: cover;
+  background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
+  background-size: cover;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(12)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/mic.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/mic.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(13)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/open_in_new.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/open_in_new.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(14)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/notifications.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/notifications.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(15)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/keyboard.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/keyboard.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(16)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/games.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/games.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(17)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/chat.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/chat.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(18)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(19)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/videocam.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/videocam.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(20)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/looks.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/looks.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(21)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/desktop_windows.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/desktop_windows.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(22)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/language.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/language.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(23)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/windows.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/windows.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(25)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/update.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/update.svg) !important;
 }
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(28)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
 }
 
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/betterdiscord.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/betterdiscord.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/emote.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/emote.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/puzzle.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/puzzle.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
 }
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
-    background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
+  background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
 }
 
 /* ANIMACJE */
 
 /*animacja buttona edytowania wiadomosci*/
 .da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child {
-    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23FFFFFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3cpath d='M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z'/%3e%3c/svg%3e") !important;
-    background-size: 16px !important;
-    background-position: center !important;
-    opacity: 0;
-    visibility: visible;
+  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23FFFFFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3cpath d='M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z'/%3e%3c/svg%3e") !important;
+  background-size: 16px !important;
+  background-position: center !important;
+  opacity: 0;
+  visibility: visible;
 }
 .da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
-    -webkit-transform: translateZ(0);
-    -ms-transform: translateZ(0);
-    transform: translateZ(0);
-    -webkit-animation: edit1 2.8s infinite linear;
-    animation: edit1 2.8s infinite linear;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation: edit1 2.8s infinite linear;
+  animation: edit1 2.8s infinite linear;
 }
 .da-chat .da-messagesWrapper .da-container .da-contentCozy:hover .da-buttonContainer .da-button:last-child {
-    opacity: 0.3;
+  opacity: 0.3;
 }
 
 .da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child.popout-open,
 .da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
-    background-size: 105% !important;
-    opacity: 0.7 !important;
+  background-size: 105% !important;
+  opacity: 0.7 !important;
 }
 
 @-webkit-keyframes edit1 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 @keyframes edit1 {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
 }
 
 /*animacje przycisku Info i Disconnect*/
@@ -2848,110 +2848,110 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 **:not(:last-child), żeby nie edytować przycisków po rozłączeniu się z głosowego
 */
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex:hover {
-    background: rgba(0,0,0,0);
+  background: rgba(0, 0, 0, 0);
 }
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button .da-contents {
-    visibility: hidden;
+  visibility: hidden;
 }
 /*button Info*/
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(1) {
-    background-color: rgba(0,0,0,0);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  opacity: 0.5;
 }
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(1):hover {
-    -webkit-animation: info1 1s infinite alternate;
-    animation: info1 1s infinite alternate;
-    opacity: 1;
+  -webkit-animation: info1 1s infinite alternate;
+  animation: info1 1s infinite alternate;
+  opacity: 1;
 }
 @-webkit-keyframes info1 {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    to {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
 @keyframes info1 {
-    from {
-        -webkit-transform: scale(1);
-        transform: scale(1);
-    }
-    to {
-        -webkit-transform: scale(0.9);
-        transform: scale(0.9);
-    }
+  from {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  to {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
 }
 /*button Disconnect*/
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2) {
-    background-color: rgba(0,0,0,0);
-    background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 20px;
-    opacity: 0.5;
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  opacity: 0.5;
 }
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2):hover {
-    -webkit-animation: disconnect1 0.06s infinite alternate;
-    animation: disconnect1 0.06s infinite alternate;
-    opacity: 1;
+  -webkit-animation: disconnect1 0.06s infinite alternate;
+  animation: disconnect1 0.06s infinite alternate;
+  opacity: 1;
 }
 @-webkit-keyframes disconnect1 {
-    from {
-        -webkit-transform: rotate(-7deg);
-        transform: rotate(-7deg);
-    }
-    to {
-        -webkit-transform: rotate(7deg);
-        transform: rotate(7deg);
-    }
+  from {
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  to {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
 }
 @keyframes disconnect1 {
-    from {
-        -webkit-transform: rotate(-7deg);
-        transform: rotate(-7deg);
-    }
-    to {
-        -webkit-transform: rotate(7deg);
-        transform: rotate(7deg);
-    }
+  from {
+    -webkit-transform: rotate(-7deg);
+    transform: rotate(-7deg);
+  }
+  to {
+    -webkit-transform: rotate(7deg);
+    transform: rotate(7deg);
+  }
 }
 
 /*animacja po włączeniu motywu/discorda*/
 .app,
 body::after {
-    will-change: opacity, filter;
-    -webkit-animation: fadeIn 2s ease-out;
-    animation: fadeIn 2s ease-out;
+  will-change: opacity, filter;
+  -webkit-animation: fadeIn 2s ease-out;
+  animation: fadeIn 2s ease-out;
 }
 @-webkit-keyframes fadeIn {
-    0% {
-        opacity: 0;
-        -webkit-filter: blur(10px);
-        filter: blur(10px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
 }
 @keyframes fadeIn {
-    0% {
-        opacity: 0;
-        -webkit-filter: blur(10px);
-        filter: blur(10px);
-    }
-    100% {
-        opacity: 1;
-        -webkit-filter: blur(0px);
-        filter: blur(0px);
-    }
+  0% {
+    opacity: 0;
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+  }
 }
 
 /*Radial Status:hover*/
@@ -2963,47 +2963,47 @@ body::after {
 /*?*/
 .listRow-hutiT_:hover .da-status,
 .card-7JP0BX:hover .da-status {
-    width: 91% !important;
-    height: 91%;
-    right: -2px !important;
-    bottom: -2px;
-    padding: 2px;
-    transition: 0.1s;
-    border-radius: 50%;
+  width: 91% !important;
+  height: 91%;
+  right: -2px !important;
+  bottom: -2px;
+  padding: 2px;
+  transition: 0.1s;
+  border-radius: 50%;
 }
 /*left click uzytkownika, right click uzytkownika -> profil*/
 .da-userPopout .da-status,
 .da-header .da-status {
-    width: 98% !important;
-    height: 98%;
-    right: -3px !important;
-    bottom: -3px;
-    padding: 2px;
-    transition: 0.1s;
+  width: 98% !important;
+  height: 98%;
+  right: -3px !important;
+  bottom: -3px;
+  padding: 2px;
+  transition: 0.1s;
 }
 /*nick po wpisaniu @ na czacie*/
 .da-autocompleteRow:hover .da-status {
-    width: 82% !important;
-    height: 82%;
-    right: -2px !important;
-    bottom: -2px;
-    padding: 2px;
-    transition: 0.1s;
-    border-radius: 50%;
+  width: 82% !important;
+  height: 82%;
+  right: -2px !important;
+  bottom: -2px;
+  padding: 2px;
+  transition: 0.1s;
+  border-radius: 50%;
 }
 /*user na liscie na serwerze, user na liscie na serwerze po left clicku, wiadomosc prywatna*/
 .da-members .da-member:hover rect.da-pointerEvents,
 .da-members .da-member.popout-open rect.da-pointerEvents,
 .da-privateChannels .da-channel a:hover rect.da-pointerEvents {
-    /* width: 36px !important;
+  /* width: 36px !important;
     height: 36px !important; */
-    /* right: -4px;
+  /* right: -4px;
     bottom: -4px;
-    border-radius: 50%; */  
-    /* stroke:#43b581;
+    border-radius: 50%; */
+  /* stroke:#43b581;
     stroke-width: 3px;
     fill: transparent;   */
-    /* fill-opacity: 0.4;
+  /* fill-opacity: 0.4;
     x: -2 !important;
     y: -2 !important;
     z-index: -11 !important; */
@@ -3018,9 +3018,9 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 .da-members .da-member .da-content:hover .da-online,
 .da-members .da-member.popout-open .da-online,
 .da-userPopout .da-online {
-    background-color: transparent;
-    border: 2px solid #43b581 !important;
-    transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #43b581 !important;
+  transition: 0.2s;
 }
 .listRow-hutiT_:hover .da-idle,
 .card-7JP0BX:hover .da-idle,
@@ -3030,9 +3030,9 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 .da-members .da-member .da-content:hover .da-idle,
 .da-members .da-member.popout-open .da-idle,
 .da-userPopout .da-idle {
-    background-color: transparent;
-    border: 2px solid #faa61a !important;
-    transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #faa61a !important;
+  transition: 0.2s;
 }
 .listRow-hutiT_:hover .da-dnd,
 .card-7JP0BX:hover .da-dnd,
@@ -3042,9 +3042,9 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 .da-members .da-member .da-content:hover .da-dnd,
 .da-members .da-member.popout-open .da-dnd,
 .da-userPopout .da-dnd {
-    background-color: transparent;
-    border: 2px solid #f04747 !important;
-    transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #f04747 !important;
+  transition: 0.2s;
 }
 .listRow-hutiT_:hover .da-streaming,
 .card-7JP0BX:hover .da-streaming,
@@ -3054,9 +3054,9 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 .da-members .da-member .da-content:hover .da-streaming,
 .da-members .da-member.popout-open .da-streaming,
 .da-userPopout .da-streaming {
-    background-color: transparent;
-    border: 2px solid #593695 !important;
-    transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #593695 !important;
+  transition: 0.2s;
 }
 .listRow-hutiT_:hover .da-invisible,
 .card-7JP0BX:hover .da-invisible,
@@ -3066,9 +3066,9 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 .da-members .da-member .da-content:hover .da-invisible,
 .da-members .da-member.popout-open .da-invisible,
 .da-userPopout .da-invisible {
-    background-color: transparent;
-    border: 2px solid #747f8d !important;
-    transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #747f8d !important;
+  transition: 0.2s;
 }
 .listRow-hutiT_:hover .da-offline,
 .card-7JP0BX:hover .da-offline,
@@ -3078,108 +3078,109 @@ user na liscie na serwerze, user na liscie na serwerze po left clicku, left clic
 .da-members .da-member .da-content:hover .da-offline,
 .da-members .da-member.popout-open .da-offline,
 .da-userPopout .da-offline {
-    background-color: transparent;
-    border: 2px solid #747f8d !important;
-    transition: 0.2s;
+  background-color: transparent;
+  border: 2px solid #747f8d !important;
+  transition: 0.2s;
 }
 /*usunięcie maski zasłaniającej avatar w defaultowym discordzie*/
 .da-maskProfile,
 .da-mask {
-    mask: none;
-    -webkit-mask: none;
+  mask: none;
+  -webkit-mask: none;
 }
 /*prywatna wiadomosc i user na liscie na serwerze (kiedy pisze)*/
 .da-members .da-member .da-content:hover .da-status.da-typing,
 .da-privateChannels .da-channel:hover .da-status.da-typing {
-    left: -4px !important;
+  left: -4px !important;
 }
 .da-members .da-member .da-content:hover .da-status .da-pulsingEllipsis,
 .da-privateChannels .da-channel:hover .da-status .da-pulsingEllipsis {
-    left: 4px !important;
+  left: 4px !important;
 }
 
 /*animacja avataru wybranego uzytkownika*/
 [style*="avatars/214676791955161091"].da-image {
-    -webkit-animation: rotate1 40s linear infinite;
-    animation: rotate1 40s linear infinite;
+  -webkit-animation: rotate1 40s linear infinite;
+  animation: rotate1 40s linear infinite;
 }
 @-webkit-keyframes rotate1 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 @keyframes rotate1 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Randomowe */
 input {
-    transition: all 0.3s;
+  transition: all 0.3s;
 }
 input:focus {
-    border-color: var(--markup-blue) !important;
-    box-shadow: 0px 0px transparent;
+  border-color: var(--markup-blue) !important;
+  box-shadow: 0px 0px transparent;
 }
 
 /*przyciski w dolnym lewym przed i po połączeniu*/
 .da-base .da-sidebar .da-container:nth-child(2) button:hover,
 .da-base .da-sidebar .da-container:nth-child(3) button:hover {
-    background: transparent;
+  background: transparent;
 }
 
 [class*="theme-"] .chat-3bRxxu .title-wrap {
-    border-bottom: 0px;
+  border-bottom: 0px;
 }
 
 [class*="theme-"] .message-group.is-local-bot-message {
-    background-image: none !important;
-    box-shadow: -20px 0 rgba(0, 0, 0, 0.8), 20px 0 rgba(0, 0, 0, 0.8), -20px -1px 0 0 rgba(0, 0, 0, 0.8), -20px 1px 0 rgba(0, 0, 0, 0.8), 20px 1px 0 rgba(0, 0, 0, 0.8), 20px -1px 0 rgba(0, 0, 0, 0.8);
-    background-color: rgba(0, 0, 0, 0.8) !important;
+  background-image: none !important;
+  box-shadow: -20px 0 rgba(0, 0, 0, 0.8), 20px 0 rgba(0, 0, 0, 0.8), -20px -1px 0 0 rgba(0, 0, 0, 0.8), -20px 1px 0 rgba(0, 0, 0, 0.8), 20px 1px 0 rgba(0, 0, 0, 0.8),
+    20px -1px 0 rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
 [class*="theme-"] .da-noChannel {
-    background-color: rgba(0, 0, 0, 0.1) !important;
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 [class*="theme-"] .da-noChannel .da-title {
-    color: var(--markup-normal) !important;
+  color: var(--markup-normal) !important;
 }
 [class*="theme-"] .da-noChannel .da-text {
-    color: var(--markup-normal) !important;
+  color: var(--markup-normal) !important;
 }
 
 /*crash discorda*/
 #app-mount .da-errorPage {
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) !important;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) !important;
 }
 #app-mount .da-errorPage button {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 #app-mount .da-errorPage button:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*dolaczanie do nowego serwera popout*/
 [class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper {
-    background: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 [class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button {
-    color: var(--bt-text) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button[class*="lookFilled"] {
-    background: var(--bt-blue-bg) !important;
-    color: var(--bt-text) !important;
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
 }
 [class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button[class*="lookFilled"]:hover {
-    background: var(--bt-blue-bg-hover) !important;
-    color: var(--bt-text-hover) !important;
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
