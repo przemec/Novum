@@ -151,7 +151,7 @@ body::after {
 /* SCROLLBARY */
 
 /*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, activity feedzie i bibliotece gier, 
-prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
+  prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-thumb,
@@ -199,7 +199,7 @@ prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkow
 }
 
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
-lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
+  lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
 [class*="theme-"] .da-base .da-container > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-sidebarRegion > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-membersWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
@@ -222,14 +222,14 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
   background-color: var(--scroll-thumb) !important;
 }
 /* [class*="theme-"] .da-base .da-container>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-membersWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-privateChannels>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
-    border-color: var(--scroll-bg-bord)  !important;
-    background-color: var(--scroll-bg) !important;
-} */
+  [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+  [class*="theme-"] .da-membersWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+  [class*="theme-"] .da-searchResultsWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+  [class*="theme-"] .da-privateChannels>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+  [class*="theme-"] .da-messagesPopoutWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
+      border-color: var(--scroll-bg-bord)  !important;
+      background-color: var(--scroll-bg) !important;
+  } */
 
 /*panel z serwerami po samej lewej*/
 .wrapper-1Rf91z {
@@ -279,7 +279,7 @@ lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
   background: rgba(0, 0, 0, 0.6);
 }
 /*tlo Add server, Server discovery, 
-listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
+  listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .wrapper-1Rf91z .da-circleIconButton,
 .wrapper-1Rf91z .da-listItemWrapper > a {
   background: rgba(0, 0, 0, 0.6);
@@ -614,17 +614,17 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
   background: linear-gradient(to right, var(--default-selected), transparent) !important;
 }
 /* .da-members .da-member:hover::before,
-.da-members .da-member.popout-open::before {
-    content: "";
-    z-index: -1 !important;
-    position: absolute;
-    left: 8px;
-    height: 42px;
-    width: 100%;
-    border-radius: 5px;
-    opacity: 0.5;
-    background: linear-gradient(to right, var(--markup-blue), transparent) !important;
-} */
+  .da-members .da-member.popout-open::before {
+      content: "";
+      z-index: -1 !important;
+      position: absolute;
+      left: 8px;
+      height: 42px;
+      width: 100%;
+      border-radius: 5px;
+      opacity: 0.5;
+      background: linear-gradient(to right, var(--markup-blue), transparent) !important;
+  } */
 
 /*serwer - kanaly tekstowe i glosowe*/
 /*default tekstowy i glosowy*/
@@ -950,8 +950,8 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
   border-radius: 10px !important;
 }
 .da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
-  background: radial-gradient(ellipse at top, #00000000, #000000cc), linear-gradient(90deg, #000000cc 0, #00000000 40%, #00000000 60%, #000000cc),
-    linear-gradient(0deg, #000000cc 0, #00000000 25%);
+  background: radial-gradient(ellipse at top, #00000000, #000000cc),
+    linear-gradient(90deg, #000000cc 0, #00000000 40%, #00000000 60%, #000000cc), linear-gradient(0deg, #000000cc 0, #00000000 25%);
 }
 
 /*rzędy artykułów*/
@@ -1453,7 +1453,12 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"] {
   background-color: var(--default-hover) !important;
 }
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"]:not([class*="day--disabled"]):hover,
+[class*="theme-"]
+  .da-popout
+  [class*="react-datepicker"]
+  [class*="month"]
+  > [class*="week"]
+  [class*="day"]:not([class*="day--disabled"]):hover,
 [class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"] {
   background-color: var(--default-selected) !important;
 }
@@ -1466,7 +1471,12 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
   background-color: rgba(0, 0, 0, 0) !important;
 }
 /*dzień poza wybranym miesiącem*/
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="outside-month"]:not([class*="day--disabled"]) {
+[class*="theme-"]
+  .da-popout
+  [class*="react-datepicker"]
+  [class*="month"]
+  > [class*="week"]
+  [class*="outside-month"]:not([class*="day--disabled"]) {
   background-color: var(--default-hover) !important;
   opacity: 0.3 !important;
 }
@@ -1731,7 +1741,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .da-chat form {
   margin: 0px;
 }
-.da-chat .da-channelTextArea > .da-inner {
+.da-chat .da-channelTextArea > .da-scrollableContainer {
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1744,7 +1754,7 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
   border-color: var(--bt-blue-bg) !important;
 }
 /*input*/
-[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > .da-inner {
+[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > .da-scrollableContainer {
   background: var(--bt-blue-bg) !important;
 }
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload textarea {
@@ -1771,10 +1781,10 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 }
 
 /*
-```css
- tło tego co się tu wyśle ma czacie
-```
-*/
+  ```css
+   tło tego co się tu wyśle ma czacie
+  ```
+  */
 [class*="theme-"] .da-container .da-markup pre {
   background: rgba(0, 0, 0, 0) !important;
   border-color: rgba(0, 0, 0, 0) !important;
@@ -1783,8 +1793,8 @@ listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
   background: rgba(0, 0, 0, 0.5) !important;
 }
 /*
-` tło tego co się tu wyśle `
-*/
+  ` tło tego co się tu wyśle `
+  */
 [class*="theme-"] .da-container .da-markup .inline {
   background: rgba(0, 0, 0, 0.5) !important;
 }
@@ -2073,7 +2083,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover,
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"],
 [aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"],
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
+[aria-label*="SETTINGS"]
+  .da-systemPad
+  .da-sidebar
+  .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
   background: var(--default-selected) !important;
   color: var(--bt-text-hover) !important;
 }
@@ -2161,26 +2174,42 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*czesc ustawien serwera: Moderacja */
 /* zielony */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
 /* zolty */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
 /* pomaranczowy */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"],
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"],
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
   background: rgba(242, 97, 0, 0.3) !important;
   border-color: rgba(242, 97, 0, 0.3) !important;
 }
 /* czerwony */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
+[aria-label*="SETTINGS"]
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
@@ -2378,18 +2407,36 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*"Prywatnosc i bezpieczenstwo"*/
 /*polprzezroczyste pola u gory (zielony, pomaranczowy i czerowny)*/
-#user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
-#user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+#user-settings
+  .da-contentRegion
+  .da-radioGroup
+  .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
+#user-settings
+  .da-contentRegion
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
-#user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
-#user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+#user-settings
+  .da-contentRegion
+  .da-radioGroup
+  .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
+#user-settings
+  .da-contentRegion
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
-#user-settings .da-contentRegion .da-radioGroup .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
-#user-settings .da-contentRegion .da-radioGroup .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+#user-settings
+  .da-contentRegion
+  .da-radioGroup
+  .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
+#user-settings
+  .da-contentRegion
+  .da-radioGroup
+  .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
@@ -2843,10 +2890,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*animacje przycisku Info i Disconnect*/
 /*
-.da-base .da-sidebar .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) = button Info
-.da-base .da-sidebar .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2) = button Disconnect
-**:not(:last-child), żeby nie edytować przycisków po rozłączeniu się z głosowego
-*/
+  .da-base .da-sidebar .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) = button Info
+  .da-base .da-sidebar .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2) = button Disconnect
+  **:not(:last-child), żeby nie edytować przycisków po rozłączeniu się z głosowego
+  */
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex:hover {
   background: rgba(0, 0, 0, 0);
 }
@@ -2956,10 +3003,10 @@ body::after {
 
 /*Radial Status:hover*/
 /* rect.da-pointerEvents {
-    box-shadow: none !important;
-    -webkit-box-shadow: none !important;
-    pointer-events: none !important;
-} */
+      box-shadow: none !important;
+      -webkit-box-shadow: none !important;
+      pointer-events: none !important;
+  } */
 /*?*/
 .listRow-hutiT_:hover .da-status,
 .card-7JP0BX:hover .da-status {
@@ -2996,20 +3043,20 @@ body::after {
 .da-members .da-member.popout-open rect.da-pointerEvents,
 .da-privateChannels .da-channel a:hover rect.da-pointerEvents {
   /* width: 36px !important;
-    height: 36px !important; */
+      height: 36px !important; */
   /* right: -4px;
-    bottom: -4px;
-    border-radius: 50%; */
+      bottom: -4px;
+      border-radius: 50%; */
   /* stroke:#43b581;
-    stroke-width: 3px;
-    fill: transparent;   */
+      stroke-width: 3px;
+      fill: transparent;   */
   /* fill-opacity: 0.4;
-    x: -2 !important;
-    y: -2 !important;
-    z-index: -11 !important; */
+      x: -2 !important;
+      y: -2 !important;
+      z-index: -11 !important; */
 }
 /*po kolei: ?, ?, nick po wpisaniu @ na czacie, right click uzytkownika -> profil, wiadomosc prywatna, 
-user na liscie na serwerze, user na liscie na serwerze po left clicku, left click uzytkownika*/
+  user na liscie na serwerze, user na liscie na serwerze po left clicku, left click uzytkownika*/
 .listRow-hutiT_:hover .da-online,
 .card-7JP0BX:hover .da-online,
 .da-autocompleteRow:hover .da-online,
@@ -3141,8 +3188,8 @@ input:focus {
 
 [class*="theme-"] .message-group.is-local-bot-message {
   background-image: none !important;
-  box-shadow: -20px 0 rgba(0, 0, 0, 0.8), 20px 0 rgba(0, 0, 0, 0.8), -20px -1px 0 0 rgba(0, 0, 0, 0.8), -20px 1px 0 rgba(0, 0, 0, 0.8), 20px 1px 0 rgba(0, 0, 0, 0.8),
-    20px -1px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: -20px 0 rgba(0, 0, 0, 0.8), 20px 0 rgba(0, 0, 0, 0.8), -20px -1px 0 0 rgba(0, 0, 0, 0.8), -20px 1px 0 rgba(0, 0, 0, 0.8),
+    20px 1px 0 rgba(0, 0, 0, 0.8), 20px -1px 0 rgba(0, 0, 0, 0.8);
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
