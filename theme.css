@@ -1741,7 +1741,7 @@ body::after {
 .da-chat form {
   margin: 0px;
 }
-.da-chat .da-channelTextArea > .da-scrollableContainer {
+.da-chat .da-channelTextArea > [class*="scrollableContainer"] {
   background: rgba(0, 0, 0, 0.2);
 }
 
@@ -1754,7 +1754,7 @@ body::after {
   border-color: var(--bt-blue-bg) !important;
 }
 /*input*/
-[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > .da-scrollableContainer {
+[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > [class*="scrollableContainer"] {
   background: var(--bt-blue-bg) !important;
 }
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload textarea {
