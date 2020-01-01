@@ -302,7 +302,34 @@ body::after {
   border-radius: 20px;
 }
 .wrapper-1Rf91z .da-expandedFolderIconWrapper svg[style*="color: rgb(114, 137, 218)"] path {
-  fill: var(--markup-normal)
+  fill: var(--markup-normal);
+}
+/*background kiedy przesuwasz folder*/
+.wrapper-1Rf91z .da-listItem .da-dragInner {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+/*popout gdy edytujesz folder serwerów*/
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0px 0px;
+}
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer {
+  background: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0px 0px;
+}
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button {
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
+}
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button:hover {
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
+}
+/*popout z customowym kolorem*/
+[class*="theme-"] .da-layerContainer > .da-layer > .da-didRender .da-colorPickerCustom {
+  background: rgba(0, 0, 0, 1) !important;
+  border-color: rgba(0, 0, 0, 0);
 }
 
 /*popout po kliknieciu w Add Server*/
@@ -1977,7 +2004,8 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*AFK POPOUT **nie tylko AFK, parę innych też*/
 /*tło*/
-[class*="theme-"] .da-backdrop {
+[class*="theme-"] .da-backdrop,
+[class*="theme-"] .da-backdropWithLayer {
   background: linear-gradient(#00000011, #000000ff) !important;
 }
 [class*="theme-"] .da-backdrop[style="opacity: 0.85; background-color: rgb(0, 0, 0); z-index: 1000; transform: translateZ(0px);"] {
