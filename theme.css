@@ -301,6 +301,9 @@ body::after {
   background: rgba(0, 0, 0, 0.5) !important;
   border-radius: 20px;
 }
+.wrapper-1Rf91z .da-expandedFolderIconWrapper svg[style*="color: rgb(114, 137, 218)"] path {
+  fill: var(--markup-normal)
+}
 
 /*popout po kliknieciu w Add Server*/
 [class*="theme-"] .da-modal > .da-inner .da-animator {
