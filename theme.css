@@ -730,6 +730,19 @@ body::after {
   filter: brightness(10);
 }
 
+/*najechanie na osobe ktora jest live*/
+[id*="popout"].da-layer .da-streamPreview {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: transparent;
+}
+[id*="popout"].da-layer .da-streamPreview .da-previewContainer {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border: transparent;
+}
+[id*="popout"].da-layer .da-streamPreview .da-pro {
+  color: var(--markup-blue) !important;
+}
+
 /*ogladanie live na kanale glosowym*/
 /*backgroundy*/
 .da-container > .da-base > .da-content > .da-container {
@@ -2089,6 +2102,28 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*usuwanie wiadomości popout: pole z wiadomością*/
 .da-modal > .da-inner > .da-modal .da-content > .da-message {
   background: var(--default-hover) !important;
+}
+
+/*zaczecie streamowania popout: footer*/
+.da-modal > .da-inner > .da-modalOverhang .da-footer {
+  background: rgba(0, 0, 0, 0) !important;
+  box-shadow: 0px 0px !important;
+}
+.da-modal > .da-inner > .da-modalOverhang .da-footer > button {
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text) !important;
+}
+.da-modal > .da-inner > .da-modalOverhang .da-footer > button:hover {
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover) !important;
+}
+.da-modal > .da-inner > .da-modalOverhang .da-footer > button[class*="Primary"] {
+  background: var(--bt-red) !important;
+  color: var(--bt-text) !important;
+}
+.da-modal > .da-inner > .da-modalOverhang .da-footer > button[class*="Primary"]:hover {
+  background: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover) !important;
 }
 
 /*USTAWIENIA SERWERA*/
