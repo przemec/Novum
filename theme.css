@@ -477,16 +477,21 @@ body::after {
   background: rgba(0, 0, 0, 0.6) !important;
 }
 
-/*pola z serwerami przed i po załadowaniu*/
+/*pola z serwerami przed załadowaniem*/
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loading {
+  background: rgba(0, 0, 0, 0) !important;
+}
 [class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-cardPlaceholder,
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-card,
+/*pola z serwerami po załadowaniu*/
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > * > .da-card {
   background: rgba(0, 0, 0, 0.7) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"] {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > * > .da-card button[class*="colorBrand"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loaded > .da-card button[class*="colorBrand"]:hover {
+[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > * > .da-card button[class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
