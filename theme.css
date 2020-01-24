@@ -2968,13 +2968,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex:hover {
   background: rgba(0, 0, 0, 0);
 }
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button .da-contents {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2) .da-contents {
   visibility: hidden;
 }
 /*button Info*/
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(1) {
   background-color: rgba(0, 0, 0, 0);
-  background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important;
+  /* background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important; */
   background-position: center;
   background-repeat: no-repeat;
   background-size: 20px;
