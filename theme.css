@@ -1924,7 +1924,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*kolor linku na czacie*/
-.da-chat .da-messagesWrapper .da-container .da-markup > a {
+.da-chat .da-messagesWrapper .da-container .da-markup a {
   color: var(--markup-normal);
 }
 /*polprzezroczyste pola na czacie: linki*/
