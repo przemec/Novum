@@ -1792,6 +1792,10 @@ body::after {
 .da-chat .da-channelTextArea > [class*="scrollableContainer"] {
   background: rgba(0, 0, 0, 0.2);
 }
+/*pokolorowany tekst linku w inpucie*/
+.da-chat form [class*="fakeLink"] span {
+  color: var(--markup-normal)
+}
 
 /*wysyłanie plików na czat: popout*/
 [class*="theme-"] .da-uploadModal {
