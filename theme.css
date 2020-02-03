@@ -318,11 +318,11 @@ body::after {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button[class*="lookFilled-"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button:hover {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button[class*="lookFilled-"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
@@ -333,117 +333,117 @@ body::after {
 }
 
 /*popout po kliknieciu w Add Server*/
-[class*="theme-"] .da-modal > .da-inner .da-animator {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide {
   height: 450px;
   background: rgba(0, 0, 0, 0) !important;
   border-radius: 20px;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal {
-  background: rgba(0, 0, 0, 0.95) !important;
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody {
+  background: rgba(0, 0, 0, 0) !important;
 }
 /*header*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-header {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-header {
   color: var(--markup-blue) !important;
 }
 /*body*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-action {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions .da-action {
   background-color: rgba(0, 0, 0, 1) !important;
   border-radius: 10px;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-action .da-actionBody {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions .da-action .da-actionBody {
   min-height: 80px !important;
 }
 /*pole STWÓRZ*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionHeader {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="create"] .da-actionHeader {
   color: var(--markup-blue);
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"] .da-actionButton {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="create"] .da-actionButton {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
   border-radius: 10px;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="create"]:hover .da-actionButton {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="create"]:hover .da-actionButton {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
 /*pole DOŁĄCZ*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionHeader {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="join"] .da-actionHeader {
   color: rgba(0, 255, 128, 0.6);
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"] .da-actionButton {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="join"] .da-actionButton {
   background: rgba(0, 255, 128, 0.3);
   color: var(--bt-text);
   border-radius: 10px;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions [class*="join"]:hover .da-actionButton {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="join"]:hover .da-actionButton {
   background: rgba(0, 255, 128, 0.5);
   color: var(--bt-text-hover);
 }
 /*ukrycie pola OR*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-actions .da-or {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions .da-or {
   display: none;
 }
 /* po przejściu dalej */
 /*header*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-title {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-title {
   color: rgba(255, 255, 255, 0.8);
 }
 /*input*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal input {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody input {
   color: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 0.8) !important;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal input:focus {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody input:focus {
   color: rgba(255, 255, 255, 0.7);
   border-color: rgba(255, 255, 255, 1) !important;
 }
 /*linki*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal a,
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-sampleLink {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody a,
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-sampleLink {
   color: var(--markup-normal);
 }
 /*przycisk region servera*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect button {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-regionSelect button {
   color: rgba(255, 255, 255, 0.8) !important;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect:hover .da-regionSelectInner,
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-regionSelect:hover button {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-regionSelect:hover .da-regionSelectInner,
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-regionSelect:hover button {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: rgba(255, 255, 255, 0.9) !important;
 }
 /*popout z regionami serwera*/
-[class*="theme-"] .da-modal > .da-inner .da-regionSelectModal {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-regionSelectModal {
   background: rgba(0, 0, 0, 0.9) !important;
   border-radius: 20px;
 }
-[class*="theme-"] .da-modal > .da-inner .da-regionSelectModal .da-regionSelectModalOption {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-regionSelectModal .da-regionSelectModalOption {
   background: rgba(0, 0, 0, 0.95) !important;
   border-color: transparent !important;
   transition: 0.2s all;
 }
-[class*="theme-"] .da-modal > .da-inner .da-regionSelectModal .da-regionSelectModalOption:hover {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-regionSelectModal .da-regionSelectModalOption:hover {
   transform: scale(1.1);
 }
 /*footer*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
 /*button Stwórz*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"] {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-footer [class*="colorBrand"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorBrand"]:hover {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-footer [class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 /*button Dołącz*/
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"] {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-footer [class*="colorGreen"] {
   background: rgba(0, 255, 128, 0.4);
   color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-modal > .da-inner .da-animator .da-item > .da-modal .da-footer [class*="colorGreen"]:hover {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-footer [class*="colorGreen"]:hover {
   background: rgba(0, 255, 128, 0.5);
   color: var(--bt-text-hover) !important;
 }
@@ -1924,7 +1924,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*edytowanie wiadomosci > kolor "anulować" albo "zapisać"*/
 .da-chat .da-messagesWrapper .da-container .da-operations > a {
-  color: var(--markup-normal);
+  color: var(--markup-normal) !important;
 }
 
 /*kolor linku na czacie*/
