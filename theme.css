@@ -1414,25 +1414,27 @@ body::after {
   background: rgba(204, 204, 204, 0.1) !important;
   font-size: 14px;
   border-radius: 5px;
-  padding: 5px 15px;
+  padding: 7px 15px;
   text-align: center;
+  width: 90%;
 }
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider {
-  margin-top: 15px;
+  border-color: transparent;
+  margin-top: 35px;
+  margin-bottom: 15px;
 }
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-dividerRed) > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-isUnread) > span {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 /*nowa wiadomosc*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > span {
   background: var(--default-hover) !important;
-}
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-dividerRed > span {
   color: var(--markup-intensive) !important;
+  padding: 12px 0px;
+  width: 100%;
 }
-/*paski po bokach daty wiadomosci*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::before,
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span::after {
+/*svg po bokach nowej wiadomosci*/
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider .da-unreadPillCap {
   visibility: hidden;
 }
 
