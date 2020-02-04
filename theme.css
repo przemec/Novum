@@ -1258,12 +1258,12 @@ body::after {
 .da-chat .da-video,
 .da-chat > .da-container.da-transparent {
   background: rgba(0, 0, 0, 0) !important;
-  border-radius: 0 0 0 28px;
+  /* border-radius: 0 0 0 28px; */
 }
 .da-chat .da-animated,
 .da-chat > .da-wrapper {
   background: rgba(0, 0, 0, 0.1) !important;
-  border-radius: 0 0 0 28px;
+  /* border-radius: 0 0 0 28px; */
 }
 .da-chat .da-video .da-center {
   background: rgba(0, 0, 0, 0.4) !important;
