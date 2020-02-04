@@ -1789,8 +1789,15 @@ body::after {
 .da-chat form {
   margin: 0px;
 }
+.da-chat form::before {
+  background: transparent !important;
+}
+.da-chat .da-channelTextArea,
 .da-chat .da-channelTextArea > [class*="scrollableContainer"] {
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.1);
+}
+.da-chat .da-channelTextArea > [class*="scrollableContainer"] .da-attachWrapper {
+  border-right-color: rgba(255, 255, 255, 0.1);
 }
 /*pokolorowany tekst linku w inpucie*/
 .da-chat form [class*="fakeLink"] span {
