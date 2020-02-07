@@ -1907,16 +1907,17 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*oznaczenie ciebie na czacie*/
-.da-content .da-content .da-isMentioned {
-  background: linear-gradient(90deg, var(--markup-normal-transparent) 0%, transparent 80%) !important;
+.da-content .da-content .da-mentioned {
+  border-radius: 5px;
+  background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
 }
-.da-content .da-content .da-isMentioned .da-markup .mention {
+.da-content .da-content .da-mentioned .da-markup .mention {
   color: var(--markup-intensive);
 }
 /*kolorowa linia po lewej*/
-.da-content .da-content .da-isMentioned::after {
-  left: -4px;
-  background-color: rgba(0, 0, 0, 0.1);
+.da-content .da-content .da-mentioned::before {
+  left: 3px;
+  border-radius: 5px 0 0 5px;
   background: var(--markup-intensive);
   border-left: 2px solid var(--markup-intensive);
 }
