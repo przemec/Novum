@@ -1410,7 +1410,7 @@ body::after {
 
 /*data wiadomosci na czacie*/
 /*cały divider*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > .da-unreadPill {
   background: rgba(204, 204, 204, 0.1) !important;
   font-size: 14px;
   border-radius: 5px;
@@ -1427,11 +1427,18 @@ body::after {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 /*nowa wiadomosc*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > .da-unreadPill {
   background: var(--default-hover) !important;
   color: var(--markup-intensive) !important;
   padding: 12px 0px;
   width: 100%;
+}
+/*data nowej wiadomosci*/
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > .da-content {
+  background: transparent !important;
+  color: var(--markup-intensive) !important;
+  width: 95%;
+  transform: translateY(6px);
 }
 /*svg po bokach nowej wiadomosci*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider .da-unreadPillCap {
