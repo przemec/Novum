@@ -1410,7 +1410,7 @@ body::after {
 
 /*data wiadomosci na czacie*/
 /*cały divider*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider > .da-unreadPill {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-isUnread) > span {
   background: rgba(204, 204, 204, 0.1) !important;
   font-size: 14px;
   border-radius: 5px;
@@ -1432,6 +1432,7 @@ body::after {
   color: var(--markup-intensive) !important;
   padding: 12px 0px;
   width: 100%;
+  font-size: 14px;
 }
 /*data nowej wiadomosci*/
 [class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > .da-content {
