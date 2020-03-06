@@ -362,7 +362,15 @@ body::after {
   color: var(--bt-text);
   border-radius: 10px;
 }
-[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="create"]:hover .da-actionButton {
+[class*="theme-"]
+  .da-layerContainer
+  > .da-layer
+  > .da-focusLock
+  .da-slide
+  .da-slideBody
+  .da-actions
+  [class*="create"]:hover
+  .da-actionButton {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
@@ -375,7 +383,15 @@ body::after {
   color: var(--bt-text);
   border-radius: 10px;
 }
-[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-slide .da-slideBody .da-actions [class*="join"]:hover .da-actionButton {
+[class*="theme-"]
+  .da-layerContainer
+  > .da-layer
+  > .da-focusLock
+  .da-slide
+  .da-slideBody
+  .da-actions
+  [class*="join"]:hover
+  .da-actionButton {
   background: rgba(0, 255, 128, 0.5);
   color: var(--bt-text-hover);
 }
@@ -1811,7 +1827,7 @@ body::after {
 }
 /*pokolorowany tekst linku w inpucie*/
 .da-chat form [class*="fakeLink"] span {
-  color: var(--markup-normal)
+  color: var(--markup-normal);
 }
 
 /*wysyłanie plików na czat: popout*/
@@ -1887,12 +1903,13 @@ body::after {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/*zarzadzanie wiadomoscia na czacie, popout*/
-.da-popouts [class*="popoutBottom-"] > .da-container {
+/*reakcje/zarzadzanie wiadomoscia na czacie, popout*/
+.da-message .da-buttonContainer > .da-container .da-wrapper {
   background: rgba(0, 0, 0, 0.7);
 }
-.da-popouts [class*="popoutBottom-"] > .da-container .da-button:hover {
-  background: rgba(0, 0, 0, 0.5);
+.da-message .da-buttonContainer > .da-container .da-wrapper .da-button.da-selected,
+.da-message .da-buttonContainer > .da-container .da-wrapper .da-button:hover {
+  background: rgba(0, 0, 0, 1);
 }
 
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie*/
@@ -1941,7 +1958,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*edytowanie wiadomosci > kolor "anulować" albo "zapisać"*/
-.da-chat .da-messagesWrapper .da-container .da-operations > a {
+.da-chat .da-messagesWrapper .da-message .da-operations > a {
   color: var(--markup-normal) !important;
 }
 
