@@ -1967,14 +1967,14 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: var(--markup-normal);
 }
 /*polprzezroczyste pola na czacie: linki*/
-.da-chat .da-messagesWrapper .da-container .da-embed .da-embedPill {
+.da-chat .da-messagesWrapper .da-message .da-embed .da-embedPill {
   background: var(--markup-intensive) !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-embed {
+.da-chat .da-messagesWrapper .da-message .da-embed {
   background: var(--markup-normal-transparent) !important;
   border-color: var(--markup-intensive) !important;
 }
-.da-chat .da-messagesWrapper .da-container .da-embed .da-embedTitleLink {
+.da-chat .da-messagesWrapper .da-message .da-embed .da-embedTitleLink {
   color: var(--markup-blue-light) !important;
 }
 
