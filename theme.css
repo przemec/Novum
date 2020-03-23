@@ -808,15 +808,18 @@ body::after {
   border-right-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/*wiadomosc, protip wyswietlajacy sie nowym kontom na serwerze nad tekstowymi*/
-.da-base .da-sidebar .da-channelNotices .da-channelNotice {
+/*wiadomosc, protip wyswietlajacy sie nowym kontom na serwerze nad tekstowymi (quick switcher)*/
+.da-base .da-sidebar .da-channelNotice {
   background-color: rgba(0, 0, 0, 0.1) !important;
   border-radius: 0px 0px 15px 0px;
   border-color: transparent;
   box-shadow: 0px 0px;
 }
-.da-base .da-sidebar .da-channelNotices .da-channelNotice button {
+.da-base .da-sidebar .da-channelNotice button {
   background-color: rgba(0, 0, 0, 0.2) !important;
+}
+.da-base .da-sidebar .da-channelNotice button:hover {
+  background-color: rgba(0, 0, 0, 0.3) !important;
 }
 
 /*searchbar po lewej u góry w prywatnych wiadomosciach*/
