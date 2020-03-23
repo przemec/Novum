@@ -258,7 +258,8 @@ body::after {
 }
 .wrapper-1Rf91z a .da-acronym:hover,
 .wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym),
-.wrapper-1Rf91z a .da-acronym.da-selected {
+.wrapper-1Rf91z a .da-acronym.da-selected,
+.wrapper-1Rf91z a.da-selected .da-acronym {
   background: rgba(0, 0, 0, 0.6);
 }
 /*tlo glownej ikony discorda*/
