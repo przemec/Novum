@@ -567,6 +567,16 @@ body::after {
   border-bottom-color: transparent;
 }
 
+/*wlaczenie kamery/udostepniania ekranu pod statusem polaczenia*/
+.da-content .da-panels .da-container .da-actionButtons button {
+  background: var(--default-hover) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+.da-content .da-panels .da-container .da-actionButtons button:hover {
+  background: var(--default-selected) !important;
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
 /*status online polaczenia*/
 [id*="popout"] [class*="animator"] > .da-container,
 [id*="popout"] [class*="animator"] > .da-container > header {
@@ -1967,7 +1977,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*kolor linku na czacie*/
-.da-chat .da-messagesWrapper .da-container .da-markup a {
+.da-chat .da-messagesWrapper .da-message .da-markup a {
   color: var(--markup-normal);
 }
 /*polprzezroczyste pola na czacie: linki*/
