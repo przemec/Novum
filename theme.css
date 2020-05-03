@@ -2083,103 +2083,103 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   opacity: 1;
 }
 /*popout*/
-.da-modal > .da-inner > .da-modal.da-container {
+.da-modal > .da-inner .da-modal.da-container {
   background: rgba(0, 0, 0, 0.9);
   border-color: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-.da-modal > .da-inner > .da-modal.da-container * {
+.da-modal > .da-inner .da-modal.da-container * {
   border-color: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-.da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"] {
+.da-modal > .da-inner .da-modal.da-container .da-button[class*="lookFilled"] {
   background: var(--bt-red) !important;
   color: var(--bt-text) !important;
 }
-.da-modal > .da-inner > .da-modal.da-container .da-button[class*="lookFilled"]:hover {
+.da-modal > .da-inner .da-modal.da-container .da-button[class*="lookFilled"]:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 /*HEADER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner > .da-modal .da-header {
+.da-modal > .da-inner .da-modal .da-header {
   background: rgba(0, 0, 0, 0) !important;
   border-radius: 5px 5px 0px 0px;
 }
-.da-modal > .da-inner > .da-modal .da-header.da-separator {
+.da-modal > .da-inner .da-modal .da-header.da-separator {
   box-shadow: 0px 0px;
 }
 /*CHECKBOXY z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner > .da-modal .da-switch {
+.da-modal > .da-inner .da-modal .da-switch {
   background: rgba(0, 0, 0, 0.6) !important;
   box-shadow: 0px 0px !important;
 }
-.da-modal > .da-inner > .da-modal .da-switch[class*="valueChecked"] {
+.da-modal > .da-inner .da-modal .da-switch[class*="valueChecked"] {
   background: var(--bt-blue-bg) !important;
 }
-.da-modal > .da-inner > .da-modal .da-checkbox.da-checked {
+.da-modal > .da-inner .da-modal .da-checkbox.da-checked {
   background: var(--bt-blue-bg) !important;
   border-color: transparent !important;
 }
 /*LINKI z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner > .da-modal a {
+.da-modal > .da-inner .da-modal a {
   color: var(--markup-normal);
 }
 /*zaznaczalne szerokie pola z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner > .da-modal .da-cardPrimaryEditable {
+.da-modal > .da-inner .da-modal .da-cardPrimaryEditable {
   background: rgba(0, 0, 0, 0.5) !important;
   border-color: transparent !important;
 }
-.da-modal > .da-inner > .da-modal .da-cardPrimaryEditable[style*="background"] {
+.da-modal > .da-inner .da-modal .da-cardPrimaryEditable[style*="background"] {
   background: rgba(0, 0, 0, 0.9) !important;
   border-color: transparent !important;
 }
 /*rozwijalne MENU z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner > .da-modal .da-select > [class*="css-"],
-.da-modal > .da-inner > .da-modal .da-select [class*="-menu"] {
+.da-modal > .da-inner .da-modal .da-select > [class*="css-"],
+.da-modal > .da-inner .da-modal .da-select [class*="-menu"] {
   background: rgba(0, 0, 0, 0.9) !important;
   border-color: rgba(0, 0, 0, 0.9) !important;
 }
-.da-modal > .da-inner > .da-modal .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+.da-modal > .da-inner .da-modal .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
   background: rgba(0, 0, 0, 1) !important;
 }
 /*FOOTER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner > .da-modal .da-footer {
+.da-modal > .da-inner .da-modal .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   /* margin-top: 10px; */
   box-shadow: 0px 0px;
 }
-.da-modal > .da-inner > .da-modal .da-footer > button {
+.da-modal > .da-inner .da-modal .da-footer > button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-.da-modal > .da-inner > .da-modal .da-footer > button:hover {
+.da-modal > .da-inner .da-modal .da-footer > button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 
 /*usuwanie wiadomości popout: pole z wiadomością*/
-.da-modal > .da-inner > .da-modal .da-content > .da-message {
+.da-modal > .da-inner .da-modal .da-content > .da-message {
   background: var(--default-hover) !important;
 }
 
 /*zaczecie streamowania popout: footer*/
-.da-modal > .da-inner > .da-modalOverhang .da-footer {
+.da-modal > .da-inner .da-modalOverhang .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px !important;
 }
-.da-modal > .da-inner > .da-modalOverhang .da-footer > button {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-.da-modal > .da-inner > .da-modalOverhang .da-footer > button:hover {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-.da-modal > .da-inner > .da-modalOverhang .da-footer > button[class*="Primary"] {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button[class*="Primary"] {
   background: var(--bt-red) !important;
   color: var(--bt-text) !important;
 }
-.da-modal > .da-inner > .da-modalOverhang .da-footer > button[class*="Primary"]:hover {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button[class*="Primary"]:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
