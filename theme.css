@@ -1646,28 +1646,28 @@ body::after {
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem*/
-[class*="theme-"] .da-contextMenu {
+[class*="theme-"] [class*="contextMenu"] {
   background-color: rgba(0, 0, 0, 0.95) !important;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-.da-contextMenu > [class*="itemGroup-"] > .da-item {
+[class*="contextMenu"] > [class*="itemGroup-"] > .da-item {
   background-color: rgba(0, 0, 0, 0);
   color: #ffffff;
   border: 0px !important;
 }
-.da-contextMenu > [class*="itemGroup-"] > .da-item:hover {
+[class*="contextMenu"] > [class*="itemGroup-"] > .da-item:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 /*item w wysuniętym menu*/
-.da-contextMenu > [class*="itemGroup-"] .da-item .da-contextMenu .da-item:hover {
+[class*="contextMenu"] > [class*="itemGroup-"] .da-item [class*="contextMenu"] .da-item:hover {
   background-color: rgba(0, 0, 0, 0.6);
 }
 /*pasek głośności*/
-.da-contextMenu > [class*="itemGroup-"] .da-bar .da-barFill {
+[class*="contextMenu"] > [class*="itemGroup-"] .da-bar .da-barFill {
   background-color: var(--bt-blue-bg-hover) !important;
 }
 /*checkboxy*/
-.da-contextMenu [class*="itemGroup-"] .da-item .da-checkboxElement:checked + span {
+[class*="contextMenu"] [class*="itemGroup-"] .da-item .da-checkboxElement:checked + span {
   background-color: var(--bt-blue-bg-hover) !important;
   border-color: var(--bt-blue-bg-hover) !important;
 }
