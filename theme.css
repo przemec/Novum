@@ -841,7 +841,7 @@ body::after {
   background: rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.05), 0 2px 0 rgba(0, 0, 0, 0.05);
 }
-.da-privateChannels .da-searchBar .da-container {
+.da-privateChannels .da-searchBar .da-searchBarComponent {
   background: rgba(0, 0, 0, 0.2) !important;
 }
 
