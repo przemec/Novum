@@ -157,7 +157,7 @@ body::after {
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-thumb {
+[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap ::-webkit-scrollbar-thumb {
   border-color: transparent !important;
   background-color: transparent !important;
 }
@@ -166,7 +166,7 @@ body::after {
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track,
-[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-track {
+[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap ::-webkit-scrollbar-track {
   border-color: transparent !important;
   background-color: transparent !important;
 }
@@ -175,7 +175,7 @@ body::after {
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap ::-webkit-scrollbar-track-piece {
+[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap ::-webkit-scrollbar-track-piece {
   border-color: transparent !important;
   background-color: transparent !important;
 }
@@ -184,7 +184,7 @@ body::after {
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
+[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
   border-color: var(--scroll-thumb) !important;
   background-color: var(--scroll-thumb) !important;
 }
@@ -193,7 +193,7 @@ body::after {
 [class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 #user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
+[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
   border-color: var(--scroll-bg-bord) !important;
   background-color: var(--scroll-bg) !important;
 }
@@ -217,7 +217,7 @@ body::after {
 [class*="theme-"] .da-privateChannels > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"] > .da-container > section .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
+[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
   border-color: var(--scroll-thumb) !important;
   background-color: var(--scroll-thumb) !important;
 }
@@ -621,15 +621,18 @@ body::after {
   background: var(--default-selected) !important;
   color: rgba(255, 255, 255, 0.8) !important;
 }
+
 /*popout po kliknieciu + w rolach uzytkownika*/
-[id*="popout"] [class*="animator"] > .da-container > .da-autocompleteShadow,
+[id*="popout"] [class*="animator"] > .da-container .da-autocompleteShadow,
 [id*="popout"] [class*="animator"] > .da-container .da-autocompleteHeaderBackground,
+[id*="popout"] [class*="animator"] > .da-container .da-header,
+[id*="popout"] [class*="animator"] > .da-container section,
 [id*="popout"] [class*="animator"] > .da-container .da-autocompleteArrow {
-  background: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.4) !important;
   box-shadow: 0px 0px !important;
 }
 /*hover roli*/
-[id*="popout"] [class*="animator"] > .da-container > section .da-selected {
+[id*="popout"] [class*="animator"] > .da-container section .da-row.da-selected {
   background: rgba(0, 0, 0, 1) !important;
 }
 
