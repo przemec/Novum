@@ -2024,7 +2024,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*polprzezroczyste pola na czacie: plik podczas wysylania na czat*/
-.da-chat .da-messagesWrapper .da-container .da-progressBar {
+.da-chat .da-messagesWrapper .da-wrapper .da-attachment {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: #000000 !important;
+}
+.da-chat .da-messagesWrapper .da-wrapper .da-attachment .da-progressBar {
   background: var(--markup-intensive) !important;
 }
 
