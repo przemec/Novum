@@ -1920,13 +1920,31 @@ body::after {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
-/*reakcje/zarzadzanie wiadomoscia na czacie, popout*/
+/*reakcje/zarzadzanie/edytowanie wiadomoscia na czacie, popout*/
 .da-message .da-buttonContainer > .da-container .da-wrapper {
   background: rgba(0, 0, 0, 0.7);
 }
 .da-message .da-buttonContainer > .da-container .da-wrapper .da-button.da-selected,
 .da-message .da-buttonContainer > .da-container .da-wrapper .da-button:hover {
   background: rgba(0, 0, 0, 1);
+}
+
+/*klik prawym na wiadomosc na czacie popout*/
+.da-layerContainer .da-layer .da-menu {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
+}
+/*menu pokazywane po najechaniu na opcje z ">" */
+.da-layerContainer .da-layer .da-menu .da-submenu {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+/*przyciski 4 quick reakcji*/
+.da-layerContainer .da-layer .da-menu .da-wrapper .da-customItem .da-button {
+  background: rgba(0, 0, 0, 1);
+  transition: all 0.2s ease-in-out;
+}
+.da-layerContainer .da-layer .da-menu .da-wrapper .da-customItem .da-button:hover {
+  transform: scale(1.1);
 }
 
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie*/
