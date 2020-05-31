@@ -1224,16 +1224,17 @@ body::after {
   box-shadow: 0px 0px;
 }
 .da-container .da-quickswitcher .da-input {
-  background-color: rgba(65, 65, 197, 0.1);
+  background-color: var(--default-hover);
 }
 .da-container .da-quickswitcher .da-resultFocused {
-  background-color: rgba(65, 65, 197, 0.05);
+  background-color: var(--default-hover);
 }
-.da-container .da-quickswitcher .da-keybindShortcut span {
-  background: var(--bt-blue-bg) !important;
+.da-container .da-quickswitcher .da-protip span {
+  background: var(--markup-blue) !important;
 }
-.da-container .da-quickswitcher .da-keybindShortcut span:hover {
-  background: var(--bt-blue-bg-hover) !important;
+.da-container .da-quickswitcher .da-protip a,
+.da-container .da-quickswitcher .da-protip .da-pro {
+  color: var(--markup-blue) !important;
 }
 
 /*prywatne wiadomosci: poszczegolni znajomi (wybor do kogo chcesz pisac)*/
@@ -1366,48 +1367,49 @@ body::after {
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar {
   background-color: transparent !important;
 }
-/*wybór koloru ręki*/
-[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout {
-  background-color: rgba(0, 0, 0, 0.7) !important;
-}
-[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-popout .da-item:hover {
-  background-color: rgba(0, 0, 0, 1) !important;
+/*header z searchbarem, kategorie po boku i info o emoji u dolu*/
+[id*="popout"] .da-emojiPicker > .da-header,
+[id*="popout"] [id*="emoji"] > .da-categoryList,
+[id*="popout"] .da-emojiPicker > .da-inspector {
+  background: rgba(0, 0, 0, 1);
 }
 /*pasek wyszukiwania*/
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar .da-inner,
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--default-hover);
   color: #ffffff;
   border: 1px solid transparent;
 }
+/*wybór koloru ręki*/
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-diversitySelectorPopout {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border-color: #000;
+}
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover {
+  background-color: rgba(0, 0, 0, 1) !important;
+}
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
+  transform: scale(1.1);
+}
 /*sticky header*/
-[id*="popout"] .da-emojiPicker .da-scroller > .da-stickyHeader,
-[id*="popout"] .da-emojiPicker .da-scroller > .da-stickyHeader .da-category {
+[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection .da-categoryWrapper {
   background: rgba(0, 0, 0, 0.5) !important;
-  color: #ffffff;
 }
-/*header kategorii*/
-[id*="popout"] .da-emojiPicker .da-scroller > .da-category {
-  background: transparent !important;
-  color: #cacaca;
+[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection .da-categoryWrapper .da-category {
+  color: #fff;
 }
-/*info o emoji u dolu, pasek z kategoriami u dolu*/
-[id*="popout"] .da-emojiPicker .da-infoBar,
-[id*="popout"] .da-emojiPicker .da-categories {
-  background: rgba(0, 0, 0, 0.9);
-}
-/*wybrana kategoria z ikon u dołu*/
-[id*="popout"] .da-emojiPicker .da-categories .da-item.da-selected {
+/*wybrana kategoria z ikon po lewej*/
+[id*="popout"] .da-emojiPicker .da-categories .da-emojiItem.da-emojiItemSelected {
   border-bottom-color: var(--default-hover);
   background-color: var(--default-selected);
 }
 /*pojedyncza emotka*/
-[id*="popout"] .da-emojiPicker .da-scroller > .da-row > .da-emojiItem {
+[id*="popout"] .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem {
   transition: all 0.3s;
-  opacity: 0.7;
+  opacity: 0.6;
 }
-[id*="popout"] .da-emojiPicker .da-scroller > .da-row > .da-emojiItem.da-selected {
-  transform: scale(1.5);
+[id*="popout"] .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem.da-emojiItemSelected {
+  transform: scale(1.25);
   opacity: 1;
   background-color: transparent;
 }
