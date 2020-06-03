@@ -2127,6 +2127,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
+/*lista reakcji - tło*/
+.da-modal > .da-inner .da-modal.da-container .da-reactors {
+  background: rgba(0, 0, 0, 0);
+}
 /*HEADER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner .da-modal .da-header {
   background: rgba(0, 0, 0, 0) !important;
