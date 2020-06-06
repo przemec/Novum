@@ -1967,6 +1967,18 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .da-messagesWrapper .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.9) !important;
 }
+/*popout w inpucie czatu przy oznaczaniu kogos na czacie podczas wstawiania wiadomości*/
+.da-uploadModal .da-autocomplete {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+.da-uploadModal .da-autocomplete .da-autocompleteInner {
+  background: rgba(0, 0, 0, 0) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+.da-uploadModal .da-autocomplete .da-autocompleteInner .da-selectorSelected {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
 
 /*oznaczenie ciebie na czacie*/
 .da-content .da-content .da-mentioned {
