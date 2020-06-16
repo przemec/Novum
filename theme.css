@@ -1515,35 +1515,35 @@ body::after {
 }
 
 /*wyszukiwanie wiadomiosci na czacie: okno wyskakujace po kliknieciu*/
-[class*="theme-"] .da-popout .da-container {
+[class*="theme-"] [id*="popout"] .da-container {
   background-color: rgba(0, 0, 0, 0.9) !important;
   box-shadow: 5px 10px rgba(0, 0, 0, 0);
 }
-[class*="theme-"] .da-popout [class*="resultsGroup-"] [class*="selected-"],
-[class*="theme-"] .da-popout [class*="resultsGroup-"] [class*="option"]:hover {
+[class*="theme-"] [id*="popout"] [class*="resultsGroup-"] [class*="selected-"],
+[class*="theme-"] [id*="popout"] [class*="resultsGroup-"] [class*="option"]:hover {
   background: rgba(0, 0, 0, 9);
 }
 /*szary fade i divider*/
-[class*="theme-"] .da-popout [class*="resultsGroup-"]::before,
-[class*="theme-"] .da-popout [class*="resultsGroup-"] [class*="option-"]::after {
+[class*="theme-"] [id*="popout"] [class*="resultsGroup-"]::before,
+[class*="theme-"] [id*="popout"] [class*="resultsGroup-"] [class*="option-"]::after {
   visibility: hidden !important;
 }
 /*po wyszukaniu wiadomosci od uzytkownika, gdy klikniesz ponownie na search*/
-[class*="theme-"] .da-popout [class*="queryContainer-"] {
+[class*="theme-"] [id*="popout"] [class*="queryContainer-"] {
   background: rgba(0, 0, 0, 9);
 }
 /*przycisk ENTER*/
-[class*="theme-"] .da-popout [class*="queryContainer-"] span {
+[class*="theme-"] [id*="popout"] [class*="queryContainer-"] span {
   display: none;
 }
 /*kalendarz, gdy wybieramy datę wysłania wiadomości*/
-[class*="theme-"] .da-popout .da-datePicker {
+[class*="theme-"] [id*="popout"] .da-datePicker {
   background-color: rgba(0, 0, 0, 0.9);
 }
-[class*="theme-"] .da-popout [class*="react-datepicker"] {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"] {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"] {
   background-color: var(--default-hover) !important;
 }
 [class*="theme-"]
@@ -1552,15 +1552,15 @@ body::after {
   [class*="month"]
   > [class*="week"]
   [class*="day"]:not([class*="day--disabled"]):hover,
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"] {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"] {
   background-color: var(--default-selected) !important;
 }
 /*pasek u dołu wybranego dnia*/
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"]::after {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"]::after {
   background-color: var(--default-selected) !important;
 }
 /*dzień niemożliwy do wybrania*/
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day--disabled"] {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day--disabled"] {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 /*dzień poza wybranym miesiącem*/
@@ -1574,12 +1574,12 @@ body::after {
   opacity: 0.3 !important;
 }
 /*button hint u dołu*/
-[class*="theme-"] .da-popout .da-datePicker [class*="hintValue"] {
+[class*="theme-"] [id*="popout"] .da-datePicker [class*="hintValue"] {
   margin-left: 5px;
   background-color: var(--bt-red);
   color: var(--bt-text);
 }
-[class*="theme-"] .da-popout .da-datePicker [class*="hintValue"]:hover {
+[class*="theme-"] [id*="popout"] .da-datePicker [class*="hintValue"]:hover {
   background-color: var(--bt-red-hover);
   color: var(--bt-text-hover);
 }
