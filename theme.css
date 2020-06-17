@@ -2839,14 +2839,16 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: var(--markup-normal);
 }
 /*switch checkboxy (da-switch jest np po rozwinięciu danego pluginu)*/
-#bd-settingspane-container .da-switch,
-#bd-settingspane-container .ui-switch {
-  background: rgba(0, 0, 0, 0.4) !important;
+#bd-settingspane-container .bd-switch {
+  background: rgba(0, 0, 0, 0.6) !important;
   box-shadow: 0px 0px !important;
 }
-#bd-settingspane-container .da-switch[class*="Checked"],
-#bd-settingspane-container .ui-switch.checked {
+#bd-settingspane-container .bd-switch-checked {
   background: var(--bt-blue-bg) !important;
+}
+/*searchbar (na liscie motywow/pluginow)*/
+#bd-settingspane-container .bd-search-wrapper {
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*Custom CSS*/
@@ -3102,7 +3104,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   }
 }
 /*button Disconnect*/
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2) {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2) svg {
+  display: none;
+}
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2) {
   background-color: rgba(0, 0, 0, 0);
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important;
   background-position: center;
@@ -3110,7 +3115,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background-size: 20px;
   opacity: 0.5;
 }
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2):hover {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2):hover {
   -webkit-animation: disconnect1 0.06s infinite alternate;
   animation: disconnect1 0.06s infinite alternate;
   opacity: 1;
@@ -3168,152 +3173,16 @@ body::after {
   }
 }
 
-/*Radial Status:hover*/
-/* rect.da-pointerEvents {
-      box-shadow: none !important;
-      -webkit-box-shadow: none !important;
-      pointer-events: none !important;
-  } */
-/*?*/
-.listRow-hutiT_:hover .da-status,
-.card-7JP0BX:hover .da-status {
-  width: 91% !important;
-  height: 91%;
-  right: -2px !important;
-  bottom: -2px;
-  padding: 2px;
-  transition: 0.1s;
-  border-radius: 50%;
-}
-/*left click uzytkownika, right click uzytkownika -> profil*/
-.da-userPopout .da-status,
-.da-header .da-status {
-  width: 98% !important;
-  height: 98%;
-  right: -3px !important;
-  bottom: -3px;
-  padding: 2px;
-  transition: 0.1s;
-}
-/*nick po wpisaniu @ na czacie*/
-.da-autocompleteRow:hover .da-status {
-  width: 82% !important;
-  height: 82%;
-  right: -2px !important;
-  bottom: -2px;
-  padding: 2px;
-  transition: 0.1s;
-  border-radius: 50%;
-}
-/*user na liscie na serwerze, user na liscie na serwerze po left clicku, wiadomosc prywatna*/
-.da-members .da-member:hover rect.da-pointerEvents,
-.da-members .da-member.popout-open rect.da-pointerEvents,
-.da-privateChannels .da-channel a:hover rect.da-pointerEvents {
-  /* width: 36px !important;
-      height: 36px !important; */
-  /* right: -4px;
-      bottom: -4px;
-      border-radius: 50%; */
-  /* stroke:#43b581;
-      stroke-width: 3px;
-      fill: transparent;   */
-  /* fill-opacity: 0.4;
-      x: -2 !important;
-      y: -2 !important;
-      z-index: -11 !important; */
-}
-/*po kolei: ?, ?, nick po wpisaniu @ na czacie, right click uzytkownika -> profil, wiadomosc prywatna, 
-  user na liscie na serwerze, user na liscie na serwerze po left clicku, left click uzytkownika*/
-.listRow-hutiT_:hover .da-online,
-.card-7JP0BX:hover .da-online,
-.da-autocompleteRow:hover .da-online,
-.da-header .da-status.da-online,
-.da-privateChannels .da-channel a:hover .da-online,
-.da-members .da-member .da-content:hover .da-online,
-.da-members .da-member.popout-open .da-online,
-.da-userPopout .da-online {
-  background-color: transparent;
-  border: 2px solid #43b581 !important;
-  transition: 0.2s;
-}
-.listRow-hutiT_:hover .da-idle,
-.card-7JP0BX:hover .da-idle,
-.da-autocompleteRow:hover .da-idle,
-.da-header .da-status.da-idle,
-.da-privateChannels .da-channel a:hover .da-idle,
-.da-members .da-member .da-content:hover .da-idle,
-.da-members .da-member.popout-open .da-idle,
-.da-userPopout .da-idle {
-  background-color: transparent;
-  border: 2px solid #faa61a !important;
-  transition: 0.2s;
-}
-.listRow-hutiT_:hover .da-dnd,
-.card-7JP0BX:hover .da-dnd,
-.da-autocompleteRow:hover .da-dnd,
-.da-header .da-status.da-dnd,
-.da-privateChannels .da-channel a:hover .da-dnd,
-.da-members .da-member .da-content:hover .da-dnd,
-.da-members .da-member.popout-open .da-dnd,
-.da-userPopout .da-dnd {
-  background-color: transparent;
-  border: 2px solid #f04747 !important;
-  transition: 0.2s;
-}
-.listRow-hutiT_:hover .da-streaming,
-.card-7JP0BX:hover .da-streaming,
-.da-autocompleteRow:hover .da-streaming,
-.da-header .da-status.da-streaming,
-.da-privateChannels .da-channel a:hover .da-streaming,
-.da-members .da-member .da-content:hover .da-streaming,
-.da-members .da-member.popout-open .da-streaming,
-.da-userPopout .da-streaming {
-  background-color: transparent;
-  border: 2px solid #593695 !important;
-  transition: 0.2s;
-}
-.listRow-hutiT_:hover .da-invisible,
-.card-7JP0BX:hover .da-invisible,
-.da-autocompleteRow:hover .da-invisible,
-.da-header .da-status.da-invisible,
-.da-privateChannels .da-channel a:hover .da-invisible,
-.da-members .da-member .da-content:hover .da-invisible,
-.da-members .da-member.popout-open .da-invisible,
-.da-userPopout .da-invisible {
-  background-color: transparent;
-  border: 2px solid #747f8d !important;
-  transition: 0.2s;
-}
-.listRow-hutiT_:hover .da-offline,
-.card-7JP0BX:hover .da-offline,
-.da-autocompleteRow:hover .da-offline,
-.da-header .da-status.da-offline,
-.da-privateChannels .da-channel a:hover .da-offline,
-.da-members .da-member .da-content:hover .da-offline,
-.da-members .da-member.popout-open .da-offline,
-.da-userPopout .da-offline {
-  background-color: transparent;
-  border: 2px solid #747f8d !important;
-  transition: 0.2s;
-}
 /*usunięcie maski zasłaniającej avatar w defaultowym discordzie*/
 .da-maskProfile,
 .da-mask {
   mask: none;
   -webkit-mask: none;
 }
-/*prywatna wiadomosc i user na liscie na serwerze (kiedy pisze)*/
-.da-members .da-member .da-content:hover .da-status.da-typing,
-.da-privateChannels .da-channel:hover .da-status.da-typing {
-  left: -4px !important;
-}
-.da-members .da-member .da-content:hover .da-status .da-pulsingEllipsis,
-.da-privateChannels .da-channel:hover .da-status .da-pulsingEllipsis {
-  left: 4px !important;
-}
 
 /*animacja avataru wybranego uzytkownika*/
-[style*="avatars/214676791955161091"].da-image {
+[src*="avatars/214676791955161091"].da-clickable,
+[style*="avatars/214676791955161091"].da-avatar {
   -webkit-animation: rotate1 40s linear infinite;
   animation: rotate1 40s linear infinite;
 }
@@ -3344,13 +3213,8 @@ input:focus {
 }
 
 /*przyciski w dolnym lewym przed i po połączeniu*/
-.da-base .da-sidebar .da-container:nth-child(2) button:hover,
-.da-base .da-sidebar .da-container:nth-child(3) button:hover {
+.da-base .da-sidebar .da-panels .da-container button:hover {
   background: transparent;
-}
-
-[class*="theme-"] .chat-3bRxxu .title-wrap {
-  border-bottom: 0px;
 }
 
 [class*="theme-"] .message-group.is-local-bot-message {
