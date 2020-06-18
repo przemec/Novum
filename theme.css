@@ -1785,47 +1785,47 @@ body::after {
 }
 
 /*wyskakujace okienka (wzmianki, przypiete wiadomosci itp)*/
-[id*="popout"].da-layer > .da-messagesPopoutWrap {
+[id*="popout"].da-layer .da-messagesPopoutWrap {
   background-color: rgba(0, 0, 0, 0.9) !important;
   border: transparent;
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap > .da-header {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-header {
   background-color: rgba(0, 0, 0, 0.8);
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap > .da-header .da-title {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-header .da-title {
   color: #eeeeee;
   font-weight: bold;
 }
 /*wiadomosc*/
-[id*="popout"].da-layer > .da-messagesPopoutWrap .da-messageGroupWrapper > * > .da-container {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper > * > .da-container {
   background-color: rgba(0, 0, 0, 1) !important;
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap .da-messageGroupWrapper {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper {
   border-color: var(--default-hover);
   background-color: rgba(0, 0, 0, 1) !important;
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap .da-messageGroupWrapper:hover {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper:hover {
   border-color: var(--default-selected);
 }
 /*jump button*/
-[id*="popout"].da-layer > .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons {
   background-color: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
   background-color: var(--bt-red) !important;
   border-radius: 3px !important;
   color: var(--bt-text) !important;
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
   background-color: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 /*footer ze wzmianek*/
-[id*="popout"].da-layer > .da-messagesPopoutWrap > .da-footer {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-footer {
   background-color: rgba(0, 0, 0, 0.8);
 }
-[id*="popout"].da-layer > .da-messagesPopoutWrap > .da-footer .da-pro {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-footer .da-pro {
   color: var(--markup-blue);
 }
 
