@@ -751,7 +751,12 @@ body::after {
   border-color: transparent !important;
   box-shadow: none !important;
 }
-.da-base .da-sidebar .da-containerDefault .da-listDefault .da-voiceUser .da-avatarSpeaking::before {
+.da-base
+  .da-sidebar
+  .da-containerDefault
+  .da-listDefault
+  .da-voiceUser
+  .da-avatarSpeaking:not([style*="avatars/214676791955161091"])::before {
   content: "";
   z-index: -10 !important;
   position: absolute;
