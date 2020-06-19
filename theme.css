@@ -3273,3 +3273,21 @@ input:focus {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
+
+/*komunikat przy wchodzeniu na kanal NSFW o koniecznosci ustawienia daty urodzenia*/
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px transparent;
+}
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root > .da-footer {
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 0px transparent;
+}
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root > .da-footer .da-button[class*="Filled"] {
+  background: var(--bt-blue-bg);
+  color: var(--bt-text);
+}
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root > .da-footer .da-button[class*="Filled"]:hover {
+  background: var(--bt-blue-bg-hover);
+  color: var(--bt-text-hover);
+}
