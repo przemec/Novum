@@ -45,106 +45,14 @@ body::after {
   padding-top: 4px;
 }
 
-#voice-connection,
-#friends,
-.friends-header,
-.friendsTable-133bsv,
-.guildsWrapper-5TJh6A,
-.guild-header header,
-.channels-wrap,
-.private-channels .search-bar,
-.guild-channels,
-.account,
-.friend-table-add-header,
-.chat-3bRxxu-3bRxxu,
-.content-yTz4x3,
-.layers,
-.title-wrap:not(.search-bar),
-.messages-3amgkR .divider-3gKybi span,
-.messages-3amgkR .divider-3gKybi:before,
-.content,
-.message-group-blocked,
-.is-local-bot-message,
-.channel-members,
-.channel-members-loading,
-.channel-members-loading .heading,
-.channel-members-loading .member,
-.scroller-fzNley,
-.typing,
-.layer,
-.layers,
-.container-RYiLUQ #friends .headerBar-UHpsPw,
-.container-RYiLUQ,
-[class*="theme-"] .channel-members,
-.container-2OU7Cz,
-[class*="theme-"] .chat-3bRxxu form,
-.header-2o-2hj,
-.channels-3g2vYe,
-.content-yTz4x3 .flex-spacer,
-[class*="theme-"] .chat-3bRxxu > .content-yTz4x3,
-[class*="theme-"] .chat-3bRxxu,
-.channel-members,
-.container-iksrDt,
-.container-3lnMWU,
-[class*="theme-"] .title-qAcLxz,
-[class*="theme-"] .typing-3eiiL_,
-[class*="theme-"] .activityFeed-1C0EmJ,
-[class*="theme-"] .headerBar-cxbhPD,
-[class*="theme-"] .lfg-3xoFkI,
-.video-3lOWa6,
-[class*="theme-"] .private-channel-call,
-.appMount-3VJmYg,
-.appMount-3lHmkl,
-.container-2lgZY8,
-.channels-Ie2l6A,
-.container-PNkimc,
-.container-2Thooq,
-[class*="theme-"] .title-3qD0b-,
-[class*="theme-"] .typing-2GQL18 {
-  background: rgba(0, 0, 0, 0.1) !important;
-}
-
-#friends .headerBar-UHpsPw,
-.container-RYiLUQ,
-[class*="theme-"] .channel-members,
-.container-2OU7Cz,
-[class*="theme-"] .chat-3bRxxu form,
-.channels-3g2vYe,
-.content-yTz4x3 .flex-spacer,
-[class*="theme-"] .chat-3bRxxu > .content-yTz4x3,
-[class*="theme-"] .chat-3bRxxu,
-.channel-members,
-.container-iksrDt,
-.container-3lnMWU,
-.messagesWrapper-3lZDfY,
-[class*="theme-"] .title-qAcLxz,
-[class*="theme-"] .typing-3eiiL_,
-[class*="theme-"] .activityFeed-1C0EmJ,
-[class*="theme-"] .headerBar-cxbhPD,
-[class*="theme-"] .lfg-3xoFkI,
-.video-3lOWa6,
-[class*="theme-"] .private-channel-call,
-.appMount-3VJmYg,
-.appMount-3lHmkl,
-.container-2lgZY8,
-.channels-Ie2l6A,
-.private-channels,
-.container-PNkimc,
-.container-2Thooq,
-.container-3gCOGc,
-[class*="theme-"] .typing-2GQL18,
-.search-bar.search-bar-light,
-[class*="theme-"] .layer-3QrUeG,
-[class*="theme-"] .layers-3iHuyZ,
-[class*="theme-"] .members-1998pB,
-.typeWindows-15E0Ys,
-.unreadBottom-3hWQ7c,
+/*default transparency*/
+.da-appMount,
 .da-app,
-.da-privateChannels,
+.da-app .da-bg,
 .da-scroller,
-.scroller,
 .da-sidebar,
-.da-app .da-bg {
+.da-chat,
+.da-privateChannels {
   background: transparent !important;
 }
 
@@ -637,6 +545,9 @@ body::after {
 }
 
 /*nazwa serwera po wejsciu na niego*/
+.da-base .da-sidebar .da-header {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
 .da-base .da-sidebar .da-header .da-name {
   font-size: 18px;
   font-weight: bold;
@@ -670,7 +581,7 @@ body::after {
 }
 
 /* SERWER */
-/*serwer - lista ludzi na serwerze (hover i click)*/
+/*serwer - lista ludzi na serwerze (hover i click poszczególnego członka)*/
 .da-members .da-layout {
   background: transparent !important;
 }
@@ -678,20 +589,12 @@ body::after {
 .da-members .da-member.da-selected {
   background: linear-gradient(to right, var(--default-selected), transparent) !important;
 }
-/* .da-members .da-member:hover::before,
-  .da-members .da-member.popout-open::before {
-      content: "";
-      z-index: -1 !important;
-      position: absolute;
-      left: 8px;
-      height: 42px;
-      width: 100%;
-      border-radius: 5px;
-      opacity: 0.5;
-      background: linear-gradient(to right, var(--markup-blue), transparent) !important;
-  } */
 
 /*serwer - kanaly tekstowe i glosowe*/
+/*cały container z kanałami*/
+.da-base .da-sidebar .da-container {
+  background: transparent;
+}
 /*default tekstowy i glosowy*/
 .da-base .da-sidebar .da-containerDefault .da-name {
   color: rgba(255, 255, 255, 0.7);
@@ -1503,6 +1406,10 @@ body::after {
   border-color: transparent !important;
 }
 
+/*wyszukiwanie wiadomiosci na czacie: container ze searchbarem i innymi ikonami*/
+.da-chat .da-title {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
 /*wyszukiwanie wiadomiosci na czacie: pasek wyszukiwania*/
 .da-chat .da-toolbar .da-search .da-searchBar {
   background: rgba(0, 0, 0, 0.15);
@@ -2434,6 +2341,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /* USTAWIENIA UŻYTKOWNIKA */
 /*discord i betterdiscord*/
+[class*="theme-"] .layer-3QrUeG,
 #user-settings .da-standardSidebarView,
 #user-settings .da-standardSidebarView .da-contentRegion,
 #user-settings .da-standardSidebarView .da-sidebarRegion,
@@ -3016,97 +2924,15 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /* ANIMACJE */
 
-/*animacja buttona edytowania wiadomosci*/
-.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child {
-  background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg fill='%23FFFFFF' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M0 0h24v24H0z' fill='none'/%3e%3cpath d='M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z'/%3e%3c/svg%3e") !important;
-  background-size: 16px !important;
-  background-position: center !important;
-  opacity: 0;
-  visibility: visible;
-}
-.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
-  -webkit-transform: translateZ(0);
-  -ms-transform: translateZ(0);
-  transform: translateZ(0);
-  -webkit-animation: edit1 2.8s infinite linear;
-  animation: edit1 2.8s infinite linear;
-}
-.da-chat .da-messagesWrapper .da-container .da-contentCozy:hover .da-buttonContainer .da-button:last-child {
-  opacity: 0.3;
-}
-
-.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child.popout-open,
-.da-chat .da-messagesWrapper .da-container .da-containerCozy .da-buttonContainer .da-button:last-child:hover {
-  background-size: 105% !important;
-  opacity: 0.7 !important;
-}
-
-@-webkit-keyframes edit1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-@keyframes edit1 {
-  0% {
-    -webkit-transform: rotate(0deg);
-    transform: rotate(0deg);
-  }
-  100% {
-    -webkit-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-}
-
-/*animacje przycisku Info i Disconnect*/
+/*animacja przycisku Disconnect*/
 /*
-  .da-base .da-sidebar .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(1) = button Info
-  .da-base .da-sidebar .da-container:nth-child(2):not(:last-child)>.da-flex>button:nth-child(2) = button Disconnect
   **:not(:last-child), żeby nie edytować przycisków po rozłączeniu się z głosowego
-  */
+*/
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex:hover {
   background: rgba(0, 0, 0, 0);
 }
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2) .da-contents {
   visibility: hidden;
-}
-/*button Info*/
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(1) {
-  background-color: rgba(0, 0, 0, 0);
-  /* background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptMSAxNWgtMnYtNmgydjZ6bTAtOGgtMlY3aDJ2MnoiLz48L3N2Zz4=) !important; */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 20px;
-  opacity: 0.5;
-}
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(1):hover {
-  -webkit-animation: info1 1s infinite alternate;
-  animation: info1 1s infinite alternate;
-  opacity: 1;
-}
-@-webkit-keyframes info1 {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
-}
-@keyframes info1 {
-  from {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-  }
-  to {
-    -webkit-transform: scale(0.9);
-    transform: scale(0.9);
-  }
 }
 /*button Disconnect*/
 .da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2) svg {
