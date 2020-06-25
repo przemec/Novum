@@ -2345,6 +2345,9 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-standardSidebarView,
 #user-settings .da-standardSidebarView .da-contentRegion,
 #user-settings .da-standardSidebarView .da-sidebarRegion,
+#user-settings .da-sidebarRegionScroller,
+#user-settings .da-contentRegionScroller,
+#user-settings .scroller,
 .ui-standard-sidebar-view,
 .ui-standard-sidebar-view .content-region {
   background: rgba(0, 0, 0, 0) !important;
