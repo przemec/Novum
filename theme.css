@@ -52,7 +52,9 @@ body::after {
 .da-scroller,
 .da-sidebar,
 .da-chat,
-.da-privateChannels {
+.da-privateChannels,
+.da-contentRegionScroller,
+.da-sidebarRegionScroller {
   background: transparent !important;
 }
 
@@ -1266,7 +1268,8 @@ body::after {
 }
 
 /*emoji picker*/
-[id*="popout"] .da-emojiPicker {
+[id*="popout"] .da-emojiPicker,
+[id*="popout"] .da-contentWrapper {
   background-color: rgba(0, 0, 0, 0.9) !important;
   border-color: transparent !important;
   border-radius: 5px;
@@ -2345,8 +2348,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-standardSidebarView,
 #user-settings .da-standardSidebarView .da-contentRegion,
 #user-settings .da-standardSidebarView .da-sidebarRegion,
-#user-settings .da-sidebarRegionScroller,
-#user-settings .da-contentRegionScroller,
 #user-settings .scroller,
 .ui-standard-sidebar-view,
 .ui-standard-sidebar-view .content-region {
