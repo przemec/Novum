@@ -584,7 +584,9 @@ body::after {
 
 /* SERWER */
 /*serwer - lista ludzi na serwerze (hover i click poszczególnego członka)*/
-.da-members .da-layout {
+.da-members,
+.da-members .da-layout,
+.da-members .da-listContent {
   background: transparent !important;
 }
 .da-members .da-member:hover,
