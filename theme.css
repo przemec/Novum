@@ -60,74 +60,74 @@ body::after {
 
 /* SCROLLBARY */
 
-/*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, activity feedzie i bibliotece gier, 
+/*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, stronie dsc nitro, 
   prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-thumb,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]::-webkit-scrollbar-thumb {
   border-color: transparent !important;
   background-color: transparent !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track,
-[class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track,
-[class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track,
-[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap ::-webkit-scrollbar-track {
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-track,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-track,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]::-webkit-scrollbar-track,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]::-webkit-scrollbar-track {
   border-color: transparent !important;
   background-color: transparent !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-friendsTable > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-applicationStore > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap ::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-track-piece,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]::-webkit-scrollbar-track-piece,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]::-webkit-scrollbar-track-piece {
   border-color: transparent !important;
   background-color: transparent !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
-  border-color: var(--scroll-thumb) !important;
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover::-webkit-scrollbar-thumb {
+  /* border-color: var(--scroll-thumb) !important; */
   background-color: var(--scroll-thumb) !important;
 }
 [class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-friendsTable > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-applicationStore > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-#user-settings .da-contentTransitionWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover::-webkit-scrollbar-track-piece {
   border-color: var(--scroll-bg-bord) !important;
   background-color: var(--scroll-bg) !important;
 }
 
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
   lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
-[class*="theme-"] .da-base .da-container > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-sidebarRegion > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-membersWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-searchResultsWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-privateChannels > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-base .da-container > .da-scroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-sidebarRegion > .da-sidebarRegionScroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-membersWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-searchResultsWrap > .da-scroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-privateChannels > .da-scroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-messagesPopoutWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-[class*="theme-"] .da-base .da-container > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-sidebarRegion > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-membersWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-searchResultsWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-privateChannels > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-messagesPopoutWrap > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-base .da-container > .da-scroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-sidebarRegion > .da-sidebarRegionScroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-membersWrap > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-searchResultsWrap > .da-scroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-privateChannels > .da-scroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-messagesPopoutWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"] > .da-container section > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb {
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover ::-webkit-scrollbar-thumb {
   border-color: var(--scroll-thumb) !important;
   background-color: var(--scroll-thumb) !important;
 }
@@ -567,7 +567,7 @@ body::after {
 }
 
 /*ikony u góry aplikacji obok nazw kanałów/nazw podstron strony głównej*/
-.da-iconWrapper > svg path {
+.da-iconWrapper > svg path:nth-child(1) {
   fill: rgba(255, 255, 255, 0.6) !important;
 }
 .da-iconWrapper ~ .da-divider {
@@ -693,7 +693,7 @@ body::after {
 /*ogladanie live na kanale glosowym*/
 /*backgroundy*/
 .da-container > .da-base > .da-content > .da-container {
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
 }
 .da-container > .da-base > .da-content > .da-container .da-root,
 .da-container > .da-base > .da-content > .da-container .da-root .da-video {
@@ -1064,26 +1064,20 @@ body::after {
 }
 
 /*Strona główna: Znajomi*/
-[class*="theme-"] .da-friendsTable {
+[class*="theme-"] .da-peopleColumn {
   margin-top: 0px !important;
   background: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-friendsTable .da-friendsRow:hover {
-  background: linear-gradient(to right, rgba(34, 59, 170, 0.3) 45%, transparent) !important;
+[class*="theme-"] .da-peopleColumn .da-peopleListItem.da-active,
+[class*="theme-"] .da-peopleColumn .da-peopleListItem:hover {
+  background: linear-gradient(to right, var(--default-hover) 45%, transparent) !important;
 }
 /*buttons*/
-[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction {
+[class*="theme-"] .da-peopleColumn .da-peopleListItem .da-actions .da-actionButton {
   background-color: var(--bt-blue-bg) !important;
 }
-[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:hover {
+[class*="theme-"] .da-peopleColumn .da-peopleListItem .da-actions .da-actionButton:hover {
   background-color: var(--bt-blue-bg-hover) !important;
-}
-/*delete friend bt*/
-[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3) {
-  background-color: var(--bt-red) !important;
-}
-[class*="theme-"] .da-friendsTable .da-friendsRow .da-friendsColumn .da-friendsAction:nth-child(3):hover {
-  background-color: var(--bt-red-hover) !important;
 }
 
 /*menu u gory prywatnych wiadomiosci*/
@@ -1114,18 +1108,18 @@ body::after {
   font-size: 16px;
 }
 /*dodawanie do znajomych*/
-[class*="theme-"] .da-friendsTable .da-friendTableAddHeader {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader {
   background: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd > form {
   background: rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.9);
 }
-[class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form > button {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd > form > button {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-[class*="theme-"] .da-friendsTable .da-friendTableAddHeader .da-friendsTableAdd > form > button:hover {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd > form > button:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
@@ -1305,10 +1299,10 @@ body::after {
   transform: scale(1.1);
 }
 /*sticky header*/
-[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection .da-categoryWrapper {
+[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection > .da-header {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection .da-categoryWrapper .da-category {
+[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection .da-header {
   color: #fff;
 }
 /*wybrana kategoria z ikon po lewej*/
@@ -1635,7 +1629,7 @@ body::after {
   color: var(--bt-text-hover);
 }
 /*dolna część*/
-[class*="theme-"] .da-modal > .da-inner .da-body {
+[class*="theme-"] .da-modal > .da-inner > * > .da-body {
   background: rgba(0, 0, 0, 0.9);
 }
 /*napis "NOTKA"*/
@@ -1805,17 +1799,18 @@ body::after {
   ```css
    tło tego co się tu wyśle ma czacie
   ```
-  */
+*/
 [class*="theme-"] .da-container .da-markup pre {
   background: rgba(0, 0, 0, 0) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
 [class*="theme-"] .da-container .da-markup pre code {
   background: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(0, 0, 0, 0.5) !important;
 }
 /*
   ` tło tego co się tu wyśle `
-  */
+*/
 [class*="theme-"] .da-container .da-markup .inline {
   background: rgba(0, 0, 0, 0.5) !important;
 }
