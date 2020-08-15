@@ -62,7 +62,7 @@ body::after {
 
 /*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, stronie dsc nitro, 
   prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
-[class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-chatContent > * [class*="scroller"]::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-thumb,
@@ -71,7 +71,7 @@ body::after {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-[class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track,
+[class*="theme-"] .da-chatContent > * [class*="scroller"]::-webkit-scrollbar-track,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track,
 [class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-track,
 [class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-track,
@@ -80,7 +80,7 @@ body::after {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-[class*="theme-"] .da-chatContent > * .da-scrollerWrap ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-chatContent > * [class*="scroller"]::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-track-piece,
@@ -89,7 +89,7 @@ body::after {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-[class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-chatContent > * [class*="scroller"]:hover::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-peopleColumn > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-applicationStore > * > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
@@ -98,7 +98,7 @@ body::after {
   /* border-color: var(--scroll-thumb) !important; */
   background-color: var(--scroll-thumb) !important;
 }
-[class*="theme-"] .da-chatContent > * .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-chatContent > * [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-peopleColumn > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
 [class*="theme-"] .da-applicationStore > * > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
@@ -116,7 +116,7 @@ body::after {
 [class*="theme-"] .da-searchResultsWrap > .da-scroller::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-privateChannels > .da-scroller::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-messagesPopoutWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-modal > [class*="scroller"]::-webkit-scrollbar-thumb {
   border-color: transparent !important;
   background-color: transparent !important;
 }
@@ -126,7 +126,7 @@ body::after {
 [class*="theme-"] .da-searchResultsWrap > .da-scroller:hover::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-privateChannels > .da-scroller:hover::-webkit-scrollbar-thumb,
 [class*="theme-"] .da-messagesPopoutWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-modal > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-modal > [class*="scroller"]::-webkit-scrollbar-thumb,
 [id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover ::-webkit-scrollbar-thumb {
   border-color: var(--scroll-thumb) !important;
   background-color: var(--scroll-thumb) !important;
@@ -1352,7 +1352,7 @@ body::after {
 
 /*data wiadomosci na czacie*/
 /*cały divider*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-isUnread) > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider:not(.da-isUnread) > span {
   background: rgba(204, 204, 204, 0.1) !important;
   font-size: 14px;
   border-radius: 5px;
@@ -1360,16 +1360,16 @@ body::after {
   text-align: center;
   width: 90%;
 }
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider {
   border-color: transparent;
   margin-top: 35px;
   margin-bottom: 15px;
 }
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider:not(.da-isUnread) > span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider:not(.da-isUnread) > span {
   color: rgba(255, 255, 255, 0.7) !important;
 }
 /*nowa wiadomosc*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > .da-unreadPill {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider.da-isUnread > .da-unreadPill {
   background: var(--default-hover) !important;
   color: var(--markup-intensive) !important;
   padding: 12px 0px;
@@ -1377,14 +1377,14 @@ body::after {
   font-size: 14px;
 }
 /*data nowej wiadomosci*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider.da-isUnread > .da-content {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider.da-isUnread > .da-content {
   background: transparent !important;
   color: var(--markup-intensive) !important;
   width: 95%;
   transform: translateY(6px);
 }
 /*svg po bokach nowej wiadomosci*/
-[class*="theme-"] .da-chatContent > .da-messagesWrapper > .da-scrollerWrap .da-divider .da-unreadPillCap {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider .da-unreadPillCap {
   visibility: hidden;
 }
 
