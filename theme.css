@@ -3072,6 +3072,12 @@ input:focus {
   color: var(--markup-normal);
 }
 
+/*czat: template czatu podczas jego ładowania*/
+.da-chat .da-scrollerInner > .da-wrapper,
+.da-chat .da-scrollerInner > .da-wrapper .da-wrapper {
+  background: transparent !important;
+}
+
 /*crash discorda*/
 #app-mount .da-errorPage {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) !important;
