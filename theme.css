@@ -3074,7 +3074,7 @@ input:focus {
 
 /*czat: template czatu podczas jego ładowania*/
 .da-chat .da-scrollerInner > .da-wrapper,
-.da-chat .da-scrollerInner > .da-wrapper .da-wrapper {
+.da-chat .da-scrollerInner > .da-wrapper > .da-wrapper {
   background: transparent !important;
 }
 
