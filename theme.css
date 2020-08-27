@@ -2389,25 +2389,29 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   border-color: #000000 !important;
 }
 /*wysuwalne menu*/
-#user-settings .da-contentRegion .da-systemPad .da-select > [class*="css-"],
-#user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"] {
-  background: rgba(0, 0, 0, 0.8) !important;
-  border-color: rgba(0, 0, 0, 0.8) !important;
+#user-settings .da-contentRegion .da-contentColumn .da-select > [class*="css-"],
+#user-settings .da-contentRegion .da-contentColumn .da-select [class*="-menu"] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: #000000 !important;
 }
-#user-settings .da-contentRegion .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+#user-settings .da-contentRegion .da-contentColumn .da-select [class*="-container"] > [class*="-control"] {
+  background: transparent !important;
+  border-color: #000000 !important;
+}
+#user-settings .da-contentRegion .da-contentColumn .da-select [class*="-menu"] [class*="-option"]:hover {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 /*checkboxy*/
-#user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox {
+#user-settings .da-contentRegion [style*="rgb(114, 137, 218)"] .da-checkboxWrapper .da-checkbox {
   background: rgba(0, 0, 0, 0.4) !important;
-  border-color: rgba(0, 0, 0, 1) !important;
+  border-color: #000000 !important;
 }
-#user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked {
+#user-settings .da-contentRegion [style*="rgb(114, 137, 218)"] .da-checkboxWrapper .da-checkbox.da-checked {
   background-color: var(--bt-blue-bg) !important;
   border-color: var(--bt-blue-bg) !important;
 }
-#user-settings .da-contentRegion .da-checkboxWrapper .da-checkbox.da-checked polyline {
-  stroke: var(--bt-text-hover) !important;
+#user-settings .da-contentRegion [style*="rgb(114, 137, 218)"] .da-checkboxWrapper .da-checkbox.da-checked svg path[fill*="7289da"] {
+  fill: var(--bt-text-hover) !important;
 }
 /*switch checkboxy*/
 #user-settings .da-contentRegion .da-switch,
@@ -2417,6 +2421,11 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 #user-settings .da-contentRegion .da-switch[class*="valueChecked"] {
   background: var(--bt-blue-bg) !important;
+}
+/*polprzezroczyste pola z klawiszami do bindowania (Głos i wideo, Skróty klawiszowe itp.)*/
+#user-settings .da-contentRegion .da-container.da-hasValue {
+  background: rgba(0, 0, 0, 0.6) !important;
+  border-color: #000000 !important;
 }
 /*przyciski*/
 #user-settings .da-contentRegion .da-button[class*="lookFilled"],
@@ -2440,7 +2449,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-barFill {
   background: var(--bt-blue-bg) !important;
 }
-/*pozbycie sie szarego tla podczas najezdzania na pola np w Przypisania klawiszy i Gry*/
+/*pozbycie sie szarego tla podczas najezdzania na pola np w Skróty Klaw. i Aktywność w grze*/
+#user-settings .da-contentRegion .da-card {
+  box-shadow: none !important;
+}
 #user-settings .da-contentRegion .da-card:hover {
   background: transparent !important;
   border-color: transparent;
@@ -2488,45 +2500,28 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*"Prywatnosc i bezpieczenstwo"*/
 /*polprzezroczyste pola u gory (zielony, pomaranczowy i czerowny)*/
-#user-settings
-  .da-contentRegion
-  .da-radioGroup
-  .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
-#user-settings
-  .da-contentRegion
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+#user-settings .da-contentRegion .da-radioGroup .da-item[style*="background-color: rgb(67, 181, 129)"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
-#user-settings
-  .da-contentRegion
-  .da-radioGroup
-  .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
-#user-settings
-  .da-contentRegion
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
+#user-settings .da-contentRegion .da-radioGroup .da-item[style*="background-color: rgb(250, 166, 26)"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
-#user-settings
-  .da-contentRegion
-  .da-radioGroup
-  .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
-#user-settings
-  .da-contentRegion
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+#user-settings .da-contentRegion .da-radioGroup .da-item[style*="background-color: rgb(240, 71, 71)"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
 /*checkboxy wewnątrz*/
-#user-settings .da-contentRegion .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
+#user-settings .da-contentRegion .da-item[style*="background-color: rgb(67, 181, 129)"] .da-checkboxWrapper .da-checkbox,
+#user-settings .da-contentRegion .da-item[style*="background-color: rgb(250, 166, 26)"] .da-checkboxWrapper .da-checkbox,
+#user-settings .da-contentRegion .da-item[style*="background-color: rgb(240, 71, 71)"] .da-checkboxWrapper .da-checkbox {
   background: rgba(0, 0, 0, 0) !important;
   border-color: rgba(255, 255, 255, 0.2) !important;
 }
-#user-settings .da-contentRegion .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
+#user-settings .da-contentRegion .da-item[style*="background-color: rgb(240, 71, 71)"] .da-checkboxWrapper .da-checkbox.da-checked,
+#user-settings .da-contentRegion .da-item[style*="background-color: rgb(250, 166, 26)"] .da-checkboxWrapper .da-checkbox.da-checked,
+#user-settings .da-contentRegion .da-item[style*="background-color: rgb(240, 71, 71)"] .da-checkboxWrapper .da-checkbox.da-checked {
   background: rgba(0, 0, 0, 0) !important;
   border-color: rgba(255, 255, 255, 0.8) !important;
 }
@@ -2544,10 +2539,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: #000000;
   margin-bottom: 7px;
+  transition: 0.2s all ease-in-out;
 }
 #user-settings .da-contentRegion .da-accountList .da-inner:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border-color: #000000;
+  transform: scale(1.1);
 }
 /*kolorowe pola u dołu*/
 #user-settings .da-contentRegion .da-connection {
@@ -2642,6 +2639,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px;
 }
+/*edytowalne pole z nazwa gry*/
+#user-settings .da-contentRegion .da-gameNameInput:focus,
+#user-settings .da-contentRegion .da-gameNameInput:hover {
+  background: rgba(0, 0, 0, 0.6);
+  border-color: #000000;
+}
 /*ostatnia rozgrywka x dni temu (pod nazwą gry)*/
 #user-settings .da-contentRegion .da-lastPlayed .da-hoverRoll {
   color: rgba(255, 255, 255, 0.4);
@@ -2696,6 +2699,28 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*tag "domyślny"*/
 #user-settings .da-contentRegion .da-installationPath .da-defaultIndicator {
   background: var(--markup-intensive) !important;
+}
+
+/*"Język"*/
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"] {
+  background: transparent !important;
+  box-shadow: none !important;
+  border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"]:first-child {
+  border-top: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"]:last-child {
+  border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
+}
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"]:hover,
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"].da-selected {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+#user-settings .da-contentRegion .da-children > div > div > .da-item .da-checkboxWrapper .da-checkbox.da-checked {
+  background-color: var(--bt-blue-bg) !important;
+  border-color: var(--bt-blue-bg) !important;
 }
 
 /* USTAWIENIA BETTERDISCORD */
