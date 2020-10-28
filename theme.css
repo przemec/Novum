@@ -923,6 +923,23 @@ body::after {
 .da-content .da-applicationStore .da-promotionBanner {
   background: rgba(0, 0, 0, 0.5) !important;
 }
+/*przyciski u dołu*/
+.da-content .da-applicationStore .da-button[class*="colorGreen"] {
+  background: var(--bt-red) !important;
+  color: var(--bt-text);
+}
+.da-content .da-applicationStore .da-button[class*="colorGreen"]:hover {
+  background: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover);
+}
+.da-content .da-applicationStore .da-button[class*="colorPrimary"] {
+  background: var(--bt-blue-bg) !important;
+  color: var(--bt-text);
+}
+.da-content .da-applicationStore .da-button[class*="colorPrimary"]:hover {
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text-hover);
+}
 
 /*Strona główna: Znajomi*/
 [class*="theme-"] .da-peopleColumn {
