@@ -1124,6 +1124,17 @@ body::after {
   color: var(--bt-text-hover);
 }
 
+/*Strona główna: Znajomi - panel po prawej z aktywnością*/
+[class*="theme-"] .da-nowPlayingColumn {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-itemCard {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-itemCard .da-body {
+  background: rgba(0, 0, 0, 0.4) !important;
+}
+
 /*lista znajomych: znajdz lub rozpocznij rozmowe popup (Quick Switcher)*/
 .da-container .da-quickswitcher {
   background-color: rgba(0, 0, 0, 0.95);
