@@ -905,162 +905,23 @@ body::after {
 }
 
 /*Strona główna: Nitro*/
-
-/*strona głowna nitro*/
 .da-content > .da-applicationStore {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
-/*header*/
+/*header u samej góry*/
 .da-content .da-applicationStore .da-headerBar {
   background-color: rgba(0, 0, 0, 0) !important;
 }
 .da-content .da-applicationStore .da-headerBar .da-children::after {
   visibility: hidden !important;
 }
-/*search bar*/
-.da-content .da-applicationStore .da-headerBar .da-browseSearch {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+/*lista feature'ów*/
+.da-content .da-applicationStore .da-featureGrid .da-feature {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
-.da-content .da-applicationStore .da-headerBar .da-browseSearch .da-searchBar {
-  background-color: rgba(0, 0, 0, 0.15) !important;
-  border-bottom: 2px solid rgba(0, 0, 0, 0);
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-}
-.da-content .da-applicationStore .da-headerBar .da-browseSearch.da-focused .da-searchBar {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-  border-color: var(--markup-blue) !important;
-}
-
-/*glowny artykul u góry*/
-.da-content .da-systemPad .da-heroCarousel .da-carouselItem {
-  padding: 0px !important;
-}
-.da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground,
-.da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
-  border-radius: 10px !important;
-}
-.da-content .da-systemPad .da-heroCarousel .da-carouselItem .da-itemBackground::before {
-  background: radial-gradient(ellipse at top, #00000000, #000000cc),
-    linear-gradient(90deg, #000000cc 0, #00000000 40%, #00000000 60%, #000000cc), linear-gradient(0deg, #000000cc 0, #00000000 25%);
-}
-
-/*rzędy artykułów*/
-.da-content .da-subsection > * > * > .da-container {
-  transition: all 0.3s ease-in-out;
-  -webkit-transition: all 0.3s ease-in-out;
-}
-.da-content .da-subsection .da-container .da-gradientOverlayLeft {
-  background: transparent;
-}
-.da-content .da-subsection .da-container .da-gradientOverlayRight {
-  background: transparent;
-}
-/*gradient i strzałki po lewej i prawej*/
-.da-content .da-subsection .da-container:hover .da-gradientOverlayLeft {
-  background: linear-gradient(90deg, #000000ad, rgba(0, 0, 0, 0));
-}
-.da-content .da-subsection .da-container:hover .da-gradientOverlayRight {
-  background: linear-gradient(90deg, rgba(0, 0, 0, 0), #000000ad);
-}
-.da-content .da-subsection .da-container .da-arrow {
-  background-color: rgba(0, 0, 0, 0.6) !important;
-}
-.da-content .da-subsection .da-container .da-arrow:hover {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
-
-/*nitro game perks*/
-.da-content .da-subsection .da-homeTile .da-tile {
-  background: rgba(0, 0, 0, 0.6);
-}
-.da-content .da-subsection .da-homeTile .da-tile .da-actions button {
-  background: var(--bt-blue-bg);
-  color: var(--bt-text);
-}
-.da-content .da-subsection .da-homeTile .da-tile .da-actions button:hover {
-  background: var(--bt-blue-bg-hover);
-  color: var(--bt-text-hover);
-}
-/*"keep it simple..." na dole nitra*/
-.da-content .da-sectionTier1 .da-tier1Banner {
-  background: rgba(0, 0, 0, 0.6) !important;
-}
-/*recommended for you (po najechaniu na grę)*/
-.da-content .da-subsection .da-homeTile.da-tile .da-tileMedia,
-.da-content .da-subsection .da-homeTile.da-tile .da-tileMedia .da-genres .da-genreTag {
-  background: rgba(0, 0, 0, 0.6) !important;
-}
-.da-content .da-subsection .da-homeTile.da-tile .da-tileOwnership button {
-  background: var(--bt-blue-bg);
-  color: var(--bt-text);
-}
-.da-content .da-subsection .da-homeTile.da-tile .da-tileOwnership button:hover {
-  background: var(--bt-blue-bg-hover);
-  color: var(--bt-text-hover);
-}
-
-/*podstrona nitro po wejściu w grę*/
-/*header i wszystkie przyciski*/
-.da-content .da-applicationStore > .da-container,
-.da-content .da-applicationStore .da-listingWrapper > .da-container {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.da-content .da-applicationStore > .da-container > .da-children::after,
-.da-content .da-applicationStore .da-listingWrapper > .da-container > .da-children::after {
-  visibility: hidden;
-}
-/*przycisk subskrybuj w headerze i reszta u dołu*/
-.da-content .da-applicationStore .da-shinyButton,
-.da-content .da-applicationStore .da-systemPad .da-button[class*="Filled"] {
-  background: var(--bt-blue-bg) !important;
-  color: var(--bt-text) !important;
-  border-color: transparent;
-}
-.da-content .da-applicationStore .da-shinyButton:hover,
-.da-content .da-applicationStore .da-systemPad .da-button[class*="Filled"]:hover {
-  background: var(--bt-blue-bg-hover) !important;
-  color: var(--bt-text-hover) !important;
-}
-/*po kolei: "darmowe z Nitro", "dlaczego sie spodoba", "Metacritic", "cechy", "aktualnosci", "zweryfikowany serwer", "Nitro perks"*/
-.da-content .da-systemPad .da-listing .da-purchaseUnit .da-bodySection,
-.da-content .da-systemPad .da-listing .da-whyYouMightLikeIt,
-.da-content .da-systemPad .da-listing .da-clickableWrapper .da-card,
-.da-content .da-systemPad .da-listing .da-features .da-row,
-.da-content .da-systemPad .da-listing .da-news > a,
-.da-content .da-systemPad .da-listing .da-guildInvite .da-content,
-.da-content .da-systemPad .da-listing .da-premiumPerks .da-tile {
-  background: rgba(0, 0, 0, 0.6) !important;
-}
-/*po kliknieciu w "wyswietl wszystkie aktualnosci"*/
-.da-modal .da-modal {
-  background: rgba(0, 0, 0, 0.9);
-  box-shadow: 0px 0px;
-}
-.da-modal .da-modal .da-item {
-  background: rgba(10, 0, 100, 0.1);
-  box-shadow: 0px 0px;
-}
-
-/*podstrona nitro po wejściu w grę i kliknięciu "przeglądaj" w headerze*/
-.da-content .da-applicationStore .da-browseWrapper > .da-container {
-  background-color: rgba(0, 0, 0, 0) !important;
-}
-.da-content .da-applicationStore .da-browseWrapper .da-filters .da-searchBox {
-  background-color: rgba(0, 0, 0, 0.5) !important;
-}
-.da-content .da-applicationStore .da-browseWrapper .da-browse .da-tileMedia,
-.da-content .da-applicationStore .da-browseWrapper .da-browse .da-tileMedia .da-genres .da-genreTag {
-  background: rgba(0, 0, 0, 0.6) !important;
-}
-/*popout filtru*/
-.da-popouts .da-filterBrowsingSelectPopout {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-.da-popouts .da-filterBrowsingSelectPopout .da-option:hover {
-  background-color: rgba(0, 0, 0, 0.9);
+/*baner promocyjny u dołu*/
+.da-content .da-applicationStore .da-promotionBanner {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
 
 /*Strona główna: Znajomi*/
