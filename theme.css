@@ -1,22 +1,22 @@
 :root {
-  --background-img: url("https://i.imgur.com/lWPVyO6.png");
-  --profile-bckg: url("https://i.imgur.com/WabiB4C.png");
-  --default-hover: #c8000026;
-  --default-selected: #c800004d;
-  --bt-red: #aa0000cc;
-  --bt-red-hover: #c80000cc;
-  --bt-blue-bg: #222277;
-  --bt-blue-bg-hover: #1b1b7e;
+  --background-img: url("https://i.imgur.com/NOpaUeX.png");
+  --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
+  --default-hover: #d4393926;
+  --default-selected: #d336364d;
+  --bt-red: #b42a2acc;
+  --bt-red-hover: #c93838cc;
+  --bt-blue-bg: #774747;
+  --bt-blue-bg-hover: #803838;
   --bt-text: #dddddd;
   --bt-text-hover: #ffffff;
-  --scroll-thumb: #db2121b6;
+  --scroll-thumb: #df6161b6;
   --scroll-bg: #00000016;
   --scroll-bg-bord: #00000000;
-  --markup-normal: #fd686b;
-  --markup-normal-transparent: #fd686a18;
-  --markup-intensive: #fc3639;
-  --markup-blue: #3333ffe6;
-  --markup-blue-light: #1b76fee6;
+  --markup-normal: #fd9fa0;
+  --markup-normal-transparent: #fca7a918;
+  --markup-intensive: #fd7a7c;
+  --markup-blue: #8f6060e6;
+  --markup-blue-light: #c28383e6;
 }
 
 /*Background*/
