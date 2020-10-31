@@ -172,8 +172,9 @@ body::after {
 .wrapper-1Rf91z a.da-selected .da-acronym {
   background: rgba(0, 0, 0, 0.6);
 }
-/*tlo glownej ikony discorda*/
-.wrapper-1Rf91z a.da-wrapper .da-homeIcon {
+/*tlo glownej ikony/loga discorda*/
+.wrapper-1Rf91z a.da-wrapper .da-homeIcon,
+.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper .da-childWrapper {
   background: rgba(0, 0, 0, 0);
 }
 .wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper {
@@ -1917,8 +1918,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   border-top-color: rgba(0, 0, 0, 1) !important;
 }
 
-/*AFK POPOUT **nie tylko AFK, parę innych też*/
-/*tło*/
+/*tło AFK POPOUT **nie tylko AFK, parę innych też*/
 [class*="theme-"] .da-backdrop,
 [class*="theme-"] .da-backdropWithLayer {
   background: linear-gradient(#00000011, #000000ff) !important;
@@ -1927,6 +1927,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   opacity: 1;
 }
 /*popout*/
+.da-modal > .da-inner .da-modal,
 .da-modal > .da-inner .da-modal.da-container {
   background: rgba(0, 0, 0, 0.9);
   border-color: rgba(0, 0, 0, 0) !important;
