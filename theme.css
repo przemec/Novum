@@ -1012,6 +1012,10 @@ body::after {
 [class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-itemCard .da-body {
   background: rgba(0, 0, 0, 0.4) !important;
 }
+/*kiedy nikt ze znajomych w nic nie gra*/
+[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-emptyCard {
+  background: rgba(0, 0, 0, 0.6) !important;
+}
 
 /*lista znajomych: znajdz lub rozpocznij rozmowe popup (Quick Switcher)*/
 .da-container .da-quickswitcher {
