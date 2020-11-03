@@ -1965,16 +1965,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   box-shadow: 0px 0px;
 }
 /*CHECKBOXY z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal > .da-inner .da-modal .da-switch {
-  background: rgba(0, 0, 0, 0.6) !important;
+.da-modal > .da-inner .da-modal .da-control [style*="rgb(114, 118, 125)"] {
+  background: rgba(100, 100, 100, 0.2) !important;
   box-shadow: 0px 0px !important;
 }
-.da-modal > .da-inner .da-modal .da-switch[class*="valueChecked"] {
-  background: var(--bt-blue-bg) !important;
+.da-modal > .da-inner .da-modal .da-control svg path[fill*="114, 118, 125"] {
+  fill: rgba(0, 0, 0, 0.4) !important;
 }
-.da-modal > .da-inner .da-modal .da-checkbox.da-checked {
+.da-modal > .da-inner .da-modal .da-control [style*="rgb(67, 181, 129)"] {
   background: var(--bt-blue-bg) !important;
-  border-color: transparent !important;
+  box-shadow: 0px 0px !important;
+}
+.da-modal > .da-inner .da-modal .da-control svg path[fill*="67, 181, 129"] {
+  fill: var(--bt-blue-bg) !important;
 }
 /*LINKI z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
 .da-modal > .da-inner .da-modal a {
@@ -2071,7 +2074,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: var(--bt-text-hover) !important;
 }
 
-/*różne po prawej zawarte w wielu opcjach*/
+/*USTAWIENIA SERWERA - różne po prawej zawarte w wielu opcjach*/
 
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Członkowie czy Zaproszenia*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-card:hover {
@@ -2122,13 +2125,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: #ffffff !important;
 }
 /*switch checkboxy*/
-[aria-label*="SETTINGS"] .da-contentRegion .da-switch,
-[aria-label*="SETTINGS"] .da-contentRegion .da-switch .da-checkbox {
-  background: rgba(0, 0, 0, 0.4) !important;
+[aria-label*="SETTINGS"] .da-contentRegion .da-control [style*="rgb(114, 118, 125)"] {
+  background: rgba(100, 100, 100, 0.2) !important;
   box-shadow: 0px 0px !important;
 }
-[aria-label*="SETTINGS"] .da-contentRegion .da-switch[class*="valueChecked"] {
+[aria-label*="SETTINGS"] .da-contentRegion .da-control svg path[fill*="114, 118, 125"] {
+  fill: rgba(0, 0, 0, 0.4) !important;
+}
+[aria-label*="SETTINGS"] .da-contentRegion .da-control [style*="rgb(67, 181, 129)"] {
   background: var(--bt-blue-bg) !important;
+  box-shadow: 0px 0px !important;
+}
+[aria-label*="SETTINGS"] .da-contentRegion .da-control svg path[fill*="67, 181, 129"] {
+  fill: var(--bt-blue-bg) !important;
 }
 
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
@@ -2315,13 +2324,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   fill: var(--bt-text-hover) !important;
 }
 /*switch checkboxy*/
-#user-settings .da-contentRegion .da-switch,
-#user-settings .da-contentRegion .da-switch .da-checkbox {
-  background: rgba(0, 0, 0, 0.4) !important;
+#user-settings .da-contentRegion .da-control [style*="rgb(114, 118, 125)"] {
+  background: rgba(100, 100, 100, 0.2) !important;
   box-shadow: 0px 0px !important;
 }
-#user-settings .da-contentRegion .da-switch[class*="valueChecked"] {
+#user-settings .da-contentRegion .da-control svg path[fill*="114, 118, 125"] {
+  fill: rgba(0, 0, 0, 0.4) !important;
+}
+#user-settings .da-contentRegion .da-control [style*="rgb(67, 181, 129)"] {
   background: var(--bt-blue-bg) !important;
+  box-shadow: 0px 0px !important;
+}
+#user-settings .da-contentRegion .da-control svg path[fill*="67, 181, 129"] {
+  fill: var(--bt-blue-bg) !important;
 }
 /*polprzezroczyste pola z klawiszami do bindowania (Głos i wideo, Skróty klawiszowe itp.)*/
 #user-settings .da-contentRegion .da-container.da-hasValue {
@@ -2436,6 +2451,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*"Połączone konta"*/
 /*pole u góry*/
+#user-settings .da-contentRegion .da-accountList {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: #000000;
+}
 #user-settings .da-contentRegion .da-accountList .da-inner {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: #000000;
@@ -2449,7 +2468,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 /*kolorowe pola u dołu*/
 #user-settings .da-contentRegion .da-connection {
-  opacity: 0.9;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: #000000;
+}
+#user-settings .da-contentRegion .da-connectionHeader {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-color: #000000;
 }
 
 /*"Dane do faktury"*/
