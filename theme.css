@@ -1485,12 +1485,12 @@ body::after {
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (tło)*/
 /*popout*/
 [class*="theme-"] .da-modal > .da-inner .da-root {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.9);
 }
 /*górna część popoutu*/
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0);
 }
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header,
 [class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-tabBarContainer,
@@ -1522,9 +1522,16 @@ body::after {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
+/*górna część popoutu - spotify*/
+[class*="theme-"] .da-modal > .da-inner .da-topSectionSpotify {
+  background: rgba(0, 0, 0, 0);
+}
+[class*="theme-"] .da-modal > .da-inner .da-topSectionSpotify .da-headerFill .da-activityProfile {
+  background: rgba(29, 185, 84, 0.3);
+}
 /*dolna część*/
 [class*="theme-"] .da-modal > .da-inner > * > .da-body {
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(0, 0, 0, 0);
 }
 /*napis "NOTKA"*/
 [class*="theme-"] .da-modal > .da-inner .da-userInfoSectionHeader {
