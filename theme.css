@@ -1456,30 +1456,38 @@ body::after {
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem*/
-[class*="theme-"] [class*="contextMenu"] {
+.da-layer #user-context {
   background-color: rgba(0, 0, 0, 0.95) !important;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-[class*="contextMenu"] > [class*="itemGroup-"] > .da-item {
+.da-layer #user-context div[role="group"] .da-item {
   background-color: rgba(0, 0, 0, 0);
-  color: #ffffff;
+  color: #ccc !important;
   border: 0px !important;
 }
-[class*="contextMenu"] > [class*="itemGroup-"] > .da-item:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+.da-layer #user-context div[role="group"] .da-item:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff !important;
 }
-/*item w wysuniętym menu*/
-[class*="contextMenu"] > [class*="itemGroup-"] .da-item [class*="contextMenu"] .da-item:hover {
-  background-color: rgba(0, 0, 0, 0.6);
+/*wysunięte menu*/
+.da-layer #user-context div[role="group"] .da-layer .da-submenu {
+  background-color: rgba(0, 0, 0, 0.95);
 }
 /*pasek głośności*/
-[class*="contextMenu"] > [class*="itemGroup-"] .da-bar .da-barFill {
+.da-layer #user-context div[role="group"] .da-bar .da-barFill {
   background-color: var(--bt-blue-bg-hover) !important;
 }
 /*checkboxy*/
-[class*="contextMenu"] [class*="itemGroup-"] .da-item .da-checkboxElement:checked + span {
-  background-color: var(--bt-blue-bg-hover) !important;
-  border-color: var(--bt-blue-bg-hover) !important;
+/*tło po zaznaczeniu*/
+.da-layer #user-context div[role="group"] .da-item path.da-checkbox {
+  fill: var(--bt-blue-bg-hover) !important;
+}
+/*"fajka" po wybraniu i hoverze*/
+.da-layer #user-context div[role="group"] .da-item path.da-check {
+  fill: #ccc !important;
+}
+.da-layer #user-context div[role="group"] .da-item.da-focused path.da-check {
+  fill: #fff !important;
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (tło)*/
@@ -1587,6 +1595,7 @@ body::after {
 .da-userPopout > .da-footer {
   background-color: rgba(0, 0, 0, 0.95);
   border: 1px solid rgba(0, 0, 0, 1);
+  padding-top: 5px;
 }
 .da-userPopout > .da-footer .da-quickMessage {
   background-color: rgba(0, 0, 0, 0.7);
@@ -2059,19 +2068,15 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(255, 255, 255, 0.5) !important;
 }
 /*sidebar po lewej*/
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item:hover,
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218);"] {
+[aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item:hover,
+[aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item[style*="114, 137, 218"] {
   background: var(--default-hover) !important;
   color: var(--bt-text) !important;
 }
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected,
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item.da-selected:hover,
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(114, 137, 218); background-color: rgba(114, 137, 218, 0.1);"],
-[aria-label*="SETTINGS"] .da-systemPad .da-sidebar .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"],
-[aria-label*="SETTINGS"]
-  .da-systemPad
-  .da-sidebar
-  .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"]:hover {
+[aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item.da-selected,
+[aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item.da-selected:hover,
+[aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item[style*="114, 137, 218"],
+[aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item[style*="114, 137, 218"]:hover {
   background: var(--default-selected) !important;
   color: var(--bt-text-hover) !important;
 }
@@ -2104,14 +2109,14 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0.8) !important;
 }
-/*polprzezroczyste pola (z wysuwalnymi menu)*/
+/*polprzezroczyste pola select (z wysuwalnymi menu)*/
 /*pole i menu*/
-[aria-label*="SETTINGS"] .da-systemPad .da-select > [class*="css-"],
-[aria-label*="SETTINGS"] .da-systemPad .da-select [class*="-menu"] {
+[aria-label*="SETTINGS"] .da-contentRegion .da-select > [class*="css-"],
+[aria-label*="SETTINGS"] .da-contentRegion .da-select [class*="-menu"] {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0.8) !important;
 }
-[aria-label*="SETTINGS"] .da-systemPad .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
+[aria-label*="SETTINGS"] .da-contentRegion .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 /*popout o niezapisanych zmianach*/
@@ -2145,63 +2150,48 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 } */
 /*polprzezroczyste pola (czesc ustawien "Podgląd")*/
 /*nazwa i region serwera*/
-[aria-label*="SETTINGS"] .da-systemPad .da-marginBottom20 .da-input,
-[aria-label*="SETTINGS"] .da-systemPad .da-container .da-layout {
+[aria-label*="SETTINGS"] .da-contentRegion .da-marginBottom20 .da-input,
+[aria-label*="SETTINGS"] .da-contentRegion .da-container .da-layout {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"],
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"],
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookGhost"] {
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookFilled"],
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookOutlined"],
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookGhost"] {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
   border-color: transparent;
 }
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
   border-color: transparent;
 }
 
 /*czesc ustawien serwera: Moderacja */
+/* niebieski */
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="114, 137, 218"] {
+  background: rgba(0, 150, 230, 0.3) !important;
+  border-color: rgba(0, 150, 230, 0.3) !important;
+}
 /* zielony */
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129); padding: 10px;"],
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(67, 181, 129); background-color: rgb(67, 181, 129);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="67, 181, 129"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
 /* zolty */
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26); padding: 10px;"],
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(250, 166, 26); background-color: rgb(250, 166, 26);"] {
-  background: rgba(255, 153, 0, 0.3) !important;
-  border-color: rgba(255, 153, 0, 0.3) !important;
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="250, 166, 26"] {
+  background: rgba(255, 196, 0, 0.3) !important;
+  border-color: rgba(255, 196, 0, 0.3) !important;
 }
 /* pomaranczowy */
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49); padding: 10px;"],
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(245, 119, 49); background-color: rgb(245, 119, 49);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="245, 119, 49"] {
   background: rgba(242, 97, 0, 0.3) !important;
   border-color: rgba(242, 97, 0, 0.3) !important;
 }
 /* czerwony */
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71); padding: 10px;"],
-[aria-label*="SETTINGS"]
-  .da-radioGroup
-  .da-item[style="padding: 10px; border-color: rgb(240, 71, 71); background-color: rgb(240, 71, 71);"] {
+[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="240, 71, 71"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
@@ -2215,7 +2205,7 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   border-color: rgba(255, 255, 255, 0.8) !important;
 }
 /*niepokolorowane aktualnie pola*/
-[aria-label*="SETTINGS"] .da-systemPad .da-contentColumnDefault .da-card[style*="padding: 10px"] {
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-card[style*="padding: 10px"] {
   background: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.8);
 }
@@ -2242,12 +2232,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
+/*polprzezroczyste pola (czesc ustawien "Integracje")*/
+[aria-label*="SETTINGS"] .da-contentRegion .da-contentColumn .da-footerPlaceholder .da-card {
+  background: rgba(0, 0, 0, 0.4) !important;
+  border-color: #000000 !important;
+}
 /*polprzezroczyste pola (czesc ustawien "Widżet")*/
-[aria-label*="SETTINGS"] .da-systemPad .da-copyInput {
+[aria-label*="SETTINGS"] .da-contentRegion .da-copyInput {
   background: rgba(0, 0, 0, 0.5) !important;
 }
+
 /*czesc ustawien serwera: Czlonkowie*/
-[aria-label*="SETTINGS"] .da-systemPad .da-customHeader .da-searchBar {
+/*searchbar*/
+[aria-label*="SETTINGS"] .da-contentRegion .da-membersHeader .da-searchBar {
   background: rgba(0, 0, 0, 0.4) !important;
   border-color: #000000 !important;
 }
@@ -2394,29 +2391,16 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /* Poszczególne opcje ustawień */
 
 /*"Moje konto"*/
-/*rozmazany email w ustawieniach konta przed najechaniem myszką*/
-#user-settings .da-contentRegion .da-userInfoViewing .da-viewBody {
-  filter: blur(5px);
-  transition: 200ms cubic-bezier(0.2, 0.11, 0, 1);
+/*pole z kontem*/
+#user-settings .da-contentRegion .da-children > .da-background,
+#user-settings .da-contentRegion .da-children > .da-background > .da-fieldList {
+  background: rgba(0, 0, 0, 0.5) !important;
 }
-#user-settings .da-contentRegion .da-userInfoViewing .da-viewBody:hover {
-  filter: none;
-  transition: 200ms cubic-bezier(0.2, 0.11, 0, 1);
-}
-/*żeby nie było blura na nicku*/
-#user-settings .da-contentRegion .da-userInfoViewing .da-marginBottom20 > .da-viewBody {
-  filter: none;
-  transition: none;
-}
-/*input nicku*/
-#user-settings .da-contentRegion .da-inputWrapper .da-input.da-focused {
-  border-color: var(--bt-blue-bg) !important;
-}
-#user-settings .da-contentRegion .da-inputWrapper .da-questionMark {
-  background: var(--bt-blue-bg) !important;
-}
-#user-settings .da-contentRegion .da-inputWrapper .da-questionMark:hover {
-  background: var(--bt-blue-bg-hover) !important;
+/*popout po kliknieciu edytuj*/
+.da-layer > .da-focusLock > .da-root,
+.da-layer > .da-focusLock > .da-root .da-footer {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0px 0px !important;
 }
 
 /*"Prywatnosc i bezpieczenstwo"*/
@@ -2815,7 +2799,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(8)::after {
   background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
 }
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(9)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(10)::after {
+  background-image: url(https://discordapp.com/assets/5a24b20b84fb3eafc138916729386e76.svg) !important;
+}
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(11)::after {
   background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
   background-size: cover;
 }
