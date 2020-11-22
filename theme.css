@@ -467,15 +467,23 @@ body::after {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: 0px 0px !important;
 }
-[id*="popout"] .da-menu > .da-item:hover {
+[id*="popout"] .da-menu > * > .da-item {
+  background: transparent !important;
+}
+[id*="popout"] .da-menu > * > .da-item:hover {
   background: rgba(0, 0, 0, 1);
+}
+/*popout: zmiana swojego statusu online - custom status popout select*/
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-children .da-select {
+  background: #000 !important;
+  border-color: transparent !important;
 }
 
 /*status online polaczenia: background kontenera*/
 .da-content .da-panels,
 .da-content .da-panels .da-container {
-  background-color: rgba(0, 0, 0, 0) !important;
-  border-bottom-color: transparent;
+  background-color: transparent !important;
+  border-bottom-color: transparent !important;
 }
 
 /*wlaczenie kamery/udostepniania ekranu pod statusem polaczenia*/
@@ -1770,6 +1778,13 @@ body::after {
 .da-layerContainer .da-layer .da-menu .da-wrapper .da-customItem .da-button:hover {
   transform: scale(1.1);
 }
+/*opcje menu*/
+.da-layerContainer .da-layer .da-menu [class*="Container"] {
+  background: rgba(0, 0, 0, 0) !important;
+}
+.da-layerContainer .da-layer .da-menu [class*="Container"]:hover {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
 
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie*/
 form .da-autocomplete,
@@ -2984,6 +2999,11 @@ input {
 input:focus {
   border-color: var(--markup-blue) !important;
   box-shadow: 0px 0px transparent;
+}
+
+/*popout tłumienia zakłóceń Krisp*/
+.da-noiseCancellationPopout {
+  background: rgba(0, 0, 0, 0.95) !important;
 }
 
 /*przyciski w dolnym lewym przed i po połączeniu*/
