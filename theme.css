@@ -190,7 +190,7 @@ body::after {
 .wrapper-1Rf91z #bd-pub-button:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-/*tlo Add server, Server discovery, 
+/*tlo Add server, Odkrywaj Serwery Publiczne, 
   listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 .wrapper-1Rf91z .da-circleIconButton,
 .wrapper-1Rf91z .da-listItemWrapper > a {
@@ -301,76 +301,99 @@ body::after {
   color: var(--markup-normal);
 }
 
-/*pole po kliknieciu w Server Discovery*/
-[class*="theme-"] .da-content > .da-pageWrapper {
-  background-color: rgba(0, 0, 0, 0) !important;
+/*pole po kliknieciu w Odkrywaj Serwery Publiczne*/
+/*sidebar po lewej*/
+.da-container .da-base .da-content > .da-sidebar .da-categoryItem:hover .da-itemInner {
+  background: var(--default-hover) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper > .da-bg {
-  display: none !important;
+.da-container .da-base .da-content > .da-sidebar .da-categoryItem.da-selected .da-itemInner {
+  background: var(--default-selected) !important;
+}
+/*wrapper po prawej*/
+.da-container .da-base .da-content > .da-pageWrapper {
+  background: transparent !important;
 }
 /*search bar u gory*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > *:first-child {
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-searchBox {
   background: rgba(0, 0, 0, 0.6) !important;
 }
-/*pole wysuwane po wpisaniu czegokolwiek ("nacisnij enter aby wyszukac")*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > .da-searchHelpText {
-  opacity: 0 !important;
-  transition: 0.2s all ease-in;
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-searchBox .da-searchBoxInput {
+  color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search > * > .da-searchHelpTextVisible {
-  opacity: 1 !important;
+/*kiedy input jest zfocusowany*/
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-searchBox:focus-within {
+  border-color: var(--markup-blue) !important;
 }
-/*popout z językami*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select > [class*="css-"],
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] {
-  background: rgba(0, 0, 0, 0.6) !important;
+/*tip "nacisnij enter aby wyszukac"*/
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-cta {
+  opacity: 0.5 !important;
+  color: var(--bt-text) !important;
+}
+/*select i popout z językami*/
+.da-container .da-base .da-content > .da-pageWrapper .da-select > * > [class*="css-"],
+.da-container .da-base .da-content > .da-pageWrapper .da-select [class*="menu"] {
+  background: rgba(0, 0, 0, 0.9) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-search .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
-  background: rgba(0, 0, 0, 0.6) !important;
+.da-container .da-base .da-content > .da-pageWrapper .da-select [class*="menu"] [class*="option"]:hover > * {
+  color: var(--bt-text-hover) !important;
+}
+/*kategorie wyszukiwania*/
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill .da-categoryLabel {
+  color: var(--bt-text) !important;
+}
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill.da-selected {
+  background: var(--default-hover) !important;
+}
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill.da-selected .da-categoryLabel {
+  color: var(--bt-text-hover) !important;
 }
 
 /*pola z serwerami przed załadowaniem*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-loading {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > .da-loading {
   background: rgba(0, 0, 0, 0) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-cardPlaceholder,
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > .da-card,
+.da-container .da-base .da-content > .da-pageWrapper .da-guildList > .da-cardPlaceholder,
+.da-container .da-base .da-content > .da-pageWrapper .da-guildList > .da-placeholder,
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > .da-card,
 /*pola z serwerami po załadowaniu*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > * > .da-card {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > * > .da-card {
   background: rgba(0, 0, 0, 0.7) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > * > .da-card button[class*="colorBrand"] {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > * > .da-card button[class*="colorBrand"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-guildList > * > .da-card button[class*="colorBrand"]:hover {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > * > .da-card button[class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 /*footer strony - lista stron wyszukanych serwerów*/
-/*next i previous*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-button {
+/*wstecz i dalej*/
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
   min-width: 80px;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-button:hover {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 /*liczby*/
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-roundButton {
   border-radius: 5px;
   min-width: 40px !important;
   background: rgba(0, 0, 0, 0.2) !important;
   color: var(--bt-text) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton.da-activeButton {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-roundButton.da-activeButton {
   background: rgba(0, 0, 0, 0.5) !important;
   color: var(--bt-text-hover) !important;
 }
-[class*="theme-"] .da-content > .da-pageWrapper .da-body .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
   background: rgba(0, 0, 0, 0.4) !important;
   color: var(--bt-text-hover) !important;
 }
