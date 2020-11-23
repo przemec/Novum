@@ -1165,7 +1165,7 @@ body::after {
   box-shadow: 0px 0px;
 }
 
-/*emoji picker*/
+/*EMOJI PICKER - POPOUT PRZY WIADOMOSCI NA CZACIE*/
 [id*="popout"] .da-emojiPicker,
 [id*="popout"] .da-contentWrapper {
   background-color: rgba(0, 0, 0, 0.9) !important;
@@ -1180,13 +1180,13 @@ body::after {
 [id*="popout"] .da-emojiPicker > .da-header,
 [id*="popout"] [id*="emoji"] > .da-categoryList,
 [id*="popout"] .da-emojiPicker > .da-inspector {
-  background: rgba(0, 0, 0, 1);
+  background: #000;
 }
 /*pasek wyszukiwania*/
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar .da-inner,
 [id*="popout"] .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
   background-color: var(--default-hover);
-  color: #ffffff;
+  color: #fff;
   border: 1px solid transparent;
 }
 /*wybór koloru ręki*/
@@ -1195,7 +1195,7 @@ body::after {
   border-color: #000;
 }
 [id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover {
-  background-color: rgba(0, 0, 0, 1) !important;
+  background-color: #000 !important;
 }
 [id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
   transform: scale(1.1);
@@ -1245,6 +1245,68 @@ body::after {
 }
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-corner {
   background: transparent !important;
+}
+
+/*EMOJI PICKER - POPOUT PRZY INPUCIE CZATU*/
+.da-form .da-emojiPicker {
+  background-color: transparent !important;
+}
+.da-form .da-channelTextArea section .da-contentWrapper {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}
+.da-form .da-emojiPicker > .da-header > .da-searchBar {
+  background-color: transparent !important;
+}
+/*header z wyborem miedzy emoji a gif*/
+.da-form .da-contentWrapper .da-nav .da-navButtonActive {
+  background: var(--bt-blue-bg-hover) !important;
+  color: var(--bt-text) !important;
+}
+/*header z searchbarem, kategorie po boku i info o emoji u dolu*/
+.da-form .da-emojiPicker > .da-header,
+.da-form .da-channelTextArea section [id*="emoji"] > .da-categoryList,
+.da-form .da-emojiPicker > .da-inspector {
+  background: #000;
+}
+/*pasek wyszukiwania*/
+.da-form .da-emojiPicker > .da-header > .da-searchBar .da-inner,
+.da-form .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
+  background-color: var(--default-hover);
+  color: #fff;
+  border: 1px solid transparent;
+}
+/*wybór koloru ręki*/
+.da-form .da-emojiPicker > .da-header > .da-diversitySelector > .da-diversitySelectorPopout {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+  border-color: #000;
+}
+.da-form .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover {
+  background-color: #000 !important;
+}
+.da-form .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
+  transform: scale(1.1);
+}
+/*sticky header*/
+.da-form .da-emojiPicker .da-scroller .da-categorySection > .da-header {
+  background: rgba(0, 0, 0, 0.5) !important;
+}
+.da-form .da-emojiPicker .da-scroller .da-categorySection .da-header {
+  color: #fff;
+}
+/*wybrana kategoria z ikon po lewej*/
+.da-form .da-emojiPicker .da-categories .da-emojiItem.da-emojiItemSelected {
+  border-bottom-color: var(--default-hover);
+  background-color: var(--default-selected);
+}
+/*pojedyncza emotka*/
+.da-form .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem {
+  transition: all 0.3s;
+  opacity: 0.6;
+}
+.da-form .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem.da-emojiItemSelected {
+  transform: scale(1.25);
+  opacity: 1;
+  background-color: transparent;
 }
 
 /*emoji picker: usuniecie BetterDiscordowego menu u góry*/
