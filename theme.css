@@ -2185,39 +2185,39 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*czesc ustawien serwera: Moderacja */
-/* niebieski */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="114, 137, 218"] {
-  background: rgba(0, 150, 230, 0.3) !important;
-  border-color: rgba(0, 150, 230, 0.3) !important;
+/*polprzezroczyste pola opcji*/
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: rgba(0, 0, 0, 0.3) !important;
+}
+/*default*/
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] .da-radioBar {
+  background: rgba(0, 0, 0, 0.5) !important;
+  border-color: rgba(0, 0, 0, 0.5) !important;
 }
 /* zielony */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="67, 181, 129"] {
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="43b581"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
 /* zolty */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="250, 166, 26"] {
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="faa61a"] {
   background: rgba(255, 196, 0, 0.3) !important;
   border-color: rgba(255, 196, 0, 0.3) !important;
 }
 /* pomaranczowy */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="245, 119, 49"] {
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="f57731"] {
   background: rgba(242, 97, 0, 0.3) !important;
   border-color: rgba(242, 97, 0, 0.3) !important;
 }
 /* czerwony */
-[aria-label*="SETTINGS"] .da-radioGroup .da-item[style*="240, 71, 71"] {
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="f04747"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
 /*checkboxy wewnątrz*/
-[aria-label*="SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox {
-  background: rgba(0, 0, 0, 0) !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
-}
-[aria-label*="SETTINGS"] .da-radioGroup .da-item .da-checkboxWrapper .da-checkbox.da-checked {
-  background: rgba(0, 0, 0, 0) !important;
-  border-color: rgba(255, 255, 255, 0.8) !important;
+[aria-label*="SETTINGS"] [role="radiogroup"] .da-item .da-radioBar svg circle {
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 /*niepokolorowane aktualnie pola*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-card[style*="padding: 10px"] {
@@ -2420,30 +2420,21 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*"Prywatnosc i bezpieczenstwo"*/
 /*polprzezroczyste pola u gory (zielony, pomaranczowy i czerowny)*/
-#user-settings .da-contentRegion .da-radioGroup .da-item[style*="background-color: rgb(67, 181, 129)"] {
+#user-settings .da-contentRegion [role="radiogroup"] .da-item[aria-checked="true"] [style*="43b581"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
-#user-settings .da-contentRegion .da-radioGroup .da-item[style*="background-color: rgb(250, 166, 26)"] {
+#user-settings .da-contentRegion [role="radiogroup"] .da-item[aria-checked="true"] [style*="faa61a"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
-#user-settings .da-contentRegion .da-radioGroup .da-item[style*="background-color: rgb(240, 71, 71)"] {
+#user-settings .da-contentRegion [role="radiogroup"] .da-item[aria-checked="true"] [style*="f04747"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
 /*checkboxy wewnątrz*/
-#user-settings .da-contentRegion .da-item[style*="background-color: rgb(67, 181, 129)"] .da-checkboxWrapper .da-checkbox,
-#user-settings .da-contentRegion .da-item[style*="background-color: rgb(250, 166, 26)"] .da-checkboxWrapper .da-checkbox,
-#user-settings .da-contentRegion .da-item[style*="background-color: rgb(240, 71, 71)"] .da-checkboxWrapper .da-checkbox {
-  background: rgba(0, 0, 0, 0) !important;
-  border-color: rgba(255, 255, 255, 0.2) !important;
-}
-#user-settings .da-contentRegion .da-item[style*="background-color: rgb(240, 71, 71)"] .da-checkboxWrapper .da-checkbox.da-checked,
-#user-settings .da-contentRegion .da-item[style*="background-color: rgb(250, 166, 26)"] .da-checkboxWrapper .da-checkbox.da-checked,
-#user-settings .da-contentRegion .da-item[style*="background-color: rgb(240, 71, 71)"] .da-checkboxWrapper .da-checkbox.da-checked {
-  background: rgba(0, 0, 0, 0) !important;
-  border-color: rgba(255, 255, 255, 0.8) !important;
+#user-settings .da-contentRegion .da-item svg circle {
+  color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /*"Autoryzowane aplikacje"*/
