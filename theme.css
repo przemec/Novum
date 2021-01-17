@@ -1947,15 +1947,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*tooltip po najechaniu na ikone serwera/przycisk rozłączenia itp*/
-[class*="tooltipBlack-"],
-[class*="tooltipGrey-"] {
+[class*="tooltipPrimary"] {
   background-color: rgba(0, 0, 0, 0.95) !important;
   border: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
 }
-[class*="tooltipBlack-"] .da-tooltipPointer,
-[class*="tooltipGrey-"] .da-tooltipPointer {
+[class*="tooltip"] .da-tooltipPointer {
   border-top-color: rgba(0, 0, 0, 1) !important;
 }
 
