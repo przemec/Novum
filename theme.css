@@ -1828,15 +1828,15 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*oznaczenie ciebie na czacie*/
-.da-content .da-content .da-mentioned {
+.da-chat .da-content .da-content .da-mentioned {
   border-radius: 5px;
   background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
 }
-.da-content .da-content .da-mentioned .da-markup .mention {
+.da-chat .da-content .da-content .da-mentioned .da-markup .mention {
   color: var(--markup-intensive);
 }
 /*kolorowa linia po lewej*/
-.da-content .da-content .da-mentioned::before {
+.da-chat .da-content .da-content .da-mentioned::before {
   left: 3px;
   border-radius: 5px 0 0 5px;
   background: var(--markup-intensive);
@@ -1844,12 +1844,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 }
 
 /*oznaczenie kogoś na czacie*/
-.da-content .da-content .da-markup .mention {
+.da-chat .da-content .da-content .da-markup .mention {
   color: var(--markup-blue-light);
   background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
-.da-content .da-content .da-markup .mention:hover {
+.da-chat .da-content .da-content .da-markup .mention:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
