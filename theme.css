@@ -142,82 +142,82 @@ body::after {
   } */
 
 /*panel z serwerami po samej lewej*/
-.wrapper-1Rf91z {
+[class*="wrapper"][class*="guilds"] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-.wrapper-1Rf91z .da-guildSeparator {
+[class*="wrapper"][class*="guilds"] .da-guildSeparator {
   background: rgba(0, 0, 0, 0.5);
 }
 /*wybrany serwer: linia po lewej*/
-.wrapper-1Rf91z .da-pill .da-item {
+[class*="wrapper"][class*="guilds"] .da-pill .da-item {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
 }
-.wrapper-1Rf91z .da-pill[class*="selected"] .da-item {
+[class*="wrapper"][class*="guilds"] .da-pill[class*="selected"] .da-item {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
 }
 /*ikona po polaczeniu na glosowy*/
-.wrapper-1Rf91z .da-badgeWrapper .da-iconBadge {
+[class*="wrapper"][class*="guilds"] .da-badgeWrapper .da-iconBadge {
   background-color: #00000099;
   height: 17px !important;
   width: 17px !important;
 }
 /*tlo serwerów bez ikonki, tlo przezroczystych ikon serwerów i tlo serwera bez zadnej ikony po jego wybraniu*/
-.wrapper-1Rf91z a .da-acronym,
-.wrapper-1Rf91z a.da-wrapper :not(.da-acronym) {
+[class*="wrapper"][class*="guilds"] a .da-acronym,
+[class*="wrapper"][class*="guilds"] a.da-wrapper :not(.da-acronym) {
   background: rgba(0, 0, 0, 0.5);
 }
-.wrapper-1Rf91z a .da-acronym:hover,
-.wrapper-1Rf91z a.da-wrapper:hover :not(.da-acronym),
-.wrapper-1Rf91z a .da-acronym.da-selected,
-.wrapper-1Rf91z a.da-selected .da-acronym {
+[class*="wrapper"][class*="guilds"] a .da-acronym:hover,
+[class*="wrapper"][class*="guilds"] a.da-wrapper:hover :not(.da-acronym),
+[class*="wrapper"][class*="guilds"] a .da-acronym.da-selected,
+[class*="wrapper"][class*="guilds"] a.da-selected .da-acronym {
   background: rgba(0, 0, 0, 0.6);
 }
 /*tlo glownej ikony/loga discorda*/
-.wrapper-1Rf91z a.da-wrapper .da-homeIcon,
-.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper .da-childWrapper {
+[class*="wrapper"][class*="guilds"] a.da-wrapper .da-homeIcon,
+[class*="wrapper"][class*="guilds"] .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper .da-childWrapper {
   background: rgba(0, 0, 0, 0);
 }
-.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper {
+[class*="wrapper"][class*="guilds"] .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper {
   background: rgba(0, 0, 0, 0.5);
 }
-.wrapper-1Rf91z .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper.da-selected {
+[class*="wrapper"][class*="guilds"] .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper.da-selected {
   background: rgba(0, 0, 0, 0.6);
 }
 /*tlo public serwerow BetterDiscorda*/
-.wrapper-1Rf91z #bd-pub-button {
+[class*="wrapper"][class*="guilds"] #bd-pub-button {
   background: rgba(0, 0, 0, 0.5);
 }
-.wrapper-1Rf91z #bd-pub-button:hover {
+[class*="wrapper"][class*="guilds"] #bd-pub-button:hover {
   background: rgba(0, 0, 0, 0.6);
 }
 /*tlo Add server, Odkrywaj Serwery Publiczne, 
   listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
-.wrapper-1Rf91z .da-circleIconButton,
-.wrapper-1Rf91z .da-listItemWrapper > a {
+[class*="wrapper"][class*="guilds"] .da-circleIconButton,
+[class*="wrapper"][class*="guilds"] .da-listItemWrapper > a {
   background: rgba(0, 0, 0, 0.6);
   border-color: var(--markup-intensive);
   color: var(--markup-intensive);
 }
-.wrapper-1Rf91z .da-circleIconButton:hover,
-.wrapper-1Rf91z .da-listItemWrapper > a:hover {
+[class*="wrapper"][class*="guilds"] .da-circleIconButton:hover,
+[class*="wrapper"][class*="guilds"] .da-listItemWrapper > a:hover {
   background: rgba(0, 0, 0, 0.7);
 }
 /*katalogi serwerów*/
-.wrapper-1Rf91z .da-folder,
-.wrapper-1Rf91z .da-closedFolderIconWrapper,
-.wrapper-1Rf91z .da-expandedFolderBackground {
+[class*="wrapper"][class*="guilds"] .da-folder,
+[class*="wrapper"][class*="guilds"] .da-closedFolderIconWrapper,
+[class*="wrapper"][class*="guilds"] .da-expandedFolderBackground {
   background: rgba(0, 0, 0, 0) !important;
 }
-.wrapper-1Rf91z .da-folderIconWrapper,
-.wrapper-1Rf91z .da-expandedFolderBackground:not(.da-collapsed) {
+[class*="wrapper"][class*="guilds"] .da-folderIconWrapper,
+[class*="wrapper"][class*="guilds"] .da-expandedFolderBackground:not(.da-collapsed) {
   background: rgba(0, 0, 0, 0.5) !important;
   border-radius: 20px;
 }
-.wrapper-1Rf91z .da-expandedFolderIconWrapper svg[style*="color: rgb(114, 137, 218)"] path {
+[class*="wrapper"][class*="guilds"] .da-expandedFolderIconWrapper svg[style*="color: rgb(114, 137, 218)"] path {
   fill: var(--markup-normal);
 }
 /*background kiedy przesuwasz folder*/
-.wrapper-1Rf91z .da-listItem .da-dragInner {
+[class*="wrapper"][class*="guilds"] .da-listItem .da-dragInner {
   background: rgba(0, 0, 0, 0.6);
 }
 
