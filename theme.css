@@ -19,6 +19,73 @@
   --markup-blue-light: #c28383e6;
 }
 
+.da-reactionMe {
+  border-color: var(--bt-red-hover) !important;
+}
+
+.da-channelTextArea>.da-container {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.da-itemCard {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.da-itemCard>div>.da-inset {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+.da-horizonal>.da-button {
+  background-color: var(--bt-red) !important;
+}
+
+.da-horizonal>.da-button:hover {
+  background-color: var(--bt-red-hover) !important;
+}
+
+.da-drawerSizingWrapper>.da-contentWrapper {
+
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.da-navList>.da-navItem>.da-navButtonActive {
+  background-color: var(--bt-red) !important;
+
+}
+
+.da-categoryFadeBlurple {
+  background-color: var(--bt-red) !important;
+
+}
+
+.da-categoryList {
+
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.da-categoryItemRecentEmoji {
+  background-color: var(--bt-red) !important;
+
+}
+
+.da-unicodeShortcut {
+  background-color: #000;
+}
+
+.da-inspector {
+  background-color: #000;
+}
+
+.bd-emote-header {
+  background-color: #000;
+
+}
+
+
+.da-categorySection>.da-header {
+  background-color: #000;
+}
+
 #MemberCount {
   background: transparent !important;
 }
