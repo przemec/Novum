@@ -19,6 +19,113 @@
   --markup-blue-light: #c28383e6;
 }
 
+.da-sidebar>.da-container>.da-list::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb) !important;
+}
+
+.da-scroller::-webkit-scrollbar-thumb {
+  background-color: var(--scroll-thumb) !important;
+}
+
+.da-scroller::-webkit-scrollbar-track {
+  background-color: transparent !important;
+}
+
+.da-nowPlayingColumn>.da-container {
+  background-color: transparent !important;
+
+}
+
+.da-titleContainer {
+  background-color: transparent !important;
+
+}
+
+.da-didRender>div {
+  background-color: #000 !important;
+}
+
+.da-scroller>div>div:nth-child(1) {
+  background-color: transparent !important;
+}
+
+.da-headerContainer>div>div {
+  background-color: transparent !important;
+
+}
+
+[class*="da-tabBarItem"]:hover {
+  border-bottom-color: var(--bt-red-hover) !important;
+}
+
+[class*="da-tabBarItem"][class*="da-selected"] {
+  border-bottom-color: var(--bt-red) !important;
+}
+
+.da-searchContainer>.da-container>.da-inner>.da-input::placeholder {
+  color: var(--bt-text) !important;
+}
+
+.da-circleButton {
+  background-color: var(--default-hover) !important;
+}
+
+.da-circleButton:hover {
+  background-color: var(--default-selected) !important;
+}
+
+.da-searchContainer>.da-addButton {
+  background-color: var(--bt-red) !important;
+}
+
+.da-searchContainer>.da-addButton:hover {
+  background-color: var(--bt-red-hover) !important;
+}
+
+.da-actionDeny {
+  background-color: var(--bt-red) !important;
+}
+
+.da-actionDeny:hover {
+  background-color: var(--bt-red-hover) !important;
+}
+
+.da-actionDeny:hover>svg {
+  color: var(--bt-text-hover) !important;
+}
+
+.da-emptyCard {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+#permissions-modal {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+#permissions-modal>div {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+#permissions-modal>div>div {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+.da-micTestButton {
+  background-color: var(--bt-red) !important;
+}
+
+.da-micTestButton:hover {
+  background-color: var(--bt-red-hover) !important;
+}
+
+.da-title>.da-children>.da-iconWrapper>.da-icon>path:nth-child(2) {
+  color: var(--bt-red) !important;
+}
+
+.da-listItemWrapper {
+  background: transparent !important;
+}
+
 .da-reactionMe {
   border-color: var(--bt-red-hover) !important;
 }
@@ -343,6 +450,8 @@
   background-color: var(--default-hover) !important;
   color: var(--bt-text) !important;
 }
+
+
 
 .da-createButton {
   background-color: var(--bt-red) !important;
