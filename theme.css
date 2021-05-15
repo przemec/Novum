@@ -486,7 +486,7 @@ body::after {
 }
 
 /*pasek nad discordem*/
-#app-mount>.da-typeWindows {
+#app-mount > .da-typeWindows {
   height: 18px;
   margin-top: 0px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -512,81 +512,75 @@ body::after {
 
 /*Scrollbar na czacie serwera i prywatnej konwersacji, liście znajomych, stronie dsc nitro, 
   prawej stronie niektórych opcji w ustawieniach, popoucie dodawania roli uzytkownikowi*/
-[class*="theme-"] .da-chatContent>* [class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-content>*>.da-scrollerWrap ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-peopleColumn>[class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-applicationStore>*>[class*="scroller"]::-webkit-scrollbar-thumb,
-#user-settings .da-contentTransitionWrap>[class*="scroller"]::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"]>.da-container section>[class*="scroller"]::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-chatContent > * [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-thumb,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]::-webkit-scrollbar-thumb {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-
-[class*="theme-"] .da-chatContent>* [class*="scroller"]::-webkit-scrollbar-track,
-[class*="theme-"] .da-content>*>.da-scrollerWrap ::-webkit-scrollbar-track,
-[class*="theme-"] .da-peopleColumn>[class*="scroller"]::-webkit-scrollbar-track,
-[class*="theme-"] .da-applicationStore>*>[class*="scroller"]::-webkit-scrollbar-track,
-#user-settings .da-contentTransitionWrap>[class*="scroller"]::-webkit-scrollbar-track,
-[id*="popout"] [class*="animator"]>.da-container section>[class*="scroller"]::-webkit-scrollbar-track {
+[class*="theme-"] .da-chatContent > * [class*="scroller"]::-webkit-scrollbar-track,
+[class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track,
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-track,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-track,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]::-webkit-scrollbar-track,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]::-webkit-scrollbar-track {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-
-[class*="theme-"] .da-chatContent>* [class*="scroller"]::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-content>*>.da-scrollerWrap ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-peopleColumn>[class*="scroller"]::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-applicationStore>*>[class*="scroller"]::-webkit-scrollbar-track-piece,
-#user-settings .da-contentTransitionWrap>[class*="scroller"]::-webkit-scrollbar-track-piece,
-[id*="popout"] [class*="animator"]>.da-container section>[class*="scroller"]::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-chatContent > * [class*="scroller"]::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-content > * > .da-scrollerWrap ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]::-webkit-scrollbar-track-piece,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]::-webkit-scrollbar-track-piece,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]::-webkit-scrollbar-track-piece {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-
-[class*="theme-"] .da-chatContent>* [class*="scroller"]:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-content>*>.da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-peopleColumn>[class*="scroller"]:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-applicationStore>*>[class*="scroller"]:hover::-webkit-scrollbar-thumb,
-#user-settings .da-contentTransitionWrap>[class*="scroller"]:hover::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"]>.da-container section>[class*="scroller"]:hover::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-chatContent > * [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover::-webkit-scrollbar-thumb {
   /* border-color: var(--scroll-thumb) !important; */
   background-color: var(--scroll-thumb) !important;
 }
-
-[class*="theme-"] .da-chatContent>* [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-content>*>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-peopleColumn>[class*="scroller"]:hover::-webkit-scrollbar-track-piece,
-[class*="theme-"] .da-applicationStore>*>[class*="scroller"]:hover::-webkit-scrollbar-track-piece,
-#user-settings .da-contentTransitionWrap>[class*="scroller"]:hover::-webkit-scrollbar-track-piece,
-[id*="popout"] [class*="animator"]>.da-container section>[class*="scroller"]:hover::-webkit-scrollbar-track-piece {
+[class*="theme-"] .da-chatContent > * [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-content > * > .da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-peopleColumn > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+[class*="theme-"] .da-applicationStore > * > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+#user-settings .da-contentTransitionWrap > [class*="scroller"]:hover::-webkit-scrollbar-track-piece,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover::-webkit-scrollbar-track-piece {
   border-color: var(--scroll-bg-bord) !important;
   background-color: var(--scroll-bg) !important;
 }
 
 /*po kolei: kanaly na serwerze, sidebar w ustawieniach, uzytkownicy na serwerze, wyniki wyszukiwania, 
   lista prywatnych wiadomosci, przypiete wiadomosci, różne popouty*/
-[class*="theme-"] .da-base .da-container>.da-scroller::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-sidebarRegion>.da-sidebarRegionScroller::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-membersWrap>[class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-searchResultsWrap>.da-scroller::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-privateChannels>.da-scroller::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-messagesPopoutWrap>[class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-modal>[class*="scroller"]::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-base .da-container > .da-scroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-sidebarRegion > .da-sidebarRegionScroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-membersWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-searchResultsWrap > .da-scroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-privateChannels > .da-scroller::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-messagesPopoutWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-modal > [class*="scroller"]::-webkit-scrollbar-thumb {
   border-color: transparent !important;
   background-color: transparent !important;
 }
-
-[class*="theme-"] .da-base .da-container>.da-scroller:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-sidebarRegion>.da-sidebarRegionScroller:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-membersWrap>[class*="scroller"]:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-searchResultsWrap>.da-scroller:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-privateChannels>.da-scroller:hover::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-messagesPopoutWrap>[class*="scroller"]::-webkit-scrollbar-thumb,
-[class*="theme-"] .da-modal>[class*="scroller"]::-webkit-scrollbar-thumb,
-[id*="popout"] [class*="animator"]>.da-container section>[class*="scroller"]:hover ::-webkit-scrollbar-thumb {
+[class*="theme-"] .da-base .da-container > .da-scroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-sidebarRegion > .da-sidebarRegionScroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-membersWrap > [class*="scroller"]:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-searchResultsWrap > .da-scroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-privateChannels > .da-scroller:hover::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-messagesPopoutWrap > [class*="scroller"]::-webkit-scrollbar-thumb,
+[class*="theme-"] .da-modal > [class*="scroller"]::-webkit-scrollbar-thumb,
+[id*="popout"] [class*="animator"] > .da-container section > [class*="scroller"]:hover ::-webkit-scrollbar-thumb {
   border-color: var(--scroll-thumb) !important;
   background-color: var(--scroll-thumb) !important;
 }
-
 /* [class*="theme-"] .da-base .da-container>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
   [class*="theme-"] .da-sidebarRegion>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
   [class*="theme-"] .da-membersWrap>.da-scrollerWrap:hover ::-webkit-scrollbar-track-piece,
@@ -601,324 +595,267 @@ body::after {
 [class*="wrapper"][class*="guilds"] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-
 [class*="wrapper"][class*="guilds"] .da-guildSeparator {
   background: rgba(0, 0, 0, 0.5);
 }
-
 /*wybrany serwer: linia po lewej*/
 [class*="wrapper"][class*="guilds"] .da-pill .da-item {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.6));
 }
-
 [class*="wrapper"][class*="guilds"] .da-pill[class*="selected"] .da-item {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
 }
-
 /*ikona po polaczeniu na glosowy*/
 [class*="wrapper"][class*="guilds"] .da-badgeWrapper .da-iconBadge {
   background-color: #00000099;
   height: 17px !important;
   width: 17px !important;
 }
-
 /*tlo serwerów bez ikonki, tlo przezroczystych ikon serwerów i tlo serwera bez zadnej ikony po jego wybraniu*/
 [class*="wrapper"][class*="guilds"] a .da-acronym,
 [class*="wrapper"][class*="guilds"] a.da-wrapper :not(.da-acronym) {
   background: rgba(0, 0, 0, 0.5);
 }
-
 [class*="wrapper"][class*="guilds"] a .da-acronym:hover,
 [class*="wrapper"][class*="guilds"] a.da-wrapper:hover :not(.da-acronym),
 [class*="wrapper"][class*="guilds"] a .da-acronym.da-selected,
 [class*="wrapper"][class*="guilds"] a.da-selected .da-acronym {
   background: rgba(0, 0, 0, 0.6);
 }
-
 /*tlo glownej ikony/loga discorda*/
 [class*="wrapper"][class*="guilds"] a.da-wrapper .da-homeIcon,
 [class*="wrapper"][class*="guilds"] .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper .da-childWrapper {
   background: rgba(0, 0, 0, 0);
 }
-
 [class*="wrapper"][class*="guilds"] .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper {
   background: rgba(0, 0, 0, 0.5);
 }
-
 [class*="wrapper"][class*="guilds"] .da-listItem:not(.bd-guild) .da-wrapper:not(.da-circleButtonMask) .da-wrapper.da-selected {
   background: rgba(0, 0, 0, 0.6);
 }
-
 /*tlo public serwerow BetterDiscorda*/
 [class*="wrapper"][class*="guilds"] #bd-pub-button {
   background: rgba(0, 0, 0, 0.5);
 }
-
 [class*="wrapper"][class*="guilds"] #bd-pub-button:hover {
   background: rgba(0, 0, 0, 0.6);
 }
-
 /*tlo Add server, Odkrywaj Serwery Publiczne, 
   listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
 [class*="wrapper"][class*="guilds"] .da-circleIconButton,
-[class*="wrapper"][class*="guilds"] .da-listItemWrapper>a {
+[class*="wrapper"][class*="guilds"] .da-listItemWrapper > a {
   background: rgba(0, 0, 0, 0.6);
   border-color: var(--markup-intensive);
   color: var(--markup-intensive);
 }
-
 [class*="wrapper"][class*="guilds"] .da-circleIconButton:hover,
-[class*="wrapper"][class*="guilds"] .da-listItemWrapper>a:hover {
+[class*="wrapper"][class*="guilds"] .da-listItemWrapper > a:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-
 /*katalogi serwerów*/
 [class*="wrapper"][class*="guilds"] .da-folder,
 [class*="wrapper"][class*="guilds"] .da-closedFolderIconWrapper,
 [class*="wrapper"][class*="guilds"] .da-expandedFolderBackground {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 [class*="wrapper"][class*="guilds"] .da-folderIconWrapper,
 [class*="wrapper"][class*="guilds"] .da-expandedFolderBackground:not(.da-collapsed) {
   background: rgba(0, 0, 0, 0.5) !important;
   border-radius: 20px;
 }
-
 [class*="wrapper"][class*="guilds"] .da-expandedFolderIconWrapper svg[style*="color: rgb(114, 137, 218)"] path {
   fill: var(--markup-normal);
 }
-
 /*background kiedy przesuwasz folder*/
 [class*="wrapper"][class*="guilds"] .da-listItem .da-dragInner {
   background: rgba(0, 0, 0, 0.6);
 }
 
 /*popout gdy edytujesz folder serwerów*/
-[class*="theme-"] .da-layerContainer>.da-layer>.da-focusLock .da-root {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: 0px 0px;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer>.da-focusLock .da-root .da-footer {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer>.da-focusLock .da-root .da-footer button[class*="lookFilled-"] {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button[class*="lookFilled-"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer>.da-focusLock .da-root .da-footer button[class*="lookFilled-"]:hover {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-footer button[class*="lookFilled-"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*popout z customowym kolorem*/
-[class*="theme-"] .da-layerContainer>.da-layer>.da-didRender .da-colorPickerCustom {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-didRender .da-colorPickerCustom {
   background: rgba(0, 0, 0, 1) !important;
   border-color: rgba(0, 0, 0, 0);
 }
 
 /*popout po kliknieciu w Dodaj Serwer*/
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: 0px 0px !important;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 /*header*/
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-header [class*="Primary"] {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-header [class*="Primary"] {
   color: rgba(255, 255, 255, 0.8) !important;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-header [class*="Secondary"] {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-header [class*="Secondary"] {
   color: rgba(255, 255, 255, 0.4) !important;
 }
-
 /*body*/
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-templatesList>button {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-templatesList > button {
   background-color: rgba(0, 0, 0, 1) !important;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-templatesList>button .da-text {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-templatesList > button .da-text {
   color: rgba(255, 255, 255, 0.5);
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-templatesList>button:hover .da-text {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-templatesList > button:hover .da-text {
   color: rgba(255, 255, 255, 0.8);
 }
-
 /*footer*/
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-footer {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-footer>button {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-footer > button {
   color: var(--bt-text) !important;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-footer>button[class*="Filled"] {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-footer > button[class*="Filled"] {
   background: var(--bt-blue-bg) !important;
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-footer>button[class*="Filled"]:hover {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-footer > button[class*="Filled"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /* po przejściu dalej */
 /*input*/
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container input,
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-inputWrapper {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container input,
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-inputWrapper {
   background: rgba(0, 0, 0, 0.9) !important;
   color: rgba(255, 255, 255, 0.7);
 }
-
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container input:hover,
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container input:focus {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container input:hover,
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container input:focus {
   border: 1px solid var(--markup-blue) !important;
 }
-
 /*linki*/
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container a,
-[class*="theme-"] .da-layerContainer>.da-layer .da-focusLock .da-root .da-container .da-sampleLink {
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container a,
+[class*="theme-"] .da-layerContainer > .da-layer .da-focusLock .da-root .da-container .da-sampleLink {
   color: var(--markup-normal);
 }
 
 /*pole po kliknieciu w Odkrywaj Serwery Publiczne*/
 /*sidebar po lewej*/
-.da-container .da-base .da-content>.da-sidebar .da-categoryItem:hover .da-itemInner {
+.da-container .da-base .da-content > .da-sidebar .da-categoryItem:hover .da-itemInner {
   background: var(--default-hover) !important;
 }
-
-.da-container .da-base .da-content>.da-sidebar .da-categoryItem.da-selected .da-itemInner {
+.da-container .da-base .da-content > .da-sidebar .da-categoryItem.da-selected .da-itemInner {
   background: var(--default-selected) !important;
 }
-
 /*wrapper po prawej*/
-.da-container .da-base .da-content>.da-pageWrapper {
+.da-container .da-base .da-content > .da-pageWrapper {
   background: transparent !important;
 }
-
 /*search bar u gory*/
-.da-container .da-base .da-content>.da-pageWrapper .da-search .da-searchBox {
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-searchBox {
   background: rgba(0, 0, 0, 0.6) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-search .da-searchBox .da-searchBoxInput {
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-searchBox .da-searchBoxInput {
   color: var(--bt-text) !important;
 }
-
 /*kiedy input jest zfocusowany*/
-.da-container .da-base .da-content>.da-pageWrapper .da-search .da-searchBox:focus-within {
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-searchBox:focus-within {
   border-color: var(--markup-blue) !important;
 }
-
 /*tip "nacisnij enter aby wyszukac"*/
-.da-container .da-base .da-content>.da-pageWrapper .da-search .da-cta {
+.da-container .da-base .da-content > .da-pageWrapper .da-search .da-cta {
   opacity: 0.5 !important;
   color: var(--bt-text) !important;
 }
-
 /*select i popout z językami*/
-.da-container .da-base .da-content>.da-pageWrapper .da-select>*>[class*="css-"],
-.da-container .da-base .da-content>.da-pageWrapper .da-select [class*="menu"] {
+.da-container .da-base .da-content > .da-pageWrapper .da-select > * > [class*="css-"],
+.da-container .da-base .da-content > .da-pageWrapper .da-select [class*="menu"] {
   background: rgba(0, 0, 0, 0.9) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-select [class*="menu"] [class*="option"]:hover>* {
+.da-container .da-base .da-content > .da-pageWrapper .da-select [class*="menu"] [class*="option"]:hover > * {
   color: var(--bt-text-hover) !important;
 }
-
 /*kategorie wyszukiwania*/
-.da-container .da-base .da-content>.da-pageWrapper .da-categories .da-categoryPill {
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-categories .da-categoryPill .da-categoryLabel {
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill .da-categoryLabel {
   color: var(--bt-text) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-categories .da-categoryPill.da-selected {
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill.da-selected {
   background: var(--default-hover) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-categories .da-categoryPill.da-selected .da-categoryLabel {
+.da-container .da-base .da-content > .da-pageWrapper .da-categories .da-categoryPill.da-selected .da-categoryLabel {
   color: var(--bt-text-hover) !important;
 }
 
 /*pola z serwerami przed załadowaniem*/
-.da-container .da-base .da-content>.da-pageWrapper .da-guildListSection .da-guildList>.da-loading {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > .da-loading {
   background: rgba(0, 0, 0, 0) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-guildList>.da-cardPlaceholder,
-.da-container .da-base .da-content>.da-pageWrapper .da-guildList>.da-placeholder,
-.da-container .da-base .da-content>.da-pageWrapper .da-guildListSection .da-guildList>.da-card,
+.da-container .da-base .da-content > .da-pageWrapper .da-guildList > .da-cardPlaceholder,
+.da-container .da-base .da-content > .da-pageWrapper .da-guildList > .da-placeholder,
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > .da-card,
 /*pola z serwerami po załadowaniu*/
-.da-container .da-base .da-content>.da-pageWrapper .da-guildListSection .da-guildList>*>.da-card {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > * > .da-card {
   background: rgba(0, 0, 0, 0.7) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-guildListSection .da-guildList>*>.da-card button[class*="colorBrand"] {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > * > .da-card button[class*="colorBrand"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-guildListSection .da-guildList>*>.da-card button[class*="colorBrand"]:hover {
+.da-container .da-base .da-content > .da-pageWrapper .da-guildListSection .da-guildList > * > .da-card button[class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*footer strony - lista stron wyszukanych serwerów*/
 /*wstecz i dalej*/
-.da-container .da-base .da-content>.da-pageWrapper .da-pageControl>.da-button {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
   min-width: 80px;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-pageControl>.da-button:hover {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*liczby*/
-.da-container .da-base .da-content>.da-pageWrapper .da-pageControl>.da-roundButton {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-roundButton {
   border-radius: 5px;
   min-width: 40px !important;
   background: rgba(0, 0, 0, 0.2) !important;
   color: var(--bt-text) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-pageControl>.da-roundButton.da-activeButton {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-roundButton.da-activeButton {
   background: rgba(0, 0, 0, 0.5) !important;
   color: var(--bt-text-hover) !important;
 }
-
-.da-container .da-base .da-content>.da-pageWrapper .da-pageControl>.da-roundButton:not(.da-activeButton):hover {
+.da-container .da-base .da-content > .da-pageWrapper .da-pageControl > .da-roundButton:not(.da-activeButton):hover {
   background: rgba(0, 0, 0, 0.4) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*po wejsciu na dany serwer: pole u dołu czatu*/
-[class*="theme-"] .da-chat form>.da-wrapper {
+[class*="theme-"] .da-chat form > .da-wrapper {
   background: rgba(0, 0, 0, 0.5);
 }
-
-[class*="theme-"] .da-chat form>.da-wrapper button[class*="colorBrand"] {
+[class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-[class*="theme-"] .da-chat form>.da-wrapper button[class*="colorBrand"]:hover {
+[class*="theme-"] .da-chat form > .da-wrapper button[class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
@@ -928,17 +865,14 @@ body::after {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: 0px 0px !important;
 }
-
-[id*="popout"] .da-menu>*>.da-item {
+[id*="popout"] .da-menu > * > .da-item {
   background: transparent !important;
 }
-
-[id*="popout"] .da-menu>*>.da-item:hover {
+[id*="popout"] .da-menu > * > .da-item:hover {
   background: rgba(0, 0, 0, 1);
 }
-
 /*popout: zmiana swojego statusu online - custom status popout select*/
-[class*="theme-"] .da-layerContainer>.da-layer>.da-focusLock .da-root .da-children .da-select {
+[class*="theme-"] .da-layerContainer > .da-layer > .da-focusLock .da-root .da-children .da-select {
   background: #000 !important;
   border-color: transparent !important;
 }
@@ -955,79 +889,67 @@ body::after {
   background: var(--default-hover) !important;
   color: rgba(255, 255, 255, 0.7) !important;
 }
-
 .da-content .da-panels .da-container .da-actionButtons button:hover {
   background: var(--default-selected) !important;
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /*status online polaczenia*/
-[id*="popout"] [class*="animator"]>.da-container,
-[id*="popout"] [class*="animator"]>.da-container>header {
+[id*="popout"] [class*="animator"] > .da-container,
+[id*="popout"] [class*="animator"] > .da-container > header {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
-
-[id*="popout"] [class*="animator"]>.da-container>section {
+[id*="popout"] [class*="animator"] > .da-container > section {
   background-color: rgba(0, 0, 0, 0.5) !important;
   color: #7e7e7e !important;
   text-align: start;
 }
-
-[id*="popout"] [class*="animator"]>.da-container>section>.paragraph {
+[id*="popout"] [class*="animator"] > .da-container > section > .paragraph {
   margin-top: 10px;
 }
-
 /*link debug*/
-[id*="popout"] [class*="animator"]>.da-container>section a {
+[id*="popout"] [class*="animator"] > .da-container > section a {
   color: var(--markup-normal) !important;
 }
-
 /*popout po kliknieciu debug*/
 [aria-label*="RTC"] .da-standardSidebarView,
-[aria-label*="RTC"] .da-standardSidebarView>* {
+[aria-label*="RTC"] .da-standardSidebarView > * {
   background: rgba(0, 0, 0, 0.05) !important;
 }
-
 /*dividery po prawej*/
 [aria-label*="RTC"] .da-standardSidebarView .da-divider {
   background: rgba(255, 255, 255, 0.4) !important;
 }
-
 /*sidebar*/
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-channelItem .da-icon path {
   fill: rgba(255, 255, 255, 0.7) !important;
 }
-
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-header {
   color: rgba(255, 255, 255, 0.7) !important;
 }
-
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item {
   color: rgba(255, 255, 255, 0.6) !important;
 }
-
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item:hover {
   background: var(--default-hover) !important;
   color: rgba(255, 255, 255, 0.7) !important;
 }
-
 [aria-label*="RTC"] .da-standardSidebarView .da-sidebar .da-item.da-selected {
   background: var(--default-selected) !important;
   color: rgba(255, 255, 255, 0.8) !important;
 }
 
 /*popout po kliknieciu + w rolach uzytkownika*/
-[id*="popout"] [class*="animator"]>.da-container .da-autocompleteShadow,
-[id*="popout"] [class*="animator"]>.da-container .da-autocompleteHeaderBackground,
-[id*="popout"] [class*="animator"]>.da-container .da-header,
-[id*="popout"] [class*="animator"]>.da-container section,
-[id*="popout"] [class*="animator"]>.da-container .da-autocompleteArrow {
+[id*="popout"] [class*="animator"] > .da-container .da-autocompleteShadow,
+[id*="popout"] [class*="animator"] > .da-container .da-autocompleteHeaderBackground,
+[id*="popout"] [class*="animator"] > .da-container .da-header,
+[id*="popout"] [class*="animator"] > .da-container section,
+[id*="popout"] [class*="animator"] > .da-container .da-autocompleteArrow {
   background: rgba(0, 0, 0, 0.4) !important;
   box-shadow: 0px 0px !important;
 }
-
 /*hover roli*/
-[id*="popout"] [class*="animator"]>.da-container section .da-row.da-selected {
+[id*="popout"] [class*="animator"] > .da-container section .da-row.da-selected {
   background: rgba(0, 0, 0, 1) !important;
 }
 
@@ -1035,41 +957,35 @@ body::after {
 .da-base .da-sidebar .da-header {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-
 .da-base .da-sidebar .da-header .da-name {
   font-size: 18px;
   font-weight: bold;
   line-height: 55px;
 }
-
 /*ikona zweryfikowanego serwera (obok nazwy)*/
 .da-base .da-sidebar .da-header .da-flowerStarContainer .da-flowerStar path {
   fill: var(--markup-normal) !important;
 }
-
 .da-base .da-sidebar .da-header .da-flowerStarContainer .da-premiumGuildIconGem path {
   fill: rgb(255, 255, 255) !important;
 }
-
 .da-base .da-sidebar .da-header [aria-label*="Level"] .da-flowerStarContainer .da-flowerStar path {
   fill: rgb(255, 88, 191) !important;
 }
 
 /*ikony u góry aplikacji obok nazw kanałów/nazw podstron strony głównej*/
-.da-iconWrapper>svg path:nth-child(1) {
+.da-iconWrapper > svg path:nth-child(1) {
   fill: rgba(255, 255, 255, 0.6) !important;
 }
-
-.da-iconWrapper~.da-divider {
+.da-iconWrapper ~ .da-divider {
   background: rgba(255, 255, 255, 0.5) !important;
 }
 
 /*popout po kliknieciu na nazwe serwera*/
-.da-popout>.da-menu {
+.da-popout > .da-menu {
   background: rgba(0, 0, 0, 0.9);
 }
-
-.da-popout>.da-menu>.da-item:hover {
+.da-popout > .da-menu > .da-item:hover {
   background: rgba(0, 0, 0, 1);
 }
 
@@ -1080,7 +996,6 @@ body::after {
 .da-members .da-content {
   background: transparent !important;
 }
-
 .da-members .da-member:hover,
 .da-members .da-member.da-selected {
   background: linear-gradient(to right, var(--default-selected), transparent) !important;
@@ -1091,66 +1006,53 @@ body::after {
 .da-base .da-sidebar .da-container {
   background: transparent;
 }
-
 /*default tekstowy i glosowy*/
 .da-base .da-sidebar .da-containerDefault .da-name {
   color: rgba(255, 255, 255, 0.7);
 }
-
 /*default ikony kanałów tekst/głosowych*/
 .da-base .da-sidebar .da-containerDefault [class*="icon"] {
   color: rgba(255, 255, 255, 0.6) !important;
 }
-
-.da-base .da-sidebar .da-containerDefault [class*="icon"]>path:last-of-type {
+.da-base .da-sidebar .da-containerDefault [class*="icon"] > path:last-of-type {
   opacity: 0.9;
 }
-
 /*ikona zablokowanego kanału na który można wejść*/
-.da-base .da-sidebar .da-containerDefault [class*="icon"]>path {
+.da-base .da-sidebar .da-containerDefault [class*="icon"] > path {
   opacity: 0.6;
 }
-
 /*zmutowany tekstowy*/
 .da-base .da-sidebar .da-containerDefault [class*="modeMuted-"] .da-name {
   color: rgba(255, 255, 255, 0.5);
 }
-
 /*wybrany tekstowy*/
 .da-base .da-sidebar .da-containerDefault.da-selected .da-content {
   background-color: var(--default-selected) !important;
   color: #ffffff !important;
 }
-
 .da-base .da-sidebar .da-containerDefault.da-selected:hover .da-content {
   background-color: var(--default-selected) !important;
 }
-
 /*wybrany głosowy*/
 .da-base .da-sidebar .da-containerDefault [class*="modeConnected-"] {
   background-color: rgba(0, 0, 0, 0) !important;
   color: rgb(255, 255, 255);
 }
-
 .da-base .da-sidebar .da-containerDefault:not(.da-selected):hover .da-content {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
 .da-base .da-sidebar .da-containerDefault:not(.da-selected):hover .da-listDefault .da-voiceUser.da-selected {
   background-color: var(--default-selected) !important;
   color: rgb(255, 255, 255);
 }
-
 .da-base .da-sidebar .da-containerDefault:not(.da-selected) .da-listDefault .da-voiceUser.da-selected:hover {
   background-color: var(--default-selected) !important;
   color: rgb(255, 255, 255);
 }
-
 .da-base .da-sidebar .da-voiceUser.da-selected .da-content {
   background-color: var(--default-selected) !important;
   color: rgb(255, 255, 255);
 }
-
 /*kolor nicku użytkownika na kanale głosowym*/
 .da-base .da-sidebar .da-voiceUser:not(.da-selected) .da-username:not(.da-usernameSpeaking) {
   color: rgba(255, 255, 255, 0.6);
@@ -1163,8 +1065,12 @@ body::after {
   border-color: transparent !important;
   box-shadow: none !important;
 }
-
-.da-base .da-sidebar .da-containerDefault .da-listDefault .da-voiceUser .da-avatarSpeaking:not([style*="avatars/214676791955161091"])::before {
+.da-base
+  .da-sidebar
+  .da-containerDefault
+  .da-listDefault
+  .da-voiceUser
+  .da-avatarSpeaking:not([style*="avatars/214676791955161091"])::before {
   content: "";
   z-index: -10 !important;
   position: absolute;
@@ -1183,65 +1089,54 @@ body::after {
   background-color: rgba(0, 0, 0, 0.95) !important;
   border: transparent;
 }
-
 [id*="popout"].da-layer .da-streamPreview .da-previewContainer {
   background-color: rgba(0, 0, 0, 0) !important;
   border: transparent;
 }
-
 [id*="popout"].da-layer .da-streamPreview .da-pro {
   color: var(--markup-blue) !important;
 }
 
 /*ogladanie live na kanale glosowym*/
 /*backgroundy*/
-.da-container>.da-base>.da-content>.da-container {
+.da-container > .da-base > .da-content > .da-container {
   background: rgba(0, 0, 0, 0);
 }
-
-.da-container>.da-base>.da-content>.da-container .da-root,
-.da-container>.da-base>.da-content>.da-container .da-root .da-video {
+.da-container > .da-base > .da-content > .da-container .da-root,
+.da-container > .da-base > .da-content > .da-container .da-root .da-video {
   background: rgba(0, 0, 0, 0);
 }
-
 /*hover na streama*/
-.da-container>.da-base>.da-content>.da-container .da-root .da-videoControls {
+.da-container > .da-base > .da-content > .da-container .da-root .da-videoControls {
   background: rgba(0, 0, 0, 0);
   background-image: radial-gradient(circle at bottom right, rgba(0, 0, 0, 0.5), transparent 50%);
 }
-
 /*przycisk rozlacz*/
-.da-container>.da-base>.da-content>.da-container .da-root .da-videoControls button[class*="Filled"] {
+.da-container > .da-base > .da-content > .da-container .da-root .da-videoControls button[class*="Filled"] {
   background: var(--bt-red);
 }
-
-.da-container>.da-base>.da-content>.da-container .da-root .da-videoControls button[class*="Filled"]:hover {
+.da-container > .da-base > .da-content > .da-container .da-root .da-videoControls button[class*="Filled"]:hover {
   background: var(--bt-red-hover);
 }
-
-.da-layer .da-popoutWrapper>.da-scroller>.da-systemPad {
+.da-layer .da-popoutWrapper > .da-scroller > .da-systemPad {
   background: rgba(0, 0, 0, 0.3) !important;
 }
-
-.da-layer .da-popoutWrapper>.da-scroller>.da-systemPad .da-memberListItem:hover {
+.da-layer .da-popoutWrapper > .da-scroller > .da-systemPad .da-memberListItem:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
 /*licznik osob na kanale glosowym*/
-.da-base .da-sidebar .da-containerDefault .da-userLimit>.da-wrapper {
+.da-base .da-sidebar .da-containerDefault .da-userLimit > .da-wrapper {
   border-radius: 5px !important;
 }
-
 .da-base .da-sidebar .da-containerDefault .da-userLimit .da-users {
   color: var(--markup-normal);
   background: rgba(0, 0, 0, 0.3);
 }
-
 .da-base .da-sidebar .da-containerDefault .da-userLimit .da-total {
   color: var(--markup-intensive);
   background: rgba(0, 0, 0, 0.6) !important;
 }
-
 .da-base .da-sidebar .da-containerDefault .da-userLimit .da-total::after {
   border-right-color: rgba(0, 0, 0, 0.4) !important;
 }
@@ -1253,11 +1148,9 @@ body::after {
   border-color: transparent;
   box-shadow: 0px 0px;
 }
-
 .da-base .da-sidebar .da-channelNotice button {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
-
 .da-base .da-sidebar .da-channelNotice button:hover {
   background-color: rgba(0, 0, 0, 0.3) !important;
 }
@@ -1267,7 +1160,6 @@ body::after {
   background: rgba(0, 0, 0, 0.1) !important;
   box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.05), 0 2px 0 rgba(0, 0, 0, 0.05);
 }
-
 .da-privateChannels .da-searchBar .da-searchBarComponent {
   background: rgba(0, 0, 0, 0.2) !important;
 }
@@ -1277,38 +1169,31 @@ body::after {
 .da-activityFeed .da-systemPad {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
-.da-activityFeed>.da-container {
+.da-activityFeed > .da-container {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
 .da-activityFeed .da-container .da-children::after {
   visibility: hidden !important;
 }
-
 /*panel informacyjny*/
 .da-activityFeed aside .da-card:not(:nth-child(1)),
 .da-activityFeed .da-column .da-card {
   background: rgba(0, 0, 0, 0.6) !important;
 }
-
 /*tytul i tekst*/
-.da-activityFeed .da-column .da-card>.da-content {
+.da-activityFeed .da-column .da-card > .da-content {
   background: rgba(0, 0, 0, 0.3) !important;
 }
-
 /*data i link*/
-.da-activityFeed .da-column .da-card>.da-wrapper {
+.da-activityFeed .da-column .da-card > .da-wrapper {
   background: rgba(0, 0, 0, 0.5) !important;
   box-shadow: 0px 0px;
 }
-
 /*share button*/
 .da-activityFeed .da-column .da-card .da-shareButton {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-
 .da-activityFeed .da-column .da-card .da-shareButton:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
@@ -1318,74 +1203,64 @@ body::after {
 .da-activityFeed .da-column .da-wrappedCard {
   background: rgba(0, 0, 0, 0.5);
 }
-
-.da-activityFeed aside .da-card .da-grid>.da-container,
-.da-activityFeed .da-column .da-wrappedCard .da-grid>.da-container {
+.da-activityFeed aside .da-card .da-grid > .da-container,
+.da-activityFeed .da-column .da-wrappedCard .da-grid > .da-container {
   background: rgba(0, 0, 0, 0.6);
 }
-
-.da-activityFeed aside .da-card .da-grid>.da-container:hover,
-.da-activityFeed .da-column .da-wrappedCard .da-grid>.da-container:hover {
+.da-activityFeed aside .da-card .da-grid > .da-container:hover,
+.da-activityFeed .da-column .da-wrappedCard .da-grid > .da-container:hover {
   background: rgba(0, 0, 0, 1);
 }
 
 /* "W grze", "Ostatnio zagrane" */
 /*karta*/
 .da-activityFeed .da-column .da-outer,
-.da-activityFeed .da-column .da-outer>.da-card {
+.da-activityFeed .da-column .da-outer > .da-card {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 /*podsekcja karty*/
 .da-activityFeed aside .da-card .da-popoutContainer:hover,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer:hover {
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer:hover {
   background: rgba(220, 0, 0, 0.1) !important;
 }
-
 /*kanał/gra*/
 .da-activityFeed aside .da-card .da-popoutContainer .da-body,
 .da-activityFeed aside .da-card .da-popoutContainer .da-body .da-separator,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-separator {
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-body,
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-body .da-separator {
   background: rgba(0, 0, 0, 0.7) !important;
 }
-
 .da-activityFeed aside .da-card .da-popoutContainer .da-body .da-section,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-body .da-section {
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-body .da-section {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 /*popout po najechaniu*/
 .da-activityFeed aside .da-card .da-popoutContainer .da-popout,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout {
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-popout {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 .da-activityFeed aside .da-card .da-popoutContainer .da-popout .da-wrapper:hover,
 .da-activityFeed aside .da-card .da-popoutContainer .da-popout .da-memberListItem:hover,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-wrapper:hover,
-.da-activityFeed .da-column .da-outer>.da-card .da-popoutContainer .da-popout .da-memberListItem:hover {
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-popout .da-wrapper:hover,
+.da-activityFeed .da-column .da-outer > .da-card .da-popoutContainer .da-popout .da-memberListItem:hover {
   background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*Strona główna: Biblioteka*/
 /*root to pole po kliknieciu w Gift Inventory u góry biblioteki*/
-.da-content>.da-gameLibrary,
-.da-content>.da-root {
+.da-content > .da-gameLibrary,
+.da-content > .da-root {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
 /*header*/
 .da-content .da-gameLibrary .da-libraryHeader,
 .da-content .da-root .da-libraryHeader {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
 .da-content .da-gameLibrary .da-libraryHeader .da-children::after,
-.da-content .da-root>.da-libraryHeader>.da-children::after {
+.da-content .da-root > .da-libraryHeader > .da-children::after {
   visibility: hidden !important;
 }
-
 /*button My Games i Gift Inventory*/
 .da-content .da-gameLibrary .da-libraryHeader .da-item:hover,
 .da-content .da-gameLibrary .da-libraryHeader .da-item.da-selected,
@@ -1395,96 +1270,79 @@ body::after {
   font-weight: bold;
   background: rgba(0, 0, 0, 0.3) !important;
 }
-
 /*filtr*/
 .da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter .da-searchBar {
   background-color: rgba(0, 0, 0, 0.15) !important;
   border-bottom: 2px solid rgba(0, 0, 0, 0);
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .da-content .da-gameLibrary .da-libraryHeader .da-libraryFilter.da-focused .da-searchBar {
   background-color: rgba(0, 0, 0, 0.3) !important;
   border-color: var(--markup-blue) !important;
 }
-
 /*sticky header*/
 .da-content .da-gameLibrary .da-table .da-stickyHeader {
   background: transparent;
 }
-
 .da-content .da-gameLibrary .da-table .da-rowWrapper:hover {
   background: rgba(0, 0, 0, 0.3) !important;
 }
-
 /*play button*/
 .da-content .da-gameLibrary .da-table .da-button {
   background-color: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
 .da-content .da-gameLibrary .da-table .da-button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*gift inventory przycisk "Zrealizuj"*/
-.da-content>.da-root .da-codeRedemption .da-button {
+.da-content > .da-root .da-codeRedemption .da-button {
   background-color: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-.da-content>.da-root .da-codeRedemption .da-button:hover {
+.da-content > .da-root .da-codeRedemption .da-button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 
 /*Strona główna: Nitro*/
-.da-content>.da-applicationStore {
+.da-content > .da-applicationStore {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
 /*header u samej góry*/
 .da-content .da-applicationStore .da-headerBar {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
 .da-content .da-applicationStore .da-headerBar .da-children::after {
   visibility: hidden !important;
 }
-
 /*lista feature'ów*/
 .da-content .da-applicationStore .da-featureGrid .da-feature {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 /*baner promocyjny u dołu*/
 .da-content .da-applicationStore .da-promotionBanner {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 /*przyciski u dołu*/
 .da-content .da-applicationStore .da-button[class*="colorGreen"] {
   background: var(--bt-red) !important;
   color: var(--bt-text);
 }
-
 .da-content .da-applicationStore .da-button[class*="colorGreen"]:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover);
 }
-
 .da-content .da-applicationStore .da-button[class*="colorPrimary"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text);
 }
-
 .da-content .da-applicationStore .da-button[class*="colorPrimary"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover);
@@ -1495,70 +1353,58 @@ body::after {
   margin-top: 0px !important;
   background: rgba(0, 0, 0, 0) !important;
 }
-
 [class*="theme-"] .da-peopleColumn .da-peopleListItem.da-active,
 [class*="theme-"] .da-peopleColumn .da-peopleListItem:hover {
   background: linear-gradient(to right, var(--default-hover) 45%, transparent) !important;
 }
-
 /*buttons*/
 [class*="theme-"] .da-peopleColumn .da-peopleListItem .da-actions .da-actionButton {
   background-color: var(--bt-blue-bg) !important;
 }
-
 [class*="theme-"] .da-peopleColumn .da-peopleListItem .da-actions .da-actionButton:hover {
   background-color: var(--bt-blue-bg-hover) !important;
 }
 
 /*menu u gory prywatnych wiadomiosci*/
-[class*="theme-"] .da-base .da-container>.da-container.da-themed {
+[class*="theme-"] .da-base .da-container > .da-container.da-themed {
   background: rgba(0, 0, 0, 0.1);
 }
-
-[class*="theme-"] .da-base .da-container>.da-container .da-children::after {
+[class*="theme-"] .da-base .da-container > .da-container .da-children::after {
   visibility: hidden !important;
 }
-
 /*buttony*/
-[class*="theme-"] .da-base .da-container>.da-container .da-tabBar .da-item:not(.da-selected):hover {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item:not(.da-selected):hover {
   background-color: rgba(0, 0, 0, 0);
 }
-
-[class*="theme-"] .da-base .da-container>.da-container .da-tabBar .da-item.da-selected {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item.da-selected {
   background-color: rgba(0, 0, 0, 0) !important;
   font-size: 17px;
 }
-
 /*da-primary: button dodaj znajomego*/
-[class*="theme-"] .da-base .da-container>.da-container .da-tabBar .da-item[style*="background-color: rgb(67, 181, 129)"] {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgb(67, 181, 129)"] {
   background-color: rgba(0, 255, 128, 0.1) !important;
   color: rgba(0, 255, 128, 0.7) !important;
 }
-
-[class*="theme-"] .da-base .da-container>.da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"]:hover,
-[class*="theme-"] .da-base .da-container>.da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"] {
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"]:hover,
+[class*="theme-"] .da-base .da-container > .da-container .da-tabBar .da-item[style*="background-color: rgba(67, 181, 129, 0.2)"] {
   background-color: rgba(0, 255, 128, 0.2) !important;
   color: rgba(0, 255, 128, 0.7) !important;
   font-weight: bold;
   font-size: 16px;
 }
-
 /*dodawanie do znajomych*/
 [class*="theme-"] .da-peopleColumn .da-friendTableAddHeader {
   background: rgba(0, 0, 0, 0) !important;
 }
-
-[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd>form {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd > form {
   background: rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.9);
 }
-
-[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd>form>button {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd > form > button {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-
-[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd>form>button:hover {
+[class*="theme-"] .da-peopleColumn .da-friendTableAddHeader .da-friendsTableAdd > form > button:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
@@ -1567,17 +1413,14 @@ body::after {
 [class*="theme-"] .da-nowPlayingColumn {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-
-[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller>.da-itemCard {
+[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-itemCard {
   background: rgba(0, 0, 0, 0.4) !important;
 }
-
-[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller>.da-itemCard .da-body {
+[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-itemCard .da-body {
   background: rgba(0, 0, 0, 0.4) !important;
 }
-
 /*kiedy nikt ze znajomych w nic nie gra*/
-[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller>.da-emptyCard {
+[class*="theme-"] .da-nowPlayingColumn .da-nowPlayingScroller > .da-emptyCard {
   background: rgba(0, 0, 0, 0.6) !important;
 }
 
@@ -1586,19 +1429,15 @@ body::after {
   background-color: rgba(0, 0, 0, 0.95);
   box-shadow: 0px 0px;
 }
-
 .da-container .da-quickswitcher .da-input {
   background-color: var(--default-hover);
 }
-
 .da-container .da-quickswitcher .da-resultFocused {
   background-color: var(--default-hover);
 }
-
 .da-container .da-quickswitcher .da-protip span {
   background: var(--markup-blue) !important;
 }
-
 .da-container .da-quickswitcher .da-protip a,
 .da-container .da-quickswitcher .da-protip .da-pro {
   color: var(--markup-blue) !important;
@@ -1610,20 +1449,16 @@ body::after {
   background: transparent !important;
   border-radius: 5px;
 }
-
 .da-privateChannels .da-scroller .da-channel path:first-child {
   fill: rgba(255, 255, 255, 0.6) !important;
 }
-
 .da-privateChannels .da-scroller .da-channel .da-name {
   color: rgba(255, 255, 255, 0.6) !important;
 }
-
 .da-privateChannels .da-scroller .da-channel:hover,
 .da-privateChannels .da-scroller .da-channel.da-selected {
   background: var(--default-selected) !important;
 }
-
 .da-privateChannels .da-scroller .da-channel:hover a .da-name,
 .da-privateChannels .da-scroller .da-channel.da-selected a .da-name {
   color: rgba(255, 255, 255, 1) !important;
@@ -1633,7 +1468,6 @@ body::after {
 [class*="theme-"] .da-chat .da-title .da-children::after {
   visibility: hidden !important;
 }
-
 .da-akaBadge {
   background: var(--default-selected) !important;
   border-radius: 10%;
@@ -1643,22 +1477,18 @@ body::after {
 .da-incomingCallInner {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 .da-incomingCallInner .da-actionButtons .da-button {
   background: var(--bt-red) !important;
   color: var(--bt-text) !important;
 }
-
 .da-incomingCallInner .da-actionButtons .da-button:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 .da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
 .da-incomingCallInner .da-actionButtons .da-button[class*="colorGreen"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
@@ -1666,77 +1496,64 @@ body::after {
 
 /*prywatna wiad: rozmowa glosowa prywatna */
 .da-chat .da-video,
-.da-chat>.da-container.da-transparent {
+.da-chat > .da-container.da-transparent {
   background: rgba(0, 0, 0, 0) !important;
   /* border-radius: 0 0 0 28px; */
 }
-
 .da-chat .da-animated,
-.da-chat>.da-wrapper {
+.da-chat > .da-wrapper {
   background: rgba(0, 0, 0, 0.1) !important;
   /* border-radius: 0 0 0 28px; */
 }
-
 .da-chat .da-video .da-center {
   background: rgba(0, 0, 0, 0.4) !important;
   border-radius: 5px;
   border: none;
 }
-
 .da-chat .da-video .da-center .da-exitButton {
   background: var(--bt-red) !important;
   color: var(--bt-text);
 }
-
 .da-chat .da-video .da-center .da-exitButton:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover);
 }
-
-.da-chat .da-videoInner .da-actions>button {
+.da-chat .da-videoInner .da-actions > button {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-
-.da-chat .da-videoInner .da-actions>button:hover {
+.da-chat .da-videoInner .da-actions > button:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
-
 /*prywatna wiadomosc: dodawanie osoby do rozmowy prywatnej: popout*/
-.da-popouts>*>.da-popout {
+.da-popouts > * > .da-popout {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 /*search bar: zaznaczone osoby*/
-.da-popouts>*>.da-popout .da-searchBarComponent .da-tag {
+.da-popouts > * > .da-popout .da-searchBarComponent .da-tag {
   background: var(--default-hover) !important;
 }
-
 /*hover na osoby poniżej*/
-.da-popouts>*>.da-popout .da-friendSelected {
+.da-popouts > * > .da-popout .da-friendSelected {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 /*buttony*/
-.da-popouts>*>.da-popout button[class*="colorBrand"] {
+.da-popouts > * > .da-popout button[class*="colorBrand"] {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-
-.da-popouts>*>.da-popout button[class*="colorBrand"]:hover {
+.da-popouts > * > .da-popout button[class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
-
 /*checkboxy*/
-.da-popouts>*>.da-popout .da-checkbox.da-checked {
+.da-popouts > * > .da-popout .da-checkbox.da-checked {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
   border-color: transparent !important;
 }
-
-.da-popouts>*>.da-popout .da-checkbox.da-checked polyline {
+.da-popouts > * > .da-popout .da-checkbox.da-checked polyline {
   stroke: var(--bt-text) !important;
 }
 
@@ -1753,94 +1570,77 @@ body::after {
   border-color: transparent !important;
   border-radius: 5px;
 }
-
-[id*="popout"] .da-emojiPicker>.da-dimmer,
-[id*="popout"] .da-emojiPicker>.da-header>.da-searchBar {
+[id*="popout"] .da-emojiPicker > .da-dimmer,
+[id*="popout"] .da-emojiPicker > .da-header > .da-searchBar {
   background-color: transparent !important;
 }
-
 /*header z searchbarem, kategorie po boku i info o emoji u dolu*/
-[id*="popout"] .da-emojiPicker>.da-header,
-[id*="popout"] [id*="emoji"]>.da-categoryList,
-[id*="popout"] .da-emojiPicker>.da-inspector {
+[id*="popout"] .da-emojiPicker > .da-header,
+[id*="popout"] [id*="emoji"] > .da-categoryList,
+[id*="popout"] .da-emojiPicker > .da-inspector {
   background: #000;
 }
-
 /*pasek wyszukiwania*/
-[id*="popout"] .da-emojiPicker>.da-header>.da-searchBar .da-inner,
-[id*="popout"] .da-emojiPicker>.da-header>.da-searchBar.da-lightTheme .da-inner {
+[id*="popout"] .da-emojiPicker > .da-header > .da-searchBar .da-inner,
+[id*="popout"] .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
   background-color: var(--default-hover);
   color: #fff;
   border: 1px solid transparent;
 }
-
 /*wybór koloru ręki*/
-[id*="popout"] .da-emojiPicker>.da-header>.da-diversitySelector>.da-diversitySelectorPopout {
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector > .da-diversitySelectorPopout {
   background-color: rgba(0, 0, 0, 0.9) !important;
   border-color: #000;
 }
-
-[id*="popout"] .da-emojiPicker>.da-header>.da-diversitySelector .da-diversityEmojiItem:hover {
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover {
   background-color: #000 !important;
 }
-
-[id*="popout"] .da-emojiPicker>.da-header>.da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
+[id*="popout"] .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
   transform: scale(1.1);
 }
-
 /*sticky header*/
-[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection>.da-header {
+[id*="popout"] .da-emojiPicker .da-scroller .da-categorySection > .da-header {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 [id*="popout"] .da-emojiPicker .da-scroller .da-categorySection .da-header {
   color: #fff;
 }
-
 /*wybrana kategoria z ikon po lewej*/
 [id*="popout"] .da-emojiPicker .da-categories .da-emojiItem.da-emojiItemSelected {
   border-bottom-color: var(--default-hover);
   background-color: var(--default-selected);
 }
-
 /*pojedyncza emotka*/
-[id*="popout"] .da-emojiPicker .da-scroller .da-emojiListRow>.da-emojiItem {
+[id*="popout"] .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem {
   transition: all 0.3s;
   opacity: 0.6;
 }
-
-[id*="popout"] .da-emojiPicker .da-scroller .da-emojiListRow>.da-emojiItem.da-emojiItemSelected {
+[id*="popout"] .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem.da-emojiItemSelected {
   transform: scale(1.25);
   opacity: 1;
   background-color: transparent;
 }
-
 /*scrollbar emoji picker*/
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb) !important;
   border-radius: 10px !important;
   border-color: transparent !important;
 }
-
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-thumb:active {
   background-color: var(--scroll-thumb) !important;
 }
-
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar {
   background: transparent !important;
   border: none !important;
 }
-
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-track {
   background: transparent !important;
   border: none !important;
 }
-
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-track-piece {
   background-color: transparent !important;
   border: none !important;
 }
-
 [id*="popout"] .da-emojiPicker .da-scroller::-webkit-scrollbar-corner {
   background: transparent !important;
 }
@@ -1849,72 +1649,59 @@ body::after {
 .da-form .da-emojiPicker {
   background-color: transparent !important;
 }
-
 .da-form .da-channelTextArea section .da-contentWrapper {
   background-color: rgba(0, 0, 0, 0.95) !important;
 }
-
-.da-form .da-emojiPicker>.da-header>.da-searchBar {
+.da-form .da-emojiPicker > .da-header > .da-searchBar {
   background-color: transparent !important;
 }
-
 /*header z wyborem miedzy emoji a gif*/
 .da-form .da-contentWrapper .da-nav .da-navButtonActive {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text) !important;
 }
-
 /*header z searchbarem, kategorie po boku i info o emoji u dolu*/
-.da-form .da-emojiPicker>.da-header,
-.da-form .da-channelTextArea section [id*="emoji"]>.da-categoryList,
-.da-form .da-emojiPicker>.da-inspector {
+.da-form .da-emojiPicker > .da-header,
+.da-form .da-channelTextArea section [id*="emoji"] > .da-categoryList,
+.da-form .da-emojiPicker > .da-inspector {
   background: #000;
 }
-
 /*pasek wyszukiwania*/
-.da-form .da-emojiPicker>.da-header>.da-searchBar .da-inner,
-.da-form .da-emojiPicker>.da-header>.da-searchBar.da-lightTheme .da-inner {
+.da-form .da-emojiPicker > .da-header > .da-searchBar .da-inner,
+.da-form .da-emojiPicker > .da-header > .da-searchBar.da-lightTheme .da-inner {
   background-color: var(--default-hover);
   color: #fff;
   border: 1px solid transparent;
 }
-
 /*wybór koloru ręki*/
-.da-form .da-emojiPicker>.da-header>.da-diversitySelector>.da-diversitySelectorPopout {
+.da-form .da-emojiPicker > .da-header > .da-diversitySelector > .da-diversitySelectorPopout {
   background-color: rgba(0, 0, 0, 0.9) !important;
   border-color: #000;
 }
-
-.da-form .da-emojiPicker>.da-header>.da-diversitySelector .da-diversityEmojiItem:hover {
+.da-form .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover {
   background-color: #000 !important;
 }
-
-.da-form .da-emojiPicker>.da-header>.da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
+.da-form .da-emojiPicker > .da-header > .da-diversitySelector .da-diversityEmojiItem:hover .da-diversityEmojiItemImage {
   transform: scale(1.1);
 }
-
 /*sticky header*/
-.da-form .da-emojiPicker .da-scroller .da-categorySection>.da-header {
+.da-form .da-emojiPicker .da-scroller .da-categorySection > .da-header {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 .da-form .da-emojiPicker .da-scroller .da-categorySection .da-header {
   color: #fff;
 }
-
 /*wybrana kategoria z ikon po lewej*/
 .da-form .da-emojiPicker .da-categories .da-emojiItem.da-emojiItemSelected {
   border-bottom-color: var(--default-hover);
   background-color: var(--default-selected);
 }
-
 /*pojedyncza emotka*/
-.da-form .da-emojiPicker .da-scroller .da-emojiListRow>.da-emojiItem {
+.da-form .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem {
   transition: all 0.3s;
   opacity: 0.6;
 }
-
-.da-form .da-emojiPicker .da-scroller .da-emojiListRow>.da-emojiItem.da-emojiItemSelected {
+.da-form .da-emojiPicker .da-scroller .da-emojiListRow > .da-emojiItem.da-emojiItemSelected {
   transform: scale(1.25);
   opacity: 1;
   background-color: transparent;
@@ -1927,7 +1714,7 @@ body::after {
 
 /*data wiadomosci na czacie*/
 /*cały divider*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-content .da-divider:not(.da-isUnread)>span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider:not(.da-isUnread) > span {
   background: rgba(204, 204, 204, 0.1) !important;
   font-size: 14px;
   border-radius: 5px;
@@ -1935,54 +1722,47 @@ body::after {
   text-align: center;
   width: 90%;
 }
-
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-content .da-divider {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider {
   border-color: transparent;
   margin-top: 35px;
   margin-bottom: 15px;
 }
-
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-content .da-divider:not(.da-isUnread)>span {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider:not(.da-isUnread) > span {
   color: rgba(255, 255, 255, 0.7) !important;
 }
-
 /*nowa wiadomosc*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-content .da-divider.da-isUnread>.da-unreadPill {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider.da-isUnread > .da-unreadPill {
   background: var(--default-hover) !important;
   color: var(--markup-intensive) !important;
   padding: 12px 0px;
   width: 100%;
   font-size: 14px;
 }
-
 /*data nowej wiadomosci*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-content .da-divider.da-isUnread>.da-content {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider.da-isUnread > .da-content {
   background: transparent !important;
   color: var(--markup-intensive) !important;
   width: 95%;
   transform: translateY(6px);
 }
-
 /*svg po bokach nowej wiadomosci*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-content .da-divider .da-unreadPillCap {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-content .da-divider .da-unreadPillCap {
   visibility: hidden;
 }
 
 /*przycisk "Pokaz wiecej wiadomosci" u góry czatu*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-hasMore button {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-hasMore button {
   background: rgba(0, 0, 0, 0.5) !important;
   border-color: transparent !important;
   color: var(--markup-intensive) !important;
 }
-
 /*przycisk "x nowych wiadomosci" u góry czatu*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-newMessagesBar {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-newMessagesBar {
   background: var(--markup-intensive) !important;
   border-color: transparent !important;
 }
-
 /*przycisk "przeglądasz starsze wiadomości" u dołu czatu*/
-[class*="theme-"] .da-chatContent>.da-messagesWrapper .da-jumpToPresentBar {
+[class*="theme-"] .da-chatContent > .da-messagesWrapper .da-jumpToPresentBar {
   background: var(--markup-normal) !important;
   border-color: transparent !important;
 }
@@ -1991,7 +1771,6 @@ body::after {
 .da-chat .da-title {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-
 /*wyszukiwanie wiadomiosci na czacie: pasek wyszukiwania*/
 .da-chat .da-toolbar .da-search .da-searchBar {
   background: rgba(0, 0, 0, 0.15);
@@ -1999,12 +1778,10 @@ body::after {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
 .da-chat .da-toolbar .da-search.da-focused .da-searchBar {
   border-color: var(--markup-blue) !important;
   background: rgba(0, 0, 0, 0.3);
 }
-
 .da-chat .da-toolbar .da-search .da-searchBar .da-searchFilter,
 .da-chat .da-toolbar .da-search .da-searchBar .da-searchAnswer {
   background: rgba(0, 0, 0, 0.2) !important;
@@ -2015,69 +1792,66 @@ body::after {
   background-color: rgba(0, 0, 0, 0.9) !important;
   box-shadow: 5px 10px rgba(0, 0, 0, 0);
 }
-
 [class*="theme-"] [id*="popout"] [class*="resultsGroup-"] [class*="selected-"],
 [class*="theme-"] [id*="popout"] [class*="resultsGroup-"] [class*="option"]:hover {
   background: rgba(0, 0, 0, 9);
 }
-
 /*szary fade i divider*/
 [class*="theme-"] [id*="popout"] [class*="resultsGroup-"]::before,
 [class*="theme-"] [id*="popout"] [class*="resultsGroup-"] [class*="option-"]::after {
   visibility: hidden !important;
 }
-
 /*po wyszukaniu wiadomosci od uzytkownika, gdy klikniesz ponownie na search*/
 [class*="theme-"] [id*="popout"] [class*="queryContainer-"] {
   background: rgba(0, 0, 0, 9);
 }
-
 /*przycisk ENTER*/
 [class*="theme-"] [id*="popout"] [class*="queryContainer-"] span {
   display: none;
 }
-
 /*kalendarz, gdy wybieramy datę wysłania wiadomości*/
 [class*="theme-"] [id*="popout"] .da-datePicker {
   background-color: rgba(0, 0, 0, 0.9);
 }
-
 [class*="theme-"] [id*="popout"] [class*="react-datepicker"] {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
-[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"]>[class*="week"] [class*="day"] {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day"] {
   background-color: var(--default-hover) !important;
 }
-
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"]>[class*="week"] [class*="day"]:not([class*="day--disabled"]):hover,
-[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"]>[class*="week"] [class*="selected"] {
+[class*="theme-"]
+  .da-popout
+  [class*="react-datepicker"]
+  [class*="month"]
+  > [class*="week"]
+  [class*="day"]:not([class*="day--disabled"]):hover,
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"] {
   background-color: var(--default-selected) !important;
 }
-
 /*pasek u dołu wybranego dnia*/
-[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"]>[class*="week"] [class*="selected"]::after {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="selected"]::after {
   background-color: var(--default-selected) !important;
 }
-
 /*dzień niemożliwy do wybrania*/
-[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"]>[class*="week"] [class*="day--disabled"] {
+[class*="theme-"] [id*="popout"] [class*="react-datepicker"] [class*="month"] > [class*="week"] [class*="day--disabled"] {
   background-color: rgba(0, 0, 0, 0) !important;
 }
-
 /*dzień poza wybranym miesiącem*/
-[class*="theme-"] .da-popout [class*="react-datepicker"] [class*="month"]>[class*="week"] [class*="outside-month"]:not([class*="day--disabled"]) {
+[class*="theme-"]
+  .da-popout
+  [class*="react-datepicker"]
+  [class*="month"]
+  > [class*="week"]
+  [class*="outside-month"]:not([class*="day--disabled"]) {
   background-color: var(--default-hover) !important;
   opacity: 0.3 !important;
 }
-
 /*button hint u dołu*/
 [class*="theme-"] [id*="popout"] .da-datePicker [class*="hintValue"] {
   margin-left: 5px;
   background-color: var(--bt-red);
   color: var(--bt-text);
 }
-
 [class*="theme-"] [id*="popout"] .da-datePicker [class*="hintValue"]:hover {
   background-color: var(--bt-red-hover);
   color: var(--bt-text-hover);
@@ -2087,16 +1861,13 @@ body::after {
 [class*="theme-"] .da-searchResultsWrap {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
 [class*="theme-"] .da-searchResultsWrap .da-searchHeader {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
-
 [class*="theme-"] .da-searchResultsWrap .da-searchHeader .da-tab.da-selected {
   color: var(--bt-red-hover);
   border-color: var(--bt-red-hover);
 }
-
 /*po kliknieciu w glowna wiadomosc*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult.da-expanded {
   border-color: transparent !important;
@@ -2104,24 +1875,20 @@ body::after {
   background: rgba(0, 0, 0, 0.1) !important;
   opacity: 1;
 }
-
 /*fade znikajaca wiadomosc przed i po glownej wiadomosci*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult:not(.da-expanded) .da-searchResultMessage.da-before {
   mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
   -webkit-mask-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 }
-
 [class*="theme-"] .da-searchResultsWrap .da-searchResult:not(.da-expanded) .da-searchResultMessage.da-after {
   mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
   -webkit-mask-image: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 1) 30%, rgba(0, 0, 0, 1) 70%, transparent 100%);
 }
-
 /*przezroczystosc wiadomosc przed i po glownej wiadomosci*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-searchResultMessage.da-after,
 [class*="theme-"] .da-searchResultsWrap .da-searchResult .da-searchResultMessage.da-before {
   opacity: 0.15 !important;
 }
-
 /*rozgraniczniki kanalow*/
 [class*="theme-"] .da-searchResultsWrap .da-channelSeparator .da-channelName {
   background-color: transparent;
@@ -2129,25 +1896,21 @@ body::after {
   border-radius: 8px;
   padding: 5px !important;
 }
-
 [class*="theme-"] .da-searchResultsWrap .da-channelSeparator .da-channelName:hover {
   background: var(--default-selected);
   text-decoration: none;
 }
-
 /*pozbycie sie szarego fadu*/
 [class*="theme-"] .da-searchResultsWrap .da-searchResult::before,
 [class*="theme-"] .da-searchResultsWrap .da-searchResult::after {
   display: none;
 }
-
 /*przycisk jump*/
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton {
   background-color: rgba(0, 0, 0, 0.3) !important;
   border-radius: 3px !important;
   color: var(--bt-text) !important;
 }
-
 [class*="theme-"] .da-searchResultsWrap .da-actionButtons .da-jumpButton:hover {
   background-color: rgba(0, 0, 0, 0.6) !important;
   color: var(--bt-text-hover) !important;
@@ -2165,114 +1928,95 @@ body::after {
   background-color: rgba(0, 0, 0, 0.95) !important;
   border: 1px solid rgba(0, 0, 0, 0);
 }
-
 .da-layer #user-context div[role="group"] .da-item {
   background-color: rgba(0, 0, 0, 0);
   color: #ccc !important;
   border: 0px !important;
 }
-
 .da-layer #user-context div[role="group"] .da-item:hover {
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff !important;
 }
-
 /*wysunięte menu*/
 .da-layer #user-context div[role="group"] .da-layer .da-submenu {
   background-color: rgba(0, 0, 0, 0.95);
 }
-
 /*pasek głośności*/
 .da-layer #user-context div[role="group"] .da-bar .da-barFill {
   background-color: var(--bt-blue-bg-hover) !important;
 }
-
 /*checkboxy*/
 /*tło po zaznaczeniu*/
 .da-layer #user-context div[role="group"] .da-item path.da-checkbox {
   fill: var(--bt-blue-bg-hover) !important;
 }
-
 /*"fajka" po wybraniu i hoverze*/
 .da-layer #user-context div[role="group"] .da-item path.da-check {
   fill: #ccc !important;
 }
-
 .da-layer #user-context div[role="group"] .da-item.da-focused path.da-check {
   fill: #fff !important;
 }
 
 /*klikniecie na uzytkownika prawym przyciskiem --> profil (tło)*/
 /*popout*/
-[class*="theme-"] .da-modal>.da-inner .da-root {
+[class*="theme-"] .da-modal > .da-inner .da-root {
   background: rgba(0, 0, 0, 0.9);
 }
-
 /*górna część popoutu*/
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying {
   background: rgba(0, 0, 0, 0);
 }
-
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal>.da-header,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal .da-tabBarContainer,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying>.da-header,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying .da-tabBarContainer {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-tabBarContainer,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-tabBarContainer {
   background: rgba(0, 0, 0, 0);
   border-color: rgba(0, 0, 0, 0);
 }
-
 /*nick i TAG*/
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-username,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-username {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-username,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-username {
   font-size: 18px;
   color: var(--bt-text);
 }
-
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-discriminator,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-discriminator {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal .da-headerInfo .da-nameTag .da-discriminator,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying .da-headerInfo .da-nameTag .da-discriminator {
   font-weight: bold;
   font-size: 16px;
   color: var(--bt-text-hover);
 }
-
 /*header button*/
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal>.da-header .da-button,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying>.da-header .da-button {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header .da-button,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header .da-button {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-
-[class*="theme-"] .da-modal>.da-inner .da-topSectionNormal>.da-header .da-button:hover,
-[class*="theme-"] .da-modal>.da-inner .da-topSectionPlaying>.da-header .da-button:hover {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionNormal > .da-header .da-button:hover,
+[class*="theme-"] .da-modal > .da-inner .da-topSectionPlaying > .da-header .da-button:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
-
 /*górna część popoutu - spotify*/
-[class*="theme-"] .da-modal>.da-inner .da-topSectionSpotify {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionSpotify {
   background: rgba(0, 0, 0, 0);
 }
-
-[class*="theme-"] .da-modal>.da-inner .da-topSectionSpotify .da-headerFill .da-activityProfile {
+[class*="theme-"] .da-modal > .da-inner .da-topSectionSpotify .da-headerFill .da-activityProfile {
   background: rgba(29, 185, 84, 0.3);
 }
-
 /*dolna część*/
-[class*="theme-"] .da-modal>.da-inner>*>.da-body {
+[class*="theme-"] .da-modal > .da-inner > * > .da-body {
   background: rgba(0, 0, 0, 0);
 }
-
 /*napis "NOTKA"*/
-[class*="theme-"] .da-modal>.da-inner .da-userInfoSectionHeader {
+[class*="theme-"] .da-modal > .da-inner .da-userInfoSectionHeader {
   color: #b1b1b1;
 }
-
-[class*="theme-"] .da-modal>.da-inner .da-note textarea::placeholder {
+[class*="theme-"] .da-modal > .da-inner .da-note textarea::placeholder {
   color: #999898;
 }
-
-[class*="theme-"] .da-modal>.da-inner .da-note textarea:focus {
+[class*="theme-"] .da-modal > .da-inner .da-note textarea:focus {
   background: rgba(0, 0, 0, 1) !important;
   min-height: 80px;
 }
@@ -2281,28 +2025,23 @@ body::after {
 .da-userPopout {
   box-shadow: 0px 0px;
 }
-
 /*header*/
-.da-userPopout>.da-header {
+.da-userPopout > .da-header {
   background: var(--profile-bckg);
   background-size: cover;
 }
-
-.da-userPopout>.da-activityUserPopout {
+.da-userPopout > .da-activityUserPopout {
   background-color: rgba(0, 0, 0, 0);
 }
-
-.da-userPopout>.da-header .da-headerText .da-headerTag {
+.da-userPopout > .da-header .da-headerText .da-headerTag {
   color: #dddddd;
 }
-
-.da-userPopout>.da-header .da-headerText .da-headerName {
+.da-userPopout > .da-header .da-headerText .da-headerName {
   color: #ffffff;
   font-size: 18px;
 }
-
 /*body*/
-.da-userPopout>.da-body {
+.da-userPopout > .da-body {
   background-color: rgba(0, 0, 0, 0.95);
   background-size: cover;
   background-position: right center;
@@ -2310,32 +2049,27 @@ body::after {
   border-bottom-color: var(--markup-blue);
   padding: 20px;
 }
-
-.da-userPopout>.da-body .da-bodyTitle {
+.da-userPopout > .da-body .da-bodyTitle {
   color: var(--markup-blue);
   font-size: 12px;
   font-weight: 700;
   margin-left: 4px;
   text-transform: uppercase;
 }
-
-.da-userPopout>.da-body .da-note textarea:focus {
+.da-userPopout > .da-body .da-note textarea:focus {
   background: rgba(0, 0, 0, 0.9);
 }
-
 /*footer*/
-.da-userPopout>.da-footer {
+.da-userPopout > .da-footer {
   background-color: rgba(0, 0, 0, 0.95);
   border: 1px solid rgba(0, 0, 0, 1);
   padding-top: 5px;
 }
-
-.da-userPopout>.da-footer .da-quickMessage {
+.da-userPopout > .da-footer .da-quickMessage {
   background-color: rgba(0, 0, 0, 0.7);
   border: 1px solid var(--markup-blue);
 }
-
-.da-userPopout>.da-footer .da-protip .da-pro {
+.da-userPopout > .da-footer .da-protip .da-pro {
   color: var(--markup-blue) !important;
 }
 
@@ -2344,53 +2078,43 @@ body::after {
   background-color: rgba(0, 0, 0, 0.9) !important;
   border: transparent;
 }
-
-[id*="popout"].da-layer .da-messagesPopoutWrap>.da-header {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-header {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-[id*="popout"].da-layer .da-messagesPopoutWrap>.da-header .da-title {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-header .da-title {
   color: #eeeeee;
   font-weight: bold;
 }
-
 /*wiadomosc*/
-[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper>*>.da-container {
+[id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper > * > .da-container {
   background-color: rgba(0, 0, 0, 1) !important;
 }
-
 [id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper {
   border-color: var(--default-hover);
   background-color: rgba(0, 0, 0, 1) !important;
 }
-
 [id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper:hover {
   border-color: var(--default-selected);
 }
-
 /*jump button*/
 [id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons {
   background-color: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-
 [id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons .da-jumpButton {
   background-color: var(--bt-red) !important;
   border-radius: 3px !important;
   color: var(--bt-text) !important;
 }
-
 [id*="popout"].da-layer .da-messagesPopoutWrap .da-messageGroupWrapper .da-actionButtons .da-jumpButton:hover {
   background-color: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*footer ze wzmianek*/
-[id*="popout"].da-layer .da-messagesPopoutWrap>.da-footer {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-footer {
   background-color: rgba(0, 0, 0, 0.8);
 }
-
-[id*="popout"].da-layer .da-messagesPopoutWrap>.da-footer .da-pro {
+[id*="popout"].da-layer .da-messagesPopoutWrap > .da-footer .da-pro {
   color: var(--markup-blue);
 }
 
@@ -2399,20 +2123,16 @@ body::after {
 .da-chat form {
   margin: 0px;
 }
-
 .da-chat form::before {
   background: transparent !important;
 }
-
 .da-chat .da-channelTextArea,
-.da-chat .da-channelTextArea>[class*="scrollableContainer"] {
+.da-chat .da-channelTextArea > [class*="scrollableContainer"] {
   background: rgba(0, 0, 0, 0.1);
 }
-
-.da-chat .da-channelTextArea>[class*="scrollableContainer"] .da-attachWrapper {
+.da-chat .da-channelTextArea > [class*="scrollableContainer"] .da-attachWrapper {
   border-right-color: rgba(255, 255, 255, 0.1);
 }
-
 /*pokolorowany tekst linku w inpucie*/
 .da-chat form [class*="fakeLink"] span {
   color: var(--markup-normal);
@@ -2423,40 +2143,32 @@ body::after {
   background: rgba(0, 0, 0, 0.9);
   min-height: 280px;
 }
-
 [class*="theme-"] .da-uploadModal * {
   border-color: var(--bt-blue-bg) !important;
 }
-
 /*input*/
-[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload>[class*="scrollableContainer"] {
+[class*="theme-"] .da-uploadModal .da-channelTextAreaUpload > [class*="scrollableContainer"] {
   background: var(--bt-blue-bg) !important;
 }
-
 [class*="theme-"] .da-uploadModal .da-channelTextAreaUpload textarea {
   color: rgba(255, 255, 255, 0.9) !important;
 }
-
 [class*="theme-"] .da-uploadModal .da-footer {
   background: rgba(0, 0, 0, 0);
 }
-
 /*button*/
 [class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
 [class*="theme-"] .da-uploadModal .da-footer [class*="colorBrand"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*checkbox*/
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked polyline {
   stroke: rgba(255, 255, 255, 0.8);
 }
-
 [class*="theme-"] .da-uploadModal .da-footer .da-checkbox.da-checked {
   background: var(--bt-blue-bg) !important;
 }
@@ -2470,12 +2182,10 @@ body::after {
   background: rgba(0, 0, 0, 0) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
 [class*="theme-"] .da-container .da-markup pre code {
   background: rgba(0, 0, 0, 0.5) !important;
   border-color: rgba(0, 0, 0, 0.5) !important;
 }
-
 /*
   ` tło tego co się tu wyśle `
 */
@@ -2491,27 +2201,23 @@ body::after {
   display: flex;
   align-content: center;
 }
-
 [class*="theme-"] .da-reactions .da-reaction img {
   width: 30px !important;
   height: 30px !important;
 }
-
 [class*="theme-"] .da-reactions .da-reaction .da-reactionCount {
   color: var(--markup-normal) !important;
 }
-
 [class*="theme-"] .da-reactions .da-reactionMe {
   background-color: rgba(0, 0, 0, 0.4) !important;
 }
 
 /*reakcje/zarzadzanie/edytowanie wiadomoscia na czacie, popout*/
-.da-message .da-buttonContainer>.da-container .da-wrapper {
+.da-message .da-buttonContainer > .da-container .da-wrapper {
   background: rgba(0, 0, 0, 0.7);
 }
-
-.da-message .da-buttonContainer>.da-container .da-wrapper .da-button.da-selected,
-.da-message .da-buttonContainer>.da-container .da-wrapper .da-button:hover {
+.da-message .da-buttonContainer > .da-container .da-wrapper .da-button.da-selected,
+.da-message .da-buttonContainer > .da-container .da-wrapper .da-button:hover {
   background: rgba(0, 0, 0, 1);
 }
 
@@ -2520,27 +2226,22 @@ body::after {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: 0px 0px !important;
 }
-
 /*menu pokazywane po najechaniu na opcje z ">" */
 .da-layerContainer .da-layer .da-menu .da-submenu {
   background: rgba(0, 0, 0, 0.95) !important;
 }
-
 /*przyciski 4 quick reakcji*/
 .da-layerContainer .da-layer .da-menu .da-wrapper .da-customItem .da-button {
   background: rgba(0, 0, 0, 1);
   transition: all 0.2s ease-in-out;
 }
-
 .da-layerContainer .da-layer .da-menu .da-wrapper .da-customItem .da-button:hover {
   transform: scale(1.1);
 }
-
 /*opcje menu*/
 .da-layerContainer .da-layer .da-menu [class*="Container"] {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 .da-layerContainer .da-layer .da-menu [class*="Container"]:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
@@ -2551,33 +2252,27 @@ form .da-autocomplete .da-autocompleteInner {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
 form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie podczas edytowania wiadomości*/
 .da-messagesWrapper .da-autocomplete,
 .da-messagesWrapper .da-autocomplete .da-autocompleteInner {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
 .da-messagesWrapper .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 /*popout w inpucie czatu przy oznaczaniu kogos na czacie podczas wstawiania wiadomości*/
 .da-uploadModal .da-autocomplete {
   background: rgba(0, 0, 0, 0.95) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
 .da-uploadModal .da-autocomplete .da-autocompleteInner {
   background: rgba(0, 0, 0, 0) !important;
   border-color: rgba(0, 0, 0, 0) !important;
 }
-
 .da-uploadModal .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.9) !important;
 }
@@ -2587,11 +2282,9 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   border-radius: 5px;
   background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
 }
-
 .da-chat .da-content .da-content .da-mentioned .da-markup .mention {
   color: var(--markup-intensive);
 }
-
 /*kolorowa linia po lewej*/
 .da-chat .da-content .da-content .da-mentioned::before {
   left: 3px;
@@ -2606,13 +2299,12 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 3px;
 }
-
 .da-chat .da-content .da-content .da-markup .mention:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
 /*edytowanie wiadomosci > kolor "anulować" albo "zapisać"*/
-.da-chat .da-messagesWrapper .da-message .da-operations>a {
+.da-chat .da-messagesWrapper .da-message .da-operations > a {
   color: var(--markup-normal) !important;
 }
 
@@ -2620,28 +2312,24 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .da-chat .da-messagesWrapper .da-message .da-markup a {
   color: var(--markup-normal);
 }
-
 /*polprzezroczyste pola na czacie: linki*/
 .da-chat .da-messagesWrapper .da-message .da-embed .da-embedPill {
   background: var(--markup-intensive) !important;
 }
-
 .da-chat .da-messagesWrapper .da-message .da-embed {
   background: var(--markup-normal-transparent) !important;
   border-color: var(--markup-intensive) !important;
 }
-
 .da-chat .da-messagesWrapper .da-message .da-embed .da-embedTitleLink {
   color: var(--markup-blue-light) !important;
 }
 
 /*brak internetu*/
-.da-app>.da-fixClipping {
+.da-app > .da-fixClipping {
   background: linear-gradient(transparent, #000);
 }
-
-.da-app>.da-fixClipping .da-quote,
-.da-app>.da-fixClipping .da-status {
+.da-app > .da-fixClipping .da-quote,
+.da-app > .da-fixClipping .da-status {
   color: var(--markup-intensive) !important;
 }
 
@@ -2651,17 +2339,14 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
 }
-
 .da-chat .da-messagesWrapper .da-container .da-attachment .da-fileNameLink,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio .da-metadataName {
   color: var(--markup-blue-light) !important;
 }
-
 .da-chat .da-messagesWrapper .da-container .da-attachment .da-downloadButton .fill,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio .da-metadataDownload .fill {
   fill: var(--markup-blue) !important;
 }
-
 .da-chat .da-messagesWrapper .da-container .da-attachment a:hover .fill,
 .da-chat .da-messagesWrapper .da-container .da-wrapperAudio a:hover .fill {
   fill: var(--markup-blue-light) !important;
@@ -2672,7 +2357,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: #000000 !important;
 }
-
 .da-chat .da-messagesWrapper .da-wrapper .da-attachment .da-progressBar {
   background: var(--markup-intensive) !important;
 }
@@ -2682,18 +2366,15 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
 }
-
 /*gdy serwer nie ma ikony*/
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone .da-noIcon {
   background-color: rgba(0, 0, 0, 0.6) !important;
 }
-
 /*button Dołącz*/
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone button[class*="lookFilled"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
 .da-chat .da-messagesWrapper .da-container .da-userSelectNone button[class*="lookFilled"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
@@ -2703,17 +2384,14 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [class*="theme-"] .da-attachPopout {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 [class*="theme-"] .da-attachPopout .da-attachPopoutRow:hover {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
 /*zaproszenie do gry (fortnite): polprzezroczyste pole na czacie po zaproszeniu*/
 .da-chat .da-messagesWrapper .da-container .da-invite {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
 }
-
 .da-chat .da-messagesWrapper .da-container .da-invite .da-coverImage {
   opacity: 0.3 !important;
 }
@@ -2726,7 +2404,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
 }
-
 [class*="tooltipPrimary"] .da-tooltipPointer,
 [class*="tooltipGreen"] .da-tooltipPointer {
   border-top-color: rgba(0, 0, 0, 1) !important;
@@ -2737,139 +2414,117 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [class*="theme-"] .da-backdropWithLayer {
   background: linear-gradient(#00000011, #000000ff) !important;
 }
-
 [class*="theme-"] .da-backdrop[style="opacity: 0.85; background-color: rgb(0, 0, 0); z-index: 1000; transform: translateZ(0px);"] {
   opacity: 1;
 }
-
 /*popout*/
-.da-modal>.da-inner .da-modal,
-.da-modal>.da-inner .da-modal.da-container {
+.da-modal > .da-inner .da-modal,
+.da-modal > .da-inner .da-modal.da-container {
   background: rgba(0, 0, 0, 0.9);
   border-color: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-
-.da-modal>.da-inner .da-modal.da-container * {
+.da-modal > .da-inner .da-modal.da-container * {
   border-color: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px;
 }
-
-.da-modal>.da-inner .da-modal.da-container .da-button[class*="lookFilled"] {
+.da-modal > .da-inner .da-modal.da-container .da-button[class*="lookFilled"] {
   background: var(--bt-red) !important;
   color: var(--bt-text) !important;
 }
-
-.da-modal>.da-inner .da-modal.da-container .da-button[class*="lookFilled"]:hover {
+.da-modal > .da-inner .da-modal.da-container .da-button[class*="lookFilled"]:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
 /*lista reakcji - tło*/
-.da-modal>.da-inner .da-modal.da-container .da-reactors {
+.da-modal > .da-inner .da-modal.da-container .da-reactors {
   background: rgba(0, 0, 0, 0);
 }
-
 /*HEADER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal>.da-inner .da-modal .da-header {
+.da-modal > .da-inner .da-modal .da-header {
   background: rgba(0, 0, 0, 0) !important;
   border-radius: 5px 5px 0px 0px;
 }
-
-.da-modal>.da-inner .da-modal .da-header.da-separator {
+.da-modal > .da-inner .da-modal .da-header.da-separator {
   box-shadow: 0px 0px;
 }
-
 /*CHECKBOXY z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal>.da-inner .da-modal .da-control .da-container {
+.da-modal > .da-inner .da-modal .da-control .da-container {
   opacity: 0.4 !important;
   /* background: rgba(100, 100, 100, 0.2) !important;
   box-shadow: 0px 0px !important; */
 }
-
 /* .da-modal > .da-inner .da-modal .da-control svg path[fill*="114, 118, 125"] {
   fill: rgba(0, 0, 0, 0.4) !important;
 } */
-.da-modal>.da-inner .da-modal .da-control [style*="rgb(67, 181, 129)"] {
+.da-modal > .da-inner .da-modal .da-control [style*="rgb(67, 181, 129)"] {
   opacity: 0.7 !important;
   /* background: var(--bt-blue-bg) !important;
   box-shadow: 0px 0px !important; */
 }
-
 /* .da-modal > .da-inner .da-modal .da-control svg path[fill*="67, 181, 129"] {
   fill: var(--bt-blue-bg) !important;
 } */
 /*LINKI z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal>.da-inner .da-modal a {
+.da-modal > .da-inner .da-modal a {
   color: var(--markup-normal);
 }
-
 /*zaznaczalne szerokie pola z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal>.da-inner .da-modal .da-cardPrimaryEditable {
+.da-modal > .da-inner .da-modal .da-cardPrimaryEditable {
   background: rgba(0, 0, 0, 0.5) !important;
   border-color: transparent !important;
 }
-
-.da-modal>.da-inner .da-modal .da-cardPrimaryEditable[style*="background"] {
+.da-modal > .da-inner .da-modal .da-cardPrimaryEditable[style*="background"] {
   background: rgba(0, 0, 0, 0.9) !important;
   border-color: transparent !important;
 }
-
 /*rozwijalne MENU z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal>.da-inner .da-modal .da-select>[class*="css-"],
-.da-modal>.da-inner .da-modal .da-select [class*="-menu"] {
+.da-modal > .da-inner .da-modal .da-select > [class*="css-"],
+.da-modal > .da-inner .da-modal .da-select [class*="-menu"] {
   background: rgba(0, 0, 0, 0.9) !important;
   border-color: rgba(0, 0, 0, 0.9) !important;
 }
-
-.da-modal>.da-inner .da-modal .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
+.da-modal > .da-inner .da-modal .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
   background: rgba(0, 0, 0, 1) !important;
 }
-
 /*FOOTER z niektórych popoutów, np ustawienia powiadomień serwera lub dziennika zmian*/
-.da-modal>.da-inner .da-modal .da-footer {
+.da-modal > .da-inner .da-modal .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   /* margin-top: 10px; */
   box-shadow: 0px 0px;
 }
-
-.da-modal>.da-inner .da-modal .da-footer>button {
+.da-modal > .da-inner .da-modal .da-footer > button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-.da-modal>.da-inner .da-modal .da-footer>button:hover {
+.da-modal > .da-inner .da-modal .da-footer > button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 
 /*usuwanie wiadomości popout: pole z wiadomością*/
-.da-modal>.da-inner .da-modal .da-content>.da-message {
+.da-modal > .da-inner .da-modal .da-content > .da-message {
   background: var(--default-hover) !important;
 }
 
 /*zaczecie streamowania popout: footer*/
-.da-modal>.da-inner .da-modalOverhang .da-footer {
+.da-modal > .da-inner .da-modalOverhang .da-footer {
   background: rgba(0, 0, 0, 0) !important;
   box-shadow: 0px 0px !important;
 }
-
-.da-modal>.da-inner .da-modalOverhang .da-footer>button {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-.da-modal>.da-inner .da-modalOverhang .da-footer>button:hover {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
-
-.da-modal>.da-inner .da-modalOverhang .da-footer>button[class*="Primary"] {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button[class*="Primary"] {
   background: var(--bt-red) !important;
   color: var(--bt-text) !important;
 }
-
-.da-modal>.da-inner .da-modalOverhang .da-footer>button[class*="Primary"]:hover {
+.da-modal > .da-inner .da-modalOverhang .da-footer > button[class*="Primary"]:hover {
   background: var(--bt-red-hover) !important;
   color: var(--bt-text-hover) !important;
 }
@@ -2880,23 +2535,19 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [aria-label*="SETTINGS"] .da-standardSidebarView .da-contentRegion {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 [aria-label*="SETTINGS"] .da-sidebarRegion [class*="header"] {
   color: rgba(255, 255, 255, 0.75) !important;
   text-transform: uppercase !important;
 }
-
 [aria-label*="SETTINGS"] .da-sidebarRegion [class*="separator"] {
   background: rgba(255, 255, 255, 0.5) !important;
 }
-
 /*sidebar po lewej*/
 [aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item:hover,
 [aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item[style*="114, 137, 218"] {
   background: var(--default-hover) !important;
   color: var(--bt-text) !important;
 }
-
 [aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item.da-selected,
 [aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item.da-selected:hover,
 [aria-label*="SETTINGS"] .da-sidebarRegion .da-sidebar .da-item[style*="114, 137, 218"],
@@ -2912,67 +2563,55 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: transparent;
   border-color: transparent;
 }
-
 [aria-label*="SETTINGS"] .da-contentRegion .da-card::before {
   background: transparent;
   border-color: transparent;
 }
-
 [aria-label*="SETTINGS"] .da-contentRegion .da-card:hover::before {
   background: transparent;
   border-color: transparent;
 }
-
 /*tytul i opis*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-title {
   color: rgba(255, 255, 255, 0.75) !important;
 }
-
 [aria-label*="SETTINGS"] .da-contentRegion .da-description {
   color: rgba(255, 255, 255, 0.5) !important;
 }
-
 /*polprzezroczyste pola ("podglad serwera" i "moderacja" na dole) (inline style XD)*/
 [aria-label*="SETTINGS"] .item-26Dhrx[style="border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218); padding: 10px;"],
 [aria-label*="SETTINGS"] .item-26Dhrx[style="padding: 10px; border-color: rgb(114, 137, 218); background-color: rgb(114, 137, 218);"] {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0.8) !important;
 }
-
 /*polprzezroczyste pola select (z wysuwalnymi menu)*/
 /*pole i menu*/
-[aria-label*="SETTINGS"] .da-contentRegion .da-select>[class*="css-"],
+[aria-label*="SETTINGS"] .da-contentRegion .da-select > [class*="css-"],
 [aria-label*="SETTINGS"] .da-contentRegion .da-select [class*="-menu"] {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: rgba(0, 0, 0, 0.8) !important;
 }
-
-[aria-label*="SETTINGS"] .da-contentRegion .da-select [class*="-menu"]>[class*="css-"]>[class*="css-"]:hover {
+[aria-label*="SETTINGS"] .da-contentRegion .da-select [class*="-menu"] > [class*="css-"] > [class*="css-"]:hover {
   background: rgba(0, 0, 0, 0.8) !important;
 }
-
 /*popout o niezapisanych zmianach*/
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container {
   background: rgba(0, 0, 0, 0.85) !important;
 }
-
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"] {
   background-color: var(--bt-blue-bg) !important;
   color: #dddddd !important;
 }
-
 [aria-label*="SETTINGS"] .da-noticeRegion .da-container [class*="lookFilled"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: #ffffff !important;
 }
-
 /*switch checkboxy*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-control .da-container {
   opacity: 0.4 !important;
   /* background: rgba(100, 100, 100, 0.2) !important;
   box-shadow: 0px 0px !important; */
 }
-
 /* [aria-label*="SETTINGS"] .da-contentRegion .da-control svg path[fill*="114, 118, 125"] {
   fill: rgba(0, 0, 0, 0.4) !important;
 } */
@@ -2981,7 +2620,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   /* background: var(--bt-blue-bg) !important;
   box-shadow: 0px 0px !important; */
 }
-
 /* [aria-label*="SETTINGS"] .da-contentRegion .da-control svg path[fill*="67, 181, 129"] {
   fill: var(--bt-blue-bg) !important;
 } */
@@ -2991,7 +2629,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [aria-label*="SETTINGS"] .da-contentRegion .da-container .da-layout {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookFilled"],
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookOutlined"],
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookGhost"] {
@@ -2999,7 +2636,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: var(--bt-text);
   border-color: transparent;
 }
-
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookFilled"]:hover,
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookOutlined"]:hover,
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-button[class*="lookFilled"]:hover {
@@ -3014,42 +2650,35 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: rgba(0, 0, 0, 0.3) !important;
 }
-
 /*default*/
 [aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] .da-radioBar {
   background: rgba(0, 0, 0, 0.5) !important;
   border-color: rgba(0, 0, 0, 0.5) !important;
 }
-
 /* zielony */
 [aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="43b581"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
-
 /* zolty */
 [aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="faa61a"] {
   background: rgba(255, 196, 0, 0.3) !important;
   border-color: rgba(255, 196, 0, 0.3) !important;
 }
-
 /* pomaranczowy */
 [aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="f57731"] {
   background: rgba(242, 97, 0, 0.3) !important;
   border-color: rgba(242, 97, 0, 0.3) !important;
 }
-
 /* czerwony */
 [aria-label*="SETTINGS"] [role="radiogroup"] .da-item[aria-checked="true"] [style*="f04747"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
-
 /*checkboxy wewnątrz*/
 [aria-label*="SETTINGS"] [role="radiogroup"] .da-item .da-radioBar svg circle {
   color: rgba(255, 255, 255, 0.8) !important;
 }
-
 /*niepokolorowane aktualnie pola*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-contentColumnDefault .da-card[style*="padding: 10px"] {
   background: rgba(0, 0, 0, 0.5);
@@ -3061,19 +2690,16 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.8) !important;
   border-color: #000000 !important;
 }
-
 [aria-label*="SETTINGS"] .da-auditLog .da-headerExpanded,
 [aria-label*="SETTINGS"] .da-auditLog .da-divider,
 [aria-label*="SETTINGS"] .da-auditLog .da-changeDetails {
   background: rgba(0, 0, 0, 0.4) !important;
   border-color: #000000 !important;
 }
-
 /*popout przy wyswietlaniu roli w ustawieniach członków i przy filtrach w dzienniku zdarzen*/
 [class*="popout-"] [class*="popoutList-"] .da-scroller {
   overflow: hidden;
 }
-
 [class*="popout-"] [class*="popoutList-"],
 [class*="popout-"] [class*="popoutList-"] .da-container .da-inner,
 [class*="popout-"] [class*="popoutList-"] .da-selectableItem.da-selected,
@@ -3086,7 +2712,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.4) !important;
   border-color: #000000 !important;
 }
-
 /*polprzezroczyste pola (czesc ustawien "Widżet")*/
 [aria-label*="SETTINGS"] .da-contentRegion .da-copyInput {
   background: rgba(0, 0, 0, 0.5) !important;
@@ -3110,31 +2735,25 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 .ui-standard-sidebar-view .content-region {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 /*sidebar po lewej*/
 #user-settings .da-sidebarRegion [class*="header"] {
   color: rgba(255, 255, 255, 0.75) !important;
   text-transform: uppercase !important;
 }
-
 #user-settings .da-sidebarRegion .da-item {
   color: rgba(255, 255, 255, 0.7) !important;
 }
-
 #user-settings .da-sidebarRegion .da-item:hover {
   background-color: var(--default-hover) !important;
   color: rgba(255, 255, 255, 0.8) !important;
 }
-
 #user-settings .da-sidebarRegion .da-item.da-selected {
   background-color: var(--default-selected) !important;
   color: rgba(255, 255, 255, 0.9) !important;
 }
-
 #user-settings .da-sidebarRegion [class*="separator"] {
   background: rgba(255, 255, 255, 0.5) !important;
 }
-
 /*button discorda nitro po wybraniu*/
 #user-settings .da-sidebarRegion .da-item[style="color: rgb(255, 255, 255); background-color: rgb(114, 137, 218);"] {
   color: rgba(255, 255, 255, 0.8) !important;
@@ -3146,55 +2765,45 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-title {
   color: rgba(255, 255, 255, 0.75) !important;
 }
-
 #user-settings .da-contentRegion .da-description {
   color: rgba(255, 255, 255, 0.5) !important;
 }
-
 /*polprzezroczyste pola (bez tych w "skrótach klawiszowych" i "aktywności w grze"*/
-#user-settings .da-contentRegion :not(.da-marginTop40):not(.da-row)>.da-card {
+#user-settings .da-contentRegion :not(.da-marginTop40):not(.da-row) > .da-card {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: #000000 !important;
 }
-
 /*wysuwalne menu*/
-#user-settings .da-contentRegion .da-contentColumn .da-select>[class*="css-"],
+#user-settings .da-contentRegion .da-contentColumn .da-select > [class*="css-"],
 #user-settings .da-contentRegion .da-contentColumn .da-select [class*="-menu"] {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: #000000 !important;
 }
-
-#user-settings .da-contentRegion .da-contentColumn .da-select [class*="-container"]>[class*="-control"] {
+#user-settings .da-contentRegion .da-contentColumn .da-select [class*="-container"] > [class*="-control"] {
   background: transparent !important;
   border-color: #000000 !important;
 }
-
 #user-settings .da-contentRegion .da-contentColumn .da-select [class*="-menu"] [class*="-option"]:hover {
   background: rgba(0, 0, 0, 0.8) !important;
 }
-
 /*checkboxy*/
 #user-settings .da-contentRegion [style*="rgb(114, 137, 218)"] .da-checkboxWrapper .da-checkbox {
   background: rgba(0, 0, 0, 0.4) !important;
   border-color: #000000 !important;
 }
-
 #user-settings .da-contentRegion [style*="rgb(114, 137, 218)"] .da-checkboxWrapper .da-checkbox.da-checked {
   background-color: var(--bt-blue-bg) !important;
   border-color: var(--bt-blue-bg) !important;
 }
-
 #user-settings .da-contentRegion [style*="rgb(114, 137, 218)"] .da-checkboxWrapper .da-checkbox.da-checked svg path[fill*="7289da"] {
   fill: var(--bt-text-hover) !important;
 }
-
 /*switch checkboxy*/
 #user-settings .da-contentRegion .da-control .da-container {
   opacity: 0.4 !important;
   /* background: rgba(100, 100, 100, 0.2) !important;
   box-shadow: 0px 0px !important; */
 }
-
 /* #user-settings .da-contentRegion .da-control svg path[fill*="114, 118, 125"] {
   fill: rgba(0, 0, 0, 0.4) !important;
 } */
@@ -3203,7 +2812,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   /* background: var(--bt-blue-bg) !important;
   box-shadow: 0px 0px !important; */
 }
-
 /* #user-settings .da-contentRegion .da-control svg path[fill*="67, 181, 129"] {
   fill: var(--bt-blue-bg) !important;
 } */
@@ -3212,7 +2820,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: #000000 !important;
 }
-
 /*przyciski*/
 #user-settings .da-contentRegion .da-button[class*="lookFilled"],
 #user-settings .da-contentRegion .da-button[class*="lookOutlined"],
@@ -3221,7 +2828,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: var(--bt-text) !important;
   border-color: transparent !important;
 }
-
 #user-settings .da-contentRegion .da-button[class*="lookFilled"]:hover,
 #user-settings .da-contentRegion .da-button[class*="lookOutlined"]:hover,
 #user-settings .da-contentRegion .da-button[class*="lookGhost"]:hover {
@@ -3229,36 +2835,29 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   color: var(--bt-text-hover) !important;
   border-color: transparent !important;
 }
-
 /*input type range*/
 #user-settings .da-contentRegion .da-bar {
   background: rgba(0, 0, 0, 0.6) !important;
 }
-
 #user-settings .da-contentRegion .da-barFill {
   background: var(--bt-blue-bg) !important;
 }
-
 /*pozbycie sie szarego tla podczas najezdzania na pola np w Skróty Klaw. i Aktywność w grze*/
 #user-settings .da-contentRegion .da-card {
   box-shadow: none !important;
 }
-
 #user-settings .da-contentRegion .da-card:hover {
   background: transparent !important;
   border-color: transparent;
 }
-
 #user-settings .da-contentRegion .da-card::before {
   background: transparent !important;
   border-color: transparent;
 }
-
 #user-settings .da-contentRegion .da-card:hover::before {
   background: transparent !important;
   border-color: transparent;
 }
-
 /*kolory linkow*/
 #user-settings .da-contentRegion a {
   color: var(--markup-normal);
@@ -3268,14 +2867,13 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*"Moje konto"*/
 /*pole z kontem*/
-#user-settings .da-contentRegion .da-children>.da-background,
-#user-settings .da-contentRegion .da-children>.da-background>.da-fieldList {
+#user-settings .da-contentRegion .da-children > .da-background,
+#user-settings .da-contentRegion .da-children > .da-background > .da-fieldList {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 /*popout po kliknieciu edytuj*/
-.da-layer>.da-focusLock>.da-root,
-.da-layer>.da-focusLock>.da-root .da-footer {
+.da-layer > .da-focusLock > .da-root,
+.da-layer > .da-focusLock > .da-root .da-footer {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: 0px 0px !important;
 }
@@ -3286,17 +2884,14 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
-
 #user-settings .da-contentRegion [role="radiogroup"] .da-item[aria-checked="true"] [style*="faa61a"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
-
 #user-settings .da-contentRegion [role="radiogroup"] .da-item[aria-checked="true"] [style*="f04747"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
 }
-
 /*checkboxy wewnątrz*/
 #user-settings .da-contentRegion .da-item svg circle {
   color: rgba(255, 255, 255, 0.8) !important;
@@ -3315,26 +2910,22 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #000000;
 }
-
 #user-settings .da-contentRegion .da-accountList .da-inner {
   background-color: rgba(0, 0, 0, 0.4);
   border-color: #000000;
   margin-bottom: 7px;
   transition: 0.2s all ease-in-out;
 }
-
 #user-settings .da-contentRegion .da-accountList .da-inner:hover {
   background-color: rgba(0, 0, 0, 0.7);
   border-color: #000000;
   transform: scale(1.1);
 }
-
 /*kolorowe pola u dołu*/
 #user-settings .da-contentRegion .da-connection {
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #000000;
 }
-
 #user-settings .da-contentRegion .da-connectionHeader {
   background-color: rgba(0, 0, 0, 0.1);
   border-color: #000000;
@@ -3345,7 +2936,6 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-footer .da-flexChild .da-subText {
   color: rgba(255, 255, 255, 0.4);
 }
-
 /*psst*/
 #user-settings .da-contentRegion .da-codeRedemptionRedirect {
   background-color: rgba(0, 0, 0, 0.4);
@@ -3371,11 +2961,9 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-notches {
   background-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='20' fill='%23000000'%3E%3Cpath fill-rule='evenodd' d='M0 0h8v20H0V0zm4 2a2 2 0 0 0-2 2v12a2 2 0 1 0 4 0V4a2 2 0 0 0-2-2z'/%3E%3C/svg%3E") !important;
 }
-
 #user-settings .da-contentRegion .da-progress {
   background: var(--bt-blue-bg) !important;
 }
-
 /*podgląd kamery*/
 #user-settings .da-contentRegion .da-previewContainer .media-engine-video,
 #user-settings .da-contentRegion .da-previewContainer .da-previewOverlay {
@@ -3389,33 +2977,26 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: var(--bt-blue-bg) !important;
 }
-
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected {
   border-color: var(--bt-red-hover) !important;
 }
-
 /*opcje w rogach*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option {
   background: rgba(0, 0, 0, 0.8) !important;
 }
-
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option.da-selected {
   background: var(--bt-blue-bg) !important;
 }
-
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-option:not(.da-selected):hover {
   background: rgba(0, 0, 0, 1) !important;
 }
-
 /*ikona na środku*/
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-disabledIcon path:nth-child(2) {
   fill: rgba(0, 0, 0, 0.8) !important;
 }
-
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper .da-disabledIcon:hover path:nth-child(2) {
   fill: rgba(0, 0, 0, 1) !important;
 }
-
 #user-settings .da-contentRegion .da-notificationSettings .da-wrapper.da-disabledSelected .da-disabledIcon path:nth-child(2) {
   fill: var(--bt-red-hover) !important;
 }
@@ -3430,24 +3011,20 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-notDetected {
   background-color: rgba(0, 0, 0, 0.6);
 }
-
 #user-settings .da-contentRegion .da-nowPlaying {
   background-color: rgba(0, 230, 77, 0.3);
 }
-
 /*przycisk do usuwania gry*/
 #user-settings .da-contentRegion .da-removeGame {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px;
 }
-
 /*edytowalne pole z nazwa gry*/
 #user-settings .da-contentRegion .da-gameNameInput:focus,
 #user-settings .da-contentRegion .da-gameNameInput:hover {
   background: rgba(0, 0, 0, 0.6);
   border-color: #000000;
 }
-
 /*ostatnia rozgrywka x dni temu (pod nazwą gry)*/
 #user-settings .da-contentRegion .da-lastPlayed .da-hoverRoll {
   color: rgba(255, 255, 255, 0.4);
@@ -3455,24 +3032,21 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 
 /*"Activity feed"*/
 /*searchbox u góry*/
-#user-settings .da-contentRegion .da-container>.da-searchBox {
+#user-settings .da-contentRegion .da-container > .da-searchBox {
   background: rgba(0, 0, 0, 0.4) !important;
   border: 1px solid #000000;
 }
-
 /*popout po wyszukaniu w searchboxie*/
-#user-settings .da-contentRegion .da-container>.da-searchResultsContainer {
+#user-settings .da-contentRegion .da-container > .da-searchResultsContainer {
   background: rgba(0, 0, 0, 0.8) !important;
   border: 1px solid #000000;
   box-shadow: 0px 0px;
 }
-
-#user-settings .da-contentRegion .da-container>.da-searchResultsContainer .da-searchOption.da-selected {
+#user-settings .da-contentRegion .da-container > .da-searchResultsContainer .da-searchOption.da-selected {
   background: rgba(0, 0, 0, 0.8) !important;
   border: 1px solid #000000;
   box-shadow: 0px 0px;
 }
-
 /*panel u dołu*/
 #user-settings .da-contentRegion .da-emptyUsers {
   background: rgba(0, 0, 0, 0.6) !important;
@@ -3485,55 +3059,46 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #user-settings .da-contentRegion .da-installationPath .da-rowTitle {
   color: rgba(255, 255, 255, 0.8);
 }
-
 #user-settings .da-contentRegion .da-installationPath .da-default {
   color: rgba(255, 255, 255, 0.5);
 }
-
 /*edytowanie lokalizacji*/
 #user-settings .da-contentRegion .da-installationPathEditing {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: #000000;
 }
-
 /*% zajętego miejsca*/
 #user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(1),
 #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(1) {
   stroke: rgba(0, 0, 0, 0.3) !important;
 }
-
 #user-settings .da-contentRegion .da-installationPath .da-wrapper circle:nth-child(2),
 #user-settings .da-contentRegion .da-installationPathEditing .da-wrapper circle:nth-child(2) {
   stroke: var(--markup-intensive) !important;
 }
-
 /*tag "domyślny"*/
 #user-settings .da-contentRegion .da-installationPath .da-defaultIndicator {
   background: var(--markup-intensive) !important;
 }
 
 /*"Język"*/
-#user-settings .da-contentRegion .da-children>div>div>.da-item[class*="justifyBetween"] {
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"] {
   background: transparent !important;
   box-shadow: none !important;
   border-top: 1px solid rgba(255, 255, 255, 0.1) !important;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
 }
-
-#user-settings .da-contentRegion .da-children>div>div>.da-item[class*="justifyBetween"]:first-child {
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"]:first-child {
   border-top: 2px solid rgba(255, 255, 255, 0.1) !important;
 }
-
-#user-settings .da-contentRegion .da-children>div>div>.da-item[class*="justifyBetween"]:last-child {
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"]:last-child {
   border-bottom: 2px solid rgba(255, 255, 255, 0.1) !important;
 }
-
-#user-settings .da-contentRegion .da-children>div>div>.da-item[class*="justifyBetween"]:hover,
-#user-settings .da-contentRegion .da-children>div>div>.da-item[class*="justifyBetween"].da-selected {
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"]:hover,
+#user-settings .da-contentRegion .da-children > div > div > .da-item[class*="justifyBetween"].da-selected {
   background: rgba(0, 0, 0, 0.4) !important;
 }
-
-#user-settings .da-contentRegion .da-children>div>div>.da-item .da-checkboxWrapper .da-checkbox.da-checked {
+#user-settings .da-contentRegion .da-children > div > div > .da-item .da-checkboxWrapper .da-checkbox.da-checked {
   background-color: var(--bt-blue-bg) !important;
   border-color: var(--bt-blue-bg) !important;
 }
@@ -3543,78 +3108,63 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 #bd-settings-sidebar .ui-tab-bar-item.selected {
   background-color: var(--default-selected) !important;
 }
-
 #bd-settings-sidebar .ui-tab-bar-item:not(.selected):hover {
   background-color: var(--default-hover) !important;
 }
-
-#bd-settings-sidebar>span>div:first-child {
+#bd-settings-sidebar > span > div:first-child {
   margin-bottom: 10px;
 }
-
-#bd-settings-sidebar>span>div:not(:first-child) {
+#bd-settings-sidebar > span > div:not(:first-child) {
   color: rgba(255, 255, 255, 0.6) !important;
 }
-
-#bd-settings-sidebar>span>div:not(:first-child) a {
+#bd-settings-sidebar > span > div:not(:first-child) a {
   color: var(--markup-normal) !important;
 }
-
 /*pole po prawej*/
 #bd-settingspane-container {
   background: rgba(0, 0, 0, 0) !important;
 }
-
 /*polprzezroczyste pola*/
 #bd-settingspane-container .ui-switch-item:not(.ui-flex) {
   background: rgba(0, 0, 0, 0.6) !important;
   border-color: rgba(0, 0, 0, 1) !important;
 }
-
 /*opisy ustawień*/
 #bd-settingspane-container .style-description {
   color: rgba(255, 255, 255, 0.5) !important;
 }
-
 /*przyciski w nagłówkach*/
 #bd-settingspane-container .bd-pfbtn {
   background: var(--bt-red);
   color: var(--bt-text);
   padding: 4px 13px;
 }
-
 #bd-settingspane-container .bd-pfbtn:hover {
   background: var(--bt-red-hover);
   color: var(--bt-text-hover);
 }
-
 /*przyciski w ustawieniach*/
 #bd-settingspane-container .bda-settings-button {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
   padding: 4px 13px;
 }
-
 #bd-settingspane-container .bda-settings-button:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
-
 /*linki w ustawieniach BD*/
 #bd-settingspane-container .bda-link {
   color: var(--markup-normal);
 }
-
 /*switch checkboxy (da-switch jest np po rozwinięciu danego pluginu)*/
 #bd-settingspane-container .bd-switch {
   background: rgba(0, 0, 0, 0.6) !important;
   box-shadow: 0px 0px !important;
 }
-
 #bd-settingspane-container .bd-switch-checked {
   background: var(--bt-blue-bg) !important;
 }
-
 /*searchbar (na liscie motywow/pluginow)*/
 #bd-settingspane-container .bd-search-wrapper {
   background: rgba(0, 0, 0, 0.4) !important;
@@ -3626,56 +3176,46 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 [id^="bd-customcss-editor"] {
   background: transparent !important;
 }
-
 /*pole po lewej*/
 [id^="bd-customcss-editor"] .ace_gutter {
   background: rgba(0, 0, 0, 0.6) !important;
 }
-
 [id^="bd-customcss-editor"] .ace_gutter-cell {
   background: transparent !important;
 }
-
 /*pole po prawej*/
 [id^="bd-customcss-editor"] .ace_content {
   background: rgba(0, 0, 0, 0.5) !important;
 }
-
 /*aktywna linia po lewej i prawej*/
 [id^="bd-customcss-editor"] .ace_active-line,
 [id^="bd-customcss-editor"] .ace_gutter-active-line {
   background: var(--default-hover) !important;
 }
-
 /*zaznaczenie kodu*/
 [id^="bd-customcss-editor"] .ace_selection {
   background: var(--default-selected) !important;
 }
-
 /*panel u dołu*/
 #bd-customcss-attach-controls {
   background: rgba(0, 0, 0, 0.6) !important;
   box-shadow: 0px 0px !important;
 }
-
 /*live update checkbox*/
 #bd-customcss-attach-controls .da-checkbox .da-checkboxInner span {
   background-color: var(--bt-blue-bg);
   border-color: var(--bt-blue-bg);
 }
-
 /*"ctrl+,"*/
 #bd-customcss-attach-controls .inline {
   background: rgba(0, 0, 0, 0.6) !important;
 }
-
 #bd-customcss-attach-controls button {
   border-color: transparent !important;
   border-radius: 5px !important;
   background-color: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
 #bd-customcss-attach-controls button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
@@ -3684,11 +3224,10 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*IKONKI USTAWIEN*/
 
 /*miejsce na ikony*/
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"],
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"],
 .platform-win #bd-settings-sidebar .ui-tab-bar-item {
   padding-left: 50px !important;
 }
-
 .platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"]::after {
   content: "";
   position: absolute;
@@ -3700,121 +3239,94 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
 }
-
 .platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"]:hover::after {
   opacity: 0.7;
 }
-
 .platform-win .da-standardSidebarView .da-sidebarRegion .da-sidebarRegionScroller [class*="item"][class*="selected-"]::after {
   opacity: 1;
 }
 
 /*ikony*/
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(2)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(2)::after {
   background: url(https://tomec.gitlab.io/novum/icons/person.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(3)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(3)::after {
   background: url(https://tomec.gitlab.io/novum/icons/security.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(4)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(4)::after {
   background: url(https://tomec.gitlab.io/novum/icons/apps.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(5)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(5)::after {
   background: url(https://tomec.gitlab.io/novum/icons/link.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(6)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(6)::after {
   background: url(https://tomec.gitlab.io/novum/icons/Credit_card.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(8)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(8)::after {
   background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(10)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(10)::after {
   background-image: url(https://discordapp.com/assets/5a24b20b84fb3eafc138916729386e76.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(11)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(11)::after {
   background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
   background-size: cover;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(12)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(12)::after {
   background: url(https://tomec.gitlab.io/novum/icons/mic.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(13)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(13)::after {
   background: url(https://tomec.gitlab.io/novum/icons/open_in_new.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(14)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(14)::after {
   background: url(https://tomec.gitlab.io/novum/icons/notifications.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(15)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(15)::after {
   background: url(https://tomec.gitlab.io/novum/icons/keyboard.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(16)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(16)::after {
   background: url(https://tomec.gitlab.io/novum/icons/games.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(17)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(17)::after {
   background: url(https://tomec.gitlab.io/novum/icons/chat.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(18)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(18)::after {
   background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(19)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(19)::after {
   background: url(https://tomec.gitlab.io/novum/icons/videocam.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(20)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(20)::after {
   background: url(https://tomec.gitlab.io/novum/icons/looks.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(21)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(21)::after {
   background: url(https://tomec.gitlab.io/novum/icons/desktop_windows.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(22)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(22)::after {
   background: url(https://tomec.gitlab.io/novum/icons/language.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(23)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(23)::after {
   background: url(https://tomec.gitlab.io/novum/icons/windows.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(25)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(25)::after {
   background: url(https://tomec.gitlab.io/novum/icons/update.svg) !important;
 }
-
-.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar>*>[class*="item"]:nth-child(28)::after {
+.platform-win [layer-id="user-settings"] .da-standardSidebarView .da-sidebarRegion .da-sidebar > * > [class*="item"]:nth-child(28)::after {
   background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
 }
 
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(3)::after {
   background: url(https://tomec.gitlab.io/novum/icons/betterdiscord.svg) !important;
 }
-
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(4)::after {
   background: url(https://tomec.gitlab.io/novum/icons/emote.svg) !important;
 }
-
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(5)::after {
   background: url(https://tomec.gitlab.io/novum/icons/puzzle.svg) !important;
 }
-
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(6)::after {
   background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
 }
-
 .platform-win #bd-settings-sidebar .ui-tab-bar-item:nth-child(7)::after {
   background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
 }
@@ -3825,20 +3337,17 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
 /*
   **:not(:last-child), żeby nie edytować przycisków po rozłączeniu się z głosowego
 */
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child)>.da-flex:hover {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex:hover {
   background: rgba(0, 0, 0, 0);
 }
-
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child)>.da-flex>button:nth-child(2) .da-contents {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) > .da-flex > button:nth-child(2) .da-contents {
   visibility: hidden;
 }
-
 /*button Disconnect*/
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex>button:nth-child(2) svg {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2) svg {
   display: none;
 }
-
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex>button:nth-child(2) {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2) {
   background-color: rgba(0, 0, 0, 0);
   background-image: url(data:image/svg+xml;base64,PHN2ZyBmaWxsPSIjRkZGRkZGIiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4gICAgPHBhdGggZD0iTTAgMGgyNHYyNEgweiIgZmlsbD0ibm9uZSIvPiAgICA8cGF0aCBkPSJNMTIgOWMtMS42IDAtMy4xNS4yNS00LjYuNzJ2My4xYzAgLjM5LS4yMy43NC0uNTYuOS0uOTguNDktMS44NyAxLjEyLTIuNjYgMS44NS0uMTguMTgtLjQzLjI4LS43LjI4LS4yOCAwLS41My0uMTEtLjcxLS4yOUwuMjkgMTMuMDhjLS4xOC0uMTctLjI5LS40Mi0uMjktLjcgMC0uMjguMTEtLjUzLjI5LS43MUMzLjM0IDguNzggNy40NiA3IDEyIDdzOC42NiAxLjc4IDExLjcxIDQuNjdjLjE4LjE4LjI5LjQzLjI5LjcxIDAgLjI4LS4xMS41My0uMjkuNzFsLTIuNDggMi40OGMtLjE4LjE4LS40My4yOS0uNzEuMjktLjI3IDAtLjUyLS4xMS0uNy0uMjgtLjc5LS43NC0xLjY5LTEuMzYtMi42Ny0xLjg1LS4zMy0uMTYtLjU2LS41LS41Ni0uOXYtMy4xQzE1LjE1IDkuMjUgMTMuNiA5IDEyIDl6Ii8+PC9zdmc+) !important;
   background-position: center;
@@ -3846,31 +3355,26 @@ form .da-autocomplete .da-autocompleteInner .da-selectorSelected {
   background-size: 20px;
   opacity: 0.5;
 }
-
-.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex>button:nth-child(2):hover {
+.da-base .da-sidebar .da-panels .da-container:nth-child(1):not(:last-child) .da-flex > button:nth-child(2):hover {
   -webkit-animation: disconnect1 0.06s infinite alternate;
   animation: disconnect1 0.06s infinite alternate;
   opacity: 1;
 }
-
 @-webkit-keyframes disconnect1 {
   from {
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
   }
-
   to {
     -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
   }
 }
-
 @keyframes disconnect1 {
   from {
     -webkit-transform: rotate(-7deg);
     transform: rotate(-7deg);
   }
-
   to {
     -webkit-transform: rotate(7deg);
     transform: rotate(7deg);
@@ -3884,28 +3388,24 @@ body::after {
   -webkit-animation: fadeIn 2s ease-out;
   animation: fadeIn 2s ease-out;
 }
-
 @-webkit-keyframes fadeIn {
   0% {
     opacity: 0;
     -webkit-filter: blur(10px);
     filter: blur(10px);
   }
-
   100% {
     opacity: 1;
     -webkit-filter: blur(0px);
     filter: blur(0px);
   }
 }
-
 @keyframes fadeIn {
   0% {
     opacity: 0;
     -webkit-filter: blur(10px);
     filter: blur(10px);
   }
-
   100% {
     opacity: 1;
     -webkit-filter: blur(0px);
@@ -3926,22 +3426,18 @@ body::after {
   -webkit-animation: rotate1 40s linear infinite;
   animation: rotate1 40s linear infinite;
 }
-
 @-webkit-keyframes rotate1 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
 }
-
 @keyframes rotate1 {
   0% {
     transform: rotate(0deg);
   }
-
   100% {
     transform: rotate(360deg);
   }
@@ -3951,7 +3447,6 @@ body::after {
 input {
   transition: all 0.3s;
 }
-
 input:focus {
   border-color: var(--markup-blue) !important;
   box-shadow: 0px 0px transparent;
@@ -3977,11 +3472,9 @@ input:focus {
 [class*="theme-"] .da-noChannel {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
-
 [class*="theme-"] .da-noChannel .da-title {
   color: var(--markup-normal) !important;
 }
-
 [class*="theme-"] .da-noChannel .da-text {
   color: var(--markup-normal) !important;
 }
@@ -3993,8 +3486,8 @@ input:focus {
 }
 
 /*czat: template czatu podczas jego ładowania*/
-.da-chat .da-scrollerInner>.da-wrapper,
-.da-chat .da-scrollerInner>.da-wrapper>.da-wrapper {
+.da-chat .da-scrollerInner > .da-wrapper,
+.da-chat .da-scrollerInner > .da-wrapper > .da-wrapper {
   background: transparent !important;
 }
 
@@ -4002,53 +3495,45 @@ input:focus {
 #app-mount .da-errorPage {
   background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)) !important;
 }
-
 #app-mount .da-errorPage button {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
 #app-mount .da-errorPage button:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 
 /*dolaczanie do nowego serwera popout*/
-[class*="theme-"] .da-modal>.da-inner>.da-container>.da-contentWrapper {
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-
-[class*="theme-"] .da-modal>.da-inner>.da-container>.da-contentWrapper button {
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button {
   color: var(--bt-text) !important;
 }
-
-[class*="theme-"] .da-modal>.da-inner>.da-container>.da-contentWrapper button[class*="lookFilled"] {
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button[class*="lookFilled"] {
   background: var(--bt-blue-bg) !important;
   color: var(--bt-text) !important;
 }
-
-[class*="theme-"] .da-modal>.da-inner>.da-container>.da-contentWrapper button[class*="lookFilled"]:hover {
+[class*="theme-"] .da-modal > .da-inner > .da-container > .da-contentWrapper button[class*="lookFilled"]:hover {
   background: var(--bt-blue-bg-hover) !important;
   color: var(--bt-text-hover) !important;
 }
 
 /*komunikat przy wchodzeniu na kanal NSFW o koniecznosci ustawienia daty urodzenia*/
-[class*="theme-"] .da-modal>.da-inner>.da-focusLock>.da-root {
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root {
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px transparent;
 }
-
-[class*="theme-"] .da-modal>.da-inner>.da-focusLock>.da-root>.da-footer {
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root > .da-footer {
   background: rgba(0, 0, 0, 0.9);
   box-shadow: 0px 0px transparent;
 }
-
-[class*="theme-"] .da-modal>.da-inner>.da-focusLock>.da-root>.da-footer .da-button[class*="Filled"] {
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root > .da-footer .da-button[class*="Filled"] {
   background: var(--bt-blue-bg);
   color: var(--bt-text);
 }
-
-[class*="theme-"] .da-modal>.da-inner>.da-focusLock>.da-root>.da-footer .da-button[class*="Filled"]:hover {
+[class*="theme-"] .da-modal > .da-inner > .da-focusLock > .da-root > .da-footer .da-button[class*="Filled"]:hover {
   background: var(--bt-blue-bg-hover);
   color: var(--bt-text-hover);
 }
