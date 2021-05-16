@@ -18,7 +18,9 @@
   --markup-blue: #8f6060e6;
   --markup-blue-light: #c28383e6;
 }
-
+.da-reactors {
+	background-color: transparent !important;
+}
 .da-sidebar>.da-container>.da-list::-webkit-scrollbar-thumb {
   background-color: var(--scroll-thumb) !important;
 }
