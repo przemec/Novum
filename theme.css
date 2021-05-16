@@ -3428,6 +3428,11 @@ body::after {
   -webkit-animation: rotate1 40s linear infinite;
   animation: rotate1 40s linear infinite;
 }
+[src*="avatars/221743310744715265"].da-clickable,
+[style*="avatars/221743310744715265"].da-avatar {
+  -webkit-animation: rotate1 40s linear infinite;
+  animation: rotate1 40s linear infinite;
+}
 @-webkit-keyframes rotate1 {
   0% {
     transform: rotate(0deg);
