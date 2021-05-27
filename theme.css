@@ -18,6 +18,37 @@
   --markup-blue: #8f6060e6;
   --markup-blue-light: #c28383e6;
 }
+.bd-button-title {
+    background-color: var(--bt-red) !important;
+}
+
+[class*="bd-view-button"][class*="selected"] {
+    background-color: var(--bt-red) !important;
+}
+
+.da-itemCard>div>.da-body {
+    background-color: transparent;
+}
+
+.da-itemCard>div>.da-body>section {
+    background-color: transparent;
+}
+
+.da-partyMemberOverflow {
+    background-color: var(--bt-red);
+}
+
+.da-inputWrapper>.da-input {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.da-headerTop {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.da-profileBanner {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+}
 .da-reactors {
 	background-color: transparent !important;
 }
@@ -298,10 +329,6 @@
 
 .da-notificationSettings>div>.da-wrapper>.da-option:hover {
   background-color: var(--bt-red) !important;
-}
-
-.da-wrapper {
-  border-color: var(--bt-blue-bg-hover);
 }
 
 .da-keybindShortcut>span {
