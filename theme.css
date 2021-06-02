@@ -18,6 +18,55 @@
   --markup-blue: #8f6060e6;
   --markup-blue-light: #c28383e6;
 }
+/*Aka: Follow to get this channel's updates in your own server component*/
+.da-chatContent>form>div>div {
+    background-color: var(--default-hover) !important;
+}
+
+.da-chatContent>form>div>div>.da-buttonContainer>button {
+    background-color: var(--bt-red) !important;
+}
+
+.da-chatContent>form>div>div>div>.da-text>h3 {
+    background-color: transparent !important;
+}
+/*Styling for new 'find stage' section in user homescreen*/
+.da-stageSection {
+    background-color: transparent;
+}
+
+.da-nowPlayingSidebar>.da-container {
+    background-color: transparent !important;
+}
+
+.da-stageSection>.da-container>.da-container {
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.da-stageSection>.da-container>.da-container:nth-last-child(2) {
+    background-color: transparent !important;
+}
+
+.da-guildInfoContainer>.da-rightJustifiedContent>div {
+    background-color: var(--bt-red) !important;
+}
+
+.da-stageSection>div::-webkit-scrollbar-thumb {
+    background-color: var(--scroll-thumb) !important;
+}
+
+.da-stageSection>div::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+/*Styling for in game or other member activity*/
+.da-activityUserPopout {
+    background-color: rgba(0, 0, 0, 0.95);
+}
+
+.da-activityUserPopout>.da-horizontal>button {
+    background-color: var(--bt-red) !important;
+}
 .bd-button-title {
     background-color: var(--bt-red) !important;
 }
@@ -3457,8 +3506,8 @@ body::after {
 }
 [src*="avatars/221743310744715265"].da-clickable,
 [style*="avatars/221743310744715265"].da-avatar {
-  -webkit-animation: rotate1 40s linear infinite;
-  animation: rotate1 40s linear infinite;
+  -webkit-animation: rotate2 40s linear infinite;
+  animation: rotate2 40s linear infinite;
 }
 @-webkit-keyframes rotate1 {
   0% {
@@ -3474,6 +3523,22 @@ body::after {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate2 {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 
