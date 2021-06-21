@@ -1,5 +1,7 @@
 # Novum Discord Theme
 
+### important: after one of the latest BetterDiscord updates 'Novum' is down. Theme will be restored with full functionality within the next few weeks
+
 ### Big custom theme with couple of small addons.
 
 ## Preview
