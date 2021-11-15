@@ -18,6 +18,10 @@
   --markup-blue: #8f6060e6;
   --markup-blue-light: #c28383e6;
 }
+.da-chat>.da-content>div {
+    background-color: transparent !important;
+}
+
 /*Aka: Follow to get this channel's updates in your own server component*/
 .da-chatContent>form>div>div {
     background-color: var(--default-hover) !important;
