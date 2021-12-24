@@ -12,6 +12,14 @@
     }
 }
 
+
+//Remove discord gift button from chat
+
+[class*=inner] [class*=buttons]>div:first-of-type {
+    display: none !important;
+    background-color: red;
+}
+
 /* Emote, Gif, Sticker popout */
 [class^="listItemWrapper-"] {
     background: transparent !important;
@@ -205,3 +213,6 @@
 [class*=recentMentionsPopout] {
     background: rgba(0, 0, 0, 0.95) !important;
 }
+
+//Remove discord gift button
+// cuz why not

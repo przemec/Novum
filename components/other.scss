@@ -63,9 +63,19 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
   border-color: transparent !important;
 }
 
-//Remove discord wordmark
+//Replace discord wordmark with theme name
 [class*="wordmark"] {
-  display: none;
+
+  &:after {
+    content: "Novum";
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  svg {
+    display: none;
+  }
+
 }
 
 //Rotate home icon
@@ -100,4 +110,14 @@ input:focus {
 // Keyboard shortcuts modal
 [class*=keyboardShortcutsModal] {
   background: rgba(0, 0, 0, 0.98) !important;
+}
+
+//Remove discord support button
+[href='https://support.discord.com'] {
+  display: none !important;
+}
+
+//Remove notification bell from channel
+[aria-label="Notification Settings"] {
+  display: none !important;
 }
