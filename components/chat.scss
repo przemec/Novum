@@ -82,3 +82,13 @@
 [class^="categorySection-"] > [class^="header-"] {
   background-color: #000;
 }
+
+//Follow Button near channel name
+[class*="followButton"] {
+  background-color: var(--bt-red) !important;
+}
+
+//Follow Button near chat
+[class*="chatContent"] button {
+  background-color: var(--bt-red) !important;
+}

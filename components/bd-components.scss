@@ -1,0 +1,10 @@
+.bd-button {
+  background-color: var(--bt-red) !important;
+
+  :hover {
+    background-color: var(--bt-red-hover) !important;
+  }
+}
+.bd-error-modal {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}

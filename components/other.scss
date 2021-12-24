@@ -46,3 +46,14 @@
 [class^="barFill-"] {
   background-color: var(--bt-red) !important;
 }
+
+//Color primary
+[class^="collorPrimary-"] {
+  background-color: var(--bt-red) !important;
+}
+
+//Color brand buttons
+
+button[class*="colorBrand-"]:not([class*="lookBlank"]) {
+  background-color: var(--bt-red) !important;
+}
