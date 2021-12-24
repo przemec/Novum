@@ -2275,24 +2275,7 @@ body::after {
   background: rgba(0, 0, 0, 0.5) !important;
 }
 
-/*reakcje pod wiadomosciami na czacie*/
-[class*="theme-"] .da-reactions .da-reaction {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
-  display: flex;
-  align-content: center;
-}
-[class*="theme-"] .da-reactions .da-reaction img {
-  width: 30px !important;
-  height: 30px !important;
-}
-[class*="theme-"] .da-reactions .da-reaction .da-reactionCount {
-  color: var(--markup-normal) !important;
-}
-[class*="theme-"] .da-reactions .da-reactionMe {
-  background-color: rgba(0, 0, 0, 0.4) !important;
-}
+
 
 /*reakcje/zarzadzanie/edytowanie wiadomoscia na czacie, popout*/
 .da-message .da-buttonContainer > .da-container .da-wrapper {
@@ -2303,11 +2286,7 @@ body::after {
   background: rgba(0, 0, 0, 1);
 }
 
-/*klik prawym na wiadomosc na czacie popout*/
-.da-layerContainer .da-layer .da-menu {
-  background: rgba(0, 0, 0, 0.95) !important;
-  box-shadow: 0px 0px !important;
-}
+
 /*menu pokazywane po najechaniu na opcje z ">" */
 .da-layerContainer .da-layer .da-menu .da-submenu {
   background: rgba(0, 0, 0, 0.95) !important;
