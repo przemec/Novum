@@ -18,3 +18,10 @@
         border-radius: 20px;
     }
 }
+
+/*Server folder edit popout*/
+
+/*Server edit popout focused button*/
+[class*='labelContainer'][class*='focused'] {
+    background-color: var(--bt-red) !important;
+}

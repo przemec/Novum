@@ -3,7 +3,7 @@
   background-color: rgba(0, 0, 0, 0.95);
 }
 
-[class^="activityUserPopout-"] > [class^="horizontal-"] > button {
+[class^="activityUserPopout-"]>[class^="horizontal-"]>button {
   background-color: var(--bt-red) !important;
 }
 
@@ -12,7 +12,8 @@
 }
 
 [class*="userPopout"] {
-  background: var(--profile-bckg);
+  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  ;
   background-size: cover;
 
   [class*="bodyInnerWrapper"],

@@ -1,136 +1,202 @@
 /* Channel Textarea (big chat textinput) or CHAT */
 
 [class^="channelTextArea"] {
-  border-radius: 8px;
+    border-radius: 8px;
 
-  [class*="scrollableContainer"] {
-    background: rgba(0, 0, 0, 0.1);
+    [class*="scrollableContainer"] {
+        background: rgba(0, 0, 0, 0.1);
 
-    [class^="attachWrapper"] {
-      border-right-color: rgba(255, 255, 255, 0.1);
+        [class^="attachWrapper"] {
+            border-right-color: rgba(255, 255, 255, 0.1);
+        }
     }
-  }
 }
 
 /* Emote, Gif, Sticker popout */
 [class^="listItemWrapper-"] {
-  background: transparent !important;
+    background: transparent !important;
 }
 
 [class^="reactionMe-"] {
-  border-color: var(--bt-red-hover) !important;
+    border-color: var(--bt-red-hover) !important;
 }
 
-[class^="channelTextArea-"] > [class^="container-"] {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+[class^="channelTextArea-"]>[class^="container-"] {
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 [class^="itemCard-"] {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-[class^="itemCard-"] > div > [class^="inset-"] {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+[class^="itemCard-"]>div>[class^="inset-"] {
+    background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
-[class^="horizonal-"] > [class^="button-"] {
-  background-color: var(--bt-red) !important;
+[class^="horizonal-"]>[class^="button-"] {
+    background-color: var(--bt-red) !important;
 }
 
-[class^="horizonal-"] > [class^="button-"]:hover {
-  background-color: var(--bt-red-hover) !important;
+[class^="horizonal-"]>[class^="button-"]:hover {
+    background-color: var(--bt-red-hover) !important;
 }
 
-[class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+[class^="drawerSizingWrapper-"]>[class^="contentWrapper-"] {
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
-[class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
-  background-color: var(--bt-red) !important;
+[class^="navList-"]>[class^="navItem-"]>[class^="navButtonActive-"] {
+    background-color: var(--bt-red) !important;
 }
 
-[class^="results-"] > div > div > [class^="result-"]:hover::after {
-  box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
+[class^="results-"]>div>div>[class^="result-"]:hover::after {
+    box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
 }
-[class^="content-"] > div > [class^="result-"]:hover::after {
-  box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
+
+[class^="content-"]>div>[class^="result-"]:hover::after {
+    box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
 }
+
 [class^="categoryFadeBlurple-"] {
-  background-color: var(--bt-red) !important;
+    background-color: var(--bt-red) !important;
 }
 
 [class^="categoryList-"] {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+    background-color: rgba(0, 0, 0, 0.9) !important;
 }
 
 [class^="categoryItemRecentEmoji-"] {
-  background-color: var(--bt-red) !important;
+    background-color: var(--bt-red) !important;
 }
 
 [class^="unicodeShortcut-"] {
-  background-color: #000;
+    background-color: #000;
 }
 
 [class^="inspector-"] .da-inspector {
-  background-color: #000;
+    background-color: #000;
 }
 
 [class^="emoteHeader-"] .bd-emote-header {
-  background-color: #000;
+    background-color: #000;
 }
 
-[class^="categorySection-"] > [class^="header-"] {
-  background-color: #000;
+[class^="categorySection-"]>[class^="header-"] {
+    background-color: #000;
 }
 
 //Follow Button near channel name
 [class*="followButton"] {
-  background-color: var(--bt-red) !important;
+    background-color: var(--bt-red) !important;
 }
 
 //Follow Button near chat
 [class*="chatContent"] button:not([class*="lookBlank"]) {
-  background-color: var(--bt-red) !important;
+    background-color: var(--bt-red) !important;
 }
 
 /* Chat rections */
-[class*="reactions-"] [class*="reaction"] {
-  background-color: rgba(0, 0, 0, 0.2) !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
-  display: flex;
-  align-content: center;
+[class*="reactions-"] [class*="reaction"]:not([class^='reactionCount'], [class^='reactionBtn']) {
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    min-width: 40px !important;
+    min-height: 40px !important;
+    display: flex;
+    align-content: center;
 
-  img {
-    width: 30px !important;
-    height: 30px !important;
-  }
-  [class*="reactionCount-"] {
+    img {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+
+
+    [class*="reactionMe-"] {
+        background-color: rgba(0, 0, 0, 0.4) !important;
+    }
+}
+
+[class*=reaction][class*=reactionMe] {
+    border-color: var(--bt-red);
+}
+
+[class*="reactionCount-"] {
     color: var(--markup-normal) !important;
-  }
-  [class*="reactionMe-"] {
-    background-color: rgba(0, 0, 0, 0.4) !important;
-  }
 }
 
 /*Chat message popouts*/
 [class*="layerContainer-"] [class*="layer-"] {
-  /*See who reacted popout*/
-  [class*="focusLock-"] [class*="container-"] {
-    background: rgba(0, 0, 0, 0.95) !important;
-    div {
-      background: rgba(0, 0, 0, 0.95) !important;
-    }
-  }
 
-  /*Chat message right click popout*/
-  [class*="menu-"] {
-    background: rgba(0, 0, 0, 0.95) !important;
-    box-shadow: 0px 0px !important;
 
-    [class*="wrapper-"] img {
-      width: 30px !important;
-      height: 30px !important;
+    /*See who reacted popout*/
+    [class*="focusLock-"] [class*="container-"] {
+        background: rgba(0, 0, 0, 0.95) !important;
+
+        div {
+            background: rgba(0, 0, 0, 0.95) !important;
+        }
     }
-  }
+
+    /*Chat message right click popout*/
+    [class*="menu-"] {
+        background: rgba(0, 0, 0, 0.95) !important;
+        box-shadow: 0px 0px !important;
+
+        [class*="wrapper-"] img {
+            width: 30px !important;
+            height: 30px !important;
+        }
+    }
+}
+
+/*Pinup popout background*/
+[class*=messagesPopoutWrap] {
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Links
+[class*=embedLink] {
+    color: var(--markup-normal) !important;
+}
+
+//Embed
+[class*=message] {
+
+    a {
+        color: var(--markup-normal);
+    }
+
+    [class^=embedWrapper] {
+        background: var(--markup-normal-transparent) !important;
+        border-color: var(--markup-intensive) !important;
+    }
+
+}
+
+[class^=messageAttachment] {
+    background: var(--markup-normal-transparent) !important;
+    border-color: var(--markup-intensive) !important;
+}
+
+//Mention
+[class*=markup] [class*=mention] {
+    color: var(--markup-blue-light);
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+
+    &:hover {
+        background: rgba(0, 0, 0, 0.4);
+    }
+}
+
+[class*=mentioned] {
+    [class*=mention] {
+        color: var(--markup-intensive);
+    }
+
+    &::before {
+        left: 3px;
+        border-radius: 5px 0 0 5px;
+        background: var(--markup-intensive);
+        border-left: 2px solid var(--markup-intensive);
+    }
 }

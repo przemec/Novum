@@ -1,5 +1,6 @@
 @import "../mixins.scss";
-[class*="base"] [class*="content"] [class*="container"] {
+
+[class*="base"] [class*="content"] [class*="container"]:not([class*=embedWrapper]) {
   @include nobg;
 }
 
@@ -7,6 +8,6 @@
   @include nobg;
 }
 
-[class*="heroButtons"] > button {
+[class*="heroButtons"]>button {
   color: var(--bt-text) !important;
 }
