@@ -209,10 +209,17 @@
     }
 }
 
+//Chat message buttons container
+[class*=message] [class*=buttonContainer] [class*=container] [class*=wrapper] {
+    background: rgba(0, 0, 0, 0.7);
+}
+
 //Inbox popout aka recentMentionsPopout
 [class*=recentMentionsPopout] {
     background: rgba(0, 0, 0, 0.95) !important;
 }
 
-//Remove discord gift button
-// cuz why not
+//Emojipicker from chat
+[class*=layer] [class*=wrapper] [class*=emojiPicker] {
+    background: rgba(0, 0, 0, 0.95) !important;
+}

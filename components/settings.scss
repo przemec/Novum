@@ -38,6 +38,9 @@
 }
 
 //Billing Settings icons
+[aria-controls=discord-nitro-tab] {
+    display: none;
+}
 
 [aria-controls='nitro-server-boost-tab']::after {
     background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
