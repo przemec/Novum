@@ -1,0 +1,17 @@
+
+[class*=content] [class*=pageWrapper] {
+    background-color: transparent !important;
+}
+[class*=selectedCategoryItem] > div {
+    background-color: var(--bt-red) !important;
+}
+[class*=categoryPill][class*=selected]{
+    background-color: var(--bt-red) !important;
+}
+[class*=searchPage] > [class*=search]{
+    background-color: rgba(0, 0, 0, 0.2) !important;
+    [class*=searchBox]{
+    background-color: transparent !important;
+
+    }
+}

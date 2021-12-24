@@ -76,6 +76,6 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 [data-list-item-id="guildsnav___home"]:hover > div {
   background-color: var(--bt-red) !important;
 }
-[data-list-item-id="guildsnav___home"][href="/channels/@me"] > div {
+[data-list-item-id="guildsnav___home"][class*="selected"] > div {
   background-color: var(--bt-red) !important;
 }
