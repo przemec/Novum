@@ -69,6 +69,7 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
   &:after {
     content: "Novum";
     font-size: 16px;
+    font-family: var(--font-primary);
     font-weight: bold;
   }
 
@@ -120,4 +121,18 @@ input:focus {
 //Remove notification bell from channel
 [aria-label="Notification Settings"] {
   display: none !important;
+}
+
+//https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1
+
+//Add novum icon into settings
+[class*=socialLinks]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 8px;
+  background: url(https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1) center/cover no-repeat;
+
 }
