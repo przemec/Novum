@@ -1,0 +1,88 @@
+/*Theme creator animations*/
+[src*="avatars/214676791955161091"][class*=clickable],
+[style*="avatars/214676791955161091"][class*=avatar] {
+    -webkit-animation: rotate1 40s linear infinite;
+    animation: rotate1 40s linear infinite;
+}
+
+[src*="avatars/221743310744715265"][class*=clickable],
+[style*="avatars/221743310744715265"][class*=avatar] {
+    -webkit-animation: rotate2 40s linear infinite;
+    animation: rotate2 40s linear infinite;
+}
+
+@-webkit-keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes rotate2 {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/*Theme init animation*/
+.app,
+body::after {
+    will-change: opacity, filter;
+    -webkit-animation: fadeIn 2s ease-out;
+    animation: fadeIn 2s ease-out;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        -webkit-filter: blur(10px);
+        filter: blur(10px);
+    }
+
+    100% {
+        opacity: 1;
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+    }
+}
