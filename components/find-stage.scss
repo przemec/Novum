@@ -1,0 +1,22 @@
+/*Styling for new 'find stage' section in user homescreen*/
+[class^="stageSection-"] {
+  background-color: transparent;
+}
+
+[class^="nowPlayingSidebar-"] > [class^="container-"] {
+  background-color: transparent !important;
+}
+
+[class^="stageSection-"] > [class^="container-"] > [class^="container-"] {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+
+[class^="stageSection-"]
+  > [class^="container-"]
+  > [class^="container-"]:nth-last-child(2) {
+  background-color: transparent !important;
+}
+
+[class^="guildInfoContainer-"] > [class^="rightJustifiedContent-"] > div {
+  background-color: var(--bt-red) !important;
+}

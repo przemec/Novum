@@ -1,0 +1,48 @@
+/* FlowerStar aka Verified SVG ICON*/
+[class^="flowerStar-"] > path {
+  fill: var(--bt-red) !important;
+}
+
+/*Circle button*/
+[class^="circleButton-"] {
+  background-color: var(--default-hover) !important;
+
+  :hover {
+    background-color: var(--default-selected) !important;
+  }
+}
+
+/* Mic test button */
+[class^="micTestButton-"] {
+  background-color: var(--bt-red) !important;
+
+  :hover {
+    background-color: var(--bt-red-hover) !important;
+  }
+}
+
+/*Permissions modal */
+#permissions-modal {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+
+  div {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+
+    div {
+      background-color: rgba(0, 0, 0, 0.9) !important;
+    }
+  }
+}
+
+[class*="bd-button-title"] {
+  background-color: var(--bt-red) !important;
+}
+
+[class*="bd-view-button"][class*="selected"] {
+  background-color: var(--bt-red) !important;
+}
+
+/* BarFill */
+[class^="barFill-"] {
+  background-color: var(--bt-red) !important;
+}

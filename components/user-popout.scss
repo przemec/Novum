@@ -1,0 +1,12 @@
+/*Styling for in game or other member activity popout*/
+[class^="activityUserPopout-"] {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+[class^="activityUserPopout-"] > [class^="horizontal-"] > button {
+  background-color: var(--bt-red) !important;
+}
+
+[class*="profileBanner-"] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+}

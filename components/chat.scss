@@ -1,0 +1,84 @@
+/* Channel Textarea (big chat textinput) or CHAT */
+
+[class^="channelTextArea"] {
+  border-radius: 8px;
+
+  [class*="scrollableContainer"] {
+    background: rgba(0, 0, 0, 0.1);
+
+    [class^="attachWrapper"] {
+      border-right-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+}
+
+/* Emote, Gif, Sticker popout */
+[class^="listItemWrapper-"] {
+  background: transparent !important;
+}
+
+[class^="reactionMe-"] {
+  border-color: var(--bt-red-hover) !important;
+}
+
+[class^="channelTextArea-"] > [class^="container-"] {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[class^="itemCard-"] {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[class^="itemCard-"] > div > [class^="inset-"] {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+[class^="horizonal-"] > [class^="button-"] {
+  background-color: var(--bt-red) !important;
+}
+
+[class^="horizonal-"] > [class^="button-"]:hover {
+  background-color: var(--bt-red-hover) !important;
+}
+
+[class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+[class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
+  background-color: var(--bt-red) !important;
+}
+
+[class^="results-"] > div > div > [class^="result-"]:hover::after {
+  box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
+}
+[class^="content-"] > div > [class^="result-"]:hover::after {
+  box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
+}
+[class^="categoryFadeBlurple-"] {
+  background-color: var(--bt-red) !important;
+}
+
+[class^="categoryList-"] {
+  background-color: rgba(0, 0, 0, 0.9) !important;
+}
+
+[class^="categoryItemRecentEmoji-"] {
+  background-color: var(--bt-red) !important;
+}
+
+[class^="unicodeShortcut-"] {
+  background-color: #000;
+}
+
+[class^="inspector-"] .da-inspector {
+  background-color: #000;
+}
+
+[class^="emoteHeader-"] .bd-emote-header {
+  background-color: #000;
+}
+
+[class^="categorySection-"] > [class^="header-"] {
+  background-color: #000;
+}
