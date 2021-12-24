@@ -89,6 +89,48 @@
 }
 
 //Follow Button near chat
-[class*="chatContent"] button {
+[class*="chatContent"] button:not([class*="lookBlank"]) {
   background-color: var(--bt-red) !important;
+}
+
+/* Chat rections */
+[class*="reactions-"] [class*="reaction"] {
+  background-color: rgba(0, 0, 0, 0.2) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  display: flex;
+  align-content: center;
+
+  img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  [class*="reactionCount-"] {
+    color: var(--markup-normal) !important;
+  }
+  [class*="reactionMe-"] {
+    background-color: rgba(0, 0, 0, 0.4) !important;
+  }
+}
+
+/*Chat message popouts*/
+[class*="layerContainer-"] [class*="layer-"] {
+  /*See who reacted popout*/
+  [class*="focusLock-"] [class*="container-"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    div {
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+  }
+
+  /*Chat message right click popout*/
+  [class*="menu-"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0px 0px !important;
+
+    [class*="wrapper-"] img {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
 }

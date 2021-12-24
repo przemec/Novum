@@ -57,3 +57,25 @@
 button[class*="colorBrand-"]:not([class*="lookBlank"]) {
   background-color: var(--bt-red) !important;
 }
+button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
+  color: var(--bt-text);
+  border-color: transparent !important;
+}
+
+//Remove discord wordmark
+[class*="wordmark"] {
+  display: none;
+}
+
+//Rotate home icon
+[class*="homeIcon"] {
+  transform: rotate(-180deg);
+}
+
+//Home icon recolor
+[data-list-item-id="guildsnav___home"]:hover > div {
+  background-color: var(--bt-red) !important;
+}
+[data-list-item-id="guildsnav___home"][href="/channels/@me"] > div {
+  background-color: var(--bt-red) !important;
+}

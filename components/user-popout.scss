@@ -10,3 +10,15 @@
 [class*="profileBanner-"] {
   background-color: rgba(0, 0, 0, 0.95) !important;
 }
+
+[class*="userPopout"] {
+  background: var(--profile-bckg);
+  background-size: cover;
+
+  [class*="bodyInnerWrapper"],
+  [class*="footer"],
+  [class*="avatar"] {
+    background-color: transparent !important;
+    border-color: transparent !important;
+  }
+}

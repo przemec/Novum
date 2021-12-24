@@ -1,0 +1,12 @@
+@import "../mixins.scss";
+[class*="base"] [class*="content"] [class*="container"] {
+  @include nobg;
+}
+
+[class*="applicationStore"] {
+  @include nobg;
+}
+
+[class*="heroButtons"] > button {
+  color: var(--bt-text) !important;
+}
