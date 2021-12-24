@@ -81,3 +81,23 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 [data-list-item-id="guildsnav___home"][class*="selected"]>div {
   background-color: var(--bt-red) !important;
 }
+
+/* Inputs */
+input {
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: var(--markup-blue) !important;
+  box-shadow: 0px 0px transparent;
+}
+
+/*Krisp noice cancellation popout*/
+[class*=noiseCancellationPopout] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+// Keyboard shortcuts modal
+[class*=keyboardShortcutsModal] {
+  background: rgba(0, 0, 0, 0.98) !important;
+}
