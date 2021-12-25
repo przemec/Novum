@@ -1,11 +1,10 @@
-@import "../mixins.scss";
 
 [class*="base"] [class*="content"] [class*="container"]:not([class*=embedWrapper]) {
-  @include nobg;
+  background-color: transparent!important;
 }
 
 [class*="applicationStore"] {
-  @include nobg;
+  background-color: transparent!important;
 }
 
 [class*="heroButtons"]>button {
