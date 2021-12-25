@@ -136,3 +136,9 @@ input:focus {
   background: url(https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1) center/cover no-repeat;
 
 }
+
+//Where would u like to go? popout aka quickswitcher component
+
+[aria-label='Quick switcher'] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}

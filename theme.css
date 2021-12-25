@@ -745,36 +745,6 @@ body::after {
     background: rgba(0, 0, 0, 0.6);
 }
 
-/*tlo Add server, Odkrywaj Serwery Publiczne, 
-  listItemWrapper>a: kiedy jakiś serwer jest niedostępny ("!") */
-[class*="wrapper"][class*="guilds"] .da-circleIconButton,
-[class*="wrapper"][class*="guilds"] .da-listItemWrapper>a {
-    background: rgba(0, 0, 0, 0.6);
-    border-color: var(--markup-intensive);
-    color: var(--markup-intensive);
-}
-
-[class*="wrapper"][class*="guilds"] .da-circleIconButton:hover,
-[class*="wrapper"][class*="guilds"] .da-listItemWrapper>a:hover {
-    background: rgba(0, 0, 0, 0.7);
-}
-
-/*katalogi serwerów*/
-[class*="wrapper"][class*="guilds"] .da-folder,
-[class*="wrapper"][class*="guilds"] .da-closedFolderIconWrapper,
-[class*="wrapper"][class*="guilds"] .da-expandedFolderBackground {
-    background: rgba(0, 0, 0, 0) !important;
-}
-
-[class*="wrapper"][class*="guilds"] .da-folderIconWrapper,
-[class*="wrapper"][class*="guilds"] .da-expandedFolderBackground:not(.da-collapsed) {
-    background: rgba(0, 0, 0, 0.5) !important;
-    border-radius: 20px;
-}
-
-[class*="wrapper"][class*="guilds"] .da-expandedFolderIconWrapper svg[style*="color: rgb(114, 137, 218)"] path {
-    fill: var(--markup-normal);
-}
 
 /*background kiedy przesuwasz folder*/
 [class*="wrapper"][class*="guilds"] .da-listItem .da-dragInner {

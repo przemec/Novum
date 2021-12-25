@@ -7,9 +7,16 @@
         background: rgba(0, 0, 0, 0) !important;
     }
 
-    [class*="circleIconButton"]:hover,
-    [class*="listItemWrapper"]>a:hover {
-        background: rgba(0, 0, 0, 0.7);
+    [class*="circleIconButton"],
+    [class*="listItemWrapper"]>a {
+
+        background: rgba(0, 0, 0, 0.6);
+        border-color: var(--markup-intensive);
+        color: var(--markup-intensive);
+
+        &:hover {
+            background: rgba(0, 0, 0, 0.7);
+        }
     }
 
     [class*="folderIconWrapper"],
@@ -24,4 +31,18 @@
 /*Server edit popout focused button*/
 [class*='labelContainer'][class*='focused'] {
     background-color: var(--bt-red) !important;
+}
+
+//Circlebutton
+[class*=circleButton] {
+    background-color: var(--default-hover) !important;
+
+    &:hover {
+        background-color: var(--default-selected) !important;
+    }
+}
+
+//All folders have same colors
+svg[style*="color: "] path {
+    fill: var(--markup-normal);
 }
