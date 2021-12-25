@@ -139,7 +139,7 @@
     [class*="focusLock-"] [class*="container-"] {
         background: rgba(0, 0, 0, 0.95) !important;
 
-        div {
+        div:not([class*=contents]) {
             background: rgba(0, 0, 0, 0.95) !important;
         }
     }
@@ -222,4 +222,56 @@
 //Emojipicker from chat
 [class*=layer] [class*=wrapper] [class*=emojiPicker] {
     background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Threads popout
+[class*=layer] [class*=browser] {
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=hasThread] [class*=cta] {
+    color: var(--markup-normal) !important;
+}
+
+[class*=layerContainer] [aria-label=Threads] {
+    background: rgba(0, 0, 0, 0.95) !important;
+}
+
+
+//Unread & Day chat dividers
+[class*=messagesWrapper] [class*=content] [class*=divider] {
+
+    border-color: transparent;
+    margin-top: 35px;
+    margin-bottom: 35px;
+
+
+    &:not([class*=isUnread])>span {
+        color: rgba(255, 255, 255, 0.7) !important;
+        background: rgba(204, 204, 204, 0.1) !important;
+        font-size: 14px;
+        border-radius: 5px;
+        padding: 7px 15px;
+        text-align: center;
+        width: 90%;
+    }
+
+    [class*=isUnread] {
+        background: transparent !important;
+        color: var(--markup-intensive) !important;
+        width: 95%;
+        transform: translateY(6px);
+    }
+}
+
+[class*=unreadPill] {
+    background: var(--default-hover) !important;
+    color: var(--markup-intensive) !important;
+    padding: 12px 0px;
+    width: 100%;
+    font-size: 14px;
+}
+
+[class*=unreadPillCap] {
+    visibility: hidden;
 }

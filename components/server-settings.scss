@@ -1,0 +1,8 @@
+//Server boost status tiers
+[class*=tierHeaderLocked] {
+    background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=tierBody] {
+    background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+}
