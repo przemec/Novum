@@ -1,12 +1,28 @@
-
 [class*="base"] [class*="content"] [class*="container"]:not([class*=embedWrapper]) {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 [class*="applicationStore"] {
-  background-color: transparent!important;
+  background-color: transparent !important;
 }
 
 [class*="heroButtons"]>button {
   color: var(--bt-text) !important;
+}
+
+//Active now section
+
+[class*=nowPlayingColumn] {
+
+  [class*=itemCard] {
+    background: rgba(0, 0, 0, 0.5) !important;
+
+    [class*=body] {
+      background-color: transparent !important;
+
+      [class*=separator] {
+        display: none;
+      }
+    }
+  }
 }
