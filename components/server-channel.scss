@@ -46,3 +46,59 @@
   }
 
 }
+
+//Userlimit on voice chat
+[class*=userLimit] {
+
+  >[class*=wrapper] {
+    border-radius: 5px !important;
+  }
+
+  [class*=total] {
+    color: var(--markup-intensive);
+    background: rgba(0, 0, 0, 0.6) !important;
+
+
+    &::after {
+      border-right-color: rgba(0, 0, 0, 0.4) !important;
+    }
+  }
+
+  [class*=users] {
+    color: var(--markup-normal);
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+//Create voice|text channel popout
+[class*=focusLock] [class*=modal] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  [class*=horizontalReverse] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  [class*=radioBar]>div:not([class*=info]) circle {
+    fill: var(--bt-red) !important;
+  }
+}
+
+//Server header name 
+[class*=header] h1[class*=name] {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+//Tooltip 
+[class*="tooltipPrimary"],
+[class*="tooltipGreen"] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+
+  [class*=tooltipPointer] {
+    border-top-color: rgba(0, 0, 0, 1) !important;
+  }
+}

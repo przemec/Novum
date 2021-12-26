@@ -54,7 +54,7 @@
 
 //Color brand buttons
 
-button[class*="colorBrand-"]:not([class*="lookBlank"]) {
+button[class*="colorBrand-"]:not([class*="lookBlank"], [aria-label='Turn On Camera'], [aria-label='Share Your Screen']) {
   background-color: var(--bt-red) !important;
 }
 
@@ -141,4 +141,27 @@ input:focus {
 
 [aria-label='Quick switcher'] {
   background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Bot pill
+[class*=botTagRegular] {
+  background: var(--bt-red) !important;
+}
+
+//Random-located focus-locking popouts 
+[class*=focusLock] [class*=root] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+
+  [class*=directionRow] {
+    background-color: rgba(0, 0, 0, 0.95) !important;
+  }
+}
+
+//Radiogroup directionrow selected
+[role=radiogroup] [class*=directionRow][aria-checked=true] {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+
+  [class*=radioBar] div:not([class*=info]) circle {
+    fill: var(--bt-red);
+  }
 }

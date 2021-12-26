@@ -3,6 +3,16 @@
 /*Space for icons*/
 [aria-label=USER_SETTINGS] [class*=sidebarRegion] [class*=item] {
     padding-left: 50px !important;
+
+    &[class*=selected] {
+        background: var(--default-selected) !important;
+        color: var(--bt-text-hover) !important;
+    }
+
+    &:hover {
+        background: var(--default-hover) !important;
+        color: var(--bt-text) !important;
+    }
 }
 
 [aria-label=USER_SETTINGS] [class*=sidebarRegionScroller] [class*=item]::after {
@@ -132,4 +142,20 @@
 
 [aria-controls='logout-tab']::after {
     background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
+}
+
+
+//Overlay notification labels
+[class*=notificationSettings] {
+
+    [class*=selected] {
+        background-color: var(--bt-red);
+        border-color: transparent;
+        box-shadow: none;
+    }
+
+    label:not([class*=selected], [class*=disabled]):hover {
+        background-color: var(--bt-red-hover);
+    }
+
 }

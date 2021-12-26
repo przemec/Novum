@@ -1,3 +1,7 @@
+.bd-addon-views>button:not([class*=selected]) {
+  background-color: transparent !important;
+}
+
 .bd-button {
   background-color: var(--bt-red) !important;
 
@@ -5,6 +9,8 @@
     background-color: var(--bt-red-hover) !important;
   }
 }
+
+
 
 .bd-error-modal {
   background-color: rgba(0, 0, 0, 0.95) !important;
@@ -20,4 +26,12 @@
   :hover {
     background-color: var(--bt-red-hover) !important;
   }
+}
+
+.bd-toast:not([class*=success]) {
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.bd-addon-card {
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
