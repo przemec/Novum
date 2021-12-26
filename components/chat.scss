@@ -99,7 +99,7 @@
 }
 
 //Follow Button near chat
-[class*="chatContent"] button:not([class*="lookBlank"]) {
+[class*="chatContent"] button:not([class*="lookBlank"], [class*=barButtonBase]) {
     background-color: var(--bt-red) !important;
 }
 
@@ -245,6 +245,12 @@
     margin-top: 35px;
     margin-bottom: 35px;
 
+    //Unread divider date
+    [class*=content] {
+        color: var(--markup-intensive) !important;
+        width: 95%;
+        transform: translateY(6px);
+    }
 
     &:not([class*=isUnread])>span {
         color: rgba(255, 255, 255, 0.7) !important;
@@ -261,6 +267,8 @@
         color: var(--markup-intensive) !important;
         width: 95%;
         transform: translateY(6px);
+
+
     }
 }
 
@@ -274,4 +282,52 @@
 
 [class*=unreadPillCap] {
     visibility: hidden;
+}
+
+//Chat status picker background and transitions
+
+#status-picker {
+    transition: background 120ms;
+
+    &-online {
+        color: #43b581;
+
+        &[class*=focused] {
+            background-color: #43b58244;
+        }
+    }
+
+    &-idle {
+        color: #faa61a;
+
+        &.focused-3afm-j {
+            background-color: #faa81a42;
+        }
+    }
+
+    &-dnd {
+        color: #f04747;
+
+        &[class*=focused] {
+            background-color: #b83a3c3d;
+        }
+    }
+
+    &-invisible {
+        color: #747f8d;
+
+        &[class*=focused] {
+            background-color: #747f8d3d;
+        }
+    }
+
+    &-custom-status[class*=focused] {
+        background-color: #ffcd4d3d;
+    }
+}
+
+//New messages bar
+[class*=newMessagesBar] {
+    background-color: var(--markup-intensive) !important;
+    border-color: transparent !important;
 }

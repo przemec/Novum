@@ -46,3 +46,21 @@
 svg[style*="color: "] path {
     fill: var(--markup-normal);
 }
+
+
+//Create a server popout
+[class*=header] h3 {
+    color: var(--bt-text);
+}
+
+[class*=footer] h3 {
+    color: var(--bt-text);
+}
+
+[class*=footerButton] {
+    background-color: var(--bt-red) !important;
+
+    &:hover {
+        background-color: var(--default-hover) !important;
+    }
+}
