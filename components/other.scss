@@ -165,3 +165,34 @@ input:focus {
     fill: var(--bt-red);
   }
 }
+
+
+[class*=embedVideo] {
+  [class*=playPausePop] {
+    display: none !important;
+  }
+
+  [class*=mediaBarWrapper] {
+
+    [class*=fakeEdges] {
+      background-color: var(--bt-red);
+    }
+
+    [class*=mediaBarProgress] {
+      background-color: var(--bt-red);
+
+      &::after,
+      &::before {
+        background-color: var(--bt-red);
+      }
+
+      [class*=mediaBarGrabber] {
+        background-color: var(--bt-red);
+      }
+    }
+
+    [class*=bubble] {
+      background-color: var(--bt-red);
+    }
+  }
+}

@@ -102,3 +102,10 @@
     border-top-color: rgba(0, 0, 0, 1) !important;
   }
 }
+
+//Vide & Screen buttons backgrounds 
+
+[class*=panels] [class*=actionButtons] button {
+  background: var(--default-hover) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
