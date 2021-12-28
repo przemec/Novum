@@ -24,11 +24,15 @@
     }
   }
 
+  [class*=content]:hover {
+    background-color: transparent !important;
+  }
+
   [class*=modeMuted] [class*=name] {
     color: rgba(255, 255, 255, 0.5);
   }
 
-  [class*=selected] [class*=content] {
+  &[class*=selected] [class*=content] {
     background-color: var(--default-selected) !important;
     color: #ffffff !important;
   }
@@ -108,4 +112,24 @@
 [class*=panels] [class*=actionButtons] button {
   background: var(--default-hover) !important;
   color: rgba(255, 255, 255, 0.7) !important;
+}
+
+
+//Remove redundant create invite icon from channel list
+[aria-label='Create Invite'] {
+  display: none !important;
+}
+
+//Custom color picker
+[class*=colorPickerCustom] {
+  background: rgba(0, 0, 0, 1) !important;
+  border-color: rgba(0, 0, 0, 0);
+}
+
+nav[class*=container]>[class*=container]>header:hover {
+  background-color: transparent !important;
+}
+
+[class*=layer] [class*=animator] [class*=container][class*=scrollerBase] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
 }

@@ -2,7 +2,7 @@
   background-color: transparent !important;
 }
 
-.bd-button {
+.bd-button:not(.bd-addon-button) {
   background-color: var(--bt-red) !important;
 
   :hover {
@@ -10,7 +10,17 @@
   }
 }
 
+.bd-addon-error {
+  background: transparent !important;
+}
 
+.bd-tab-bar .bd-tab-item[class*=selected] {
+  background-color: var(--bt-red);
+}
+
+.bd-addon-error-icon {
+  background-color: var(--bt-red);
+}
 
 .bd-error-modal {
   background-color: rgba(0, 0, 0, 0.95) !important;
@@ -21,9 +31,9 @@
 }
 
 #bd-pub-button {
-  background-color: var(--bt-red) !important;
+  background-color: transparent !important;
 
-  :hover {
+  &:hover {
     background-color: var(--bt-red-hover) !important;
   }
 }
@@ -34,4 +44,13 @@
 
 .bd-addon-card {
   background-color: rgba(0, 0, 0, 0.2) !important;
+}
+
+.bd-addon-button {
+  background-color: transparent !important;
+
+}
+
+.bd-controls>.bd-addon-button:last-of-type {
+  margin-left: 15px;
 }
