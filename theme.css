@@ -558,6 +558,10 @@ code {
   background-color: rgba(0, 0, 0, 0.2) !important;
 }
 
+[class*=chat] form {
+  margin: 0px;
+}
+
 /*Theme creator avatars rotating animations*/
 [src*="avatars/214676791955161091"][class*=clickable],
 [style*="avatars/214676791955161091"][class*=avatar] {

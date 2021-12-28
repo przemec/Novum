@@ -606,3 +606,11 @@
 code {
     background-color: rgba(0, 0, 0, 0.2) !important;
 }
+
+[class*=chat] form {
+    margin: 0px;
+}
+
+// [class*=chatContent]>form>div>div {
+//     background-color: var(--default-hover) !important;
+// }
