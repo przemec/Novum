@@ -111,6 +111,22 @@ body::after {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
+[class*=channelTextArea] [class*=autocomplete] {
+  background-color: transparent !important;
+}
+[class*=channelTextArea] [class*=autocompleteInner] {
+  background: rgba(0, 0, 0, 0.85) !important;
+  border-color: rgba(0, 0, 0, 0) !important;
+}
+
+[class*=autocompleteRow] > [class*=selected] {
+  background-color: var(--default-selected) !important;
+}
+
+.da-scroller > div > div:nth-child(1) {
+  /* background-color: transparent !important; */
+}
+
 [class^=itemCard-] {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
