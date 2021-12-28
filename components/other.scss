@@ -219,3 +219,14 @@ input:focus {
 [aria-checked=true] [class*=iconContainer] svg>path:first-of-type {
   fill: var(--bt-red);
 }
+
+[class*=streamPreviewWrapper] [class*=streamPreview] {
+
+  [class*=previewContainer] {
+    background-color: transparent !important;
+    border: transparent;
+  }
+
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: transparent;
+}
