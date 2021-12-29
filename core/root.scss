@@ -1,7 +1,5 @@
 :root {
 
-  --background-img: url("https://i.imgur.com/S7AYEBo.png");
-
   /* Replace discord root variables*/
   --background-primary: transparent !important;
   --background-accent: var(--bt-red);
@@ -15,6 +13,7 @@
   --scrollbar-thin-track: transparent !important;
 
   /*Initialize theme variables*/
+  --background-img: url("https://i.imgur.com/NOpaUeX.png");
   --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
   --default-hover: #d4393926;
   --default-selected: #d336364d;
@@ -77,8 +76,9 @@ body::after {
   border: none;
 }
 
-[class^="chat-"]>section {
-  background-color: transparent !important;
+[class^="sidebar-"]>nav>div:first-child,
+[class^="sidebar-"]+div>section {
+  background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
 /*Server list scroller */

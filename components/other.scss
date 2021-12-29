@@ -132,9 +132,9 @@ input:focus {
   width: 24px;
   height: 24px;
   margin-top: -5px;
-  margin-left: 8px;
+  margin-left: 6px;
   background: url(https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1) center/cover no-repeat;
-
+  filter: contrast(0%) brightness(1.4);
 }
 
 //Where would u like to go? popout aka quickswitcher component

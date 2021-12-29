@@ -32,7 +32,7 @@
 }
 
 [aria-controls='profile-customization-tab']::after {
-    background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/person-box.svg) !important;
 }
 
 [aria-controls='privacy-&-safety-tab']::after {
@@ -76,7 +76,7 @@
 }
 
 [aria-controls='accessibility-tab']::after {
-    background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/human.svg) !important;
 }
 
 [aria-controls='voice-&-video-tab']::after {
@@ -88,7 +88,7 @@
 }
 
 [aria-controls='notifications-tab']::after {
-    background: url(https://tomec.gitlab.io/novum/icons/open_in_new.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/notifications.svg) !important;
 }
 
 [aria-controls='keybinds-tab']::after {
@@ -108,31 +108,43 @@
 }
 
 [aria-controls='advanced-tab']::after {
+    background: url(https://tomec.gitlab.io/novum/icons/dots.svg) !important;
+}
+
+[aria-controls='game-activity-tab']::after {
+    background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
+}
+
+[aria-controls='overlay-tab']::after {
     background: url(https://tomec.gitlab.io/novum/icons/desktop_windows.svg) !important;
 }
 
 //BDiscord icons
 
-[aria-controls='settings-tab']::after {
+.bd-settings-tab::after {
     background: url(https://tomec.gitlab.io/novum/icons/betterdiscord.svg) !important;
 }
 
-[aria-controls='emotes-tab']::after {
+.bd-emotes-tab::after {
     background: url(https://tomec.gitlab.io/novum/icons/emote.svg) !important;
 }
 
-[aria-controls='plugins-tab']::after {
+.bd-customcss-tab::after {
+    background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
+}
+
+.bd-plugins-tab::after {
     background: url(https://tomec.gitlab.io/novum/icons/puzzle.svg) !important;
 }
 
-[aria-controls='themes-tab']::after {
+.bd-themes-tab::after {
     background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
 }
 
 //Changelog & Hypesquad and Exit icons
 
 [aria-controls='changelog-tab']::after {
-    background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
+    background: url(https://tomec.gitlab.io/novum/icons/history.svg) !important;
 }
 
 [aria-controls='hypesquad-online-tab']::after {
@@ -170,4 +182,8 @@
 
 [class*=profileBannerPreview] {
     background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+}
+
+[aria-label=USER_SETTINGS] [class^=info-] > *{
+    color: rgba(255,255,255,0.5);
 }
