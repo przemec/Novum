@@ -1,8 +1,8 @@
 # Novum Discord Theme
 
-### important: after one of the latest BetterDiscord updates 'Novum' is down. Theme will be restored with full functionality within the next few weeks
-
 ### Big custom theme with couple of small addons.
+
+To use theme, You need to download a Discord extension called [BetterDiscord](https://betterdiscord.app/) and then, after installation, put [Novum.theme.css](https://gitlab.com/tomec/novum/-/blob/master/Novum.theme.css) into "themes" folder (it can be found in BetterDiscord settings).
 
 ## Preview
 ![Preview](https://i.imgur.com/YNQ1LFc.png)
