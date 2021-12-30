@@ -1,4 +1,4 @@
-/* Server channel tabbaritem */
+// Server channel tabbaritem 
 [class*="tabBarItem"]:hover {
   border-bottom-color: var(--bt-red-hover) !important;
 }
@@ -23,7 +23,7 @@
   }
 
   [class*="content"]:hover {
-    background-color: transparent !important;
+    background: transparent !important;
   }
 
   [class*="modeMuted"] [class*="name"] {
@@ -31,12 +31,12 @@
   }
 
   &[class*="selected"] [class*="content"] {
-    background-color: var(--default-selected) !important;
+    background: var(--default-selected) !important;
     color: #ffffff !important;
   }
 
   [class*="selected"]:hover [class*="content"] {
-    background-color: var(--default-selected) !important;
+    background: var(--default-selected) !important;
   }
 }
 
@@ -91,6 +91,10 @@ header h1[class*="name"] {
   background: transparent;
 }
 
+//popout after clicking server name, focused option
+[class*="labelContainer"][class*="focused"] {
+  background: var(--bt-red) !important;
+}
 //Video & Screen buttons backgrounds
 [class*="panels"] [class*="actionButtons"] button {
   background: var(--default-hover) !important;
@@ -106,16 +110,10 @@ header h1[class*="name"] {
   display: none !important;
 }
 
-//Custom color picker
-[class*="colorPickerCustom"] {
-  background: rgba(0, 0, 0, 1) !important;
-  border-color: rgba(0, 0, 0, 0);
-}
-
 nav[class*="container"] > [class*="container"] > header:hover {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
 [class*="layer"] [class*="animator"] [class*="container"][class*="scrollerBase"] {
-  background-color: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
 }

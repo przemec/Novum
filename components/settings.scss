@@ -1,7 +1,7 @@
 @use "../core/mixins" as m;
-/*Settings icons*/
+//Settings icons
 
-/*Space for icons*/
+//Space for icons
 [aria-label="USER_SETTINGS"] [class*="sidebarRegion"] [class*="item"] {
   padding-left: 50px !important;
 
@@ -158,14 +158,14 @@
 
 //Overlay notification labels
 [class*="notificationSettings"] {
-  [class*="selected"] {
-    background-color: var(--bt-red);
+  [class*="selected"]:not([class*="disabled"]) {
+    background: var(--bt-red);
     border-color: transparent;
     box-shadow: none;
   }
 
   label:not([class*="selected"], [class*="disabled"]):hover {
-    background-color: var(--bt-red-hover);
+    background: var(--bt-red-hover);
   }
 }
 

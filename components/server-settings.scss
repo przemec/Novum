@@ -6,3 +6,12 @@
 [class*="tierBody"] {
   background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
 }
+
+//Circlebutton (roles settings)
+[class*="circleButton"] {
+  background-color: var(--default-hover) !important;
+
+  &:hover {
+    background-color: var(--default-selected) !important;
+  }
+}

@@ -5,20 +5,6 @@
   fill: var(--markup-intensive) !important;
 }
 
-//Circle button
-[class^="circleButton-"] {
-  background-color: var(--default-hover) !important;
-
-  &:hover {
-    background-color: var(--default-selected) !important;
-  }
-}
-
-//Mic test button
-[class^="micTestButton-"] {
-  @include m.btred_important;
-}
-
 //modal backdrop
 [class^="backdrop"] {
   background: linear-gradient(#00000022, #000000ff) !important;
@@ -38,25 +24,17 @@
   }
 }
 
-//Permissions modal
+//Permissions modal (custom plugin)
 #permissions-modal {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 
   div {
-    background-color: rgba(0, 0, 0, 0.9) !important;
+    background: rgba(0, 0, 0, 0.9) !important;
 
     div {
-      background-color: rgba(0, 0, 0, 0.9) !important;
+      background: rgba(0, 0, 0, 0.9) !important;
     }
   }
-}
-
-[class*="bd-button-title"] {
-  background-color: var(--bt-blue-bg) !important;
-}
-
-[class*="bd-view-button"][class*="selected"] {
-  background-color: var(--bt-blue-bg-hover) !important;
 }
 
 //Switch checkboxy
@@ -109,12 +87,9 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 }
 
 //Home icon recolor
-[data-list-item-id="guildsnav___home"]:hover > div {
-  background-color: var(--bt-red) !important;
-}
-
+[data-list-item-id="guildsnav___home"]:hover > div,
 [data-list-item-id="guildsnav___home"][class*="selected"] > div {
-  background-color: var(--bt-red) !important;
+  background: var(--bt-red) !important;
 }
 
 //Inputs
@@ -175,12 +150,13 @@ input:focus {
 
 //Random-located focus-locking popouts
 [class*="focusLock"] [class*="root"] {
-  background-color: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
 
   [class*="directionRow"],
   [class*="body"],
   [class*="topSection"] {
-    background-color: rgba(0, 0, 0, 0.95) !important;
+    background: rgba(0, 0, 0, 0.95) !important;
   }
 
   [class*="avatar"] {
@@ -188,14 +164,14 @@ input:focus {
   }
 
   [class*="message"] {
-    background-color: transparent !important;
+    background: transparent !important;
     border: none !important;
   }
 }
 
 //Radiogroup directionrow selected
 [role="radiogroup"] [class*="directionRow"][aria-checked="true"] {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
 
   [class*="radioBar"] div:not([class*="info"]) circle {
     fill: rgb(255, 255, 255);
@@ -211,7 +187,7 @@ input:focus {
 //Tooltip
 [class*="tooltipPrimary"],
 [class*="tooltipGreen"] {
-  background-color: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
   border: 2px solid rgba(0, 0, 0, 1);
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
@@ -223,29 +199,29 @@ input:focus {
 
 [class*="mediaBarWrapper"] {
   [class*="fakeEdges"] {
-    background-color: var(--bt-red);
+    background: var(--bt-red);
 
     &::after,
     &::before {
-      background-color: var(--bt-red);
+      background: var(--bt-red);
     }
   }
 
   [class*="mediaBarProgress"] {
-    background-color: var(--bt-red);
+    background: var(--bt-red);
 
     &::after,
     &::before {
-      background-color: var(--bt-red);
+      background: var(--bt-red);
     }
 
     [class*="mediaBarGrabber"] {
-      background-color: var(--bt-red);
+      background: var(--bt-red);
     }
   }
 
   [class*="bubble"] {
-    background-color: var(--bt-red);
+    background: var(--bt-red);
   }
 }
 
@@ -255,16 +231,20 @@ input:focus {
   }
 }
 
-[aria-checked="true"] [class*="iconContainer"] svg > path:first-of-type {
+//checkboxes
+[aria-checked="true"] [class*="iconContainer"] svg > path:first-child {
   fill: var(--bt-red);
+}
+[aria-checked="true"] [class*="iconContainer"] svg > path:last-child {
+  fill: var(--bt-text-hover) !important;
 }
 
 [class*="streamPreviewWrapper"] [class*="streamPreview"] {
   [class*="previewContainer"] {
-    background-color: transparent !important;
+    background: transparent !important;
     border: transparent;
   }
 
-  background-color: rgba(0, 0, 0, 0.95) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
   border: transparent;
 }

@@ -1,15 +1,31 @@
+//Discord explore page
 [class*="content"] [class*="pageWrapper"] {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 [class*="selectedCategoryItem"] > div {
-  background-color: var(--bt-red) !important;
+  background: var(--bt-red) !important;
 }
-[class*="categoryPill"][class*="selected"] {
-  background-color: var(--bt-red) !important;
-}
+//after searching
+//input and language select
 [class*="searchPage"] > [class*="search"] {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
   [class*="searchBox"] {
-    background-color: transparent !important;
+    background: transparent !important;
   }
+}
+[class*="categoryPill"] {
+  & > div {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  &[class*="selected"] {
+    background: var(--bt-red) !important;
+    & > div {
+      color: rgba(255, 255, 255, 0.8) !important;
+    }
+  }
+}
+
+//BetterDiscord "public" servers page, blur removed from server backgrounds
+.bd-server-splash {
+  filter: none;
 }

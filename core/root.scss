@@ -1,5 +1,5 @@
 :root {
-  /* Replace discord root variables*/
+  // Replace discord root variables
   --background-primary: transparent !important;
   --background-accent: var(--bt-red);
   --background-secondary: transparent !important;
@@ -11,7 +11,7 @@
   --scrollbar-auto-track: transparent !important;
   --scrollbar-thin-track: transparent !important;
 
-  /*Initialize theme variables*/
+  //Initialize theme variables
   --background-img: url("https://i.imgur.com/NOpaUeX.png");
   --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
   --profile-activity: #6d1515;
@@ -35,7 +35,7 @@
   --channels-default: rgba(255, 255, 255, 0.7);
 }
 
-/*Background*/
+//Background
 body::after {
   background-image: var(--background-img) !important;
   background-repeat: no-repeat;
@@ -51,14 +51,14 @@ body::after {
   z-index: -90;
 }
 
-/*Remove main gray background colors*/
+//Remove main gray background colors
 [class^="appMount-"],
 [class^="app-"],
 [class^="bg-"] {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
-/*pasek nad discordem*/
+//pasek nad discordem
 #app-mount > [class^="typeWindows"] {
   height: 18px;
   margin-top: 0px;
@@ -69,7 +69,7 @@ body::after {
 }
 
 [class^="chat-"] > [class^="content-"] > div {
-  background-color: transparent !important;
+  background: transparent !important;
 }
 
 [class^="wrapper-"] {
@@ -78,10 +78,10 @@ body::after {
 
 [class^="sidebar-"] > nav > div:first-child,
 [class^="sidebar-"] + div section {
-  background-color: rgba(0, 0, 0, 0.1) !important;
+  background: rgba(0, 0, 0, 0.1) !important;
 }
 
-/*Server list scroller */
+//Server list scroller 
 [class^="scroller-"] {
-  background-color: transparent !important;
+  background: transparent !important;
 }

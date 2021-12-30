@@ -1,6 +1,6 @@
 @use "../core/mixins" as m;
 
-/* Channel Textarea (big chat textinput) or CHAT */
+// Channel Textarea (big chat textinput) or CHAT 
 [class^="channelTextArea"] {
   border-radius: 8px;
 
@@ -11,101 +11,41 @@
       border-right-color: rgba(255, 255, 255, 0.1);
     }
   }
-}
 
-//Remove discord gift button from chat
-
-[class*="inner"] [class*="buttons"] > div:first-of-type {
-  display: none !important;
-  background-color: red;
-}
-
-/* Emote, Gif, Sticker popout */
-[class^="listItemWrapper-"] {
-  background: transparent !important;
-}
-
-[class^="reactionMe-"] {
-  border-color: var(--bt-red-hover) !important;
-}
-
-[class^="channelTextArea-"] > [class^="container-"] {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-[class*="channelTextArea"] {
-  [class*="autocomplete"] {
-    background-color: transparent !important;
+  //autocomplete popout after typing @
+  [class^="autocomplete"] {
+    background: transparent !important;
+  }
+  [class^="autocompleteInner"] {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-color: transparent !important;
+  }
+  [class*="autocompleteRow"] > [class*="selected"] {
+    background: var(--default-selected) !important;
+  }
+  //hidden tip container above the chat input
+  & > [class^="container-"] > [class^="containerBackground"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-color: transparent;
   }
 
-  [class*="autocompleteInner"] {
-    background: rgba(0, 0, 0, 0.85) !important;
-    border-color: rgba(0, 0, 0, 0) !important;
+  //Remove discord gift button from chat
+  [class*="inner"] [class^="buttons"] > button:first-child {
+    display: none !important;
   }
 }
 
-[class*="autocompleteRow"] > [class*="selected"] {
-  background-color: var(--default-selected) !important;
-}
-
-[class^="itemCard-"] {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-[class^="itemCard-"] > div > [class^="inset-"] {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-}
-
-[class^="horizonal-"] > [class^="button-"] {
-  background-color: var(--bt-red) !important;
-}
-
-[class^="horizonal-"] > [class^="button-"]:hover {
-  background-color: var(--bt-red-hover) !important;
-}
-
+// Emote, Gif, Sticker popout 
 [class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
+  background: rgba(0, 0, 0, 0.9) !important;
 
-[class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
-  background-color: var(--bt-red) !important;
-}
-
-[class^="results-"] > div > div > [class^="result-"]:hover::after {
-  box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
-}
-
-[class^="content-"] > div > [class^="result-"]:hover::after {
-  box-shadow: inset 0 0 0 2px var(--bt-red), inset 0 0 0 3px #2f3136 !important;
-}
-
-[class^="categoryFadeBlurple-"] {
-  background-color: var(--bt-red) !important;
-}
-
-[class^="categoryList-"] {
-  background-color: rgba(0, 0, 0, 0.9) !important;
-}
-
-[class^="categoryItemRecentEmoji-"] {
-  background-color: var(--bt-red) !important;
-}
-
-[class^="unicodeShortcut-"] {
-  background-color: #000;
-}
-
-[class^="inspector-"] .da-inspector {
-  background-color: #000;
-}
-
-[class^="emoteHeader-"] .bd-emote-header {
-  background-color: #000;
-}
-
-[class^="categorySection-"] > [class^="header-"] {
-  background-color: #000;
+  [class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
+    background: var(--bt-red) !important;
+  }
+  [class^="unicodeShortcut-"],
+  [class^="inspector-"] {
+    background: #000;
+  }
 }
 
 //Follow Button near channel name
@@ -115,39 +55,40 @@
 
 //Follow Button near chat
 [class*="chatContent"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
-  background-color: var(--bt-red) !important;
+  @include m.btred_important;
 }
 
-/* Chat rections */
+//reaction below message
 [class*="reactions-"] [class*="reaction"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
   min-width: 40px !important;
   min-height: 40px !important;
   display: flex;
   align-content: center;
+
+  &:hover {
+    border-color: transparent;
+  }
 
   img {
     width: 30px !important;
     height: 30px !important;
   }
 
-  [class*="reactionMe-"] {
-    background-color: rgba(0, 0, 0, 0.4) !important;
+  //your reaction below message
+  &[class*="reactionMe"] {
+    border-color: var(--bt-red);
+    background: rgba(0, 0, 0, 0.4) !important;
   }
 }
-
-[class*="reaction"][class*="reactionMe"] {
-  border-color: var(--bt-red);
-}
-
 [class*="reactionCount-"] {
   color: var(--markup-normal) !important;
 }
 
-/*Chat message popouts*/
-[class*="layerContainer-"] [class*="layer-"] {
-  /*See who reacted popout*/
-  [class*="focusLock-"] [class*="container-"] {
+//Chat message popouts
+[class^="layerContainer-"] [class^="layer-"] {
+  //See who reacted popout
+  [class^="focusLock-"] [class*="container-"] {
     background: rgba(0, 0, 0, 0.95) !important;
 
     div:not([class*="contents"]) {
@@ -155,7 +96,7 @@
     }
   }
 
-  /*Chat message right click popout*/
+  //Chat message right click popout
   [class*="menu-"] {
     background: rgba(0, 0, 0, 0.95) !important;
     box-shadow: 0px 0px !important;
@@ -167,7 +108,7 @@
   }
 }
 
-/*Pinup popout background*/
+//Pinup popout background
 [class*="messagesPopoutWrap"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
@@ -231,6 +172,11 @@
 //Emojipicker from chat
 [class*="layer"] [class*="wrapper"] [class*="emojiPicker"] {
   background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//new thread popout
+[class^="threadSidebar"] {
+  background: rgba(0, 0, 0, 0.95);
 }
 
 //Threads popout
@@ -298,15 +244,15 @@
     color: #43b581;
 
     &[class*="focused"] {
-      background-color: #43b58244;
+      background: #43b58244;
     }
   }
 
   &-idle {
     color: #faa61a;
 
-    &.focused-3afm-j {
-      background-color: #faa81a42;
+    &[class*="focused"] {
+      background: #faa81a42;
     }
   }
 
@@ -314,7 +260,7 @@
     color: #f04747;
 
     &[class*="focused"] {
-      background-color: #b83a3c3d;
+      background: #b83a3c3d;
     }
   }
 
@@ -322,27 +268,27 @@
     color: #747f8d;
 
     &[class*="focused"] {
-      background-color: #747f8d3d;
+      background: #747f8d3d;
     }
   }
 
   &-custom-status[class*="focused"] {
-    background-color: #ffcd4d3d;
+    background: #ffcd4d3d;
   }
 }
 
 //New messages bar
 [class*="newMessagesBar"] {
-  background-color: var(--markup-intensive) !important;
+  background: var(--markup-intensive) !important;
   border-color: transparent !important;
 }
 
-//Server invites
-[id*="message-accessories-"] [class*="wrapper"] {
-  background-color: rgba(0, 0, 0, 0.2);
+//Server invite field on chat
+[id^="message-accessories-"] > [class*="wrapper"] {
+  background: rgba(0, 0, 0, 0.2);
 }
 
-//Search transition
+//upper right search (transition)
 [class*="title"] [class*="search"] {
   order: 1;
   margin-left: 4px;
@@ -351,7 +297,7 @@
     [class*="searchBar"] {
       width: 27px;
       transition: 250ms;
-      background-color: transparent;
+      background: transparent;
       border-bottom: 2px solid transparent;
 
       [class*="iconContainer"] {
@@ -382,17 +328,17 @@
   }
 }
 
-//Search input fileters and pseudo answers
+//Search input filters and pseudo answers
 [class*="DraftEditor"] {
   [class*="searchFilter"],
   [class*="searchAnswer"] {
-    background-color: var(--bt-red);
+    background: var(--bt-red);
   }
 }
 
 //Search modal popout
 [class*="layerContainer"] [class*="container"] {
-  background-color: rgba(0, 0, 0, 0.95);
+  background: rgba(0, 0, 0, 0.95);
   box-shadow: none !important;
 
   [class*="resultsGroup"] {
@@ -408,7 +354,6 @@
       visibility: hidden !important;
     }
   }
-
   [class*="queryContainer"] {
     background: rgba(0, 0, 0, 9);
 
@@ -416,52 +361,53 @@
       background: var(--bt-red);
     }
   }
-
   [class*="searchLearnMore"] {
     display: none;
   }
 }
 
+//Search modal popout date picker (wrapper)
 [class*="datePicker"] {
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  background: rgba(0, 0, 0, 0.9) !important;
 
   [class*="hintValue"] {
     margin-left: 5px;
     @include m.btred_important;
   }
 }
-
+//Search modal popout date picker (divs inside)
 [class*="react-datepicker"] {
-  background-color: transparent !important;
+  background: transparent !important;
 
   [class*="month"] > [class*="week"] {
     [class*="day"]:not([class*="day--disabled"]) {
-      background-color: var(--default-hover) !important;
+      background: var(--default-hover) !important;
 
       &:hover {
-        background-color: var(--default-selected) !important;
+        background: var(--default-selected) !important;
       }
     }
 
     [class*="selected"] {
-      background-color: var(--default-selected) !important;
+      background: var(--default-selected) !important;
 
       &::after {
-        background-color: var(--default-selected) !important;
+        background: var(--default-selected) !important;
       }
     }
 
     [class*="outside-month"]:not([class*="day--disabled"]) {
-      background-color: var(--default-hover) !important;
+      background: var(--default-hover) !important;
       opacity: 0.3 !important;
     }
   }
 }
 
+//Search results
 [class*="searchResultsWrap"] {
   [class*="channelSeparator"] {
     [class*="channelName"] {
-      background-color: transparent;
+      background: transparent;
       text-align: right !important;
       border-radius: 8px;
       padding: 5px !important;
@@ -471,6 +417,13 @@
         text-decoration: none;
       }
     }
+  }
+
+  [class*="searchHeader"] {
+    background: rgba(0, 0, 0, 0.3) !important;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
   }
 
   [class*="searchResult"] {
@@ -489,49 +442,65 @@
     }
   }
 }
-
 [class*="actionButtons"] [class*="jumpButton"] {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 3px !important;
   color: var(--bt-text) !important;
 
   &:hover {
-    background-color: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
     color: var(--bt-text-hover) !important;
   }
 }
-
-[class*="searchResultsWrap"] [class*="searchHeader"] {
-  background-color: rgba(0, 0, 0, 0.3) !important;
-
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-}
-
+//pages of search results
 [class*="pageControlContainer"] {
-  background-color: rgba(0, 0, 0, 0.3) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
 
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
 
   [class*="activeButton"] {
-    background-color: var(--bt-red) !important;
+    background: var(--bt-red) !important;
   }
 
   [class*="roundButton"]:not([class*="activeButton"]):hover {
-    background-color: var(--default-hover) !important;
+    background: var(--default-hover) !important;
   }
 }
 
+//message highlight after searching and jumping to
 [class*="backgroundFlash"] {
-  background-color: transparent !important;
+  background: transparent !important;
 
   li {
-    background-color: rgba(0, 0, 0, 0.2) !important;
+    background: rgba(0, 0, 0, 0.2) !important;
     border-radius: 5px 0 0 5px;
   }
 }
 
+[class*="replyBar"] {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+
+  [class*="colorLink"] {
+    color: var(--bt-text);
+  }
+}
+
+//Chat attachment scroller
+[class*="channelAttachmentArea"] > li {
+  background: rgba(0, 0, 0, 0.1) !important;
+
+  [class*="actionBar"] [class*="wrapper"] {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+code {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+//???
 [class*="replying"] {
   background-color: rgba(0, 0, 0, 0.1) !important;
 
@@ -542,34 +511,10 @@
     border-left: 2px solid var(--markup-intensive);
   }
 }
-
-[class*="replyBar"] {
-  background-color: var(--background-accent);
-  opacity: 0.95;
-  margin-top: 8px;
-
-  [class*="colorLink"] {
-    color: var(--bt-text);
-  }
-}
-
-//Chat attachment scroller
-[class*="channelAttachmentArea"] > li {
-  background-color: rgba(0, 0, 0, 0.1) !important;
-
-  [class*="actionBar"] [class*="wrapper"] {
-    background-color: rgba(0, 0, 0, 0.7) !important;
-  }
-}
-
-code {
-  background-color: rgba(0, 0, 0, 0.2) !important;
+[class^="categoryFadeBlurple-"] {
+  background: var(--bt-red) !important;
 }
 
 [class*="chat"] form {
   margin: 0px;
 }
-
-// [class*=chatContent]>form>div>div {
-//     background-color: var(--default-hover) !important;
-// }

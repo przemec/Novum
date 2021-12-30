@@ -1,10 +1,10 @@
 @use "../core/mixins" as m;
-/*Server catalogs*/
+//Server catalogs
 [class*="wrapper"][class*="guilds"] {
   [class*="folder"],
   [class*="closedFolderIconWrapper"],
   [class*="expandedFolderBackground"] {
-    background: rgba(0, 0, 0, 0) !important;
+    background: transparent !important;
   }
 
   [class*="circleIconButton"],
@@ -25,20 +25,11 @@
   }
 }
 
-/*Server folder edit popout*/
-
-/*Server edit popout focused button*/
-[class*="labelContainer"][class*="focused"] {
-  background-color: var(--bt-red) !important;
-}
-
-//Circlebutton
-[class*="circleButton"] {
-  background-color: var(--default-hover) !important;
-
-  &:hover {
-    background-color: var(--default-selected) !important;
-  }
+//Server folder edit popout
+//Custom color picker (server folder settings)
+[class*="colorPickerCustom"] {
+  background: rgba(0, 0, 0, 1) !important;
+  border-color: transparent;
 }
 
 //All folders have same colors
