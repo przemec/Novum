@@ -11,9 +11,7 @@
   background-color: rgba(0, 0, 0, 0.15);
 }
 
-[class^="stageSection-"]
-  > [class^="container-"]
-  > [class^="container-"]:nth-last-child(2) {
+[class^="stageSection-"] > [class^="container-"] > [class^="container-"]:nth-last-child(2) {
   background-color: transparent !important;
 }
 

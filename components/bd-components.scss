@@ -1,11 +1,11 @@
-.bd-addon-views>button:not([class*=selected]) {
+.bd-addon-views > button:not([class*="selected"]) {
   background-color: transparent !important;
 }
 
 .bd-button:not(.bd-addon-button) {
   background-color: var(--bt-red) !important;
 
-  :hover {
+  &:hover {
     background-color: var(--bt-red-hover) !important;
   }
 }
@@ -14,7 +14,7 @@
   background: transparent !important;
 }
 
-.bd-tab-bar .bd-tab-item[class*=selected] {
+.bd-tab-bar .bd-tab-item[class*="selected"] {
   background-color: var(--bt-red);
 }
 
@@ -38,7 +38,7 @@
   }
 }
 
-.bd-toast:not([class*=success]) {
+.bd-toast:not([class*="success"]) {
   background-color: rgba(0, 0, 0, 0.8) !important;
 }
 
@@ -48,9 +48,8 @@
 
 .bd-addon-button {
   background-color: transparent !important;
-
 }
 
-.bd-controls>.bd-addon-button:last-of-type {
+.bd-controls > .bd-addon-button:last-of-type {
   margin-left: 15px;
 }

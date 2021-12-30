@@ -17,18 +17,20 @@
   }
 
   //Add Friend button
-  [class^="item"][style*="color: hsl(0"] {
-    background-color: rgba(0, 255, 128, 0.1) !important;
-    color: rgba(0, 255, 128, 0.7) !important;
+  [class^="item"]{
+    &[style*="color: hsl(0"] {
+      background-color: rgba(0, 255, 128, 0.1) !important;
+      color: rgba(0, 255, 128, 0.7) !important;
+    }
+    &[style*="background"]:hover,
+    &[style]:not([style*="background"]) {
+      background-color: rgba(0, 255, 128, 0.2) !important;
+      color: rgba(0, 255, 128, 0.7) !important;
+      font-weight: bold;
+      font-size: 16px;
+    }
   }
-  [class^="item"][style*="color: hsl(139"]:hover,
-  [class^="item"][style*="color: hsl(139"] {
-    background-color: rgba(0, 255, 128, 0.2) !important;
-    color: rgba(0, 255, 128, 0.7) !important;
-    font-weight: bold;
-    font-size: 16px;
-  }
-
+  
   //adding friends page
   [class^="addFriendInputWrapper"] {
     background: rgba(0, 0, 0, 0.4);
@@ -37,10 +39,10 @@
   [class^="addFriendInputWrapper"] button {
     background: var(--bt-blue-bg);
     color: var(--bt-text);
-  }
-  [class^="addFriendInputWrapper"] button:hover {
-    background: var(--bt-blue-bg-hover);
-    color: var(--bt-text-hover);
+    &:hover {
+      background: var(--bt-blue-bg-hover);
+      color: var(--bt-text-hover);
+    }
   }
 }
 
@@ -68,7 +70,6 @@
   background: var(--default-selected);
   color: var(--bt-text-hover);
 }
-
 
 //Nitro page
 [class*="applicationStore"] {

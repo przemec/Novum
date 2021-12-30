@@ -7,7 +7,7 @@
   padding-left: 16px;
   padding-right: 16px;
 
-  [class*=platformIcon] {
+  [class*="platformIcon"] {
     right: 16px !important;
   }
 
@@ -33,7 +33,7 @@
     animation: animate2 8s linear infinite;
     animation-delay: 0s;
     opacity: 1;
-  } 
+  }
 
   &::after {
     content: "";
@@ -63,7 +63,7 @@
   }
 }
 
-[class^="activityUserPopout-"]>[class^="horizontal-"]>button {
+[class^="activityUserPopout-"] > [class^="horizontal-"] > button {
   background-color: var(--bt-red) !important;
 }
 
@@ -71,7 +71,7 @@
   background-color: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class*=popoutBanner]:not([class*=BannerPremium])[style] {
+[class*="popoutBanner"]:not([class*="BannerPremium"])[style] {
   background-color: transparent !important;
 }
 
@@ -86,36 +86,36 @@
     border-color: transparent !important;
   }
 
-  [class^=body][style] {
+  [class^="body"][style] {
     overflow: hidden !important;
     padding: 0;
     padding-right: 0 !important;
   }
 
-  [class*=divider] {
+  [class*="divider"] {
     display: none;
   }
 
   #permissions-popout,
-  h3:not([class*=nickname], [class*=ellipsis]),
-  [class*=rolesList]:not([class*=member-perm]),
-  [class*=textarea],
-  div[class*=customStatus],
-  [class*=aboutMeBody] {
+  h3:not([class*="nickname"], [class*="ellipsis"]),
+  [class*="rolesList"]:not([class*="member-perm"]),
+  [class*="textarea"],
+  div[class*="customStatus"],
+  [class*="aboutMeBody"] {
     padding-left: 16px;
     padding-right: 16px;
   }
 
-  [class*=bodyTitle] {
+  [class*="bodyTitle"] {
     margin-top: 8px;
     color: var(--header-secondary);
   }
 
-  [class*=aboutMeSection] {
+  [class*="aboutMeSection"] {
     margin-bottom: 40px;
   }
 
-  [class*=member-perms-title] {
+  [class*="member-perms-title"] {
     text-transform: uppercase;
     margin-bottom: 8px;
     font-weight: 700;
@@ -129,6 +129,6 @@
   }
 }
 
-[aria-label='User Badges'] {
+[aria-label="User Badges"] {
   background-color: transparent !important;
 }

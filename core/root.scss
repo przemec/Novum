@@ -1,5 +1,4 @@
 :root {
-
   /* Replace discord root variables*/
   --background-primary: transparent !important;
   --background-accent: var(--bt-red);
@@ -60,7 +59,7 @@ body::after {
 }
 
 /*pasek nad discordem*/
-#app-mount>[class^="typeWindows"] {
+#app-mount > [class^="typeWindows"] {
   height: 18px;
   margin-top: 0px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -69,7 +68,7 @@ body::after {
   padding-top: 4px;
 }
 
-[class^="chat-"]>[class^="content-"]>div {
+[class^="chat-"] > [class^="content-"] > div {
   background-color: transparent !important;
 }
 
@@ -77,8 +76,8 @@ body::after {
   border: none;
 }
 
-[class^="sidebar-"]>nav>div:first-child,
-[class^="sidebar-"]+div section {
+[class^="sidebar-"] > nav > div:first-child,
+[class^="sidebar-"] + div section {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 

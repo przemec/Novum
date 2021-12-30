@@ -1,5 +1,5 @@
 //FlowerStar aka Verified SVG ICON
-[class^="flowerStar-"]>path {
+[class^="flowerStar-"] > path {
   fill: var(--markup-intensive) !important;
 }
 
@@ -7,16 +7,16 @@
 [class^="circleButton-"] {
   background-color: var(--default-hover) !important;
 
-  :hover {
+  &:hover {
     background-color: var(--default-selected) !important;
   }
 }
 
-//Mic test button 
+//Mic test button
 [class^="micTestButton-"] {
   background-color: var(--bt-red) !important;
 
-  :hover {
+  &:hover {
     background-color: var(--bt-red-hover) !important;
   }
 }
@@ -31,7 +31,22 @@
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-//Permissions modal 
+//showing emoji details popout
+[class^="popoutContainer"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  button {
+    background: var(--bt-red) !important;
+    color: var(--bt-text) !important;
+
+    &:hover {
+      background: var(--bt-red-hover) !important;
+      color: var(--bt-text-hover) !important;
+    }
+  }
+}
+
+//Permissions modal
 #permissions-modal {
   background-color: rgba(0, 0, 0, 0.9) !important;
 
@@ -44,7 +59,6 @@
   }
 }
 
-
 [class*="bd-button-title"] {
   background-color: var(--bt-blue-bg) !important;
 }
@@ -53,9 +67,9 @@
   background-color: var(--bt-blue-bg-hover) !important;
 }
 
-//Switch checkboxy 
+//Switch checkboxy
 [class^="control-"] [class^="container-"] {
-  opacity: 0.4 !important; 
+  opacity: 0.4 !important;
   background: rgba(100, 100, 100, 0.2) !important;
 }
 [class^="control-"] [class^="container-"][style*="hsl(139"] {
@@ -63,7 +77,7 @@
   background: var(--bt-red) !important;
 }
 
-//BarFill 
+//BarFill
 [class^="barFill-"] {
   background: var(--bt-red) !important;
 }
@@ -74,14 +88,13 @@
 }
 
 //Color brand buttons
-
 button[class*="colorBrand-"]:not([class*="lookBlank"]) {
   background: var(--bt-red);
   color: var(--bt-text);
-}
-button[class*="colorBrand-"]:not([class*="lookBlank"]):hover {
-  background: var(--bt-red-hover);
-  color: var(--bt-text-hover);
+  &:hover {
+    background: var(--bt-red-hover);
+    color: var(--bt-text-hover);
+  }
 }
 
 button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
@@ -91,7 +104,6 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 
 //Replace discord wordmark with theme name
 [class*="wordmark"] {
-
   &:after {
     content: "Novum";
     font-size: 16px;
@@ -102,7 +114,6 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
   svg {
     display: none;
   }
-
 }
 
 //Rotate home icon
@@ -111,15 +122,15 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 }
 
 //Home icon recolor
-[data-list-item-id="guildsnav___home"]:hover>div {
+[data-list-item-id="guildsnav___home"]:hover > div {
   background-color: var(--bt-red) !important;
 }
 
-[data-list-item-id="guildsnav___home"][class*="selected"]>div {
+[data-list-item-id="guildsnav___home"][class*="selected"] > div {
   background-color: var(--bt-red) !important;
 }
 
-//Inputs 
+//Inputs
 input {
   transition: all 0.3s;
 }
@@ -130,17 +141,18 @@ input:focus {
 }
 
 //Krisp noice cancellation popout
-[class*=noiseCancellationPopout] {
+[class*="noiseCancellationPopout"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //Keyboard shortcuts modal
-[class*=keyboardShortcutsModal] {
+[class*="keyboardShortcutsModal"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //Remove discord support button
-[href='https://support.discord.com'] {
+[href='https://support.discord.com']
+{
   display: none !important;
 }
 
@@ -152,7 +164,7 @@ input:focus {
 //https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1
 
 //Add novum icon into settings
-[class*=socialLinks]::after {
+[class*="socialLinks"]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -165,51 +177,51 @@ input:focus {
 
 //Where would u like to go? popout aka quickswitcher component
 
-[aria-label='Quick switcher'] {
+[aria-label="Quick switcher"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //Bot pill
-[class*=botTagRegular] {
+[class*="botTagRegular"] {
   background: var(--bt-red) !important;
 }
 
-//Random-located focus-locking popouts 
-[class*=focusLock] [class*=root] {
+//Random-located focus-locking popouts
+[class*="focusLock"] [class*="root"] {
   background-color: rgba(0, 0, 0, 0.95) !important;
 
-  [class*=directionRow],
-  [class*=body],
-  [class*=topSection] {
+  [class*="directionRow"],
+  [class*="body"],
+  [class*="topSection"] {
     background-color: rgba(0, 0, 0, 0.95) !important;
   }
 
-  [class*=avatar] {
+  [class*="avatar"] {
     border: none;
   }
 
-  [class*=message] {
+  [class*="message"] {
     background-color: transparent !important;
     border: none !important;
   }
 }
 
 //Radiogroup directionrow selected
-[role=radiogroup] [class*=directionRow][aria-checked=true] {
+[role="radiogroup"] [class*="directionRow"][aria-checked="true"] {
   background-color: rgba(0, 0, 0, 0.3) !important;
 
-  [class*=radioBar] div:not([class*=info]) circle {
+  [class*="radioBar"] div:not([class*="info"]) circle {
     fill: rgb(255, 255, 255);
   }
 }
 
 //Cards in settings, discord nitro, etc.
-[class*=card-] {
+[class*="card-"] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
 }
 
-//Tooltip 
+//Tooltip
 [class*="tooltipPrimary"],
 [class*="tooltipGreen"] {
   background-color: rgba(0, 0, 0, 0.95) !important;
@@ -217,14 +229,13 @@ input:focus {
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
 
-  [class*=tooltipPointer] {
+  [class*="tooltipPointer"] {
     border-top-color: rgba(0, 0, 0, 1) !important;
   }
 }
 
-[class*=mediaBarWrapper] {
-
-  [class*=fakeEdges] {
+[class*="mediaBarWrapper"] {
+  [class*="fakeEdges"] {
     background-color: var(--bt-red);
 
     &::after,
@@ -233,7 +244,7 @@ input:focus {
     }
   }
 
-  [class*=mediaBarProgress] {
+  [class*="mediaBarProgress"] {
     background-color: var(--bt-red);
 
     &::after,
@@ -241,30 +252,28 @@ input:focus {
       background-color: var(--bt-red);
     }
 
-    [class*=mediaBarGrabber] {
+    [class*="mediaBarGrabber"] {
       background-color: var(--bt-red);
     }
   }
 
-  [class*=bubble] {
+  [class*="bubble"] {
     background-color: var(--bt-red);
   }
 }
 
-
-[class*=embedVideo] {
-  [class*=playPausePop] {
+[class*="embedVideo"] {
+  [class*="playPausePop"] {
     display: none !important;
   }
 }
 
-[aria-checked=true] [class*=iconContainer] svg>path:first-of-type {
+[aria-checked="true"] [class*="iconContainer"] svg > path:first-of-type {
   fill: var(--bt-red);
 }
 
-[class*=streamPreviewWrapper] [class*=streamPreview] {
-
-  [class*=previewContainer] {
+[class*="streamPreviewWrapper"] [class*="streamPreview"] {
+  [class*="previewContainer"] {
     background-color: transparent !important;
     border: transparent;
   }
