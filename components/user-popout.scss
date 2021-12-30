@@ -1,6 +1,6 @@
 /*Styling for in game or other member activity popout*/
 [class^="activityUserPopout-"] {
-  background-color: var(--default-selected);
+  background-color: var(--profile-activity);
   margin-bottom: 30px;
   // width: 300px;
   margin-top: 30px;
@@ -25,15 +25,15 @@
     height: 21px;
     z-index: 1;
     width: 300px;
-    top: -21px;
+    top: -20px;
     left: 0;
-    background-color: var(--default-selected);
+    background-color: var(--profile-activity);
     mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
     -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
     animation: animate2 8s linear infinite;
     animation-delay: 0s;
     opacity: 1;
-  }
+  } 
 
   &::after {
     content: "";
@@ -41,9 +41,9 @@
     height: 21px;
     z-index: 1;
     width: 300px;
-    bottom: -21px;
+    bottom: -20px;
     left: 0;
-    background-color: var(--default-selected);
+    background-color: var(--profile-activity);
     mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
     -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
     animation: animate2 8s linear infinite;
@@ -75,18 +75,18 @@
   background-color: transparent !important;
 }
 
-[class*="userPopout"] {
+[class^="userPopout"] {
   background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 
-  [class*="bodyInnerWrapper"],
-  [class*="footer"],
-  [class*="avatar"] {
+  [class^="bodyInnerWrapper"],
+  [class^="footer"],
+  [class^="avatar"] {
     background-color: transparent !important;
     border-color: transparent !important;
   }
 
-  [class*=body][style] {
+  [class^=body][style] {
     overflow: hidden !important;
     padding: 0;
     padding-right: 0 !important;

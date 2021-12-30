@@ -1,0 +1,79 @@
+//Friends page
+[class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) {
+  background-color: transparent;
+
+  //icon
+  svg {
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  //buttons
+  [class^="item"][tabindex="0"] {
+    background-color: transparent;
+    font-size: 17px;
+  }
+  [class^="item"]:not([tabindex="0"]):hover {
+    background-color: transparent;
+  }
+
+  //Add Friend button
+  [class^="item"][style*="color: hsl(0"] {
+    background-color: rgba(0, 255, 128, 0.1) !important;
+    color: rgba(0, 255, 128, 0.7) !important;
+  }
+  [class^="item"][style*="color: hsl(139"]:hover,
+  [class^="item"][style*="color: hsl(139"] {
+    background-color: rgba(0, 255, 128, 0.2) !important;
+    color: rgba(0, 255, 128, 0.7) !important;
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+  //adding friends page
+  [class^="addFriendInputWrapper"] {
+    background: rgba(0, 0, 0, 0.4);
+    border-color: rgba(0, 0, 0, 0.9);
+  }
+  [class^="addFriendInputWrapper"] button {
+    background: var(--bt-blue-bg);
+    color: var(--bt-text);
+  }
+  [class^="addFriendInputWrapper"] button:hover {
+    background: var(--bt-blue-bg-hover);
+    color: var(--bt-text-hover);
+  }
+}
+
+//Active now section
+[class*="nowPlayingColumn"] {
+  [class*="itemCard"] {
+    background: rgba(0, 0, 0, 0.5) !important;
+
+    [class*="body"] {
+      background-color: transparent !important;
+
+      [class*="separator"] {
+        display: none;
+      }
+    }
+  }
+}
+
+//friends list sidebar
+[class^="content"] > [class^="channel"]:hover [class^="layout"] {
+  background: var(--default-hover);
+  color: var(--bt-text);
+}
+[class^="content"] > [class^="channel"][class*="selected"] [class^="layout"] {
+  background: var(--default-selected);
+  color: var(--bt-text-hover);
+}
+
+
+//Nitro page
+[class*="applicationStore"] {
+  background-color: transparent !important;
+}
+[class*="heroButtons"] > button {
+  color: var(--bt-text) !important;
+}

@@ -1,9 +1,9 @@
-/* FlowerStar aka Verified SVG ICON*/
+//FlowerStar aka Verified SVG ICON
 [class^="flowerStar-"]>path {
-  fill: var(--bt-red) !important;
+  fill: var(--markup-intensive) !important;
 }
 
-/*Circle button*/
+//Circle button
 [class^="circleButton-"] {
   background-color: var(--default-hover) !important;
 
@@ -12,7 +12,7 @@
   }
 }
 
-/* Mic test button */
+//Mic test button 
 [class^="micTestButton-"] {
   background-color: var(--bt-red) !important;
 
@@ -21,7 +21,17 @@
   }
 }
 
-/*Permissions modal */
+//modal backdrop
+[class^="backdrop"] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
+//being invited to server modal
+[role="dialog"] [class^="contentWrapper"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Permissions modal 
 #permissions-modal {
   background-color: rgba(0, 0, 0, 0.9) !important;
 
@@ -34,28 +44,44 @@
   }
 }
 
+
 [class*="bd-button-title"] {
-  background-color: var(--bt-red) !important;
+  background-color: var(--bt-blue-bg) !important;
 }
 
 [class*="bd-view-button"][class*="selected"] {
-  background-color: var(--bt-red) !important;
+  background-color: var(--bt-blue-bg-hover) !important;
 }
 
-/* BarFill */
+//Switch checkboxy 
+[class^="control-"] [class^="container-"] {
+  opacity: 0.4 !important; 
+  background: rgba(100, 100, 100, 0.2) !important;
+}
+[class^="control-"] [class^="container-"][style*="hsl(139"] {
+  opacity: 0.7 !important;
+  background: var(--bt-red) !important;
+}
+
+//BarFill 
 [class^="barFill-"] {
-  background-color: var(--bt-red) !important;
+  background: var(--bt-red) !important;
 }
 
 //Color primary
-[class^="collorPrimary-"] {
-  background-color: var(--bt-red) !important;
+[class^="colorPrimary-"] {
+  background: var(--bt-red) !important;
 }
 
 //Color brand buttons
 
-button[class*="colorBrand-"]:not([class*="lookBlank"], [aria-label='Turn On Camera'], [aria-label='Share Your Screen']) {
-  background-color: var(--bt-red) !important;
+button[class*="colorBrand-"]:not([class*="lookBlank"]) {
+  background: var(--bt-red);
+  color: var(--bt-text);
+}
+button[class*="colorBrand-"]:not([class*="lookBlank"]):hover {
+  background: var(--bt-red-hover);
+  color: var(--bt-text-hover);
 }
 
 button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
@@ -93,7 +119,7 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
   background-color: var(--bt-red) !important;
 }
 
-/* Inputs */
+//Inputs 
 input {
   transition: all 0.3s;
 }
@@ -103,14 +129,14 @@ input:focus {
   box-shadow: 0px 0px transparent;
 }
 
-/*Krisp noice cancellation popout*/
+//Krisp noice cancellation popout
 [class*=noiseCancellationPopout] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-// Keyboard shortcuts modal
+//Keyboard shortcuts modal
 [class*=keyboardShortcutsModal] {
-  background: rgba(0, 0, 0, 0.98) !important;
+  background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //Remove discord support button
@@ -173,12 +199,28 @@ input:focus {
   background-color: rgba(0, 0, 0, 0.3) !important;
 
   [class*=radioBar] div:not([class*=info]) circle {
-    fill: var(--bt-red);
+    fill: rgb(255, 255, 255);
   }
 }
 
+//Cards in settings, discord nitro, etc.
+[class*=card-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
+}
 
+//Tooltip 
+[class*="tooltipPrimary"],
+[class*="tooltipGreen"] {
+  background-color: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
 
+  [class*=tooltipPointer] {
+    border-top-color: rgba(0, 0, 0, 1) !important;
+  }
+}
 
 [class*=mediaBarWrapper] {
 

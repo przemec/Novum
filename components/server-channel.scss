@@ -88,32 +88,24 @@
 }
 
 //Server header name 
-[class*=header] h1[class*=name] {
+header h1[class*=name] {
   font-size: 18px;
   font-weight: bold;
   line-height: 55px;
 }
-
-//Tooltip 
-[class*="tooltipPrimary"],
-[class*="tooltipGreen"] {
-  background-color: rgba(0, 0, 0, 0.95) !important;
-  border: 2px solid rgba(0, 0, 0, 1);
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
-
-  [class*=tooltipPointer] {
-    border-top-color: rgba(0, 0, 0, 1) !important;
-  }
+[class^=sidebar] [class*=selected] header {
+  background: transparent;
 }
 
-//Vide & Screen buttons backgrounds 
-
+//Video & Screen buttons backgrounds 
 [class*=panels] [class*=actionButtons] button {
   background: var(--default-hover) !important;
-  color: rgba(255, 255, 255, 0.7) !important;
+  color: var(--bt-text) !important;
 }
-
+[class*=panels] [class*=actionButtons] button:hover {
+  background: var(--default-selected) !important;
+  color: var(--bt-text-hover) !important;
+}
 
 //Remove redundant create invite icon from channel list
 [aria-label='Create Invite'] {

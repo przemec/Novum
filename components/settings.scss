@@ -142,7 +142,6 @@
 }
 
 //Changelog & Hypesquad and Exit icons
-
 [aria-controls='changelog-tab']::after {
     background: url(https://tomec.gitlab.io/novum/icons/history.svg) !important;
 }
@@ -187,3 +186,23 @@
 [aria-label=USER_SETTINGS] [class^=info-] > *{
     color: rgba(255,255,255,0.5);
 }
+
+//"Privacy settings"
+//semi-transparent fields (green, orange and red)
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+  border-color: rgba(0, 230, 77, 0.3) !important;
+}
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
+  background: rgba(255, 153, 0, 0.3) !important;
+  border-color: rgba(255, 153, 0, 0.3) !important;
+}
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+  border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+//notices in couple of settings pages
+// [aria-label="USER_SETTINGS"] [class^=formNotice] {
+//     background: rgba(0, 0, 0, 0.3);
+// }

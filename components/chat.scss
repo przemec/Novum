@@ -50,10 +50,6 @@
     background-color: var(--default-selected) !important;
 }
 
-.da-scroller>div>div:nth-child(1) {
-    /* background-color: transparent !important; */
-}
-
 [class^="itemCard-"] {
     background-color: rgba(0, 0, 0, 0.1) !important;
 }
@@ -365,13 +361,13 @@
 
     order: 1;
     margin-left: 4px;
-
+ 
     [class*=search]:not([class*=open]) {
-
         [class*=searchBar] {
             width: 27px;
             transition: 250ms;
             background-color: transparent;
+            border-bottom: 2px solid transparent;
 
 
             [class*=iconContainer] {
@@ -383,11 +379,10 @@
                 }
             }
         }
-
         &:hover [class*=searchBar] {
             width: 240px;
             background: rgba(0, 0, 0, 0.15);
-
+            border-color: var(--bt-red);
 
             [class*=iconContainer] {
                 transform: scale(1);
@@ -396,21 +391,19 @@
                     color: var(--text-muted);
                 }
             }
-
         }
     }
-
-
+    [class*=search] [class*=searchBar] {
+        border-bottom: 2px solid var(--bt-red);
+    }   
 }
 
 //Search input fileters and pseudo answers
 [class*=DraftEditor] {
-
     [class*=searchFilter],
     [class*=searchAnswer] {
-        background-color: var(--bt-red) !important;
+        background-color: var(--bt-red);
     }
-
 }
 
 //Search modal popout

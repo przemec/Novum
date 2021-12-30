@@ -15,6 +15,7 @@
   /*Initialize theme variables*/
   --background-img: url("https://i.imgur.com/NOpaUeX.png");
   --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
+  --profile-activity: #6d1515;
   --default-hover: #d4393926;
   --default-selected: #d336364d;
   --bt-red: #b42a2acc;
@@ -77,7 +78,7 @@ body::after {
 }
 
 [class^="sidebar-"]>nav>div:first-child,
-[class^="sidebar-"]+div>section {
+[class^="sidebar-"]+div section {
   background-color: rgba(0, 0, 0, 0.1) !important;
 }
 
