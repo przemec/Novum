@@ -1,5 +1,6 @@
-/* Channel Textarea (big chat textinput) or CHAT */
+@use "../core/mixins" as m;
 
+/* Channel Textarea (big chat textinput) or CHAT */
 [class^="channelTextArea"] {
   border-radius: 8px;
 
@@ -109,7 +110,7 @@
 
 //Follow Button near channel name
 [class*="followButton"] {
-  background-color: var(--bt-red) !important;
+  @include m.btred_important;
 }
 
 //Follow Button near chat
@@ -426,13 +427,7 @@
 
   [class*="hintValue"] {
     margin-left: 5px;
-    background-color: var(--bt-red) !important;
-    color: var(--bt-text);
-
-    &:hover {
-      background-color: var(--bt-red-hover) !important;
-      color: var(--bt-text-hover) !important;
-    }
+    @include m.btred_important;
   }
 }
 

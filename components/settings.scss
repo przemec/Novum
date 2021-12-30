@@ -1,3 +1,4 @@
+@use "../core/mixins" as m;
 /*Settings icons*/
 
 /*Space for icons*/
@@ -172,7 +173,7 @@
   background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
 
   [class*="fieldButton-"] {
-    background-color: var(--bt-red) !important;
+    @include m.btred_important;
   }
 }
 

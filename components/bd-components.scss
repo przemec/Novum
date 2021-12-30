@@ -1,13 +1,11 @@
+@use "../core/mixins" as m;
+
 .bd-addon-views > button:not([class*="selected"]) {
   background-color: transparent !important;
 }
 
 .bd-button:not(.bd-addon-button) {
-  background-color: var(--bt-red) !important;
-
-  &:hover {
-    background-color: var(--bt-red-hover) !important;
-  }
+  @include m.btred_important;
 }
 
 .bd-addon-error {

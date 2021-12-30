@@ -1,3 +1,4 @@
+@use "../core/mixins" as m;
 /*Server catalogs*/
 [class*="wrapper"][class*="guilds"] {
   [class*="folder"],
@@ -55,9 +56,5 @@ svg[style*="color: "] path {
 }
 
 [class*="footerButton"] {
-  background-color: var(--bt-red) !important;
-
-  &:hover {
-    background-color: var(--default-hover) !important;
-  }
+  @include m.btred_important;
 }

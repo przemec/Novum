@@ -1,3 +1,5 @@
+@use "../core/mixins" as m;
+
 //FlowerStar aka Verified SVG ICON
 [class^="flowerStar-"] > path {
   fill: var(--markup-intensive) !important;
@@ -14,11 +16,7 @@
 
 //Mic test button
 [class^="micTestButton-"] {
-  background-color: var(--bt-red) !important;
-
-  &:hover {
-    background-color: var(--bt-red-hover) !important;
-  }
+  @include m.btred_important;
 }
 
 //modal backdrop
@@ -36,13 +34,7 @@
   background: rgba(0, 0, 0, 0.95) !important;
 
   button {
-    background: var(--bt-red) !important;
-    color: var(--bt-text) !important;
-
-    &:hover {
-      background: var(--bt-red-hover) !important;
-      color: var(--bt-text-hover) !important;
-    }
+    @include m.btred;
   }
 }
 
@@ -89,12 +81,7 @@
 
 //Color brand buttons
 button[class*="colorBrand-"]:not([class*="lookBlank"]) {
-  background: var(--bt-red);
-  color: var(--bt-text);
-  &:hover {
-    background: var(--bt-red-hover);
-    color: var(--bt-text-hover);
-  }
+  @include m.btred;
 }
 
 button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
