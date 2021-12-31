@@ -1,0 +1,250 @@
+@use "../core/mixins" as m;
+
+//FlowerStar aka Verified SVG ICON
+[class^="flowerStar-"] > path {
+  fill: var(--markup-intensive) !important;
+}
+
+//modal backdrop
+[class^="backdrop"] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
+//being invited to server modal
+[role="dialog"] [class^="contentWrapper"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//showing emoji details popout
+[class^="popoutContainer"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  button {
+    @include m.btred;
+  }
+}
+
+//Permissions modal (custom plugin)
+#permissions-modal {
+  background: rgba(0, 0, 0, 0.9) !important;
+
+  div {
+    background: rgba(0, 0, 0, 0.9) !important;
+
+    div {
+      background: rgba(0, 0, 0, 0.9) !important;
+    }
+  }
+}
+
+//Switch checkboxy
+[class^="control-"] [class^="container-"] {
+  opacity: 0.4 !important;
+  background: rgba(100, 100, 100, 0.2) !important;
+}
+[class^="control-"] [class^="container-"][style*="hsl(139"] {
+  opacity: 0.7 !important;
+  background: var(--bt-red) !important;
+}
+
+//BarFill
+[class^="barFill-"] {
+  background: var(--bt-red) !important;
+}
+
+//Color primary
+[class^="colorPrimary-"] {
+  background: var(--bt-red) !important;
+}
+
+//Color brand buttons
+button[class*="colorBrand-"]:not([class*="lookBlank"]) {
+  @include m.btred;
+}
+
+button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
+  color: var(--bt-text);
+  border-color: transparent !important;
+}
+
+//Replace discord wordmark with theme name
+[class*="wordmark"] {
+  &:after {
+    content: "Novum";
+    font-size: 16px;
+    font-family: var(--font-primary);
+    font-weight: bold;
+  }
+
+  svg {
+    display: none;
+  }
+}
+
+//Rotate home icon
+[class*="homeIcon"] {
+  transform: rotate(-180deg);
+}
+
+//Home icon recolor
+[data-list-item-id="guildsnav___home"]:hover > div,
+[data-list-item-id="guildsnav___home"][class*="selected"] > div {
+  background: var(--bt-red) !important;
+}
+
+//Inputs
+input {
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: var(--markup-blue) !important;
+  box-shadow: 0px 0px transparent;
+}
+
+//Krisp noice cancellation popout
+[class*="noiseCancellationPopout"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Keyboard shortcuts modal
+[class*="keyboardShortcutsModal"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Remove discord support button
+[href='https://support.discord.com']
+{
+  display: none !important;
+}
+
+//Remove notification bell from channel
+[aria-label="Notification Settings"] {
+  display: none !important;
+}
+
+//https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1
+
+//Add novum icon into settings
+[class*="socialLinks"]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 6px;
+  background: url(https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1) center/cover no-repeat;
+  filter: contrast(0%) brightness(1.4);
+}
+
+//Where would u like to go? popout aka quickswitcher component
+
+[aria-label="Quick switcher"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Bot pill
+[class*="botTagRegular"] {
+  background: var(--bt-red) !important;
+}
+
+//Random-located focus-locking popouts
+[class*="focusLock"] [class*="root"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
+
+  [class*="directionRow"],
+  [class*="body"],
+  [class*="topSection"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  [class*="avatar"] {
+    border: none;
+  }
+
+  [class*="message"] {
+    background: transparent !important;
+    border: none !important;
+  }
+}
+
+//Radiogroup directionrow selected
+[role="radiogroup"] [class*="directionRow"][aria-checked="true"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+
+  [class*="radioBar"] div:not([class*="info"]) circle {
+    fill: rgb(255, 255, 255);
+  }
+}
+
+//Cards in settings, discord nitro, etc.
+[class*="card-"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-color: #000000 !important;
+}
+
+//Tooltip
+[class*="tooltipPrimary"],
+[class*="tooltipGreen"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+
+  [class*="tooltipPointer"] {
+    border-top-color: rgba(0, 0, 0, 1) !important;
+  }
+}
+
+[class*="mediaBarWrapper"] {
+  [class*="fakeEdges"] {
+    background: var(--bt-red);
+
+    &::after,
+    &::before {
+      background: var(--bt-red);
+    }
+  }
+
+  [class*="mediaBarProgress"] {
+    background: var(--bt-red);
+
+    &::after,
+    &::before {
+      background: var(--bt-red);
+    }
+
+    [class*="mediaBarGrabber"] {
+      background: var(--bt-red);
+    }
+  }
+
+  [class*="bubble"] {
+    background: var(--bt-red);
+  }
+}
+
+[class*="embedVideo"] {
+  [class*="playPausePop"] {
+    display: none !important;
+  }
+}
+
+//checkboxes
+[aria-checked="true"] [class*="iconContainer"] svg > path:first-child {
+  fill: var(--bt-red);
+}
+[aria-checked="true"] [class*="iconContainer"] svg > path:last-child {
+  fill: var(--bt-text-hover) !important;
+}
+
+[class*="streamPreviewWrapper"] [class*="streamPreview"] {
+  [class*="previewContainer"] {
+    background: transparent !important;
+    border: transparent;
+  }
+
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: transparent;
+}

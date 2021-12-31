@@ -1,0 +1,520 @@
+@use "../core/mixins" as m;
+
+// Channel Textarea (big chat textinput) or CHAT 
+[class^="channelTextArea"] {
+  border-radius: 8px;
+
+  [class*="scrollableContainer"] {
+    background: rgba(0, 0, 0, 0.1);
+
+    [class^="attachWrapper"] {
+      border-right-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  //autocomplete popout after typing @
+  [class^="autocomplete"] {
+    background: transparent !important;
+  }
+  [class^="autocompleteInner"] {
+    background: rgba(0, 0, 0, 0.9) !important;
+    border-color: transparent !important;
+  }
+  [class*="autocompleteRow"] > [class*="selected"] {
+    background: var(--default-selected) !important;
+  }
+  //hidden tip container above the chat input
+  & > [class^="container-"] > [class^="containerBackground"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-color: transparent;
+  }
+
+  //Remove discord gift button from chat
+  [class*="inner"] [class^="buttons"] > button:first-child {
+    display: none !important;
+  }
+}
+
+// Emote, Gif, Sticker popout 
+[class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
+  background: rgba(0, 0, 0, 0.9) !important;
+
+  [class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
+    background: var(--bt-red) !important;
+  }
+  [class^="unicodeShortcut-"],
+  [class^="inspector-"] {
+    background: #000;
+  }
+}
+
+//Follow Button near channel name
+[class*="followButton"] {
+  @include m.btred_important;
+}
+
+//Follow Button near chat
+[class*="chatContent"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
+  @include m.btred_important;
+}
+
+//reaction below message
+[class*="reactions-"] [class*="reaction"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
+  background: rgba(0, 0, 0, 0.2) !important;
+  min-width: 40px !important;
+  min-height: 40px !important;
+  display: flex;
+  align-content: center;
+
+  &:hover {
+    border-color: transparent;
+  }
+
+  img {
+    width: 30px !important;
+    height: 30px !important;
+  }
+
+  //your reaction below message
+  &[class*="reactionMe"] {
+    border-color: var(--bt-red);
+    background: rgba(0, 0, 0, 0.4) !important;
+  }
+}
+[class*="reactionCount-"] {
+  color: var(--markup-normal) !important;
+}
+
+//Chat message popouts
+[class^="layerContainer-"] [class^="layer-"] {
+  //See who reacted popout
+  [class^="focusLock-"] [class*="container-"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+
+    div:not([class*="contents"]) {
+      background: rgba(0, 0, 0, 0.95) !important;
+    }
+  }
+
+  //Chat message right click popout
+  [class*="menu-"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+    box-shadow: 0px 0px !important;
+
+    [class*="wrapper-"] img {
+      width: 30px !important;
+      height: 30px !important;
+    }
+  }
+}
+
+//Pinup popout background
+[class*="messagesPopoutWrap"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Links
+[class*="embedLink"] {
+  color: var(--markup-normal) !important;
+}
+
+//Embed
+[class*="message"] {
+  a {
+    color: var(--markup-normal);
+  }
+
+  [class^="embedWrapper"] {
+    background: var(--markup-normal-transparent) !important;
+    border-color: var(--markup-intensive) !important;
+  }
+}
+
+[class^="messageAttachment"] {
+  background: var(--markup-normal-transparent) !important;
+  border-color: var(--markup-intensive) !important;
+}
+
+//Mention
+[class*="markup"] [class*="mention"] {
+  color: var(--markup-blue-light);
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.4);
+  }
+}
+
+[class*="mentioned"] {
+  [class*="mention"] {
+    color: var(--markup-intensive);
+  }
+
+  &::before {
+    left: 3px;
+    border-radius: 5px 0 0 5px;
+    background: var(--markup-intensive);
+    border-left: 2px solid var(--markup-intensive);
+  }
+}
+
+//Chat message buttons container
+[class*="message"] [class*="buttonContainer"] [class*="container"] [class*="wrapper"] {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+//Inbox popout aka recentMentionsPopout
+[class*="recentMentionsPopout"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Emojipicker from chat
+[class*="layer"] [class*="wrapper"] [class*="emojiPicker"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//new thread popout
+[class^="threadSidebar"] {
+  background: rgba(0, 0, 0, 0.95);
+}
+
+//Threads popout
+[class*="layer"] [class*="browser"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="hasThread"] [class*="cta"] {
+  color: var(--markup-normal) !important;
+}
+
+[class*="layerContainer"] [aria-label="Threads"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Unread & Day chat dividers
+[class*="messagesWrapper"] [class*="content"] [class*="divider"] {
+  border-color: transparent;
+  margin-top: 35px;
+  margin-bottom: 35px;
+
+  //Unread divider date
+  [class*="content"] {
+    color: var(--markup-intensive) !important;
+    width: 95%;
+    transform: translateY(6px);
+  }
+
+  &:not([class*="isUnread"]) > span {
+    color: rgba(255, 255, 255, 0.7) !important;
+    background: rgba(204, 204, 204, 0.1) !important;
+    font-size: 14px;
+    border-radius: 5px;
+    padding: 7px 15px;
+    text-align: center;
+    width: 90%;
+  }
+
+  [class*="isUnread"] {
+    background: transparent !important;
+    color: var(--markup-intensive) !important;
+    width: 95%;
+    transform: translateY(6px);
+  }
+}
+
+[class*="unreadPill"] {
+  background: var(--default-hover) !important;
+  color: var(--markup-intensive) !important;
+  padding: 12px 0px;
+  width: 100%;
+  font-size: 14px;
+}
+
+[class*="unreadPillCap"] {
+  visibility: hidden;
+}
+
+//Chat status picker background and transitions
+
+#status-picker {
+  transition: background 120ms;
+
+  &-online {
+    color: #43b581;
+
+    &[class*="focused"] {
+      background: #43b58244;
+    }
+  }
+
+  &-idle {
+    color: #faa61a;
+
+    &[class*="focused"] {
+      background: #faa81a42;
+    }
+  }
+
+  &-dnd {
+    color: #f04747;
+
+    &[class*="focused"] {
+      background: #b83a3c3d;
+    }
+  }
+
+  &-invisible {
+    color: #747f8d;
+
+    &[class*="focused"] {
+      background: #747f8d3d;
+    }
+  }
+
+  &-custom-status[class*="focused"] {
+    background: #ffcd4d3d;
+  }
+}
+
+//New messages bar
+[class*="newMessagesBar"] {
+  background: var(--markup-intensive) !important;
+  border-color: transparent !important;
+}
+
+//Server invite field on chat
+[id^="message-accessories-"] > [class*="wrapper"] {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+//upper right search (transition)
+[class*="title"] [class*="search"] {
+  order: 1;
+  margin-left: 4px;
+
+  [class*="search"]:not([class*="open"]) {
+    [class*="searchBar"] {
+      width: 27px;
+      transition: 250ms;
+      background: transparent;
+      border-bottom: 2px solid transparent;
+
+      [class*="iconContainer"] {
+        transform: scale(1.3);
+        transition: 250ms;
+
+        [class*="icon"] {
+          color: var(--interactive-normal);
+        }
+      }
+    }
+    &:hover [class*="searchBar"] {
+      width: 240px;
+      background: rgba(0, 0, 0, 0.15);
+      border-color: var(--bt-red);
+
+      [class*="iconContainer"] {
+        transform: scale(1);
+
+        [class*="icon"] {
+          color: var(--text-muted);
+        }
+      }
+    }
+  }
+  [class*="search"] [class*="searchBar"] {
+    border-bottom: 2px solid var(--bt-red);
+  }
+}
+
+//Search input filters and pseudo answers
+[class*="DraftEditor"] {
+  [class*="searchFilter"],
+  [class*="searchAnswer"] {
+    background: var(--bt-red);
+  }
+}
+
+//Search modal popout
+[class*="layerContainer"] [class*="container"] {
+  background: rgba(0, 0, 0, 0.95);
+  box-shadow: none !important;
+
+  [class*="resultsGroup"] {
+    text-align: center;
+
+    [class*="selected"],
+    [class*="option"]:hover {
+      background: var(--default-selected);
+    }
+
+    &::before,
+    [class*="option"]::after {
+      visibility: hidden !important;
+    }
+  }
+  [class*="queryContainer"] {
+    background: rgba(0, 0, 0, 9);
+
+    span {
+      background: var(--bt-red);
+    }
+  }
+  [class*="searchLearnMore"] {
+    display: none;
+  }
+}
+
+//Search modal popout date picker (wrapper)
+[class*="datePicker"] {
+  background: rgba(0, 0, 0, 0.9) !important;
+
+  [class*="hintValue"] {
+    margin-left: 5px;
+    @include m.btred_important;
+  }
+}
+//Search modal popout date picker (divs inside)
+[class*="react-datepicker"] {
+  background: transparent !important;
+
+  [class*="month"] > [class*="week"] {
+    [class*="day"]:not([class*="day--disabled"]) {
+      background: var(--default-hover) !important;
+
+      &:hover {
+        background: var(--default-selected) !important;
+      }
+    }
+
+    [class*="selected"] {
+      background: var(--default-selected) !important;
+
+      &::after {
+        background: var(--default-selected) !important;
+      }
+    }
+
+    [class*="outside-month"]:not([class*="day--disabled"]) {
+      background: var(--default-hover) !important;
+      opacity: 0.3 !important;
+    }
+  }
+}
+
+//Search results
+[class*="searchResultsWrap"] {
+  [class*="channelSeparator"] {
+    [class*="channelName"] {
+      background: transparent;
+      text-align: right !important;
+      border-radius: 8px;
+      padding: 5px !important;
+
+      &:hover {
+        background: var(--default-selected);
+        text-decoration: none;
+      }
+    }
+  }
+
+  [class*="searchHeader"] {
+    background: rgba(0, 0, 0, 0.3) !important;
+
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+  }
+
+  [class*="searchResult"] {
+    &[class*="expanded"] {
+      border-color: transparent !important;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04) !important;
+      background: rgba(0, 0, 0, 0.1) !important;
+      opacity: 1;
+    }
+
+    [class*="searchResultMessage"] {
+      &[class*="after"],
+      &[class*="before"] {
+        opacity: 0.15 !important;
+      }
+    }
+  }
+}
+[class*="actionButtons"] [class*="jumpButton"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 3px !important;
+  color: var(--bt-text) !important;
+
+  &:hover {
+    background: rgba(0, 0, 0, 0.6) !important;
+    color: var(--bt-text-hover) !important;
+  }
+}
+//pages of search results
+[class*="pageControlContainer"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+
+  [class*="activeButton"] {
+    background: var(--bt-red) !important;
+  }
+
+  [class*="roundButton"]:not([class*="activeButton"]):hover {
+    background: var(--default-hover) !important;
+  }
+}
+
+//message highlight after searching and jumping to
+[class*="backgroundFlash"] {
+  background: transparent !important;
+
+  li {
+    background: rgba(0, 0, 0, 0.2) !important;
+    border-radius: 5px 0 0 5px;
+  }
+}
+
+[class*="replyBar"] {
+  background: rgba(0, 0, 0, 0.1);
+  margin-top: 8px;
+
+  [class*="colorLink"] {
+    color: var(--bt-text);
+  }
+}
+
+//Chat attachment scroller
+[class*="channelAttachmentArea"] > li {
+  background: rgba(0, 0, 0, 0.1) !important;
+
+  [class*="actionBar"] [class*="wrapper"] {
+    background: rgba(0, 0, 0, 0.7) !important;
+  }
+}
+
+code {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+//???
+[class*="replying"] {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+
+  &::before {
+    left: 3px;
+    border-radius: 5px 0 0 5px;
+    background: var(--markup-intensive);
+    border-left: 2px solid var(--markup-intensive);
+  }
+}
+[class^="categoryFadeBlurple-"] {
+  background: var(--bt-red) !important;
+}
+
+[class*="chat"] form {
+  margin: 0px;
+}

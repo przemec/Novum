@@ -1,0 +1,57 @@
+@use "../core/mixins" as m;
+
+//addon error popout
+.bd-error-modal,
+.bd-error-modal-footer {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0px 0px !important;
+} 
+.bd-tab-bar .bd-tab-item.selected {
+  background: var(--bt-red);
+}
+//single error
+.bd-addon-error {
+  background: transparent !important;
+}
+.bd-addon-error-icon {
+  background: var(--bt-red);
+}
+
+//"public" button in upper left corner
+#bd-pub-button {
+  background: transparent;
+
+  &:hover {
+    background: var(--bt-red-hover);
+    color: var(--bt-text-hover);
+  }
+}
+
+//small popout at the bottom of the screen after loading theme
+.bd-toast:not([class*="success"]) {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+//settings section
+//button near page title ("Open Plugins Folder" etc.)
+.bd-button:not(.bd-addon-button) {
+  @include m.btred_important;
+}
+
+//plugins and themes pages
+.bd-addon-views > button {
+  background: transparent !important;
+}
+.bd-addon-views > button.selected {
+  background: var(--bt-blue-bg-hover) !important;
+}
+.bd-addon-card {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+.bd-addon-button {
+  background: transparent !important;
+}
+//space between edit and delete buttons
+.bd-controls > .bd-addon-button:last-of-type {
+  margin-left: 10px;
+}

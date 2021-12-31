@@ -1,0 +1,119 @@
+// Server channel tabbaritem 
+[class*="tabBarItem"]:hover {
+  border-bottom-color: var(--bt-red-hover) !important;
+}
+
+[class*="tabBarItem"][class*="da-selected"] {
+  border-bottom-color: var(--bt-red) !important;
+}
+
+//Channel list icons
+
+[class*="sidebar"] [class*="containerDefault"] {
+  [class*="icon"] {
+    color: rgba(255, 255, 255, 0.6) !important;
+
+    > path {
+      opacity: 0.6;
+    }
+
+    > path:last-of-type {
+      opacity: 0.9;
+    }
+  }
+
+  [class*="content"]:hover {
+    background: transparent !important;
+  }
+
+  [class*="modeMuted"] [class*="name"] {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  &[class*="selected"] [class*="content"] {
+    background: var(--default-selected) !important;
+    color: #ffffff !important;
+  }
+
+  [class*="selected"]:hover [class*="content"] {
+    background: var(--default-selected) !important;
+  }
+}
+
+[data-list-item-id*="active-threads"] {
+  [class*="name"],
+  [class*="icon"] {
+    color: var(--bt-text) !important;
+  }
+}
+
+//Userlimit on voice chat
+[class*="userLimit"] {
+  > [class*="wrapper"] {
+    border-radius: 5px !important;
+  }
+
+  [class*="total"] {
+    color: var(--markup-intensive);
+    background: rgba(0, 0, 0, 0.6) !important;
+
+    &::after {
+      border-right-color: rgba(0, 0, 0, 0.4) !important;
+    }
+  }
+
+  [class*="users"] {
+    color: var(--markup-normal);
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+}
+
+//Create voice|text channel popout
+[class*="focusLock"] [class*="modal"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  [class*="horizontalReverse"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  [class*="radioBar"] > div:not([class*="info"]) circle {
+    fill: var(--bt-red) !important;
+  }
+}
+
+//Server header name
+header h1[class*="name"] {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 55px;
+}
+[class^="sidebar"] [class*="selected"] header {
+  background: transparent;
+}
+
+//popout after clicking server name, focused option
+[class*="labelContainer"][class*="focused"] {
+  background: var(--bt-red) !important;
+}
+//Video & Screen buttons backgrounds
+[class*="panels"] [class*="actionButtons"] button {
+  background: var(--default-hover) !important;
+  color: var(--bt-text) !important;
+  &:hover {
+    background: var(--default-selected) !important;
+    color: var(--bt-text-hover) !important;
+  }
+}
+
+//Remove redundant create invite icon from channel list
+[aria-label="Create Invite"] {
+  display: none !important;
+}
+
+nav[class*="container"] > [class*="container"] > header:hover {
+  background: transparent !important;
+}
+
+[class*="layer"] [class*="animator"] [class*="container"][class*="scrollerBase"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}

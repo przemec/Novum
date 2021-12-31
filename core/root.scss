@@ -1,0 +1,87 @@
+:root {
+  // Replace discord root variables
+  --background-primary: transparent !important;
+  --background-accent: var(--bt-red);
+  --background-secondary: transparent !important;
+  --background-secondary: transparent !important;
+  --background-secondary-alt: transparent !important;
+  --background-tertiary: rgba(0, 0, 0, 0.1) !important;
+  --scrollbar-auto-thumb: var(--scroll-thumb);
+  --scrollbar-thin-thumb: var(--scroll-thumb);
+  --scrollbar-auto-track: transparent !important;
+  --scrollbar-thin-track: transparent !important;
+
+  //Initialize theme variables
+  --background-img: url("https://i.imgur.com/NOpaUeX.png");
+  --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
+  --profile-activity: #6d1515;
+  --default-hover: #d4393926;
+  --default-selected: #d336364d;
+  --bt-red: #b42a2acc;
+  --bt-red-hover: #c93838cc;
+  --bt-blue-bg: #774747;
+  --bt-blue-bg-hover: #803838;
+  --bt-text: #dddddd;
+  --bt-text-hover: #ffffff;
+  --scroll-thumb: #df6161b6;
+  --scroll-bg: #00000016;
+  --scroll-bg-bord: #00000000;
+  --markup-normal: #fd9fa0;
+  --markup-normal-transparent: #fca7a918;
+  --markup-intensive: #fd7a7c;
+  --markup-blue: #8f6060e6;
+  --markup-blue-light: #c28383e6;
+
+  --channels-default: rgba(255, 255, 255, 0.7);
+}
+
+//Background
+body::after {
+  background-image: var(--background-img) !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: left top;
+  z-index: -90;
+}
+
+//Remove main gray background colors
+[class^="appMount-"],
+[class^="app-"],
+[class^="bg-"] {
+  background: transparent !important;
+}
+
+//pasek nad discordem
+#app-mount > [class^="typeWindows"] {
+  height: 18px;
+  margin-top: 0px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 4px;
+}
+
+[class^="chat-"] > [class^="content-"] > div {
+  background: transparent !important;
+}
+
+[class^="wrapper-"] {
+  border: none;
+}
+
+[class^="sidebar-"] > nav > div:first-child,
+[class^="sidebar-"] + div section {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+//Server list scroller 
+[class^="scroller-"] {
+  background: transparent !important;
+}

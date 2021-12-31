@@ -1,0 +1,201 @@
+@use "../core/mixins" as m;
+//Settings icons
+
+//Space for icons
+[aria-label="USER_SETTINGS"] [class*="sidebarRegion"] [class*="item"] {
+  padding-left: 50px !important;
+
+  &[class*="selected"] {
+    background: var(--default-selected) !important;
+    color: var(--bt-text-hover) !important;
+  }
+
+  &:hover {
+    background: var(--default-hover) !important;
+    color: var(--bt-text) !important;
+  }
+}
+
+[aria-label="USER_SETTINGS"] [class*="sidebarRegionScroller"] [class*="item"]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 15px;
+  margin-top: -2px;
+  opacity: 0.3;
+  -webkit-transition: all 0.15s ease-in-out;
+  transition: all 0.15s ease-in-out;
+}
+
+[aria-controls="my-account-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/person.svg) !important;
+}
+
+[aria-controls="profile-customization-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/person-box.svg) !important;
+}
+
+[aria-controls="privacy-&-safety-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/security.svg) !important;
+}
+
+[aria-controls="authorized-apps-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/apps.svg) !important;
+}
+
+[aria-controls="connections-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/link.svg) !important;
+}
+
+//Billing Settings icons
+[aria-controls="discord-nitro-tab"] {
+  display: none;
+}
+
+[aria-controls="nitro-server-boost-tab"]::after {
+  background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
+}
+
+[aria-controls="subscriptions-tab"]::after {
+  background-image: url(https://discordapp.com/assets/5a24b20b84fb3eafc138916729386e76.svg) !important;
+}
+
+[aria-controls="library-inventory-tab"]::after {
+  background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
+  background-size: cover;
+}
+
+[aria-controls="billing-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/Credit_card.svg) !important;
+}
+
+//App settings icons
+
+[aria-controls="appearance-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/looks.svg) !important;
+}
+
+[aria-controls="accessibility-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/human.svg) !important;
+}
+
+[aria-controls="voice-&-video-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/mic.svg) !important;
+}
+
+[aria-controls="text-&-images-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/chat.svg) !important;
+}
+
+[aria-controls="notifications-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/notifications.svg) !important;
+}
+
+[aria-controls="keybinds-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/keyboard.svg) !important;
+}
+
+[aria-controls="language-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/language.svg) !important;
+}
+
+[aria-controls="windows-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/windows.svg) !important;
+}
+
+[aria-controls="streamer-mode-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/videocam.svg) !important;
+}
+
+[aria-controls="advanced-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/dots.svg) !important;
+}
+
+[aria-controls="game-activity-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/gamepad.svg) !important;
+}
+
+[aria-controls="overlay-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/desktop_windows.svg) !important;
+}
+
+//BDiscord icons
+
+.bd-settings-tab::after {
+  background: url(https://tomec.gitlab.io/novum/icons/betterdiscord.svg) !important;
+}
+
+.bd-emotes-tab::after {
+  background: url(https://tomec.gitlab.io/novum/icons/emote.svg) !important;
+}
+
+.bd-customcss-tab::after {
+  background: url(https://tomec.gitlab.io/novum/icons/code.svg) !important;
+}
+
+.bd-plugins-tab::after {
+  background: url(https://tomec.gitlab.io/novum/icons/puzzle.svg) !important;
+}
+
+.bd-themes-tab::after {
+  background: url(https://tomec.gitlab.io/novum/icons/palette.svg) !important;
+}
+
+//Changelog & Hypesquad and Exit icons
+[aria-controls="changelog-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/history.svg) !important;
+}
+
+[aria-controls="hypesquad-online-tab"]::after {
+  background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
+  background-size: cover;
+}
+
+[aria-controls="logout-tab"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
+}
+
+//Overlay notification labels
+[class*="notificationSettings"] {
+  [class*="selected"]:not([class*="disabled"]) {
+    background: var(--bt-red);
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  label:not([class*="selected"], [class*="disabled"]):hover {
+    background: var(--bt-red-hover);
+  }
+}
+
+[class*="accountProfileCard"] {
+  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+
+  [class*="fieldButton-"] {
+    @include m.btred_important;
+  }
+}
+
+[class*="profileBannerPreview"] {
+  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+}
+
+[aria-label="USER_SETTINGS"] [class^="info-"] > * {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+//"Privacy settings"
+//semi-transparent fields (green, orange and red)
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+  border-color: rgba(0, 230, 77, 0.3) !important;
+}
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
+  background: rgba(255, 153, 0, 0.3) !important;
+  border-color: rgba(255, 153, 0, 0.3) !important;
+}
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+  border-color: rgba(204, 0, 0, 0.3) !important;
+}

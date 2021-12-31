@@ -1,0 +1,51 @@
+@use "../core/mixins" as m;
+//Server catalogs
+[class*="wrapper"][class*="guilds"] {
+  [class*="folder"],
+  [class*="closedFolderIconWrapper"],
+  [class*="expandedFolderBackground"] {
+    background: transparent !important;
+  }
+
+  [class*="circleIconButton"],
+  [class*="listItemWrapper"] > a {
+    background: rgba(0, 0, 0, 0.6);
+    border-color: var(--markup-intensive);
+    color: var(--markup-intensive);
+
+    &:hover {
+      background: rgba(0, 0, 0, 0.7);
+    }
+  }
+
+  [class*="folderIconWrapper"],
+  [class*="expandedFolderBackground"]:not([class*="collapsed"]) {
+    background: rgba(0, 0, 0, 0.5) !important;
+    border-radius: 20px;
+  }
+}
+
+//Server folder edit popout
+//Custom color picker (server folder settings)
+[class*="colorPickerCustom"] {
+  background: rgba(0, 0, 0, 1) !important;
+  border-color: transparent;
+}
+
+//All folders have same colors
+svg[style*="color: "] path {
+  fill: var(--markup-normal);
+}
+
+//Create a server popout
+[class*="header"] h3 {
+  color: var(--bt-text);
+}
+
+[class*="footer"] h3 {
+  color: var(--bt-text);
+}
+
+[class*="footerButton"] {
+  @include m.btred_important;
+}
