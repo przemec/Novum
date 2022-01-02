@@ -138,14 +138,58 @@ input:focus {
 }
 
 //Where would u like to go? popout aka quickswitcher component
-
 [aria-label="Quick switcher"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-//Bot pill
+//Bot icon
+
+//bot icon on server user list
+[class*="nameAndDecorators"] { 
+  //making it stick to the right
+  justify-content: space-between;
+
+  [class*="botTagRegular"] {
+    transform: translateY(-2px);
+  }
+}
+//icon container
 [class*="botTagRegular"] {
-  background: var(--bt-red) !important;
+  background: transparent !important;
+  position: relative;
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0 !important;
+
+  //after clicking on bot profile - bot without custom nick
+  &:not([class*="WithNickname"]) {
+    top: 0px;
+    right: 0px;
+  }
+
+  //after clicking on bot profile - bot with custom nick
+  &[class*="WithNickname"] {
+    position: absolute;
+    transform: translateY(-4px);
+  }
+
+  //getting rid of "BOT" text
+  [class*="botText"] {
+    display: none;
+  }
+
+  //icon
+  &::after {
+    background: url(https://tomec.gitlab.io/novum/icons/bot.svg) !important;
+    background-size: cover !important;
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0px;
+    right: 0px;
+    opacity: 0.8;
+  }
 }
 
 //Random-located focus-locking popouts
@@ -178,10 +222,14 @@ input:focus {
   }
 }
 
-//Cards in settings, discord nitro, etc.
-[class*="card-"] {
+//Cards in settings, servers discover page, etc.
+//[class*="justify"] - cards in keybinds and activity status settings
+[class*="card-"]:not([class*="justify"]) {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
+}
+[class*="card-"][class*="justify"] {
+  box-shadow: 0px 0px;
 }
 
 //Tooltip
