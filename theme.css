@@ -1221,7 +1221,7 @@ nav[class*="container"] > [class*="container"] > header:hover {
 [class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) {
   background: transparent;
 }
-[class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) svg {
+[class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) [class*="iconWrapper"] svg {
   color: rgba(255, 255, 255, 0.7);
 }
 [class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) [class^="item"][tabindex="0"] {
@@ -1414,9 +1414,6 @@ input:focus {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class*="nameAndDecorators"] {
-  justify-content: space-between;
-}
 [class*="nameAndDecorators"] [class*="botTagRegular"] {
   transform: translateY(-2px);
 }

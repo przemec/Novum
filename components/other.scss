@@ -147,7 +147,7 @@ input:focus {
 //bot icon on server user list
 [class*="nameAndDecorators"] { 
   //making it stick to the right
-  justify-content: space-between;
+  // justify-content: space-between;
 
   [class*="botTagRegular"] {
     transform: translateY(-2px);
