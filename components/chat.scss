@@ -1,6 +1,6 @@
 @use "../core/mixins" as m;
 
-// Channel Textarea (big chat textinput) or CHAT 
+// Channel Textarea (big chat textinput) or CHAT
 [class^="channelTextArea"] {
   border-radius: 8px;
 
@@ -35,7 +35,7 @@
   }
 }
 
-// Emote, Gif, Sticker popout 
+// Emote, Gif, Sticker popout
 [class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
   background: rgba(0, 0, 0, 0.9) !important;
 
@@ -119,15 +119,9 @@
 }
 
 //Embed
-[class*="message"] {
-  a {
-    color: var(--markup-normal);
-  }
-
-  [class^="embedWrapper"] {
-    background: var(--markup-normal-transparent) !important;
-    border-color: var(--markup-intensive) !important;
-  }
+[class*="message"] [class^="embedWrapper"] {
+  background: var(--markup-normal-transparent) !important;
+  border-color: var(--markup-intensive) !important;
 }
 
 [class^="messageAttachment"] {
