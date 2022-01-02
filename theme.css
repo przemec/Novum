@@ -9,6 +9,7 @@
   --scrollbar-thin-thumb: var(--scroll-thumb);
   --scrollbar-auto-track: transparent !important;
   --scrollbar-thin-track: transparent !important;
+  --text-link: var(--markup-normal);
   --background-img: url("https://i.imgur.com/NOpaUeX.png");
   --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
   --profile-activity: #6d1515;
@@ -180,9 +181,6 @@ body::after {
   color: var(--markup-normal) !important;
 }
 
-[class*="message"] a {
-  color: var(--markup-normal);
-}
 [class*="message"] [class^="embedWrapper"] {
   background: var(--markup-normal-transparent) !important;
   border-color: var(--markup-intensive) !important;
@@ -1009,6 +1007,67 @@ nav[class*="container"] > [class*="container"] > header:hover {
   margin-left: 10px;
 }
 
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+  border-color: rgba(0, 230, 77, 0.3) !important;
+}
+
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
+  background: rgba(255, 153, 0, 0.3) !important;
+  border-color: rgba(255, 153, 0, 0.3) !important;
+}
+
+[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+  border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+[class^="connectedAccounts"] > [class^="wrapper"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 5px;
+  transition: transform 200ms ease-in-out;
+}
+[class^="connectedAccounts"] > [class^="wrapper"]:hover {
+  transform: scale(1.05);
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[class^="connectionList"] > [class^="connection"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  border: 1px solid #000000 !important;
+  border-radius: 10px;
+}
+
+[class*="notificationSettings"] [class*="selected"]:not([class*="disabled"]) {
+  background: var(--bt-red);
+  border-color: transparent;
+  box-shadow: none;
+}
+[class*="notificationSettings"] label:not([class*="selected"], [class*="disabled"]):hover {
+  background: var(--bt-red-hover);
+}
+
+[class*="accountProfileCard"] {
+  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+}
+[class*="accountProfileCard"] [class*="fieldButton-"] {
+  background: var(--bt-red) !important;
+  color: var(--bt-text) !important;
+}
+[class*="accountProfileCard"] [class*="fieldButton-"]:hover {
+  background: var(--bt-red-hover) !important;
+  color: var(--bt-text-hover) !important;
+}
+
+[class*="profileBannerPreview"] {
+  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+}
+
+[aria-label="USER_SETTINGS"] [class^="info-"] > * {
+  color: rgba(255, 255, 255, 0.5);
+}
+
 [aria-label="USER_SETTINGS"] [class*="sidebarRegion"] [class*="item"] {
   padding-left: 50px !important;
 }
@@ -1153,50 +1212,6 @@ nav[class*="container"] > [class*="container"] > header:hover {
 
 [aria-controls="logout-tab"]::after {
   background: url(https://tomec.gitlab.io/novum/icons/exit.svg) !important;
-}
-
-[class*="notificationSettings"] [class*="selected"]:not([class*="disabled"]) {
-  background: var(--bt-red);
-  border-color: transparent;
-  box-shadow: none;
-}
-[class*="notificationSettings"] label:not([class*="selected"], [class*="disabled"]):hover {
-  background: var(--bt-red-hover);
-}
-
-[class*="accountProfileCard"] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
-}
-[class*="accountProfileCard"] [class*="fieldButton-"] {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
-}
-[class*="accountProfileCard"] [class*="fieldButton-"]:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
-}
-
-[class*="profileBannerPreview"] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
-}
-
-[aria-label="USER_SETTINGS"] [class^="info-"] > * {
-  color: rgba(255, 255, 255, 0.5);
-}
-
-[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
-  background: rgba(0, 230, 77, 0.3) !important;
-  border-color: rgba(0, 230, 77, 0.3) !important;
-}
-
-[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
-  background: rgba(255, 153, 0, 0.3) !important;
-  border-color: rgba(255, 153, 0, 0.3) !important;
-}
-
-[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
-  background: rgba(244, 40, 40, 0.3) !important;
-  border-color: rgba(204, 0, 0, 0.3) !important;
 }
 
 [class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) {
@@ -1395,8 +1410,41 @@ input:focus {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+[class*="nameAndDecorators"] {
+  justify-content: space-between;
+}
+[class*="nameAndDecorators"] [class*="botTagRegular"] {
+  transform: translateY(-2px);
+}
+
 [class*="botTagRegular"] {
-  background: var(--bt-red) !important;
+  background: transparent !important;
+  position: relative;
+  width: 20px !important;
+  height: 20px !important;
+  margin-top: 0 !important;
+}
+[class*="botTagRegular"]:not([class*="WithNickname"]) {
+  top: 0px;
+  right: 0px;
+}
+[class*="botTagRegular"][class*="WithNickname"] {
+  position: absolute;
+  transform: translateY(-4px);
+}
+[class*="botTagRegular"] [class*="botText"] {
+  display: none;
+}
+[class*="botTagRegular"]::after {
+  background: url(https://tomec.gitlab.io/novum/icons/bot.svg) !important;
+  background-size: cover !important;
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  bottom: 0px;
+  right: 0px;
+  opacity: 0.8;
 }
 
 [class*="focusLock"] [class*="root"] {
@@ -1423,9 +1471,13 @@ input:focus {
   fill: white;
 }
 
-[class*="card-"] {
+[class*="card-"]:not([class*="justify"]) {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
+}
+
+[class*="card-"][class*="justify"] {
+  box-shadow: 0px 0px;
 }
 
 [class*="tooltipPrimary"],
