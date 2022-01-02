@@ -126,6 +126,10 @@ body::after {
   color: var(--bt-text-hover) !important;
 }
 
+[class*="chatContent"] form > div > [class^="wrapper"] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
 [class*="chatContent"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
   background: var(--bt-red) !important;
   color: var(--bt-text) !important;
@@ -221,6 +225,13 @@ body::after {
 [class*="layer"] [class*="wrapper"] [class*="emojiPicker"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
+[class*="layer"] [class*="wrapper"] [class*="emojiPicker"] [class*="emojiItem"] {
+  transition: transform 0.2s ease-in-out;
+}
+[class*="layer"] [class*="wrapper"] [class*="emojiPicker"] [class*="emojiItemSelected"] {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
 
 [class^="threadSidebar"] {
   background: rgba(0, 0, 0, 0.95);
@@ -232,10 +243,6 @@ body::after {
 
 [class*="hasThread"] [class*="cta"] {
   color: var(--markup-normal) !important;
-}
-
-[class*="layerContainer"] [aria-label="Threads"] {
-  background: rgba(0, 0, 0, 0.95) !important;
 }
 
 [class*="messagesWrapper"] [class*="content"] [class*="divider"] {
@@ -276,9 +283,10 @@ body::after {
   visibility: hidden;
 }
 
-#status-picker {
-  transition: background 120ms;
+[id^="status-picker"] {
+  transition: background 200ms ease-out;
 }
+
 #status-picker-online {
   color: #43b581;
 }
@@ -304,7 +312,7 @@ body::after {
   background: #747f8d3d;
 }
 #status-picker-custom-status[class*="focused"] {
-  background: #ffcd4d3d;
+  background: #ff4db53d;
 }
 
 [class*="newMessagesBar"] {
@@ -336,16 +344,12 @@ body::after {
 [class*="title"] [class*="search"] [class*="search"]:not([class*="open"]):hover [class*="searchBar"] {
   width: 240px;
   background: rgba(0, 0, 0, 0.15);
-  border-color: var(--bt-red);
 }
 [class*="title"] [class*="search"] [class*="search"]:not([class*="open"]):hover [class*="searchBar"] [class*="iconContainer"] {
   transform: scale(1);
 }
 [class*="title"] [class*="search"] [class*="search"]:not([class*="open"]):hover [class*="searchBar"] [class*="iconContainer"] [class*="icon"] {
   color: var(--text-muted);
-}
-[class*="title"] [class*="search"] [class*="search"] [class*="searchBar"] {
-  border-bottom: 2px solid var(--bt-red);
 }
 
 [class*="DraftEditor"] [class*="searchFilter"],

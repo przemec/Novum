@@ -54,6 +54,9 @@
 }
 
 //Follow Button near chat
+[class*="chatContent"] form > div > [class^="wrapper"] {
+  background: rgba(0, 0, 0, 0.3);
+}
 [class*="chatContent"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
   @include m.btred_important;
 }
@@ -166,6 +169,14 @@
 //Emojipicker from chat
 [class*="layer"] [class*="wrapper"] [class*="emojiPicker"] {
   background: rgba(0, 0, 0, 0.95) !important;
+
+  [class*="emojiItem"] {
+    transition: transform 0.2s ease-in-out;
+  }
+  [class*="emojiItemSelected"] {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
 }
 
 //new thread popout
@@ -180,10 +191,6 @@
 
 [class*="hasThread"] [class*="cta"] {
   color: var(--markup-normal) !important;
-}
-
-[class*="layerContainer"] [aria-label="Threads"] {
-  background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //Unread & Day chat dividers
@@ -230,13 +237,12 @@
 }
 
 //Chat status picker background and transitions
-
+[id^="status-picker"] {
+  transition: background 200ms ease-out;
+}
 #status-picker {
-  transition: background 120ms;
-
   &-online {
     color: #43b581;
-
     &[class*="focused"] {
       background: #43b58244;
     }
@@ -244,7 +250,6 @@
 
   &-idle {
     color: #faa61a;
-
     &[class*="focused"] {
       background: #faa81a42;
     }
@@ -252,7 +257,6 @@
 
   &-dnd {
     color: #f04747;
-
     &[class*="focused"] {
       background: #b83a3c3d;
     }
@@ -260,14 +264,13 @@
 
   &-invisible {
     color: #747f8d;
-
     &[class*="focused"] {
       background: #747f8d3d;
     }
   }
 
   &-custom-status[class*="focused"] {
-    background: #ffcd4d3d;
+    background: #ff4db53d;
   }
 }
 
@@ -306,7 +309,6 @@
     &:hover [class*="searchBar"] {
       width: 240px;
       background: rgba(0, 0, 0, 0.15);
-      border-color: var(--bt-red);
 
       [class*="iconContainer"] {
         transform: scale(1);
@@ -316,9 +318,6 @@
         }
       }
     }
-  }
-  [class*="search"] [class*="searchBar"] {
-    border-bottom: 2px solid var(--bt-red);
   }
 }
 
