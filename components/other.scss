@@ -123,8 +123,6 @@ input:focus {
   display: none !important;
 }
 
-//https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1
-
 //Add novum icon into settings
 [class*="socialLinks"]::after {
   content: "";
@@ -133,7 +131,7 @@ input:focus {
   height: 24px;
   margin-top: -5px;
   margin-left: 6px;
-  background: url(https://gitlab.com/uploads/-/system/project/avatar/12978772/NovumThemeLogo.png?width=1) center/cover no-repeat;
+  background: url(https://t0mec.github.io/Novum/icons/NovumLogo.png) center/cover no-repeat;
   filter: contrast(0%) brightness(1.4);
 }
 
@@ -181,7 +179,7 @@ input:focus {
 
   //icon
   &::after {
-    background: url(https://tomec.gitlab.io/novum/icons/bot.svg) !important;
+    background: url(https://t0mec.github.io/Novum/icons/bot.svg) !important;
     background-size: cover !important;
     content: "";
     position: absolute;
