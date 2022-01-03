@@ -2,7 +2,7 @@
 
 ### Big custom theme with couple of small addons.
 
-To use theme, You need to download a Discord extension called [BetterDiscord](https://betterdiscord.app/) and then, after installation, put [Novum.theme.css](https://gitlab.com/tomec/novum/-/blob/master/Novum.theme.css) into "themes" folder (it can be found in BetterDiscord settings).
+To use theme, You need to download a Discord extension called [BetterDiscord](https://betterdiscord.app/) and then, after installation, put [Novum.theme.css](https://github.com/T0mec/Novum/blob/master/Novum.theme.css) into "themes" folder (it can be found in BetterDiscord settings).
 
 ## Preview
 ![Preview](https://i.imgur.com/YNQ1LFc.png)
