@@ -160,6 +160,7 @@ input:focus {
   width: 20px !important;
   height: 20px !important;
   margin-top: 0 !important;
+  padding: 0 !important;
 
   //after clicking on bot profile - bot without custom nick
   &:not([class*="WithNickname"]) {
@@ -189,6 +190,13 @@ input:focus {
     bottom: 0px;
     right: 0px;
     opacity: 0.8;
+  }
+
+  //verified bot check icon
+  & > svg {
+    color: #fff;
+    transform: translate(18px, -5px);
+    z-index: 2;
   }
 }
 
