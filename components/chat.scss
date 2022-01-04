@@ -116,6 +116,33 @@
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+//Edit uploaded file popout
+[class^="uploadModal"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
+
+  [class^="footer"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+  label[class*="checked"] [class*="checkbox"] {
+    background: var(--bt-red) !important;
+    border-color: transparent !important;
+
+    svg path {
+      fill: #fff !important;
+    }
+  }
+}
+//loading panel while uploading file
+[id^="message-content-Uploader"] > div[class*="attachment"] {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: #000000;
+
+  [class*="progressBar"] {
+    background: var(--markup-normal) !important;
+  }
+}
+
 //Links
 [class*="embedLink"] {
   color: var(--markup-normal) !important;

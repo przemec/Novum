@@ -181,6 +181,29 @@ body::after {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+[class^=uploadModal] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
+}
+[class^=uploadModal] [class^=footer] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class^=uploadModal] label[class*=checked] [class*=checkbox] {
+  background: var(--bt-red) !important;
+  border-color: transparent !important;
+}
+[class^=uploadModal] label[class*=checked] [class*=checkbox] svg path {
+  fill: #fff !important;
+}
+
+[id^=message-content-Uploader] > div[class*=attachment] {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: #000000;
+}
+[id^=message-content-Uploader] > div[class*=attachment] [class*=progressBar] {
+  background: var(--markup-normal) !important;
+}
+
 [class*=embedLink] {
   color: var(--markup-normal) !important;
 }
