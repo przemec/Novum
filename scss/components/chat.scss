@@ -116,6 +116,16 @@
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+//hovering file above discord app - upload popout
+[class^="uploadDropModal"] {
+  [class^="bgScale"] {
+    background: var(--profile-activity) !important;
+  }
+  [class*="icons"] {
+    filter: hue-rotate(110deg) contrast(1.3) !important;
+  }
+}
+
 //Edit uploaded file popout
 [class^="uploadModal"] {
   background: rgba(0, 0, 0, 0.95) !important;
