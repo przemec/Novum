@@ -857,6 +857,111 @@ nav[class*=container] > [class*=container] > header:hover {
   background: var(--bt-red) !important;
 }
 
+[class^=userPopout] {
+  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background-size: cover;
+}
+[class^=userPopout] [class^=bodyInnerWrapper],
+[class^=userPopout] [class^=footer],
+[class^=userPopout] [class^=avatar] {
+  background: transparent !important;
+  border-color: transparent !important;
+}
+[class^=userPopout] [class^=body][style] {
+  overflow: hidden !important;
+  padding: 0;
+  padding-right: 0 !important;
+}
+[class^=userPopout] [class*=divider] {
+  display: none;
+}
+[class^=userPopout] #permissions-popout,
+[class^=userPopout] h3:not([class*=nickname], [class*=ellipsis]),
+[class^=userPopout] [class*=rolesList]:not([class*=member-perm]),
+[class^=userPopout] [class*=textarea],
+[class^=userPopout] div[class*=customStatus],
+[class^=userPopout] [class*=aboutMeBody] {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+[class^=userPopout] [class*=bodyTitle] {
+  margin-top: 8px;
+  color: var(--header-secondary);
+}
+[class^=userPopout] [class*=aboutMeSection] {
+  margin-bottom: 40px;
+}
+[class^=userPopout] [class*=member-perms-title] {
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+}
+[class^=userPopout] textarea {
+  padding-left: 32px !important;
+  padding-right: 16px;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] {
+  position: relative;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleCircle] {
+  position: absolute;
+  width: 100%;
+  margin: 0;
+  border-radius: 4px;
+  z-index: 1;
+  opacity: 0.3;
+  transform: scaleY(1.5);
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleCircle] svg {
+  cursor: pointer;
+  position: absolute;
+  right: 4px;
+  opacity: 0;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleName] {
+  z-index: 2;
+  margin-left: 4px;
+  margin-right: 10px;
+  transform: translateX(6px);
+  -webkit-transition: transform 0.15s ease-in-out;
+  transition: transform 0.15s ease-in-out;
+  overflow: visible;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleName]::after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 10px;
+  top: 50%;
+  right: 0px;
+  transform: translate(14px, -50%);
+  -webkit-transition: width 0.15s ease-in-out;
+  transition: width 0.15s ease-in-out;
+  pointer-events: none;
+}
+[class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName] {
+  transform: translateX(0px);
+}
+[class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName]::after {
+  width: 10px;
+  background: url(https://przemec.github.io/Novum/icons/close.svg);
+  background-size: 10px;
+}
+
+[class*=profileBanner-] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=popoutBanner]:not([class*=BannerPremium])[style] {
+  background: transparent !important;
+}
+
+[aria-label="User Badges"] {
+  background: transparent !important;
+}
+
 [class^=activityUserPopout-] {
   background: var(--profile-activity);
   margin-bottom: 30px;
@@ -917,64 +1022,6 @@ nav[class*=container] > [class*=container] > header:hover {
 
 [class^=activityUserPopout-] > [class^=horizontal-] > button {
   background: var(--bt-red) !important;
-}
-
-[class*=profileBanner-] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-
-[class*=popoutBanner]:not([class*=BannerPremium])[style] {
-  background: transparent !important;
-}
-
-[class^=userPopout] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
-  background-size: cover;
-}
-[class^=userPopout] [class^=bodyInnerWrapper],
-[class^=userPopout] [class^=footer],
-[class^=userPopout] [class^=avatar] {
-  background: transparent !important;
-  border-color: transparent !important;
-}
-[class^=userPopout] [class^=body][style] {
-  overflow: hidden !important;
-  padding: 0;
-  padding-right: 0 !important;
-}
-[class^=userPopout] [class*=divider] {
-  display: none;
-}
-[class^=userPopout] #permissions-popout,
-[class^=userPopout] h3:not([class*=nickname], [class*=ellipsis]),
-[class^=userPopout] [class*=rolesList]:not([class*=member-perm]),
-[class^=userPopout] [class*=textarea],
-[class^=userPopout] div[class*=customStatus],
-[class^=userPopout] [class*=aboutMeBody] {
-  padding-left: 16px;
-  padding-right: 16px;
-}
-[class^=userPopout] [class*=bodyTitle] {
-  margin-top: 8px;
-  color: var(--header-secondary);
-}
-[class^=userPopout] [class*=aboutMeSection] {
-  margin-bottom: 40px;
-}
-[class^=userPopout] [class*=member-perms-title] {
-  text-transform: uppercase;
-  margin-bottom: 8px;
-  font-weight: 700;
-  font-size: 12px;
-  line-height: 16px;
-}
-[class^=userPopout] textarea {
-  padding-left: 32px !important;
-  padding-right: 16px;
-}
-
-[aria-label="User Badges"] {
-  background: transparent !important;
 }
 
 [class*=member] [class*=activityText] {
@@ -1382,14 +1429,24 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
   border-color: transparent !important;
 }
 
-[class*=wordmark]:after {
-  content: "Novum";
+[class*=wordmark] svg {
+  display: none;
+}
+[class*=wordmark]::before, [class*=wordmark]::after {
+  height: 16px;
   font-size: 16px;
   font-family: var(--font-primary);
   font-weight: bold;
 }
-[class*=wordmark] svg {
-  display: none;
+[class*=wordmark]::before {
+  content: "Novum";
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 2px;
+}
+[class*=wordmark]::after {
+  content: "v5.3";
+  color: rgba(255, 255, 255, 0.3);
+  margin-left: 8px;
 }
 
 [class*=homeIcon] {

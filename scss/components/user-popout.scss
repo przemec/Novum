@@ -1,76 +1,4 @@
 @use "../core/mixins" as m;
-//Styling for in game or other member activity popout
-[class^="activityUserPopout-"] {
-  background: var(--profile-activity);
-  margin-bottom: 30px;
-  // width: 300px;
-  margin-top: 30px;
-  padding-left: 16px;
-  padding-right: 16px;
-
-  [class*="platformIcon"] {
-    right: 16px !important;
-  }
-
-  button {
-    @include m.btred_important;
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    height: 21px;
-    z-index: 1;
-    width: 300px;
-    top: -20px;
-    left: 0;
-    background: var(--profile-activity);
-    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
-    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
-    animation: animate2 8s linear infinite;
-    animation-delay: 0s;
-    opacity: 1;
-  }
-
-  &::after {
-    content: "";
-    position: absolute;
-    height: 21px;
-    z-index: 1;
-    width: 300px;
-    bottom: -20px;
-    left: 0;
-    background: var(--profile-activity);
-    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
-    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
-    animation: animate2 8s linear infinite;
-    animation-delay: 0s;
-    opacity: 1;
-    transform: rotate(-180deg);
-  }
-
-  @keyframes animate2 {
-    0% {
-      -webkit-mask-position-x: 268px;
-    }
-
-    100% {
-      -webkit-mask-position-x: 0;
-    }
-  }
-}
-
-[class^="activityUserPopout-"] > [class^="horizontal-"] > button {
-  background: var(--bt-red) !important;
-}
-
-[class*="profileBanner-"] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-
-[class*="popoutBanner"]:not([class*="BannerPremium"])[style] {
-  background: transparent !important;
-}
 
 [class^="userPopout"] {
   background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
@@ -124,8 +52,129 @@
     padding-left: 32px !important;
     padding-right: 16px;
   }
+
+  //roles style change
+  [class*="rolesList"] > [class*="role"] {
+    position: relative;
+    [class*="roleCircle"] {
+      position: absolute;
+      width: 100%;
+      margin: 0;
+      border-radius: 4px;
+      z-index: 1;
+      opacity: 0.3;
+      transform: scaleY(1.5);
+      svg {
+        cursor: pointer;
+        position: absolute;
+        right: 4px;
+        opacity: 0;
+      }
+    }
+    [class*="roleName"] {
+      z-index: 2;
+      margin-left: 4px;
+      margin-right: 10px;
+      transform: translateX(6px);
+      -webkit-transition: transform 0.15s ease-in-out;
+      transition: transform 0.15s ease-in-out;
+      overflow: visible;
+      &::after {
+        content: "";
+        position: absolute;
+        width: 0px;
+        height: 10px;
+        top: 50%;
+        right: 0px;
+        transform: translate(14px, -50%);
+        -webkit-transition: width 0.15s ease-in-out;
+        transition: width 0.15s ease-in-out;
+        pointer-events: none;
+      }
+    }
+    &:hover [class*="roleName"] {
+      transform: translateX(0px);
+      &::after {
+        width: 10px;
+        background: url(https://przemec.github.io/Novum/icons/close.svg);
+        background-size: 10px;
+      }
+    }
+  }
+}
+
+[class*="profileBanner-"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*="popoutBanner"]:not([class*="BannerPremium"])[style] {
+  background: transparent !important;
 }
 
 [aria-label="User Badges"] {
   background: transparent !important;
+}
+
+//Styling for in game or other member activity popout
+[class^="activityUserPopout-"] {
+  background: var(--profile-activity);
+  margin-bottom: 30px;
+  // width: 300px;
+  margin-top: 30px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  [class*="platformIcon"] {
+    right: 16px !important;
+  }
+
+  button {
+    @include m.btred_important;
+  }
+
+  //activity animations
+  &::before {
+    content: "";
+    position: absolute;
+    height: 21px;
+    z-index: 1;
+    width: 300px;
+    top: -20px;
+    left: 0;
+    background: var(--profile-activity);
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    animation: animate2 8s linear infinite;
+    animation-delay: 0s;
+    opacity: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    height: 21px;
+    z-index: 1;
+    width: 300px;
+    bottom: -20px;
+    left: 0;
+    background: var(--profile-activity);
+    mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    -webkit-mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="268" height="21" viewBox="0 0 268 21"><path d="M0 21V7.19143C0 7.19143 35.3844 -2.31216 79.4578 0.530784C126.044 1.7492 142.689 13.564 202.466 14.5019C242.561 14.5019 268 7.35388 268 7.35388V21H0Z"/></svg>');
+    animation: animate2 8s linear infinite;
+    animation-delay: 0s;
+    opacity: 1;
+    transform: rotate(-180deg);
+  }
+  @keyframes animate2 {
+    0% {
+      -webkit-mask-position-x: 268px;
+    }
+
+    100% {
+      -webkit-mask-position-x: 0;
+    }
+  }
+}
+
+[class^="activityUserPopout-"] > [class^="horizontal-"] > button {
+  background: var(--bt-red) !important;
 }

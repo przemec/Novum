@@ -69,15 +69,26 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 
 //Replace discord wordmark with theme name
 [class*="wordmark"] {
-  &:after {
-    content: "Novum";
+  svg {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    height: 16px;
     font-size: 16px;
     font-family: var(--font-primary);
     font-weight: bold;
   }
-
-  svg {
-    display: none;
+  &::before {
+    content: "Novum";
+    color: rgba(255, 255, 255, 0.5);
+    margin-left: 2px;
+  }
+  &::after {
+    content: "v5.3";
+    color: rgba(255, 255, 255, 0.3);
+    margin-left: 8px;
   }
 }
 
@@ -143,7 +154,7 @@ input:focus {
 //Bot icon
 
 //bot icon on server user list
-[class*="nameAndDecorators"] { 
+[class*="nameAndDecorators"] {
   //making it stick to the right
   // justify-content: space-between;
 
