@@ -650,25 +650,45 @@ body::after {
     transform: rotate(7deg);
   }
 }
-[class*=wrapper][class*=guilds] [class*=folder],
-[class*=wrapper][class*=guilds] [class*=closedFolderIconWrapper],
-[class*=wrapper][class*=guilds] [class*=expandedFolderBackground] {
-  background: transparent !important;
-}
-[class*=wrapper][class*=guilds] [class*=circleIconButton],
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a {
   background: rgba(0, 0, 0, 0.6);
   border-color: var(--markup-intensive);
   color: var(--markup-intensive);
 }
-[class*=wrapper][class*=guilds] [class*=circleIconButton]:hover,
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a:hover {
   background: rgba(0, 0, 0, 0.7);
 }
+[class*=wrapper][class*=guilds] [class*=folder],
+[class*=wrapper][class*=guilds] [class*=closedFolderIconWrapper],
+[class*=wrapper][class*=guilds] [class*=expandedFolderBackground] {
+  background: transparent !important;
+}
 [class*=wrapper][class*=guilds] [class*=folderIconWrapper],
 [class*=wrapper][class*=guilds] [class*=expandedFolderBackground]:not([class*=collapsed]) {
-  background: rgba(0, 0, 0, 0.5) !important;
+  background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 20px;
+}
+[class*=wrapper][class*=guilds] [class*=circleIconButton] {
+  background: rgba(0, 0, 0, 0.3) !important;
+  color: var(--markup-intensive);
+}
+[class*=wrapper][class*=guilds] #bd-pub-button,
+[class*=wrapper][class*=guilds] [class^=wrapper] > [class*=childWrapper] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+[class*=wrapper][class*=guilds] [class*=iconBadge] {
+  background: var(--bt-red) !important;
+}
+[class*=wrapper][class*=guilds] [class*=numberBadge] {
+  background: var(--bt-red) !important;
+}
+
+#guild-context-invite-people:not(:hover) {
+  color: var(--markup-normal);
+}
+
+[class^=unreadMentionsIndicator] > [class*=bar] {
+  background: var(--bt-red);
 }
 
 [class*=colorPickerCustom] {
@@ -1434,18 +1454,19 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
 }
 [class*=wordmark]::before, [class*=wordmark]::after {
   height: 16px;
-  font-size: 16px;
   font-family: var(--font-primary);
-  font-weight: bold;
 }
 [class*=wordmark]::before {
   content: "Novum";
   color: rgba(255, 255, 255, 0.5);
   margin-left: 2px;
+  font-size: 16px;
+  font-weight: bold;
 }
 [class*=wordmark]::after {
   content: "v5.3";
   color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
   margin-left: 8px;
 }
 

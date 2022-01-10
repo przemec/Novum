@@ -1,13 +1,7 @@
 @use "../core/mixins" as m;
-//Server catalogs
-[class*="wrapper"][class*="guilds"] {
-  [class*="folder"],
-  [class*="closedFolderIconWrapper"],
-  [class*="expandedFolderBackground"] {
-    background: transparent !important;
-  }
 
-  [class*="circleIconButton"],
+//Servers list
+[class*="wrapper"][class*="guilds"] {
   [class*="listItemWrapper"] > a {
     background: rgba(0, 0, 0, 0.6);
     border-color: var(--markup-intensive);
@@ -18,11 +12,48 @@
     }
   }
 
+  //server folders
+  [class*="folder"],
+  [class*="closedFolderIconWrapper"],
+  [class*="expandedFolderBackground"] {
+    background: transparent !important;
+  }
   [class*="folderIconWrapper"],
   [class*="expandedFolderBackground"]:not([class*="collapsed"]) {
-    background: rgba(0, 0, 0, 0.5) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
     border-radius: 20px;
   }
+
+  //server discovery and add server buttons
+  [class*="circleIconButton"] {
+    background: rgba(0, 0, 0, 0.3) !important;
+    color: var(--markup-intensive);
+  }
+
+  //"public" bd button, server without image icon
+  #bd-pub-button,
+  [class^="wrapper"] > [class*="childWrapper"] {
+    background: rgba(0, 0, 0, 0.3) !important;
+  }
+
+  //connected to voicechat icon badge
+  [class*="iconBadge"] {
+    background: var(--bt-red) !important;
+  }
+  //unread messages count badge
+  [class*="numberBadge"] {
+    background: var(--bt-red) !important;
+  }
+}
+
+//"Invite People" button after clicking on server with right click
+#guild-context-invite-people:not(:hover) {
+  color: var(--markup-normal);
+}
+
+//unread messages indicator
+[class^="unreadMentionsIndicator"] > [class*="bar"] {
+  background: var(--bt-red);
 }
 
 //Server folder edit popout
@@ -41,11 +72,9 @@ svg[style*="color: "] path {
 [class*="header"] h3 {
   color: var(--bt-text);
 }
-
 [class*="footer"] h3 {
   color: var(--bt-text);
 }
-
 [class*="footerButton"] {
   @include m.btred_important;
 }
