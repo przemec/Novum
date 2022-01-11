@@ -30,7 +30,7 @@ CUSTOMIZABLE BACKGROUND IMAGE AND MAIN COLORS BELOW*
 */
 
 root {
-  --app-background: url("https://i.imgur.com/NOpaUeX.png"); /* main app background image [default: url("https://i.imgur.com/NOpaUeX.png")] */
+  --app-background: url("https://przemec.github.io/Novum/assets/images/app.png"); /* main app background image [default: url("https://przemec.github.io/Novum/assets/images/app.png")] */
   --main-color: #b42a2acc; /* main color (used mostly in buttons) [default: #b42a2acc] */
   --main-color-selected: #c93838cc; /* [default: #c93838cc] */
   --main-color-semitransparent: #d4393926; /* [default: #d4393926] */
@@ -41,7 +41,7 @@ root {
   --accent-desaturated: #c28383e6; /* [default: #c28383e6] */
   --button-text: #dddddd; /* [default: #dddddd] */
   --button-text-selected: #ffffff; /* [default: #ffffff] */
-  --profile-background: url("https://i.imgur.com/F7m74F5.png"); /* background of profile left-click popout [default: url("https://i.imgur.com/F7m74F5.png")] */
+  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png"); /* background of profile popout [default: url("https://przemec.github.io/Novum/assets/images/profile.png")] */
   --profile-activity: #6d1515; /* color of activity field in profile left-click popout [default: #6d1515] */
   --scroll-thumb-color: #df6161b6; /* color of scrollbars [default: #df6161b6] */
 }
