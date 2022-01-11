@@ -30,29 +30,21 @@ CUSTOMIZABLE BACKGROUND IMAGE AND MAIN COLORS BELOW*
 */
 
 root {
-  --app-background: url("https://i.imgur.com/NOpaUeX.png");
-  --main-color: #b42a2acc;
-  --main-color-selected: #c93838cc;
-  --main-color-semitransparent: #d4393926;
-  --main-color-semitransparent-selected: #d336364d;
-  --accent-color: #fd9fa0;
-  --accent-color-semitransparent: #fca7a918;
-  --accent-saturated: #fd7a7c;
-  --accent-desaturated: #c28383e6;
-  --button-text: #dddddd;
-  --button-text-selected: #ffffff;
-  --profile-background: url("https://i.imgur.com/F7m74F5.png");
-  --profile-activity: #6d1515;
-  --scroll-thumb-color: #df6161b6;
+  --app-background: url("https://i.imgur.com/NOpaUeX.png"); /* main app background image [default: url("https://i.imgur.com/NOpaUeX.png")] */
+  --main-color: #b42a2acc; /* main color (used mostly in buttons) [default: #b42a2acc] */
+  --main-color-selected: #c93838cc; /* [default: #c93838cc] */
+  --main-color-semitransparent: #d4393926; /* [default: #d4393926] */
+  --main-color-semitransparent-selected: #d336364d; /* [default: #d336364d] */
+  --accent-color: #fd9fa0; /* accent color (used in links, mentions etc.) [default: #fd9fa0] */
+  --accent-color-semitransparent: #fca7a918; /* [default: #fca7a918] */
+  --accent-saturated: #fd7a7c; /* [default: #fd7a7c] */
+  --accent-desaturated: #c28383e6; /* [default: #c28383e6] */
+  --button-text: #dddddd; /* [default: #dddddd] */
+  --button-text-selected: #ffffff; /* [default: #ffffff] */
+  --profile-background: url("https://i.imgur.com/F7m74F5.png"); /* background of profile left-click popout [default: url("https://i.imgur.com/F7m74F5.png")] */
+  --profile-activity: #6d1515; /* color of activity field in profile left-click popout [default: #6d1515] */
+  --scroll-thumb-color: #df6161b6; /* color of scrollbars [default: #df6161b6] */
 }
-
-/*
---background- : default background image of app
---default- : background of some fields currently selected or hovered by mouse
---bt- : buttons colors (most of buttons edited in theme are blue, red: 'cancel' buttons etc.)
---scroll- : color and background of scrollbars in app
---accent- : color of some details throughout the app (links, protips etc.)
-*/
 
 /*
 ===================================================================
@@ -62,7 +54,7 @@ root {
 Credits:
 - Current background is taken (with the consent of author) and edited from 'Nova' theme made by https://github.com/din0s/
 - Idea of icons in Settings layer is taken from ClearVision theme by https://github.com/Zerthox
-- Most of that icons come from Material-UI icons base: https://mui.com/components/material-icons/
+- Most of that icons come from Material Design Icons project: https://materialdesignicons.com/
 
 Author of theme: https://github.com/tomec
 
