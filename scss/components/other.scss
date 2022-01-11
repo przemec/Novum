@@ -86,11 +86,17 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
     font-weight: bold;
   }
   &::after {
-    content: "v5.3.1";
+    content: "v5.3.2";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;
   }
+}
+
+//"Invite People" button after clicking on server/channel with right click
+#guild-context-invite-people:not(:hover),
+#channel-context-invite-people:not(:hover) {
+  color: var(--markup-normal);
 }
 
 //Rotate home icon

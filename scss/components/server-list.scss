@@ -46,11 +46,6 @@
   }
 }
 
-//"Invite People" button after clicking on server with right click
-#guild-context-invite-people:not(:hover) {
-  color: var(--markup-normal);
-}
-
 //unread messages indicator
 [class^="unreadMentionsIndicator"] > [class*="bar"] {
   background: var(--bt-red);

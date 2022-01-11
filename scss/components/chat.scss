@@ -172,21 +172,22 @@
 //Mention
 [class*="markup"] [class*="mention"] {
   color: var(--markup-blue-light);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
-
+  
   &:hover {
     background: rgba(0, 0, 0, 0.4);
   }
 }
 
 [class*="mentioned"] {
+  background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
   [class*="mention"] {
     color: var(--markup-intensive);
   }
 
   &::before {
-    left: 3px;
+    left: 1px;
     border-radius: 5px 0 0 5px;
     background: var(--markup-intensive);
     border-left: 2px solid var(--markup-intensive);
@@ -503,7 +504,7 @@
   background: transparent !important;
 
   li {
-    background: rgba(0, 0, 0, 0.2) !important;
+    background: var(--markup-normal-transparent) !important;
     border-radius: 5px 0 0 5px;
   }
 }

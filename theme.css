@@ -227,18 +227,21 @@ body::after {
 
 [class*=markup] [class*=mention] {
   color: var(--markup-blue-light);
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
 }
 [class*=markup] [class*=mention]:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
+[class*=mentioned] {
+  background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
+}
 [class*=mentioned] [class*=mention] {
   color: var(--markup-intensive);
 }
 [class*=mentioned]::before {
-  left: 3px;
+  left: 1px;
   border-radius: 5px 0 0 5px;
   background: var(--markup-intensive);
   border-left: 2px solid var(--markup-intensive);
@@ -496,7 +499,7 @@ body::after {
   background: transparent !important;
 }
 [class*=backgroundFlash] li {
-  background: rgba(0, 0, 0, 0.2) !important;
+  background: var(--markup-normal-transparent) !important;
   border-radius: 5px 0 0 5px;
 }
 
@@ -683,10 +686,6 @@ body::after {
   background: var(--bt-red) !important;
 }
 
-#guild-context-invite-people:not(:hover) {
-  color: var(--markup-normal);
-}
-
 [class^=unreadMentionsIndicator] > [class*=bar] {
   background: var(--bt-red);
 }
@@ -740,11 +739,14 @@ svg[style*="color: "] path {
 [class*=sidebar] [class*=containerDefault] [class*=modeMuted] [class*=name] {
   color: rgba(255, 255, 255, 0.5);
 }
+[class*=sidebar] [class*=containerDefault] [class*=muted] [class*=name] {
+  color: rgba(255, 255, 255, 0.5);
+}
 [class*=sidebar] [class*=containerDefault][class*=selected] [class*=content] {
   background: var(--default-selected) !important;
   color: #ffffff !important;
 }
-[class*=sidebar] [class*=containerDefault] [class*=selected]:hover [class*=content] {
+[class*=sidebar] [class*=containerDefault][class*=selected]:hover [class*=content] {
   background: var(--default-selected) !important;
 }
 
@@ -1464,10 +1466,15 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.3";
+  content: "v5.3.1";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
+}
+
+#guild-context-invite-people:not(:hover),
+#channel-context-invite-people:not(:hover) {
+  color: var(--markup-normal);
 }
 
 [class*=homeIcon] {
