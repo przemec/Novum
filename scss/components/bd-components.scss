@@ -17,14 +17,10 @@
   background: var(--bt-red);
 }
 
-//"public" button in upper left corner
-#bd-pub-button {
-  background: transparent;
-
-  &:hover {
-    background: var(--bt-red-hover);
-    color: var(--bt-text-hover);
-  }
+//page header in settings
+.bd-settings-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
 }
 
 //small popout at the bottom of the screen after loading theme
