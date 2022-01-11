@@ -1,7 +1,7 @@
 @use "../core/mixins" as m;
 
 [class^="userPopout"] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 
   [class^="bodyInnerWrapper"],
@@ -176,5 +176,5 @@
 }
 
 [class^="activityUserPopout-"] > [class^="horizontal-"] > button {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }

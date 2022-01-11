@@ -2,7 +2,7 @@
 * @name Novum
 * @author Tomec & Saurian
 * @description Big, enhanced galaxy theme with couple of small features and addons.
-* @version 5.3.2
+* @version 5.4.0
 * @source https://github.com/przemec/Novum
 */
 
@@ -30,25 +30,20 @@ CUSTOMIZABLE BACKGROUND IMAGE AND MAIN COLORS BELOW*
 */
 
 root {
-  --background-img: url("https://i.imgur.com/NOpaUeX.png");
-  --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
+  --app-background: url("https://i.imgur.com/NOpaUeX.png");
+  --main-color: #b42a2acc;
+  --main-color-selected: #c93838cc;
+  --main-color-semitransparent: #d4393926;
+  --main-color-semitransparent-selected: #d336364d;
+  --accent-color: #fd9fa0;
+  --accent-color-semitransparent: #fca7a918;
+  --accent-saturated: #fd7a7c;
+  --accent-desaturated: #c28383e6;
+  --button-text: #dddddd;
+  --button-text-selected: #ffffff;
+  --profile-background: url("https://i.imgur.com/F7m74F5.png");
   --profile-activity: #6d1515;
-  --default-hover: #d4393926;
-  --default-selected: #d336364d;
-  --bt-red: #b42a2acc;
-  --bt-red-hover: #c93838cc;
-  --bt-blue-bg: #774747;
-  --bt-blue-bg-hover: #803838;
-  --bt-text: #dddddd;
-  --bt-text-hover: #ffffff;
-  --scroll-thumb: #df6161b6;
-  --scroll-bg: #00000016;
-  --scroll-bg-bord: #00000000;
-  --markup-normal: #fd9fa0;
-  --markup-normal-transparent: #fca7a918;
-  --markup-intensive: #fd7a7c;
-  --markup-blue: #8f6060e6;
-  --markup-blue-light: #c28383e6;
+  --scroll-thumb-color: #df6161b6;
 }
 
 /*
@@ -56,7 +51,7 @@ root {
 --default- : background of some fields currently selected or hovered by mouse
 --bt- : buttons colors (most of buttons edited in theme are blue, red: 'cancel' buttons etc.)
 --scroll- : color and background of scrollbars in app
---markup- : color of some details throughout the app (links, protips etc.)
+--accent- : color of some details throughout the app (links, protips etc.)
 */
 
 /*

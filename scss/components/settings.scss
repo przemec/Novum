@@ -35,18 +35,18 @@
 //Overlay notification labels
 [class*="notificationSettings"] {
   [class*="selected"]:not([class*="disabled"]) {
-    background: var(--bt-red);
+    background: var(--main-color);
     border-color: transparent;
     box-shadow: none;
   }
 
   label:not([class*="selected"], [class*="disabled"]):hover {
-    background: var(--bt-red-hover);
+    background: var(--main-color-selected);
   }
 }
 
 [class*="accountProfileCard"] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 
   [class*="fieldButton-"] {
     @include m.btred_important;
@@ -54,7 +54,7 @@
 }
 
 [class*="profileBannerPreview"] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
 [aria-label="USER_SETTINGS"] [class^="info-"] > * {
@@ -68,13 +68,13 @@
   padding-left: 50px !important;
 
   &[class*="selected"] {
-    background: var(--default-selected) !important;
-    color: var(--bt-text-hover) !important;
+    background: var(--main-color-semitransparent-selected) !important;
+    color: var(--button-text-selected) !important;
   }
 
   &:hover {
-    background: var(--default-hover) !important;
-    color: var(--bt-text) !important;
+    background: var(--main-color-semitransparent) !important;
+    color: var(--button-text) !important;
   }
 }
 

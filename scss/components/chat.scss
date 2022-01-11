@@ -21,7 +21,7 @@
     border-color: transparent !important;
   }
   [class*="autocompleteRow"] > [class*="selected"] {
-    background: var(--default-selected) !important;
+    background: var(--main-color-semitransparent-selected) !important;
   }
   //hidden tip container above the chat input
   & > [class^="container-"] > [class^="containerBackground"] {
@@ -40,7 +40,7 @@
   background: rgba(0, 0, 0, 0.9) !important;
 
   [class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
-    background: var(--bt-red) !important;
+    background: var(--main-color) !important;
   }
   [class^="unicodeShortcut-"],
   [class^="inspector-"] {
@@ -80,12 +80,12 @@
 
   //your reaction below message
   &[class*="reactionMe"] {
-    border-color: var(--bt-red);
+    border-color: var(--main-color);
     background: rgba(0, 0, 0, 0.4) !important;
   }
 }
 [class*="reactionCount-"] {
-  color: var(--markup-normal) !important;
+  color: var(--accent-color) !important;
 }
 
 //Chat message popouts
@@ -135,7 +135,7 @@
     background: rgba(0, 0, 0, 0.95) !important;
   }
   label[class*="checked"] [class*="checkbox"] {
-    background: var(--bt-red) !important;
+    background: var(--main-color) !important;
     border-color: transparent !important;
 
     svg path {
@@ -149,48 +149,49 @@
   border-color: #000000;
 
   [class*="progressBar"] {
-    background: var(--markup-normal) !important;
+    background: var(--accent-color) !important;
   }
 }
 
 //Links
 [class*="embedLink"] {
-  color: var(--markup-normal) !important;
+  color: var(--accent-color) !important;
 }
 
 //Embed
 [class*="message"] [class^="embedWrapper"] {
-  background: var(--markup-normal-transparent) !important;
-  border-color: var(--markup-intensive) !important;
+  background: var(--accent-color-semitransparent) !important;
+  border-color: var(--accent-saturated) !important;
 }
 
 [class^="messageAttachment"] {
-  background: var(--markup-normal-transparent) !important;
-  border-color: var(--markup-intensive) !important;
+  background: var(--accent-color-semitransparent) !important;
+  border-color: var(--accent-saturated) !important;
 }
 
-//Mention
-[class*="markup"] [class*="mention"] {
-  color: var(--markup-blue-light);
+//someone else's mention
+[class*="accent"] [class*="mention"] {
+  color: var(--accent-desaturated);
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
-  
+
   &:hover {
     background: rgba(0, 0, 0, 0.4);
   }
 }
 
+//your mention
 [class*="mentioned"] {
-  background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
+  background: linear-gradient(90deg, transparent 5px, var(--accent-color-semitransparent) 5px, transparent 80%) !important;
   [class*="mention"] {
-    color: var(--markup-intensive);
+    color: var(--accent-saturated);
   }
 
   &::before {
     left: 1px;
     border-radius: 5px 0 0 5px;
-    background: var(--markup-intensive);
-    border-left: 2px solid var(--markup-intensive);
+    background: var(--accent-saturated);
+    border-left: 2px solid var(--accent-saturated);
   }
 }
 
@@ -228,7 +229,7 @@
 }
 
 [class*="hasThread"] [class*="cta"] {
-  color: var(--markup-normal) !important;
+  color: var(--accent-color) !important;
 }
 
 //Unread & Day chat dividers
@@ -239,7 +240,7 @@
 
   //Unread divider date
   [class*="content"] {
-    color: var(--markup-intensive) !important;
+    color: var(--accent-saturated) !important;
     width: 95%;
     transform: translateY(6px);
   }
@@ -256,15 +257,15 @@
 
   [class*="isUnread"] {
     background: transparent !important;
-    color: var(--markup-intensive) !important;
+    color: var(--accent-saturated) !important;
     width: 95%;
     transform: translateY(6px);
   }
 }
 
 [class*="unreadPill"] {
-  background: var(--default-hover) !important;
-  color: var(--markup-intensive) !important;
+  background: var(--main-color-semitransparent) !important;
+  color: var(--accent-saturated) !important;
   padding: 12px 0px;
   width: 100%;
   font-size: 14px;
@@ -314,7 +315,7 @@
 
 //New messages bar
 [class*="newMessagesBar"] {
-  background: var(--markup-intensive) !important;
+  background: var(--accent-saturated) !important;
   border-color: transparent !important;
 }
 
@@ -363,7 +364,7 @@
 [class*="DraftEditor"] {
   [class*="searchFilter"],
   [class*="searchAnswer"] {
-    background: var(--bt-red);
+    background: var(--main-color);
   }
 }
 
@@ -377,7 +378,7 @@
 
     [class*="selected"],
     [class*="option"]:hover {
-      background: var(--default-selected);
+      background: var(--main-color-semitransparent-selected);
     }
 
     &::before,
@@ -389,7 +390,7 @@
     background: rgba(0, 0, 0, 9);
 
     span {
-      background: var(--bt-red);
+      background: var(--main-color);
     }
   }
   [class*="searchLearnMore"] {
@@ -412,23 +413,23 @@
 
   [class*="month"] > [class*="week"] {
     [class*="day"]:not([class*="day--disabled"]) {
-      background: var(--default-hover) !important;
+      background: var(--main-color-semitransparent) !important;
 
       &:hover {
-        background: var(--default-selected) !important;
+        background: var(--main-color-semitransparent-selected) !important;
       }
     }
 
     [class*="selected"] {
-      background: var(--default-selected) !important;
+      background: var(--main-color-semitransparent-selected) !important;
 
       &::after {
-        background: var(--default-selected) !important;
+        background: var(--main-color-semitransparent-selected) !important;
       }
     }
 
     [class*="outside-month"]:not([class*="day--disabled"]) {
-      background: var(--default-hover) !important;
+      background: var(--main-color-semitransparent) !important;
       opacity: 0.3 !important;
     }
   }
@@ -444,7 +445,7 @@
       padding: 5px !important;
 
       &:hover {
-        background: var(--default-selected);
+        background: var(--main-color-semitransparent-selected);
         text-decoration: none;
       }
     }
@@ -476,11 +477,11 @@
 [class*="actionButtons"] [class*="jumpButton"] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 3px !important;
-  color: var(--bt-text) !important;
+  color: var(--button-text) !important;
 
   &:hover {
     background: rgba(0, 0, 0, 0.6) !important;
-    color: var(--bt-text-hover) !important;
+    color: var(--button-text-selected) !important;
   }
 }
 //pages of search results
@@ -491,11 +492,11 @@
   border-top-right-radius: 5px;
 
   [class*="activeButton"] {
-    background: var(--bt-red) !important;
+    background: var(--main-color) !important;
   }
 
   [class*="roundButton"]:not([class*="activeButton"]):hover {
-    background: var(--default-hover) !important;
+    background: var(--main-color-semitransparent) !important;
   }
 }
 
@@ -504,7 +505,7 @@
   background: transparent !important;
 
   li {
-    background: var(--markup-normal-transparent) !important;
+    background: var(--accent-color-semitransparent) !important;
     border-radius: 5px 0 0 5px;
   }
 }
@@ -514,7 +515,7 @@
   margin-top: 8px;
 
   [class*="colorLink"] {
-    color: var(--bt-text);
+    color: var(--button-text);
   }
 }
 
@@ -538,12 +539,12 @@ code {
   &::before {
     left: 3px;
     border-radius: 5px 0 0 5px;
-    background: var(--markup-intensive);
-    border-left: 2px solid var(--markup-intensive);
+    background: var(--accent-saturated);
+    border-left: 2px solid var(--accent-saturated);
   }
 }
 [class^="categoryFadeBlurple-"] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class*="chat"] form {

@@ -3,19 +3,19 @@
 }
 
 @mixin btred {
-  background: var(--bt-red);
-  color: var(--bt-text);
+  background: var(--main-color);
+  color: var(--button-text);
   &:hover {
-    background: var(--bt-red-hover);
-    color: var(--bt-text-hover);
+    background: var(--main-color-selected);
+    color: var(--button-text-selected);
   }
 }
 
 @mixin btred_important {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
   &:hover {
-    background: var(--bt-red-hover) !important;
-    color: var(--bt-text-hover) !important;
+    background: var(--main-color-selected) !important;
+    color: var(--button-text-selected) !important;
   }
 }

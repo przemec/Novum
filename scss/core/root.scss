@@ -1,44 +1,39 @@
 :root {
   // Replace discord root variables
   --background-primary: transparent !important;
-  --background-accent: var(--bt-red);
+  --background-accent: var(--main-color);
   --background-secondary: transparent !important;
   --background-secondary: transparent !important;
   --background-secondary-alt: transparent !important;
   --background-tertiary: rgba(0, 0, 0, 0.1) !important;
-  --scrollbar-auto-thumb: var(--scroll-thumb);
-  --scrollbar-thin-thumb: var(--scroll-thumb);
-  --scrollbar-auto-track: transparent !important;
+  --scrollbar-auto-thumb: var(--scroll-thumb-color);
+  --scrollbar-thin-thumb: var(--scroll-thumb-color);
+  --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-thin-track: transparent !important;
-  --text-link: var(--markup-normal);
+  --text-link: var(--accent-color);
+  --text-muted: rgba(255, 255, 255, 0.5);
+  --channels-default: rgba(255, 255, 255, 0.7);
 
   //Initialize theme variables
-  --background-img: url("https://i.imgur.com/NOpaUeX.png");
-  --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
+  --app-background: url("https://i.imgur.com/NOpaUeX.png");
+  --main-color: #b42a2acc;
+  --main-color-selected: #c93838cc;
+  --main-color-semitransparent: #d4393926;
+  --main-color-semitransparent-selected: #d336364d;
+  --accent-color: #fd9fa0;
+  --accent-color-semitransparent: #fca7a918;
+  --accent-saturated: #fd7a7c;
+  --accent-desaturated: #c28383e6;
+  --button-text: #dddddd;
+  --button-text-selected: #ffffff;
+  --profile-background: url("https://i.imgur.com/F7m74F5.png");
   --profile-activity: #6d1515;
-  --default-hover: #d4393926;
-  --default-selected: #d336364d;
-  --bt-red: #b42a2acc;
-  --bt-red-hover: #c93838cc;
-  --bt-blue-bg: #774747;
-  --bt-blue-bg-hover: #803838;
-  --bt-text: #dddddd;
-  --bt-text-hover: #ffffff;
-  --scroll-thumb: #df6161b6;
-  --scroll-bg: #00000016;
-  --scroll-bg-bord: #00000000;
-  --markup-normal: #fd9fa0;
-  --markup-normal-transparent: #fca7a918;
-  --markup-intensive: #fd7a7c;
-  --markup-blue: #8f6060e6;
-  --markup-blue-light: #c28383e6;
-
-  --channels-default: rgba(255, 255, 255, 0.7);
+  --scroll-thumb-color: #df6161b6;
 }
 
 //Background
 body::after {
-  background-image: var(--background-img) !important;
+  background-image: var(--app-background) !important;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -59,7 +54,8 @@ body::after {
   background: transparent !important;
 }
 
-//pasek nad discordem
+//bar at the top of the app
+#app-mount > [class^="typeMacOS"],
 #app-mount > [class^="typeWindows"] {
   height: 18px;
   margin-top: 0px;
@@ -82,7 +78,7 @@ body::after {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
-//Server list scroller 
+//Server list scroller
 [class^="scroller-"] {
   background: transparent !important;
 }

@@ -3,7 +3,7 @@
   background: transparent !important;
 }
 [class*="selectedCategoryItem"] > div {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 //after searching
 //input and language select
@@ -18,7 +18,7 @@
     color: rgba(255, 255, 255, 0.5) !important;
   }
   &[class*="selected"] {
-    background: var(--bt-red) !important;
+    background: var(--main-color) !important;
     & > div {
       color: rgba(255, 255, 255, 0.8) !important;
     }

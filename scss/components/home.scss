@@ -39,12 +39,7 @@
     border-color: rgba(0, 0, 0, 0.9);
   }
   [class^="addFriendInputWrapper"] button {
-    background: var(--bt-blue-bg);
-    color: var(--bt-text);
-    &:hover {
-      background: var(--bt-blue-bg-hover);
-      color: var(--bt-text-hover);
-    }
+    @include m.btred;
   }
 }
 
@@ -65,12 +60,12 @@
 
 //friends list sidebar
 [class^="content"] > [class^="channel"]:hover [class^="layout"] {
-  background: var(--default-hover);
-  color: var(--bt-text);
+  background: var(--main-color-semitransparent);
+  color: var(--button-text);
 }
 [class^="content"] > [class^="channel"][class*="selected"] [class^="layout"] {
-  background: var(--default-selected);
-  color: var(--bt-text-hover);
+  background: var(--main-color-semitransparent-selected);
+  color: var(--button-text-selected);
 }
 
 //Nitro page

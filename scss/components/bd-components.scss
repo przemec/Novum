@@ -5,16 +5,16 @@
 .bd-error-modal-footer {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: 0px 0px !important;
-} 
+}
 .bd-tab-bar .bd-tab-item.selected {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 //single error
 .bd-addon-error {
   background: transparent !important;
 }
 .bd-addon-error-icon {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
 //page header in settings
@@ -31,7 +31,7 @@
 //settings section
 //button near page title ("Open Plugins Folder" etc.)
 .bd-button:not(.bd-addon-button) {
-  @include m.btred_important;
+  @include m.btred;
 }
 
 //plugins and themes pages
@@ -39,7 +39,7 @@
   background: transparent !important;
 }
 .bd-addon-views > button.selected {
-  background: var(--bt-blue-bg-hover) !important;
+  background: var(--main-color-selected) !important;
 }
 .bd-addon-card {
   background: rgba(0, 0, 0, 0.2) !important;

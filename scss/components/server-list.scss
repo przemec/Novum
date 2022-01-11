@@ -4,8 +4,8 @@
 [class*="wrapper"][class*="guilds"] {
   [class*="listItemWrapper"] > a {
     background: rgba(0, 0, 0, 0.6);
-    border-color: var(--markup-intensive);
-    color: var(--markup-intensive);
+    border-color: var(--accent-saturated);
+    color: var(--accent-saturated);
 
     &:hover {
       background: rgba(0, 0, 0, 0.7);
@@ -27,7 +27,7 @@
   //server discovery and add server buttons
   [class*="circleIconButton"] {
     background: rgba(0, 0, 0, 0.3) !important;
-    color: var(--markup-intensive);
+    color: var(--accent-saturated);
   }
 
   //"public" bd button, server without image icon
@@ -38,17 +38,17 @@
 
   //connected to voicechat icon badge
   [class*="iconBadge"] {
-    background: var(--bt-red) !important;
+    background: var(--main-color) !important;
   }
   //unread messages count badge
   [class*="numberBadge"] {
-    background: var(--bt-red) !important;
+    background: var(--main-color) !important;
   }
 }
 
 //unread messages indicator
 [class^="unreadMentionsIndicator"] > [class*="bar"] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
 //Server folder edit popout
@@ -59,19 +59,19 @@
 }
 //default color of folder - in folder settings
 button[style="background-color: rgb(88, 101, 242);"] {
-  background: var(--markup-normal) !important;
+  background: var(--accent-color) !important;
 }
 //default color of folder - on server list
 svg[style="color: rgb(88, 101, 242);"] path {
-  fill: var(--markup-normal);
+  fill: var(--accent-color);
 }
 
 //Create a server popout
 [class*="header"] h3 {
-  color: var(--bt-text);
+  color: rgba(255, 255, 255, 0.8);
 }
 [class*="footer"] h3 {
-  color: var(--bt-text);
+  color: rgba(255, 255, 255, 0.8);
 }
 [class*="footerButton"] {
   @include m.btred_important;

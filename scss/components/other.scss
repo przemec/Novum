@@ -2,7 +2,7 @@
 
 //FlowerStar aka Verified SVG ICON
 [class^="flowerStar-"] > path {
-  fill: var(--markup-intensive) !important;
+  fill: var(--accent-saturated) !important;
 }
 
 //modal backdrop
@@ -44,17 +44,17 @@
 }
 [class^="control-"] [class^="container-"][style*="hsl(139"] {
   opacity: 0.7 !important;
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 //BarFill
 [class^="barFill-"] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 //Color primary
 [class^="colorPrimary-"] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 //Color brand buttons
@@ -63,7 +63,7 @@ button[class*="colorBrand-"]:not([class*="lookBlank"]) {
 }
 
 button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
-  color: var(--bt-text);
+  color: var(--button-text);
   border-color: transparent !important;
 }
 
@@ -86,7 +86,7 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
     font-weight: bold;
   }
   &::after {
-    content: "v5.3.2";
+    content: "v5.4.0";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;
@@ -96,7 +96,7 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 //"Invite People" button after clicking on server/channel with right click
 #guild-context-invite-people:not(:hover),
 #channel-context-invite-people:not(:hover) {
-  color: var(--markup-normal);
+  color: var(--accent-color);
 }
 
 //Rotate home icon
@@ -107,16 +107,15 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 //Home icon recolor
 [data-list-item-id="guildsnav___home"]:hover > div,
 [data-list-item-id="guildsnav___home"][class*="selected"] > div {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 //Inputs
 input {
   transition: all 0.3s;
 }
-
 input:focus {
-  border-color: var(--markup-blue) !important;
+  border-color: var(--accent-desaturated) !important;
   box-shadow: 0px 0px transparent;
 }
 
@@ -271,29 +270,29 @@ input:focus {
 
 [class*="mediaBarWrapper"] {
   [class*="fakeEdges"] {
-    background: var(--bt-red);
+    background: var(--main-color);
 
     &::after,
     &::before {
-      background: var(--bt-red);
+      background: var(--main-color);
     }
   }
 
   [class*="mediaBarProgress"] {
-    background: var(--bt-red);
+    background: var(--main-color);
 
     &::after,
     &::before {
-      background: var(--bt-red);
+      background: var(--main-color);
     }
 
     [class*="mediaBarGrabber"] {
-      background: var(--bt-red);
+      background: var(--main-color);
     }
   }
 
   [class*="bubble"] {
-    background: var(--bt-red);
+    background: var(--main-color);
   }
 }
 
@@ -305,10 +304,10 @@ input:focus {
 
 //checkboxes
 [aria-checked="true"] [class*="iconContainer"] svg > path:first-child {
-  fill: var(--bt-red);
+  fill: var(--main-color);
 }
 [aria-checked="true"] [class*="iconContainer"] svg > path:last-child {
-  fill: var(--bt-text-hover) !important;
+  fill: var(--button-text-selected) !important;
 }
 
 [class*="streamPreviewWrapper"] [class*="streamPreview"] {

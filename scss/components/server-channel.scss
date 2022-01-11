@@ -1,10 +1,10 @@
-// Server channel tabbaritem 
+// Server channel tabbaritem
 [class*="tabBarItem"]:hover {
-  border-bottom-color: var(--bt-red-hover) !important;
+  border-bottom-color: var(--main-color-selected) !important;
 }
 
 [class*="tabBarItem"][class*="da-selected"] {
-  border-bottom-color: var(--bt-red) !important;
+  border-bottom-color: var(--main-color) !important;
 }
 
 //server channels list icons
@@ -34,18 +34,18 @@
 
   //selected channel
   &[class*="selected"] [class*="content"] {
-    background: var(--default-selected) !important;
+    background: var(--main-color-semitransparent-selected) !important;
     color: #ffffff !important;
   }
   &[class*="selected"]:hover [class*="content"] {
-    background: var(--default-selected) !important;
+    background: var(--main-color-semitransparent-selected) !important;
   }
 }
 
 [data-list-item-id*="active-threads"] {
   [class*="name"],
   [class*="icon"] {
-    color: var(--bt-text) !important;
+    color: var(--button-text) !important;
   }
 }
 
@@ -56,7 +56,7 @@
   }
 
   [class*="total"] {
-    color: var(--markup-intensive);
+    color: var(--accent-saturated);
     background: rgba(0, 0, 0, 0.6) !important;
 
     &::after {
@@ -65,7 +65,7 @@
   }
 
   [class*="users"] {
-    color: var(--markup-normal);
+    color: var(--accent-color);
     background: rgba(0, 0, 0, 0.3) !important;
   }
 }
@@ -79,7 +79,7 @@
   }
 
   [class*="radioBar"] > div:not([class*="info"]) circle {
-    fill: var(--bt-red) !important;
+    fill: var(--main-color) !important;
   }
 }
 
@@ -95,15 +95,15 @@ header h1[class*="name"] {
 
 //popout after clicking server name, focused option
 [class*="labelContainer"][class*="focused"] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 //Video & Screen buttons backgrounds
 [class*="panels"] [class*="actionButtons"] button {
-  background: var(--default-hover) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
   &:hover {
-    background: var(--default-selected) !important;
-    color: var(--bt-text-hover) !important;
+    background: var(--main-color-semitransparent-selected) !important;
+    color: var(--button-text-selected) !important;
   }
 }
 

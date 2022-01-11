@@ -1,39 +1,35 @@
 :root {
   --background-primary: transparent !important;
-  --background-accent: var(--bt-red);
+  --background-accent: var(--main-color);
   --background-secondary: transparent !important;
   --background-secondary: transparent !important;
   --background-secondary-alt: transparent !important;
   --background-tertiary: rgba(0, 0, 0, 0.1) !important;
-  --scrollbar-auto-thumb: var(--scroll-thumb);
-  --scrollbar-thin-thumb: var(--scroll-thumb);
-  --scrollbar-auto-track: transparent !important;
+  --scrollbar-auto-thumb: var(--scroll-thumb-color);
+  --scrollbar-thin-thumb: var(--scroll-thumb-color);
+  --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
   --scrollbar-thin-track: transparent !important;
-  --text-link: var(--markup-normal);
-  --background-img: url("https://i.imgur.com/NOpaUeX.png");
-  --profile-bckg: url("https://i.imgur.com/F7m74F5.png");
-  --profile-activity: #6d1515;
-  --default-hover: #d4393926;
-  --default-selected: #d336364d;
-  --bt-red: #b42a2acc;
-  --bt-red-hover: #c93838cc;
-  --bt-blue-bg: #774747;
-  --bt-blue-bg-hover: #803838;
-  --bt-text: #dddddd;
-  --bt-text-hover: #ffffff;
-  --scroll-thumb: #df6161b6;
-  --scroll-bg: #00000016;
-  --scroll-bg-bord: #00000000;
-  --markup-normal: #fd9fa0;
-  --markup-normal-transparent: #fca7a918;
-  --markup-intensive: #fd7a7c;
-  --markup-blue: #8f6060e6;
-  --markup-blue-light: #c28383e6;
+  --text-link: var(--accent-color);
+  --text-muted: rgba(255, 255, 255, 0.5);
   --channels-default: rgba(255, 255, 255, 0.7);
+  --app-background: url("https://i.imgur.com/NOpaUeX.png");
+  --main-color: #b42a2acc;
+  --main-color-selected: #c93838cc;
+  --main-color-semitransparent: #d4393926;
+  --main-color-semitransparent-selected: #d336364d;
+  --accent-color: #fd9fa0;
+  --accent-color-semitransparent: #fca7a918;
+  --accent-saturated: #fd7a7c;
+  --accent-desaturated: #c28383e6;
+  --button-text: #dddddd;
+  --button-text-selected: #ffffff;
+  --profile-background: url("https://i.imgur.com/F7m74F5.png");
+  --profile-activity: #6d1515;
+  --scroll-thumb-color: #df6161b6;
 }
 
 body::after {
-  background-image: var(--background-img) !important;
+  background-image: var(--app-background) !important;
   background-repeat: no-repeat;
   background-size: cover;
   content: "";
@@ -53,6 +49,7 @@ body::after {
   background: transparent !important;
 }
 
+#app-mount > [class^=typeMacOS],
 #app-mount > [class^=typeWindows] {
   height: 18px;
   margin-top: 0px;
@@ -96,7 +93,7 @@ body::after {
   border-color: transparent !important;
 }
 [class^=channelTextArea] [class*=autocompleteRow] > [class*=selected] {
-  background: var(--default-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
 }
 [class^=channelTextArea] > [class^=container-] > [class^=containerBackground] {
   background: rgba(0, 0, 0, 0.95) !important;
@@ -110,7 +107,7 @@ body::after {
   background: rgba(0, 0, 0, 0.9) !important;
 }
 [class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=navList-] > [class^=navItem-] > [class^=navButtonActive-] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 [class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=unicodeShortcut-],
 [class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=inspector-] {
@@ -118,12 +115,12 @@ body::after {
 }
 
 [class*=followButton] {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class*=followButton]:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class*=chatContent] form > div > [class^=wrapper] {
@@ -131,12 +128,12 @@ body::after {
 }
 
 [class*=chatContent] button:not([class*=lookBlank], [class*=barButtonBase]) {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class*=chatContent] button:not([class*=lookBlank], [class*=barButtonBase]):hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) {
@@ -154,12 +151,12 @@ body::after {
   height: 30px !important;
 }
 [class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
-  border-color: var(--bt-red);
+  border-color: var(--main-color);
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
 [class*=reactionCount-] {
-  color: var(--markup-normal) !important;
+  color: var(--accent-color) !important;
 }
 
 [class^=layerContainer-] [class^=layer-] [class^=focusLock-] [class*=container-] {
@@ -196,7 +193,7 @@ body::after {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 [class^=uploadModal] label[class*=checked] [class*=checkbox] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
   border-color: transparent !important;
 }
 [class^=uploadModal] label[class*=checked] [class*=checkbox] svg path {
@@ -208,43 +205,43 @@ body::after {
   border-color: #000000;
 }
 [id^=message-content-Uploader] > div[class*=attachment] [class*=progressBar] {
-  background: var(--markup-normal) !important;
+  background: var(--accent-color) !important;
 }
 
 [class*=embedLink] {
-  color: var(--markup-normal) !important;
+  color: var(--accent-color) !important;
 }
 
 [class*=message] [class^=embedWrapper] {
-  background: var(--markup-normal-transparent) !important;
-  border-color: var(--markup-intensive) !important;
+  background: var(--accent-color-semitransparent) !important;
+  border-color: var(--accent-saturated) !important;
 }
 
 [class^=messageAttachment] {
-  background: var(--markup-normal-transparent) !important;
-  border-color: var(--markup-intensive) !important;
+  background: var(--accent-color-semitransparent) !important;
+  border-color: var(--accent-saturated) !important;
 }
 
-[class*=markup] [class*=mention] {
-  color: var(--markup-blue-light);
+[class*=accent] [class*=mention] {
+  color: var(--accent-desaturated);
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
 }
-[class*=markup] [class*=mention]:hover {
+[class*=accent] [class*=mention]:hover {
   background: rgba(0, 0, 0, 0.4);
 }
 
 [class*=mentioned] {
-  background: linear-gradient(90deg, transparent 5px, var(--markup-normal-transparent) 5px, transparent 80%) !important;
+  background: linear-gradient(90deg, transparent 5px, var(--accent-color-semitransparent) 5px, transparent 80%) !important;
 }
 [class*=mentioned] [class*=mention] {
-  color: var(--markup-intensive);
+  color: var(--accent-saturated);
 }
 [class*=mentioned]::before {
   left: 1px;
   border-radius: 5px 0 0 5px;
-  background: var(--markup-intensive);
-  border-left: 2px solid var(--markup-intensive);
+  background: var(--accent-saturated);
+  border-left: 2px solid var(--accent-saturated);
 }
 
 [class*=message] [class*=buttonContainer] [class*=container] [class*=wrapper] {
@@ -275,7 +272,7 @@ body::after {
 }
 
 [class*=hasThread] [class*=cta] {
-  color: var(--markup-normal) !important;
+  color: var(--accent-color) !important;
 }
 
 [class*=messagesWrapper] [class*=content] [class*=divider] {
@@ -284,7 +281,7 @@ body::after {
   margin-bottom: 35px;
 }
 [class*=messagesWrapper] [class*=content] [class*=divider] [class*=content] {
-  color: var(--markup-intensive) !important;
+  color: var(--accent-saturated) !important;
   width: 95%;
   transform: translateY(6px);
 }
@@ -299,14 +296,14 @@ body::after {
 }
 [class*=messagesWrapper] [class*=content] [class*=divider] [class*=isUnread] {
   background: transparent !important;
-  color: var(--markup-intensive) !important;
+  color: var(--accent-saturated) !important;
   width: 95%;
   transform: translateY(6px);
 }
 
 [class*=unreadPill] {
-  background: var(--default-hover) !important;
-  color: var(--markup-intensive) !important;
+  background: var(--main-color-semitransparent) !important;
+  color: var(--accent-saturated) !important;
   padding: 12px 0px;
   width: 100%;
   font-size: 14px;
@@ -349,7 +346,7 @@ body::after {
 }
 
 [class*=newMessagesBar] {
-  background: var(--markup-intensive) !important;
+  background: var(--accent-saturated) !important;
   border-color: transparent !important;
 }
 
@@ -387,7 +384,7 @@ body::after {
 
 [class*=DraftEditor] [class*=searchFilter],
 [class*=DraftEditor] [class*=searchAnswer] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
 [class*=layerContainer] [class*=container] {
@@ -399,7 +396,7 @@ body::after {
 }
 [class*=layerContainer] [class*=container] [class*=resultsGroup] [class*=selected],
 [class*=layerContainer] [class*=container] [class*=resultsGroup] [class*=option]:hover {
-  background: var(--default-selected);
+  background: var(--main-color-semitransparent-selected);
 }
 [class*=layerContainer] [class*=container] [class*=resultsGroup]::before,
 [class*=layerContainer] [class*=container] [class*=resultsGroup] [class*=option]::after {
@@ -409,7 +406,7 @@ body::after {
   background: black;
 }
 [class*=layerContainer] [class*=container] [class*=queryContainer] span {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 [class*=layerContainer] [class*=container] [class*=searchLearnMore] {
   display: none;
@@ -420,31 +417,31 @@ body::after {
 }
 [class*=datePicker] [class*=hintValue] {
   margin-left: 5px;
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class*=datePicker] [class*=hintValue]:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class*=react-datepicker] {
   background: transparent !important;
 }
 [class*=react-datepicker] [class*=month] > [class*=week] [class*=day]:not([class*=day--disabled]) {
-  background: var(--default-hover) !important;
+  background: var(--main-color-semitransparent) !important;
 }
 [class*=react-datepicker] [class*=month] > [class*=week] [class*=day]:not([class*=day--disabled]):hover {
-  background: var(--default-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
 }
 [class*=react-datepicker] [class*=month] > [class*=week] [class*=selected] {
-  background: var(--default-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
 }
 [class*=react-datepicker] [class*=month] > [class*=week] [class*=selected]::after {
-  background: var(--default-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
 }
 [class*=react-datepicker] [class*=month] > [class*=week] [class*=outside-month]:not([class*=day--disabled]) {
-  background: var(--default-hover) !important;
+  background: var(--main-color-semitransparent) !important;
   opacity: 0.3 !important;
 }
 
@@ -455,7 +452,7 @@ body::after {
   padding: 5px !important;
 }
 [class*=searchResultsWrap] [class*=channelSeparator] [class*=channelName]:hover {
-  background: var(--default-selected);
+  background: var(--main-color-semitransparent-selected);
   text-decoration: none;
 }
 [class*=searchResultsWrap] [class*=searchHeader] {
@@ -476,11 +473,11 @@ body::after {
 [class*=actionButtons] [class*=jumpButton] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 3px !important;
-  color: var(--bt-text) !important;
+  color: var(--button-text) !important;
 }
 [class*=actionButtons] [class*=jumpButton]:hover {
   background: rgba(0, 0, 0, 0.6) !important;
-  color: var(--bt-text-hover) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class*=pageControlContainer] {
@@ -489,17 +486,17 @@ body::after {
   border-top-right-radius: 5px;
 }
 [class*=pageControlContainer] [class*=activeButton] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 [class*=pageControlContainer] [class*=roundButton]:not([class*=activeButton]):hover {
-  background: var(--default-hover) !important;
+  background: var(--main-color-semitransparent) !important;
 }
 
 [class*=backgroundFlash] {
   background: transparent !important;
 }
 [class*=backgroundFlash] li {
-  background: var(--markup-normal-transparent) !important;
+  background: var(--accent-color-semitransparent) !important;
   border-radius: 5px 0 0 5px;
 }
 
@@ -508,7 +505,7 @@ body::after {
   margin-top: 8px;
 }
 [class*=replyBar] [class*=colorLink] {
-  color: var(--bt-text);
+  color: var(--button-text);
 }
 
 [class*=channelAttachmentArea] > li {
@@ -528,12 +525,12 @@ code {
 [class*=replying]::before {
   left: 3px;
   border-radius: 5px 0 0 5px;
-  background: var(--markup-intensive);
-  border-left: 2px solid var(--markup-intensive);
+  background: var(--accent-saturated);
+  border-left: 2px solid var(--accent-saturated);
 }
 
 [class^=categoryFadeBlurple-] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class*=chat] form {
@@ -655,8 +652,8 @@ body::after {
 }
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a {
   background: rgba(0, 0, 0, 0.6);
-  border-color: var(--markup-intensive);
-  color: var(--markup-intensive);
+  border-color: var(--accent-saturated);
+  color: var(--accent-saturated);
 }
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a:hover {
   background: rgba(0, 0, 0, 0.7);
@@ -673,21 +670,21 @@ body::after {
 }
 [class*=wrapper][class*=guilds] [class*=circleIconButton] {
   background: rgba(0, 0, 0, 0.3) !important;
-  color: var(--markup-intensive);
+  color: var(--accent-saturated);
 }
 [class*=wrapper][class*=guilds] #bd-pub-button,
 [class*=wrapper][class*=guilds] [class^=wrapper] > [class*=childWrapper] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
 [class*=wrapper][class*=guilds] [class*=iconBadge] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 [class*=wrapper][class*=guilds] [class*=numberBadge] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class^=unreadMentionsIndicator] > [class*=bar] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
 [class*=colorPickerCustom] {
@@ -695,33 +692,37 @@ body::after {
   border-color: transparent;
 }
 
-svg[style*="color: "] path {
-  fill: var(--markup-normal);
+button[style="background-color: rgb(88, 101, 242);"] {
+  background: var(--accent-color) !important;
+}
+
+svg[style="color: rgb(88, 101, 242);"] path {
+  fill: var(--accent-color);
 }
 
 [class*=header] h3 {
-  color: var(--bt-text);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 [class*=footer] h3 {
-  color: var(--bt-text);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 [class*=footerButton] {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class*=footerButton]:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class*=tabBarItem]:hover {
-  border-bottom-color: var(--bt-red-hover) !important;
+  border-bottom-color: var(--main-color-selected) !important;
 }
 
 [class*=tabBarItem][class*=da-selected] {
-  border-bottom-color: var(--bt-red) !important;
+  border-bottom-color: var(--main-color) !important;
 }
 
 [class*=sidebar] [class*=containerDefault] [class*=icon] {
@@ -743,30 +744,30 @@ svg[style*="color: "] path {
   color: rgba(255, 255, 255, 0.5);
 }
 [class*=sidebar] [class*=containerDefault][class*=selected] [class*=content] {
-  background: var(--default-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
   color: #ffffff !important;
 }
 [class*=sidebar] [class*=containerDefault][class*=selected]:hover [class*=content] {
-  background: var(--default-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
 }
 
 [data-list-item-id*=active-threads] [class*=name],
 [data-list-item-id*=active-threads] [class*=icon] {
-  color: var(--bt-text) !important;
+  color: var(--button-text) !important;
 }
 
 [class*=userLimit] > [class*=wrapper] {
   border-radius: 5px !important;
 }
 [class*=userLimit] [class*=total] {
-  color: var(--markup-intensive);
+  color: var(--accent-saturated);
   background: rgba(0, 0, 0, 0.6) !important;
 }
 [class*=userLimit] [class*=total]::after {
   border-right-color: rgba(0, 0, 0, 0.4) !important;
 }
 [class*=userLimit] [class*=users] {
-  color: var(--markup-normal);
+  color: var(--accent-color);
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
@@ -777,7 +778,7 @@ svg[style*="color: "] path {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 [class*=focusLock] [class*=modal] [class*=radioBar] > div:not([class*=info]) circle {
-  fill: var(--bt-red) !important;
+  fill: var(--main-color) !important;
 }
 
 header h1[class*=name] {
@@ -791,16 +792,16 @@ header h1[class*=name] {
 }
 
 [class*=labelContainer][class*=focused] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class*=panels] [class*=actionButtons] button {
-  background: var(--default-hover) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
 }
 [class*=panels] [class*=actionButtons] button:hover {
-  background: var(--default-selected) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [aria-label="Create Invite"] {
@@ -816,18 +817,18 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class*=tierHeaderLocked] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
 [class*=tierBody] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
 [class*=circleButton] {
-  background-color: var(--default-hover) !important;
+  background-color: var(--main-color-semitransparent) !important;
 }
 [class*=circleButton]:hover {
-  background-color: var(--default-selected) !important;
+  background-color: var(--main-color-semitransparent-selected) !important;
 }
 
 [class*=content] [class*=pageWrapper] {
@@ -835,7 +836,7 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class*=selectedCategoryItem] > div {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class*=searchPage] > [class*=search] {
@@ -849,7 +850,7 @@ nav[class*=container] > [class*=container] > header:hover {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 [class*=categoryPill][class*=selected] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 [class*=categoryPill][class*=selected] > div {
   color: rgba(255, 255, 255, 0.8) !important;
@@ -876,11 +877,11 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class^=guildInfoContainer-] > [class^=rightJustifiedContent-] > div {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class^=userPopout] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 }
 [class^=userPopout] [class^=bodyInnerWrapper],
@@ -995,12 +996,12 @@ nav[class*=container] > [class*=container] > header:hover {
   right: 16px !important;
 }
 [class^=activityUserPopout-] button {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class^=activityUserPopout-] button:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 [class^=activityUserPopout-]::before {
   content: "";
@@ -1043,7 +1044,7 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class^=activityUserPopout-] > [class^=horizontal-] > button {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class*=member] [class*=activityText] {
@@ -1057,7 +1058,7 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 .bd-tab-bar .bd-tab-item.selected {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
 .bd-addon-error {
@@ -1065,15 +1066,12 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 .bd-addon-error-icon {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
-#bd-pub-button {
-  background: transparent;
-}
-#bd-pub-button:hover {
-  background: var(--bt-red-hover);
-  color: var(--bt-text-hover);
+.bd-settings-title {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: bold;
 }
 
 .bd-toast:not([class*=success]) {
@@ -1081,12 +1079,12 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 .bd-button:not(.bd-addon-button) {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color);
+  color: var(--button-text);
 }
 .bd-button:not(.bd-addon-button):hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
 }
 
 .bd-addon-views > button {
@@ -1094,7 +1092,7 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 .bd-addon-views > button.selected {
-  background: var(--bt-blue-bg-hover) !important;
+  background: var(--main-color-selected) !important;
 }
 
 .bd-addon-card {
@@ -1142,28 +1140,28 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class*=notificationSettings] [class*=selected]:not([class*=disabled]) {
-  background: var(--bt-red);
+  background: var(--main-color);
   border-color: transparent;
   box-shadow: none;
 }
 [class*=notificationSettings] label:not([class*=selected], [class*=disabled]):hover {
-  background: var(--bt-red-hover);
+  background: var(--main-color-selected);
 }
 
 [class*=accountProfileCard] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 [class*=accountProfileCard] [class*=fieldButton-] {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class*=accountProfileCard] [class*=fieldButton-]:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class*=profileBannerPreview] {
-  background: var(--profile-bckg), rgba(0, 0, 0, 0.95) !important;
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
 [aria-label=USER_SETTINGS] [class^=info-] > * {
@@ -1174,12 +1172,12 @@ nav[class*=container] > [class*=container] > header:hover {
   padding-left: 50px !important;
 }
 [aria-label=USER_SETTINGS] [class*=sidebarRegion] [class*=item][class*=selected] {
-  background: var(--default-selected) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 [aria-label=USER_SETTINGS] [class*=sidebarRegion] [class*=item]:hover {
-  background: var(--default-hover) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
 }
 
 [aria-label=USER_SETTINGS] [class*=sidebarRegionScroller] [class*=item]::after {
@@ -1344,12 +1342,12 @@ nav[class*=container] > [class*=container] > header:hover {
   border-color: rgba(0, 0, 0, 0.9);
 }
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] button {
-  background: var(--bt-blue-bg);
-  color: var(--bt-text);
+  background: var(--main-color);
+  color: var(--button-text);
 }
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] button:hover {
-  background: var(--bt-blue-bg-hover);
-  color: var(--bt-text-hover);
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
 }
 
 [class*=nowPlayingColumn] [class*=itemCard] {
@@ -1363,13 +1361,13 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class^=content] > [class^=channel]:hover [class^=layout] {
-  background: var(--default-hover);
-  color: var(--bt-text);
+  background: var(--main-color-semitransparent);
+  color: var(--button-text);
 }
 
 [class^=content] > [class^=channel][class*=selected] [class^=layout] {
-  background: var(--default-selected);
-  color: var(--bt-text-hover);
+  background: var(--main-color-semitransparent-selected);
+  color: var(--button-text-selected);
 }
 
 [class*=applicationStore] {
@@ -1377,16 +1375,16 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 
 [class*=applicationStore] button {
-  background: var(--bt-red) !important;
-  color: var(--bt-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 [class*=applicationStore] button:hover {
-  background: var(--bt-red-hover) !important;
-  color: var(--bt-text-hover) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
 }
 
 [class^=flowerStar-] > path {
-  fill: var(--markup-intensive) !important;
+  fill: var(--accent-saturated) !important;
 }
 
 [class^=backdrop] {
@@ -1401,12 +1399,12 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 [class^=popoutContainer] button {
-  background: var(--bt-red);
-  color: var(--bt-text);
+  background: var(--main-color);
+  color: var(--button-text);
 }
 [class^=popoutContainer] button:hover {
-  background: var(--bt-red-hover);
-  color: var(--bt-text-hover);
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
 }
 
 #permissions-modal {
@@ -1426,28 +1424,28 @@ nav[class*=container] > [class*=container] > header:hover {
 
 [class^=control-] [class^=container-][style*="hsl(139"] {
   opacity: 0.7 !important;
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class^=barFill-] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 [class^=colorPrimary-] {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 button[class*=colorBrand-]:not([class*=lookBlank]) {
-  background: var(--bt-red);
-  color: var(--bt-text);
+  background: var(--main-color);
+  color: var(--button-text);
 }
 button[class*=colorBrand-]:not([class*=lookBlank]):hover {
-  background: var(--bt-red-hover);
-  color: var(--bt-text-hover);
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
 }
 
 button[class*=lookOutlined-]:not([class*=lookBlank]) {
-  color: var(--bt-text);
+  color: var(--button-text);
   border-color: transparent !important;
 }
 
@@ -1466,7 +1464,7 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.3.1";
+  content: "v5.4.0";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
@@ -1474,7 +1472,7 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
 
 #guild-context-invite-people:not(:hover),
 #channel-context-invite-people:not(:hover) {
-  color: var(--markup-normal);
+  color: var(--accent-color);
 }
 
 [class*=homeIcon] {
@@ -1483,7 +1481,7 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
 
 [data-list-item-id=guildsnav___home]:hover > div,
 [data-list-item-id=guildsnav___home][class*=selected] > div {
-  background: var(--bt-red) !important;
+  background: var(--main-color) !important;
 }
 
 input {
@@ -1491,7 +1489,7 @@ input {
 }
 
 input:focus {
-  border-color: var(--markup-blue) !important;
+  border-color: var(--accent-desaturated) !important;
   box-shadow: 0px 0px transparent;
 }
 
@@ -1612,22 +1610,22 @@ input:focus {
 }
 
 [class*=mediaBarWrapper] [class*=fakeEdges] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 [class*=mediaBarWrapper] [class*=fakeEdges]::after, [class*=mediaBarWrapper] [class*=fakeEdges]::before {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 [class*=mediaBarWrapper] [class*=mediaBarProgress] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 [class*=mediaBarWrapper] [class*=mediaBarProgress]::after, [class*=mediaBarWrapper] [class*=mediaBarProgress]::before {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 [class*=mediaBarWrapper] [class*=mediaBarProgress] [class*=mediaBarGrabber] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 [class*=mediaBarWrapper] [class*=bubble] {
-  background: var(--bt-red);
+  background: var(--main-color);
 }
 
 [class*=embedVideo] [class*=playPausePop] {
@@ -1635,11 +1633,11 @@ input:focus {
 }
 
 [aria-checked=true] [class*=iconContainer] svg > path:first-child {
-  fill: var(--bt-red);
+  fill: var(--main-color);
 }
 
 [aria-checked=true] [class*=iconContainer] svg > path:last-child {
-  fill: var(--bt-text-hover) !important;
+  fill: var(--button-text-selected) !important;
 }
 
 [class*=streamPreviewWrapper] [class*=streamPreview] {
