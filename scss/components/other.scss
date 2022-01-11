@@ -1,5 +1,10 @@
 @use "../core/mixins" as m;
 
+//server boost overlay
+[class^="perksModal-"] {
+  background: transparent !important;
+}
+
 //FlowerStar aka Verified SVG ICON
 [class^="flowerStar-"] > path {
   fill: var(--accent-saturated) !important;
@@ -86,7 +91,7 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
     font-weight: bold;
   }
   &::after {
-    content: "v5.4.0";
+    content: "v5.4.1";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;

@@ -1168,28 +1168,40 @@ nav[class*=container] > [class*=container] > header:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-[aria-label=USER_SETTINGS] [class*=sidebarRegion] [class*=item] {
+[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item] {
   padding-left: 50px !important;
 }
-[aria-label=USER_SETTINGS] [class*=sidebarRegion] [class*=item][class*=selected] {
-  background: var(--main-color-semitransparent-selected) !important;
-  color: var(--button-text-selected) !important;
-}
-[aria-label=USER_SETTINGS] [class*=sidebarRegion] [class*=item]:hover {
+[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item]:hover {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
+[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item][class*=selected] {
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item][aria-controls=discord-nitro-tab] svg {
+  display: none;
+}
+[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item] [class*=selectedBackground] {
+  background: transparent !important;
+}
 
-[aria-label=USER_SETTINGS] [class*=sidebarRegionScroller] [class*=item]::after {
+[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item]::after {
   content: "";
   position: absolute;
   width: 24px;
   height: 24px;
   left: 15px;
-  margin-top: -2px;
+  top: 50%;
+  transform: translateY(-50%);
   opacity: 0.3;
   -webkit-transition: all 0.15s ease-in-out;
   transition: all 0.15s ease-in-out;
+  background-size: cover !important;
+}
+
+[aria-label=USER_SETTINGS] [class*=sidebarRegionScroller] [class*=selected]::after {
+  opacity: 0.7;
 }
 
 [aria-controls=my-account-tab]::after {
@@ -1212,21 +1224,20 @@ nav[class*=container] > [class*=container] > header:hover {
   background: url(https://przemec.github.io/Novum/assets/icons/link.svg) !important;
 }
 
-[aria-controls=discord-nitro-tab] {
-  display: none;
-}
-
-[aria-controls=nitro-server-boost-tab]::after {
+[aria-controls=discord-nitro-tab]::after {
   background: url(https://discordapp.com/assets/df0e29b16d71bdad333880b2488075be.svg) !important;
 }
 
+[aria-controls=nitro-server-boost-tab]::after {
+  background: url(https://discordapp.com/assets/5a24b20b84fb3eafc138916729386e76.svg) !important;
+}
+
 [aria-controls=subscriptions-tab]::after {
-  background-image: url(https://discordapp.com/assets/5a24b20b84fb3eafc138916729386e76.svg) !important;
+  background: url(https://przemec.github.io/Novum/assets/icons/cash.svg) !important;
 }
 
 [aria-controls=library-inventory-tab]::after {
-  background-image: url(https://discordapp.com/assets/6c73f47daf179ffade99f501bfc5101b.svg) !important;
-  background-size: cover;
+  background: url(https://przemec.github.io/Novum/assets/icons/gift.svg) !important;
 }
 
 [aria-controls=billing-tab]::after {
@@ -1383,6 +1394,10 @@ nav[class*=container] > [class*=container] > header:hover {
   color: var(--button-text-selected) !important;
 }
 
+[class^=perksModal-] {
+  background: transparent !important;
+}
+
 [class^=flowerStar-] > path {
   fill: var(--accent-saturated) !important;
 }
@@ -1464,7 +1479,7 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.0";
+  content: "v5.4.1";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
