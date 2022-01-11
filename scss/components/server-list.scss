@@ -57,9 +57,12 @@
   background: rgba(0, 0, 0, 1) !important;
   border-color: transparent;
 }
-
-//All folders have same colors
-svg[style*="color: "] path {
+//default color of folder - in folder settings
+button[style="background-color: rgb(88, 101, 242);"] {
+  background: var(--markup-normal) !important;
+}
+//default color of folder - on server list
+svg[style="color: rgb(88, 101, 242);"] path {
   fill: var(--markup-normal);
 }
 
