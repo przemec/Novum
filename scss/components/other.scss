@@ -148,7 +148,7 @@ input:focus {
   height: 24px;
   margin-top: -5px;
   margin-left: 6px;
-  background: url(https://przemec.github.io/Novum/icons/NovumLogo.png) center/cover no-repeat;
+  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
   filter: contrast(0%) brightness(1.4);
 }
 
@@ -196,7 +196,7 @@ input:focus {
 
   //icon
   &::after {
-    background: url(https://przemec.github.io/Novum/icons/bot.svg) !important;
+    background: url(https://przemec.github.io/Novum/assets/icons/bot.svg) !important;
     background-size: cover !important;
     content: "";
     position: absolute;
