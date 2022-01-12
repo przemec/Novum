@@ -1,0 +1,73 @@
+@use "../core/mixins" as m;
+
+//Nitro home page
+[class*="applicationStore"] {
+  background: transparent !important;
+  button {
+    @include m.btred_important;
+  }
+  //nitro classic field at the bottom of the page
+  [class^="marketingRefreshSectionTier"] {
+    background: transparent !important;
+  }
+  //features
+  [class^="feature"] > li[class^="feature"] {
+    background: rgba(0, 0, 0, 0.3);
+  }
+}
+
+//Server boost overlay
+[class^="perksModal-"] {
+  background: transparent !important;
+}
+//progress line
+[class^="progressBar"] > [class^="barBackground"] {
+  background: var(--main-color) !important;
+}
+//progress dots
+[class^="tierMarkerGroup"] > [class*="tierMarkerBackground"] {
+  background: var(--main-color) !important;
+}
+[class^="tierMarkerGroup"] [class*="tierMarkerInProgress"] {
+  background: var(--main-color-selected) !important;
+}
+//tier panels
+[class^="carousel"] [class^="tier-"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  [class*="tierHeader"] {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  [class*="tierHeaderLocked"] path {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+  [class*="tierBody"] {
+    background: transparent !important;
+  }
+}
+//perks below carousel
+[class^="perks"] > li[class^="perk"] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+//Server settings - Server boost status tiers
+//progress line
+[class^="progress"] rect[class^="background"] {
+  fill: var(--scroll-thumb-color);
+}
+//progress dots
+[class^="progress"] [class*="tierInProgress"] {
+  background: var(--scroll-thumb-color);
+}
+//tier panels
+[class^="tiers"] > [class^="tier-"] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  [class*="tierHeader"] {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  [class*="tierHeaderLocked"] path {
+    fill: rgba(255, 255, 255, 0.5);
+  }
+  [class*="tierBody"] {
+    background: transparent !important;
+  }
+}

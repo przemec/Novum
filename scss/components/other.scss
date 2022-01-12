@@ -1,10 +1,5 @@
 @use "../core/mixins" as m;
 
-//server boost overlay
-[class^="perksModal-"] {
-  background: transparent !important;
-}
-
 //FlowerStar aka Verified SVG ICON
 [class^="flowerStar-"] > path {
   fill: var(--accent-saturated) !important;
@@ -65,6 +60,15 @@
 //Color brand buttons
 button[class*="colorBrand-"]:not([class*="lookBlank"]) {
   @include m.btred;
+}
+
+button[class*="colorBrand-"][class*="lookInverted"] {
+  background: var(--button-text-selected);
+  color: var(--main-color-selected);
+  &:hover {
+    background: var(--button-text);
+    color: var(--main-color);
+  }
 }
 
 button[class*="lookOutlined-"]:not([class*="lookBlank"]) {

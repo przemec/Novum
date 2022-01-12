@@ -67,11 +67,3 @@
   background: var(--main-color-semitransparent-selected);
   color: var(--button-text-selected);
 }
-
-//Nitro page
-[class*="applicationStore"] {
-  background: transparent !important;
-}
-[class*="applicationStore"] button {
-  @include m.btred_important;
-}
