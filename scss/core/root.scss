@@ -12,23 +12,24 @@
   --scrollbar-thin-track: transparent !important;
   --text-link: var(--accent-color);
   --text-muted: rgba(255, 255, 255, 0.5);
+  --brand-experiment: var(--main-color);
   --channels-default: rgba(255, 255, 255, 0.7);
 
   //Initialize theme variables
   --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
-  --main-color: #b42a2acc;
-  --main-color-selected: #c93838cc;
+  --main-color: #992727;
+  --main-color-selected: #aa2f2f;
   --main-color-semitransparent: #d4393926;
   --main-color-semitransparent-selected: #d336364d;
   --accent-color: #fd9fa0;
   --accent-color-semitransparent: #fca7a918;
   --accent-saturated: #fd7a7c;
-  --accent-desaturated: #c28383e6;
+  --accent-desaturated: #b47a7a;
   --button-text: #dddddd;
   --button-text-selected: #ffffff;
   --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
   --profile-activity: #6d1515;
-  --scroll-thumb-color: #df6161b6;
+  --scroll-thumb-color: #a54b4b;
 }
 
 //Background

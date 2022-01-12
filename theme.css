@@ -11,21 +11,22 @@
   --scrollbar-thin-track: transparent !important;
   --text-link: var(--accent-color);
   --text-muted: rgba(255, 255, 255, 0.5);
+  --brand-experiment: var(--main-color);
   --channels-default: rgba(255, 255, 255, 0.7);
   --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
-  --main-color: #b42a2acc;
-  --main-color-selected: #c93838cc;
+  --main-color: #992727;
+  --main-color-selected: #aa2f2f;
   --main-color-semitransparent: #d4393926;
   --main-color-semitransparent-selected: #d336364d;
   --accent-color: #fd9fa0;
   --accent-color-semitransparent: #fca7a918;
   --accent-saturated: #fd7a7c;
-  --accent-desaturated: #c28383e6;
+  --accent-desaturated: #b47a7a;
   --button-text: #dddddd;
   --button-text-selected: #ffffff;
   --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
   --profile-activity: #6d1515;
-  --scroll-thumb-color: #df6161b6;
+  --scroll-thumb-color: #a54b4b;
 }
 
 body::after {
@@ -816,14 +817,6 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class*=tierHeaderLocked] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
-}
-
-[class*=tierBody] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
-}
-
 [class*=circleButton] {
   background-color: var(--main-color-semitransparent) !important;
 }
@@ -1384,7 +1377,6 @@ nav[class*=container] > [class*=container] > header:hover {
 [class*=applicationStore] {
   background: transparent !important;
 }
-
 [class*=applicationStore] button {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
@@ -1393,8 +1385,64 @@ nav[class*=container] > [class*=container] > header:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
+[class*=applicationStore] [class^=marketingRefreshSectionTier] {
+  background: transparent !important;
+}
+[class*=applicationStore] [class^=feature] > li[class^=feature] {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 [class^=perksModal-] {
+  background: transparent !important;
+}
+
+[class^=progressBar] > [class^=barBackground] {
+  background: var(--main-color) !important;
+}
+
+[class^=tierMarkerGroup] > [class*=tierMarkerBackground] {
+  background: var(--main-color) !important;
+}
+
+[class^=tierMarkerGroup] [class*=tierMarkerInProgress] {
+  background: var(--main-color-selected) !important;
+}
+
+[class^=carousel] [class^=tier-] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+[class^=carousel] [class^=tier-] [class*=tierHeader] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class^=carousel] [class^=tier-] [class*=tierHeaderLocked] path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+[class^=carousel] [class^=tier-] [class*=tierBody] {
+  background: transparent !important;
+}
+
+[class^=perks] > li[class^=perk] {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[class^=progress] rect[class^=background] {
+  fill: var(--scroll-thumb-color);
+}
+
+[class^=progress] [class*=tierInProgress] {
+  background: var(--scroll-thumb-color);
+}
+
+[class^=tiers] > [class^=tier-] {
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+}
+[class^=tiers] > [class^=tier-] [class*=tierHeader] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class^=tiers] > [class^=tier-] [class*=tierHeaderLocked] path {
+  fill: rgba(255, 255, 255, 0.5);
+}
+[class^=tiers] > [class^=tier-] [class*=tierBody] {
   background: transparent !important;
 }
 
@@ -1457,6 +1505,15 @@ button[class*=colorBrand-]:not([class*=lookBlank]) {
 button[class*=colorBrand-]:not([class*=lookBlank]):hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
+}
+
+button[class*=colorBrand-][class*=lookInverted] {
+  background: var(--button-text-selected);
+  color: var(--main-color-selected);
+}
+button[class*=colorBrand-][class*=lookInverted]:hover {
+  background: var(--button-text);
+  color: var(--main-color);
 }
 
 button[class*=lookOutlined-]:not([class*=lookBlank]) {
