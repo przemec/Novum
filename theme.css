@@ -12,6 +12,7 @@
   --text-link: var(--accent-color);
   --text-muted: rgba(255, 255, 255, 0.5);
   --brand-experiment: var(--main-color);
+  --control-brand-foreground: var(--main-color);
   --channels-default: rgba(255, 255, 255, 0.7);
   --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
   --main-color: #992727;
@@ -718,6 +719,27 @@ svg[style="color: rgb(88, 101, 242);"] path {
   color: var(--button-text-selected) !important;
 }
 
+header h1[class^=name] {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+[class^=sidebar] [class*=selected] header {
+  background: transparent;
+}
+
+[class*=labelContainer] svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+[class*=labelContainer][class*=focused] {
+  background: var(--main-color) !important;
+}
+[class*=labelContainer][class*=focused] svg {
+  transform: scale(1.2);
+}
+
 [class*=tabBarItem]:hover {
   border-bottom-color: var(--main-color-selected) !important;
 }
@@ -772,28 +794,16 @@ svg[style="color: rgb(88, 101, 242);"] path {
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
-[class*=focusLock] [class*=modal] {
+[aria-label="Create Invite"] {
+  display: none !important;
+}
+
+nav[class*=container] > [class*=container] > header:hover {
+  background: transparent !important;
+}
+
+[class*=layer] [class*=animator] [class*=container][class*=scrollerBase] {
   background: rgba(0, 0, 0, 0.95) !important;
-}
-[class*=focusLock] [class*=modal] [class*=horizontalReverse] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-[class*=focusLock] [class*=modal] [class*=radioBar] > div:not([class*=info]) circle {
-  fill: var(--main-color) !important;
-}
-
-header h1[class*=name] {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 55px;
-}
-
-[class^=sidebar] [class*=selected] header {
-  background: transparent;
-}
-
-[class*=labelContainer][class*=focused] {
-  background: var(--main-color) !important;
 }
 
 [class*=panels] [class*=actionButtons] button {
@@ -805,16 +815,14 @@ header h1[class*=name] {
   color: var(--button-text-selected) !important;
 }
 
-[aria-label="Create Invite"] {
-  display: none !important;
-}
-
-nav[class*=container] > [class*=container] > header:hover {
-  background: transparent !important;
-}
-
-[class*=layer] [class*=animator] [class*=container][class*=scrollerBase] {
+[class*=focusLock] [class*=modal] {
   background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=focusLock] [class*=modal] [class*=horizontalReverse] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=focusLock] [class*=modal] [class*=radioBar] > div:not([class*=info]) circle {
+  fill: var(--main-color) !important;
 }
 
 [class*=circleButton] {
@@ -1080,6 +1088,14 @@ nav[class*=container] > [class*=container] > header:hover {
   color: var(--button-text-selected);
 }
 
+.bd-switch-body {
+  background: var(--accent-color-semitransparent) !important;
+}
+
+.bd-switch-checked .bd-switch-body {
+  background: var(--main-color) !important;
+}
+
 .bd-addon-views > button {
   background: transparent !important;
 }
@@ -1100,19 +1116,45 @@ nav[class*=container] > [class*=container] > header:hover {
   margin-left: 10px;
 }
 
-[aria-label=USER_SETTINGS] [role=radiogroup] [aria-checked=true] [style*="hsl(139"] {
+[role=radiogroup] [aria-checked=true] [style*="hsl(139"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
 
-[aria-label=USER_SETTINGS] [role=radiogroup] [aria-checked=true] [style*="hsl(37"] {
+[role=radiogroup] [aria-checked=true] [style*="hsl(37"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
 
-[aria-label=USER_SETTINGS] [role=radiogroup] [aria-checked=true] [style*="hsl(359"] {
+[role=radiogroup] [aria-checked=true] [style*="hsl(359"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+[role=radiogroup] > [class*=item] {
+  background: rgba(0, 0, 0, 0.1);
+}
+[role=radiogroup] > [class*=item]:hover {
+  background: rgba(0, 0, 0, 0.2);
+}
+[role=radiogroup] > [class*=item][aria-checked=true] {
+  background: rgba(0, 0, 0, 0.4);
+}
+[role=radiogroup] > [class*=item][aria-checked=true] [class*=radioBar] div:not([class*=info]) circle {
+  fill: white;
+}
+
+[class*=keybindGroup] button {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class*=keybindGroup] button:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[aria-label="Remove Keybind"] {
+  background-color: var(--main-color-selected);
 }
 
 [class^=connectedAccounts] > [class^=wrapper] {
@@ -1446,58 +1488,6 @@ nav[class*=container] > [class*=container] > header:hover {
   background: transparent !important;
 }
 
-[class^=flowerStar-] > path {
-  fill: var(--accent-saturated) !important;
-}
-
-[class^=backdrop] {
-  background: linear-gradient(#00000022, #000000ff) !important;
-}
-
-[role=dialog] [class^=contentWrapper] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-
-[class^=popoutContainer] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-[class^=popoutContainer] button {
-  background: var(--main-color);
-  color: var(--button-text);
-}
-[class^=popoutContainer] button:hover {
-  background: var(--main-color-selected);
-  color: var(--button-text-selected);
-}
-
-#permissions-modal {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-#permissions-modal div {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-#permissions-modal div div {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-
-[class^=control-] [class^=container-] {
-  opacity: 0.4 !important;
-  background: rgba(100, 100, 100, 0.2) !important;
-}
-
-[class^=control-] [class^=container-][style*="hsl(139"] {
-  opacity: 0.7 !important;
-  background: var(--main-color) !important;
-}
-
-[class^=barFill-] {
-  background: var(--main-color) !important;
-}
-
-[class^=colorPrimary-] {
-  background: var(--main-color) !important;
-}
-
 button[class*=colorBrand-]:not([class*=lookBlank]) {
   background: var(--main-color);
   color: var(--button-text);
@@ -1521,39 +1511,15 @@ button[class*=lookOutlined-]:not([class*=lookBlank]) {
   border-color: transparent !important;
 }
 
-[class*=wordmark] svg {
-  display: none;
-}
-[class*=wordmark]::before, [class*=wordmark]::after {
-  height: 16px;
-  font-family: var(--font-primary);
-}
-[class*=wordmark]::before {
-  content: "Novum";
-  color: rgba(255, 255, 255, 0.5);
-  margin-left: 2px;
-  font-size: 16px;
-  font-weight: bold;
-}
-[class*=wordmark]::after {
-  content: "v5.4.1";
-  color: rgba(255, 255, 255, 0.3);
-  font-size: 14px;
-  margin-left: 8px;
+[class^=control-] [class^=container-] {
+  background: var(--accent-color-semitransparent) !important;
 }
 
-#guild-context-invite-people:not(:hover),
-#channel-context-invite-people:not(:hover) {
-  color: var(--accent-color);
-}
-
-[class*=homeIcon] {
-  transform: rotate(-180deg);
-}
-
-[data-list-item-id=guildsnav___home]:hover > div,
-[data-list-item-id=guildsnav___home][class*=selected] > div {
+[class^=control-] [class^=container-][style*="hsl(139"] {
   background: var(--main-color) !important;
+}
+[class^=control-] [class^=container-][style*="hsl(139"] [class^=slider] path {
+  fill: var(--main-color);
 }
 
 input {
@@ -1565,6 +1531,54 @@ input:focus {
   box-shadow: 0px 0px transparent;
 }
 
+[aria-checked=true] [class*=iconContainer] svg > path:first-child {
+  fill: var(--main-color);
+}
+
+[aria-checked=true] [class*=iconContainer] svg > path:last-child {
+  fill: var(--button-text-selected) !important;
+}
+
+[class^=barFill-] {
+  background: var(--main-color) !important;
+}
+
+[class^=colorPrimary-] {
+  background: var(--main-color) !important;
+}
+
+[class*=tooltipPrimary],
+[class*=tooltipGreen] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid black;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+[class*=tooltipPrimary] [class*=tooltipPointer],
+[class*=tooltipGreen] [class*=tooltipPointer] {
+  border-top-color: black !important;
+}
+
+[class^=backdrop] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
+[role=dialog] [class^=contentWrapper] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=popoutContainer] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class^=popoutContainer] button {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class^=popoutContainer] button:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
 [class*=noiseCancellationPopout] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
@@ -1573,27 +1587,51 @@ input:focus {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+[aria-label="Quick switcher"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class*=focusLock] [class*=root] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: 0px 0px !important;
+}
+[class*=focusLock] [class*=root] [class*=directionRow],
+[class*=focusLock] [class*=root] [class*=body],
+[class*=focusLock] [class*=root] [class*=topSection] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=focusLock] [class*=root] [class*=avatar] {
+  border: none;
+}
+[class*=focusLock] [class*=root] [class*=message] {
+  background: transparent !important;
+  border: none !important;
+}
+
+#guild-context-invite-people:not(:hover),
+#channel-context-invite-people:not(:hover) {
+  color: var(--accent-color);
+}
+
+[class^=flowerStar-] > path {
+  fill: var(--accent-saturated) !important;
+}
+
+[class*=homeIcon] {
+  transform: rotate(-180deg);
+}
+
+[data-list-item-id=guildsnav___home]:hover > div,
+[data-list-item-id=guildsnav___home][class*=selected] > div {
+  background: var(--main-color) !important;
+}
+
 [href="https://support.discord.com"] {
   display: none !important;
 }
 
 [aria-label="Notification Settings"] {
   display: none !important;
-}
-
-[class*=socialLinks]::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-top: -5px;
-  margin-left: 6px;
-  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
-  filter: contrast(0%) brightness(1.4);
-}
-
-[aria-label="Quick switcher"] {
-  background: rgba(0, 0, 0, 0.95) !important;
 }
 
 [class*=nameAndDecorators] [class*=botTagRegular] {
@@ -1636,30 +1674,6 @@ input:focus {
   z-index: 2;
 }
 
-[class*=focusLock] [class*=root] {
-  background: rgba(0, 0, 0, 0.95) !important;
-  box-shadow: 0px 0px !important;
-}
-[class*=focusLock] [class*=root] [class*=directionRow],
-[class*=focusLock] [class*=root] [class*=body],
-[class*=focusLock] [class*=root] [class*=topSection] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-[class*=focusLock] [class*=root] [class*=avatar] {
-  border: none;
-}
-[class*=focusLock] [class*=root] [class*=message] {
-  background: transparent !important;
-  border: none !important;
-}
-
-[role=radiogroup] [class*=directionRow][aria-checked=true] {
-  background: rgba(0, 0, 0, 0.3) !important;
-}
-[role=radiogroup] [class*=directionRow][aria-checked=true] [class*=radioBar] div:not([class*=info]) circle {
-  fill: white;
-}
-
 [class*=card-]:not([class*=justify]) {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
@@ -1667,18 +1681,6 @@ input:focus {
 
 [class*=card-][class*=justify] {
   box-shadow: 0px 0px;
-}
-
-[class*=tooltipPrimary],
-[class*=tooltipGreen] {
-  background: rgba(0, 0, 0, 0.95) !important;
-  border: 2px solid black;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
-}
-[class*=tooltipPrimary] [class*=tooltipPointer],
-[class*=tooltipGreen] [class*=tooltipPointer] {
-  border-top-color: black !important;
 }
 
 [class*=mediaBarWrapper] [class*=fakeEdges] {
@@ -1704,14 +1706,6 @@ input:focus {
   display: none !important;
 }
 
-[aria-checked=true] [class*=iconContainer] svg > path:first-child {
-  fill: var(--main-color);
-}
-
-[aria-checked=true] [class*=iconContainer] svg > path:last-child {
-  fill: var(--button-text-selected) !important;
-}
-
 [class*=streamPreviewWrapper] [class*=streamPreview] {
   background: rgba(0, 0, 0, 0.95) !important;
   border: transparent;
@@ -1719,6 +1713,48 @@ input:focus {
 [class*=streamPreviewWrapper] [class*=streamPreview] [class*=previewContainer] {
   background: transparent !important;
   border: transparent;
+}
+
+[class*=wordmark] svg {
+  display: none;
+}
+[class*=wordmark]::before, [class*=wordmark]::after {
+  height: 16px;
+  font-family: var(--font-primary);
+}
+[class*=wordmark]::before {
+  content: "Novum";
+  color: rgba(255, 255, 255, 0.5);
+  margin-left: 2px;
+  font-size: 16px;
+  font-weight: bold;
+}
+[class*=wordmark]::after {
+  content: "v5.4.2";
+  color: rgba(255, 255, 255, 0.3);
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+[class*=socialLinks]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 6px;
+  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
+  filter: contrast(0%) brightness(1.4);
+}
+
+#permissions-modal {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#permissions-modal div {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#permissions-modal div div {
+  background: rgba(0, 0, 0, 0.9) !important;
 }
 
 /*# sourceMappingURL=theme.css.map */

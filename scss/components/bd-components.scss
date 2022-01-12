@@ -33,6 +33,13 @@
 .bd-button:not(.bd-addon-button) {
   @include m.btred;
 }
+//switches
+.bd-switch-body {
+  background: var(--accent-color-semitransparent) !important;
+}
+.bd-switch-checked .bd-switch-body {
+  background: var(--main-color) !important;
+}
 
 //plugins and themes pages
 .bd-addon-views > button {

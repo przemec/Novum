@@ -1,18 +1,43 @@
 @use "../core/mixins" as m;
 
 //"Privacy settings"
-//semi-transparent fields (green, orange and red)
-[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
+//semi-transparent radiocheckbox horizontal fields (green, orange and red)
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
   background: rgba(0, 230, 77, 0.3) !important;
   border-color: rgba(0, 230, 77, 0.3) !important;
 }
-[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
   background: rgba(255, 153, 0, 0.3) !important;
   border-color: rgba(255, 153, 0, 0.3) !important;
 }
-[aria-label="USER_SETTINGS"] [role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
   background: rgba(244, 40, 40, 0.3) !important;
   border-color: rgba(204, 0, 0, 0.3) !important;
+}
+
+//semi-transparent radiocheckbox horizontal fields (not colored ones)
+[role="radiogroup"] {
+  & > [class*="item"] {
+    background: rgba(0, 0, 0, 0.1);
+  }
+  & > [class*="item"]:hover {
+    background: rgba(0, 0, 0, 0.2);
+  }
+  & > [class*="item"][aria-checked="true"] {
+    background: rgba(0, 0, 0, 0.4);
+
+    [class*="radioBar"] div:not([class*="info"]) circle {
+      fill: rgb(255, 255, 255);
+    }
+  }
+}
+
+//"Keybinds" settings
+[class*="keybindGroup"] button {
+  @include m.btred_important;
+}
+[aria-label="Remove Keybind"] {
+  background-color: var(--main-color-selected);
 }
 
 //"Connections" settings

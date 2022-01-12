@@ -1,3 +1,24 @@
+//Server header name
+header h1[class^="name"] {
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 55px;
+}
+[class^="sidebar"] [class*="selected"] header {
+  background: transparent;
+}
+
+//popout after clicking server name, focused option
+[class*="labelContainer"] svg {
+  transition: transform 0.2s ease-in-out;
+}
+[class*="labelContainer"][class*="focused"] {
+  background: var(--main-color) !important;
+  svg {
+    transform: scale(1.2);
+  }
+}
+
 // Server channel tabbaritem
 [class*="tabBarItem"]:hover {
   border-bottom-color: var(--main-color-selected) !important;
@@ -70,43 +91,6 @@
   }
 }
 
-//Create voice|text channel popout
-[class*="focusLock"] [class*="modal"] {
-  background: rgba(0, 0, 0, 0.95) !important;
-
-  [class*="horizontalReverse"] {
-    background: rgba(0, 0, 0, 0.95) !important;
-  }
-
-  [class*="radioBar"] > div:not([class*="info"]) circle {
-    fill: var(--main-color) !important;
-  }
-}
-
-//Server header name
-header h1[class*="name"] {
-  font-size: 18px;
-  font-weight: bold;
-  line-height: 55px;
-}
-[class^="sidebar"] [class*="selected"] header {
-  background: transparent;
-}
-
-//popout after clicking server name, focused option
-[class*="labelContainer"][class*="focused"] {
-  background: var(--main-color) !important;
-}
-//Video & Screen buttons backgrounds
-[class*="panels"] [class*="actionButtons"] button {
-  background: var(--main-color-semitransparent) !important;
-  color: var(--button-text) !important;
-  &:hover {
-    background: var(--main-color-semitransparent-selected) !important;
-    color: var(--button-text-selected) !important;
-  }
-}
-
 //Remove redundant create invite icon from channel list
 [aria-label="Create Invite"] {
   display: none !important;
@@ -118,4 +102,27 @@ nav[class*="container"] > [class*="container"] > header:hover {
 
 [class*="layer"] [class*="animator"] [class*="container"][class*="scrollerBase"] {
   background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//Video & Screen buttons backgrounds
+[class*="panels"] [class*="actionButtons"] button {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
+  &:hover {
+    background: var(--main-color-semitransparent-selected) !important;
+    color: var(--button-text-selected) !important;
+  }
+}
+
+//Create voice|text channel popout
+[class*="focusLock"] [class*="modal"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  [class*="horizontalReverse"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
+
+  [class*="radioBar"] > div:not([class*="info"]) circle {
+    fill: var(--main-color) !important;
+  }
 }
