@@ -1,14 +1,14 @@
-![Novum logo](https://github.com/przemec/Novum/blob/master/assets/images/NovumLogoSm.png)
+![Novum logo](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/NovumLogoSm.png)
 
 ### Big and actively updated Discord theme with background taken from good old 'Nova' theme. <br>
 This project includes couple of small addons, such as new icons in app settings, enlarged reactions under messages or animated activity section in user popout.
 
 #### App preview:
 
-![Preview](https://github.com/przemec/Novum/blob/master/assets/images/theme_preview.png)
+![Preview](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/theme_preview.png)
 #### Settings preview:
 
-![Preview](https://github.com/przemec/Novum/blob/master/assets/images/theme_preview_settings.png)
+![Preview](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/theme_preview_settings.png)
 *Original (not edited) background comes from [Nova](https://github.com/din0s/discord-theme/) theme made by [din0s](https://github.com/din0s/).*
 
 #
