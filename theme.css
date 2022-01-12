@@ -1095,6 +1095,9 @@ nav[class*=container] > [class*=container] > header:hover {
 .bd-switch-checked .bd-switch-body {
   background: var(--main-color) !important;
 }
+.bd-switch-checked .bd-switch-body path {
+  fill: var(--main-color);
+}
 
 .bd-addon-views > button {
   background: transparent !important;

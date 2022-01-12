@@ -39,6 +39,9 @@
 }
 .bd-switch-checked .bd-switch-body {
   background: var(--main-color) !important;
+  path {
+    fill: var(--main-color);
+  }
 }
 
 //plugins and themes pages
