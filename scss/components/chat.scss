@@ -185,6 +185,7 @@
   background: linear-gradient(90deg, transparent 5px, var(--accent-color-semitransparent) 5px, transparent 80%) !important;
   [class*="mention"] {
     color: var(--accent-saturated);
+    background: rgba(0, 0, 0, 0.2) !important;
   }
 
   &::before {
@@ -323,6 +324,9 @@
 [id^="message-accessories-"] > [class*="wrapper"] {
   background: rgba(0, 0, 0, 0.2);
 }
+[id^="message-accessories-"] > [class*="wrapper"] [class*="guildIconImage"]{
+  background-color: rgba(0, 0, 0, 0.2);
+}
 
 //upper right search (transition)
 [class*="title"] [class*="search"] {
@@ -369,7 +373,7 @@
 }
 
 //Search modal popout
-[class*="layerContainer"] [class*="container"] {
+[id*="popout"] > [class*="container"] {
   background: rgba(0, 0, 0, 0.95);
   box-shadow: none !important;
 

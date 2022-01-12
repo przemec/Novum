@@ -30,10 +30,14 @@
     color: var(--accent-saturated);
   }
 
-  //"public" bd button, server without image icon
+  //"public" bd button, server without image icon, server with transparent icon 
   #bd-pub-button,
-  [class^="wrapper"] > [class*="childWrapper"] {
-    background: rgba(0, 0, 0, 0.3) !important;
+  foreignObject > [class^="wrapper"] > [class*="childWrapper"],
+  foreignObject > [class^="wrapper"] > img {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+  }
+  foreignObject > [class^="wrapper"][class*="selected"] > [class*="childWrapper"] {
+    background-color: var(--main-color) !important;
   }
 
   //connected to voicechat icon badge
