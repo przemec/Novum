@@ -1181,6 +1181,13 @@ nav[class*=container] > [class*=container] > header:hover {
   border-radius: 10px;
 }
 
+[class^=slider-] > [class^=track-] > [class^=mark-] [class^=markValue-] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+[class^=slider-] > [class^=track-] > [class^=mark-] [class^=markDash-] {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
 [class*=notificationSettings] [class*=selected]:not([class*=disabled]) {
   background: var(--main-color);
   border-color: transparent;
@@ -1568,7 +1575,22 @@ input:focus {
   fill: var(--button-text-selected) !important;
 }
 
-[class^=barFill-] {
+[class^=select][role=button] {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[class^=select][role=button][class*=open] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+[class^=popout][role=listbox] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+[class^=slider-] > [class^=bar-] {
+  background: var(--accent-color-semitransparent) !important;
+}
+[class^=slider-] > [class^=bar-] [class^=barFill-] {
   background: var(--main-color) !important;
 }
 
@@ -1647,7 +1669,8 @@ input:focus {
 }
 
 #guild-context-invite-people:not(:hover),
-#channel-context-invite-people:not(:hover) {
+#channel-context-invite-people:not(:hover),
+#guild-header-popout-invite-people:not(:hover) {
   color: var(--accent-color);
 }
 
@@ -1768,7 +1791,7 @@ input:focus {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.3";
+  content: "v5.4.4";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;

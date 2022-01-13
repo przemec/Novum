@@ -59,9 +59,24 @@ input:focus {
   fill: var(--button-text-selected) !important;
 }
 
-//BarFill
-[class^="barFill-"] {
-  background: var(--main-color) !important;
+//select body
+[class^="select"][role="button"] {
+  background: rgba(0, 0, 0, 0.2);
+} 
+[class^="select"][role="button"][class*="open"] {
+  background: rgba(0, 0, 0, 0.9);
+} 
+//select popout
+[class^="popout"][role="listbox"] {
+  background: rgba(0, 0, 0, 0.9);
+} 
+
+//Bars
+[class^="slider-"] > [class^="bar-"] {
+  background: var(--accent-color-semitransparent) !important;
+  [class^="barFill-"] {
+    background: var(--main-color) !important;
+  }
 }
 
 //Color primary
@@ -146,9 +161,10 @@ input:focus {
   }
 }
 
-//"Invite People" button after clicking on server/channel with right click
+//"Invite People" button after clicking on some server/channel/servername with right click
 #guild-context-invite-people:not(:hover),
-#channel-context-invite-people:not(:hover) {
+#channel-context-invite-people:not(:hover),
+#guild-header-popout-invite-people:not(:hover) {
   color: var(--accent-color);
 }
 
@@ -308,7 +324,7 @@ input:focus {
     font-weight: bold;
   }
   &::after {
-    content: "v5.4.3";
+    content: "v5.4.4";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;

@@ -1,6 +1,5 @@
 @use "../core/mixins" as m;
 
-//"Privacy settings"
 //semi-transparent radiocheckbox horizontal fields (green, orange and red)
 [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
   background: rgba(0, 230, 77, 0.3) !important;
@@ -55,6 +54,16 @@
   background: rgba(0, 0, 0, 0.3) !important;
   border: 1px solid #000000 !important;
   border-radius: 10px;
+}
+
+//"Accessibility" settings
+[class^="slider-"] > [class^="track-"] > [class^="mark-"] {
+  [class^="markValue-"] {
+    color: rgba(255, 255, 255, 0.5) !important;
+  }
+  [class^="markDash-"] {
+    background: rgba(255, 255, 255, 0.5) !important;
+  }
 }
 
 //"Game overlay" settings - overlay notification labels
