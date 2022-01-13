@@ -649,6 +649,18 @@ code .hljs-literal {
 code .hljs-string {
   color: var(--button-text) !important;
 }
+code .hljs-attribute {
+  color: var(--accent-desaturated) !important;
+}
+code .hljs-selector-class {
+  color: var(--accent-saturated) !important;
+}
+code .hljs-number {
+  color: var(--main-color-selected) !important;
+}
+code .hljs-selector-tag {
+  color: var(--accent-desaturated) !important;
+}
 
 [class*=replying] {
   background-color: rgba(0, 0, 0, 0.1) !important;
