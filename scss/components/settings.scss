@@ -3,15 +3,12 @@
 //semi-transparent radiocheckbox horizontal fields (green, orange and red)
 [role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
   background: rgba(0, 230, 77, 0.3) !important;
-  border-color: rgba(0, 230, 77, 0.3) !important;
 }
 [role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
   background: rgba(255, 153, 0, 0.3) !important;
-  border-color: rgba(255, 153, 0, 0.3) !important;
 }
 [role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
   background: rgba(244, 40, 40, 0.3) !important;
-  border-color: rgba(204, 0, 0, 0.3) !important;
 }
 
 //semi-transparent radiocheckbox horizontal fields (not colored ones)
@@ -96,7 +93,7 @@
 }
 
 //Settings sidebar
-[aria-label="USER_SETTINGS"] [class^="sidebar"] [class*="item"] {
+[aria-label="USER_SETTINGS"] [class^="sidebar-"] [class*="item"] {
   //Space for icons
   padding-left: 50px !important;
 
@@ -118,7 +115,7 @@
   }
 }
 
-[aria-label="USER_SETTINGS"] [class^="sidebar"] [class*="item"]::after {
+[aria-label="USER_SETTINGS"] [class^="sidebar-"] [class*="item"]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -131,7 +128,7 @@
   transition: all 0.15s ease-in-out;
   background-size: cover !important;
 }
-[aria-label="USER_SETTINGS"] [class*="sidebarRegionScroller"] [class*="selected"]::after {
+[aria-label="USER_SETTINGS"] [class^="sidebar-"] [class*="selected"]::after {
   opacity: 0.7;
 }
 

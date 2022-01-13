@@ -5,6 +5,12 @@
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+//unsaved changes popout
+[class^="noticeRegion"] > [class^="container"] {
+  background: rgba(0, 0, 0, 0.85) !important;
+  box-shadow: none !important;
+}
+
 //being invited to server modal
 [role="dialog"] [class^="contentWrapper"] {
   background: rgba(0, 0, 0, 0.95) !important;
@@ -222,7 +228,7 @@
     font-weight: bold;
   }
   &::after {
-    content: "v5.4.4";
+    content: "v5.4.5";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;
@@ -336,4 +342,6 @@
   --control-brand-foreground: var(--main-color);
   --channels-default: rgba(255, 255, 255, 0.7);
   --header-secondary: rgba(255, 255, 255, 0.7);
+  --interactive-muted: rgba(255, 255, 255, 0.3);
+  --background-floating: rgba(0, 0, 0, 0.9);
 }

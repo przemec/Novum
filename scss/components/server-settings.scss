@@ -1,11 +1,78 @@
+[aria-label="GUILD_SETTINGS"] [class^="sidebar"] [class*="item"] {
+  //items in sidebar
+  &:hover {
+    background: var(--main-color-semitransparent) !important;
+    color: var(--button-text) !important;
+  }
+  &[class*="selected"] {
+    background: var(--main-color-semitransparent-selected) !important;
+    color: var(--button-text-selected) !important;
+  }
+}
 
-
-
-//Circlebutton (roles settings)
+//"Roles" settings
 [class*="circleButton"] {
   background-color: var(--main-color-semitransparent) !important;
 
   &:hover {
     background-color: var(--main-color-semitransparent-selected) !important;
+  }
+}
+//editting role header background
+[class*="stickyHeaderElevated"]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--app-background) center / cover no-repeat fixed;
+  background-position: unset;
+}
+
+//"Emoji" settings - X button
+[class*="emojiRemove"] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+//"Moderation" settings - semi-transparent radiocheckbox horizontal fields (green, yellow, orange and red)
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(139)"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+}
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(38"] {
+  background: rgba(255, 196, 0, 0.3) !important;
+}
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(21"] {
+  background: rgba(242, 97, 0, 0.3) !important;
+}
+[role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+}
+
+//"Audit Log" settings
+[role="list"] > [class*="auditLog"] {
+  border-color: #000 !important;
+  & > [class^="header"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+  & > [class^="divider"] {
+    background: #000 !important;
+  }
+  & > [class*="changeDetails"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+//"Invites" settings - X button
+[class*="revokeInvite"] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+//"Bans" settings
+div[class^="bannedUser-"][class*="card-"] {
+  background: transparent !important;
+  span {
+    color: rgba(255, 255, 255, 0.5) !important;
   }
 }

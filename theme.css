@@ -14,6 +14,8 @@
   --brand-experiment: var(--main-color);
   --control-brand-foreground: var(--main-color);
   --channels-default: rgba(255, 255, 255, 0.7);
+  --interactive-muted: rgba(255, 255, 255, 0.3);
+  --background-floating: rgba(0, 0, 0, 0.9);
   --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
   --main-color: #992727;
   --main-color-selected: #aa2f2f;
@@ -945,11 +947,76 @@ nav[class*=container] > [class*=container] > header:hover {
   fill: var(--main-color) !important;
 }
 
+[aria-label=GUILD_SETTINGS] [class^=sidebar] [class*=item]:hover {
+  background: var(--main-color-semitransparent) !important;
+  color: var(--button-text) !important;
+}
+[aria-label=GUILD_SETTINGS] [class^=sidebar] [class*=item][class*=selected] {
+  background: var(--main-color-semitransparent-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
 [class*=circleButton] {
   background-color: var(--main-color-semitransparent) !important;
 }
 [class*=circleButton]:hover {
   background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[class*=stickyHeaderElevated]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--app-background) center/cover no-repeat fixed;
+  background-position: unset;
+}
+
+[class*=emojiRemove] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(139)"] {
+  background: rgba(0, 230, 77, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(38"] {
+  background: rgba(255, 196, 0, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(21"] {
+  background: rgba(242, 97, 0, 0.3) !important;
+}
+
+[role=radiogroup] [aria-checked=true] [style*="hsl(359"] {
+  background: rgba(244, 40, 40, 0.3) !important;
+}
+
+[role=list] > [class*=auditLog] {
+  border-color: #000 !important;
+}
+[role=list] > [class*=auditLog] > [class^=header] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+[role=list] > [class*=auditLog] > [class^=divider] {
+  background: #000 !important;
+}
+[role=list] > [class*=auditLog] > [class*=changeDetails] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+[class*=revokeInvite] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+div[class^=bannedUser-][class*=card-] {
+  background: transparent !important;
+}
+div[class^=bannedUser-][class*=card-] span {
+  color: rgba(255, 255, 255, 0.5) !important;
 }
 
 [class*=content] [class*=pageWrapper] {
@@ -1237,17 +1304,14 @@ nav[class*=container] > [class*=container] > header:hover {
 
 [role=radiogroup] [aria-checked=true] [style*="hsl(139"] {
   background: rgba(0, 230, 77, 0.3) !important;
-  border-color: rgba(0, 230, 77, 0.3) !important;
 }
 
 [role=radiogroup] [aria-checked=true] [style*="hsl(37"] {
   background: rgba(255, 153, 0, 0.3) !important;
-  border-color: rgba(255, 153, 0, 0.3) !important;
 }
 
 [role=radiogroup] [aria-checked=true] [style*="hsl(359"] {
   background: rgba(244, 40, 40, 0.3) !important;
-  border-color: rgba(204, 0, 0, 0.3) !important;
 }
 
 [role=radiogroup] > [class*=item] {
@@ -1329,25 +1393,25 @@ nav[class*=container] > [class*=container] > header:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item] {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item] {
   padding-left: 50px !important;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item]:hover {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item]:hover {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item][class*=selected] {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item][class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item][aria-controls=discord-nitro-tab] svg {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item][aria-controls=discord-nitro-tab] svg {
   display: none;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item] [class*=selectedBackground] {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item] [class*=selectedBackground] {
   background: transparent !important;
 }
 
-[aria-label=USER_SETTINGS] [class^=sidebar] [class*=item]::after {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -1361,7 +1425,7 @@ nav[class*=container] > [class*=container] > header:hover {
   background-size: cover !important;
 }
 
-[aria-label=USER_SETTINGS] [class*=sidebarRegionScroller] [class*=selected]::after {
+[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=selected]::after {
   opacity: 0.7;
 }
 
@@ -1618,6 +1682,11 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+[class^=noticeRegion] > [class^=container] {
+  background: rgba(0, 0, 0, 0.85) !important;
+  box-shadow: none !important;
+}
+
 [role=dialog] [class^=contentWrapper] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
@@ -1791,7 +1860,7 @@ nav[class*=container] > [class*=container] > header:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.4";
+  content: "v5.4.5";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
@@ -1900,6 +1969,8 @@ nav[class*=container] > [class*=container] > header:hover {
   --control-brand-foreground: var(--main-color);
   --channels-default: rgba(255, 255, 255, 0.7);
   --header-secondary: rgba(255, 255, 255, 0.7);
+  --interactive-muted: rgba(255, 255, 255, 0.3);
+  --background-floating: rgba(0, 0, 0, 0.9);
 }
 
 /*# sourceMappingURL=theme.css.map */
