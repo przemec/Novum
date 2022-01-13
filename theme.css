@@ -919,6 +919,24 @@ header h1[class^=name] {
   color: var(--button-text) !important;
 }
 
+[class*=avatarSpeaking] {
+  box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px var(--accent-color-semitransparent);
+}
+
+[class*=avatarSpeaking]::before {
+  content: "";
+  z-index: -10 !important;
+  position: absolute;
+  left: 20px;
+  height: 24px;
+  width: 60%;
+  border-radius: -5px;
+  background: linear-gradient(to right, var(--accent-color-semitransparent), transparent);
+  opacity: 1;
+  border-color: transparent;
+  filter: brightness(10);
+}
+
 [class*=userLimit] > [class*=wrapper] {
   border-radius: 5px !important;
 }
@@ -942,6 +960,9 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+[class*=panels] > [class*=container] button:hover {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
 [class*=panels] [class*=actionButtons] button {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
@@ -1200,6 +1221,9 @@ div[class^=bannedUser-][class*=card-] span {
 [class^=activityUserPopout-] button:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
+}
+[class^=activityUserPopout-] [class^=bar-] {
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 [class^=activityUserPopout-]::before {
   content: "";
@@ -1874,7 +1898,7 @@ div[class^=bannedUser-][class*=card-] span {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.6";
+  content: "v5.4.7";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;

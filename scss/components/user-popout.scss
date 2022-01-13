@@ -128,6 +128,11 @@
     @include m.btred_important;
   }
 
+  //spotify song playing bar
+  [class^="bar-"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
   //activity animations
   &::before {
     content: "";

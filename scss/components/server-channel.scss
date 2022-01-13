@@ -74,6 +74,24 @@ header h1[class^="name"] {
   }
 }
 
+//user speaking
+[class*="avatarSpeaking"] {
+  box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px var(--accent-color-semitransparent);
+}
+[class*="avatarSpeaking"]::before {
+  content: "";
+  z-index: -10 !important;
+  position: absolute;
+  left: 20px;
+  height: 24px;
+  width: 60%;
+  border-radius: -5px;
+  background: linear-gradient(to right, var(--accent-color-semitransparent), transparent);
+  opacity: 1;
+  border-color: transparent;
+  filter: brightness(10);
+}
+
 //Userlimit on voice chat
 [class*="userLimit"] {
   & > [class*="wrapper"] {
@@ -95,7 +113,6 @@ header h1[class^="name"] {
   }
 }
 
-
 nav[class*="container"] > [class*="container"] > header:hover {
   background: transparent !important;
 }
@@ -104,13 +121,20 @@ nav[class*="container"] > [class*="container"] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-//Video & Screen buttons backgrounds
-[class*="panels"] [class*="actionButtons"] button {
-  background: var(--main-color-semitransparent) !important;
-  color: var(--button-text) !important;
-  &:hover {
-    background: var(--main-color-semitransparent-selected) !important;
-    color: var(--button-text-selected) !important;
+[class*="panels"] {
+  //mute and settings icons
+  & > [class*="container"] button:hover {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
+  //Video & Screen buttons backgrounds
+  [class*="actionButtons"] button {
+    background: var(--main-color-semitransparent) !important;
+    color: var(--button-text) !important;
+    &:hover {
+      background: var(--main-color-semitransparent-selected) !important;
+      color: var(--button-text-selected) !important;
+    }
   }
 }
 
