@@ -5,7 +5,7 @@ This project includes couple of small addons, such as new icons in app settings,
 
 #### App preview:
 
-![Preview](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/theme_preview.png)
+![Preview](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/theme_preview_app.png)
 #### Settings preview:
 
 ![Preview](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/theme_preview_settings.png)
