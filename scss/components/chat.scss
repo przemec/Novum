@@ -153,30 +153,31 @@
   }
 }
 
-//Links
-[class*="embedLink"] {
-  color: var(--accent-color) !important;
-}
-
 //Embed
-[class*="message"] [class^="embedWrapper"] {
+[id^="message-accessories"] > [class^="embedWrapper"] {
   background: var(--accent-color-semitransparent) !important;
   border-color: var(--accent-saturated) !important;
 }
 
 [class^="messageAttachment"] {
-  background: var(--accent-color-semitransparent) !important;
-  border-color: var(--accent-saturated) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-color: #000 !important;
+  code {
+    background: transparent !important;
+  }
+  [class^="textContainer"] + div {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
 }
 
 //someone else's mention
-[class*="accent"] [class*="mention"] {
+[id^="message-content"] [class*="mention"] {
   color: var(--accent-desaturated);
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
 
   &:hover {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.4) !important;
   }
 }
 
@@ -324,7 +325,7 @@
 [id^="message-accessories-"] > [class*="wrapper"] {
   background: rgba(0, 0, 0, 0.2);
 }
-[id^="message-accessories-"] > [class*="wrapper"] [class*="guildIconImage"]{
+[id^="message-accessories-"] > [class*="wrapper"] [class*="guildIconImage"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -523,7 +524,7 @@
   }
 }
 
-//Chat attachment scroller
+//Chat attachment scroller (after u hover file over discord and put it)
 [class*="channelAttachmentArea"] > li {
   background: rgba(0, 0, 0, 0.1) !important;
 
@@ -534,6 +535,18 @@
 
 code {
   background: rgba(0, 0, 0, 0.2) !important;
+  .hljs-keyword {
+    color: var(--accent-desaturated) !important;
+  }
+  .hljs-title {
+    color: var(--accent-saturated) !important;
+  }
+  .hljs-literal {
+    color: var(--main-color-selected) !important;
+  }
+  .hljs-string {
+    color: var(--button-text) !important;
+  }
 }
 
 //???

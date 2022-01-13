@@ -320,27 +320,29 @@ input:focus {
   background: var(--accent-color) !important;
 }
 
-[class*=embedLink] {
-  color: var(--accent-color) !important;
-}
-
-[class*=message] [class^=embedWrapper] {
+[id^=message-accessories] > [class^=embedWrapper] {
   background: var(--accent-color-semitransparent) !important;
   border-color: var(--accent-saturated) !important;
 }
 
 [class^=messageAttachment] {
-  background: var(--accent-color-semitransparent) !important;
-  border-color: var(--accent-saturated) !important;
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-color: #000 !important;
+}
+[class^=messageAttachment] code {
+  background: transparent !important;
+}
+[class^=messageAttachment] [class^=textContainer] + div {
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 
-[class*=accent] [class*=mention] {
+[id^=message-content] [class*=mention] {
   color: var(--accent-desaturated);
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
 }
-[class*=accent] [class*=mention]:hover {
-  background: rgba(0, 0, 0, 0.4);
+[id^=message-content] [class*=mention]:hover {
+  background: rgba(0, 0, 0, 0.4) !important;
 }
 
 [class*=mentioned] {
@@ -634,6 +636,18 @@ input:focus {
 
 code {
   background: rgba(0, 0, 0, 0.2) !important;
+}
+code .hljs-keyword {
+  color: var(--accent-desaturated) !important;
+}
+code .hljs-title {
+  color: var(--accent-saturated) !important;
+}
+code .hljs-literal {
+  color: var(--main-color-selected) !important;
+}
+code .hljs-string {
+  color: var(--button-text) !important;
 }
 
 [class*=replying] {
@@ -1860,7 +1874,7 @@ div[class^=bannedUser-][class*=card-] span {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.5";
+  content: "v5.4.6";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
