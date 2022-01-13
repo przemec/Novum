@@ -48,7 +48,7 @@ input {
 }
 input:focus {
   border-color: var(--accent-desaturated) !important;
-  box-shadow: 0px 0px transparent;
+  box-shadow: none transparent;
 }
 
 //checkboxes
@@ -117,14 +117,18 @@ input:focus {
 }
 
 //Where would u like to go? popout aka quickswitcher component
-[aria-label="Quick switcher"] {
+[class^="quickswitcher"] {
+  height: 100% !important;
+  box-shadow: none !important;
+}
+[class^="quickswitcher"] input {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //Random-located focus-locking popouts
 [class*="focusLock"] [class*="root"] {
   background: rgba(0, 0, 0, 0.95) !important;
-  box-shadow: 0px 0px !important;
+  box-shadow: none !important;
 
   [class*="directionRow"],
   [class*="body"],
@@ -170,7 +174,7 @@ input:focus {
   display: none !important;
 }
 //Remove notification bell from upper right corner
-[aria-label="Notification Settings"] {
+[class*="title"] > [class^="toolbar"] > [class*="icon"]:nth-child(2) {
   display: none !important;
 }
 
@@ -238,7 +242,7 @@ input:focus {
   border-color: #000000 !important;
 }
 [class*="card-"][class*="justify"] {
-  box-shadow: 0px 0px;
+  box-shadow: none;
 }
 
 [class*="mediaBarWrapper"] {

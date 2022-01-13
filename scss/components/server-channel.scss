@@ -52,7 +52,6 @@ header h1[class^="name"] {
   [class*="muted"] [class*="name"] {
     color: rgba(255, 255, 255, 0.5);
   }
-
   //selected channel
   &[class*="selected"] [class*="content"] {
     background: var(--main-color-semitransparent-selected) !important;
@@ -60,6 +59,11 @@ header h1[class^="name"] {
   }
   &[class*="selected"]:hover [class*="content"] {
     background: var(--main-color-semitransparent-selected) !important;
+  }
+
+  //Remove redundant create invite icon from channel list
+  [class^="children"] > [class^="icon"]:nth-child(1) {
+    display: none !important;
   }
 }
 
@@ -91,10 +95,6 @@ header h1[class^="name"] {
   }
 }
 
-//Remove redundant create invite icon from channel list
-[aria-label="Create Invite"] {
-  display: none !important;
-}
 
 nav[class*="container"] > [class*="container"] > header:hover {
   background: transparent !important;
