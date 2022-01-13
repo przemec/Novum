@@ -76,11 +76,6 @@ body::after {
 }
 
 [class^="sidebar-"] > nav > div:first-child,
-[class^="sidebar-"] + div section {
+[class^="chat-"] > div + section {
   background: rgba(0, 0, 0, 0.1) !important;
-}
-
-//Server list scroller
-[class^="scroller-"] {
-  background: transparent !important;
 }

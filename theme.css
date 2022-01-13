@@ -70,12 +70,120 @@ body::after {
 }
 
 [class^=sidebar-] > nav > div:first-child,
-[class^=sidebar-] + div section {
+[class^=chat-] > div + section {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
-[class^=scroller-] {
-  background: transparent !important;
+button[class*=lookFilled-][class*=colorGrey],
+button[class*=lookFilled-][class*=colorPrimary-] {
+  background: var(--accent-color-semitransparent) !important;
+  color: var(--button-text) !important;
+}
+button[class*=lookFilled-][class*=colorGrey]:hover,
+button[class*=lookFilled-][class*=colorPrimary-]:hover {
+  background: var(--accent-color-semitransparent) !important;
+  color: var(--button-text-selected) !important;
+}
+
+button[class*=colorBrand-]:not([class*=lookBlank]) {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+button[class*=colorBrand-]:not([class*=lookBlank]):hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
+}
+
+button[class*=colorBrand-][class*=lookInverted] {
+  background: var(--button-text-selected);
+  color: var(--main-color-selected);
+}
+button[class*=colorBrand-][class*=lookInverted]:hover {
+  background: var(--button-text);
+  color: var(--main-color);
+}
+
+button[class*=lookOutlined-]:not([class*=lookBlank]) {
+  color: var(--button-text);
+  border-color: transparent !important;
+}
+
+button[class*=colorGreen-],
+button[class*=colorRed-] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+button[class*=colorGreen-]:hover,
+button[class*=colorRed-]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class^=control-] [class^=container-] {
+  background: var(--accent-color-semitransparent) !important;
+}
+
+[class^=control-] [class^=container-][style*="hsl(139"] {
+  background: var(--main-color) !important;
+}
+[class^=control-] [class^=container-][style*="hsl(139"] [class^=slider] path {
+  fill: var(--main-color);
+}
+
+input {
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-color: var(--accent-desaturated) !important;
+  box-shadow: none transparent;
+}
+
+[aria-checked=true] [class*=iconContainer] svg > path:first-child {
+  fill: var(--main-color);
+}
+
+[aria-checked=true] [class*=iconContainer] svg > path:last-child {
+  fill: var(--button-text-selected) !important;
+}
+
+[class^=select][role=button] {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[class^=select][role=button][class*=open] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+[class^=popout][role=listbox] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+[class^=slider-] > [class^=bar-] {
+  background: var(--accent-color-semitransparent) !important;
+}
+[class^=slider-] > [class^=bar-] [class^=barFill-] {
+  background: var(--main-color) !important;
+}
+
+[class^=colorPrimary-] {
+  background: var(--main-color) !important;
+}
+
+[class*=tooltipPrimary],
+[class*=tooltipGreen] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid black;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+}
+[class*=tooltipPrimary] [class*=tooltipPointer],
+[class*=tooltipGreen] [class*=tooltipPointer] {
+  border-top-color: black !important;
+}
+
+[class^=backdrop] {
+  background: linear-gradient(#00000022, #000000ff) !important;
 }
 
 [class^=channelTextArea] {
@@ -657,6 +765,10 @@ body::after {
     transform: rotate(7deg);
   }
 }
+[class^=scroller-] {
+  background: transparent !important;
+}
+
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a {
   background: rgba(0, 0, 0, 0.6);
   border-color: var(--accent-saturated);
@@ -1500,118 +1612,6 @@ nav[class*=container] > [class*=container] > header:hover {
 }
 [class^=tiers] > [class^=tier-] [class*=tierBody] {
   background: transparent !important;
-}
-
-button[class*=lookFilled-][class*=colorGrey],
-button[class*=lookFilled-][class*=colorPrimary-] {
-  background: var(--accent-color-semitransparent) !important;
-  color: var(--button-text) !important;
-}
-button[class*=lookFilled-][class*=colorGrey]:hover,
-button[class*=lookFilled-][class*=colorPrimary-]:hover {
-  background: var(--accent-color-semitransparent) !important;
-  color: var(--button-text-selected) !important;
-}
-
-button[class*=colorBrand-]:not([class*=lookBlank]) {
-  background: var(--main-color);
-  color: var(--button-text);
-}
-button[class*=colorBrand-]:not([class*=lookBlank]):hover {
-  background: var(--main-color-selected);
-  color: var(--button-text-selected);
-}
-
-button[class*=colorBrand-][class*=lookInverted] {
-  background: var(--button-text-selected);
-  color: var(--main-color-selected);
-}
-button[class*=colorBrand-][class*=lookInverted]:hover {
-  background: var(--button-text);
-  color: var(--main-color);
-}
-
-button[class*=lookOutlined-]:not([class*=lookBlank]) {
-  color: var(--button-text);
-  border-color: transparent !important;
-}
-
-button[class*=colorGreen-],
-button[class*=colorRed-] {
-  background: var(--main-color) !important;
-  color: var(--button-text) !important;
-}
-button[class*=colorGreen-]:hover,
-button[class*=colorRed-]:hover {
-  background: var(--main-color-selected) !important;
-  color: var(--button-text-selected) !important;
-}
-
-[class^=control-] [class^=container-] {
-  background: var(--accent-color-semitransparent) !important;
-}
-
-[class^=control-] [class^=container-][style*="hsl(139"] {
-  background: var(--main-color) !important;
-}
-[class^=control-] [class^=container-][style*="hsl(139"] [class^=slider] path {
-  fill: var(--main-color);
-}
-
-input {
-  transition: all 0.3s;
-}
-
-input:focus {
-  border-color: var(--accent-desaturated) !important;
-  box-shadow: none transparent;
-}
-
-[aria-checked=true] [class*=iconContainer] svg > path:first-child {
-  fill: var(--main-color);
-}
-
-[aria-checked=true] [class*=iconContainer] svg > path:last-child {
-  fill: var(--button-text-selected) !important;
-}
-
-[class^=select][role=button] {
-  background: rgba(0, 0, 0, 0.2);
-}
-
-[class^=select][role=button][class*=open] {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-[class^=popout][role=listbox] {
-  background: rgba(0, 0, 0, 0.9);
-}
-
-[class^=slider-] > [class^=bar-] {
-  background: var(--accent-color-semitransparent) !important;
-}
-[class^=slider-] > [class^=bar-] [class^=barFill-] {
-  background: var(--main-color) !important;
-}
-
-[class^=colorPrimary-] {
-  background: var(--main-color) !important;
-}
-
-[class*=tooltipPrimary],
-[class*=tooltipGreen] {
-  background: rgba(0, 0, 0, 0.95) !important;
-  border: 2px solid black;
-  color: rgba(255, 255, 255, 0.5);
-  font-weight: bold;
-}
-[class*=tooltipPrimary] [class*=tooltipPointer],
-[class*=tooltipGreen] [class*=tooltipPointer] {
-  border-top-color: black !important;
-}
-
-[class^=backdrop] {
-  background: linear-gradient(#00000022, #000000ff) !important;
 }
 
 [id^=popout] > div > [class^=container] {

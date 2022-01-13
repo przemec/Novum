@@ -1,0 +1,103 @@
+@use "../core/mixins" as m;
+
+//buttons
+button[class*="lookFilled-"][class*="colorGrey"],
+button[class*="lookFilled-"][class*="colorPrimary-"] {
+  background: var(--accent-color-semitransparent) !important;
+  color: var(--button-text) !important;
+  &:hover {
+    background: var(--accent-color-semitransparent) !important;
+    color: var(--button-text-selected) !important;
+  }
+}
+button[class*="colorBrand-"]:not([class*="lookBlank"]) {
+  @include m.btred;
+}
+
+button[class*="colorBrand-"][class*="lookInverted"] {
+  background: var(--button-text-selected);
+  color: var(--main-color-selected);
+  &:hover {
+    background: var(--button-text);
+    color: var(--main-color);
+  }
+}
+button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
+  color: var(--button-text);
+  border-color: transparent !important;
+}
+button[class*="colorGreen-"],
+button[class*="colorRed-"] {
+  @include m.btred_important;
+}
+
+//Switches
+[class^="control-"] [class^="container-"] {
+  background: var(--accent-color-semitransparent) !important;
+}
+[class^="control-"] [class^="container-"][style*="hsl(139"] {
+  background: var(--main-color) !important;
+  [class^="slider"] path {
+    fill: var(--main-color);
+  }
+}
+
+//Inputs
+input {
+  transition: all 0.3s;
+}
+input:focus {
+  border-color: var(--accent-desaturated) !important;
+  box-shadow: none transparent;
+}
+
+//checkboxes
+[aria-checked="true"] [class*="iconContainer"] svg > path:first-child {
+  fill: var(--main-color);
+}
+[aria-checked="true"] [class*="iconContainer"] svg > path:last-child {
+  fill: var(--button-text-selected) !important;
+}
+
+//select body
+[class^="select"][role="button"] {
+  background: rgba(0, 0, 0, 0.2);
+}
+[class^="select"][role="button"][class*="open"] {
+  background: rgba(0, 0, 0, 0.9);
+}
+//select popout
+[class^="popout"][role="listbox"] {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+//Bars
+[class^="slider-"] > [class^="bar-"] {
+  background: var(--accent-color-semitransparent) !important;
+  [class^="barFill-"] {
+    background: var(--main-color) !important;
+  }
+}
+
+//Color primary
+[class^="colorPrimary-"] {
+  background: var(--main-color) !important;
+}
+
+//Tooltip
+[class*="tooltipPrimary"],
+[class*="tooltipGreen"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid rgba(0, 0, 0, 1);
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: bold;
+
+  [class*="tooltipPointer"] {
+    border-top-color: rgba(0, 0, 0, 1) !important;
+  }
+}
+
+//modal backdrop
+[class^="backdrop"] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}

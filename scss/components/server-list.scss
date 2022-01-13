@@ -1,5 +1,10 @@
 @use "../core/mixins" as m;
 
+//Server list scroller
+[class^="scroller-"] {
+  background: transparent !important;
+}
+
 //Servers list
 [class*="wrapper"][class*="guilds"] {
   [class*="listItemWrapper"] > a {
