@@ -65,6 +65,15 @@
   }
 }
 
+//stream/call black background removed
+[class^="callContainer"]{
+  background: transparent !important;
+}
+//popout with list of people watching stream
+[id^="popout"] [class^="popoutWrapper"] > [class^="scroller"]{
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
 //"Invite People" button after clicking on some server/channel/servername with right click
 #guild-context-invite-people:not(:hover),
 #channel-context-invite-people:not(:hover),
@@ -228,7 +237,7 @@
     font-weight: bold;
   }
   &::after {
-    content: "v5.4.7";
+    content: "v5.4.8";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;

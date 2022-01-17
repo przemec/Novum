@@ -1787,6 +1787,14 @@ div[class^=bannedUser-][class*=card-] span {
   border: none !important;
 }
 
+[class^=callContainer] {
+  background: transparent !important;
+}
+
+[id^=popout] [class^=popoutWrapper] > [class^=scroller] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
 #guild-context-invite-people:not(:hover),
 #channel-context-invite-people:not(:hover),
 #guild-header-popout-invite-people:not(:hover) {
@@ -1910,7 +1918,7 @@ div[class^=bannedUser-][class*=card-] span {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.7";
+  content: "v5.4.8";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
