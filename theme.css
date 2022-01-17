@@ -271,10 +271,10 @@ input:focus {
   color: var(--accent-color) !important;
 }
 
-[class^=layerContainer-] [class^=layer-] [class^=focusLock-] [class*=container-] {
-  background: rgba(0, 0, 0, 0.95) !important;
+[class^=layerContainer-] [class^=layer-] [class*=reactors-] {
+  background: transparent !important;
 }
-[class^=layerContainer-] [class^=layer-] [class^=focusLock-] [class*=container-] div:not([class*=contents]) {
+[class^=layerContainer-] [class^=layer-] [class*=reactors-] div:not([class*=contents]) {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 [class^=layerContainer-] [class^=layer-] [class*=menu-] {
