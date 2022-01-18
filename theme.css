@@ -915,11 +915,11 @@ header h1[class^=name] {
 [class*=sidebar] [class*=containerDefault] [class*=muted] [class*=name] {
   color: rgba(255, 255, 255, 0.5);
 }
-[class*=sidebar] [class*=containerDefault][class*=selected] [class*=content] {
+[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=content] {
   background: var(--main-color-semitransparent-selected) !important;
   color: #ffffff !important;
 }
-[class*=sidebar] [class*=containerDefault][class*=selected]:hover [class*=content] {
+[class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=content] {
   background: var(--main-color-semitransparent-selected) !important;
 }
 [class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-child(1) {
@@ -1064,6 +1064,85 @@ div[class^=bannedUser-][class*=card-] {
 }
 div[class^=bannedUser-][class*=card-] span {
   color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=chat] > [class*=minimum] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+[class^=callContainer] {
+  background: transparent !important;
+}
+
+[id^=popout] [class^=popoutWrapper] > [class^=scroller] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+[class^=quickSelectPopout] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+button[class*=participantsButton] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--button-text) !important;
+  transition: 0.2s all ease-in-out;
+}
+button[class*=participantsButton]:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+  color: var(--button-text-selected) !important;
+}
+
+[class^=liveQualityIndicator] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  color: var(--button-text) !important;
+}
+
+[class^=liveIndicator] > [class^=live] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class^=emptyPreview-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[class^=wanderingCubesItem-] {
+  background: var(--accent-color) !important;
+}
+
+[class^=tile-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[class^=tileChild] > [class*=videoWrapper],
+[class^=tileChild] > div:nth-child(2):not([class^=overlay]) {
+  background: transparent !important;
+}
+
+[class^=videoControls] [class*=contextMenuNub],
+[class^=videoControls] button[class*=centerButton] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  transition: 0.2s all ease-in-out;
+}
+[class^=videoControls] [class*=contextMenuNub]:hover,
+[class^=videoControls] button[class*=centerButton]:hover {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+[class^=videoControls] [class*=contextMenuNub] svg,
+[class^=videoControls] button[class*=centerButton] svg {
+  color: var(--button-text-selected) !important;
+}
+[class^=videoControls] button[class*=red] {
+  transition: 0.2s all ease-in-out;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[class^=videoControls] button[class*=red]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+[class^=videoControls] > [class^=gradient] {
+  background: transparent !important;
 }
 
 [class*=content] [class*=pageWrapper] {
@@ -1752,6 +1831,10 @@ div[class^=bannedUser-][class*=card-] span {
   color: var(--button-text-selected);
 }
 
+[class^=app-] > [class*=fixClipping-] {
+  background: linear-gradient(#00000022, #000000ff) !important;
+}
+
 [class*=noiseCancellationPopout] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
@@ -1786,14 +1869,6 @@ div[class^=bannedUser-][class*=card-] span {
   border: none !important;
 }
 
-[class^=callContainer] {
-  background: transparent !important;
-}
-
-[id^=popout] [class^=popoutWrapper] > [class^=scroller] {
-  background: rgba(0, 0, 0, 0.95) !important;
-}
-
 #guild-context-invite-people:not(:hover),
 #channel-context-invite-people:not(:hover),
 #guild-header-popout-invite-people:not(:hover) {
@@ -1802,6 +1877,11 @@ div[class^=bannedUser-][class*=card-] span {
 
 [class^=flowerStar-] > path {
   fill: var(--accent-saturated) !important;
+}
+
+[class^=akaBadge-] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 
 [class*=homeIcon] {
@@ -1917,7 +1997,7 @@ div[class^=bannedUser-][class*=card-] span {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.8";
+  content: "v5.4.9";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;

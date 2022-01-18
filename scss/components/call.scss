@@ -1,0 +1,80 @@
+@use "../core/mixins.scss" as m;
+
+//making call black background
+[class^="chat"] > [class*="minimum"] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
+//voice channel black background removed
+[class^="callContainer"] {
+  background: transparent !important;
+}
+
+//popout with list of people watching stream
+[id^="popout"] [class^="popoutWrapper"] > [class^="scroller"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//popout with regions to select
+[class^="quickSelectPopout"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
+//hide participants arrow button
+button[class*="participantsButton"] {
+  background: rgba(0, 0, 0, 0.6) !important;
+  color: var(--button-text) !important;
+  transition: 0.2s all ease-in-out;
+  &:hover {
+    background: rgba(0, 0, 0, 0.9) !important;
+    color: var(--button-text-selected) !important;
+  }
+}
+
+//live quality and "LIVE"
+[class^="liveQualityIndicator"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  color: var(--button-text) !important;  
+}
+[class^="liveIndicator"] > [class^="live"]{
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;  
+}
+
+//live preview backgrounds
+[class^="emptyPreview-"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+[class^="wanderingCubesItem-"] {
+  background: var(--accent-color) !important;
+}
+[class^="tile-"] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+[class^="tileChild"] > [class*="videoWrapper"], 
+[class^="tileChild"] > div:nth-child(2):not([class^="overlay"]) {
+  background: transparent !important;
+}
+
+[class^="videoControls"] {
+  //center video control buttons
+  [class*="contextMenuNub"],
+  button[class*="centerButton"] {
+    background: rgba(0, 0, 0, 0.6) !important;
+    transition: 0.2s all ease-in-out;
+    &:hover {
+      background: rgba(0, 0, 0, 0.9) !important;
+    }
+    & svg {
+      color: var(--button-text-selected) !important;
+    }
+  }
+  button[class*="red"] {
+    transition: 0.2s all ease-in-out;
+    @include m.btred_important;
+  }
+  //gradients on hover removed
+  & > [class^="gradient"] {
+    background: transparent !important;
+  }
+}

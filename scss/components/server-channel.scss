@@ -53,11 +53,11 @@ header h1[class^="name"] {
     color: rgba(255, 255, 255, 0.5);
   }
   //selected channel
-  &[class*="selected"] [class*="content"] {
+  & [class*="modeSelected"] [class*="content"] {
     background: var(--main-color-semitransparent-selected) !important;
     color: #ffffff !important;
   }
-  &[class*="selected"]:hover [class*="content"] {
+  &:hover [class*="modeSelected"] [class*="content"] {
     background: var(--main-color-semitransparent-selected) !important;
   }
 
