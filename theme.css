@@ -1997,7 +1997,7 @@ button[class*=participantsButton]:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.4.9";
+  content: "v5.5.0";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
