@@ -9,9 +9,12 @@ This project includes couple of small addons, such as new icons in app settings,
 #### Settings preview:
 
 ![Preview](https://raw.githubusercontent.com/przemec/Novum/master/assets/images/theme_preview_settings.png)
-*Original (not edited) background comes from [Nova](https://github.com/din0s/discord-theme/) theme made by [din0s](https://github.com/din0s/).*
 
-#  
+
+### Credits
+- Original (not edited) background is taken (with the consent of author) and edited from [Nova](https://github.com/din0s/discord-theme/) theme made by [din0s](https://github.com/din0s/)
+- The idea of icons in Settings sidebar is taken from [ClearVision](https://github.com/ClearVision) theme originally designed by [Zerthox](https://github.com/Zerthox)
+- Most of custom icons come from [Material Design Icons](https://materialdesignicons.com) project
 
 ### How to use
 To use theme, You need to download a Discord extension called [BetterDiscord](https://betterdiscord.app/) and then, after installation, put [Novum.theme.css](https://github.com/przemec/Novum/blob/master/Novum.theme.css) into "themes" folder (it can be found in BetterDiscord settings).
