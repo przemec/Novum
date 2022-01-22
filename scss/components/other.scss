@@ -1,8 +1,11 @@
 @use "../core/mixins" as m;
 
 //various popouts
-[id^="popout"] > div > [class^="container"] {
-  background: rgba(0, 0, 0, 0.95) !important;
+[id^="popout"] > div > {
+  [class^="container"],
+  [class^="popout"] {
+    background: rgba(0, 0, 0, 0.95) !important;
+  }
 }
 
 //unsaved changes popout
@@ -29,7 +32,6 @@
 [class^="app-"] > [class*="fixClipping-"] {
   background: linear-gradient(#00000022, #000000ff) !important;
 }
-
 
 //Krisp noice cancellation popout
 [class*="noiseCancellationPopout"] {
@@ -240,7 +242,7 @@
     font-weight: bold;
   }
   &::after {
-    content: "v5.5.0";
+    content: "v5.5.1";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;

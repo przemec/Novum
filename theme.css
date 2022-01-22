@@ -215,6 +215,21 @@ input:focus {
   display: none !important;
 }
 
+[class*=floating] > section {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+[class*=floating]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--app-background) center/cover no-repeat fixed;
+  background-position: unset;
+}
+
 [class^=drawerSizingWrapper-] > [class^=contentWrapper-] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
@@ -1806,7 +1821,8 @@ button[class*=participantsButton]:hover {
   background: transparent !important;
 }
 
-[id^=popout] > div > [class^=container] {
+[id^=popout] > div > [class^=container],
+[id^=popout] > div > [class^=popout] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -1997,7 +2013,7 @@ button[class*=participantsButton]:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.0";
+  content: "v5.5.1";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;

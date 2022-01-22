@@ -35,6 +35,24 @@
   }
 }
 
+//floating thread modal
+[class*="floating"] {
+  & > section {
+    background: rgba(0, 0, 0, 0.1) !important;
+  }
+  &::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: var(--app-background) center / cover no-repeat fixed;
+    background-position: unset;
+  }
+}
+
 // Emote, Gif, Sticker popout
 [class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
   background: rgba(0, 0, 0, 0.9) !important;
