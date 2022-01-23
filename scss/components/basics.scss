@@ -101,3 +101,9 @@ input:focus {
 [class^="backdrop"] {
   background: linear-gradient(#00000022, #000000ff) !important;
 }
+
+//protips
+[class^="pro-"],
+[class*="protip"] {
+  color: var(--accent-saturated) !important;
+}

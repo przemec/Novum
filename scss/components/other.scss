@@ -73,6 +73,14 @@
   }
 }
 
+//notice at the top of the screen (i.e. when u didnt complete steps before talking on server)
+div[class^="notice"] {
+  background: var(--main-color-semitransparent);
+  button:hover {
+    background: var(--main-color-semitransparent-selected);
+  }
+}
+
 //"Invite People" button after clicking on some server/channel/servername with right click
 #guild-context-invite-people:not(:hover),
 #channel-context-invite-people:not(:hover),
@@ -245,7 +253,7 @@
     font-weight: bold;
   }
   &::after {
-    content: "v5.5.1";
+    content: "v5.5.2";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;
