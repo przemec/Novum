@@ -84,6 +84,9 @@
 [class^="flowerStar-"] > path {
   fill: var(--accent-saturated) !important;
 }
+[class^="flowerStar-"] + [class^="child"] path {
+  fill: #ffffff !important;
+}
 
 //AKA badge
 [class^="akaBadge-"] {

@@ -78,6 +78,6 @@ body::after {
 }
 
 [class^="sidebar-"] > nav > div:first-child,
-[class^="chat-"] > div + section {
+[class^="chat-"] > section {
   background: rgba(0, 0, 0, 0.1) !important;
 }
