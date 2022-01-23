@@ -888,6 +888,10 @@ svg[style="color: rgb(88, 101, 242);"] path {
   color: var(--button-text-selected) !important;
 }
 
+[class^=listItem] > [class^=wrapper] > [class*=target]::before, [class^=listItem] > [class^=wrapper] > [class*=centerTarget]::before {
+  background: var(--accent-color);
+}
+
 header h1[class^=name] {
   font-size: 18px;
   font-weight: bold;
