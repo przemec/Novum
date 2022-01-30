@@ -172,6 +172,7 @@ input:focus {
   background: var(--main-color) !important;
 }
 
+[class*=tooltipGrey],
 [class*=tooltipPrimary],
 [class*=tooltipGreen] {
   background: rgba(0, 0, 0, 0.95) !important;
@@ -179,8 +180,17 @@ input:focus {
   color: rgba(255, 255, 255, 0.5);
   font-weight: bold;
 }
+[class*=tooltipGrey] [class*=tooltipPointer],
 [class*=tooltipPrimary] [class*=tooltipPointer],
 [class*=tooltipGreen] [class*=tooltipPointer] {
+  border-top-color: black !important;
+}
+
+[class^=layerContainer-] > [class*=toolbar] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid black;
+}
+[class^=layerContainer-] > [class*=toolbar]::before {
   border-top-color: black !important;
 }
 
@@ -1894,6 +1904,11 @@ button[class*=participantsButton]:hover {
   border: none !important;
 }
 
+[class^=live-][class*=textBadge] {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text) !important;
+}
+
 div[class^=notice] {
   background: var(--main-color-semitransparent);
 }
@@ -2033,7 +2048,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.2";
+  content: "v5.5.3";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;

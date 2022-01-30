@@ -73,6 +73,12 @@
   }
 }
 
+//live indicator in server channel/Active Now section in home screen
+[class^="live-"][class*="textBadge"] {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text) !important;  
+}
+
 //notice at the top of the screen (i.e. when u didnt complete steps before talking on server)
 div[class^="notice"] {
   background: var(--main-color-semitransparent);
@@ -253,7 +259,7 @@ div[class^="notice"] {
     font-weight: bold;
   }
   &::after {
-    content: "v5.5.2";
+    content: "v5.5.3";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;

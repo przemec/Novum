@@ -85,6 +85,7 @@ input:focus {
 }
 
 //Tooltip
+[class*="tooltipGrey"],
 [class*="tooltipPrimary"],
 [class*="tooltipGreen"] {
   background: rgba(0, 0, 0, 0.95) !important;
@@ -93,6 +94,14 @@ input:focus {
   font-weight: bold;
 
   [class*="tooltipPointer"] {
+    border-top-color: rgba(0, 0, 0, 1) !important;
+  }
+}
+[class^="layerContainer-"] > [class*="toolbar"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border: 2px solid rgba(0, 0, 0, 1);
+
+  &::before {
     border-top-color: rgba(0, 0, 0, 1) !important;
   }
 }
