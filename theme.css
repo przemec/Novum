@@ -1912,8 +1912,13 @@ button[class*=participantsButton]:hover {
 div[class^=notice] {
   background: var(--main-color-semitransparent);
 }
+div[class^=notice] button {
+  color: var(--button-text) !important;
+  background: var(--main-color-semitransparent) !important;
+}
 div[class^=notice] button:hover {
-  background: var(--main-color-semitransparent-selected);
+  color: var(--button-text-selected) !important;
+  background: var(--main-color-semitransparent-selected) !important;
 }
 
 #guild-context-invite-people:not(:hover),

@@ -76,14 +76,20 @@
 //live indicator in server channel/Active Now section in home screen
 [class^="live-"][class*="textBadge"] {
   background: var(--main-color-selected) !important;
-  color: var(--button-text) !important;  
+  color: var(--button-text) !important;
 }
 
 //notice at the top of the screen (i.e. when u didnt complete steps before talking on server)
 div[class^="notice"] {
   background: var(--main-color-semitransparent);
-  button:hover {
-    background: var(--main-color-semitransparent-selected);
+  button {
+    color: var(--button-text) !important;
+    background: var(--main-color-semitransparent) !important;
+
+    &:hover {
+      color: var(--button-text-selected) !important;
+      background: var(--main-color-semitransparent-selected) !important;
+    }
   }
 }
 
