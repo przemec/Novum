@@ -1530,13 +1530,67 @@ button[class*=participantsButton]:hover {
   background: rgba(255, 255, 255, 0.5) !important;
 }
 
-[class*=notificationSettings] [class*=selected]:not([class*=disabled]) {
+[class^=children-] [class*=notDetected-] {
+  background: rgba(0, 0, 0, 0.3) !important;
+}
+
+[class^=children-] [class*=nowPlaying-] {
+  background: rgba(0, 255, 128, 0.2) !important;
+}
+
+[class^=addGamePopout-] {
+  background: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: none !important;
+}
+
+[id^=popout] [class*=searchableSelect] {
+  background: rgba(0, 0, 0, 0.95) !important;
+  box-shadow: none !important;
+}
+
+[class^=lastPlayed-] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=overlayToggleIconOn-] path {
+  fill: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class^=overlayToggleIconOff-] path,
+[class^=overlayToggleIconOff-] rect {
+  fill: var(--main-color) !important;
+}
+
+[class*=removeGame] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+
+[class^=overlayStatusText-] {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+[class*=notificationSettings] label:not([class*=selected], [class*=disabled]) {
+  background: rgba(255, 255, 255, 0.5);
+}
+[class*=notificationSettings] label:not([class*=selected], [class*=disabled]):hover {
+  background: rgba(255, 255, 255, 0.7);
+}
+[class*=notificationSettings] label[class*=selected]:not([class*=disabled]) {
   background: var(--main-color);
   border-color: transparent;
   box-shadow: none;
 }
-[class*=notificationSettings] label:not([class*=selected], [class*=disabled]):hover {
-  background: var(--main-color-selected);
+[class*=notificationSettings] [class*=disabledSelected] {
+  border-color: var(--main-color) !important;
+}
+[class*=notificationSettings] label[class*=disabled] path:last-child {
+  fill: rgba(255, 255, 255, 0.5);
+}
+[class*=notificationSettings] label[class*=disabled]:hover path:last-child {
+  fill: rgba(255, 255, 255, 0.7);
+}
+[class*=notificationSettings] label[class*=selected][class*=disabled] path:last-child {
+  fill: var(--main-color) !important;
 }
 
 [class*=accountProfileCard] {
@@ -2059,7 +2113,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.4";
+  content: "v5.5.5";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
