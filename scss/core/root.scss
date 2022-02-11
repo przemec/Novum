@@ -6,6 +6,9 @@
   --background-secondary: transparent !important;
   --background-secondary-alt: transparent !important;
   --background-tertiary: rgba(0, 0, 0, 0.1) !important;
+  --background-modifier-hover: var(--main-color-semitransparent);
+  --background-modifier-active: var(--main-color-semitransparent);
+  --background-modifier-selected: var(--main-color-semitransparent-selected);
   --scrollbar-auto-thumb: var(--scroll-thumb-color);
   --scrollbar-thin-thumb: var(--scroll-thumb-color);
   --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
@@ -78,6 +81,6 @@ body::after {
 }
 
 [class^="sidebar-"] > nav > div:first-child,
-[class^="chat-"] > section {
+[class^="base-"] > [class^="content-"] > div:nth-child(2) section[class*="container-"] {
   background: rgba(0, 0, 0, 0.1) !important;
 }

@@ -33,6 +33,11 @@
     }
   }
 
+  //search field
+  [class^="searchBar"] > [class^="inner"] {
+    background: rgba(0, 0, 0, 0.2);
+  } 
+
   //adding friends page
   [class^="addFriendInputWrapper"] {
     background: rgba(0, 0, 0, 0.4);
@@ -59,11 +64,11 @@
 }
 
 //friends list sidebar
-[class^="content"] > [class^="channel"]:hover [class^="layout"] {
+[class^="content"] > [class^="channel"] [class^="interactive"]:hover {
   background: var(--main-color-semitransparent);
   color: var(--button-text);
 }
-[class^="content"] > [class^="channel"][class*="selected"] [class^="layout"] {
+[class^="content"] > [class^="channel"] [class^="interactive"][class*="selected"] {
   background: var(--main-color-semitransparent-selected);
   color: var(--button-text-selected);
 }
