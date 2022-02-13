@@ -5,9 +5,9 @@
   --background-secondary: transparent !important;
   --background-secondary-alt: transparent !important;
   --background-tertiary: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-hover: var(--main-color-semitransparent);
-  --background-modifier-active: var(--main-color-semitransparent);
-  --background-modifier-selected: var(--main-color-semitransparent-selected);
+  --background-modifier-hover: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-active: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-selected: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-auto-thumb: var(--scroll-thumb-color);
   --scrollbar-thin-thumb: var(--scroll-thumb-color);
   --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
@@ -393,7 +393,7 @@ input:focus {
 }
 
 [class*=message] [class*=buttonContainer] [class*=container] [class*=wrapper] {
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.95);
 }
 
 [class*=recentMentionsPopout] {
@@ -1137,6 +1137,27 @@ button[class*=participantsButton]:hover {
 [class^=liveIndicator] > [class^=live] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
+}
+
+[class^=tileChild-] button > [class*=button-] {
+  background: rgba(0, 0, 0, 0.95);
+  color: var(--button-text);
+}
+[class^=tileChild-] button > [class*=button-]:hover {
+  color: var(--button-text-selected);
+}
+
+[class^=pictureInPictureVideo-] {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+[class^=pictureInPictureVideo-] > span button > [class*=button-] {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class^=pictureInPictureVideo-] > span button > [class*=button-]:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
 }
 
 [class^=emptyPreview-] {
@@ -2212,9 +2233,9 @@ div[class^=notice] button:hover {
   --background-secondary: transparent !important;
   --background-secondary-alt: transparent !important;
   --background-tertiary: rgba(0, 0, 0, 0.1) !important;
-  --background-modifier-hover: var(--main-color-semitransparent);
-  --background-modifier-active: var(--main-color-semitransparent);
-  --background-modifier-selected: var(--main-color-semitransparent-selected);
+  --background-modifier-hover: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-active: rgba(255, 255, 255, 0.05) !important;
+  --background-modifier-selected: rgba(255, 255, 255, 0.1) !important;
   --scrollbar-auto-thumb: var(--scroll-thumb-color);
   --scrollbar-thin-thumb: var(--scroll-thumb-color);
   --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
