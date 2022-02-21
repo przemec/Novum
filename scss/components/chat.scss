@@ -177,9 +177,16 @@
   border-color: var(--accent-saturated) !important;
 }
 
+//attachments like photos or files
 [class^="messageAttachment"] {
-  background: rgba(0, 0, 0, 0.2) !important;
   border-color: #000 !important;
+
+  //file attachment, txt-like file attachment
+  & > [class^="attachment"],
+  & > [class^="embedWrapper"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+
   code {
     background: transparent !important;
   }

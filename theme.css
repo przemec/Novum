@@ -359,8 +359,10 @@ input:focus {
 }
 
 [class^=messageAttachment] {
-  background: rgba(0, 0, 0, 0.2) !important;
   border-color: #000 !important;
+}
+[class^=messageAttachment] > [class^=attachment], [class^=messageAttachment] > [class^=embedWrapper] {
+  background: rgba(0, 0, 0, 0.2) !important;
 }
 [class^=messageAttachment] code {
   background: transparent !important;
