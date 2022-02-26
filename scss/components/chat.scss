@@ -341,8 +341,15 @@
 }
 
 //New messages bar
-[class*="newMessagesBar"] {
-  background: var(--accent-saturated) !important;
+[class^="newMessagesBar-"] {
+  background: var(--main-color) !important;
+  padding: 3px 0;
+  border-color: transparent !important;
+}
+//Old messages bar
+[class^="jumpToPresentBar-"] {
+  background: var(--accent-desaturated) !important;
+  padding: 3px 0;
   border-color: transparent !important;
 }
 

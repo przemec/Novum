@@ -495,8 +495,15 @@ input:focus {
   background: #ff4db53d;
 }
 
-[class*=newMessagesBar] {
-  background: var(--accent-saturated) !important;
+[class^=newMessagesBar-] {
+  background: var(--main-color) !important;
+  padding: 3px 0;
+  border-color: transparent !important;
+}
+
+[class^=jumpToPresentBar-] {
+  background: var(--accent-desaturated) !important;
+  padding: 3px 0;
   border-color: transparent !important;
 }
 
@@ -1993,6 +2000,7 @@ button[class*=participantsButton]:hover {
 }
 
 div[class^=notice] {
+  color: var(--button-text) !important;
   background: var(--main-color-semitransparent);
 }
 div[class^=notice] button {
@@ -2136,7 +2144,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.5";
+  content: "v5.5.6";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
