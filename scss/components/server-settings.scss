@@ -31,7 +31,10 @@
   background-position: unset;
 }
 
-//"Emoji" settings - X button
+//"Emoji" settings - card and its "X" button
+[class^="content-"] > [class^="emojiRow-"][class*="card-"] {
+  background: transparent !important;
+}
 [class*="emojiRemove"] {
   background-color: var(--main-color-semitransparent-selected) !important;
 }

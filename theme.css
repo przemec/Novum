@@ -1068,6 +1068,10 @@ nav[class*=container] > [class*=container] > header:hover {
   background-position: unset;
 }
 
+[class^=content-] > [class^=emojiRow-][class*=card-] {
+  background: transparent !important;
+}
+
 [class*=emojiRemove] {
   background-color: var(--main-color-semitransparent-selected) !important;
 }
@@ -1639,29 +1643,29 @@ button[class*=participantsButton]:hover {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
-[aria-label=USER_SETTINGS] [class^=info-] > * {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=info-] > * {
   color: rgba(255, 255, 255, 0.5);
 }
 
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item] {
   padding-left: 50px !important;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item]:hover {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]:hover {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item][class*=selected] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item][aria-controls=discord-nitro-tab] svg {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][aria-controls=discord-nitro-tab] svg {
   display: none;
 }
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item] [class*=selectedBackground] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item] [class*=selectedBackground] {
   background: transparent !important;
 }
 
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=item]::after {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -1675,7 +1679,7 @@ button[class*=participantsButton]:hover {
   background-size: cover !important;
 }
 
-[aria-label=USER_SETTINGS] [class^=sidebar-] [class*=selected]::after {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=selected]::after {
   opacity: 0.7;
 }
 
@@ -1930,6 +1934,31 @@ button[class*=participantsButton]:hover {
   background: transparent !important;
 }
 
+#permissions-modal {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#permissions-modal div {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+#permissions-modal div div {
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+.ChannelDms-channelpopout-popout {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+.ChannelDms-channelpopout-popout > [role=button] {
+  background-color: var(--main-color-semitransparent-selected) !important;
+}
+.ChannelDms-channelpopout-popout > button {
+  background: rgba(0, 0, 0, 0.95) !important;
+  border-radius: 5px !important;
+}
+
+.ChannelDms-channelmembers-wrap > [class*=header] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}
+
 [id^=popout] > div > [class^=container],
 [id^=popout] > div > [class^=popout] {
   background: rgba(0, 0, 0, 0.95) !important;
@@ -2144,7 +2173,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.6";
+  content: "v5.5.7";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
@@ -2159,16 +2188,6 @@ div[class^=notice] button:hover {
   margin-left: 6px;
   background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
   filter: contrast(0%) brightness(1.4);
-}
-
-#permissions-modal {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-#permissions-modal div {
-  background: rgba(0, 0, 0, 0.9) !important;
-}
-#permissions-modal div div {
-  background: rgba(0, 0, 0, 0.9) !important;
 }
 
 .theme-light {
