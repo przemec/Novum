@@ -1,0 +1,30 @@
+//Permissions viewer
+#permissions-modal {
+  background: rgba(0, 0, 0, 0.9) !important;
+  div {
+    background: rgba(0, 0, 0, 0.9) !important;
+    div {
+      background: rgba(0, 0, 0, 0.9) !important;
+    }
+  }
+}
+
+//ChannelDms
+//message popout
+.ChannelDms-channelpopout-popout {
+  background: rgba(0, 0, 0, 0.95) !important;
+
+  //X button
+  & > [role="button"] {
+    background-color: var(--main-color-semitransparent-selected) !important;
+  }
+  //collapse button
+  & > button {
+    background: rgba(0, 0, 0, 0.95) !important;
+    border-radius: 5px !important;
+  }
+}
+//server list header
+.ChannelDms-channelmembers-wrap > [class*="header"] {
+  background: rgba(0, 0, 0, 0.1) !important;
+}

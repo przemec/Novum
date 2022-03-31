@@ -285,17 +285,6 @@ div[class^="notice"] {
   filter: contrast(0%) brightness(1.4);
 }
 
-//Permissions modal (custom plugin)
-#permissions-modal {
-  background: rgba(0, 0, 0, 0.9) !important;
-  div {
-    background: rgba(0, 0, 0, 0.9) !important;
-    div {
-      background: rgba(0, 0, 0, 0.9) !important;
-    }
-  }
-}
-
 //Replace discord light theme with dark theme variables
 .theme-light {
   --header-primary: #fff;
