@@ -19,6 +19,7 @@
   --channels-default: rgba(255, 255, 255, 0.7);
   --interactive-muted: rgba(255, 255, 255, 0.3);
   --background-floating: rgba(0, 0, 0, 0.9);
+  --background-modifier-accent: rgba(255, 255, 255, 0.1);
   --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
   --main-color: #992727;
   --main-color-selected: #aa2f2f;
@@ -1018,8 +1019,17 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class*=panels] > [class*=container] button:hover {
+[class*=panels] {
+  border-top: 1px solid var(--background-modifier-accent);
+}
+[class*=panels] > [class*=activityPanel], [class*=panels] > [class*=container] {
+  border: 0;
+}
+[class*=panels] > [class*=activityPanel] button:hover, [class*=panels] > [class*=container] button:hover {
   background: rgba(0, 0, 0, 0.2) !important;
+}
+[class*=panels] > [class*=wrapper] > [class*=container] {
+  border: 0;
 }
 [class*=panels] [class*=actionButtons] button {
   background: var(--main-color-semitransparent) !important;
@@ -1842,7 +1852,11 @@ button[class*=participantsButton]:hover {
   color: var(--button-text-selected);
 }
 
+[class*=nowPlayingColumn] [class^=scroller] {
+  border: 0;
+}
 [class*=nowPlayingColumn] [class*=itemCard] {
+  border: 0;
   background: rgba(0, 0, 0, 0.5) !important;
 }
 [class*=nowPlayingColumn] [class*=itemCard] [class*=body] {
@@ -2173,7 +2187,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.7";
+  content: "v5.5.8";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
@@ -2277,6 +2291,7 @@ div[class^=notice] button:hover {
   --header-secondary: rgba(255, 255, 255, 0.7);
   --interactive-muted: rgba(255, 255, 255, 0.3);
   --background-floating: rgba(0, 0, 0, 0.9);
+  --background-modifier-accent: rgba(255, 255, 255, 0.1);
 }
 
 /*# sourceMappingURL=theme.css.map */

@@ -266,7 +266,7 @@ div[class^="notice"] {
     font-weight: bold;
   }
   &::after {
-    content: "v5.5.7";
+    content: "v5.5.8";
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
     margin-left: 8px;
@@ -374,4 +374,5 @@ div[class^="notice"] {
   --header-secondary: rgba(255, 255, 255, 0.7);
   --interactive-muted: rgba(255, 255, 255, 0.3);
   --background-floating: rgba(0, 0, 0, 0.9);
+  --background-modifier-accent: rgba(255, 255, 255, 0.1); //color of various 1px borders/dividers
 }

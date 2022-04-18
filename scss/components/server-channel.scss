@@ -122,9 +122,19 @@ nav[class*="container"] > [class*="container"] > header:hover {
 }
 
 [class*="panels"] {
-  //mute and settings icons
-  & > [class*="container"] button:hover {
-    background: rgba(0, 0, 0, 0.2) !important;
+  border-top: 1px solid var(--background-modifier-accent);
+
+  //game activity panel
+  & > [class*="activityPanel"],
+  //profile settings panel
+  & > [class*="container"] {
+    border: 0;
+    button:hover {
+      background: rgba(0, 0, 0, 0.2) !important;
+    }
+  }
+  & > [class*="wrapper"] > [class*="container"] {
+    border: 0;
   }
 
   //Video & Screen buttons backgrounds

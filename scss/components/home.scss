@@ -36,7 +36,7 @@
   //search field
   [class^="searchBar"] > [class^="inner"] {
     background: rgba(0, 0, 0, 0.2);
-  } 
+  }
 
   //adding friends page
   [class^="addFriendInputWrapper"] {
@@ -50,7 +50,11 @@
 
 //Active now section
 [class*="nowPlayingColumn"] {
+  [class^="scroller"] {
+    border: 0;
+  }
   [class*="itemCard"] {
+    border: 0;
     background: rgba(0, 0, 0, 0.5) !important;
 
     [class*="body"] {
