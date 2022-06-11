@@ -62,7 +62,7 @@ header h1[class^="name"] {
   }
 
   //Remove redundant create invite icon from channel list
-  [class^="children"] > [class^="icon"]:nth-child(1) {
+  [class^="children"] > [class^="icon"]:nth-last-child(3) {
     display: none !important;
   }
 }

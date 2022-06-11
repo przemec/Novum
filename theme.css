@@ -969,7 +969,7 @@ header h1[class^=name] {
 [class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=content] {
   background: var(--main-color-semitransparent-selected) !important;
 }
-[class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-child(1) {
+[class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-last-child(3) {
   display: none !important;
 }
 
@@ -2187,7 +2187,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.8";
+  content: "v5.5.9";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;
