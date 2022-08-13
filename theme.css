@@ -269,6 +269,31 @@ input:focus {
   color: var(--button-text-selected) !important;
 }
 
+[id^=chat-messages] [class*=description] [class*=colorBrand] {
+  background: rgba(0, 255, 128, 0.1) !important;
+  color: rgba(0, 255, 128, 0.7) !important;
+}
+[id^=chat-messages] [class*=description] [class*=colorBrand]:hover, [id^=chat-messages] [class*=description] [class*=colorBrand][class*=selected] {
+  background: rgba(0, 255, 128, 0.2) !important;
+  color: rgba(0, 255, 128, 0.9) !important;
+}
+[id^=chat-messages] [class*=description] [class*=colorPrimary] {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+}
+[id^=chat-messages] [class*=description] [class*=colorPrimary]:hover, [id^=chat-messages] [class*=description] [class*=colorPrimary][class*=selected] {
+  background: rgba(0, 0, 0, 0.4) !important;
+  color: white !important;
+}
+[id^=chat-messages] [class*=description] [class*=coloRed] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+[id^=chat-messages] [class*=description] [class*=coloRed]:hover {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text-selected) !important;
+}
+
 [class*=chatContent] form > div > [class^=wrapper] {
   background: rgba(0, 0, 0, 0.3);
 }
@@ -1193,11 +1218,24 @@ button[class*=participantsButton]:hover {
 
 [class^=tile-] {
   background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px;
 }
 
 [class^=tileChild] > [class*=videoWrapper],
 [class^=tileChild] > div:nth-child(2):not([class^=overlay]) {
   background: transparent !important;
+}
+
+[class*=tileSizer] [class*=tile] {
+  background: transparent !important;
+}
+[class*=tileSizer] [class*=tile] button [class*=button] {
+  background: var(--main-color);
+  color: var(--button-text);
+}
+[class*=tileSizer] [class*=tile] button [class*=button]:hover {
+  background: var(--main-color-selected);
+  color: var(--button-text-selected);
 }
 
 [class^=videoControls] [class*=contextMenuNub],
@@ -1223,6 +1261,9 @@ button[class*=participantsButton]:hover {
   color: var(--button-text-selected) !important;
 }
 [class^=videoControls] > [class^=gradient] {
+  background: transparent !important;
+}
+[class^=videoControls] [class*=topControls] [class*=headerWrapper] [class*=transparent][class*=container] {
   background: transparent !important;
 }
 
@@ -1821,8 +1862,14 @@ button[class*=participantsButton]:hover {
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) {
   background: transparent;
 }
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=container] > [class*=children]::after {
+  display: none;
+}
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=iconWrapper] svg {
   color: rgba(255, 255, 255, 0.7);
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=divider] {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][tabindex="0"] {
   background: transparent;
@@ -1831,15 +1878,16 @@ button[class*=participantsButton]:hover {
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item]:not([tabindex="0"]):hover {
   background: transparent;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][style*="color: hsl(0"] {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=numberBadge] {
+  background: var(--main-color) !important;
+}
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend] {
   background: rgba(0, 255, 128, 0.1) !important;
   color: rgba(0, 255, 128, 0.7) !important;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][style*=background]:hover, [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][style]:not([style*=background]) {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend]:hover, [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend][class*=selected] {
   background: rgba(0, 255, 128, 0.2) !important;
-  color: rgba(0, 255, 128, 0.7) !important;
-  font-weight: bold;
-  font-size: 16px;
+  color: rgba(0, 255, 128, 0.9) !important;
 }
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=searchBar] > [class^=inner] {
   background: rgba(0, 0, 0, 0.2);
@@ -2192,7 +2240,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.5.10";
+  content: "v5.5.11";
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   margin-left: 8px;

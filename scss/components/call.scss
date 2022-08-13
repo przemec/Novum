@@ -66,10 +66,20 @@ button[class*="participantsButton"] {
 }
 [class^="tile-"] {
   background: rgba(0, 0, 0, 0.3) !important;
+  border-radius: 10px;
 }
 [class^="tileChild"] > [class*="videoWrapper"],
 [class^="tileChild"] > div:nth-child(2):not([class^="overlay"]) {
   background: transparent !important;
+}
+
+//invite people voice chat panel
+[class*="tileSizer"] [class*="tile"] {
+  background: transparent !important;
+
+  button [class*="button"] {
+    @include m.btred;
+  }
 }
 
 [class^="videoControls"] {
@@ -91,6 +101,10 @@ button[class*="participantsButton"] {
   }
   //gradients on hover removed
   & > [class^="gradient"] {
+    background: transparent !important;
+  }
+  //remove background from top controls container
+  [class*="topControls"] [class*="headerWrapper"] [class*="transparent"][class*="container"] {
     background: transparent !important;
   }
 }
