@@ -1,6 +1,9 @@
 @use "../core/mixins" as m;
 
 //buttons
+button {
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
 button[class*="lookFilled-"][class*="colorGrey"],
 button[class*="lookFilled-"][class*="colorPrimary-"] {
   background: var(--accent-color-semitransparent) !important;
@@ -10,10 +13,9 @@ button[class*="lookFilled-"][class*="colorPrimary-"] {
     color: var(--button-text-selected) !important;
   }
 }
-button[class*="colorBrand-"]:not([class*="lookBlank"]) {
+button[class*="colorBrand-"]:not([class*="lookBlank"], [class*="lookLink"]) {
   @include m.btred;
 }
-
 button[class*="colorBrand-"][class*="lookInverted"] {
   background: var(--button-text-selected);
   color: var(--main-color-selected);
@@ -29,6 +31,30 @@ button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
 button[class*="colorGreen-"],
 button[class*="colorRed-"] {
   @include m.btred_important;
+}
+button[class*="lookLink-"] {
+  color: var(--button-text);
+  &:hover {
+    text-decoration: none !important;
+    color: var(--button-text-selected);
+  }
+
+  &[class*="colorLink-"] {
+    color: var(--accent-color);
+    &:hover {
+      color: var(--accent-saturated);
+    }
+  }
+
+  & > [class*="contents"] {
+    background: none !important;
+    border-bottom: 1px solid transparent;
+    margin-bottom: -1px;
+  }
+  &:hover > [class*="contents"] {
+    background: none !important;
+    border-color: currentColor;
+  }
 }
 
 //Switches
