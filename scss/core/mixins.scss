@@ -5,6 +5,7 @@
 @mixin btred {
   background: var(--main-color);
   color: var(--button-text);
+
   &:hover {
     background: var(--main-color-selected);
     color: var(--button-text-selected);
@@ -14,8 +15,53 @@
 @mixin btred_important {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
+
   &:hover {
     background: var(--main-color-selected) !important;
     color: var(--button-text-selected) !important;
+  }
+}
+
+@mixin btAccept {
+  background: rgba(0, 255, 128, 0.1);
+  color: rgba(0, 255, 128, 0.7);
+
+  &:hover,
+  &[class*="selected"] {
+    background: rgba(0, 255, 128, 0.2);
+    color: rgba(0, 255, 128, 0.9);
+  }
+}
+
+@mixin btAccept_important {
+  background: rgba(0, 255, 128, 0.1) !important;
+  color: rgba(0, 255, 128, 0.7) !important;
+
+  &:hover,
+  &[class*="selected"] {
+    background: rgba(0, 255, 128, 0.2) !important;
+    color: rgba(0, 255, 128, 0.9) !important;
+  }
+}
+
+@mixin btTransparent {
+  background: rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+
+  &:hover,
+  &[class*="selected"] {
+    background: rgba(0, 0, 0, 0.4);
+    color: rgba(255, 255, 255, 1);
+  }
+}
+
+@mixin btTransparent_important {
+  background: rgba(0, 0, 0, 0.2) !important;
+  color: rgba(255, 255, 255, 0.6) !important;
+
+  &:hover,
+  &[class*="selected"] {
+    background: rgba(0, 0, 0, 0.4) !important;
+    color: rgba(255, 255, 255, 1) !important;
   }
 }

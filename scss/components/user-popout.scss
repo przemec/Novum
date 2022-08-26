@@ -26,7 +26,7 @@
   [class*="rolesList"]:not([class*="member-perm"]),
   [class*="textarea"],
   div[class*="customStatus"],
-  [class*="aboutMeBody"] {
+  [class*="userInfoBody"] {
     padding-left: 16px;
     padding-right: 16px;
   }
@@ -36,8 +36,8 @@
     color: var(--header-secondary);
   }
 
-  [class*="aboutMeSection"] {
-    margin-bottom: 40px;
+  [class*="userInfoSection"] {
+    margin-top: 20px;
   }
 
   [class*="member-perms-title"] {
@@ -56,45 +56,50 @@
   //roles style change
   [class*="rolesList"] > [class*="role"] {
     position: relative;
+    margin: 0 -12px 4px 0;
+    [class*="roleRemoveButton"] {
+      cursor: pointer;
+      position: unset;
+      width: 20px;
+      height: 10px;
+      svg {
+        opacity: 0;
+      }
+    }
     [class*="roleCircle"] {
       position: absolute;
-      width: 100%;
+      width: calc(100% - 18px);
       margin: 0;
       border-radius: 4px;
       z-index: 1;
       opacity: 0.3;
       transform: scaleY(1.5);
-      svg {
-        cursor: pointer;
-        position: absolute;
-        right: 4px;
-        opacity: 0;
-      }
+      pointer-events: none;
     }
     [class*="roleName"] {
       z-index: 2;
       margin-left: 4px;
-      margin-right: 10px;
-      transform: translateX(6px);
+      margin-right: 8px;
+      transform: translateX(-13px);
       -webkit-transition: transform 0.15s ease-in-out;
       transition: transform 0.15s ease-in-out;
       overflow: visible;
-      &::after {
+      &::before {
         content: "";
         position: absolute;
         width: 0px;
         height: 10px;
         top: 50%;
-        right: 0px;
-        transform: translate(14px, -50%);
+        left: 0px;
+        transform: translate(-12px, -50%);
         -webkit-transition: width 0.15s ease-in-out;
         transition: width 0.15s ease-in-out;
         pointer-events: none;
       }
     }
     &:hover [class*="roleName"] {
-      transform: translateX(0px);
-      &::after {
+      transform: translateX(-8px);
+      &::before {
         width: 10px;
         background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
         background-size: 10px;
@@ -114,9 +119,9 @@
 //Styling for in game or other member activity popout
 [class^="activityUserPopout-"] {
   background: var(--profile-activity);
-  margin-bottom: 30px;
   // width: 300px;
-  margin-top: 30px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   padding-left: 16px;
   padding-right: 16px;
 

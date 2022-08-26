@@ -71,6 +71,19 @@
   @include m.btred_important;
 }
 
+//Buttons in private conversation - after user invited you (accept, ignore, block, report)
+[id^="chat-messages"] [class*="description"] {
+  [class*="colorBrand"] {
+    @include m.btAccept_important;
+  }
+  [class*="colorPrimary"] {
+    @include m.btTransparent_important;
+  }
+  [class*="coloRed"] {
+    @include m.btred_important;
+  }
+}
+
 //Follow Button near chat
 [class*="chatContent"] form > div > [class^="wrapper"] {
   background: rgba(0, 0, 0, 0.3);

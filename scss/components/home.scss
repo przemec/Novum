@@ -4,9 +4,19 @@
 [class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) {
   background: transparent;
 
-  //icon
+  //remove redundant fade
+  [class*="container"] > [class*="children"]::after {
+    display: none;
+  }
+
+  //icons
   [class*="iconWrapper"] svg {
     color: rgba(255, 255, 255, 0.7);
+  }
+
+  //dividers
+  [class*="divider"] {
+    background-color: rgba(255, 255, 255, 0.1);
   }
 
   //buttons
@@ -18,19 +28,14 @@
     background: transparent;
   }
 
+  //pending invites count badge
+  [class*="numberBadge"] {
+    background: var(--main-color) !important;
+  }
+
   //Add Friend button
-  [class^="item"] {
-    &[style*="color: hsl(0"] {
-      background: rgba(0, 255, 128, 0.1) !important;
-      color: rgba(0, 255, 128, 0.7) !important;
-    }
-    &[style*="background"]:hover,
-    &[style]:not([style*="background"]) {
-      background: rgba(0, 255, 128, 0.2) !important;
-      color: rgba(0, 255, 128, 0.7) !important;
-      font-weight: bold;
-      font-size: 16px;
-    }
+  [class^="item"][class*="addFriend"] {
+    @include m.btAccept_important;    
   }
 
   //search field
