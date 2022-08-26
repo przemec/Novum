@@ -53,6 +53,7 @@ body::after {
 
 [class^=appMount-],
 [class^=app-],
+[class^=chat-],
 [class^=bg-] {
   background: transparent !important;
 }

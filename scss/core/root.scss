@@ -58,6 +58,7 @@ body::after {
 //Remove main gray background colors
 [class^="appMount-"],
 [class^="app-"],
+[class^="chat-"],
 [class^="bg-"] {
   background: transparent !important;
 }
