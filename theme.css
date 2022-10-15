@@ -579,13 +579,13 @@ input:focus {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class*=layer] [class*=wrapper] [class*=emojiPicker] {
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
-[class*=layer] [class*=wrapper] [class*=emojiPicker] [class*=emojiItem] {
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItem] {
   transition: transform 0.2s ease-in-out;
 }
-[class*=layer] [class*=wrapper] [class*=emojiPicker] [class*=emojiItemSelected] {
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItemSelected] {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
 }
@@ -1482,15 +1482,16 @@ button[class*=participantsButton]:hover {
   padding: 0;
   padding-right: 0 !important;
 }
-[class^=userPopout] [class*=divider] {
+[class^=userPopout] [class^=bodyInnerWrapper] > [class*=divider] {
   display: none;
 }
 [class^=userPopout] #permissions-popout,
-[class^=userPopout] h3:not([class*=nickname], [class*=ellipsis]),
+[class^=userPopout] h1:not([class*=nickname], [class*=ellipsis]),
 [class^=userPopout] [class*=rolesList]:not([class*=member-perm]),
+[class^=userPopout] [class*=memberSinceContainer],
 [class^=userPopout] [class*=textarea],
 [class^=userPopout] div[class*=customStatus],
-[class^=userPopout] [class*=userInfoBody] {
+[class^=userPopout] [class*=userInfoBody][class*=markup] {
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -1854,7 +1855,7 @@ button[class*=participantsButton]:hover {
   color: rgba(255, 255, 255, 0.5);
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][class*=bd], [class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][aria-controls] {
   padding-left: 50px !important;
 }
 [class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]:hover {
@@ -1984,6 +1985,10 @@ button[class*=participantsButton]:hover {
 
 .bd-emotes-tab::after {
   background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
+}
+
+.bd-updates-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
 }
 
 .bd-customcss-tab::after {
@@ -2392,7 +2397,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.6.0";
+  content: "v5.6.1";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

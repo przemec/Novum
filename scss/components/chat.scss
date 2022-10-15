@@ -246,7 +246,7 @@
 }
 
 //Emojipicker from chat
-[class*="layer"] [class*="wrapper"] [class*="emojiPicker"] {
+[class*="layer"] #emoji-picker-tab-panel[class*="wrapper"] {
   background: rgba(0, 0, 0, 0.95) !important;
 
   [class*="emojiItem"] {

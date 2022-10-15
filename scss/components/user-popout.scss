@@ -17,16 +17,17 @@
     padding-right: 0 !important;
   }
 
-  [class*="divider"] {
+  [class^="bodyInnerWrapper"] > [class*="divider"] {
     display: none;
   }
 
   #permissions-popout,
-  h3:not([class*="nickname"], [class*="ellipsis"]),
+  h1:not([class*="nickname"], [class*="ellipsis"]),
   [class*="rolesList"]:not([class*="member-perm"]),
+  [class*="memberSinceContainer"],
   [class*="textarea"],
   div[class*="customStatus"],
-  [class*="userInfoBody"] {
+  [class*="userInfoBody"][class*="markup"] {
     padding-left: 16px;
     padding-right: 16px;
   }

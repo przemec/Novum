@@ -147,7 +147,10 @@
 //Settings sidebar
 [class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="item"] {
   //Space for icons
-  padding-left: 50px !important;
+  &[class*="bd"],
+  &[aria-controls] {
+    padding-left: 50px !important;
+  }
 
   //items in sidebar
   &:hover {
@@ -263,6 +266,9 @@
 }
 .bd-emotes-tab::after {
   background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
+}
+.bd-updates-tab::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
 }
 .bd-customcss-tab::after {
   background: url(https://przemec.github.io/Novum/assets/icons/code.svg) !important;
