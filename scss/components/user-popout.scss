@@ -1,6 +1,6 @@
 @use "../core/mixins" as m;
 
-[class^="userPopout"] {
+[class^="userPopoutInner"] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 
@@ -15,6 +15,10 @@
     overflow: hidden !important;
     padding: 0;
     padding-right: 0 !important;
+  }
+
+  [class^="userPopoutOverlayBackground"] {
+    background: rgba(0, 0, 0, 0.2)
   }
 
   [class^="bodyInnerWrapper"] > [class*="divider"] {
@@ -49,15 +53,13 @@
     line-height: 16px;
   }
 
-  textarea {
-    padding-left: 32px !important;
-    padding-right: 16px;
-  }
-
   //roles style change
-  [class*="rolesList"] > [class*="role"] {
+  [class*="roles"] > [class*="role"] {
     position: relative;
-    margin: 0 -12px 4px 0;
+    margin: 0 -20px 4px 0;
+    background: transparent;
+    border-color: transparent;
+
     [class*="roleRemoveButton"] {
       cursor: pointer;
       position: unset;
@@ -69,7 +71,7 @@
     }
     [class*="roleCircle"] {
       position: absolute;
-      width: calc(100% - 18px);
+      width: calc(100% - 28px);
       margin: 0;
       border-radius: 4px;
       z-index: 1;
@@ -81,7 +83,7 @@
       z-index: 2;
       margin-left: 4px;
       margin-right: 8px;
-      transform: translateX(-13px);
+      transform: translateX(-8px);
       -webkit-transition: transform 0.15s ease-in-out;
       transition: transform 0.15s ease-in-out;
       overflow: visible;
@@ -92,14 +94,14 @@
         height: 10px;
         top: 50%;
         left: 0px;
-        transform: translate(-12px, -50%);
+        transform: translate(-16px, -50%);
         -webkit-transition: width 0.15s ease-in-out;
         transition: width 0.15s ease-in-out;
         pointer-events: none;
       }
     }
     &:hover [class*="roleName"] {
-      transform: translateX(-8px);
+      transform: translateX(-4px);
       &::before {
         width: 10px;
         background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
@@ -118,7 +120,8 @@
 }
 
 //Styling for in game or other member activity popout
-[class^="activityUserPopout-"] {
+[class^="activityUserPopout-"],
+[class^="activityUserPopoutV2-"] {
   background: var(--profile-activity);
   // width: 300px;
   margin-top: 40px;
@@ -145,7 +148,8 @@
     position: absolute;
     height: 21px;
     z-index: 1;
-    width: 300px;
+    //width: 300px;
+    width: 100%;
     top: -20px;
     left: 0;
     background: var(--profile-activity);
@@ -160,7 +164,8 @@
     position: absolute;
     height: 21px;
     z-index: 1;
-    width: 300px;
+    //width: 300px;
+    width: 100%;
     bottom: -20px;
     left: 0;
     background: var(--profile-activity);

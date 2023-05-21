@@ -1478,68 +1478,69 @@ button[class*=participantsButton]:hover {
   background: var(--main-color) !important;
 }
 
-[class^=userPopout] {
+[class^=userPopoutInner] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 }
-[class^=userPopout] [class^=bodyInnerWrapper],
-[class^=userPopout] [class^=footer],
-[class^=userPopout] [class^=avatar] {
+[class^=userPopoutInner] [class^=bodyInnerWrapper],
+[class^=userPopoutInner] [class^=footer],
+[class^=userPopoutInner] [class^=avatar] {
   background: transparent !important;
   border-color: transparent !important;
 }
-[class^=userPopout] [class^=body][style] {
+[class^=userPopoutInner] [class^=body][style] {
   overflow: hidden !important;
   padding: 0;
   padding-right: 0 !important;
 }
-[class^=userPopout] [class^=bodyInnerWrapper] > [class*=divider] {
+[class^=userPopoutInner] [class^=userPopoutOverlayBackground] {
+  background: rgba(0, 0, 0, 0.2);
+}
+[class^=userPopoutInner] [class^=bodyInnerWrapper] > [class*=divider] {
   display: none;
 }
-[class^=userPopout] #permissions-popout,
-[class^=userPopout] h1:not([class*=nickname], [class*=ellipsis]),
-[class^=userPopout] [class*=rolesList]:not([class*=member-perm]),
-[class^=userPopout] [class*=memberSinceContainer],
-[class^=userPopout] [class*=textarea],
-[class^=userPopout] div[class*=customStatus],
-[class^=userPopout] [class*=userInfoBody][class*=markup] {
+[class^=userPopoutInner] #permissions-popout,
+[class^=userPopoutInner] h1:not([class*=nickname], [class*=ellipsis]),
+[class^=userPopoutInner] [class*=rolesList]:not([class*=member-perm]),
+[class^=userPopoutInner] [class*=memberSinceContainer],
+[class^=userPopoutInner] [class*=textarea],
+[class^=userPopoutInner] div[class*=customStatus],
+[class^=userPopoutInner] [class*=userInfoBody][class*=markup] {
   padding-left: 16px;
   padding-right: 16px;
 }
-[class^=userPopout] [class*=bodyTitle] {
+[class^=userPopoutInner] [class*=bodyTitle] {
   margin-top: 8px;
   color: var(--header-secondary);
 }
-[class^=userPopout] [class*=userInfoSection] {
+[class^=userPopoutInner] [class*=userInfoSection] {
   margin-top: 20px;
 }
-[class^=userPopout] [class*=member-perms-title] {
+[class^=userPopoutInner] [class*=member-perms-title] {
   text-transform: uppercase;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
 }
-[class^=userPopout] textarea {
-  padding-left: 32px !important;
-  padding-right: 16px;
-}
-[class^=userPopout] [class*=rolesList] > [class*=role] {
+[class^=userPopoutInner] [class*=roles] > [class*=role] {
   position: relative;
-  margin: 0 -12px 4px 0;
+  margin: 0 -20px 4px 0;
+  background: transparent;
+  border-color: transparent;
 }
-[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleRemoveButton] {
+[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleRemoveButton] {
   cursor: pointer;
   position: unset;
   width: 20px;
   height: 10px;
 }
-[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleRemoveButton] svg {
+[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleRemoveButton] svg {
   opacity: 0;
 }
-[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleCircle] {
+[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleCircle] {
   position: absolute;
-  width: calc(100% - 18px);
+  width: calc(100% - 28px);
   margin: 0;
   border-radius: 4px;
   z-index: 1;
@@ -1547,31 +1548,31 @@ button[class*=participantsButton]:hover {
   transform: scaleY(1.5);
   pointer-events: none;
 }
-[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleName] {
+[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleName] {
   z-index: 2;
   margin-left: 4px;
   margin-right: 8px;
-  transform: translateX(-13px);
+  transform: translateX(-8px);
   -webkit-transition: transform 0.15s ease-in-out;
   transition: transform 0.15s ease-in-out;
   overflow: visible;
 }
-[class^=userPopout] [class*=rolesList] > [class*=role] [class*=roleName]::before {
+[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleName]::before {
   content: "";
   position: absolute;
   width: 0px;
   height: 10px;
   top: 50%;
   left: 0px;
-  transform: translate(-12px, -50%);
+  transform: translate(-16px, -50%);
   -webkit-transition: width 0.15s ease-in-out;
   transition: width 0.15s ease-in-out;
   pointer-events: none;
 }
-[class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName] {
-  transform: translateX(-8px);
+[class^=userPopoutInner] [class*=roles] > [class*=role]:hover [class*=roleName] {
+  transform: translateX(-4px);
 }
-[class^=userPopout] [class*=rolesList] > [class*=role]:hover [class*=roleName]::before {
+[class^=userPopoutInner] [class*=roles] > [class*=role]:hover [class*=roleName]::before {
   width: 10px;
   background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
   background-size: 10px;
@@ -1585,33 +1586,39 @@ button[class*=participantsButton]:hover {
   background: transparent !important;
 }
 
-[class^=activityUserPopout-] {
+[class^=activityUserPopout-],
+[class^=activityUserPopoutV2-] {
   background: var(--profile-activity);
   margin-top: 40px;
   margin-bottom: 40px;
   padding-left: 16px;
   padding-right: 16px;
 }
-[class^=activityUserPopout-] [class*=platformIcon] {
+[class^=activityUserPopout-] [class*=platformIcon],
+[class^=activityUserPopoutV2-] [class*=platformIcon] {
   right: 16px !important;
 }
-[class^=activityUserPopout-] button {
+[class^=activityUserPopout-] button,
+[class^=activityUserPopoutV2-] button {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class^=activityUserPopout-] button:hover {
+[class^=activityUserPopout-] button:hover,
+[class^=activityUserPopoutV2-] button:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class^=activityUserPopout-] [class^=bar-] {
+[class^=activityUserPopout-] [class^=bar-],
+[class^=activityUserPopoutV2-] [class^=bar-] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-[class^=activityUserPopout-]::before {
+[class^=activityUserPopout-]::before,
+[class^=activityUserPopoutV2-]::before {
   content: "";
   position: absolute;
   height: 21px;
   z-index: 1;
-  width: 300px;
+  width: 100%;
   top: -20px;
   left: 0;
   background: var(--profile-activity);
@@ -1621,12 +1628,13 @@ button[class*=participantsButton]:hover {
   animation-delay: 0s;
   opacity: 1;
 }
-[class^=activityUserPopout-]::after {
+[class^=activityUserPopout-]::after,
+[class^=activityUserPopoutV2-]::after {
   content: "";
   position: absolute;
   height: 21px;
   z-index: 1;
-  width: 300px;
+  width: 100%;
   bottom: -20px;
   left: 0;
   background: var(--profile-activity);
@@ -2425,7 +2433,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.6.2";
+  content: "v5.6.3";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
