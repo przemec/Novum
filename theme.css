@@ -2417,6 +2417,17 @@ div[class^=notice] button:hover {
   border: transparent;
 }
 
+[class*=socialLinks]::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-top: -5px;
+  margin-left: 6px;
+  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
+  filter: contrast(0%) brightness(1.4);
+}
+
 [class*=wordmark] svg {
   display: none;
 }
@@ -2438,17 +2449,6 @@ div[class^=notice] button:hover {
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-[class*=socialLinks]::after {
-  content: "";
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  margin-top: -5px;
-  margin-left: 6px;
-  background: url(https://przemec.github.io/Novum/assets/images/NovumLogo.png) center/cover no-repeat;
-  filter: contrast(0%) brightness(1.4);
 }
 
 /*# sourceMappingURL=theme.css.map */

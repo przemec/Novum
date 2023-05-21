@@ -1,0 +1,29 @@
+//Replace discord wordmark with theme name + version
+[class*="wordmark"] {
+  svg {
+    display: none;
+  }
+
+  &::before,
+  &::after {
+    height: 16px;
+    line-height: 14px;
+  }
+
+  &::before {
+    content: "Novum";
+    margin-left: 2px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 15px;
+    font-family: Whitney, "ABC Ginto Normal", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: bold;
+  }
+
+  &::after {
+    content: "v5.6.3";
+    margin-left: 8px;
+    color: rgba(255, 255, 255, 0.3);
+    font-size: 14px;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+}
