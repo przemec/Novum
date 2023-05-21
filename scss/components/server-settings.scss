@@ -39,18 +39,23 @@
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 
-//"Moderation" settings - semi-transparent radiocheckbox horizontal fields (green, yellow, orange and red)
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(139)"] {
-  background: rgba(0, 230, 77, 0.3) !important;
+//"Moderation" settings - "Safety Setup" - semi-transparent radiocheckbox horizontal fields (green, yellow, orange and red)
+[class*="contentExpandContainer"] [class*="header"] [class*="backgroundModifierContainer"],
+[class*="contentExpandContainer"] [class*="groupCollapsedContainer"],
+[class*="clickableContainer"] [class*="backgroundModifierContainer"] {
+  background: rgba(0, 0, 0, 0.2) !important;
 }
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(38"] {
-  background: rgba(255, 196, 0, 0.3) !important;
+[class*="contentExpandContainer"] [class*="selected"] [class*="statusGreen"] {
+  background: rgba(0, 230, 77, 0.2) !important;
 }
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(21"] {
-  background: rgba(242, 97, 0, 0.3) !important;
+[class*="contentExpandContainer"] [class*="selected"] [class*="statusYellow"] {
+  background: rgba(255, 196, 0, 0.2) !important;
 }
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
-  background: rgba(244, 40, 40, 0.3) !important;
+[class*="contentExpandContainer"] [class*="selected"] [class*="statusOrange"] {
+  background: rgba(242, 97, 0, 0.2) !important;
+}
+[class*="contentExpandContainer"] [class*="selected"] [class*="statusRed"] {
+  background: rgba(244, 40, 40, 0.2) !important;
 }
 
 //"Audit Log" settings

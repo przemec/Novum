@@ -1,14 +1,14 @@
 @use "../core/mixins" as m;
 
 //semi-transparent radiocheckbox horizontal fields (green, orange and red)
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(139"] {
-  background: rgba(0, 230, 77, 0.3) !important;
+[role="radiogroup"] [aria-checked="true"] [style*="green"] {
+  background: rgba(0, 230, 77, 0.2) !important;
 }
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(37"] {
-  background: rgba(255, 153, 0, 0.3) !important;
+[role="radiogroup"] [aria-checked="true"] [style*="yellow"] {
+  background: rgba(255, 153, 0, 0.2) !important;
 }
-[role="radiogroup"] [aria-checked="true"] [style*="hsl(359"] {
-  background: rgba(244, 40, 40, 0.3) !important;
+[role="radiogroup"] [aria-checked="true"] [style*="red"] {
+  background: rgba(244, 40, 40, 0.2) !important;
 }
 
 //semi-transparent radiocheckbox horizontal fields (not colored ones)
@@ -28,12 +28,10 @@
   }
 }
 
-//"Keybinds" settings
-[class*="keybindGroup"] button {
-  @include m.btred_important;
-}
-[class*="removeKeybind"] {
-  background-color: var(--main-color-selected);
+//"Devices" settings
+[class^="session"] > [class^="sessionIcon"] {
+  background: rgba(0, 0, 0, 0.1) !important;
+  color: rgba(255, 255, 255, 0.7) !important;
 }
 
 //"Connections" settings
@@ -61,6 +59,14 @@
   [class^="markDash-"] {
     background: rgba(255, 255, 255, 0.5) !important;
   }
+}
+
+//"Keybinds" settings
+[class*="keybindGroup"] button {
+  @include m.btred_important;
+}
+[class*="removeKeybind"] {
+  background-color: var(--main-color-selected);
 }
 
 //"Activity status" settings
