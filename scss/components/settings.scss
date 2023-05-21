@@ -200,8 +200,14 @@
 [aria-controls="authorized-apps-tab"]::after {
   background: url(https://przemec.github.io/Novum/assets/icons/apps.svg) !important;
 }
+[aria-controls="sessions-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/desktop_windows.svg) !important;
+}
 [aria-controls="connections-tab"]::after {
   background: url(https://przemec.github.io/Novum/assets/icons/link.svg) !important;
+}
+[aria-controls="friend-requests-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
 }
 
 //Billing Settings icons
@@ -252,6 +258,11 @@
 }
 [aria-controls="advanced-tab"]::after {
   background: url(https://przemec.github.io/Novum/assets/icons/dots.svg) !important;
+}
+
+//Activity settings
+[aria-controls="activity-privacy-tab"]::after {
+  background: url(https://przemec.github.io/Novum/assets/icons/security.svg) !important;
 }
 [aria-controls="game-activity-tab"]::after {
   background: url(https://przemec.github.io/Novum/assets/icons/gamepad.svg) !important;
