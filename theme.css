@@ -1316,6 +1316,15 @@ div[class^=bannedUser-][class*=card-] span {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+[class*=directoryModal] {
+  background-image: var(--app-background) !important;
+}
+[class*=directoryModal] [class*=categoryList] > [class^=category],
+[class*=directoryModal] [class^=list] > article,
+[class*=directoryModal] [class^=itemsContainer] > [class^=itemContainer] {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 [class^=chat] > [class*=minimum] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
@@ -2449,7 +2458,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.6.4";
+  content: "v5.6.5";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
