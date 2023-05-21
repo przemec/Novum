@@ -61,7 +61,7 @@ button[class*="lookLink-"] {
 [class^="control-"] [class^="container-"] {
   background: var(--accent-color-semitransparent) !important;
 }
-[class^="control-"] [class^="container-"][style*="hsl(139"] {
+[class^="control-"] [class^="container-"][style*="rgb(35,"] {
   background: var(--main-color) !important;
   [class^="slider"] path {
     fill: var(--main-color);
@@ -76,6 +76,9 @@ input:focus {
   border-color: var(--accent-desaturated) !important;
   box-shadow: none transparent;
 }
+[class^="inputDefault"] {
+  background: rgba(0, 0, 0, 0.3);
+}
 
 //checkboxes
 [aria-checked="true"] [class*="iconContainer"] svg > path:first-child {
@@ -88,6 +91,7 @@ input:focus {
 //select body
 [class^="select"][role="button"] {
   background: rgba(0, 0, 0, 0.2);
+  border-color: #000000;
 }
 [class^="select"][role="button"][class*="open"] {
   background: rgba(0, 0, 0, 0.9);

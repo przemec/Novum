@@ -157,8 +157,8 @@ div[class^="notice"] {
 
   //after clicking on bot profile - bot without custom nick
   &:not([class*="WithNickname"]) {
-    top: 0px;
-    right: 0px;
+    top: 0;
+    right: 0;
   }
 
   //after clicking on bot profile - bot with custom nick
@@ -180,8 +180,8 @@ div[class^="notice"] {
     position: absolute;
     width: 20px;
     height: 20px;
-    bottom: 0px;
-    right: 0px;
+    bottom: 0;
+    right: 0;
     opacity: 0.8;
   }
 
@@ -267,7 +267,7 @@ div[class^="notice"] {
     font-weight: bold;
   }
   &::after {
-    content: "v5.6.1";
+    content: "v5.6.2";
     margin-left: 8px;
     color: rgba(255, 255, 255, 0.3);
     font-size: 14px;
