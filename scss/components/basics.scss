@@ -91,7 +91,7 @@ input:focus {
 //select body
 [class^="select"][role="button"] {
   background: rgba(0, 0, 0, 0.2);
-  border-color: #000000;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 [class^="select"][role="button"][class*="open"] {
   background: rgba(0, 0, 0, 0.9);

@@ -102,7 +102,7 @@
   --button-outline-primary-background-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
   --button-outline-primary-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
   --button-outline-primary-border-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
-  --modal-background: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --modal-background: rgba(0, 0, 0, 0.95); //hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
   --modal-footer-background: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
   --scrollbar-auto-thumb: var(--scroll-thumb-color); // hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
   --scrollbar-thin-thumb: var(--scroll-thumb-color); // hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);

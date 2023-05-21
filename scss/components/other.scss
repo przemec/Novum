@@ -2,9 +2,11 @@
 
 //various popouts
 [id^="popout"] > div > {
+  [role="dialog"],
   [class^="container"],
   [class^="popout"] {
     background: rgba(0, 0, 0, 0.95) !important;
+    border-radius: 10px;
   }
 }
 

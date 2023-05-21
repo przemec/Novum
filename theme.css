@@ -100,7 +100,7 @@
   --button-outline-primary-background-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
   --button-outline-primary-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
   --button-outline-primary-border-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
-  --modal-background: hsl(220, calc(var(--saturation-factor, 1) * 7.7%), 22.9%);
+  --modal-background: rgba(0, 0, 0, 0.95);
   --modal-footer-background: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
   --scrollbar-auto-thumb: var(--scroll-thumb-color);
   --scrollbar-thin-thumb: var(--scroll-thumb-color);
@@ -310,7 +310,7 @@ input:focus {
 
 [class^=select][role=button] {
   background: rgba(0, 0, 0, 0.2);
-  border-color: #000000;
+  border-color: rgba(0, 0, 0, 0.2);
 }
 
 [class^=select][role=button][class*=open] {
@@ -585,7 +585,7 @@ input:focus {
 }
 
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] {
-  background: rgba(0, 0, 0, 0.95) !important;
+  background: transparent !important;
 }
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItem] {
   transition: transform 0.2s ease-in-out;
@@ -593,6 +593,9 @@ input:focus {
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItemSelected] {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
+}
+[class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiPicker] > [class*=wrapper] {
+  background: rgba(0, 0, 0, 0.9);
 }
 
 [class^=threadSidebar] {
@@ -2218,9 +2221,11 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
+[id^=popout] > div > [role=dialog],
 [id^=popout] > div > [class^=container],
 [id^=popout] > div > [class^=popout] {
   background: rgba(0, 0, 0, 0.95) !important;
+  border-radius: 10px;
 }
 
 [class^=noticeRegion] > [class^=container] {
@@ -2444,7 +2449,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.6.3";
+  content: "v5.6.4";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
