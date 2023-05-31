@@ -30,7 +30,7 @@
   }
 
   //Remove discord gift button from chat
-  [class*="inner"] [class^="buttons"] > button:first-child {
+  [class*="inner"] [class^="buttons"] > [class*="grow"] {
     display: none !important;
   }
 }
@@ -85,18 +85,18 @@
 }
 
 //Follow Button near chat
-[class*="chatContent"] form > div > [class^="wrapper"] {
+[class*="chatContent"] form > [class^="wrapper"] {
   background: rgba(0, 0, 0, 0.3);
 }
-[class*="chatContent"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
+[class*="chatContent"] form > [class^="wrapper"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
   @include m.btred_important;
 }
 
 //reaction below message
 [class*="reactions-"] [class*="reaction"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
   background: rgba(0, 0, 0, 0.2) !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
+  min-width: calc(var(--reaction-size) * 1.33px) !important;
+  min-height: calc(var(--reaction-size) * 1.33px) !important;
   display: flex;
   align-content: center;
 
@@ -105,8 +105,8 @@
   }
 
   img {
-    width: 30px !important;
-    height: 30px !important;
+    width: calc(var(--reaction-size) * 1px) !important;
+    height: calc(var(--reaction-size) * 1px) !important;
   }
 
   //your reaction below message

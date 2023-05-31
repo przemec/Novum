@@ -157,6 +157,7 @@
   --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
   --profile-activity: #6d1515;
   --scroll-thumb-color: #a54b4b;
+  --reaction-size: 30;
 }
 
 body::after {
@@ -200,7 +201,8 @@ body::after {
 }
 
 [class^=sidebar-] > nav > div:first-child,
-[class^=base-] > [class^=content-] > div:nth-child(2) section[class*=container-] {
+[class^=base-] > [class^=content-] > :nth-child(2) section[class*=container-],
+[class^=base-] > [class^=content-] > :nth-last-child(2) section[class*=container-] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -386,7 +388,7 @@ input:focus {
   background: rgba(0, 0, 0, 0.95) !important;
   border-color: transparent;
 }
-[class^=channelTextArea] [class*=inner] [class^=buttons] > button:first-child {
+[class^=channelTextArea] [class*=inner] [class^=buttons] > [class*=grow] {
   display: none !important;
 }
 
@@ -450,23 +452,23 @@ input:focus {
   color: var(--button-text-selected) !important;
 }
 
-[class*=chatContent] form > div > [class^=wrapper] {
+[class*=chatContent] form > [class^=wrapper] {
   background: rgba(0, 0, 0, 0.3);
 }
 
-[class*=chatContent] button:not([class*=lookBlank], [class*=barButtonBase]) {
+[class*=chatContent] form > [class^=wrapper] button:not([class*=lookBlank], [class*=barButtonBase]) {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class*=chatContent] button:not([class*=lookBlank], [class*=barButtonBase]):hover {
+[class*=chatContent] form > [class^=wrapper] button:not([class*=lookBlank], [class*=barButtonBase]):hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
 
 [class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) {
   background: rgba(0, 0, 0, 0.2) !important;
-  min-width: 40px !important;
-  min-height: 40px !important;
+  min-width: calc(var(--reaction-size) * 1.33px) !important;
+  min-height: calc(var(--reaction-size) * 1.33px) !important;
   display: flex;
   align-content: center;
 }
@@ -474,8 +476,8 @@ input:focus {
   border-color: transparent;
 }
 [class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) img {
-  width: 30px !important;
-  height: 30px !important;
+  width: calc(var(--reaction-size) * 1px) !important;
+  height: calc(var(--reaction-size) * 1px) !important;
 }
 [class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
   border-color: var(--main-color);
@@ -2458,7 +2460,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.6.5";
+  content: "v5.7.0";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

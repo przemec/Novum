@@ -14,6 +14,7 @@
   --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
   --profile-activity: #6d1515;
   --scroll-thumb-color: #a54b4b;
+  --reaction-size: 30;
 }
 
 //Background
@@ -60,6 +61,7 @@ body::after {
 }
 
 [class^="sidebar-"] > nav > div:first-child,
-[class^="base-"] > [class^="content-"] > div:nth-child(2) section[class*="container-"] {
+[class^="base-"] > [class^="content-"] > :nth-child(2) section[class*="container-"],
+[class^="base-"] > [class^="content-"] > :nth-last-child(2) section[class*="container-"] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
