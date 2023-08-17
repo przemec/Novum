@@ -157,7 +157,6 @@
   --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
   --profile-activity: #6d1515;
   --scroll-thumb-color: #a54b4b;
-  --reaction-size: 30;
 }
 
 body::after {
@@ -465,21 +464,19 @@ input:focus {
   color: var(--button-text-selected) !important;
 }
 
-[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) {
+[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn]) {
   background: rgba(0, 0, 0, 0.2) !important;
-  min-width: calc(var(--reaction-size) * 1.33px) !important;
-  min-height: calc(var(--reaction-size) * 1.33px) !important;
+  transform: scale(1.07);
   display: flex;
   align-content: center;
 }
-[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]):hover {
+[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn]):hover {
   border-color: transparent;
 }
-[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn]) img {
-  width: calc(var(--reaction-size) * 1px) !important;
-  height: calc(var(--reaction-size) * 1px) !important;
+[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn]) img {
+  transform: scale(1.2);
 }
-[class*=reactions-] [class*=reaction]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
+[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
   border-color: var(--main-color);
   background: rgba(0, 0, 0, 0.4) !important;
 }
@@ -654,31 +651,31 @@ input:focus {
   transition: background 200ms ease-out;
 }
 
-#status-picker-online {
+#account-status-picker--online {
   color: #43b581;
 }
-#status-picker-online[class*=focused] {
+#account-status-picker--online[class*=focused] {
   background: rgba(67, 181, 130, 0.2666666667);
 }
-#status-picker-idle {
+#account-status-picker--idle {
   color: #faa61a;
 }
-#status-picker-idle[class*=focused] {
+#account-status-picker--idle[class*=focused] {
   background: rgba(250, 168, 26, 0.2588235294);
 }
-#status-picker-dnd {
+#account-status-picker--dnd {
   color: #f04747;
 }
-#status-picker-dnd[class*=focused] {
+#account-status-picker--dnd[class*=focused] {
   background: rgba(184, 58, 60, 0.2392156863);
 }
-#status-picker-invisible {
+#account-status-picker--invisible {
   color: #747f8d;
 }
-#status-picker-invisible[class*=focused] {
+#account-status-picker--invisible[class*=focused] {
   background: rgba(116, 127, 141, 0.2392156863);
 }
-#status-picker-custom-status[class*=focused] {
+#account-status-picker--custom-status[class*=focused] {
   background: rgba(255, 77, 181, 0.2392156863);
 }
 
@@ -2460,7 +2457,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.7.0";
+  content: "v5.7.1";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

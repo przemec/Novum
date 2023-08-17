@@ -93,10 +93,9 @@
 }
 
 //reaction below message
-[class*="reactions-"] [class*="reaction"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
+[class*="reactions-"] [class*="reaction-"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
   background: rgba(0, 0, 0, 0.2) !important;
-  min-width: calc(var(--reaction-size) * 1.33px) !important;
-  min-height: calc(var(--reaction-size) * 1.33px) !important;
+  transform: scale(1.07);
   display: flex;
   align-content: center;
 
@@ -105,8 +104,7 @@
   }
 
   img {
-    width: calc(var(--reaction-size) * 1px) !important;
-    height: calc(var(--reaction-size) * 1px) !important;
+    transform: scale(1.2);
   }
 
   //your reaction below message
@@ -322,36 +320,36 @@
 [id^="status-picker"] {
   transition: background 200ms ease-out;
 }
-#status-picker {
-  &-online {
+#account-status-picker {
+  &--online {
     color: #43b581;
     &[class*="focused"] {
       background: #43b58244;
     }
   }
 
-  &-idle {
+  &--idle {
     color: #faa61a;
     &[class*="focused"] {
       background: #faa81a42;
     }
   }
 
-  &-dnd {
+  &--dnd {
     color: #f04747;
     &[class*="focused"] {
       background: #b83a3c3d;
     }
   }
 
-  &-invisible {
+  &--invisible {
     color: #747f8d;
     &[class*="focused"] {
       background: #747f8d3d;
     }
   }
 
-  &-custom-status[class*="focused"] {
+  &--custom-status[class*="focused"] {
     background: #ff4db53d;
   }
 }
