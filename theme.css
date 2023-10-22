@@ -611,6 +611,7 @@ input:focus {
 
 [class*=messagesWrapper] [class*=content] [class*=divider] {
   border-color: transparent;
+  background-color: transparent !important;
   margin-top: 35px;
   margin-bottom: 35px;
 }
@@ -1145,14 +1146,16 @@ header h1[class^=name] {
 [class*=sidebar] [class*=containerDefault] [class*=muted] [class*=name] {
   color: rgba(255, 255, 255, 0.5);
 }
-[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=content] {
+[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=link-] {
   background: var(--main-color-semitransparent-selected) !important;
+}
+[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=name-] {
   color: #ffffff !important;
 }
-[class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=content] {
+[class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=link-] {
   background: var(--main-color-semitransparent-selected) !important;
 }
-[class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-last-child(3) {
+[class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-last-child(2) {
   display: none !important;
 }
 
@@ -2457,7 +2460,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.7.1";
+  content: "v5.7.2";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

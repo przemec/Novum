@@ -53,16 +53,18 @@ header h1[class^="name"] {
     color: rgba(255, 255, 255, 0.5);
   }
   //selected channel
-  & [class*="modeSelected"] [class*="content"] {
+  & [class*="modeSelected"] [class*="link-"] {
     background: var(--main-color-semitransparent-selected) !important;
+  }
+  & [class*="modeSelected"] [class*="name-"] {
     color: #ffffff !important;
   }
-  &:hover [class*="modeSelected"] [class*="content"] {
+  &:hover [class*="modeSelected"] [class*="link-"] {
     background: var(--main-color-semitransparent-selected) !important;
   }
 
   //Remove redundant create invite icon from channel list
-  [class^="children"] > [class^="icon"]:nth-last-child(3) {
+  [class^="children"] > [class^="icon"]:nth-last-child(2) {
     display: none !important;
   }
 }

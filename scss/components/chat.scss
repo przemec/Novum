@@ -276,6 +276,7 @@
 //Unread & Day chat dividers
 [class*="messagesWrapper"] [class*="content"] [class*="divider"] {
   border-color: transparent;
+  background-color: transparent !important;
   margin-top: 35px;
   margin-bottom: 35px;
 
