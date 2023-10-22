@@ -1331,6 +1331,10 @@ div[class^=bannedUser-][class*=card-] span {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
+[class^=tileChild-] [class*=border-][class*=speaking-] {
+  box-shadow: inset 0 0 0 3px var(--accent-color), inset 0 0 0 4px #000;
+}
+
 [class^=callContainer] {
   background: transparent !important;
 }
