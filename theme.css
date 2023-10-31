@@ -174,10 +174,10 @@ body::after {
   z-index: -90;
 }
 
-[class^=appMount-],
-[class^=app-],
-[class^=chat-],
-[class^=bg-] {
+[class^=appMount_],
+[class^=app_],
+[class^=chat_],
+[class^=bg_] {
   background: transparent !important;
 }
 
@@ -191,17 +191,17 @@ body::after {
   padding-top: 4px;
 }
 
-[class^=chat-] > [class^=content-] > div {
+[class^=chat_] > [class^=content_] > div {
   background: transparent !important;
 }
 
-[class^=wrapper-] {
+[class^=wrapper_] {
   border: none;
 }
 
-[class^=sidebar-] > nav > div:first-child,
-[class^=base-] > [class^=content-] > :nth-child(2) section[class*=container-],
-[class^=base-] > [class^=content-] > :nth-last-child(2) section[class*=container-] {
+[class^=sidebar_] > nav > div:first-child,
+[class^=base_] > [class^=content_] > :nth-child(2) section[class*=container_],
+[class^=base_] > [class^=content_] > :nth-last-child(2) section[class*=container_] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -209,82 +209,82 @@ button {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
-button[class*=lookFilled-][class*=colorGrey],
-button[class*=lookFilled-][class*=colorPrimary-] {
+button[class*=lookFilled_][class*=colorGrey],
+button[class*=lookFilled_][class*=colorPrimary_] {
   background: var(--accent-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
-button[class*=lookFilled-][class*=colorGrey]:hover,
-button[class*=lookFilled-][class*=colorPrimary-]:hover {
+button[class*=lookFilled_][class*=colorGrey]:hover,
+button[class*=lookFilled_][class*=colorPrimary_]:hover {
   background: var(--accent-color-semitransparent) !important;
   color: var(--button-text-selected) !important;
 }
 
-button[class*=colorBrand-]:not([class*=lookBlank], [class*=lookLink]) {
+button[class*=colorBrand_]:not([class*=lookBlank], [class*=lookLink]) {
   background: var(--main-color);
   color: var(--button-text);
 }
-button[class*=colorBrand-]:not([class*=lookBlank], [class*=lookLink]):hover {
+button[class*=colorBrand_]:not([class*=lookBlank], [class*=lookLink]):hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
 
-button[class*=colorBrand-][class*=lookInverted] {
+button[class*=colorBrand_][class*=lookInverted] {
   background: var(--button-text-selected);
   color: var(--main-color-selected);
 }
-button[class*=colorBrand-][class*=lookInverted]:hover {
+button[class*=colorBrand_][class*=lookInverted]:hover {
   background: var(--button-text);
   color: var(--main-color);
 }
 
-button[class*=lookOutlined-]:not([class*=lookBlank]) {
+button[class*=lookOutlined_]:not([class*=lookBlank]) {
   color: var(--button-text);
   border-color: transparent !important;
 }
 
-button[class*=colorGreen-],
-button[class*=colorRed-] {
+button[class*=colorGreen_],
+button[class*=colorRed_] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-button[class*=colorGreen-]:hover,
-button[class*=colorRed-]:hover {
+button[class*=colorGreen_]:hover,
+button[class*=colorRed_]:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
 
-button[class*=lookLink-] {
+button[class*=lookLink_] {
   color: var(--button-text);
 }
-button[class*=lookLink-]:hover {
+button[class*=lookLink_]:hover {
   text-decoration: none !important;
   color: var(--button-text-selected);
 }
-button[class*=lookLink-][class*=colorLink-] {
+button[class*=lookLink_][class*=colorLink_] {
   color: var(--accent-color);
 }
-button[class*=lookLink-][class*=colorLink-]:hover {
+button[class*=lookLink_][class*=colorLink_]:hover {
   color: var(--accent-saturated);
 }
-button[class*=lookLink-] > [class*=contents] {
+button[class*=lookLink_] > [class*=contents] {
   background: none !important;
   border-bottom: 1px solid transparent;
   margin-bottom: -1px;
 }
-button[class*=lookLink-]:hover > [class*=contents] {
+button[class*=lookLink_]:hover > [class*=contents] {
   background: none !important;
   border-color: currentColor;
 }
 
-[class^=control-] [class^=container-] {
+[class^=control_] [class^=container_] {
   background: var(--accent-color-semitransparent) !important;
 }
 
-[class^=control-] [class^=container-][style*="rgb(35,"] {
+[class^=control_] [class^=container_][style*="rgb(35,"] {
   background: var(--main-color) !important;
 }
-[class^=control-] [class^=container-][style*="rgb(35,"] [class^=slider] path {
+[class^=control_] [class^=container_][style*="rgb(35,"] [class^=slider] path {
   fill: var(--main-color);
 }
 
@@ -322,14 +322,14 @@ input:focus {
   background: rgba(0, 0, 0, 0.9);
 }
 
-[class^=slider-] > [class^=bar-] {
+[class^=slider_] > [class^=bar_] {
   background: var(--accent-color-semitransparent) !important;
 }
-[class^=slider-] > [class^=bar-] [class^=barFill-] {
+[class^=slider_] > [class^=bar_] [class^=barFill_] {
   background: var(--main-color) !important;
 }
 
-[class^=colorPrimary-] {
+[class^=colorPrimary_] {
   background: var(--main-color) !important;
 }
 
@@ -347,11 +347,11 @@ input:focus {
   border-top-color: rgb(0, 0, 0) !important;
 }
 
-[class^=layerContainer-] > [class*=toolbar] {
+[class^=layerContainer_] > [class*=toolbar] {
   background: rgba(0, 0, 0, 0.95) !important;
   border: 2px solid rgb(0, 0, 0);
 }
-[class^=layerContainer-] > [class*=toolbar]::before {
+[class^=layerContainer_] > [class*=toolbar]::before {
   border-top-color: rgb(0, 0, 0) !important;
 }
 
@@ -359,7 +359,7 @@ input:focus {
   background: linear-gradient(rgba(0, 0, 0, 0.1333333333), black) !important;
 }
 
-[class^=pro-],
+[class^=pro_],
 [class*=protip] {
   color: var(--accent-saturated) !important;
 }
@@ -383,7 +383,7 @@ input:focus {
 [class^=channelTextArea] [class*=autocompleteRow] > [class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
 }
-[class^=channelTextArea] > [class^=container-] > [class^=containerBackground] {
+[class^=channelTextArea] > [class^=container_] > [class^=containerBackground] {
   background: rgba(0, 0, 0, 0.95) !important;
   border-color: transparent;
 }
@@ -406,14 +406,14 @@ input:focus {
   background-position: unset;
 }
 
-[class^=drawerSizingWrapper-] > [class^=contentWrapper-] {
+[class^=drawerSizingWrapper_] > [class^=contentWrapper_] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-[class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=navList-] > [class^=navItem-] > [class^=navButtonActive-] {
+[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class^=navList_] > [class^=navItem_] > [class^=navButtonActive_] {
   background: var(--main-color) !important;
 }
-[class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=unicodeShortcut-],
-[class^=drawerSizingWrapper-] > [class^=contentWrapper-] [class^=inspector-] {
+[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class^=unicodeShortcut_],
+[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class^=inspector_] {
   background: #000;
 }
 
@@ -464,38 +464,38 @@ input:focus {
   color: var(--button-text-selected) !important;
 }
 
-[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn]) {
+[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn]) {
   background: rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.07);
   display: flex;
   align-content: center;
 }
-[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn]):hover {
+[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn]):hover {
   border-color: transparent;
 }
-[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn]) img {
+[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn]) img {
   transform: scale(1.2);
 }
-[class*=reactions-] [class*=reaction-]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
+[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
   border-color: var(--main-color);
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
-[class*=reactionCount-] {
+[class*=reactionCount_] {
   color: var(--accent-color) !important;
 }
 
-[class^=layerContainer-] [class^=layer-] [class*=reactors-] {
+[class^=layerContainer_] [class^=layer_] [class*=reactors_] {
   background: transparent !important;
 }
-[class^=layerContainer-] [class^=layer-] [class*=reactors-] div:not([class*=contents]) {
+[class^=layerContainer_] [class^=layer_] [class*=reactors_] div:not([class*=contents]) {
   background: rgba(0, 0, 0, 0.95) !important;
 }
-[class^=layerContainer-] [class^=layer-] [class*=menu-] {
+[class^=layerContainer_] [class^=layer_] [class*=menu_] {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: none !important;
 }
-[class^=layerContainer-] [class^=layer-] [class*=menu-] [class*=wrapper-] img {
+[class^=layerContainer_] [class^=layer_] [class*=menu_] [class*=wrapper_] img {
   width: 30px !important;
   height: 30px !important;
 }
@@ -680,23 +680,23 @@ input:focus {
   background: rgba(255, 77, 181, 0.2392156863);
 }
 
-[class^=newMessagesBar-] {
+[class^=newMessagesBar_] {
   background: var(--main-color) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 
-[class^=jumpToPresentBar-] {
+[class^=jumpToPresentBar_] {
   background: var(--accent-desaturated) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 
-[id^=message-accessories-] > [class*=wrapper] {
+[id^=message-accessories_] > [class*=wrapper] {
   background: rgba(0, 0, 0, 0.2);
 }
 
-[id^=message-accessories-] > [class*=wrapper] [class*=guildIconImage] {
+[id^=message-accessories_] > [class*=wrapper] [class*=guildIconImage] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -899,7 +899,7 @@ code .hljs-selector-tag {
   border-left: 2px solid var(--accent-saturated);
 }
 
-[class^=categoryFadeBlurple-] {
+[class^=categoryFadeBlurple_] {
   background: var(--main-color) !important;
 }
 
@@ -1020,7 +1020,7 @@ body::after {
     transform: rotate(7deg);
   }
 }
-[class^=scroller-] {
+[class^=scroller_] {
   background: transparent !important;
 }
 
@@ -1146,13 +1146,13 @@ header h1[class^=name] {
 [class*=sidebar] [class*=containerDefault] [class*=muted] [class*=name] {
   color: rgba(255, 255, 255, 0.5);
 }
-[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=link-] {
+[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=link_] {
   background: var(--main-color-semitransparent-selected) !important;
 }
-[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=name-] {
+[class*=sidebar] [class*=containerDefault] [class*=modeSelected] [class*=name_] {
   color: #ffffff !important;
 }
-[class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=link-] {
+[class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=link_] {
   background: var(--main-color-semitransparent-selected) !important;
 }
 [class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-last-child(2) {
@@ -1264,7 +1264,7 @@ nav[class*=container] > [class*=container] > header:hover {
   background-position: unset;
 }
 
-[class^=content-] > [class^=emojiRow-][class*=card-] {
+[class^=content_] > [class^=emojiRow_][class*=card_] {
   background: transparent !important;
 }
 
@@ -1311,10 +1311,10 @@ nav[class*=container] > [class*=container] > header:hover {
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 
-div[class^=bannedUser-][class*=card-] {
+div[class^=bannedUser_][class*=card_] {
   background: transparent !important;
 }
-div[class^=bannedUser-][class*=card-] span {
+div[class^=bannedUser_][class*=card_] span {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -1331,7 +1331,8 @@ div[class^=bannedUser-][class*=card-] span {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
-[class^=tileChild-] [class*=border-][class*=speaking-] {
+[class*=voiceCallWrapper_] [class*=border_][class*=speaking_],
+[class^=tileChild_] [class*=border_][class*=speaking_] {
   box-shadow: inset 0 0 0 3px var(--accent-color), inset 0 0 0 4px #000;
 }
 
@@ -1367,36 +1368,36 @@ button[class*=participantsButton]:hover {
   color: var(--button-text) !important;
 }
 
-[class^=tileChild-] button > [class*=button-] {
+[class^=tileChild_] button > [class*=button_] {
   background: rgba(0, 0, 0, 0.95);
   color: var(--button-text);
 }
-[class^=tileChild-] button > [class*=button-]:hover {
+[class^=tileChild_] button > [class*=button_]:hover {
   color: var(--button-text-selected);
 }
 
-[class^=pictureInPictureVideo-] {
+[class^=pictureInPictureVideo_] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
 
-[class^=pictureInPictureVideo-] > span button > [class*=button-] {
+[class^=pictureInPictureVideo_] > span button > [class*=button_] {
   background: var(--main-color);
   color: var(--button-text);
 }
-[class^=pictureInPictureVideo-] > span button > [class*=button-]:hover {
+[class^=pictureInPictureVideo_] > span button > [class*=button_]:hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
 
-[class^=emptyPreview-] {
+[class^=emptyPreview_] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
-[class^=wanderingCubesItem-] {
+[class^=wanderingCubesItem_] {
   background: var(--accent-color) !important;
 }
 
-[class^=tile-] {
+[class^=tile_] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 10px;
 }
@@ -1476,23 +1477,23 @@ button[class*=participantsButton]:hover {
   filter: none;
 }
 
-[class^=stageSection-] {
+[class^=stageSection_] {
   background: transparent;
 }
 
-[class^=nowPlayingSidebar-] > [class^=container-] {
+[class^=nowPlayingSidebar_] > [class^=container_] {
   background: transparent !important;
 }
 
-[class^=stageSection-] > [class^=container-] > [class^=container-] {
+[class^=stageSection_] > [class^=container_] > [class^=container_] {
   background: rgba(0, 0, 0, 0.15);
 }
 
-[class^=stageSection-] > [class^=container-] > [class^=container-]:nth-last-child(2) {
+[class^=stageSection_] > [class^=container_] > [class^=container_]:nth-last-child(2) {
   background: transparent !important;
 }
 
-[class^=guildInfoContainer-] > [class^=rightJustifiedContent-] > div {
+[class^=guildInfoContainer_] > [class^=rightJustifiedContent_] > div {
   background: var(--main-color) !important;
 }
 
@@ -1596,7 +1597,7 @@ button[class*=participantsButton]:hover {
   background-size: 10px;
 }
 
-[class*=profileBanner-] {
+[class*=profileBanner_] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -1604,34 +1605,34 @@ button[class*=participantsButton]:hover {
   background: transparent !important;
 }
 
-[class^=activityUserPopout-],
-[class^=activityUserPopoutV2-] {
+[class^=activityUserPopout_],
+[class^=activityUserPopoutV2_] {
   background: var(--profile-activity);
   margin-top: 40px;
   margin-bottom: 40px;
   padding-left: 16px;
   padding-right: 16px;
 }
-[class^=activityUserPopout-] [class*=platformIcon],
-[class^=activityUserPopoutV2-] [class*=platformIcon] {
+[class^=activityUserPopout_] [class*=platformIcon],
+[class^=activityUserPopoutV2_] [class*=platformIcon] {
   right: 16px !important;
 }
-[class^=activityUserPopout-] button,
-[class^=activityUserPopoutV2-] button {
+[class^=activityUserPopout_] button,
+[class^=activityUserPopoutV2_] button {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class^=activityUserPopout-] button:hover,
-[class^=activityUserPopoutV2-] button:hover {
+[class^=activityUserPopout_] button:hover,
+[class^=activityUserPopoutV2_] button:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class^=activityUserPopout-] [class^=bar-],
-[class^=activityUserPopoutV2-] [class^=bar-] {
+[class^=activityUserPopout_] [class^=bar_],
+[class^=activityUserPopoutV2_] [class^=bar_] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-[class^=activityUserPopout-]::before,
-[class^=activityUserPopoutV2-]::before {
+[class^=activityUserPopout_]::before,
+[class^=activityUserPopoutV2_]::before {
   content: "";
   position: absolute;
   height: 21px;
@@ -1646,8 +1647,8 @@ button[class*=participantsButton]:hover {
   animation-delay: 0s;
   opacity: 1;
 }
-[class^=activityUserPopout-]::after,
-[class^=activityUserPopoutV2-]::after {
+[class^=activityUserPopout_]::after,
+[class^=activityUserPopoutV2_]::after {
   content: "";
   position: absolute;
   height: 21px;
@@ -1672,7 +1673,7 @@ button[class*=participantsButton]:hover {
   }
 }
 
-[class^=activityUserPopout-] > [class^=horizontal-] > button {
+[class^=activityUserPopout_] > [class^=horizontal_] > button {
   background: var(--main-color) !important;
 }
 
@@ -1794,10 +1795,10 @@ button[class*=participantsButton]:hover {
   border-radius: 10px;
 }
 
-[class^=slider-] > [class^=track-] > [class^=mark-] [class^=markValue-] {
+[class^=slider_] > [class^=track_] > [class^=mark_] [class^=markValue_] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
-[class^=slider-] > [class^=track-] > [class^=mark-] [class^=markDash-] {
+[class^=slider_] > [class^=track_] > [class^=mark_] [class^=markDash_] {
   background: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -1814,15 +1815,15 @@ button[class*=participantsButton]:hover {
   background-color: var(--main-color-selected);
 }
 
-[class^=children-] [class*=notDetected-] {
+[class^=children_] [class*=notDetected_] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
-[class^=children-] [class*=nowPlaying-] {
+[class^=children_] [class*=nowPlaying_] {
   background: rgba(0, 255, 128, 0.2) !important;
 }
 
-[class^=addGamePopout-] {
+[class^=addGamePopout_] {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: none !important;
 }
@@ -1832,16 +1833,16 @@ button[class*=participantsButton]:hover {
   box-shadow: none !important;
 }
 
-[class^=lastPlayed-] {
+[class^=lastPlayed_] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-[class^=overlayToggleIconOn-] path {
+[class^=overlayToggleIconOn_] path {
   fill: rgba(255, 255, 255, 0.5) !important;
 }
 
-[class^=overlayToggleIconOff-] path,
-[class^=overlayToggleIconOff-] rect {
+[class^=overlayToggleIconOff_] path,
+[class^=overlayToggleIconOff_] rect {
   fill: var(--main-color) !important;
 }
 
@@ -1849,7 +1850,7 @@ button[class*=participantsButton]:hover {
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 
-[class^=overlayStatusText-] {
+[class^=overlayStatusText_] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -1880,11 +1881,11 @@ button[class*=participantsButton]:hover {
 [class*=accountProfileCard] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
-[class*=accountProfileCard] [class*=fieldButton-] {
+[class*=accountProfileCard] [class*=fieldButton_] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class*=accountProfileCard] [class*=fieldButton-]:hover {
+[class*=accountProfileCard] [class*=fieldButton_]:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
@@ -1893,29 +1894,29 @@ button[class*=participantsButton]:hover {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=info-] > * {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=info_] > * {
   color: rgba(255, 255, 255, 0.5);
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][class*=bd], [class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][aria-controls] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][class*=bd], [class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][aria-controls] {
   padding-left: 50px !important;
 }
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]:hover {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item]:hover {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][class*=selected] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item][aria-controls=discord-nitro-tab] svg {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][aria-controls=discord-nitro-tab] svg {
   display: none;
 }
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item] [class*=selectedBackground] {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item] [class*=selectedBackground] {
   background: transparent !important;
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=item]::after {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -1929,7 +1930,7 @@ button[class*=participantsButton]:hover {
   background-size: cover !important;
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar-] [class*=selected]::after {
+[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=selected]::after {
   opacity: 0.7;
 }
 
@@ -2157,7 +2158,7 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.3);
 }
 
-[class^=perksModal-] {
+[class^=perksModal_] {
   background: transparent !important;
 }
 
@@ -2173,16 +2174,16 @@ button[class*=participantsButton]:hover {
   background: var(--main-color-selected) !important;
 }
 
-[class^=carousel] [class^=tier-] {
+[class^=carousel] [class^=tier_] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
-[class^=carousel] [class^=tier-] [class*=tierHeader] {
+[class^=carousel] [class^=tier_] [class*=tierHeader] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-[class^=carousel] [class^=tier-] [class*=tierHeaderLocked] path {
+[class^=carousel] [class^=tier_] [class*=tierHeaderLocked] path {
   fill: rgba(255, 255, 255, 0.5);
 }
-[class^=carousel] [class^=tier-] [class*=tierBody] {
+[class^=carousel] [class^=tier_] [class*=tierBody] {
   background: transparent !important;
 }
 
@@ -2198,16 +2199,16 @@ button[class*=participantsButton]:hover {
   background: var(--scroll-thumb-color);
 }
 
-[class^=tiers] > [class^=tier-] {
+[class^=tiers] > [class^=tier_] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
-[class^=tiers] > [class^=tier-] [class*=tierHeader] {
+[class^=tiers] > [class^=tier_] [class*=tierHeader] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-[class^=tiers] > [class^=tier-] [class*=tierHeaderLocked] path {
+[class^=tiers] > [class^=tier_] [class*=tierHeaderLocked] path {
   fill: rgba(255, 255, 255, 0.5);
 }
-[class^=tiers] > [class^=tier-] [class*=tierBody] {
+[class^=tiers] > [class^=tier_] [class*=tierBody] {
   background: transparent !important;
 }
 
@@ -2264,7 +2265,7 @@ button[class*=participantsButton]:hover {
   color: var(--button-text-selected);
 }
 
-[class^=app-] > [class*=fixClipping-] {
+[class^=app_] > [class*=fixClipping_] {
   background: linear-gradient(rgba(0, 0, 0, 0.1333333333), black) !important;
 }
 
@@ -2302,7 +2303,7 @@ button[class*=participantsButton]:hover {
   border: none !important;
 }
 
-[class^=live-][class*=textBadge] {
+[class^=live_][class*=textBadge] {
   background: var(--main-color-selected) !important;
   color: var(--button-text) !important;
 }
@@ -2326,15 +2327,15 @@ div[class^=notice] button:hover {
   color: var(--accent-color);
 }
 
-[class^=flowerStar-] > path {
+[class^=flowerStar_] > path {
   fill: var(--accent-saturated) !important;
 }
 
-[class^=flowerStar-] + [class^=child] path {
+[class^=flowerStar_] + [class^=child] path {
   fill: #ffffff !important;
 }
 
-[class^=akaBadge-] {
+[class^=akaBadge_] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
@@ -2396,12 +2397,12 @@ div[class^=notice] button:hover {
   z-index: 2;
 }
 
-[class*=card-]:not([class*=justify]) {
+[class*=card_]:not([class*=justify]) {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
 }
 
-[class*=card-][class*=justify] {
+[class*=card_][class*=justify] {
   box-shadow: none;
 }
 
@@ -2464,7 +2465,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.7.2";
+  content: "v5.8.0";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

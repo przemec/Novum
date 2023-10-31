@@ -4,8 +4,8 @@
 button {
   transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
-button[class*="lookFilled-"][class*="colorGrey"],
-button[class*="lookFilled-"][class*="colorPrimary-"] {
+button[class*="lookFilled_"][class*="colorGrey"],
+button[class*="lookFilled_"][class*="colorPrimary_"] {
   background: var(--accent-color-semitransparent) !important;
   color: var(--button-text) !important;
   &:hover {
@@ -13,10 +13,10 @@ button[class*="lookFilled-"][class*="colorPrimary-"] {
     color: var(--button-text-selected) !important;
   }
 }
-button[class*="colorBrand-"]:not([class*="lookBlank"], [class*="lookLink"]) {
+button[class*="colorBrand_"]:not([class*="lookBlank"], [class*="lookLink"]) {
   @include m.btred;
 }
-button[class*="colorBrand-"][class*="lookInverted"] {
+button[class*="colorBrand_"][class*="lookInverted"] {
   background: var(--button-text-selected);
   color: var(--main-color-selected);
   &:hover {
@@ -24,22 +24,22 @@ button[class*="colorBrand-"][class*="lookInverted"] {
     color: var(--main-color);
   }
 }
-button[class*="lookOutlined-"]:not([class*="lookBlank"]) {
+button[class*="lookOutlined_"]:not([class*="lookBlank"]) {
   color: var(--button-text);
   border-color: transparent !important;
 }
-button[class*="colorGreen-"],
-button[class*="colorRed-"] {
+button[class*="colorGreen_"],
+button[class*="colorRed_"] {
   @include m.btred_important;
 }
-button[class*="lookLink-"] {
+button[class*="lookLink_"] {
   color: var(--button-text);
   &:hover {
     text-decoration: none !important;
     color: var(--button-text-selected);
   }
 
-  &[class*="colorLink-"] {
+  &[class*="colorLink_"] {
     color: var(--accent-color);
     &:hover {
       color: var(--accent-saturated);
@@ -58,10 +58,10 @@ button[class*="lookLink-"] {
 }
 
 //Switches
-[class^="control-"] [class^="container-"] {
+[class^="control_"] [class^="container_"] {
   background: var(--accent-color-semitransparent) !important;
 }
-[class^="control-"] [class^="container-"][style*="rgb(35,"] {
+[class^="control_"] [class^="container_"][style*="rgb(35,"] {
   background: var(--main-color) !important;
   [class^="slider"] path {
     fill: var(--main-color);
@@ -102,15 +102,15 @@ input:focus {
 }
 
 //Bars
-[class^="slider-"] > [class^="bar-"] {
+[class^="slider_"] > [class^="bar_"] {
   background: var(--accent-color-semitransparent) !important;
-  [class^="barFill-"] {
+  [class^="barFill_"] {
     background: var(--main-color) !important;
   }
 }
 
 //Color primary
-[class^="colorPrimary-"] {
+[class^="colorPrimary_"] {
   background: var(--main-color) !important;
 }
 
@@ -127,7 +127,7 @@ input:focus {
     border-top-color: rgba(0, 0, 0, 1) !important;
   }
 }
-[class^="layerContainer-"] > [class*="toolbar"] {
+[class^="layerContainer_"] > [class*="toolbar"] {
   background: rgba(0, 0, 0, 0.95) !important;
   border: 2px solid rgba(0, 0, 0, 1);
 
@@ -142,7 +142,7 @@ input:focus {
 }
 
 //protips
-[class^="pro-"],
+[class^="pro_"],
 [class*="protip"] {
   color: var(--accent-saturated) !important;
 }

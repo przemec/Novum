@@ -1,20 +1,20 @@
 //Styling for new 'find stage' section in user homescreen
-[class^="stageSection-"] {
+[class^="stageSection_"] {
   background: transparent;
 }
 
-[class^="nowPlayingSidebar-"] > [class^="container-"] {
+[class^="nowPlayingSidebar_"] > [class^="container_"] {
   background: transparent !important;
 }
 
-[class^="stageSection-"] > [class^="container-"] > [class^="container-"] {
+[class^="stageSection_"] > [class^="container_"] > [class^="container_"] {
   background: rgba(0, 0, 0, 0.15);
 }
 
-[class^="stageSection-"] > [class^="container-"] > [class^="container-"]:nth-last-child(2) {
+[class^="stageSection_"] > [class^="container_"] > [class^="container_"]:nth-last-child(2) {
   background: transparent !important;
 }
 
-[class^="guildInfoContainer-"] > [class^="rightJustifiedContent-"] > div {
+[class^="guildInfoContainer_"] > [class^="rightJustifiedContent_"] > div {
   background: var(--main-color) !important;
 }

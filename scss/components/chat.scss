@@ -24,7 +24,7 @@
     background: var(--main-color-semitransparent-selected) !important;
   }
   //hidden tip container above the chat input
-  & > [class^="container-"] > [class^="containerBackground"] {
+  & > [class^="container_"] > [class^="containerBackground"] {
     background: rgba(0, 0, 0, 0.95) !important;
     border-color: transparent;
   }
@@ -54,14 +54,14 @@
 }
 
 // Emote, Gif, Sticker popout
-[class^="drawerSizingWrapper-"] > [class^="contentWrapper-"] {
+[class^="drawerSizingWrapper_"] > [class^="contentWrapper_"] {
   background: rgba(0, 0, 0, 0.9) !important;
 
-  [class^="navList-"] > [class^="navItem-"] > [class^="navButtonActive-"] {
+  [class^="navList_"] > [class^="navItem_"] > [class^="navButtonActive_"] {
     background: var(--main-color) !important;
   }
-  [class^="unicodeShortcut-"],
-  [class^="inspector-"] {
+  [class^="unicodeShortcut_"],
+  [class^="inspector_"] {
     background: #000;
   }
 }
@@ -93,7 +93,7 @@
 }
 
 //reaction below message
-[class*="reactions-"] [class*="reaction-"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
+[class*="reactions_"] [class*="reaction_"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
   background: rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.07);
   display: flex;
@@ -113,14 +113,14 @@
     background: rgba(0, 0, 0, 0.4) !important;
   }
 }
-[class*="reactionCount-"] {
+[class*="reactionCount_"] {
   color: var(--accent-color) !important;
 }
 
 //Chat message popouts
-[class^="layerContainer-"] [class^="layer-"] {
+[class^="layerContainer_"] [class^="layer_"] {
   //See who reacted popout
-  [class*="reactors-"] {
+  [class*="reactors_"] {
     background: transparent !important;
 
     div:not([class*="contents"]) {
@@ -129,11 +129,11 @@
   }
 
   //Chat message right click popout
-  [class*="menu-"] {
+  [class*="menu_"] {
     background: rgba(0, 0, 0, 0.95) !important;
     box-shadow: none !important;
 
-    [class*="wrapper-"] img {
+    [class*="wrapper_"] img {
       width: 30px !important;
       height: 30px !important;
     }
@@ -356,23 +356,23 @@
 }
 
 //New messages bar
-[class^="newMessagesBar-"] {
+[class^="newMessagesBar_"] {
   background: var(--main-color) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 //Old messages bar
-[class^="jumpToPresentBar-"] {
+[class^="jumpToPresentBar_"] {
   background: var(--accent-desaturated) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 
 //Server invite field on chat
-[id^="message-accessories-"] > [class*="wrapper"] {
+[id^="message-accessories_"] > [class*="wrapper"] {
   background: rgba(0, 0, 0, 0.2);
 }
-[id^="message-accessories-"] > [class*="wrapper"] [class*="guildIconImage"] {
+[id^="message-accessories_"] > [class*="wrapper"] [class*="guildIconImage"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -619,7 +619,7 @@ code {
     border-left: 2px solid var(--accent-saturated);
   }
 }
-[class^="categoryFadeBlurple-"] {
+[class^="categoryFadeBlurple_"] {
   background: var(--main-color) !important;
 }
 

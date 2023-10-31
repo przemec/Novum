@@ -52,11 +52,11 @@
 }
 
 //"Accessibility" settings
-[class^="slider-"] > [class^="track-"] > [class^="mark-"] {
-  [class^="markValue-"] {
+[class^="slider_"] > [class^="track_"] > [class^="mark_"] {
+  [class^="markValue_"] {
     color: rgba(255, 255, 255, 0.5) !important;
   }
-  [class^="markDash-"] {
+  [class^="markDash_"] {
     background: rgba(255, 255, 255, 0.5) !important;
   }
 }
@@ -70,13 +70,13 @@
 }
 
 //"Activity status" settings
-[class^="children-"] [class*="notDetected-"] {
+[class^="children_"] [class*="notDetected_"] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
-[class^="children-"] [class*="nowPlaying-"] {
+[class^="children_"] [class*="nowPlaying_"] {
   background: rgba(0, 255, 128, 0.2) !important;
 }
-[class^="addGamePopout-"] {
+[class^="addGamePopout_"] {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: none !important;
 }
@@ -85,14 +85,14 @@
   box-shadow: none !important;
 }
 //added games list
-[class^="lastPlayed-"] {
+[class^="lastPlayed_"] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
-[class^="overlayToggleIconOn-"] path {
+[class^="overlayToggleIconOn_"] path {
   fill: rgba(255, 255, 255, 0.5) !important;
 }
-[class^="overlayToggleIconOff-"] path,
-[class^="overlayToggleIconOff-"] rect {
+[class^="overlayToggleIconOff_"] path,
+[class^="overlayToggleIconOff_"] rect {
   fill: var(--main-color) !important;
 }
 //X after hover
@@ -100,7 +100,7 @@
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 //overlay text after hover
-[class^="overlayStatusText-"] {
+[class^="overlayStatusText_"] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -137,7 +137,7 @@
 [class*="accountProfileCard"] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 
-  [class*="fieldButton-"] {
+  [class*="fieldButton_"] {
     @include m.btred_important;
   }
 }
@@ -146,12 +146,12 @@
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="info-"] > * {
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="info_"] > * {
   color: rgba(255, 255, 255, 0.5);
 }
 
 //Settings sidebar
-[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="item"] {
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar_"] [class*="item"] {
   //Space for icons
   &[class*="bd"],
   &[aria-controls] {
@@ -176,7 +176,7 @@
   }
 }
 
-[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="item"]::after {
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar_"] [class*="item"]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -189,7 +189,7 @@
   transition: all 0.15s ease-in-out;
   background-size: cover !important;
 }
-[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar-"] [class*="selected"]::after {
+[class^="standardSidebarView"] > [class^="sidebarRegion"] [class^="sidebar_"] [class*="selected"]::after {
   opacity: 0.7;
 }
 

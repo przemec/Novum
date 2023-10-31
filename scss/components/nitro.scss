@@ -17,7 +17,7 @@
 }
 
 //Server boost overlay
-[class^="perksModal-"] {
+[class^="perksModal_"] {
   background: transparent !important;
 }
 //progress line
@@ -32,7 +32,7 @@
   background: var(--main-color-selected) !important;
 }
 //tier panels
-[class^="carousel"] [class^="tier-"] {
+[class^="carousel"] [class^="tier_"] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
   [class*="tierHeader"] {
     background: rgba(0, 0, 0, 0.1) !important;
@@ -59,7 +59,7 @@
   background: var(--scroll-thumb-color);
 }
 //tier panels
-[class^="tiers"] > [class^="tier-"] {
+[class^="tiers"] > [class^="tier_"] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
   [class*="tierHeader"] {
     background: rgba(0, 0, 0, 0.1) !important;

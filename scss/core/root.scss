@@ -33,10 +33,10 @@ body::after {
 }
 
 //Remove main gray background colors
-[class^="appMount-"],
-[class^="app-"],
-[class^="chat-"],
-[class^="bg-"] {
+[class^="appMount_"],
+[class^="app_"],
+[class^="chat_"],
+[class^="bg_"] {
   background: transparent !important;
 }
 
@@ -51,16 +51,16 @@ body::after {
   padding-top: 4px;
 }
 
-[class^="chat-"] > [class^="content-"] > div {
+[class^="chat_"] > [class^="content_"] > div {
   background: transparent !important;
 }
 
-[class^="wrapper-"] {
+[class^="wrapper_"] {
   border: none;
 }
 
-[class^="sidebar-"] > nav > div:first-child,
-[class^="base-"] > [class^="content-"] > :nth-child(2) section[class*="container-"],
-[class^="base-"] > [class^="content-"] > :nth-last-child(2) section[class*="container-"] {
+[class^="sidebar_"] > nav > div:first-child,
+[class^="base_"] > [class^="content_"] > :nth-child(2) section[class*="container_"],
+[class^="base_"] > [class^="content_"] > :nth-last-child(2) section[class*="container_"] {
   background: rgba(0, 0, 0, 0.1) !important;
 }

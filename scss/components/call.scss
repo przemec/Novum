@@ -5,8 +5,11 @@
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
-//tile border while speaking
-[class^="tileChild-"] [class*="border-"][class*="speaking-"] {
+//avatar border while speaking
+// - private voice call
+[class*="voiceCallWrapper_"] [class*="border_"][class*="speaking_"],
+// - server channel call
+[class^="tileChild_"] [class*="border_"][class*="speaking_"] {
   box-shadow: inset 0 0 0 3px var(--accent-color),inset 0 0 0 4px #000;
 }
 
@@ -47,7 +50,7 @@ button[class*="participantsButton"] {
 }
 
 //"this stream has ended" channel view
-[class^="tileChild-"] button > [class*="button-"] {
+[class^="tileChild_"] button > [class*="button_"] {
   background: rgba(0, 0, 0, 0.95);
   color: var(--button-text);
   &:hover {
@@ -55,21 +58,21 @@ button[class*="participantsButton"] {
   }
 }
 //"this stream has ended" picture in picture modal
-[class^="pictureInPictureVideo-"] {
+[class^="pictureInPictureVideo_"] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-[class^="pictureInPictureVideo-"] > span button > [class*="button-"] {
+[class^="pictureInPictureVideo_"] > span button > [class*="button_"] {
   @include m.btred;
 }
 
 //live preview backgrounds
-[class^="emptyPreview-"] {
+[class^="emptyPreview_"] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
-[class^="wanderingCubesItem-"] {
+[class^="wanderingCubesItem_"] {
   background: var(--accent-color) !important;
 }
-[class^="tile-"] {
+[class^="tile_"] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 10px;
 }

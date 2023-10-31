@@ -32,7 +32,7 @@
 }
 
 //"Emoji" settings - card and its "X" button
-[class^="content-"] > [class^="emojiRow-"][class*="card-"] {
+[class^="content_"] > [class^="emojiRow_"][class*="card_"] {
   background: transparent !important;
 }
 [class*="emojiRemove"] {
@@ -78,7 +78,7 @@
 }
 
 //"Bans" settings
-div[class^="bannedUser-"][class*="card-"] {
+div[class^="bannedUser_"][class*="card_"] {
   background: transparent !important;
   span {
     color: rgba(255, 255, 255, 0.5) !important;

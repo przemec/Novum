@@ -31,7 +31,7 @@
 }
 
 //problems with connection animated modal
-[class^="app-"] > [class*="fixClipping-"] {
+[class^="app_"] > [class*="fixClipping_"] {
   background: linear-gradient(#00000022, #000000ff) !important;
 }
 
@@ -76,7 +76,7 @@
 }
 
 //live indicator in server channel/Active Now section in home screen
-[class^="live-"][class*="textBadge"] {
+[class^="live_"][class*="textBadge"] {
   background: var(--main-color-selected) !important;
   color: var(--button-text) !important;
 }
@@ -104,15 +104,15 @@ div[class^="notice"] {
 }
 
 //FlowerStar aka Verified SVG ICON
-[class^="flowerStar-"] > path {
+[class^="flowerStar_"] > path {
   fill: var(--accent-saturated) !important;
 }
-[class^="flowerStar-"] + [class^="child"] path {
+[class^="flowerStar_"] + [class^="child"] path {
   fill: #ffffff !important;
 }
 
 //AKA badge
-[class^="akaBadge-"] {
+[class^="akaBadge_"] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
@@ -197,11 +197,11 @@ div[class^="notice"] {
 
 //Cards in settings, servers discover page, etc.
 //[class*="justify"] - cards in keybinds and activity status settings
-[class*="card-"]:not([class*="justify"]) {
+[class*="card_"]:not([class*="justify"]) {
   background: rgba(0, 0, 0, 0.3) !important;
   border-color: #000000 !important;
 }
-[class*="card-"][class*="justify"] {
+[class*="card_"][class*="justify"] {
   box-shadow: none;
 }
 
