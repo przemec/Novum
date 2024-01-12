@@ -584,7 +584,7 @@ input:focus {
 }
 
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] {
-  background: transparent !important;
+  background: rgba(0, 0, 0, 0.95) !important;
 }
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItem] {
   transition: transform 0.2s ease-in-out;
@@ -592,9 +592,6 @@ input:focus {
 [class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiItemSelected] {
   background: rgba(255, 255, 255, 0.3);
   transform: scale(1.1);
-}
-[class*=layer] #emoji-picker-tab-panel[class*=wrapper] [class*=emojiPicker] > [class*=wrapper] {
-  background: rgba(0, 0, 0, 0.9);
 }
 
 [class^=threadSidebar] {
