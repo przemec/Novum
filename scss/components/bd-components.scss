@@ -30,7 +30,7 @@
 
 //settings section
 //button near page title ("Open Plugins Folder" etc.)
-.bd-button:not(.bd-addon-button) {
+.bd-button:not(.bd-addon-button):not(.bd-changelog-button) {
   @include m.btred;
 }
 //switches

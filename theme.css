@@ -101,7 +101,7 @@
   --button-outline-primary-text-active: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
   --button-outline-primary-border-active: hsl(213, calc(var(--saturation-factor, 1) * 5%), 42.9%);
   --modal-background: rgba(0, 0, 0, 0.95);
-  --modal-footer-background: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
+  --modal-footer-background: rgba(0, 0, 0, 0.95);
   --scrollbar-auto-thumb: var(--scroll-thumb-color);
   --scrollbar-thin-thumb: var(--scroll-thumb-color);
   --scrollbar-auto-track: rgba(0, 0, 0, 0.1) !important;
@@ -309,12 +309,12 @@ input:focus {
   fill: var(--button-text-selected) !important;
 }
 
-[class^=select][role=button] {
+[class^=select][class*=lookFilled] {
   background: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-[class^=select][role=button][class*=open] {
+[class^=select][class*=lookFilled][class*=open] {
   background: rgba(0, 0, 0, 0.9);
 }
 
@@ -1407,11 +1407,11 @@ button[class*=participantsButton]:hover {
 [class*=tileSizer] [class*=tile] {
   background: transparent !important;
 }
-[class*=tileSizer] [class*=tile] button [class*=button] {
+[class*=tileSizer] [class*=tile] button[class*=button] {
   background: var(--main-color);
   color: var(--button-text);
 }
-[class*=tileSizer] [class*=tile] button [class*=button]:hover {
+[class*=tileSizer] [class*=tile] button[class*=button]:hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
@@ -1705,11 +1705,11 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.9) !important;
 }
 
-.bd-button:not(.bd-addon-button) {
+.bd-button:not(.bd-addon-button):not(.bd-changelog-button) {
   background: var(--main-color);
   color: var(--button-text);
 }
-.bd-button:not(.bd-addon-button):hover {
+.bd-button:not(.bd-addon-button):not(.bd-changelog-button):hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
@@ -2462,7 +2462,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.0";
+  content: "v5.8.1";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
