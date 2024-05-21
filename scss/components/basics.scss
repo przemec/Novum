@@ -89,11 +89,11 @@ input:focus {
 }
 
 //select body
-[class^="select"][role="button"] {
+[class^="select"][class*="lookFilled"] {
   background: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
 }
-[class^="select"][role="button"][class*="open"] {
+[class^="select"][class*="lookFilled"][class*="open"] {
   background: rgba(0, 0, 0, 0.9);
 }
 //select popout
