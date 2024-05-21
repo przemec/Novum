@@ -85,7 +85,7 @@ button[class*="participantsButton"] {
 [class*="tileSizer"] [class*="tile"] {
   background: transparent !important;
 
-  button [class*="button"] {
+  button[class*="button"] {
     @include m.btred;
   }
 }
