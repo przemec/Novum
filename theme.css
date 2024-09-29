@@ -2234,6 +2234,26 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
+[class*=messagesWrapper] [class*=topicsPillContainer]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: var(--app-background) center/cover no-repeat fixed;
+  background-position: unset;
+  -webkit-animation: fadeIn 2s ease-out;
+  animation: fadeIn 2s ease-out;
+}
+[class*=messagesWrapper] [class*=topicsDropdown] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+[class*=messagesWrapper] [class*=summariesBetaTag] {
+  background: var(--main-color) !important;
+}
+
 [id^=popout] > div > [role=dialog],
 [id^=popout] > div > [class^=container],
 [id^=popout] > div > [class^=popout] {
