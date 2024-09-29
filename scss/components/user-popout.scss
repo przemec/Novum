@@ -190,3 +190,12 @@
 [class^="activityUserPopout_"] > [class^="horizontal_"] > button {
   background: var(--main-color) !important;
 }
+
+//Status bubble near avatar
+[class^="statusBubble"] {
+  &,
+  &::before,
+  &::after {
+    background: rgba(0, 0, 0, 1) !important;
+  }
+}

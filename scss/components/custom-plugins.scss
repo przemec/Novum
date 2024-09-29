@@ -31,8 +31,9 @@
 
 //Summaries (Vencord's)
 [class*="messagesWrapper"] {
-  [class*="topicsPillContainer"] {
-
+  // bar on the top of the chat - empty and combined with new messages
+  [class*="topicsPillContainer"],
+  [class*="newTopicsBarContainer"] {
     &::before {
       content: "";
       top: 0;

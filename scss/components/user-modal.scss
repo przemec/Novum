@@ -1,0 +1,16 @@
+@use "../core/mixins" as m;
+
+[class^="userProfileModalInner"] {
+  [class^="body"][class^="body"][class^="body"],
+  [class^="root"][class^="root"] {
+    background: transparent !important;
+  }
+
+  [class^="fullSizeOverlayBackground"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+  }
+}
+
+:not([class*="custom-profile-theme"]) > [class^="userProfileModalInner"] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}

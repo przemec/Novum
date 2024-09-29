@@ -1674,6 +1674,22 @@ button[class*=participantsButton]:hover {
   background: var(--main-color) !important;
 }
 
+[class^=statusBubble], [class^=statusBubble]::before, [class^=statusBubble]::after {
+  background: rgb(0, 0, 0) !important;
+}
+
+[class^=userProfileModalInner] [class^=body][class^=body][class^=body],
+[class^=userProfileModalInner] [class^=root][class^=root] {
+  background: transparent !important;
+}
+[class^=userProfileModalInner] [class^=fullSizeOverlayBackground] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+:not([class*=custom-profile-theme]) > [class^=userProfileModalInner] {
+  background: rgba(0, 0, 0, 0.95) !important;
+}
+
 [class*=member] [class*=activityText] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
@@ -2234,7 +2250,8 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
-[class*=messagesWrapper] [class*=topicsPillContainer]::before {
+[class*=messagesWrapper] [class*=topicsPillContainer]::before,
+[class*=messagesWrapper] [class*=newTopicsBarContainer]::before {
   content: "";
   top: 0;
   right: 0;
@@ -2482,7 +2499,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.1";
+  content: "v5.8.3";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
