@@ -117,6 +117,12 @@ div[class^="notice"] {
   color: var(--button-text) !important;
 }
 
+//new channel badge
+[class*="newChannel"][class*="textBadge"] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
 //Rotate home icon
 [class*="homeIcon"] {
   transform: rotate(-180deg);

@@ -391,6 +391,10 @@ input:focus {
   display: none !important;
 }
 
+[class^=channelAppLauncher] .app-launcher-entrypoint > button {
+  background: rgba(0, 0, 0, 0.1);
+}
+
 [class*=floating] > section {
   background: rgba(0, 0, 0, 0.1) !important;
 }
@@ -1042,6 +1046,9 @@ body::after {
 [class*=wrapper][class*=guilds] [class*=circleIconButton] {
   background: rgba(0, 0, 0, 0.3) !important;
   color: var(--accent-saturated);
+}
+[class*=wrapper][class*=guilds] [class^=footer] {
+  background: transparent;
 }
 [class*=wrapper][class*=guilds] #bd-pub-button,
 [class*=wrapper][class*=guilds] foreignObject > [class^=wrapper] > [class*=childWrapper],
@@ -2378,6 +2385,11 @@ div[class^=notice] button:hover {
 }
 
 [class^=akaBadge_] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class*=newChannel][class*=textBadge] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }

@@ -34,6 +34,10 @@
     background: rgba(0, 0, 0, 0.3) !important;
     color: var(--accent-saturated);
   }
+  //server discovery background
+  [class^="footer"] {
+    background: transparent;
+  }
 
   //"public" bd button, server without image icon, server with transparent icon
   #bd-pub-button,

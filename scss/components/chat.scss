@@ -35,6 +35,13 @@
   }
 }
 
+// App launcher next to the main chat input
+[class^="channelAppLauncher"] {
+  .app-launcher-entrypoint > button {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
 //floating thread modal
 [class*="floating"] {
   & > section {
