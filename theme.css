@@ -108,7 +108,7 @@
   --scrollbar-thin-track: transparent !important;
   --scrollbar-auto-scrollbar-color-thumb: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
   --scrollbar-auto-scrollbar-color-track: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
-  --input-background: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --input-background: rgba(0, 0, 0, 0.5);
   --input-placeholder-text: hsl(216, calc(var(--saturation-factor, 1) * 2.1%), 53.9%);
   --logo-primary: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
   --control-brand-foreground: var(--main-color);
@@ -1494,67 +1494,70 @@ button[class*=participantsButton]:hover {
   background: var(--main-color) !important;
 }
 
-[class^=userPopoutInner] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] {
+  background: rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 }
-[class^=userPopoutInner] [class^=bodyInnerWrapper],
-[class^=userPopoutInner] [class^=footer],
-[class^=userPopoutInner] [class^=avatar] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=bodyInnerWrapper],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=footer],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=avatar] {
   background: transparent !important;
   border-color: transparent !important;
 }
-[class^=userPopoutInner] [class^=body][style] {
-  overflow: hidden !important;
-  padding: 0;
-  padding-right: 0 !important;
-}
-[class^=userPopoutInner] [class^=userPopoutOverlayBackground] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=userPopoutOverlayBackground] {
   background: rgba(0, 0, 0, 0.2);
 }
-[class^=userPopoutInner] [class^=bodyInnerWrapper] > [class*=divider] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=bodyInnerWrapper] > [class*=divider] {
   display: none;
 }
-[class^=userPopoutInner] #permissions-popout,
-[class^=userPopoutInner] h1:not([class*=nickname], [class*=ellipsis]),
-[class^=userPopoutInner] [class*=rolesList]:not([class*=member-perm]),
-[class^=userPopoutInner] [class*=memberSinceContainer],
-[class^=userPopoutInner] [class*=textarea],
-[class^=userPopoutInner] div[class*=customStatus],
-[class^=userPopoutInner] [class*=userInfoBody][class*=markup] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] #permissions-popout,
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] h1:not([class*=nickname], [class*=ellipsis]),
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=rolesList]:not([class*=member-perm]),
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=memberSinceContainer],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=textarea],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] div[class*=customStatus],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=userInfoBody][class*=markup] {
   padding-left: 16px;
   padding-right: 16px;
 }
-[class^=userPopoutInner] [class*=bodyTitle] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=bodyTitle] {
   margin-top: 8px;
   color: var(--header-secondary);
 }
-[class^=userPopoutInner] [class*=userInfoSection] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=userInfoSection] {
   margin-top: 20px;
 }
-[class^=userPopoutInner] [class*=member-perms-title] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=member-perms-title] {
   text-transform: uppercase;
   margin-bottom: 8px;
   font-weight: 700;
   font-size: 12px;
   line-height: 16px;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [role=tooltip] [class*=biteSize][class*=outer] {
+  border: none;
+}
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [role=tooltip] [class*=biteSize][class*=outer] [class*=inner], :not(.custom-profile-theme)[class*=biteSize] [class*=inner] [role=tooltip] [class*=biteSize][class*=outer]:after, :not(.custom-profile-theme)[class*=biteSize] [class*=inner] [role=tooltip] [class*=biteSize][class*=outer]:before {
+  background: var(--main-color);
+  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+  border: none;
+}
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] {
   position: relative;
   margin: 0 -20px 4px 0;
   background: transparent;
   border-color: transparent;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleRemoveButton] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] [class*=roleRemoveButton] {
   cursor: pointer;
   position: unset;
   width: 20px;
   height: 10px;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleRemoveButton] svg {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] [class*=roleRemoveButton] svg {
   opacity: 0;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleCircle] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] [class*=roleCircle] {
   position: absolute;
   width: calc(100% - 28px);
   margin: 0;
@@ -1564,7 +1567,7 @@ button[class*=participantsButton]:hover {
   transform: scaleY(1.5);
   pointer-events: none;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleName] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] [class*=roleName] {
   z-index: 2;
   margin-left: 4px;
   margin-right: 8px;
@@ -1573,7 +1576,7 @@ button[class*=participantsButton]:hover {
   transition: transform 0.15s ease-in-out;
   overflow: visible;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role] [class*=roleName]::before {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] [class*=roleName]::before {
   content: "";
   position: absolute;
   width: 0px;
@@ -1585,10 +1588,10 @@ button[class*=participantsButton]:hover {
   transition: width 0.15s ease-in-out;
   pointer-events: none;
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role]:hover [class*=roleName] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role]:hover [class*=roleName] {
   transform: translateX(-4px);
 }
-[class^=userPopoutInner] [class*=roles] > [class*=role]:hover [class*=roleName]::before {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role]:hover [class*=roleName]::before {
   width: 10px;
   background: url(https://przemec.github.io/Novum/assets/icons/close.svg);
   background-size: 10px;
@@ -1602,34 +1605,29 @@ button[class*=participantsButton]:hover {
   background: transparent !important;
 }
 
-[class^=activityUserPopout_],
-[class^=activityUserPopoutV2_] {
-  background: var(--profile-activity);
+:not(.custom-profile-theme)[style*=profile] [class*=activity] {
+  background: var(--profile-activity) !important;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-left: 16px;
   padding-right: 16px;
+  border-radius: 0;
 }
-[class^=activityUserPopout_] [class*=platformIcon],
-[class^=activityUserPopoutV2_] [class*=platformIcon] {
+:not(.custom-profile-theme)[style*=profile] [class*=activity] [class*=platformIcon] {
   right: 16px !important;
 }
-[class^=activityUserPopout_] button,
-[class^=activityUserPopoutV2_] button {
+:not(.custom-profile-theme)[style*=profile] [class*=activity] button {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class^=activityUserPopout_] button:hover,
-[class^=activityUserPopoutV2_] button:hover {
+:not(.custom-profile-theme)[style*=profile] [class*=activity] button:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class^=activityUserPopout_] [class^=bar_],
-[class^=activityUserPopoutV2_] [class^=bar_] {
+:not(.custom-profile-theme)[style*=profile] [class*=activity] [class^=bar_] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-[class^=activityUserPopout_]::before,
-[class^=activityUserPopoutV2_]::before {
+:not(.custom-profile-theme)[style*=profile] [class*=activity]::before {
   content: "";
   position: absolute;
   height: 21px;
@@ -1644,8 +1642,7 @@ button[class*=participantsButton]:hover {
   animation-delay: 0s;
   opacity: 1;
 }
-[class^=activityUserPopout_]::after,
-[class^=activityUserPopoutV2_]::after {
+:not(.custom-profile-theme)[style*=profile] [class*=activity]::after {
   content: "";
   position: absolute;
   height: 21px;
@@ -1678,11 +1675,14 @@ button[class*=participantsButton]:hover {
   background: rgb(0, 0, 0) !important;
 }
 
-[class^=userProfileModalInner] [class^=body][class^=body][class^=body],
-[class^=userProfileModalInner] [class^=root][class^=root] {
+[class*=fullSize][class*=inner] {
   background: transparent !important;
 }
-[class^=userProfileModalInner] [class^=fullSizeOverlayBackground] {
+[class*=fullSize][class*=inner] [class^=body][class^=body][class^=body],
+[class*=fullSize][class*=inner] [class^=root][class^=root] {
+  background: transparent !important;
+}
+[class*=fullSize][class*=inner] [class^=overlay] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
 
@@ -2271,6 +2271,14 @@ button[class*=participantsButton]:hover {
   background: var(--main-color) !important;
 }
 
+.vc-notification-root {
+  background: rgba(0, 0, 0, 0.5);
+}
+
+[class*=app] [class*=authBox] {
+  background: rgba(0, 0, 0, 0.5);
+}
+
 [id^=popout] > div > [role=dialog],
 [id^=popout] > div > [class^=container],
 [id^=popout] > div > [class^=popout] {
@@ -2499,7 +2507,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.3";
+  content: "v5.8.4";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

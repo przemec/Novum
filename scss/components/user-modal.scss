@@ -1,12 +1,14 @@
 @use "../core/mixins" as m;
 
-[class^="userProfileModalInner"] {
+[class*="fullSize"][class*="inner"] {
+  background: transparent !important;
+
   [class^="body"][class^="body"][class^="body"],
   [class^="root"][class^="root"] {
     background: transparent !important;
   }
 
-  [class^="fullSizeOverlayBackground"] {
+  [class^="overlay"] {
     background: rgba(0, 0, 0, 0.2) !important;
   }
 }

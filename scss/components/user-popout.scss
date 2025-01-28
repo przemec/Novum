@@ -1,7 +1,7 @@
 @use "../core/mixins" as m;
 
-[class^="userPopoutInner"] {
-  background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+:not(.custom-profile-theme)[class*="biteSize"] [class*="inner"] {
+  background: rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 
   [class^="bodyInnerWrapper"],
@@ -12,9 +12,9 @@
   }
 
   [class^="body"][style] {
-    overflow: hidden !important;
-    padding: 0;
-    padding-right: 0 !important;
+    //overflow: hidden !important;
+    //padding: 0;
+    //padding-right: 0 !important;
   }
 
   [class^="userPopoutOverlayBackground"] {
@@ -51,6 +51,19 @@
     font-weight: 700;
     font-size: 12px;
     line-height: 16px;
+  }
+
+  //custom status bubble
+  [role="tooltip"] [class*="biteSize"][class*="outer"] {
+    border: none;
+
+    [class*="inner"],
+    &:after,
+    &:before {
+      background: var(--main-color);
+      background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
+      border: none;
+    }
   }
 
   //roles style change
@@ -120,14 +133,14 @@
 }
 
 //Styling for in game or other member activity popout
-[class^="activityUserPopout_"],
-[class^="activityUserPopoutV2_"] {
-  background: var(--profile-activity);
+:not(.custom-profile-theme)[style*="profile"] [class*="activity"] {
+  background: var(--profile-activity) !important;
   // width: 300px;
   margin-top: 40px;
   margin-bottom: 40px;
   padding-left: 16px;
   padding-right: 16px;
+  border-radius: 0;
 
   [class*="platformIcon"] {
     right: 16px !important;
