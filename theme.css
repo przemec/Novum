@@ -1059,12 +1059,6 @@ body::after {
 [class*=wrapper][class*=guilds] foreignObject > [class^=wrapper][class*=selected] > [class*=childWrapper] {
   background-color: var(--main-color) !important;
 }
-[class*=wrapper][class*=guilds] [class*=iconBadge] {
-  background: var(--main-color) !important;
-}
-[class*=wrapper][class*=guilds] [class*=numberBadge] {
-  background: var(--main-color) !important;
-}
 
 [class^=unreadMentionsIndicator] > [class*=bar] {
   background: var(--main-color);
@@ -2110,9 +2104,6 @@ button[class*=participantsButton]:hover {
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item]:not([tabindex="0"]):hover {
   background: transparent;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=numberBadge] {
-  background: var(--main-color) !important;
-}
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend] {
   background: rgba(0, 255, 128, 0.1) !important;
   color: rgba(0, 255, 128, 0.7) !important;
@@ -2287,6 +2278,38 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.5);
 }
 
+[class*=badgeContainer] {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+[class*=numberBadge] {
+  background: var(--main-color) !important;
+}
+
+[class^=live_][class*=textBadge] {
+  background: var(--main-color-selected) !important;
+  color: var(--button-text) !important;
+}
+
+[class^=akaBadge_] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class*=iconBadge] {
+  background: var(--main-color) !important;
+}
+
+[class*=newChannel][class*=textBadge] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
+[class*=newBadge] {
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
+}
+
 [id^=popout] > div > [role=dialog],
 [id^=popout] > div > [class^=container],
 [id^=popout] > div > [class^=popout] {
@@ -2353,11 +2376,6 @@ button[class*=participantsButton]:hover {
   border: none !important;
 }
 
-[class^=live_][class*=textBadge] {
-  background: var(--main-color-selected) !important;
-  color: var(--button-text) !important;
-}
-
 div[class^=notice] {
   color: var(--button-text) !important;
   background: var(--main-color-semitransparent);
@@ -2383,16 +2401,6 @@ div[class^=notice] button:hover {
 
 [class^=flowerStar_] + [class^=child] path {
   fill: #ffffff !important;
-}
-
-[class^=akaBadge_] {
-  background: var(--main-color) !important;
-  color: var(--button-text) !important;
-}
-
-[class*=newChannel][class*=textBadge] {
-  background: var(--main-color) !important;
-  color: var(--button-text) !important;
 }
 
 [class*=homeIcon] {
@@ -2520,7 +2528,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.4";
+  content: "v5.8.5";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

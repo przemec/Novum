@@ -28,11 +28,6 @@
     background: transparent;
   }
 
-  //pending invites count badge
-  [class*="numberBadge"] {
-    background: var(--main-color) !important;
-  }
-
   //Add Friend button
   [class^="item"][class*="addFriend"] {
     @include m.btAccept_important;    

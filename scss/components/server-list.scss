@@ -48,15 +48,6 @@
   foreignObject > [class^="wrapper"][class*="selected"] > [class*="childWrapper"] {
     background-color: var(--main-color) !important;
   }
-
-  //connected to voicechat icon badge
-  [class*="iconBadge"] {
-    background: var(--main-color) !important;
-  }
-  //unread messages count badge
-  [class*="numberBadge"] {
-    background: var(--main-color) !important;
-  }
 }
 
 //unread messages indicator

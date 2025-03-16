@@ -75,12 +75,6 @@
   }
 }
 
-//live indicator in server channel/Active Now section in home screen
-[class^="live_"][class*="textBadge"] {
-  background: var(--main-color-selected) !important;
-  color: var(--button-text) !important;
-}
-
 //notice at the top of the screen (i.e. when u didnt complete steps before talking on server)
 div[class^="notice"] {
   color: var(--button-text) !important;
@@ -109,18 +103,6 @@ div[class^="notice"] {
 }
 [class^="flowerStar_"] + [class^="child"] path {
   fill: #ffffff !important;
-}
-
-//AKA badge
-[class^="akaBadge_"] {
-  background: var(--main-color) !important;
-  color: var(--button-text) !important;
-}
-
-//new channel badge
-[class*="newChannel"][class*="textBadge"] {
-  background: var(--main-color) !important;
-  color: var(--button-text) !important;
 }
 
 //Rotate home icon
