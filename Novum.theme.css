@@ -2,7 +2,7 @@
 * @name Novum
 * @author Przemec & Net-Runner
 * @description Red galaxy theme enhanced with couple of addons and small features.
-* @version 5.8.5
+* @version 5.8.6
 * @source https://github.com/przemec/Novum
 * @website https://przemec.github.io/Novum/
 */
@@ -31,7 +31,7 @@ CUSTOMIZABLE BACKGROUND IMAGE AND MAIN COLORS BELOW*
 */
 
 root {
-  --app-background: url("https://przemec.github.io/Novum/assets/images/app.png"); /* main app background image [default: url("https://przemec.github.io/Novum/assets/images/app.png")] */
+  --app-background: url("https://przemec.github.io/Novum/assets/images/app_min.png"); /* main app background image [default: url("https://przemec.github.io/Novum/assets/images/app_min.png")] */
   --main-color: #992727; /* main color (used mostly in buttons) [default: #992727] */
   --main-color-selected: #aa2f2f; /* [default: #aa2f2f] */
   --main-color-semitransparent: #d4393926; /* [default: #d4393926] */
@@ -42,7 +42,7 @@ root {
   --accent-desaturated: #b47a7a; /* [default: #b47a7a] */
   --button-text: #dddddd; /* [default: #dddddd] */
   --button-text-selected: #ffffff; /* [default: #ffffff] */
-  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png"); /* background of profile popout [default: url("https://przemec.github.io/Novum/assets/images/profile.png")] */
+  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile_min.png"); /* background of profile popout [default: url("https://przemec.github.io/Novum/assets/images/profile_min.png")] */
   --profile-activity: #6d1515; /* color of activity field in profile left-click popout [default: #6d1515] */
   --scroll-thumb-color: #a54b4b; /* color of scrollbars [default: #a54b4b] */
 }

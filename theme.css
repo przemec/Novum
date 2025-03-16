@@ -143,7 +143,7 @@
 }
 
 :root {
-  --app-background: url("https://przemec.github.io/Novum/assets/images/app.png");
+  --app-background: url("https://przemec.github.io/Novum/assets/images/app_min.png");
   --main-color: #992727;
   --main-color-selected: #aa2f2f;
   --main-color-semitransparent: #d4393926;
@@ -154,7 +154,7 @@
   --accent-desaturated: #b47a7a;
   --button-text: #dddddd;
   --button-text-selected: #ffffff;
-  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile.png");
+  --profile-background: url("https://przemec.github.io/Novum/assets/images/profile_min.png");
   --profile-activity: #6d1515;
   --scroll-thumb-color: #a54b4b;
 }
@@ -169,7 +169,6 @@ body::after {
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
   background-position: left top;
   z-index: -90;
 }
@@ -2528,7 +2527,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.5";
+  content: "v5.8.6";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;
