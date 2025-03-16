@@ -51,6 +51,7 @@ body::after {
   padding-top: 4px;
 }
 
+[class^="chat_"] > [class^="header"] + [class^="content_"],
 [class^="chat_"] > [class^="content_"] > div {
   background: transparent !important;
 }
