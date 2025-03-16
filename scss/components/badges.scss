@@ -1,38 +1,38 @@
 [class*="badgeContainer"] {
-	background: rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
 }
 
 // - pending invites count badge
 // - unread messages count badge
 [class*="numberBadge"] {
-	background: var(--main-color) !important;
+  background: var(--main-color) !important;
 }
 
 // live indicator in server channel/Active Now section in home screen
 [class^="live_"][class*="textBadge"] {
-	background: var(--main-color-selected) !important;
-	color: var(--button-text) !important;
+  background: var(--main-color-selected) !important;
+  color: var(--button-text) !important;
 }
 
 // AKA badge
 [class^="akaBadge_"] {
-	background: var(--main-color) !important;
-	color: var(--button-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 
 // connected to voicechat icon badge
 [class*="iconBadge"] {
-	background: var(--main-color) !important;
+  background: var(--main-color) !important;
 }
 
 // new channel badge
 [class*="newChannel"][class*="textBadge"] {
-	background: var(--main-color) !important;
-	color: var(--button-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }
 
 // NEW badge
 [class*="newBadge"] {
-	background: var(--main-color) !important;
-	color: var(--button-text) !important;
+  background: var(--main-color) !important;
+  color: var(--button-text) !important;
 }

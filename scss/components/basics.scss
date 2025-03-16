@@ -2,7 +2,9 @@
 
 //buttons
 button {
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  transition:
+    color 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
 }
 button[class*="lookFilled_"][class*="colorGrey"],
 button[class*="lookFilled_"][class*="colorPrimary_"] {
@@ -74,7 +76,7 @@ input {
 }
 input:focus {
   border-color: var(--accent-desaturated) !important;
-  box-shadow: none transparent;
+  box-shadow: none;
 }
 [class^="inputDefault"] {
   background: rgba(0, 0, 0, 0.3);

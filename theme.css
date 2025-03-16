@@ -295,7 +295,7 @@ input {
 
 input:focus {
   border-color: var(--accent-desaturated) !important;
-  box-shadow: none transparent;
+  box-shadow: none;
 }
 
 [class^=inputDefault] {
@@ -641,7 +641,7 @@ input:focus {
 [class*=unreadPill] {
   background: var(--main-color-semitransparent) !important;
   color: var(--accent-saturated) !important;
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 100%;
   font-size: 14px;
 }
@@ -906,7 +906,7 @@ code .hljs-selector-tag {
 }
 
 [class*=chat] form {
-  margin: 0px;
+  margin: 0;
 }
 
 [src*="avatars/214676791955161091"][class*=clickable],
@@ -1581,10 +1581,10 @@ button[class*=participantsButton]:hover {
 :not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=roles] > [class*=role] [class*=roleName]::before {
   content: "";
   position: absolute;
-  width: 0px;
+  width: 0;
   height: 10px;
   top: 50%;
-  left: 0px;
+  left: 0;
   transform: translate(-16px, -50%);
   -webkit-transition: width 0.15s ease-in-out;
   transition: width 0.15s ease-in-out;

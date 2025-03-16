@@ -18,7 +18,7 @@
   }
 
   [class^="userPopoutOverlayBackground"] {
-    background: rgba(0, 0, 0, 0.2)
+    background: rgba(0, 0, 0, 0.2);
   }
 
   [class^="bodyInnerWrapper"] > [class*="divider"] {
@@ -103,10 +103,10 @@
       &::before {
         content: "";
         position: absolute;
-        width: 0px;
+        width: 0;
         height: 10px;
         top: 50%;
-        left: 0px;
+        left: 0;
         transform: translate(-16px, -50%);
         -webkit-transition: width 0.15s ease-in-out;
         transition: width 0.15s ease-in-out;

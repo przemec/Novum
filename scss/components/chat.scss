@@ -226,7 +226,12 @@
 
 //your mention
 [class*="mentioned"] {
-  background: linear-gradient(90deg, transparent 5px, var(--accent-color-semitransparent) 5px, transparent 80%) !important;
+  background: linear-gradient(
+    90deg,
+    transparent 5px,
+    var(--accent-color-semitransparent) 5px,
+    transparent 80%
+  ) !important;
   [class*="mention"] {
     color: var(--accent-saturated);
     background: rgba(0, 0, 0, 0.2) !important;
@@ -312,7 +317,7 @@
 [class*="unreadPill"] {
   background: var(--main-color-semitransparent) !important;
   color: var(--accent-saturated) !important;
-  padding: 12px 0px;
+  padding: 12px 0;
   width: 100%;
   font-size: 14px;
 }
@@ -628,5 +633,5 @@ code {
 }
 
 [class*="chat"] form {
-  margin: 0px;
+  margin: 0;
 }

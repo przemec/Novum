@@ -78,7 +78,9 @@ header h1[class^="name"] {
 
 //user speaking
 [class*="avatarSpeaking"] {
-  box-shadow: inset 0 0 0 2px var(--accent-color), inset 0 0 0 3px var(--accent-color-semitransparent);
+  box-shadow:
+    inset 0 0 0 2px var(--accent-color),
+    inset 0 0 0 3px var(--accent-color-semitransparent);
 }
 [class*="avatarSpeaking"]::before {
   content: "";

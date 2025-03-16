@@ -110,7 +110,7 @@
   --scrollbar-thin-track: transparent !important; // hsla(0, calc(var(--saturation-factor, 1) * 0%), 0%, 0);
   --scrollbar-auto-scrollbar-color-thumb: hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
   --scrollbar-auto-scrollbar-color-track: hsl(223, calc(var(--saturation-factor, 1) * 6.9%), 19.8%);
-  --input-background: rgba(0, 0, 0, 0.5);//hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
+  --input-background: rgba(0, 0, 0, 0.5); //hsl(216, calc(var(--saturation-factor, 1) * 7.2%), 13.5%);
   --input-placeholder-text: hsl(216, calc(var(--saturation-factor, 1) * 2.1%), 53.9%);
   --logo-primary: hsl(0, calc(var(--saturation-factor, 1) * 0%), 100%);
   --control-brand-foreground: var(--main-color); // hsl(235, calc(var(--saturation-factor, 1) * 86.1%), 77.5%);
