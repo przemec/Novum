@@ -1,9 +1,13 @@
 @use "../core/mixins" as m;
 
 //Friends page
-[class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) {
+[class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]),
+[class*="base"] [class*="content"] [class*="container"] [class*="tabBody"] {
   background: transparent;
+}
 
+//Friends page
+[class*="base"] [class*="content"] [class*="container"]:not([class*="embedWrapper"]) {
   //remove redundant fade
   [class*="container"] > [class*="children"]::after {
     display: none;
@@ -68,6 +72,10 @@
 }
 
 //friends list sidebar
+[class^="content"] > [class^="sidebar"] [class^="privateChannels"] {
+  background: transparent;
+}
+
 [class^="content"] > [class^="channel"] [class^="interactive"]:hover {
   background: var(--main-color-semitransparent);
   color: var(--button-text);

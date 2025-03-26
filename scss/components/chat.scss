@@ -3,6 +3,7 @@
 // Channel Textarea (big chat textinput) or CHAT
 [class^="channelTextArea"] {
   border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1) !important;
 
   [class*="scrollableContainer"] {
     background: rgba(0, 0, 0, 0.1);

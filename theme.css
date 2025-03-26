@@ -176,6 +176,7 @@ body::after {
 [class^=appMount_],
 [class^=app_],
 [class^=chat_],
+[class^=chatContent_],
 [class^=bg_] {
   background: transparent !important;
 }
@@ -366,6 +367,7 @@ input:focus {
 
 [class^=channelTextArea] {
   border-radius: 8px;
+  background: rgba(0, 0, 0, 0.1) !important;
 }
 [class^=channelTextArea] [class*=scrollableContainer] {
   background: rgba(0, 0, 0, 0.1);
@@ -1021,6 +1023,11 @@ body::after {
     transform: rotate(7deg);
   }
 }
+[class^=content] > [class^=sidebar]::after,
+[class^=content] > [class^=sidebar] [class*=guilds] {
+  background: transparent;
+}
+
 [class^=scroller_] {
   background: transparent !important;
 }
@@ -1205,6 +1212,31 @@ nav[class*=container] > [class*=container] > header:hover {
 
 [class*=panels] {
   border-top: 1px solid var(--background-modifier-accent);
+  background: transparent !important;
+}
+[class*=panels]::before {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -2;
+  background: var(--app-background) center/cover no-repeat fixed;
+  background-position: unset;
+  -webkit-animation: fadeIn 2s ease-out;
+  animation: fadeIn 2s ease-out;
+}
+[class*=panels]::after {
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
 }
 [class*=panels] > [class*=activityPanel], [class*=panels] > [class*=container] {
   border: 0;
@@ -1695,6 +1727,10 @@ button[class*=participantsButton]:hover {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
+[class*=members] {
+  background: transparent;
+}
+
 .bd-error-modal,
 .bd-error-modal-footer {
   background: rgba(0, 0, 0, 0.9) !important;
@@ -2084,9 +2120,11 @@ button[class*=participantsButton]:hover {
   background: url(https://przemec.github.io/Novum/assets/icons/exit.svg) !important;
 }
 
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]),
+[class*=base] [class*=content] [class*=container] [class*=tabBody] {
   background: transparent;
 }
+
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=container] > [class*=children]::after {
   display: none;
 }
@@ -2139,6 +2177,10 @@ button[class*=participantsButton]:hover {
 }
 [class*=nowPlayingColumn] [class*=itemCard] [class*=body] [class*=separator] {
   display: none;
+}
+
+[class^=content] > [class^=sidebar] [class^=privateChannels] {
+  background: transparent;
 }
 
 [class^=content] > [class^=channel] [class^=interactive]:hover {
@@ -2527,7 +2569,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.6";
+  content: "v5.8.7";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

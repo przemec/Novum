@@ -125,8 +125,35 @@ nav[class*="container"] > [class*="container"] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+// voice connection panel
 [class*="panels"] {
   border-top: 1px solid var(--background-modifier-accent);
+  background: transparent !important;
+
+  &::before {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -2;
+    background: var(--app-background) center / cover no-repeat fixed;
+    background-position: unset;
+    -webkit-animation: fadeIn 2s ease-out;
+    animation: fadeIn 2s ease-out;
+  }
+  &::after {
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    z-index: -1;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
 
   //game activity panel
   & > [class*="activityPanel"],
