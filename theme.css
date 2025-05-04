@@ -645,6 +645,7 @@ input:focus {
   padding: 12px 0;
   width: 100%;
   font-size: 14px;
+  border-radius: 5px;
 }
 
 [class*=unreadPillCap] {
