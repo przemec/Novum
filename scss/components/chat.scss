@@ -292,6 +292,7 @@
 
   //Unread divider date
   [class*="content"] {
+    background-color: transparent !important;
     color: var(--accent-saturated) !important;
     width: 95%;
     transform: translateY(6px);
@@ -313,15 +314,16 @@
     width: 95%;
     transform: translateY(6px);
   }
+
+  [class*="unreadPill"] {
+    background: var(--main-color-semitransparent) !important;
+    color: var(--accent-saturated) !important;
+    padding: 12px 0;
+    width: 100%;
+    font-size: 14px;
+  }
 }
 
-[class*="unreadPill"] {
-  background: var(--main-color-semitransparent) !important;
-  color: var(--accent-saturated) !important;
-  padding: 12px 0;
-  width: 100%;
-  font-size: 14px;
-}
 
 [class*="unreadPillCap"] {
   visibility: hidden;
