@@ -65,12 +65,20 @@
 [class^="drawerSizingWrapper_"] > [class^="contentWrapper_"] {
   background: rgba(0, 0, 0, 0.9) !important;
 
-  [class^="navList_"] > [class^="navItem_"] > [class^="navButtonActive_"] {
+  [class^="navList_"] > [class*="navItem_"][class*="navButtonActive_"] {
     background: var(--main-color) !important;
   }
   [class^="unicodeShortcut_"],
+  // grouped server sticker/emoji header
+  [class*="packHeader"],
+  // bottom bar changing on sticker/emoji hover
   [class^="inspector_"] {
     background: #000;
+  }
+  [class*="header"],
+  [class*="categoryList"],
+  [class*="content"] {
+    background: transparent !important;
   }
 }
 
@@ -126,7 +134,7 @@
 }
 
 //Chat message popouts
-[class^="layerContainer_"] [class^="layer_"] {
+[class^="layerContainer_"] [class*="layer_"] {
   //See who reacted popout
   [class*="reactors_"] {
     background: transparent !important;
@@ -260,6 +268,12 @@
 [class*="layer"] #emoji-picker-tab-panel[class*="wrapper"] {
   background: rgba(0, 0, 0, 0.95) !important;
 
+  [class*="header"],
+  [class*="categoryList"],
+  [class*="inspector"],
+  [class*="emojiPicker"] {
+    background: transparent !important;
+  }
   [class*="emojiItem"] {
     transition: transform 0.2s ease-in-out;
   }
