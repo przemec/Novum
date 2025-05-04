@@ -619,6 +619,7 @@ input:focus {
   margin-bottom: 35px;
 }
 [class*=messagesWrapper] [class*=content] [class*=divider] [class*=content] {
+  background-color: transparent !important;
   color: var(--accent-saturated) !important;
   width: 95%;
   transform: translateY(6px);
@@ -638,8 +639,7 @@ input:focus {
   width: 95%;
   transform: translateY(6px);
 }
-
-[class*=unreadPill] {
+[class*=messagesWrapper] [class*=content] [class*=divider] [class*=unreadPill] {
   background: var(--main-color-semitransparent) !important;
   color: var(--accent-saturated) !important;
   padding: 12px 0;
@@ -1040,15 +1040,13 @@ body::after {
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a:hover {
   background: rgba(0, 0, 0, 0.7);
 }
-[class*=wrapper][class*=guilds] [class*=folder],
 [class*=wrapper][class*=guilds] [class*=closedFolderIconWrapper],
 [class*=wrapper][class*=guilds] [class*=expandedFolderBackground] {
   background: transparent !important;
 }
-[class*=wrapper][class*=guilds] [class*=folderIconWrapper],
-[class*=wrapper][class*=guilds] [class*=expandedFolderBackground]:not([class*=collapsed]) {
+[class*=wrapper][class*=guilds] [class*=folderPreviewWrapper],
+[class*=wrapper][class*=guilds] [class*=folderGroupBackground] {
   background: rgba(0, 0, 0, 0.3) !important;
-  border-radius: 20px;
 }
 [class*=wrapper][class*=guilds] [class*=circleIconButton] {
   background: rgba(0, 0, 0, 0.3) !important;

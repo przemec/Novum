@@ -23,15 +23,13 @@
   }
 
   //server folders
-  [class*="folder"],
   [class*="closedFolderIconWrapper"],
   [class*="expandedFolderBackground"] {
     background: transparent !important;
   }
-  [class*="folderIconWrapper"],
-  [class*="expandedFolderBackground"]:not([class*="collapsed"]) {
+  [class*="folderPreviewWrapper"],
+  [class*="folderGroupBackground"] {
     background: rgba(0, 0, 0, 0.3) !important;
-    border-radius: 20px;
   }
 
   //server discovery and add server buttons
