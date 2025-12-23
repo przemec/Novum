@@ -164,6 +164,10 @@ nav[class*="container"] > [class*="container"] > header:hover {
 
 [class*="panels"] {
   //game activity panel
+  & > [class*="activityPanel"] {
+    background-color: transparent;
+  }
+  //game activity panel
   & > [class*="activityPanel"],
   //profile settings panel
   & > [class*="container"] {
