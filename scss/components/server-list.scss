@@ -1,13 +1,8 @@
 @use "../core/mixins" as m;
 
-[class^="content"] > [class^="sidebar"]::after,
-[class^="content"] > [class^="sidebar"] [class*="guilds"] {
+[class*="-content"] > [class*="-sidebar"]::after,
+[class*="-content"] > [class*="-sidebar"] [class*="guilds"] {
   background: transparent;
-}
-
-//Server list scroller
-[class^="scroller_"] {
-  background: transparent !important;
 }
 
 //Servers list
@@ -38,23 +33,23 @@
     color: var(--accent-saturated);
   }
   //server discovery background
-  [class^="footer"] {
+  [class*="-footer"] {
     background: transparent;
   }
 
   //"public" bd button, server without image icon, server with transparent icon
   #bd-pub-button,
-  foreignObject > [class^="wrapper"] > [class*="childWrapper"],
-  foreignObject > [class^="wrapper"] > img {
+  foreignObject > [class*="-wrapper"] > [class*="childWrapper"],
+  foreignObject > [class*="-wrapper"] > img {
     background-color: rgba(0, 0, 0, 0.3) !important;
   }
-  foreignObject > [class^="wrapper"][class*="selected"] > [class*="childWrapper"] {
+  foreignObject > [class*="-wrapper"][class*="selected"] > [class*="childWrapper"] {
     background-color: var(--main-color) !important;
   }
 }
 
 //unread messages indicator
-[class^="unreadMentionsIndicator"] > [class*="bar"] {
+[class*="-unreadMentionsIndicator"] > [class*="bar"] {
   background: var(--main-color);
 }
 
@@ -85,7 +80,7 @@ svg[style="color: rgb(88, 101, 242);"] path {
 }
 
 //moving server horizontal bar + circle while hovering it over folder
-[class^="listItem"] > [class^="wrapper"] {
+[class*="-listItem"] > [class*="-wrapper"] {
   & > [class*="target"]::before,
   & > [class*="centerTarget"]::before {
     background: var(--accent-color);

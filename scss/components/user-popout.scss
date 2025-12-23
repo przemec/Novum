@@ -4,24 +4,24 @@
   background: rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 
-  [class^="bodyInnerWrapper"],
-  [class^="footer"],
-  [class^="avatar"] {
+  [class*="-bodyInnerWrapper"],
+  [class*="-footer"],
+  [class*="-avatar"] {
     background: transparent !important;
     border-color: transparent !important;
   }
 
-  [class^="body"][style] {
+  [class*="-body"][style] {
     //overflow: hidden !important;
     //padding: 0;
     //padding-right: 0 !important;
   }
 
-  [class^="userPopoutOverlayBackground"] {
+  [class*="-userPopoutOverlayBackground"] {
     background: rgba(0, 0, 0, 0.2);
   }
 
-  [class^="bodyInnerWrapper"] > [class*="divider"] {
+  [class*="-bodyInnerWrapper"] > [class*="divider"] {
     display: none;
   }
 
@@ -151,7 +151,7 @@
   }
 
   //spotify song playing bar
-  [class^="bar_"] {
+  [class*="-bar"] {
     background: rgba(0, 0, 0, 0.2) !important;
   }
 
@@ -200,12 +200,12 @@
   }
 }
 
-[class^="activityUserPopout_"] > [class^="horizontal_"] > button {
+[class*="-activityUserPopout"] > [class*="-horizontal"] > button {
   background: var(--main-color) !important;
 }
 
 //Status bubble near avatar
-[class^="statusBubble"] {
+[class*="-statusBubble"] {
   &,
   &::before,
   &::after {

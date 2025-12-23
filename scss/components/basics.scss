@@ -60,12 +60,12 @@ button[class*="lookLink_"] {
 }
 
 //Switches
-[class^="control_"] [class^="container_"] {
+[class*="-control"] [class*="-container"] {
   background: var(--accent-color-semitransparent) !important;
 }
-[class^="control_"] [class^="container_"][style*="rgb(35,"] {
+[class*="-control"] [class*="-container"][style*="rgb(35,"] {
   background: var(--main-color) !important;
-  [class^="slider"] path {
+  [class*="-slider"] path {
     fill: var(--main-color);
   }
 }
@@ -78,7 +78,7 @@ input:focus {
   border-color: var(--accent-desaturated) !important;
   box-shadow: none;
 }
-[class^="inputDefault"] {
+[class*="-inputDefault"] {
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -91,28 +91,28 @@ input:focus {
 }
 
 //select body
-[class^="select"][class*="lookFilled"] {
+[class*="-select"][class*="lookFilled"] {
   background: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
 }
-[class^="select"][class*="lookFilled"][class*="open"] {
+[class*="-select"][class*="lookFilled"][class*="open"] {
   background: rgba(0, 0, 0, 0.9);
 }
 //select popout
-[class^="popout"][role="listbox"] {
+[class*="-popout"][role="listbox"] {
   background: rgba(0, 0, 0, 0.9);
 }
 
 //Bars
-[class^="slider_"] > [class^="bar_"] {
+[class*="-slider"] > [class*="-bar"] {
   background: var(--accent-color-semitransparent) !important;
-  [class^="barFill_"] {
+  [class*="-barFill"] {
     background: var(--main-color) !important;
   }
 }
 
 //Color primary
-[class^="colorPrimary_"] {
+[class*="-colorPrimary"] {
   background: var(--main-color) !important;
 }
 
@@ -129,7 +129,7 @@ input:focus {
     border-top-color: rgba(0, 0, 0, 1) !important;
   }
 }
-[class^="layerContainer_"] > [class*="toolbar"] {
+[class*="-layerContainer"] > [class*="toolbar"] {
   background: rgba(0, 0, 0, 0.95) !important;
   border: 2px solid rgba(0, 0, 0, 1);
 
@@ -139,12 +139,12 @@ input:focus {
 }
 
 //modal backdrop
-[class^="backdrop"] {
+[class*="-backdrop"] {
   background: linear-gradient(#00000022, #000000ff) !important;
 }
 
 //protips
-[class^="pro_"],
+[class*="-pro"],
 [class*="protip"] {
   color: var(--accent-saturated) !important;
 }

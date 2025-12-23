@@ -173,16 +173,16 @@ body::after {
   z-index: -90;
 }
 
-[class^=appMount_],
-[class^=app_],
-[class^=chat_],
-[class^=chatContent_],
-[class^=bg_] {
+[class*=-appMount],
+[class*=-app],
+[class*=-chat],
+[class*=-chatContent],
+[class*=-bg] {
   background: transparent !important;
 }
 
-#app-mount > [class^=typeMacOS],
-#app-mount > [class^=typeWindows] {
+#app-mount > [class*=typeMacOS],
+#app-mount > [class*=typeWindows] {
   height: 18px;
   margin-top: 0px;
   background-color: rgba(0, 0, 0, 0.1);
@@ -191,18 +191,18 @@ body::after {
   padding-top: 4px;
 }
 
-[class^=chat_] > [class^=header] + [class^=content_],
-[class^=chat_] > [class^=content_] > div {
+[class*=-chat] > [class*=header] + [class*=-content],
+[class*=-chat] > [class*=-content] > div {
   background: transparent !important;
 }
 
-[class^=wrapper_] {
+[class*=-wrapper] {
   border: none;
 }
 
-[class^=sidebar_] > nav > div:first-child,
-[class^=base_] > [class^=content_] > :nth-child(2) section[class*=container_],
-[class^=base_] > [class^=content_] > :nth-last-child(2) section[class*=container_] {
+[class*=-sidebar] > nav > div:first-child,
+[class*=-base] > [class*=-content] > :nth-child(2) section[class*=-container],
+[class*=-base] > [class*=-content] > :nth-last-child(2) section[class*=-container] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -278,14 +278,14 @@ button[class*=lookLink_]:hover > [class*=contents] {
   border-color: currentColor;
 }
 
-[class^=control_] [class^=container_] {
+[class*=-control] [class*=-container] {
   background: var(--accent-color-semitransparent) !important;
 }
 
-[class^=control_] [class^=container_][style*="rgb(35,"] {
+[class*=-control] [class*=-container][style*="rgb(35,"] {
   background: var(--main-color) !important;
 }
-[class^=control_] [class^=container_][style*="rgb(35,"] [class^=slider] path {
+[class*=-control] [class*=-container][style*="rgb(35,"] [class*=-slider] path {
   fill: var(--main-color);
 }
 
@@ -298,7 +298,7 @@ input:focus {
   box-shadow: none;
 }
 
-[class^=inputDefault] {
+[class*=-inputDefault] {
   background: rgba(0, 0, 0, 0.3);
 }
 
@@ -310,27 +310,27 @@ input:focus {
   fill: var(--button-text-selected) !important;
 }
 
-[class^=select][class*=lookFilled] {
+[class*=-select][class*=lookFilled] {
   background: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.2);
 }
 
-[class^=select][class*=lookFilled][class*=open] {
+[class*=-select][class*=lookFilled][class*=open] {
   background: rgba(0, 0, 0, 0.9);
 }
 
-[class^=popout][role=listbox] {
+[class*=-popout][role=listbox] {
   background: rgba(0, 0, 0, 0.9);
 }
 
-[class^=slider_] > [class^=bar_] {
+[class*=-slider] > [class*=-bar] {
   background: var(--accent-color-semitransparent) !important;
 }
-[class^=slider_] > [class^=bar_] [class^=barFill_] {
+[class*=-slider] > [class*=-bar] [class*=-barFill] {
   background: var(--main-color) !important;
 }
 
-[class^=colorPrimary_] {
+[class*=-colorPrimary] {
   background: var(--main-color) !important;
 }
 
@@ -348,52 +348,52 @@ input:focus {
   border-top-color: rgb(0, 0, 0) !important;
 }
 
-[class^=layerContainer_] > [class*=toolbar] {
+[class*=-layerContainer] > [class*=toolbar] {
   background: rgba(0, 0, 0, 0.95) !important;
   border: 2px solid rgb(0, 0, 0);
 }
-[class^=layerContainer_] > [class*=toolbar]::before {
+[class*=-layerContainer] > [class*=toolbar]::before {
   border-top-color: rgb(0, 0, 0) !important;
 }
 
-[class^=backdrop] {
+[class*=-backdrop] {
   background: linear-gradient(rgba(0, 0, 0, 0.1333333333), black) !important;
 }
 
-[class^=pro_],
+[class*=-pro],
 [class*=protip] {
   color: var(--accent-saturated) !important;
 }
 
-[class^=channelTextArea] {
+[class*=-channelTextArea] {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.1) !important;
 }
-[class^=channelTextArea] [class*=scrollableContainer] {
+[class*=-channelTextArea] [class*=scrollableContainer] {
   background: rgba(0, 0, 0, 0.1);
 }
-[class^=channelTextArea] [class*=scrollableContainer] [class^=attachWrapper] {
+[class*=-channelTextArea] [class*=scrollableContainer] [class*=-attachWrapper] {
   border-right-color: rgba(255, 255, 255, 0.1);
 }
-[class^=channelTextArea] [class^=autocomplete] {
+[class*=-channelTextArea] [class*=-autocomplete] {
   background: transparent !important;
 }
-[class^=channelTextArea] [class^=autocompleteInner] {
+[class*=-channelTextArea] [class*=-autocompleteInner] {
   background: rgba(0, 0, 0, 0.9) !important;
   border-color: transparent !important;
 }
-[class^=channelTextArea] [class*=autocompleteRow] > [class*=selected] {
+[class*=-channelTextArea] [class*=autocompleteRow] > [class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
 }
-[class^=channelTextArea] > [class^=container_] > [class^=containerBackground] {
+[class*=-channelTextArea] > [class*=-container] > [class*=-containerBackground] {
   background: rgba(0, 0, 0, 0.95) !important;
   border-color: transparent;
 }
-[class^=channelTextArea] [class*=inner] [class^=buttons] > [class*=grow] {
+[class*=-channelTextArea] [class*=inner] [class*=-buttons] > [class*=grow] {
   display: none !important;
 }
 
-[class^=channelAppLauncher] .app-launcher-entrypoint > button {
+[class*=-channelAppLauncher] .app-launcher-entrypoint > button {
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -412,20 +412,20 @@ input:focus {
   background-position: unset;
 }
 
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] {
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class^=navList_] > [class*=navItem_][class*=navButtonActive_] {
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=-navList] > [class*=navItem_][class*=navButtonActive_] {
   background: var(--main-color) !important;
 }
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class^=unicodeShortcut_],
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class*=packHeader],
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class^=inspector_] {
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=-unicodeShortcut],
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=packHeader],
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=-inspector] {
   background: #000;
 }
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class*=header],
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class*=categoryList],
-[class^=drawerSizingWrapper_] > [class^=contentWrapper_] [class*=content] {
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=header],
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=categoryList],
+[class*=-drawerSizingWrapper] > [class*=-contentWrapper] [class*=content] {
   background: transparent !important;
 }
 
@@ -438,57 +438,62 @@ input:focus {
   color: var(--button-text-selected) !important;
 }
 
-[id^=chat-messages] [class*=description] [class*=colorBrand] {
+[id*=-chat-messages] [class*=description] [class*=colorBrand] {
   background: rgba(0, 255, 128, 0.1) !important;
   color: rgba(0, 255, 128, 0.7) !important;
 }
-[id^=chat-messages] [class*=description] [class*=colorBrand]:hover, [id^=chat-messages] [class*=description] [class*=colorBrand][class*=selected] {
+[id*=-chat-messages] [class*=description] [class*=colorBrand]:hover, [id*=-chat-messages] [class*=description] [class*=colorBrand][class*=selected] {
   background: rgba(0, 255, 128, 0.2) !important;
   color: rgba(0, 255, 128, 0.9) !important;
 }
-[id^=chat-messages] [class*=description] [class*=colorPrimary] {
+[id*=-chat-messages] [class*=description] [class*=colorPrimary] {
   background: rgba(0, 0, 0, 0.2) !important;
   color: rgba(255, 255, 255, 0.6) !important;
 }
-[id^=chat-messages] [class*=description] [class*=colorPrimary]:hover, [id^=chat-messages] [class*=description] [class*=colorPrimary][class*=selected] {
+[id*=-chat-messages] [class*=description] [class*=colorPrimary]:hover, [id*=-chat-messages] [class*=description] [class*=colorPrimary][class*=selected] {
   background: rgba(0, 0, 0, 0.4) !important;
   color: rgb(255, 255, 255) !important;
 }
-[id^=chat-messages] [class*=description] [class*=coloRed] {
+[id*=-chat-messages] [class*=description] [class*=coloRed] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[id^=chat-messages] [class*=description] [class*=coloRed]:hover {
+[id*=-chat-messages] [class*=description] [class*=coloRed]:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
 
-[class*=chatContent] form > [class^=wrapper] {
+[class*=chatContent] form > [class*=-wrapper] {
   background: rgba(0, 0, 0, 0.3);
 }
 
-[class*=chatContent] form > [class^=wrapper] button:not([class*=lookBlank], [class*=barButtonBase]) {
+[class*=chatContent] form > [class*=-wrapper] button:not([class*=lookBlank], [class*=barButtonBase]) {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class*=chatContent] form > [class^=wrapper] button:not([class*=lookBlank], [class*=barButtonBase]):hover {
+[class*=chatContent] form > [class*=-wrapper] button:not([class*=lookBlank], [class*=barButtonBase]):hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
 
-[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn]) {
+[class*=chatContent] [class*=scrollerInner] > [class*=wrapper],
+[class*=chatContent] [class*=scrollerInner] > [class*=wrapper] > [class*=wrapper] {
+  background: transparent !important;
+}
+
+[class*=reactions_] [class*=reaction_]:not([class*=-reactionCount], [class*=-reactionBtn]) {
   background: rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.07);
   display: flex;
   align-content: center;
 }
-[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn]):hover {
+[class*=reactions_] [class*=reaction_]:not([class*=-reactionCount], [class*=-reactionBtn]):hover {
   border-color: transparent;
 }
-[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn]) img {
+[class*=reactions_] [class*=reaction_]:not([class*=-reactionCount], [class*=-reactionBtn]) img {
   transform: scale(1.2);
 }
-[class*=reactions_] [class*=reaction_]:not([class^=reactionCount], [class^=reactionBtn])[class*=reactionMe] {
+[class*=reactions_] [class*=reaction_]:not([class*=-reactionCount], [class*=-reactionBtn])[class*=reactionMe] {
   border-color: var(--main-color);
   background: rgba(0, 0, 0, 0.4) !important;
 }
@@ -497,17 +502,17 @@ input:focus {
   color: var(--accent-color) !important;
 }
 
-[class^=layerContainer_] [class*=layer_] [class*=reactors_] {
+[class*=-layerContainer] [class*=layer_] [class*=reactors_] {
   background: transparent !important;
 }
-[class^=layerContainer_] [class*=layer_] [class*=reactors_] div:not([class*=contents]) {
+[class*=-layerContainer] [class*=layer_] [class*=reactors_] div:not([class*=contents]) {
   background: rgba(0, 0, 0, 0.95) !important;
 }
-[class^=layerContainer_] [class*=layer_] [class*=menu_] {
+[class*=-layerContainer] [class*=layer_] [class*=menu_] {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: none !important;
 }
-[class^=layerContainer_] [class*=layer_] [class*=menu_] [class*=wrapper_] img {
+[class*=-layerContainer] [class*=layer_] [class*=menu_] [class*=wrapper_] img {
   width: 30px !important;
   height: 30px !important;
 }
@@ -516,60 +521,60 @@ input:focus {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^=uploadDropModal] [class^=bgScale] {
+[class*=-uploadDropModal] [class*=-bgScale] {
   background: var(--profile-activity) !important;
 }
-[class^=uploadDropModal] [class*=icons] {
+[class*=-uploadDropModal] [class*=icons] {
   filter: hue-rotate(110deg) contrast(1.3) !important;
 }
 
-[class^=uploadModal] {
+[class*=-uploadModal] {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: none !important;
 }
-[class^=uploadModal] [class^=footer] {
+[class*=-uploadModal] [class*=-footer] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
-[class^=uploadModal] label[class*=checked] [class*=checkbox] {
+[class*=-uploadModal] label[class*=checked] [class*=checkbox] {
   background: var(--main-color) !important;
   border-color: transparent !important;
 }
-[class^=uploadModal] label[class*=checked] [class*=checkbox] svg path {
+[class*=-uploadModal] label[class*=checked] [class*=checkbox] svg path {
   fill: #fff !important;
 }
 
-[id^=message-content-Uploader] > div[class*=attachment] {
+[id*=-message-content-Uploader] > div[class*=attachment] {
   background: rgba(0, 0, 0, 0.3);
   border-color: #000000;
 }
-[id^=message-content-Uploader] > div[class*=attachment] [class*=progressBar] {
+[id*=-message-content-Uploader] > div[class*=attachment] [class*=progressBar] {
   background: var(--accent-color) !important;
 }
 
-[id^=message-accessories] > [class^=embedWrapper] {
+[id*=-message-accessories] > [class*=-embedWrapper] {
   background: var(--accent-color-semitransparent) !important;
   border-color: var(--accent-saturated) !important;
 }
 
-[class^=messageAttachment] {
+[class*=-messageAttachment] {
   border-color: #000 !important;
 }
-[class^=messageAttachment] > [class^=attachment], [class^=messageAttachment] > [class^=embedWrapper] {
+[class*=-messageAttachment] > [class*=-attachment], [class*=-messageAttachment] > [class*=-embedWrapper] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-[class^=messageAttachment] code {
+[class*=-messageAttachment] code {
   background: transparent !important;
 }
-[class^=messageAttachment] [class^=textContainer] + div {
+[class*=-messageAttachment] [class*=-textContainer] + div {
   background: rgba(0, 0, 0, 0.2) !important;
 }
 
-[id^=message-content] [class*=mention] {
+[id*=-message-content] [class*=mention] {
   color: var(--accent-desaturated);
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
 }
-[id^=message-content] [class*=mention]:hover {
+[id*=-message-content] [class*=mention]:hover {
   background: rgba(0, 0, 0, 0.4) !important;
 }
 
@@ -612,7 +617,7 @@ input:focus {
   transform: scale(1.1);
 }
 
-[class^=threadSidebar] {
+[class*=-threadSidebar] {
   background: rgba(0, 0, 0, 0.95);
 }
 
@@ -664,7 +669,7 @@ input:focus {
   visibility: hidden;
 }
 
-[id^=status-picker] {
+[id*=-status-picker] {
   transition: background 200ms ease-out;
 }
 
@@ -696,23 +701,23 @@ input:focus {
   background: rgba(255, 77, 181, 0.2392156863);
 }
 
-[class^=newMessagesBar_] {
+[class*=-newMessagesBar] {
   background: var(--main-color) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 
-[class^=jumpToPresentBar_] {
+[class*=-jumpToPresentBar] {
   background: var(--accent-desaturated) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 
-[id^=message-accessories_] > [class*=wrapper] {
+[id*=-message-accessories] > [class*=wrapper] {
   background: rgba(0, 0, 0, 0.2);
 }
 
-[id^=message-accessories_] > [class*=wrapper] [class*=guildIconImage] {
+[id*=-message-accessories] > [class*=wrapper] [class*=guildIconImage] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -915,7 +920,7 @@ code .hljs-selector-tag {
   border-left: 2px solid var(--accent-saturated);
 }
 
-[class^=categoryFadeBlurple_] {
+[class*=-categoryFadeBlurple] {
   background: var(--main-color) !important;
 }
 
@@ -1036,13 +1041,9 @@ body::after {
     transform: rotate(7deg);
   }
 }
-[class^=content] > [class^=sidebar]::after,
-[class^=content] > [class^=sidebar] [class*=guilds] {
+[class*=-content] > [class*=-sidebar]::after,
+[class*=-content] > [class*=-sidebar] [class*=guilds] {
   background: transparent;
-}
-
-[class^=scroller_] {
-  background: transparent !important;
 }
 
 [class*=wrapper][class*=guilds] [class*=listItemWrapper] > a {
@@ -1065,19 +1066,19 @@ body::after {
   background: rgba(0, 0, 0, 0.3) !important;
   color: var(--accent-saturated);
 }
-[class*=wrapper][class*=guilds] [class^=footer] {
+[class*=wrapper][class*=guilds] [class*=-footer] {
   background: transparent;
 }
 [class*=wrapper][class*=guilds] #bd-pub-button,
-[class*=wrapper][class*=guilds] foreignObject > [class^=wrapper] > [class*=childWrapper],
-[class*=wrapper][class*=guilds] foreignObject > [class^=wrapper] > img {
+[class*=wrapper][class*=guilds] foreignObject > [class*=-wrapper] > [class*=childWrapper],
+[class*=wrapper][class*=guilds] foreignObject > [class*=-wrapper] > img {
   background-color: rgba(0, 0, 0, 0.3) !important;
 }
-[class*=wrapper][class*=guilds] foreignObject > [class^=wrapper][class*=selected] > [class*=childWrapper] {
+[class*=wrapper][class*=guilds] foreignObject > [class*=-wrapper][class*=selected] > [class*=childWrapper] {
   background-color: var(--main-color) !important;
 }
 
-[class^=unreadMentionsIndicator] > [class*=bar] {
+[class*=-unreadMentionsIndicator] > [class*=bar] {
   background: var(--main-color);
 }
 
@@ -1111,17 +1112,17 @@ svg[style="color: rgb(88, 101, 242);"] path {
   color: var(--button-text-selected) !important;
 }
 
-[class^=listItem] > [class^=wrapper] > [class*=target]::before, [class^=listItem] > [class^=wrapper] > [class*=centerTarget]::before {
+[class*=-listItem] > [class*=-wrapper] > [class*=target]::before, [class*=-listItem] > [class*=-wrapper] > [class*=centerTarget]::before {
   background: var(--accent-color);
 }
 
-header h1[class^=name] {
+header h1[class*=-name] {
   font-size: 18px;
   font-weight: bold;
   line-height: 55px;
 }
 
-[class^=sidebar] [class*=selected] header {
+[class*=-sidebar] [class*=selected] header {
   background: transparent;
 }
 
@@ -1171,7 +1172,7 @@ header h1[class^=name] {
 [class*=sidebar] [class*=containerDefault]:hover [class*=modeSelected] [class*=link_] {
   background: var(--main-color-semitransparent-selected) !important;
 }
-[class*=sidebar] [class*=containerDefault] [class^=children] > [class^=icon]:nth-last-child(2) {
+[class*=sidebar] [class*=containerDefault] [class*=-children] > [class*=-icon]:nth-last-child(2) {
   display: none !important;
 }
 
@@ -1221,10 +1222,12 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
+[class*=postEnrollmentBackground],
 [class*=panels] {
-  border-top: 1px solid var(--background-modifier-accent);
+  border-top: unset !important;
   background: transparent !important;
 }
+[class*=postEnrollmentBackground]::before,
 [class*=panels]::before {
   content: "";
   top: 0;
@@ -1238,6 +1241,7 @@ nav[class*=container] > [class*=container] > header:hover {
   -webkit-animation: fadeIn 2s ease-out;
   animation: fadeIn 2s ease-out;
 }
+[class*=postEnrollmentBackground]::after,
 [class*=panels]::after {
   content: "";
   top: 0;
@@ -1249,6 +1253,7 @@ nav[class*=container] > [class*=container] > header:hover {
   background: rgba(0, 0, 0, 0.2);
   border-radius: 10px;
 }
+
 [class*=panels] > [class*=activityPanel], [class*=panels] > [class*=container] {
   border: 0;
 }
@@ -1277,11 +1282,11 @@ nav[class*=container] > [class*=container] > header:hover {
   fill: var(--main-color) !important;
 }
 
-[aria-label=GUILD_SETTINGS] [class^=sidebar] [class*=item]:hover {
+[aria-label=GUILD_SETTINGS] [class*=-sidebar] [class*=item]:hover {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
-[aria-label=GUILD_SETTINGS] [class^=sidebar] [class*=item][class*=selected] {
+[aria-label=GUILD_SETTINGS] [class*=-sidebar] [class*=item][class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
   color: var(--button-text-selected) !important;
 }
@@ -1305,7 +1310,7 @@ nav[class*=container] > [class*=container] > header:hover {
   background-position: unset;
 }
 
-[class^=content_] > [class^=emojiRow_][class*=card_] {
+[class*=-content] > [class*=-emojiRow][class*=card_] {
   background: transparent !important;
 }
 
@@ -1338,10 +1343,10 @@ nav[class*=container] > [class*=container] > header:hover {
 [role=list] > [class*=auditLog] {
   border-color: #000 !important;
 }
-[role=list] > [class*=auditLog] > [class^=header] {
+[role=list] > [class*=auditLog] > [class*=-header] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
-[role=list] > [class*=auditLog] > [class^=divider] {
+[role=list] > [class*=auditLog] > [class*=-divider] {
   background: #000 !important;
 }
 [role=list] > [class*=auditLog] > [class*=changeDetails] {
@@ -1352,40 +1357,40 @@ nav[class*=container] > [class*=container] > header:hover {
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 
-div[class^=bannedUser_][class*=card_] {
+div[class*=-bannedUser][class*=card_] {
   background: transparent !important;
 }
-div[class^=bannedUser_][class*=card_] span {
+div[class*=-bannedUser][class*=card_] span {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
 [class*=directoryModal] {
   background-image: var(--app-background) !important;
 }
-[class*=directoryModal] [class*=categoryList] > [class^=category],
-[class*=directoryModal] [class^=list] > article,
-[class*=directoryModal] [class^=itemsContainer] > [class^=itemContainer] {
+[class*=directoryModal] [class*=categoryList] > [class*=-category],
+[class*=directoryModal] [class*=-list] > article,
+[class*=directoryModal] [class*=-itemsContainer] > [class*=-itemContainer] {
   background-color: rgba(0, 0, 0, 0.1);
 }
 
-[class^=chat] > [class*=minimum] {
+[class*=-chat] > [class*=minimum] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
 [class*=voiceCallWrapper_] [class*=border_][class*=speaking_],
-[class^=tileChild_] [class*=border_][class*=speaking_] {
+[class*=-tileChild] [class*=border_][class*=speaking_] {
   box-shadow: inset 0 0 0 3px var(--accent-color), inset 0 0 0 4px #000;
 }
 
-[class^=callContainer] {
+[class*=-callContainer] {
   background: transparent !important;
 }
 
-[id^=popout] [class^=popoutWrapper] > [class^=scroller] {
+[id*=-popout] [class*=-popoutWrapper] > [class*=-scroller] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^=quickSelectPopout] {
+[class*=-quickSelectPopout] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -1399,52 +1404,52 @@ button[class*=participantsButton]:hover {
   color: var(--button-text-selected) !important;
 }
 
-[class^=liveQualityIndicator] {
+[class*=-liveQualityIndicator] {
   background: rgba(0, 0, 0, 0.95) !important;
   color: var(--button-text) !important;
 }
 
-[class^=liveIndicator] > [class^=live] {
+[class*=-liveIndicator] > [class*=-live] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
 
-[class^=tileChild_] button > [class*=button_] {
+[class*=-tileChild] button > [class*=button_] {
   background: rgba(0, 0, 0, 0.95);
   color: var(--button-text);
 }
-[class^=tileChild_] button > [class*=button_]:hover {
+[class*=-tileChild] button > [class*=button_]:hover {
   color: var(--button-text-selected);
 }
 
-[class^=pictureInPictureVideo_] {
+[class*=-pictureInPictureVideo] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
 
-[class^=pictureInPictureVideo_] > span button > [class*=button_] {
+[class*=-pictureInPictureVideo] > span button > [class*=button_] {
   background: var(--main-color);
   color: var(--button-text);
 }
-[class^=pictureInPictureVideo_] > span button > [class*=button_]:hover {
+[class*=-pictureInPictureVideo] > span button > [class*=button_]:hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
 
-[class^=emptyPreview_] {
+[class*=-emptyPreview] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
-[class^=wanderingCubesItem_] {
+[class*=-wanderingCubesItem] {
   background: var(--accent-color) !important;
 }
 
-[class^=tile_] {
+[class*=-tile] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 10px;
 }
 
-[class^=tileChild] > [class*=videoWrapper],
-[class^=tileChild] > div:nth-child(2):not([class^=overlay]) {
+[class*=-tileChild] > [class*=videoWrapper],
+[class*=-tileChild] > div:nth-child(2):not([class*=-overlay]) {
   background: transparent !important;
 }
 
@@ -1460,32 +1465,32 @@ button[class*=participantsButton]:hover {
   color: var(--button-text-selected);
 }
 
-[class^=videoControls] [class*=contextMenuNub],
-[class^=videoControls] button[class*=centerButton] {
+[class*=-videoControls] [class*=contextMenuNub],
+[class*=-videoControls] button[class*=centerButton] {
   background: rgba(0, 0, 0, 0.6) !important;
   transition: 0.2s all ease-in-out;
 }
-[class^=videoControls] [class*=contextMenuNub]:hover,
-[class^=videoControls] button[class*=centerButton]:hover {
+[class*=-videoControls] [class*=contextMenuNub]:hover,
+[class*=-videoControls] button[class*=centerButton]:hover {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-[class^=videoControls] [class*=contextMenuNub] svg,
-[class^=videoControls] button[class*=centerButton] svg {
+[class*=-videoControls] [class*=contextMenuNub] svg,
+[class*=-videoControls] button[class*=centerButton] svg {
   color: var(--button-text-selected) !important;
 }
-[class^=videoControls] button[class*=red] {
+[class*=-videoControls] button[class*=red] {
   transition: 0.2s all ease-in-out;
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
-[class^=videoControls] button[class*=red]:hover {
+[class*=-videoControls] button[class*=red]:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class^=videoControls] > [class^=gradient] {
+[class*=-videoControls] > [class*=-gradient] {
   background: transparent !important;
 }
-[class^=videoControls] [class*=topControls] [class*=headerWrapper] [class*=transparent][class*=container] {
+[class*=-videoControls] [class*=topControls] [class*=headerWrapper] [class*=transparent][class*=container] {
   background: transparent !important;
 }
 
@@ -1518,23 +1523,23 @@ button[class*=participantsButton]:hover {
   filter: none;
 }
 
-[class^=stageSection_] {
+[class*=-stageSection] {
   background: transparent;
 }
 
-[class^=nowPlayingSidebar_] > [class^=container_] {
+[class*=-nowPlayingSidebar] > [class*=-container] {
   background: transparent !important;
 }
 
-[class^=stageSection_] > [class^=container_] > [class^=container_] {
+[class*=-stageSection] > [class*=-container] > [class*=-container] {
   background: rgba(0, 0, 0, 0.15);
 }
 
-[class^=stageSection_] > [class^=container_] > [class^=container_]:nth-last-child(2) {
+[class*=-stageSection] > [class*=-container] > [class*=-container]:nth-last-child(2) {
   background: transparent !important;
 }
 
-[class^=guildInfoContainer_] > [class^=rightJustifiedContent_] > div {
+[class*=-guildInfoContainer] > [class*=-rightJustifiedContent] > div {
   background: var(--main-color) !important;
 }
 
@@ -1542,16 +1547,16 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.95) !important;
   background-size: cover;
 }
-:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=bodyInnerWrapper],
-:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=footer],
-:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=avatar] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=-bodyInnerWrapper],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=-footer],
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=-avatar] {
   background: transparent !important;
   border-color: transparent !important;
 }
-:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=userPopoutOverlayBackground] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=-userPopoutOverlayBackground] {
   background: rgba(0, 0, 0, 0.2);
 }
-:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class^=bodyInnerWrapper] > [class*=divider] {
+:not(.custom-profile-theme)[class*=biteSize] [class*=inner] [class*=-bodyInnerWrapper] > [class*=divider] {
   display: none;
 }
 :not(.custom-profile-theme)[class*=biteSize] [class*=inner] #permissions-popout,
@@ -1668,7 +1673,7 @@ button[class*=participantsButton]:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
-:not(.custom-profile-theme)[style*=profile] [class*=activity] [class^=bar_] {
+:not(.custom-profile-theme)[style*=profile] [class*=activity] [class*=-bar] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
 :not(.custom-profile-theme)[style*=profile] [class*=activity]::before {
@@ -1711,26 +1716,26 @@ button[class*=participantsButton]:hover {
   }
 }
 
-[class^=activityUserPopout_] > [class^=horizontal_] > button {
+[class*=-activityUserPopout] > [class*=-horizontal] > button {
   background: var(--main-color) !important;
 }
 
-[class^=statusBubble], [class^=statusBubble]::before, [class^=statusBubble]::after {
+[class*=-statusBubble], [class*=-statusBubble]::before, [class*=-statusBubble]::after {
   background: rgb(0, 0, 0) !important;
 }
 
 [class*=fullSize][class*=inner] {
   background: transparent !important;
 }
-[class*=fullSize][class*=inner] [class^=body][class^=body][class^=body],
-[class*=fullSize][class*=inner] [class^=root][class^=root] {
+[class*=fullSize][class*=inner] [class*=-body][class*=-body][class*=-body],
+[class*=fullSize][class*=inner] [class*=-root][class*=-root] {
   background: transparent !important;
 }
-[class*=fullSize][class*=inner] [class^=overlay] {
+[class*=fullSize][class*=inner] [class*=-overlay] {
   background: rgba(0, 0, 0, 0.2) !important;
 }
 
-:not([class*=custom-profile-theme]) > [class^=userProfileModalInner] {
+:not([class*=custom-profile-theme]) > [class*=-userProfileModalInner] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -1834,32 +1839,32 @@ button[class*=participantsButton]:hover {
   fill: rgb(255, 255, 255);
 }
 
-[class^=session] > [class^=sessionIcon] {
+[class*=-session] > [class*=-sessionIcon] {
   background: rgba(0, 0, 0, 0.1) !important;
   color: rgba(255, 255, 255, 0.7) !important;
 }
 
-[class^=connectedAccounts] > [class^=wrapper] {
+[class*=-connectedAccounts] > [class*=-wrapper] {
   background: rgba(0, 0, 0, 0.3) !important;
   border: 1px solid #000000 !important;
   border-radius: 5px;
   transition: transform 200ms ease-in-out;
 }
-[class^=connectedAccounts] > [class^=wrapper]:hover {
+[class*=-connectedAccounts] > [class*=-wrapper]:hover {
   transform: scale(1.05);
   background: rgba(0, 0, 0, 0.8) !important;
 }
 
-[class^=connectionList] > [class^=connection] {
+[class*=-connectionList] > [class*=-connection] {
   background: rgba(0, 0, 0, 0.3) !important;
   border: 1px solid #000000 !important;
   border-radius: 10px;
 }
 
-[class^=slider_] > [class^=track_] > [class^=mark_] [class^=markValue_] {
+[class*=-slider] > [class*=-track] > [class*=-mark] [class*=-markValue] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
-[class^=slider_] > [class^=track_] > [class^=mark_] [class^=markDash_] {
+[class*=-slider] > [class*=-track] > [class*=-mark] [class*=-markDash] {
   background: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -1876,34 +1881,34 @@ button[class*=participantsButton]:hover {
   background-color: var(--main-color-selected);
 }
 
-[class^=children_] [class*=notDetected_] {
+[class*=-children] [class*=notDetected_] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
 
-[class^=children_] [class*=nowPlaying_] {
+[class*=-children] [class*=nowPlaying_] {
   background: rgba(0, 255, 128, 0.2) !important;
 }
 
-[class^=addGamePopout_] {
+[class*=-addGamePopout] {
   background: rgba(0, 0, 0, 0.9) !important;
   box-shadow: none !important;
 }
 
-[id^=popout] [class*=searchableSelect] {
+[id*=-popout] [class*=searchableSelect] {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: none !important;
 }
 
-[class^=lastPlayed_] {
+[class*=-lastPlayed] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
-[class^=overlayToggleIconOn_] path {
+[class*=-overlayToggleIconOn] path {
   fill: rgba(255, 255, 255, 0.5) !important;
 }
 
-[class^=overlayToggleIconOff_] path,
-[class^=overlayToggleIconOff_] rect {
+[class*=-overlayToggleIconOff] path,
+[class*=-overlayToggleIconOff] rect {
   fill: var(--main-color) !important;
 }
 
@@ -1911,7 +1916,7 @@ button[class*=participantsButton]:hover {
   background-color: var(--main-color-semitransparent-selected) !important;
 }
 
-[class^=overlayStatusText_] {
+[class*=-overlayStatusText] {
   color: rgba(255, 255, 255, 0.5) !important;
 }
 
@@ -1955,29 +1960,23 @@ button[class*=participantsButton]:hover {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=info_] > * {
+[class*=-standardSidebarView] > [class*=-sidebarRegion] [class*=-info] > * {
   color: rgba(255, 255, 255, 0.5);
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][class*=bd], [class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][aria-controls] {
-  padding-left: 50px !important;
-}
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item]:hover {
+[class*=-standardSidebarView] > [class*=-sidebarRegion] [class*=-sidebar] [class*=item]:hover {
   background: var(--main-color-semitransparent) !important;
   color: var(--button-text) !important;
 }
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][class*=selected] {
+[class*=-standardSidebarView] > [class*=-sidebarRegion] [class*=-sidebar] [class*=item][class*=selected] {
   background: var(--main-color-semitransparent-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item][aria-controls=discord-nitro-tab] svg {
-  display: none;
-}
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item] [class*=selectedBackground] {
+[class*=-standardSidebarView] > [class*=-sidebarRegion] [class*=-sidebar] [class*=item] [class*=selectedBackground] {
   background: transparent !important;
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=item]::after {
+[class*=-standardSidebarView] > [class*=-sidebarRegion] [class*=-sidebar] [class*=item]::after {
   content: "";
   position: absolute;
   width: 24px;
@@ -1991,144 +1990,8 @@ button[class*=participantsButton]:hover {
   background-size: cover !important;
 }
 
-[class^=standardSidebarView] > [class^=sidebarRegion] [class^=sidebar_] [class*=selected]::after {
+[class*=-standardSidebarView] > [class*=-sidebarRegion] [class*=-sidebar] [class*=selected]::after {
   opacity: 0.7;
-}
-
-[aria-controls=my-account-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/person.svg) !important;
-}
-
-[aria-controls=profile-customization-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/person-box.svg) !important;
-}
-
-[aria-controls="privacy-&-safety-tab"]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/security.svg) !important;
-}
-
-[aria-controls=authorized-apps-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/apps.svg) !important;
-}
-
-[aria-controls=sessions-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/desktop_windows.svg) !important;
-}
-
-[aria-controls=connections-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/link.svg) !important;
-}
-
-[aria-controls=friend-requests-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
-}
-
-[aria-controls=discord-nitro-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/nitro.svg) !important;
-}
-
-[aria-controls=nitro-server-boost-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/server_boost.svg) !important;
-}
-
-[aria-controls=subscriptions-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/cash.svg) !important;
-}
-
-[aria-controls=library-inventory-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/gift.svg) !important;
-}
-
-[aria-controls=billing-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/Credit_card.svg) !important;
-}
-
-[aria-controls=appearance-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/looks.svg) !important;
-}
-
-[aria-controls=accessibility-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/human.svg) !important;
-}
-
-[aria-controls="voice-&-video-tab"]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/mic.svg) !important;
-}
-
-[aria-controls="text-&-images-tab"]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/chat.svg) !important;
-}
-
-[aria-controls=notifications-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/notifications.svg) !important;
-}
-
-[aria-controls=keybinds-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/keyboard.svg) !important;
-}
-
-[aria-controls=language-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/language.svg) !important;
-}
-
-[aria-controls=windows-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/windows.svg) !important;
-}
-
-[aria-controls=streamer-mode-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/videocam.svg) !important;
-}
-
-[aria-controls=advanced-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/dots.svg) !important;
-}
-
-[aria-controls=activity-privacy-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/security.svg) !important;
-}
-
-[aria-controls=game-activity-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/gamepad.svg) !important;
-}
-
-[aria-controls=overlay-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/desktop_windows.svg) !important;
-}
-
-.bd-settings-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/betterdiscord.svg) !important;
-}
-
-.bd-emotes-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/emote.svg) !important;
-}
-
-.bd-updates-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
-}
-
-.bd-customcss-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/code.svg) !important;
-}
-
-.bd-plugins-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/puzzle.svg) !important;
-}
-
-.bd-themes-tab::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/palette.svg) !important;
-}
-
-[aria-controls=changelog-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/history.svg) !important;
-}
-
-[aria-controls=hypesquad-online-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/hypesquad.svg) !important;
-}
-
-[aria-controls=logout-tab]::after {
-  background: url(https://przemec.github.io/Novum/assets/icons/exit.svg) !important;
 }
 
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]),
@@ -2145,38 +2008,38 @@ button[class*=participantsButton]:hover {
 [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=divider] {
   background-color: rgba(255, 255, 255, 0.1);
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][tabindex="0"] {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-item][tabindex="0"] {
   background: transparent;
   font-size: 17px;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item]:not([tabindex="0"]):hover {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-item]:not([tabindex="0"]):hover {
   background: transparent;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend] {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-item][class*=addFriend] {
   background: rgba(0, 255, 128, 0.1) !important;
   color: rgba(0, 255, 128, 0.7) !important;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend]:hover, [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=item][class*=addFriend][class*=selected] {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-item][class*=addFriend]:hover, [class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-item][class*=addFriend][class*=selected] {
   background: rgba(0, 255, 128, 0.2) !important;
   color: rgba(0, 255, 128, 0.9) !important;
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=searchBar] > [class^=inner] {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-searchBar] > [class*=-inner] {
   background: rgba(0, 0, 0, 0.2);
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-addFriendInputWrapper] {
   background: rgba(0, 0, 0, 0.4);
   border-color: rgba(0, 0, 0, 0.9);
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] button {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-addFriendInputWrapper] button {
   background: var(--main-color);
   color: var(--button-text);
 }
-[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class^=addFriendInputWrapper] button:hover {
+[class*=base] [class*=content] [class*=container]:not([class*=embedWrapper]) [class*=-addFriendInputWrapper] button:hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
 
-[class*=nowPlayingColumn] [class^=scroller] {
+[class*=nowPlayingColumn] [class*=-scroller] {
   border: 0;
 }
 [class*=nowPlayingColumn] [class*=itemCard] {
@@ -2190,16 +2053,19 @@ button[class*=participantsButton]:hover {
   display: none;
 }
 
-[class^=content] > [class^=sidebar] [class^=privateChannels] {
+[class*=-content] > [class*=-sidebar] [class*=-privateChannels] {
+  background: transparent;
+}
+[class*=-content] > [class*=-sidebar] [class*=-privateChannels] [class*=-scroller] {
   background: transparent;
 }
 
-[class^=content] > [class^=channel] [class^=interactive]:hover {
+[class*=-content] > [class*=-channel] [class*=-interactive]:hover {
   background: var(--main-color-semitransparent);
   color: var(--button-text);
 }
 
-[class^=content] > [class^=channel] [class^=interactive][class*=selected] {
+[class*=-content] > [class*=-channel] [class*=-interactive][class*=selected] {
   background: var(--main-color-semitransparent-selected);
   color: var(--button-text-selected);
 }
@@ -2215,64 +2081,64 @@ button[class*=participantsButton]:hover {
   background: var(--main-color-selected) !important;
   color: var(--button-text-selected) !important;
 }
-[class*=applicationStore] [class^=marketingRefreshSectionTier] {
+[class*=applicationStore] [class*=-marketingRefreshSectionTier] {
   background: transparent !important;
 }
-[class*=applicationStore] [class^=feature] > li[class^=feature] {
+[class*=applicationStore] [class*=-feature] > li[class*=-feature] {
   background: rgba(0, 0, 0, 0.3);
 }
 
-[class^=perksModal_] {
+[class*=-perksModal] {
   background: transparent !important;
 }
 
-[class^=progressBar] > [class^=barBackground] {
+[class*=-progressBar] > [class*=-barBackground] {
   background: var(--main-color) !important;
 }
 
-[class^=tierMarkerGroup] > [class*=tierMarkerBackground] {
+[class*=-tierMarkerGroup] > [class*=tierMarkerBackground] {
   background: var(--main-color) !important;
 }
 
-[class^=tierMarkerGroup] [class*=tierMarkerInProgress] {
+[class*=-tierMarkerGroup] [class*=tierMarkerInProgress] {
   background: var(--main-color-selected) !important;
 }
 
-[class^=carousel] [class^=tier_] {
+[class*=-carousel] [class*=-tier] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
-[class^=carousel] [class^=tier_] [class*=tierHeader] {
+[class*=-carousel] [class*=-tier] [class*=tierHeader] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-[class^=carousel] [class^=tier_] [class*=tierHeaderLocked] path {
+[class*=-carousel] [class*=-tier] [class*=tierHeaderLocked] path {
   fill: rgba(255, 255, 255, 0.5);
 }
-[class^=carousel] [class^=tier_] [class*=tierBody] {
+[class*=-carousel] [class*=-tier] [class*=tierBody] {
   background: transparent !important;
 }
 
-[class^=perks] > li[class^=perk] {
+[class*=-perks] > li[class*=-perk] {
   background: rgba(0, 0, 0, 0.3);
 }
 
-[class^=progress] rect[class^=background] {
+[class*=-progress] rect[class*=-background] {
   fill: var(--scroll-thumb-color);
 }
 
-[class^=progress] [class*=tierInProgress] {
+[class*=-progress] [class*=tierInProgress] {
   background: var(--scroll-thumb-color);
 }
 
-[class^=tiers] > [class^=tier_] {
+[class*=-tiers] > [class*=-tier] {
   background: var(--profile-background), rgba(0, 0, 0, 0.95) !important;
 }
-[class^=tiers] > [class^=tier_] [class*=tierHeader] {
+[class*=-tiers] > [class*=-tier] [class*=tierHeader] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
-[class^=tiers] > [class^=tier_] [class*=tierHeaderLocked] path {
+[class*=-tiers] > [class*=-tier] [class*=tierHeaderLocked] path {
   fill: rgba(255, 255, 255, 0.5);
 }
-[class^=tiers] > [class^=tier_] [class*=tierBody] {
+[class*=-tiers] > [class*=-tier] [class*=tierBody] {
   background: transparent !important;
 }
 
@@ -2338,12 +2204,12 @@ button[class*=participantsButton]:hover {
   background: var(--main-color) !important;
 }
 
-[class^=live_][class*=textBadge] {
+[class*=-live][class*=textBadge] {
   background: var(--main-color-selected) !important;
   color: var(--button-text) !important;
 }
 
-[class^=akaBadge_] {
+[class*=-akaBadge] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
@@ -2362,35 +2228,35 @@ button[class*=participantsButton]:hover {
   color: var(--button-text) !important;
 }
 
-[id^=popout] > div > [role=dialog],
-[id^=popout] > div > [class^=container],
-[id^=popout] > div > [class^=popout] {
+[id*=-popout] > div > [role=dialog],
+[id*=-popout] > div > [class*=-container],
+[id*=-popout] > div > [class*=-popout] {
   background: rgba(0, 0, 0, 0.95) !important;
   border-radius: 10px;
 }
 
-[class^=noticeRegion] > [class^=container] {
+[class*=-noticeRegion] > [class*=-container] {
   background: rgba(0, 0, 0, 0.85) !important;
   box-shadow: none !important;
 }
 
-[role=dialog] [class^=contentWrapper] {
+[role=dialog] [class*=-contentWrapper] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^=popoutContainer] {
+[class*=-popoutContainer] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
-[class^=popoutContainer] button {
+[class*=-popoutContainer] button {
   background: var(--main-color);
   color: var(--button-text);
 }
-[class^=popoutContainer] button:hover {
+[class*=-popoutContainer] button:hover {
   background: var(--main-color-selected);
   color: var(--button-text-selected);
 }
 
-[class^=app_] > [class*=fixClipping_] {
+[class*=-app] > [class*=fixClipping_] {
   background: linear-gradient(rgba(0, 0, 0, 0.1333333333), black) !important;
 }
 
@@ -2402,12 +2268,12 @@ button[class*=participantsButton]:hover {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
-[class^=quickswitcher] {
+[class*=-quickswitcher] {
   height: 100% !important;
   box-shadow: none !important;
 }
 
-[class^=quickswitcher] input {
+[class*=-quickswitcher] input {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -2428,15 +2294,15 @@ button[class*=participantsButton]:hover {
   border: none !important;
 }
 
-div[class^=notice] {
+div[class*=-notice] {
   color: var(--button-text) !important;
   background: var(--main-color-semitransparent);
 }
-div[class^=notice] button {
+div[class*=-notice] button {
   color: var(--button-text) !important;
   background: var(--main-color-semitransparent) !important;
 }
-div[class^=notice] button:hover {
+div[class*=-notice] button:hover {
   color: var(--button-text-selected) !important;
   background: var(--main-color-semitransparent-selected) !important;
 }
@@ -2447,11 +2313,11 @@ div[class^=notice] button:hover {
   color: var(--accent-color);
 }
 
-[class^=flowerStar_] > path {
+[class*=-flowerStar] > path {
   fill: var(--accent-saturated) !important;
 }
 
-[class^=flowerStar_] + [class^=child] path {
+[class*=-flowerStar] + [class*=-child] path {
   fill: #ffffff !important;
 }
 
@@ -2468,7 +2334,7 @@ div[class^=notice] button:hover {
   display: none !important;
 }
 
-[class*=title] > [class^=toolbar] > [class*=icon]:nth-child(2) {
+[class*=title] > [class*=-toolbar] > [class*=icon]:nth-child(2) {
   display: none !important;
 }
 
@@ -2544,12 +2410,12 @@ div[class^=notice] button:hover {
   display: none !important;
 }
 
-[class*=streamPreviewWrapper] [class*=streamPreview] {
-  background: rgba(0, 0, 0, 0.95) !important;
-  border: transparent;
-}
 [class*=streamPreviewWrapper] [class*=streamPreview] [class*=previewContainer] {
   background: transparent !important;
+  border: transparent;
+}
+[class*=streamPreviewWrapper] [class*=streamPreview] {
+  background: rgba(0, 0, 0, 0.95) !important;
   border: transparent;
 }
 
@@ -2580,7 +2446,7 @@ div[class^=notice] button:hover {
   font-weight: bold;
 }
 [class*=wordmark]::after {
-  content: "v5.8.8";
+  content: "v5.9.0";
   margin-left: 8px;
   color: rgba(255, 255, 255, 0.3);
   font-size: 14px;

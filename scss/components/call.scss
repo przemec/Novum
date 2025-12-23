@@ -1,7 +1,7 @@
 @use "../core/mixins.scss" as m;
 
 //making call black background
-[class^="chat"] > [class*="minimum"] {
+[class*="-chat"] > [class*="minimum"] {
   background: rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -9,24 +9,24 @@
 // - private voice call
 [class*="voiceCallWrapper_"] [class*="border_"][class*="speaking_"],
 // - server channel call
-[class^="tileChild_"] [class*="border_"][class*="speaking_"] {
+[class*="-tileChild"] [class*="border_"][class*="speaking_"] {
   box-shadow:
     inset 0 0 0 3px var(--accent-color),
     inset 0 0 0 4px #000;
 }
 
 //voice channel black background removed
-[class^="callContainer"] {
+[class*="-callContainer"] {
   background: transparent !important;
 }
 
 //popout with list of people watching stream
-[id^="popout"] [class^="popoutWrapper"] > [class^="scroller"] {
+[id*="-popout"] [class*="-popoutWrapper"] > [class*="-scroller"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //popout with regions to select
-[class^="quickSelectPopout"] {
+[class*="-quickSelectPopout"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -42,17 +42,17 @@ button[class*="participantsButton"] {
 }
 
 //live quality and "LIVE"
-[class^="liveQualityIndicator"] {
+[class*="-liveQualityIndicator"] {
   background: rgba(0, 0, 0, 0.95) !important;
   color: var(--button-text) !important;
 }
-[class^="liveIndicator"] > [class^="live"] {
+[class*="-liveIndicator"] > [class*="-live"] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }
 
 //"this stream has ended" channel view
-[class^="tileChild_"] button > [class*="button_"] {
+[class*="-tileChild"] button > [class*="button_"] {
   background: rgba(0, 0, 0, 0.95);
   color: var(--button-text);
   &:hover {
@@ -60,26 +60,26 @@ button[class*="participantsButton"] {
   }
 }
 //"this stream has ended" picture in picture modal
-[class^="pictureInPictureVideo_"] {
+[class*="-pictureInPictureVideo"] {
   background: rgba(0, 0, 0, 0.9) !important;
 }
-[class^="pictureInPictureVideo_"] > span button > [class*="button_"] {
+[class*="-pictureInPictureVideo"] > span button > [class*="button_"] {
   @include m.btred;
 }
 
 //live preview backgrounds
-[class^="emptyPreview_"] {
+[class*="-emptyPreview"] {
   background: rgba(0, 0, 0, 0.3) !important;
 }
-[class^="wanderingCubesItem_"] {
+[class*="-wanderingCubesItem"] {
   background: var(--accent-color) !important;
 }
-[class^="tile_"] {
+[class*="-tile"] {
   background: rgba(0, 0, 0, 0.3) !important;
   border-radius: 10px;
 }
-[class^="tileChild"] > [class*="videoWrapper"],
-[class^="tileChild"] > div:nth-child(2):not([class^="overlay"]) {
+[class*="-tileChild"] > [class*="videoWrapper"],
+[class*="-tileChild"] > div:nth-child(2):not([class*="-overlay"]) {
   background: transparent !important;
 }
 
@@ -92,7 +92,7 @@ button[class*="participantsButton"] {
   }
 }
 
-[class^="videoControls"] {
+[class*="-videoControls"] {
   //center video control buttons
   [class*="contextMenuNub"],
   button[class*="centerButton"] {
@@ -110,7 +110,7 @@ button[class*="participantsButton"] {
     @include m.btred_important;
   }
   //gradients on hover removed
-  & > [class^="gradient"] {
+  & > [class*="-gradient"] {
     background: transparent !important;
   }
   //remove background from top controls container

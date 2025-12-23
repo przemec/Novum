@@ -3,16 +3,16 @@
 [class*="fullSize"][class*="inner"] {
   background: transparent !important;
 
-  [class^="body"][class^="body"][class^="body"],
-  [class^="root"][class^="root"] {
+  [class*="-body"][class*="-body"][class*="-body"],
+  [class*="-root"][class*="-root"] {
     background: transparent !important;
   }
 
-  [class^="overlay"] {
+  [class*="-overlay"] {
     background: rgba(0, 0, 0, 0.2) !important;
   }
 }
 
-:not([class*="custom-profile-theme"]) > [class^="userProfileModalInner"] {
+:not([class*="custom-profile-theme"]) > [class*="-userProfileModalInner"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }

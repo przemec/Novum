@@ -9,13 +9,13 @@
 }
 
 // live indicator in server channel/Active Now section in home screen
-[class^="live_"][class*="textBadge"] {
+[class*="-live"][class*="textBadge"] {
   background: var(--main-color-selected) !important;
   color: var(--button-text) !important;
 }
 
 // AKA badge
-[class^="akaBadge_"] {
+[class*="-akaBadge"] {
   background: var(--main-color) !important;
   color: var(--button-text) !important;
 }

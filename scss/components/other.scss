@@ -1,28 +1,28 @@
 @use "../core/mixins" as m;
 
 //various popouts
-[id^="popout"] > div > {
+[id*="-popout"] > div > {
   [role="dialog"],
-  [class^="container"],
-  [class^="popout"] {
+  [class*="-container"],
+  [class*="-popout"] {
     background: rgba(0, 0, 0, 0.95) !important;
     border-radius: 10px;
   }
 }
 
 //unsaved changes popout
-[class^="noticeRegion"] > [class^="container"] {
+[class*="-noticeRegion"] > [class*="-container"] {
   background: rgba(0, 0, 0, 0.85) !important;
   box-shadow: none !important;
 }
 
 //being invited to server modal
-[role="dialog"] [class^="contentWrapper"] {
+[role="dialog"] [class*="-contentWrapper"] {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
 //showing emoji details popout
-[class^="popoutContainer"] {
+[class*="-popoutContainer"] {
   background: rgba(0, 0, 0, 0.95) !important;
 
   button {
@@ -31,7 +31,7 @@
 }
 
 //problems with connection animated modal
-[class^="app_"] > [class*="fixClipping_"] {
+[class*="-app"] > [class*="fixClipping_"] {
   background: linear-gradient(#00000022, #000000ff) !important;
 }
 
@@ -46,11 +46,11 @@
 }
 
 //Where would u like to go? popout aka quickswitcher component
-[class^="quickswitcher"] {
+[class*="-quickswitcher"] {
   height: 100% !important;
   box-shadow: none !important;
 }
-[class^="quickswitcher"] input {
+[class*="-quickswitcher"] input {
   background: rgba(0, 0, 0, 0.95) !important;
 }
 
@@ -76,7 +76,7 @@
 }
 
 //notice at the top of the screen (i.e. when u didnt complete steps before talking on server)
-div[class^="notice"] {
+div[class*="-notice"] {
   color: var(--button-text) !important;
   background: var(--main-color-semitransparent);
   button {
@@ -98,10 +98,10 @@ div[class^="notice"] {
 }
 
 //FlowerStar aka Verified SVG ICON
-[class^="flowerStar_"] > path {
+[class*="-flowerStar"] > path {
   fill: var(--accent-saturated) !important;
 }
-[class^="flowerStar_"] + [class^="child"] path {
+[class*="-flowerStar"] + [class*="-child"] path {
   fill: #ffffff !important;
 }
 
@@ -122,7 +122,7 @@ div[class^="notice"] {
   display: none !important;
 }
 //Remove notification bell from upper right corner
-[class*="title"] > [class^="toolbar"] > [class*="icon"]:nth-child(2) {
+[class*="title"] > [class*="-toolbar"] > [class*="icon"]:nth-child(2) {
   display: none !important;
 }
 

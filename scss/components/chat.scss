@@ -1,23 +1,23 @@
 @use "../core/mixins" as m;
 
 // Channel Textarea (big chat textinput) or CHAT
-[class^="channelTextArea"] {
+[class*="-channelTextArea"] {
   border-radius: 8px;
   background: rgba(0, 0, 0, 0.1) !important;
 
   [class*="scrollableContainer"] {
     background: rgba(0, 0, 0, 0.1);
 
-    [class^="attachWrapper"] {
+    [class*="-attachWrapper"] {
       border-right-color: rgba(255, 255, 255, 0.1);
     }
   }
 
   //autocomplete popout after typing @
-  [class^="autocomplete"] {
+  [class*="-autocomplete"] {
     background: transparent !important;
   }
-  [class^="autocompleteInner"] {
+  [class*="-autocompleteInner"] {
     background: rgba(0, 0, 0, 0.9) !important;
     border-color: transparent !important;
   }
@@ -25,19 +25,19 @@
     background: var(--main-color-semitransparent-selected) !important;
   }
   //hidden tip container above the chat input
-  & > [class^="container_"] > [class^="containerBackground"] {
+  & > [class*="-container"] > [class*="-containerBackground"] {
     background: rgba(0, 0, 0, 0.95) !important;
     border-color: transparent;
   }
 
   //Remove discord gift button from chat
-  [class*="inner"] [class^="buttons"] > [class*="grow"] {
+  [class*="inner"] [class*="-buttons"] > [class*="grow"] {
     display: none !important;
   }
 }
 
 // App launcher next to the main chat input
-[class^="channelAppLauncher"] {
+[class*="-channelAppLauncher"] {
   .app-launcher-entrypoint > button {
     background: rgba(0, 0, 0, 0.1);
   }
@@ -62,17 +62,17 @@
 }
 
 // Emote, Gif, Sticker popout
-[class^="drawerSizingWrapper_"] > [class^="contentWrapper_"] {
+[class*="-drawerSizingWrapper"] > [class*="-contentWrapper"] {
   background: rgba(0, 0, 0, 0.9) !important;
 
-  [class^="navList_"] > [class*="navItem_"][class*="navButtonActive_"] {
+  [class*="-navList"] > [class*="navItem_"][class*="navButtonActive_"] {
     background: var(--main-color) !important;
   }
-  [class^="unicodeShortcut_"],
+  [class*="-unicodeShortcut"],
   // grouped server sticker/emoji header
   [class*="packHeader"],
   // bottom bar changing on sticker/emoji hover
-  [class^="inspector_"] {
+  [class*="-inspector"] {
     background: #000;
   }
   [class*="header"],
@@ -88,7 +88,7 @@
 }
 
 //Buttons in private conversation - after user invited you (accept, ignore, block, report)
-[id^="chat-messages"] [class*="description"] {
+[id*="-chat-messages"] [class*="description"] {
   [class*="colorBrand"] {
     @include m.btAccept_important;
   }
@@ -101,15 +101,21 @@
 }
 
 //Follow Button near chat
-[class*="chatContent"] form > [class^="wrapper"] {
+[class*="chatContent"] form > [class*="-wrapper"] {
   background: rgba(0, 0, 0, 0.3);
 }
-[class*="chatContent"] form > [class^="wrapper"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
+[class*="chatContent"] form > [class*="-wrapper"] button:not([class*="lookBlank"], [class*="barButtonBase"]) {
   @include m.btred_important;
 }
 
+//Loading chat overlay {
+[class*="chatContent"] [class*="scrollerInner"] > [class*="wrapper"],
+[class*="chatContent"] [class*="scrollerInner"] > [class*="wrapper"] > [class*="wrapper"] {
+  background: transparent !important;
+}
+
 //reaction below message
-[class*="reactions_"] [class*="reaction_"]:not([class^="reactionCount"], [class^="reactionBtn"]) {
+[class*="reactions_"] [class*="reaction_"]:not([class*="-reactionCount"], [class*="-reactionBtn"]) {
   background: rgba(0, 0, 0, 0.2) !important;
   transform: scale(1.07);
   display: flex;
@@ -134,7 +140,7 @@
 }
 
 //Chat message popouts
-[class^="layerContainer_"] [class*="layer_"] {
+[class*="-layerContainer"] [class*="layer_"] {
   //See who reacted popout
   [class*="reactors_"] {
     background: transparent !important;
@@ -162,8 +168,8 @@
 }
 
 //hovering file above discord app - upload popout
-[class^="uploadDropModal"] {
-  [class^="bgScale"] {
+[class*="-uploadDropModal"] {
+  [class*="-bgScale"] {
     background: var(--profile-activity) !important;
   }
   [class*="icons"] {
@@ -172,11 +178,11 @@
 }
 
 //Edit uploaded file popout
-[class^="uploadModal"] {
+[class*="-uploadModal"] {
   background: rgba(0, 0, 0, 0.95) !important;
   box-shadow: none !important;
 
-  [class^="footer"] {
+  [class*="-footer"] {
     background: rgba(0, 0, 0, 0.95) !important;
   }
   label[class*="checked"] [class*="checkbox"] {
@@ -189,7 +195,7 @@
   }
 }
 //loading panel while uploading file
-[id^="message-content-Uploader"] > div[class*="attachment"] {
+[id*="-message-content-Uploader"] > div[class*="attachment"] {
   background: rgba(0, 0, 0, 0.3);
   border-color: #000000;
 
@@ -199,31 +205,31 @@
 }
 
 //Embed
-[id^="message-accessories"] > [class^="embedWrapper"] {
+[id*="-message-accessories"] > [class*="-embedWrapper"] {
   background: var(--accent-color-semitransparent) !important;
   border-color: var(--accent-saturated) !important;
 }
 
 //attachments like photos or files
-[class^="messageAttachment"] {
+[class*="-messageAttachment"] {
   border-color: #000 !important;
 
   //file attachment, txt-like file attachment
-  & > [class^="attachment"],
-  & > [class^="embedWrapper"] {
+  & > [class*="-attachment"],
+  & > [class*="-embedWrapper"] {
     background: rgba(0, 0, 0, 0.2) !important;
   }
 
   code {
     background: transparent !important;
   }
-  [class^="textContainer"] + div {
+  [class*="-textContainer"] + div {
     background: rgba(0, 0, 0, 0.2) !important;
   }
 }
 
 //someone else's mention
-[id^="message-content"] [class*="mention"] {
+[id*="-message-content"] [class*="mention"] {
   color: var(--accent-desaturated);
   background: rgba(0, 0, 0, 0.2) !important;
   border-radius: 3px;
@@ -284,7 +290,7 @@
 }
 
 //new thread popout
-[class^="threadSidebar"] {
+[class*="-threadSidebar"] {
   background: rgba(0, 0, 0, 0.95);
 }
 
@@ -344,7 +350,7 @@
 }
 
 //Chat status picker background and transitions
-[id^="status-picker"] {
+[id*="-status-picker"] {
   transition: background 200ms ease-out;
 }
 #account-status-picker {
@@ -382,23 +388,23 @@
 }
 
 //New messages bar
-[class^="newMessagesBar_"] {
+[class*="-newMessagesBar"] {
   background: var(--main-color) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 //Old messages bar
-[class^="jumpToPresentBar_"] {
+[class*="-jumpToPresentBar"] {
   background: var(--accent-desaturated) !important;
   padding: 3px 0;
   border-color: transparent !important;
 }
 
 //Server invite field on chat
-[id^="message-accessories_"] > [class*="wrapper"] {
+[id*="-message-accessories"] > [class*="wrapper"] {
   background: rgba(0, 0, 0, 0.2);
 }
-[id^="message-accessories_"] > [class*="wrapper"] [class*="guildIconImage"] {
+[id*="-message-accessories"] > [class*="wrapper"] [class*="guildIconImage"] {
   background-color: rgba(0, 0, 0, 0.2);
 }
 
@@ -645,7 +651,7 @@ code {
     border-left: 2px solid var(--accent-saturated);
   }
 }
-[class^="categoryFadeBlurple_"] {
+[class*="-categoryFadeBlurple"] {
   background: var(--main-color) !important;
 }
 

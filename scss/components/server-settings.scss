@@ -1,4 +1,4 @@
-[aria-label="GUILD_SETTINGS"] [class^="sidebar"] [class*="item"] {
+[aria-label="GUILD_SETTINGS"] [class*="-sidebar"] [class*="item"] {
   //items in sidebar
   &:hover {
     background: var(--main-color-semitransparent) !important;
@@ -32,7 +32,7 @@
 }
 
 //"Emoji" settings - card and its "X" button
-[class^="content_"] > [class^="emojiRow_"][class*="card_"] {
+[class*="-content"] > [class*="-emojiRow"][class*="card_"] {
   background: transparent !important;
 }
 [class*="emojiRemove"] {
@@ -61,10 +61,10 @@
 //"Audit Log" settings
 [role="list"] > [class*="auditLog"] {
   border-color: #000 !important;
-  & > [class^="header"] {
+  & > [class*="-header"] {
     background: rgba(0, 0, 0, 0.2) !important;
   }
-  & > [class^="divider"] {
+  & > [class*="-divider"] {
     background: #000 !important;
   }
   & > [class*="changeDetails"] {
@@ -78,7 +78,7 @@
 }
 
 //"Bans" settings
-div[class^="bannedUser_"][class*="card_"] {
+div[class*="-bannedUser"][class*="card_"] {
   background: transparent !important;
   span {
     color: rgba(255, 255, 255, 0.5) !important;
@@ -89,9 +89,9 @@ div[class^="bannedUser_"][class*="card_"] {
 [class*="directoryModal"] {
   background-image: var(--app-background) !important;
 
-  [class*="categoryList"] > [class^="category"],
-  [class^="list"] > article,
-  [class^="itemsContainer"] > [class^="itemContainer"] {
+  [class*="categoryList"] > [class*="-category"],
+  [class*="-list"] > article,
+  [class*="-itemsContainer"] > [class*="-itemContainer"] {
     background-color: rgba(0, 0, 0, 0.1);
   }
 }

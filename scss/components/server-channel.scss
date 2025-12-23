@@ -1,10 +1,10 @@
 //Server header name
-header h1[class^="name"] {
+header h1[class*="-name"] {
   font-size: 18px;
   font-weight: bold;
   line-height: 55px;
 }
-[class^="sidebar"] [class*="selected"] header {
+[class*="-sidebar"] [class*="selected"] header {
   background: transparent;
 }
 
@@ -64,7 +64,7 @@ header h1[class^="name"] {
   }
 
   //Remove redundant create invite icon from channel list
-  [class^="children"] > [class^="icon"]:nth-last-child(2) {
+  [class*="-children"] > [class*="-icon"]:nth-last-child(2) {
     display: none !important;
   }
 }
@@ -126,8 +126,13 @@ nav[class*="container"] > [class*="container"] > header:hover {
 }
 
 // voice connection panel
+//[class*="postEnrollmentBackground"] {
+//  position: relative;
+//}
+
+[class*="postEnrollmentBackground"],
 [class*="panels"] {
-  border-top: 1px solid var(--background-modifier-accent);
+  border-top: unset !important;
   background: transparent !important;
 
   &::before {
@@ -143,6 +148,7 @@ nav[class*="container"] > [class*="container"] > header:hover {
     -webkit-animation: fadeIn 2s ease-out;
     animation: fadeIn 2s ease-out;
   }
+
   &::after {
     content: "";
     top: 0;
@@ -154,7 +160,9 @@ nav[class*="container"] > [class*="container"] > header:hover {
     background: rgba(0, 0, 0, 0.2);
     border-radius: 10px;
   }
+}
 
+[class*="panels"] {
   //game activity panel
   & > [class*="activityPanel"],
   //profile settings panel
